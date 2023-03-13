@@ -1,0 +1,41 @@
+---
+title: "Explore EMG Normalization"
+author: "Lasse Hjorth Madsen"
+format: html
+editor: visual
+---
+
+## Why This?
+
+This note explores match equities in backgammon. Specifically we investigate how EXtremeGammon normalizes match equity calculation to a metric that is (supposedly) comparable to money game equities.
+
+## Introduction
+
+In backgammon money games mistakes are usually evaluated in terms of equities. For example, the non-roller in a pure three-roll position has winning probability, $P(w)$ of:
+
+$$
+P(w) = \frac{5}{6}\times\frac{1}{6}\times\frac{5}{6}\ + \ \frac{5}{6}\times\frac{5}{6}\times\frac{5}{6}\times\frac{1}{6} = 0.2122
+$$ Since there can't be any propper recubes, the position has an expected value, $E$, of
+
+$$
+E= 2P(w) - 1 = -0.5756
+$$ for the non-roller. So after accepting an initial double, the non-roller faces an average loss of $2\times-0.6556=-1.1512$ and the position is a money pass, since the loss of one point is less that that.
+
+Suppose this is a match, where the non-roller is trailing 3-away, 2-away sometimes written as (-3,-2). Now, the appropriate unit is *match winning chances*, $mwc$. If doubled, non-roller can take and recube for the match, for a match winning chance of $mwc=0.2122$. Or, 
+
+Link: <https://quarto.org>
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
