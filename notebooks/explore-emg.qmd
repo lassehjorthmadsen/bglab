@@ -7,11 +7,27 @@ editor: visual
 
 ## Why This?
 
-This note explores match equities in backgammon. Specifically we investigate how EXtremeGammon normalizes match equity calculation to a metric that is (supposedly) comparable to money game equities.
+This note explores match equities in backgammon. Specifically we investigate how eXtreme Gammon normalizes match equity calculation to a metric that is (supposedly) comparable to money game equities.
 
 ## Introduction
 
-In backgammon money games mistakes are usually evaluated in terms of equities. For example, the non-roller in a pure three-roll position has winning probability, $P(w)$ of:
+In backgammon money games mistakes are usually evaluated in terms of equities. A $-0.1$ mistake means your expected value just dropped by one tenth of the cube value. Thus, values are *normalized* so the level of the cube and the stakes are *not* reflected in the size of mistakes.
+
+In match play, the natural unit of measurement is match winning chances, $mwc$. For example, trailing 3-away, 2-away, sometimes written as (-3,-2), yields $mwc=0.40$, assuming strong, equal players.
+
+However, the $mwc$ at stakes varies by score. At double match point, a one point gain is worth $0.5\ mwc$, the difference between an even game, $mwc=0.50$ and a sure victory, $mwc=1.00$. At the beginning of a 17-point match, one point is worth only about \$0.04\$. 
+
+In a sense, double match point is like playing for 10\$ per point, compared to 0.8\$ per point at the beginning of the match.
+
+Also, the value of one point can be different for the leader and the trailer; at (-3,-2) one point is worth $0.10\ mwc$ for the trailer but $0.15\ mwc$ for the leader.
+
+## EMG normalization
+
+
+
+## The three roll position
+
+For example, the non-roller in a pure three-roll position has winning probability, $P(w)$ of:
 
 $$
 P(w) = \frac{5}{6}\times\frac{1}{6}\times\frac{5}{6}\ + \ \frac{5}{6}\times\frac{5}{6}\times\frac{5}{6}\times\frac{1}{6} = 0.2122
@@ -21,7 +37,7 @@ $$
 E= 2P(w) - 1 = -0.5756
 $$ for the non-roller. So after accepting an initial double, the non-roller faces an average loss of $2\times-0.6556=-1.1512$ and the position is a money pass, since the loss of one point is less that that.
 
-Suppose this is a match, where the non-roller is trailing 3-away, 2-away sometimes written as (-3,-2). Now, the appropriate unit is *match winning chances*, $mwc$. If doubled, non-roller can take and recube for the match, for a match winning chance of $mwc=0.2122$. Or, 
+Suppose this is a match, where the non-roller is trailing 3-away, 2-away sometimes written as (-3,-2). Now, the appropriate unit is *match winning chances*, $mwc$. If doubled, non-roller can take and recube for the match, for a match winning chance of $mwc=0.2122$. Or,
 
 Link: <https://quarto.org>
 

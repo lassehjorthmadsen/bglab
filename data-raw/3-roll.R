@@ -7,17 +7,19 @@ met <- get_met()
 
 pwin3 <- 5/6*1/6*5/6 + 5/6*5/6*5/6*1/6
 
-pass <- met %>% mutate(y = y + 1) %>% rename(pass = mwc)
+loseone <- met %>% mutate(y = y + 1) %>% rename(loseone = mwc)
+winone <- met %>% mutate(x = x + 1) %>% rename(winone = mwc)
 takelose <- met %>% mutate(y = y + 2) %>% rename(takelose = mwc)
 takewin <- met %>% mutate(x = if_else(y > 2, x + 2, x + 4)) %>% rename(takewin = mwc)
 
 roll3 <- met %>%
-  left_join(pass, by = c("x", "y")) %>%
+  left_join(loseone, by = c("x", "y")) %>%
+  left_join(winone, by = c("x", "y")) %>%
   left_join(takelose, by = c("x", "y")) %>%
   left_join(takewin, by = c("x", "y")) %>%
-  replace_na(list(pass = 0, takelose = 0, takewin = 1)) %>%
+  replace_na(list(loseone = 0, takelose = 0, winone = 1, takewin = 1)) %>%
   mutate(takemwc = pwin3 * takewin - pwin3 * takelose + takelose,
-         takegain = takemwc - pass,
+         takegain = takemwc - loseone,
          score = paste0("-", x, ",-", y),
          score = fct_reorder(score, takegain)) %>%
   arrange(takegain)

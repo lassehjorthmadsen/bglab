@@ -6,7 +6,7 @@
 #' @return dataframe
 #' @export
 #'
-get_met <- function(filename = "c:\\Program Files (x86)\\eXtreme Gammon 2\\MET\\Kazaross XG2.met") {
+get_met <- function(filename = "data-raw\\Kazaross XG2.met") {
 
   top9 <- read_delim(filename, skip = 12, delim = " ", n_max =  9, col_names = as.character(0:25), col_types = list(.default = "c")) %>%
     select(-`0`)
