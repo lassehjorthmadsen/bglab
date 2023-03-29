@@ -5,17 +5,22 @@ format: html
 editor: visual
 ---
 
+```{r}
+#| echo: false
+pwin3 <- 5/6*1/6*5/6 + 5/6*5/6*5/6*1/6
+```
+
 ## Why This?
 
-This note explores match equities in backgammon. Specifically we investigate how eXtreme Gammon normalizes match equity calculation to a metric that is (supposedly) comparable to money game equities.
+This note explores how eXtreme Gammon normalizes mwc, *Match Winning Chances*, to emg, *Equivalent to Money Game*, a metric that is (supposedly) comparable to money game equities.
 
 ## Introduction
 
-In backgammon money games mistakes are usually evaluated in terms of equities. A $-0.1$ mistake means your expected value just dropped by one tenth of the cube value. Thus, values are *normalized* so the level of the cube and the stakes are *not* reflected in the size of mistakes.
+In backgammon money games mistakes are usually evaluated in terms of equities, $E$, or *expected value*. $E=0$ means that the game is even. Equities are typically *normalized* so the level of the cube and the stakes are *not* reflected in the size of mistakes: A $-0.1$ mistake means your expected value just dropped by one tenth of the cube value.
 
-In match play, the natural unit of measurement is match winning chances, $mwc$. For example, trailing 3-away, 2-away, sometimes written as (-3,-2), yields $mwc=0.40$, assuming strong, equal players.
+In match play, the natural unit of measurement is match winning chances, mwc. For example, trailing 3-away, 2-away, sometimes written as (-3,-2), yields $mwc=0.40$, assuming strong, equal players.
 
-However, the $mwc$ at stakes varies by score. At double match point, a one point gain is worth $0.5\ mwc$, the difference between an even game, $mwc=0.50$ and a sure victory, $mwc=1.00$. At the beginning of a 17-point match, one point is worth only about \$0.04\$. 
+However, the $mwc$ at stake varies by score. At double match point, a one point gain is worth $0.5\ mwc$, the difference between an even game, $mwc=0.50$ and a sure victory, $mwc=1.00$. At the beginning of a 17-point match one point is worth only about $0.04\ mwc$.
 
 In a sense, double match point is like playing for 10\$ per point, compared to 0.8\$ per point at the beginning of the match.
 
@@ -23,35 +28,63 @@ Also, the value of one point can be different for the leader and the trailer; at
 
 ## EMG normalization
 
+As mentioned, in money game we often like to compare errors without considering the level of the cube and the stakes. We rarely say things like "Taking that three-roll position cost me about 4.5\$ because the cube was at 4 and we played for 10\$ per point." It is more common to say that the take is a $0.15$ error.
 
+Likewise, it can be useful to normalize match play errors, so that we can compare them to money game, and so we can compare errors across scores. If some error loses $0.03\ mwc$ at (-4, -5), but only $0.01\ mwc$ at (-17, -10) is because the first score is closer to the end of the match, where points are more valuable, or are there something else about the two scores that are different? And how big would the same mistake have been in a money game?
 
-## The three roll position
+This is where emg (Equivalent to Money Game) comes in. The idea is to scale the difference between losing a single point and winning a single point to the interval $[-1;+1]$ that we use in money game.
 
-For example, the non-roller in a pure three-roll position has winning probability, $P(w)$ of:
+For example, at (-3,-7) the leader has $mwc$ of about $0.76$. If he loses one point and gets to (-3,-6) that drops to $0.71$. If he wins one point for (-2,-7) that rises to $0.84$. The range is $[0.71;0.84]$, and the difference between winning and losing a single point is $0.84-0.71 = `r 0.84-0.71`$. We can scale any $mwc$ value in that interval to the corresponding money interval $[-1;+1]$ like this:
+
+$$emg =\frac{mwc-0.71}{0.13}\times{2}-1$$
+
+So the $emg$ for our minimal value of $mwc=0.71$ becomes:
+
+$$emg =\frac{0.71-0.71}{0.13}\times{2}-1=-1$$
+
+And for our maximum value of $mwc=0.84$ we get:
+
+$$emg =\frac{0.84-0.71}{0.13}\times{2}-1=+1$$ More generally,if $mwc_{min}$ is the chance a player has after losing a single point, and $mwc_{max}$ is the corresponding chance after winning a point, then we can calculate $emg$ from any $mwc$ at any score like this:
+
+$$emg =\frac{mwc-mwc_{min}}{mwc_{max}-mwc_{min}}\times{2}-1$$
+
+So if we lead (-3,-7) and mess up the opening roll so our $mwc$ drops from $0.76$ to $0.75$, then the size of the error in $emg$ would be:
+
+$$emg =\frac{0.75-0.71}{0.13}\times{2}-1=`r round((0.75-0.71)/(0.84-0.71)*2-1, 2)`$$
+
+This also means that the leader's $emg$ at the beginning of the game is negative:
+
+$$emg =\frac{0.76-0.71}{0.13}\times{2}-1=`r round((0.76-0.71)/(0.84-0.71)*2-1, 2)`$$
+That may feel a little funny, but really just reflect the fact that points have different values for the two players.
+
+## The problem
+
+Sometimes, the $emg$ appears really broken, however. Take a pure three-roll position where the non-roller has winning probability, $P(w)$ of:
 
 $$
-P(w) = \frac{5}{6}\times\frac{1}{6}\times\frac{5}{6}\ + \ \frac{5}{6}\times\frac{5}{6}\times\frac{5}{6}\times\frac{1}{6} = 0.2122
-$$ Since there can't be any propper recubes, the position has an expected value, $E$, of
+P(w) = \frac{5}{6}\times\frac{1}{6}\times\frac{5}{6}\ + \ \frac{5}{6}\times\frac{5}{6}\times\frac{5}{6}\times\frac{1}{6} = `r round(pwin3, 3)`
+$$ 
+Consider two cases:
 
+a. You're being doubled trailing (-3,-2)
+b. You're being redoubled when tied (-3,-3) 
+
+In both cases you can take for the match (in case a with an automatic redouble), and get $mwc = `r round(pwin3, 3)`$. Or you can pass and get to (-3,-1) which is $mwc=0.249$ The two cases appear identical. You're better of passing. Taking would cost $0.249-0.212 = 0.037\ mwc$ in both situations.
+
+But plucking into our $emg$ formular we get:
+
+a. $emg =\frac{0.21219-0.24924}{0.5-0.24924}\times{2}-1=`r round((0.21219-0.24924)/(0.5-0.24924)*2-1, 3)`$
+
+b. $emg =\frac{0.21219-0.24924}{0.59947-0.40053}\times{2}-1=`r round((0.21219-0.24924)/(0.59947-0.40053)*2-1, 3)`$
+
+So at (-3,-2) the mistake of taking comes to a $0.32\  emg$ error; at (-3,-3) what appears to be an identical error comes to a $0.40\  emg$ error.
+
+Jeremy Bagai pointed out the same issue with a detailed analysis [here](http://www.fortuitouspress.com/emg).
+
+## Mores scores, same three-roll poisition
+
+Since for money there can't be any proper recubes, the position has an expected money game value, $E$, of
 $$
-E= 2P(w) - 1 = -0.5756
-$$ for the non-roller. So after accepting an initial double, the non-roller faces an average loss of $2\times-0.6556=-1.1512$ and the position is a money pass, since the loss of one point is less that that.
+E= 2P(w) - 1 = `r round(2*pwin3 - 1, 3)`
+$$ for the non-roller. So after accepting an initial double, the non-roller faces an average loss of $2\times `r round(2*pwin3 - 1, 3)`=`r round(4*pwin3 - 2, 3)`$ and the position is a money pass, since the loss of one point is less that that.
 
-Suppose this is a match, where the non-roller is trailing 3-away, 2-away sometimes written as (-3,-2). Now, the appropriate unit is *match winning chances*, $mwc$. If doubled, non-roller can take and recube for the match, for a match winning chance of $mwc=0.2122$. Or,
-
-Link: <https://quarto.org>
-
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
-
-```{r}
-1 + 1
-```
-
-You can add options to executable code like this
-
-```{r}
-#| echo: false
-2 * 2
-```
-
-The `echo: false` option disables the printing of code (only output is displayed).
