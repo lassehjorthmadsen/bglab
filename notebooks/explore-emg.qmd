@@ -5,17 +5,19 @@ date: today
 format: html
 toc: true
 editor: visual
+execute:
+  echo: false
+  warning: false
 ---
 
-```{r}
-#| echo: false
-#| warning: false
-
+```{r setup}
 library(tidyverse)
+library(ggrepel)
 source("../R/functions.R")
 
 met <- get_met(filename = "..\\data-raw\\Kazaross XG2.met")
 pwin3 <- 5/6*1/6*5/6 + 5/6*5/6*5/6*1/6
+take_error = 4 * pwin3 - 1
 theme_set(theme_minimal())
 ```
 
@@ -37,11 +39,14 @@ Also, the value of one point is different for the leader and the trailer; at (-3
 
 ## EMG normalization
 
-As mentioned, in money game we often like to compare errors without considering the level of the cube and the stakes. We rarely say things like "Taking that three-roll position cost me about 4.5\$ because the cube was at 4 and we played for 10\$ per point." It is more common to say that the take is a 0.15 error.
+As mentioned, in money game we often like to compare errors without considering the level of the cube and the stakes. We rarely say things like "Taking that three-roll position cost me about 4.5\$ because the cube was at 4 and we played for 10\$ per point." It is more common to say that the take is a 0.15 error. 
 
-Likewise, it can be useful to normalize match play errors, so that we can compare them to money game, and so we can compare errors across scores. If some error loses $0.03\ mwc$ at (-4, -5), but only $0.01\ mwc$ at (-17, -10) is that because the first score is closer to the end of the match, where points are more valuable, or are there something else about the two scores that are different? And how big would the same mistake have been in a money game?
+This way, we can compare *conceptual* errors by abstracting away the specifics.
+If you would like the actual cost of taking, you would multiply the 0.15 error by the cube value and the stakes.
 
-This is where emg (Equivalent to Money Game) comes in. The idea is to scale the difference between losing a single point and winning a single point to the interval $[-1;+1]$ that we use in money game.
+Likewise, it can be useful to normalize match play errors, so that we can compare them to money game, and so we can compare errors across scores. If some error loses $0.03\ mwc$ at (-4, -5), but only $0.01\ mwc$ at (-17, -10) is that because the first score is closer to the end of the match, where points are more valuable, or is it because the first error is a bigger one, conceptually? And how big would the same mistake have been in a money game?
+
+This is where emg (Equivalent to Money Game) comes in. The idea is to scale the difference between losing a single point and winning a single point in a match to the interval $[-1;+1]$, that we use in money game.
 
 For example, at (-3,-7) the leader has $mwc$ of about $0.76$. If he loses one point and gets to (-3,-6) that drops to $0.71$. If he wins one point for (-2,-7) that rises to $0.84$. The range is $[0.71;0.84]$, and the difference between winning and losing a single point is $0.84-0.71 = `r 0.84-0.71`$. We can scale any $mwc$ value to the corresponding money interval $[-1;+1]$ like this:
 
@@ -54,6 +59,8 @@ $$emg =\frac{0.71-0.71}{0.13}\times{2}-1=-1$$
 And for our maximum value of $mwc=0.84$ we get:
 
 $$emg =\frac{0.84-0.71}{0.13}\times{2}-1=+1$$
+Of course, with the doubling cube and gammons, you can be even worse off and end up outside the interval, like if you're sure to lose a gammon and $E=-2.00$. 
+
 More generally, if $mwc_{min}$ is the match winning chance a player has after losing the cube value, and $mwc_{max}$ is the corresponding chance after winning the cube value, then we can calculate $emg$ from any $mwc$ at any score like this:
 
 $$emg =\frac{mwc-mwc_{min}}{mwc_{max}-mwc_{min}}\times{2}-1$$
@@ -68,7 +75,7 @@ $$emg =\frac{0.76-0.71}{0.13}\times{2}-1=`r round((0.76-0.71)/(0.84-0.71)*2-1, 2
 
 That seems a little funny. The reason is, that in some sense the leader is closer to losing the game that to winning, since the gain by winning is much bigger than the loss from losing. The leader is not in the middle, but closer to the lower end of the interval $[-1;1]$. 
 
-This is just one counter-intuitive thing about emg normalization; there are more to come.
+This is just one counter-intuitive thing about emg normalization; there are more:
 
 ## The problem
 
@@ -89,54 +96,179 @@ a.  $emg =\frac{0.21219-0.24924}{0.5-0.24924}\times{2}-1=`r round(emg(0.21219,3,
 
 b.  $emg =\frac{0.21219-0.24924}{0.75076-0.24924}\times{2}-1=`r round(emg(0.21219,3,3,2,met), 3)`$
 
-So at (-3,-2) the mistake of taking comes to a $`r round(emg(0.21219, 3, 2, 1, met) + 1, 3)`\  emg$ error; at (-3,-3) what appears to be an identical error comes to a $`r round(emg(0.21219, 3, 3, 2, met) + 1, 3)`\  emg$ error.
+So at (-3,-2) the mistake of taking comes to a $`r round(emg(0.21219, 3, 2, 1, met) + 1, 3)`\  emg$ error; at (-3,-3) what appears to be an identical mistake comes to a $`r round(emg(0.21219, 3, 3, 2, met) + 1, 3)`\  emg$ error.
 
-You can set up a pure three-roll position in XG and confirm there are indeed the reported emg errors when accepting a (re-)double at those two scores. 
+You can set up a pure three-roll position in XG and confirm that these are indeed the reported emg errors when accepting a (re-)double at those two scores. 
 
 Jeremy Bagai pointed out the same issue with a detailed analysis [here](http://www.fortuitouspress.com/emg).
 
 What's going on?
 
-Inspecting the emg formula, it isn't that hard to figure out: The $0.037\ mwc$ error just looks smaller when you put in the wide interval between losing and winning you get at (-3,-3) with cube at 2, compared to the more narrow interval at (-3,-2), cube at 1. As noted, the mwc interval in the two cases are $[0.25;0.50]$ and $[0.25;0.75]$ respectively.
+Inspecting the emg formula, it isn't that hard to figure out: The $0.037\ mwc$ error just looks smaller when you put it in the wide interval between losing and winning you get at (-3,-3) with cube at 2, compared to the more narrow interval at (-3,-2), cube at 1. As noted, the mwc interval in the two cases are $[0.25;0.50]$ and $[0.25;0.75]$ respectively.
 
 It is counter intuitive, however, and you wonder if emg fails after all to be useful for comparing errors across scores, and between match play and money games.
 
-We can note, like Bagai did in the paper linked above, that a similar observation can be made when you are being doubled to 8 (in the same three-roll position) at (-3,-5). You can again choose between trailing (-3,-1) with $0.249\ mwc$ or playing for the match with $0.212\ mwc$, which would be a $0.037\ mwc$ error. This time the interval is even wider, so the emg normalized error comes to $`r round(emg(0.21219,3,5,4,met)+1,3)`$. Feel free to check with XG.
+We can note, like Bagai did in the paper linked above, that a similar observation can be made when you are being doubled to 8 (in the same three-roll position) at (-3,-5). You can again choose between trailing (-3,-1) with $0.249\ mwc$ or playing for the match with $0.212\ mwc$, which would be a $0.037\ mwc$ error. This time the interval is even wider, so the emg normalized error by taking comes to $`r round(emg(0.21219,3,5,4,met)+1,3)`$. This can be  checked with XG.
 
-## Mores scores, same three-roll position
+## More scores
 
-Let's look at more scores, to get a feel for how the emg normalization in general compares to raw mwc. 
+Let's look at the size of the error by taking the same three-roll position for more scores, to get a feel for how the emg normalization in general compares to raw mwc. 
 
-The money benchmark is the error of accepting a three-roll position which is easy to calculate, since for money there can't be any proper recubes. The three-roll position has an expected money game value, $E$, of
-$$
-E = 2P(w) - 1 = `r round(2*pwin3 - 1, 3)`
-$$
-for the non-roller. So after accepting an initial double, the non-roller faces an average loss of $2\times `r round(2*pwin3 - 1, 3)`=`r round(4*pwin3 - 2, 3)`$ and the position is a money pass, since the loss of one point is just $-1$. The size of the take error is $`r round(4*pwin3 - 2, 3) + 1`$ (times the cube, times the stake, if you want the loss in real money).
+The money benchmark is the error of accepting a three-roll position, which is easy to calculate, since for money there can't be any proper recubes. The three-roll position has an expected money game value of $E = 2P(w) - 1 = -0.576$ for the non-roller. So after accepting an initial double, the non-roller faces an average loss of $2\times `r round(2*pwin3 - 1, 3)`=`r round(4*pwin3 - 2, 3)`$ and the position is a money pass, since the loss of one point is just $-1$. The size of the take error is $`r round(4*pwin3 - 2, 3) + 1`$ (times the cube, times the stake, if you want the loss in real money).
 
 The chart below shows the size of the error of accepting an initial double in a pure three-roll position, at all pre-crawford scores in a 9-point match. Errors are nomalized to emg, as explained above.
 
-```{r calculate, cache=TRUE}
+```{r calculate}
+#| cache: true
+
 roll3 <- met %>%
-  filter(x > 1, x < 10, y > 1, y < 10) %>% # Perhaps get rid of this filter
   mutate(cube = 1) %>% 
   rowwise() %>%
-  mutate(eq_take = if_else(y > 2 * cube,
+  mutate(mwc_take = if_else(y > 2 * cube,
                            gwc2mwc(pwin3, x, y, 2 * cube, met),
                            gwc2mwc(pwin3, x, y, 4 * cube, met)),
-         eq_drop = mwc(x, y - cube, met),
-         mwc_diff = eq_take - eq_drop,
-         emg_diff = emg(eq_take, x, y, cube, met) + 1) %>% 
+         mwc_drop = mwc(x, y - cube, met),
+         mwc_diff = mwc_take - mwc_drop,
+         emg_take = emg(mwc_take, x, y, cube, met),
+         emg_diff = emg_take + 1) %>% 
   ungroup() %>% 
   mutate(score = paste0("-", x, ",-", y),
-         score = fct_reorder(score, mwc_diff)) %>%
-  arrange(-mwc_diff)
+         score = fct_reorder(score, emg_diff)) %>%
+  arrange(-emg_diff)
 ```
 
-```{r plot}
+```{r emg_plot}
+#| fig-height: 7.4
+roll3 %>%
+  filter(x > 1, x < 10, y > 1, y < 10) %>%
+  ggplot(aes(y = score, x = emg_diff, color = emg_diff < 0)) +
+  geom_point(show.legend = T) +
+  geom_vline(xintercept = take_error, color = "lightgreen") +
+  geom_vline(xintercept = 0, color = "lightgrey") +
+  scale_color_discrete(labels = c("Take", "Drop")) +
+  labs(title = "Error from taking an initial double in a three-roll position by match scoe", 
+        subtitle = "Errors measured in emg. Green vertical line shows the money game value",
+        x = "Size of error in emg",
+        y = "Match score (taker-needs, doubler-needs)",
+       color = "Best action") +
+  theme(legend.justification = c(1, 0), legend.position = c(1, 0))
+```
+
+```{r emg_mwc_plot}
+#| fig-height: 7.4
+metric_names <- c(`mwc_diff` = "Error in mwc", `emg_diff` = "Error in emg")
+
+roll3 %>% 
+  filter(x > 1, x < 10, y > 1, y < 10) %>%
+  pivot_longer(cols = c(mwc_diff, emg_diff), names_to = "Metric") %>% 
+  mutate(`Best action` = value < 0) %>% 
+  ggplot(aes(y = score, x = value, color = `Best action`)) +
+  geom_point(show.legend = F) +
+  geom_vline(xintercept = take_error, color = "lightgreen") +
+  geom_vline(xintercept = 0, color = "lightgrey") +
+  scale_color_discrete(labels = c("Take", "Drop")) +
+  facet_wrap(facets = vars(Metric), scales = "free_x", labeller = as_labeller(metric_names)) + 
+  labs(title = "Error from taking an initial double in a three-roll position by match scoe", 
+        subtitle = "Errors measured in emg and mwc",
+        x = "Size of error",
+        y = "Match score (taker-needs, doubler-needs)",
+       color = "Best action") +
+  theme(legend.justification = c(1, 0), legend.position = c(1, 0))
+```
+
+```{r}
+#| fig-height: 5
+#| warning: false
+
+roll3 %>%
+  filter(x > 1, x < 10, y > 1, y < 10) %>%
+  ggplot(aes(x = mwc_diff, y = emg_diff)) +
+  geom_point(show.legend = T, aes(color = emg_diff < 0)) +
+  geom_smooth(method = "lm", se = FALSE, color = "lightgray", 
+              size = 0.3, formula = y ~ 0 + x) +
+  geom_hline(yintercept = 0, color = "lightgrey") +
+  geom_vline(xintercept = 0, color = "lightgrey") +
+  geom_text_repel(aes(label = score), size = 3, min.segment.length = .1, 
+                  force = 3, seed = 3, segment.color = "lightgray",
+                  max.overlaps = 15) +
+  scale_color_discrete(labels = c("Take", "Drop")) +
+  labs(title = "Error from taking an initial double in a three-roll position by match score", 
+        subtitle = "9-point match. Errors measured in mwc plottet against emg",
+        x = "Size of error in mwc",
+        y = "Size of error in emg",
+       color = "Best action") +
+  theme(legend.justification = c(1, 0), legend.position = c(1, 0))
+
+```
+
+```{r}
+#| fig-height: 5
+
 roll3 %>%
   #filter(x > 1, x < 10, y > 1, y < 10) %>%
-  ggplot(aes(y = score, x = mwc_diff, color = mwc_diff > 0)) +
-  geom_point(show.legend = F)
+  filter(x > 1, y > 1, !(x == 2 & y == 2)) %>%
+  ggplot(aes(x = mwc_diff, y = emg_diff)) +
+  geom_point(show.legend = T, aes(color = emg_diff < 0)) +
+  geom_hline(yintercept = 0, color = "lightgrey") +
+  geom_vline(xintercept = 0, color = "lightgrey") +
+  geom_text_repel(aes(label = score), size = 3, min.segment.length = .1, 
+                  force = 3, seed = 3, segment.color = "lightgray",
+                  max.overlaps = 15) +
+  scale_color_discrete(labels = c("Take", "Drop")) +
+  labs(title = "Error from taking an initial double in a three-roll position by match score", 
+        subtitle = "25-point match (except -2,-2). Errors measured in mwc plottet against emg",
+        x = "Size of error in mwc",
+        y = "Size of error in emg",
+       color = "Best action") +
+  theme(legend.justification = c(1, 0), legend.position = c(1, 0))
 
+```
+
+```{r}
+
+# Case A: (-3,-2) cube at 1
+case_a <- roll3 %>% 
+  select(x, y, mwc) %>%  
+  filter((x == 2 & y == 2) | (x == 3 & y == 1)) %>% 
+  mutate(emg = c(-1, 1)) %>% 
+  bind_rows(
+    filter(
+      select(roll3, x, y, mwc = mwc_take, emg = emg_take),
+      x == 3, y == 2)) %>% 
+  mutate(Case = "-3,-2: Cube at 1")
+
+# Case B: (-3,-3) cube at 2
+case_b <- roll3 %>% 
+  select(x, y, mwc) %>%  
+  filter((x == 1 & y == 3) | (x == 3 & y == 1)) %>% 
+  mutate(emg = c(-1, 1)) %>% 
+  bind_rows(
+    tibble(x = 3, y = 3) %>% 
+      mutate(mwc = gwc2mwc(pwin3, x, y, 4, met),
+             emg = emg(mwc, x, y, 2, met))) %>%
+      mutate(Case = "-3,-3: Cube at 2")
+
+# Case C: (-3,-5) cube at 4
+
+
+
+case_c <- roll3 %>% 
+  select(x, y, mwc) %>%  
+  filter((x == 1 & y == 5) | (x == 3 & y == 1)) %>% 
+  mutate(emg = c(-1, 1)) %>% 
+  bind_rows(
+    tibble(x = 3, y = 3) %>% 
+      mutate(mwc = gwc2mwc(pwin3, x, y, 4, met),
+             emg = emg(mwc, x, y, 2, met))) %>%
+      mutate(Case = "-3,-3: Cube at 2")
+
+df <- bind_rows(case_a, case_b)  
+
+df %>% 
+  ggplot(aes(x = mwc, y = emg, color = Case)) +
+  geom_point() +
+  #geom_point(aes(x = mwc_take, y = emg_take)) +
+  geom_line() +
+  scale_x_continuous(n.breaks = 20)
 ```
 
