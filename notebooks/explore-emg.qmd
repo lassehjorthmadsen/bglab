@@ -209,7 +209,7 @@ roll3 %>%
   geom_vline(xintercept = 0, color = "lightgrey") +
   scale_color_discrete(labels = c("Take", "Drop")) +
   labs(title = "Error from taking an initial double in a three-roll position by match scoe", 
-        subtitle = "Errors measured in emg. Green vertical line shows the money game value",
+        subtitle = "Errors measured in emg. Green vertical line shows the money game error",
         x = "Size of error in emg",
         y = "Match score (taker-needs, doubler-needs)",
        color = "Best action") +
@@ -218,7 +218,7 @@ roll3 %>%
 
 As the chart shows, at six scores the three-roll position is actually a take. The biggest take is, not surprisingly, at (-4,-2) where the non-roller has an automatic redouble that activates exactly the four points needed to win. Also, in some cases, when the non-roller needs two or three points, the high value of those points is enough to turn the position into a take.
 
-The biggest passes are at (-4,-3) and (-2,-2), ignoring that in the later case one player would usually already have double by now. In general, the biggest passes are when the leader needs two, three or four points to win. In these cases, a two-point win is particularly valuable.
+The biggest passes are at (-4,-3) and (-2,-2), ignoring that in the later case one player would usually already have doubled by now. In general, the biggest passes are when the roller needs two, three or four points to win. In these cases, a two-point win is particularly valuable.
 
 In about half of all scores the error from taking is *bigger* than for money, in the other half *smaller*, when we use the emg normalization to compare.
 
@@ -246,15 +246,15 @@ roll3 %>%
   theme(legend.justification = c(1, 0), legend.position = c(1, 0))
 ```
 
-The two plots show similar over-all pattern, but also some differences. Of course, both metrics agree on what scores produce takes; when one is negative the other is also, by definition.
+The two plots show similar over-all patterns, but also some differences. Of course, both metrics agree on what scores produce takes; when one is negative the other is also, by definition.
 
-The mwc-metric has the biggest error at (-2,-2); emg says this honor goes to (-4,-3). In a way, what emg says is this: 'Yeah alright, taking at (-2,-2) is a big mistake. But part of the reason is, that there is so much mwc at stake at that score already. So we should adjust for that.'
+The mwc-metric has the biggest error at (-2,-2); emg says this honor goes to (-4,-3). In a way, what emg says is this: 'Yeah alright, taking at (-2,-2) is a big mistake. But part of the reason is, that there is so much mwc at stake at that score already. Any mistake is bound to be big. So we should adjust for that.'
 
-But should we? It is hard to say. You could argue that *conceptually* the take is a bigger mistake at (-2,-2) because the score is special. Same thing could be said of (-2,-3) and (-3,2) where emg also gives a different ranking.
+But should we? It is hard to say. You could argue that *conceptually* the take is a bigger mistake at (-2,-2) because the score is special. Same thing could be said of (-2,-3) and (-3,-2) where emg also gives a different ranking.
 
 Let's do a few more plots to see if we can nail this better.
 
-This one shows the same date, but plotted differently, with mwc at the x-axis, and emg at the y-axis.
+This one shows the same data, but plotted differently, with mwc at the x-axis, and emg at the y-axis.
 
 ```{r}
 #| fig-height: 5
@@ -264,7 +264,7 @@ roll3 %>%
   filter(x > 1, x < 10, y > 1, y < 10) %>%
   ggplot(aes(x = mwc_diff, y = emg_diff)) +
   geom_point(show.legend = T, aes(color = emg_diff < 0)) +
-  geom_smooth(method = "lm", se = FALSE, color = "lightgray", 
+  geom_smooth(method = "lm", se = FALSE, color = "lightgreen", 
               size = 0.3, formula = y ~ 0 + x) +
   geom_hline(yintercept = 0, color = "lightgrey") +
   geom_vline(xintercept = 0, color = "lightgrey") +
@@ -280,6 +280,11 @@ roll3 %>%
   theme(legend.justification = c(1, 0), legend.position = c(1, 0))
 
 ```
+
+Since the plot shows the same data some of the same things also stand out: (-2,-2) is a bit of an outlier; at (-4,-2) the non-roller has a big take. In general, there's a reasonable correlation between mwc and emg. It's worth pointing out that we don't want a *perfect* correlation: If all points where placed exactly at the light green trend line, then mwc and emg would be equivalent, same thing on different scales, like Fahrenheit and Celsius. The idea is that emg should be different from mwc, more meaningful, more interpretable.
+
+Let's do the same plot but with more scores: All combinations from a  full 25-point match. (We leave out the (-2,-2) oddball, to give more plotting space to the more 'normal' cases.)
+
 
 ```{r}
 #| fig-height: 5
@@ -304,5 +309,10 @@ roll3 %>%
 
 ```
 
+Now, the correlation breaks down. In particular, for the very loop-sided scores like (-25,-2) and (-18,2), the mwc at stake becomes tiny, so the margin by which the take is correct, is also small. At all the loop-sided scores the non-roller appears to have a small take as measured by mwc.
+
+The emg error, on the other hand, is a bit different at (-25,-2) and (-18,-2). Just as emg tries to adjust for scores with a *lot* of mwc at stakes, it also adjust for very *little* mwc at stake, thus magnifying small mwc's.
+
+## Checker play error
 
 
