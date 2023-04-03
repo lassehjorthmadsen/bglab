@@ -21,6 +21,25 @@ take_error = 4 * pwin3 - 1
 theme_set(theme_minimal())
 ```
 
+```{r calculate_roll3}
+#| cache: true
+
+roll3 <- met %>%
+  mutate(cube = 1) %>% 
+  rowwise() %>%
+  mutate(mwc_take = if_else(y > 2 * cube,
+                           gwc2mwc(pwin3, x, y, 2 * cube, met),
+                           gwc2mwc(pwin3, x, y, 4 * cube, met)),
+         mwc_drop = mwc(x, y - cube, met),
+         mwc_diff = mwc_take - mwc_drop,
+         emg_take = emg(mwc_take, x, y, cube, met),
+         emg_diff = emg_take + 1) %>% 
+  ungroup() %>% 
+  mutate(score = paste0("-", x, ",-", y),
+         score = fct_reorder(score, emg_diff)) %>%
+  arrange(-emg_diff)
+```
+
 ## Why This?
 
 This note explores how eXtreme Gammon normalizes mwc, *Match Winning Chances*, to emg, *Equivalent to Money Game*, a metric that is (supposedly) comparable to money game equities.
@@ -110,6 +129,67 @@ It is counter intuitive, however, and you wonder if emg fails after all to be us
 
 We can note, like Bagai did in the paper linked above, that a similar observation can be made when you are being doubled to 8 (in the same three-roll position) at (-3,-5). You can again choose between trailing (-3,-1) with $0.249\ mwc$ or playing for the match with $0.212\ mwc$, which would be a $0.037\ mwc$ error. This time the interval is even wider, so the emg normalized error by taking comes to $`r round(emg(0.21219,3,5,4,met)+1,3)`$. This can be  checked with XG.
 
+We can also do a plot similar to the one Bagai showed, to visualize why the normalizations must necessarily result in different emg-values.
+
+```{r baggai_plot}
+# Case A: (-3,-2) cube at 1
+case_a <- roll3 %>% 
+  select(x, y, mwc) %>%  
+  filter((x == 2 & y == 2) | (x == 3 & y == 1)) %>% 
+  mutate(emg = c(-1, 1)) %>% 
+  bind_rows(
+    roll3 %>% 
+      select(x, y, mwc = mwc_take, emg = emg_take) %>% 
+      filter(x == 3, y == 2) %>% 
+      mutate(label = emg)) %>% 
+  mutate(Case = "-3,-2: Cube at 1")
+
+# Case B: (-3,-3) cube at 2
+case_b <- roll3 %>% 
+  select(x, y, mwc) %>%  
+  filter((x == 1 & y == 3) | (x == 3 & y == 1)) %>% 
+  mutate(emg = c(-1, 1)) %>% 
+  bind_rows(
+    tibble(x = 3, y = 3) %>% 
+      mutate(mwc = gwc2mwc(pwin3, x, y, 4, met),
+             emg = emg(mwc, x, y, 2, met), 
+             label = emg)) %>%
+      mutate(Case = "-3,-3: Cube at 2")
+
+# Case C: (-3,-5) cube at 4
+case_c <- tibble(x = c(3, 0), y = c(1, 5)) %>%
+  mutate(emg = c(-1, 1)) %>% 
+  rowwise() %>% 
+  mutate(mwc = mwc(x, y, met)) %>% 
+  ungroup() %>% 
+  bind_rows(
+    tibble(x = 3, y = 5) %>% 
+      mutate(mwc = gwc2mwc(pwin3, x, y, 8, met),
+             emg = emg(mwc, x, y, 4, met), 
+             label = emg)) %>%
+      mutate(Case = "-3,-5: Cube at 4")
+
+df <- bind_rows(case_a, case_b, case_c)  
+
+df %>% 
+  ggplot(aes(x = mwc, y = emg, color = Case, label = round(label, 2))) +
+  geom_point() +
+  geom_line() +
+  geom_text_repel(size = 3, min.segment.length = .1, direction = "x", nudge_x = .08,
+                   segment.color = "lightgray", show.legend = F) +
+  scale_x_continuous(n.breaks = 20) +
+  labs(title = "How mwc values scale to emg by selected match scores and cube values", 
+        subtitle = "The far left data points are values after double/take in a three-roll position",
+        x = "Match Winning Chance, mwc",
+        y = "Equivalent to Money Game, emg",
+       color = "Case") +
+  theme(legend.justification = c(1, 0), legend.position = c(1, 0))
+```
+
+The plot shows three lines, one for each of the three cases. They all pass through the point where $mwc = 0.25$ and $emg = -1.0$ since losing the cube value in all cases results in (-3,-1) with $mwc = 0.25$. *Winning* the cube value would result in mwc-values of $0.5; 0.75; 1.00$ respectively.
+
+The emg-values obtained by erroneously taking the cube (left-most data points) are all below $-1.0\ emg$ since in all three cases we have a pass. But they cannot be equal, like we might intuitively expect, since the transformation is linear, and the the three lines have different slopes.
+
 ## More scores
 
 Let's look at the size of the error by taking the same three-roll position for more scores, to get a feel for how the emg normalization in general compares to raw mwc. 
@@ -118,24 +198,6 @@ The money benchmark is the error of accepting a three-roll position, which is ea
 
 The chart below shows the size of the error of accepting an initial double in a pure three-roll position, at all pre-crawford scores in a 9-point match. Errors are nomalized to emg, as explained above.
 
-```{r calculate}
-#| cache: true
-
-roll3 <- met %>%
-  mutate(cube = 1) %>% 
-  rowwise() %>%
-  mutate(mwc_take = if_else(y > 2 * cube,
-                           gwc2mwc(pwin3, x, y, 2 * cube, met),
-                           gwc2mwc(pwin3, x, y, 4 * cube, met)),
-         mwc_drop = mwc(x, y - cube, met),
-         mwc_diff = mwc_take - mwc_drop,
-         emg_take = emg(mwc_take, x, y, cube, met),
-         emg_diff = emg_take + 1) %>% 
-  ungroup() %>% 
-  mutate(score = paste0("-", x, ",-", y),
-         score = fct_reorder(score, emg_diff)) %>%
-  arrange(-emg_diff)
-```
 
 ```{r emg_plot}
 #| fig-height: 7.4
@@ -153,6 +215,14 @@ roll3 %>%
        color = "Best action") +
   theme(legend.justification = c(1, 0), legend.position = c(1, 0))
 ```
+
+As the chart shows, at six scores the three-roll position is actually a take. The biggest take is, not surprisingly, at (-4,-2) where the non-roller has an automatic redouble that activates exactly the four points needed to win. Also, in some cases, when the non-roller needs two or three points, the high value of those points is enough to turn the position into a take.
+
+The biggest passes are at (-4,-3) and (-2,-2), ignoring that in the later case one player would usually already have double by now. In general, the biggest passes are when the leader needs two, three or four points to win. In these cases, a two-point win is particularly valuable.
+
+In about half of all scores the error from taking is *bigger* than for money, in the other half *smaller*, when we use the emg normalization to compare.
+
+But we really wanted to figure out if the emg normalization was a good or a bad idea to begin with. So let's show a similar plot with emg and mwc errors side-by-side:
 
 ```{r emg_mwc_plot}
 #| fig-height: 7.4
@@ -175,6 +245,16 @@ roll3 %>%
        color = "Best action") +
   theme(legend.justification = c(1, 0), legend.position = c(1, 0))
 ```
+
+The two plots show similar over-all pattern, but also some differences. Of course, both metrics agree on what scores produce takes; when one is negative the other is also, by definition.
+
+The mwc-metric has the biggest error at (-2,-2); emg says this honor goes to (-4,-3). In a way, what emg says is this: 'Yeah alright, taking at (-2,-2) is a big mistake. But part of the reason is, that there is so much mwc at stake at that score already. So we should adjust for that.'
+
+But should we? It is hard to say. You could argue that *conceptually* the take is a bigger mistake at (-2,-2) because the score is special. Same thing could be said of (-2,-3) and (-3,2) where emg also gives a different ranking.
+
+Let's do a few more plots to see if we can nail this better.
+
+This one shows the same date, but plotted differently, with mwc at the x-axis, and emg at the y-axis.
 
 ```{r}
 #| fig-height: 5
@@ -224,51 +304,5 @@ roll3 %>%
 
 ```
 
-```{r}
 
-# Case A: (-3,-2) cube at 1
-case_a <- roll3 %>% 
-  select(x, y, mwc) %>%  
-  filter((x == 2 & y == 2) | (x == 3 & y == 1)) %>% 
-  mutate(emg = c(-1, 1)) %>% 
-  bind_rows(
-    filter(
-      select(roll3, x, y, mwc = mwc_take, emg = emg_take),
-      x == 3, y == 2)) %>% 
-  mutate(Case = "-3,-2: Cube at 1")
-
-# Case B: (-3,-3) cube at 2
-case_b <- roll3 %>% 
-  select(x, y, mwc) %>%  
-  filter((x == 1 & y == 3) | (x == 3 & y == 1)) %>% 
-  mutate(emg = c(-1, 1)) %>% 
-  bind_rows(
-    tibble(x = 3, y = 3) %>% 
-      mutate(mwc = gwc2mwc(pwin3, x, y, 4, met),
-             emg = emg(mwc, x, y, 2, met))) %>%
-      mutate(Case = "-3,-3: Cube at 2")
-
-# Case C: (-3,-5) cube at 4
-
-
-
-case_c <- roll3 %>% 
-  select(x, y, mwc) %>%  
-  filter((x == 1 & y == 5) | (x == 3 & y == 1)) %>% 
-  mutate(emg = c(-1, 1)) %>% 
-  bind_rows(
-    tibble(x = 3, y = 3) %>% 
-      mutate(mwc = gwc2mwc(pwin3, x, y, 4, met),
-             emg = emg(mwc, x, y, 2, met))) %>%
-      mutate(Case = "-3,-3: Cube at 2")
-
-df <- bind_rows(case_a, case_b)  
-
-df %>% 
-  ggplot(aes(x = mwc, y = emg, color = Case)) +
-  geom_point() +
-  #geom_point(aes(x = mwc_take, y = emg_take)) +
-  geom_line() +
-  scale_x_continuous(n.breaks = 20)
-```
 
