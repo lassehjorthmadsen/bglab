@@ -123,7 +123,7 @@ Inspecting the emg formula, it isn't that hard to figure out: The $0.037\ mwc$ e
 
 It is counter intuitive, however, and you wonder if emg fails after all to be useful for comparing errors across scores, and between match play and money games.
 
-On the other hand: Perhaps this is exactly what we want emg to do: A $0.037\ mwc$ error is easier to make at the end of the match, and should count as heavily. Just like a \$1 mistake is small when playing for \$100 per point, but big when playing for \$2 per point.
+On the other hand: Perhaps this is exactly what we want emg to do: A $0.037\ mwc$ error is easier to make at the end of the match, and therefore perhaps shouldn't count as heavily. Just like a \$1 mistake is small when playing for \$100 per point, but big when playing for \$2 per point.
 
 We can note, like Bagai did in his [paper](http://www.fortuitouspress.com/emg), that a similar observation can be made when you are being doubled to 8 (in the same three-roll position) at (-3,-5). You can again choose between trailing (-3,-1) with $0.249\ mwc$ or playing for the match with $0.212\ mwc$, which would be a $0.037\ mwc$ error. This time the interval is even wider, so the emg normalized error by taking comes to $`r round(emg(0.21219,3,5,4,met)+1,3)`$. This can be checked with XG.
 
@@ -186,7 +186,7 @@ df %>%
 
 The plot shows three lines, one for each of the three cases. They all pass through the point where $mwc = 0.25$ and $emg = -1.0$ since losing the cube value in all cases results in (-3,-1) with $mwc = 0.25$. *Winning* the cube value would result in mwc-values of $0.5; 0.75; 1.00$ respectively.
 
-The emg-values obtained by erroneously taking the cube (left-most data points) are all below $-1.0\ emg$ since in all three cases we have a pass. But they cannot be equal, like we might intuitively expect, since the transformation is linear, and the the three lines have different slopes.
+The emg-values obtained by erroneously taking the cube (left-most data points) are all below $-1.0\ emg$ since in all three cases we have a pass. But they cannot be equal, like we might intuitively expect, since the transformation is linear, and the three lines have different slopes.
 
 ## More scores
 
@@ -195,6 +195,8 @@ Let's look at the size of the error by taking the same three-roll position for m
 The money benchmark is the error of accepting a three-roll position, which is easy to calculate, since for money there can't be any proper recubes. The three-roll position has an expected money game value of $E = 2P(w) - 1 = -0.576$ for the non-roller. So after accepting an initial double, the non-roller faces an average loss of $2\times `r round(2*pwin3 - 1, 3)`=`r round(4*pwin3 - 2, 3)`$ and the position is a money pass, since the loss of one point is just $-1$. The size of the take error is $`r round(4*pwin3 - 2, 3) + 1`$ (times the cube, times the stake, if you want the loss in real money).
 
 The chart below shows the size of the error of accepting an initial double in a pure three-roll position, at all pre-crawford scores in a 9-point match. Errors are nomalized to emg, as explained above.
+
+(Note that on the x-axis, negative values are the real errors; a positive value is the margin by which the take is correct.)
 
 ```{r emg_plot}
 #| fig-height: 7.4
@@ -325,9 +327,11 @@ For money, 3/1 would be a $-0.306 + 0.212 = -0.094$ error.
 
 At double match point, 3/1 would be a $0.347 - 0.394 = -0.047\ mwc$ error.
 
-Since 6/4 of course would be correct at all scores, and it is fair to say that 3/1 is the same conceptual error at all scores, we would like the emg transformation to produce the same value, no matter what score. One way to think of this: Suppose you're browsing your matches for bear-off checker play errors, in order to fine tune your skill in that department. Then you would like to flag errors both early and late in the match. Playing 3/1 shouldn't be disregarded as an error, just because it happened at (-25,-25) rather that at (-1,-1).
+Since 6/4 of course would be correct at all scores, and it is fair to say that 3/1 is the same conceptual error at all scores, we would like the emg transformation to produce the same value, no matter the score. One way to think of this: Suppose you're browsing your matches for bear-off checker play errors, in order to fine tune your skill in that department. Then you would like to flag errors both early and late in the match. But the mwc-error from playing 3/1 at (-1,-1) is *16 times* bigger than at (-25,-25).
 
-To achieve this, we really need some kind of normalization; looking at mwc will tend to miss errors early in a long match.
+It's reasonable to think that playing 3/1 shouldn't be disregarded as an error, just because it happened at (-25,-25) rather that at (-1,-1).
+
+To achieve this, we really need *some* kind of normalization; looking at mwc will tend to miss errors early in a long match.
 
 Does emg work for this purpose? I think it should, based on the plots and formulas above, but just in case I'm missing something, let's try to calculate the size of the error of playing 3/1 at all scores, in emg and in mwc:
 
