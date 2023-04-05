@@ -52,13 +52,13 @@ In match play, the natural unit of measurement is match winning chances, mwc. Fo
 
 The $mwc$ at stake varies by score. At double match point, a one point gain is worth $0.5\ mwc$, the difference between an even game, $mwc=0.50$ and a sure victory, $mwc=1.00$. At the beginning of a 17-point match one point is worth only about $0.04\ mwc$.
 
-In a sense, double match point is like playing for 10\$ per point, compared to 0.8\$ per point at the beginning of the match.
+In a sense, double match point is like playing for \$10 per point, compared to \$0.8 per point at the beginning of the match.
 
 Also, the value of one point is different for the leader and the trailer; at (-3,-2) one point is worth $0.10\ mwc$ for the trailer but $0.15\ mwc$ for the leader.
 
 ## EMG normalization
 
-As mentioned, in money game we often like to compare errors without considering the level of the cube and the stakes. We rarely say things like "Taking that three-roll position cost me about 4.5\$ because the cube was at 4 and we played for 10\$ per point." It is more common to say that the take is a 0.15 error.
+As mentioned, in money game we often like to compare errors without considering the level of the cube and the stakes. We rarely say things like "Taking that three-roll position cost me about \$4.5 because the cube was at 4 and we played for \$10 per point." It is more common to say that the take is a 0.15 error.
 
 This way, we can compare *conceptual* errors by abstracting away the specifics. If you would like the actual cost of taking, you would multiply the 0.15 error by the cube value and the stakes.
 
@@ -207,7 +207,7 @@ roll3 %>%
   geom_vline(xintercept = take_error, color = "lightgreen") +
   geom_vline(xintercept = 0, color = "lightgrey") +
   scale_color_discrete(labels = c("Take", "Drop")) +
-  labs(title = "Error from taking an initial double in a three-roll position by match scoe", 
+  labs(title = "Error from taking an initial double in a three-roll position by match score", 
         subtitle = "Errors measured in emg. Green vertical line shows the money game error",
         x = "Size of error in emg",
         y = "Match score (taker-needs, doubler-needs)",
@@ -272,7 +272,7 @@ roll3 %>%
                   max.overlaps = 15) +
   scale_color_discrete(labels = c("Take", "Drop")) +
   labs(title = "Error from taking an initial double in a three-roll position by match score", 
-        subtitle = "9-point match. Errors measured in mwc plottet against emg",
+        subtitle = "9-point match. Errors measured in mwc plotted against emg",
         x = "Size of error in mwc",
         y = "Size of error in emg",
        color = "Best action") +
@@ -306,7 +306,7 @@ roll3 %>%
   theme(legend.justification = c(1, 0), legend.position = c(1, 0))
 ```
 
-Now, the correlation breaks down. In particular, for the very loop-sided scores like (-25,-2) and (-18,2), the mwc at stake becomes tiny, so the margin by which the take is correct, is also small. At all the loop-sided scores the non-roller appears to have a small take as measured by mwc.
+Now, the correlation breaks down. In particular, for the very lopsided scores like (-25,-2) and (-18,2), the mwc at stake becomes tiny, so the margin by which the take is correct, is also small. At all the lopsided scores the non-roller appears to have a small take as measured by mwc.
 
 The emg error, on the other hand, is a bit different at (-25,-2) compared to (-18,-2) for example. Just as emg tries to adjust for scores with a *lot* of mwc at stakes, it also adjust for very *little* mwc at stake, thus magnifying small mwc's.
 
@@ -369,7 +369,7 @@ play1 %>%
                   max.overlaps = Inf, direction = "y") +
   scale_y_continuous(limits = c(-0.1, -0.085)) +
   labs(title = "Error from playing the wrong ace in toy example of last-roll bear off", 
-        subtitle = "25-point match. Errors measured in mwc plottet against emg",
+        subtitle = "25-point match. Errors measured in mwc plotted against emg",
         x = "Size of error in mwc",
         y = "Size of error in emg")
 ```
@@ -384,7 +384,7 @@ As expected, emg normalizes the error of playing 3/1 to $`r round(money_diff, 4)
 
     -   If you want to identify the five errors in a match that could reflect mis-evaluating the position, use emg. As the last-roll example shows, this allows you to compare similar conceptual errors across scores.
 
--   Be careful of using emg for cube errors, the results can be surprising, although it is a bit unclear if they should be considered outright misleading.
+-   Be careful of using emg for comparing cube errors across different scores, the results can be surprising, although it is a bit unclear if they should be considered outright misleading.
 
 -   Can we do a better normalization than the current emg? The thought that comes to mind, is to use a bigger interval of mwc, like the loss or win of *two* time the cube and still scale that to $[-1;+1]$. But that requires a bit more thought. Anyway, practically speaking, we're likely pretty much stuck with the way XG implements emg.
 
