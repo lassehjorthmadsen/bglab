@@ -49,7 +49,7 @@ mwc <- function(a, b, met) {
     } else if (b <= 0) {
     win <- 0
     } else {
-    win <- met %>% filter(.$x == a, .$y == b) %>% pull(mwc)
+    win <- met[a, b]
   }
 
   return(win)
@@ -72,11 +72,10 @@ get_met <- function(filename = "data-raw\\Kazaross XG2.met") {
 
   met <- bind_rows(top9, rest) %>%
     mutate(`1` = str_remove(`1`, "^.+=")) %>%
-    pivot_longer(cols = everything(), names_to = "y", values_to = "mwc") %>%
-    mutate(x = sort(rep(1:25, 25)),
-           y = as.integer(y),
-           mwc = as.numeric(mwc)) %>%
-    select(x, y, mwc) %>%
-    arrange(y, x)
+    mutate(across(everything(), as.numeric)) %>%
+    as.matrix()
 
+  rownames(met) <- colnames(met)
+
+  return(met)
 }

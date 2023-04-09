@@ -24,8 +24,14 @@ theme_set(theme_minimal())
 ```{r calculate_roll3}
 #| cache: true
 
-roll3 <- met %>%
-  mutate(cube = 1) %>% 
+roll3 <- met %>% 
+  as_tibble() %>% 
+  pivot_longer(cols = everything(), names_to = "y", values_to = "mwc") %>% 
+  mutate(x = sort(rep(1:25, 25)),
+         y = as.integer(y),
+         cube = 1) %>%
+  select(x, y, mwc, cube) %>%
+  arrange(y, x) %>% 
   rowwise() %>%
   mutate(mwc_take = if_else(y > 2 * cube,
                            gwc2mwc(pwin3, x, y, 2 * cube, met),
@@ -343,8 +349,13 @@ pwin_b <- 5/6 * 15/36
 money_diff = 2 * (pwin_b - pwin_a)
 
 play1 <- met %>%
-  mutate(cube = 1,
-         money_diff = money_diff) %>% 
+  as_tibble() %>% 
+  pivot_longer(cols = everything(), names_to = "y", values_to = "mwc") %>% 
+  mutate(x = sort(rep(1:25, 25)),
+         y = as.integer(y),
+         cube = 1,
+         money_diff = money_diff) %>%
+  select(x, y, mwc, cube, money_diff) %>% 
   rowwise() %>%
   mutate(mwc_a = gwc2mwc(pwin_a, x, y, cube, met),
          mwc_b = gwc2mwc(pwin_b, x, y, cube, met),
