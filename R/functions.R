@@ -20,13 +20,13 @@ emg <- function(mwc, a, b, cube, met) {
 
 #' Calculate match winning chance from game winning chances
 #'
-#' @param pwin
-#' @param a
-#' @param b
-#' @param cube
-#' @param met
+#' @param pwin game winning chances (cubeless)
+#' @param a number of points that player needs
+#' @param b number of points that opponent needs
+#' @param cube cube value
+#' @param met match equity table
 #'
-#' @return
+#' @return double
 #' @export
 #'
 gwc2mwc <- function(pwin, a, b, cube, met) {
@@ -36,11 +36,11 @@ gwc2mwc <- function(pwin, a, b, cube, met) {
 
 #'  Look up match winning chances at different scores
 #'
-#' @param a
-#' @param b
-#' @param met
+#' @param a number of points that player needs
+#' @param b number of points that opponent needs
+#' @param met match equity table
 #'
-#' @return
+#' @return double. Match winning chance
 #' @export
 #'
 mwc <- function(a, b, met) {
@@ -60,19 +60,22 @@ mwc <- function(a, b, met) {
 #'
 #' @param filename file location
 #'
-#' @return data frame
+#' @return matrix
+#'
+#' @importFrom rlang .data
+#'
 #' @export
 #'
 get_met <- function(filename = "data-raw\\Kazaross XG2.met") {
 
-  top9 <- read_delim(filename, skip = 12, delim = " ", n_max =  9, col_names = as.character(0:25), col_types = list(.default = "c")) %>%
-    select(-`0`)
+  top9 <- readr::read_delim(filename, skip = 12, delim = " ", n_max =  9, col_names = as.character(0:25), col_types = list(.default = "c")) %>%
+    dplyr::select(-.data$`0`)
 
-  rest <- read_delim(filename, skip = 21, delim = " ", n_max = 16, col_names = as.character(1:25), col_types = list(.default = "c"))
+  rest <- readr::read_delim(filename, skip = 21, delim = " ", n_max = 16, col_names = as.character(1:25), col_types = list(.default = "c"))
 
-  met <- bind_rows(top9, rest) %>%
-    mutate(`1` = str_remove(`1`, "^.+=")) %>%
-    mutate(across(everything(), as.numeric)) %>%
+  met <- dplyr::bind_rows(top9, rest) %>%
+    dplyr::mutate(`1` = stringr::str_remove(.data$`1`, "^.+=")) %>%
+    dplyr::mutate(dplyr::across(dplyr::everything(), as.numeric)) %>%
     as.matrix()
 
   rownames(met) <- colnames(met)
