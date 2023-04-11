@@ -1,0 +1,91 @@
+---
+title: "Match Equity Precison"
+author: "Lasse Hjorth Madsen"
+date: today 
+format: html
+toc: true
+editor: visual
+execute:
+  echo: false
+  warning: false
+---
+
+```{r setup}
+library(tidyverse)
+devtools::load_all()
+
+theme_set(theme_minimal() +
+  theme(legend.position = c(1, 1), legend.justification = c(1, 1), legend.background = element_rect(fill = "white", color = NA)))
+
+met <- get_met(filename = "..\\data-raw\\Kazaross XG2.met")
+
+tp <- met %>% 
+  as_tibble() %>% 
+  pivot_longer(cols = everything(), names_to = "y", values_to = "mwc") %>% 
+  mutate(x = sort(rep(1:25, 25)),
+         y = as.integer(y),
+         cube = 1) %>%
+  select(x, y, mwc, cube) %>%
+  expand_grid(., precision = 2:6) %>% 
+  rowwise() %>% 
+  mutate(`Take point` = tp(x, y, cube, FALSE, round(met, precision))) %>% 
+  ungroup()
+```
+
+## Why This?
+
+## Example
+
+## Plot
+
+```{r}
+tp %>% 
+  filter(x %in% c(17), y > 1, precision == 6) %>% 
+  ggplot(aes(x = y, y = `Take point`, color = fct_rev(factor(x)), group = x)) +
+  scale_x_continuous(breaks = 2:25, minor_breaks = 2:25) +
+  scale_y_continuous(breaks = seq(0.15, 0.36, 0.01), minor_breaks = NULL) +
+  geom_point() +
+  geom_line() +
+  labs(x = "Opponent needs", color = "Player needs") 
+```
+
+```{r}
+tp %>% 
+  filter(x %in% c(2, 3, 4, 17, 25), y > 1, precision == 6) %>% 
+  ggplot(aes(x = y, y = `Take point`, color = fct_rev(factor(x)), group = x)) +
+  scale_x_continuous(breaks = 2:25, minor_breaks = 2:25) +
+  scale_y_continuous(breaks = seq(0.15, 0.36, 0.01), minor_breaks = NULL) +
+  geom_point() +
+  geom_line() +
+  labs(x = "Opponent needs", color = "Player needs") 
+```
+
+```{r}
+tp %>% 
+  filter(x %in% c(17), y > 3) %>% 
+  ggplot(aes(x = y, y = `Take point`, color = factor(precision), group = precision)) +
+  scale_x_continuous(breaks = 2:25, minor_breaks = 2:25) +
+  scale_y_continuous(breaks = seq(0.15, 0.36, 0.01), minor_breaks = NULL) +
+  geom_point() +
+  geom_line() +
+  labs(title = "Take points at 17-away",
+       subtitle = "by opponent's score and number of digits used for match equities",
+       x = "Opponent needs", color = "No. of digits") 
+```
+```{r}
+tp %>% 
+  filter(x %in% c(2, 3, 4, 5, 7, 10, 12, 14, 17, 20, 25), 
+         y > 3, `Take point` > 0, `Take point` < 0.5) %>%
+  mutate(x = factor(x),
+         x = paste("Player needs: ", x)) %>% 
+    ggplot(aes(x = y, y = `Take point`, color = factor(precision), group = precision)) +
+  facet_wrap(facets = vars(x)) +
+  geom_point() +
+  geom_line() +
+  labs(title = "Take points at 17-away",
+       subtitle = "by opponent's score and number of digits used for match equities",
+       x = "Opponent needs", 
+       color = "No. of digits") +
+  theme(legend.position = c(1, -0.1), legend.justification = c(1, 0)) +
+  guides(colour = guide_legend(ncol = 2))
+```

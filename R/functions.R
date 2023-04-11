@@ -56,6 +56,36 @@ mwc <- function(a, b, met) {
 }
 
 
+#' Calculate cubeless, gammonless take points at different scores
+#'
+#' @param a number of points that player needs
+#' @param b number of points that opponent needs
+#' @param cube cube value (before doubling)
+#' @param last_roll treat this as a last roll position; no automatic redouble available
+#' @param met match equity table
+#'
+#' @return double. Take point
+#' @export
+#'
+tp <- function(a, b, cube, last_roll = FALSE, met) {
+
+  if (!last_roll & b <= 2 * cube) {
+    multiply <- 4
+  } else {
+    multiply <- 2
+  }
+
+  drop <- mwc(a, b - cube, met)
+  takewin <- mwc(a - multiply * cube, b, met)
+  takelose <- mwc(a, b - multiply * cube, met)
+
+  gain <- takewin - drop
+  loss <- drop - takelose
+
+  return(loss / (loss + gain))
+}
+
+
 #' Get match equity table from *.met file (used by Extreme Gammon)
 #'
 #' @param filename file location
