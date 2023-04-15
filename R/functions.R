@@ -67,12 +67,12 @@ mwc <- function(a, b, met) {
 #' @return double. Take point
 #' @export
 #'
-tp <- function(a, b, cube, last_roll = FALSE, met) {
+tp <- function(a, b, cube, met, last_roll = FALSE) {
 
   if (!last_roll & b <= 2 * cube) {
-    multiply <- 4
+    multiply <- 4 # We have an automatic recube
   } else {
-    multiply <- 2
+    multiply <- 2 # The cube value will be double if we take
   }
 
   drop <- mwc(a, b - cube, met)

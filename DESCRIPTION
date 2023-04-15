@@ -1,18 +1,22 @@
 Package: backgammon
-Title: Contains Various Notebooks Related To Backgammon Theory
+Title: Various Notebooks Related To Backgammon Theory
 Version: 0.0.0.9000
 Authors@R: 
     person("Lasse", "Hjorth Madsen", , "lassehjorthmadsen@gmail.com", role = c("aut", "cre"))
-Description: Hopefully a growing collection of notebooks with analysis, positions, useful functions, match equity tables and more that I use for backgammon analysis.
+Description: Hopefully a growing collection of notebooks with analysis,
+    positions, useful functions, match equity tables and more that I use
+    for backgammon analysis.
 License: MIT + file LICENSE
-Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
 Imports: 
     dplyr,
+    ggplot2,
     magrittr,
+    purrr,
     readr,
     rlang,
     stringr
 Suggests: 
     rmarkdown
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
