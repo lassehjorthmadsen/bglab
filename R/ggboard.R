@@ -7,6 +7,8 @@
 #' @example
 #' ggboard("XGID=-b----E-C---eE---c-e----B-:0:0:1:64:0:0:0:7:10")
 #'
+#' @importFrom ggforce geom_circle
+#'
 #' @export
 ggboard <- function(xgid) {
 
@@ -59,3 +61,63 @@ show_points <- function(bearoff = "right") {
                                labels = c(12, 11, 10, 9, 8, 7, "", 6, 5, 4, 3, 2, 1 ))
   return(points)
 }
+
+
+show_checkers <-  function(xgid, bearoff = "right", player_color = "black") {
+
+    if (nchar(xgid) != 51) stop("XGID does not contain exactly 51 characters")
+
+    # Init vars to populate
+    x <- NULL
+    y <- NULL
+    player <- NULL
+
+    # x-coordinates for each point
+    x_coord <- rep(NULL, 26)
+    x_coord[2:7] <- ((2:7) - 2) * 2/26
+    x_coord[8:13] <- ((8:13) - 1) * 2/26
+    x_coord[14:19] <- ((13:8) - 1) * 2/26
+    x_coord[20:25] <- ((7:2) - 2) * 2/26
+    x_coord[c(1,26)] <- 12/26
+
+    # y-coordinates for bottom and top points
+    y_coord_bottom <- seq(0, 4/11, 1/11)
+    y_coord_top <- seq(10/11, 6/11, -1/11)
+
+    # Loop over all 26 points (#1 is our bar, #26 is opp's bar)
+    for (i in seq(1, 26)) {
+      entry <- substr(xgid, i + 5, i + 5)
+
+      if (entry != "-") {
+        player_checkers <- match(entry, LETTERS)
+        opponent_checkers <- match(entry, letters)
+        no_checkers <- coalesce(player_checkers, opponent_checkers)
+
+        if (is.na(no_checkers)) stop(paste("Illegal character found in XGID string: ", entry))
+
+        x_point <- rep(x_coord[i], no_checkers)
+
+        y_point <- case_when(i < 14 ~ y_coord_bottom[1:no_checkers],
+                             i > 13 ~ y_coord_top[1:no_checkers])
+
+        p_point <-  rep(if_else(is.na(player_checkers), "top", "bottom"), no_checkers)
+
+
+        x <-  c(x, x_point)
+        y <-  c(y, y_point)
+        player <- c(player, p_point)
+        }
+    }
+
+    df <- tibble(x = x, y = y, player = player)
+    return(df)
+}
+
+library(tidyverse)
+library(ggforce)
+
+df <- show_checkers(xgid = xgid)
+
+df %>% ggplot() +
+  geom_circle(aes(x0 = x, y0 = y, fill = player, r = 1/22), show.legend = F) +
+  theme_void()
