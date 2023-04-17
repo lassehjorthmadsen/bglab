@@ -8,6 +8,7 @@
 #' ggboard("XGID=-b----E-C---eE---c-e----B-:0:0:1:64:0:0:0:7:10")
 #' ggboard("XGID=-a-B--E-B-a-dDB--b-bcb----:1:1:-1:63:0:0:0:3:8")
 #' ggboard("XGID=-a-B--E-B-a-dDB--b-bcb----:1:1:-1:63:0:0:0:3:8", bearoff = "left)
+#' ggboard("XGID=-a-a-BCBC---cC---cbd-Ba---:1:-1:1:00:0:0:0:7:10")
 #'
 #' @importFrom ggforce geom_circle
 #'
@@ -24,6 +25,8 @@ ggboard <- function(xgid, bearoff = "right") {
     show_border() +
     show_numbers(bearoff) +
     show_checkers(xgid) +
+    show_cube(xgid, bearoff) +
+    #show_cube_value(xgid, bearoff) +
     coord_fixed() +
     ggplot2::scale_fill_manual(values = c("white", "darkgrey", "black", "lightgrey")) +
     ggplot2::theme_void()
@@ -64,19 +67,36 @@ show_bar <- function() {
 }
 
 
-show_cube <- function(xgid) {
+show_cube <- function(xgid, bearoff) {
+  ratio <- 11/13 # Board is 11 checkers high, 13 checkers wide. Move to global env?
 
-  cube = substr(xgid, 33, 33) %>% as.numeric()
-  cube_position = substr(xgid, 35, 35) %>% as.numeric()
+  cube_size <- 0.08
+  cube_position = substr(xgid, 35, 36) %>% str_remove(":") %>% as.numeric()
 
-  cube_value = 2^cube
+  y_position <- 10/22 * ratio + cube_position * -10/22 * ratio
+
+  ggplot2::geom_rect(ggplot2::aes(xmin = -0.01 - cube_size,
+                                  xmax = -0.01,
+                                  ymin = y_position,
+                                  ymax = y_position + cube_size),
+                     color = "darkgrey",
+                     fill = "white",
+                     linejoin = "round")
+}
+
+
+show_cube_value <- function(xgid, bearoff) {
+
+  cube_value = substr(xgid, 33, 33) %>% as.numeric()
+  cube_value = 2^cube_value
   if (cube_value == 1) cube_value <-64
 
+  cube_position = substr(xgid, 35, 36) %>% str_remove(":") %>% as.numeric()
   y_position <- -0.5 * cube_position + 0.5
 
+
   ggplot2::geom_label(ggplot2::aes(x = -0.06, y = y_position, label = cube_value),
-                      size = 4,  color = "black", label.padding = ggplot2::unit(2, "mm"),
-                      label.size = 0.5, label.r = ggplot2::unit(0.75, "mm"))
+                      size = 4,  color = "black")
 }
 
 
@@ -101,8 +121,16 @@ show_numbers <- function(bearoff = "right") {
 }
 
 
-show_checkers <-  function(xgid, bearoff = "right", player_color = "black") {
-  if (nchar(xgid) != 51) stop("XGID does not contain exactly 51 characters")
+show_checkers <-  function(xgid, bearoff = "right") {
+  df <- xgid2df(xgid)
+  ggforce::geom_circle(mapping = ggplot2::aes(x0 = x, y0 = y, fill = player, r = 1/26),
+                       show.legend = F, inherit.aes = F, data = df)
+  }
+
+
+xgid2df <- function(xgid) {
+
+  if (nchar(xgid) < 51) stop("xgid string does not contain at least 51 characters")
 
   ratio <- 11/13 # Board is 11 checkers high, 13 checkers wide. Move to global env?
 
@@ -145,14 +173,13 @@ show_checkers <-  function(xgid, bearoff = "right", player_color = "black") {
       x <-  c(x, x_point)
       y <-  c(y, y_point)
       player <- c(player, p_point)
-      }
+    }
   }
 
   df <- tibble(x = x, y = y, player = player)
 
-  ggforce::geom_circle(mapping = ggplot2::aes(x0 = x, y0 = y, fill = player, r = 1/26),
-                       show.legend = F, inherit.aes = F, data = df)
-  }
+  return(df)
+}
 
 
 flip_xgid <- function(xgid) {
