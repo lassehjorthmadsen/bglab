@@ -7,11 +7,14 @@
 #' @examples
 #' ggboard("XGID=-b----E-C---eE---c-e----B-:0:0:1:64:0:0:0:7:10")
 #' ggboard("XGID=-a-B--E-B-a-dDB--b-bcb----:1:1:-1:63:0:0:0:3:8")
+#' ggboard("XGID=-a-B--E-B-a-dDB--b-bcb----:1:1:-1:63:0:0:0:3:8", bearoff = "left)
 #'
 #' @importFrom ggforce geom_circle
 #'
 #' @export
 ggboard <- function(xgid, bearoff = "right") {
+
+  if (bearoff == "left") xgid <- flip_xgid(xgid)
 
   position <- ggplot() +
     show_points() +
@@ -22,7 +25,7 @@ ggboard <- function(xgid, bearoff = "right") {
     show_numbers(bearoff) +
     show_checkers(xgid) +
     coord_fixed() +
-    ggplot2::scale_fill_manual(values = c("black", "darkgrey", "white", "lightgrey")) +
+    ggplot2::scale_fill_manual(values = c("white", "darkgrey", "black", "lightgrey")) +
     ggplot2::theme_void()
 
   return(position)
@@ -83,9 +86,9 @@ show_numbers <- function(bearoff = "right") {
   x <- rep(0:12  * 2/26 + 1/26, 2)
   y <- c(rep(-0.02, 13), rep(ratio + 0.03, 13))
 
-  if (bearoff == "right") {
+  if (bearoff == "left") {
     label <- as.character(c(1:6, NA, 7:12, 24:19, NA, 18:13))
-  } else if  (bearoff == "left") {
+  } else if  (bearoff == "right") {
     label = as.character(c(12:7, NA, 6:1, 13:18, NA, 19:24))
   } else {
     stop("bearoff parameter must be either 'right' or 'left'")
@@ -110,10 +113,10 @@ show_checkers <-  function(xgid, bearoff = "right", player_color = "black") {
 
   # x-coordinates for each point
   x_coord <- rep(NULL, 26)
-  x_coord[2:7] <- ((2:7) - 2) * 2/26 + 1/26
-  x_coord[8:13] <- ((8:13) - 1) * 2/26 + 1/26
-  x_coord[14:19] <- ((13:8) - 1) * 2/26 + 1/26
-  x_coord[20:25] <- ((7:2) - 2) * 2/26 + 1/26
+  x_coord[2:7]     <- 13:8 * 2/26 - 1/26
+  x_coord[8:19]    <- 5:0 * 2/26 + 1/26
+  x_coord[14:19]   <- 0:5 * 2/26 + 1/26
+  x_coord[20:25]   <- 8:13 * 2/26 - 1/26
   x_coord[c(1,26)] <- 12/26 + 1/26
 
   # y-coordinates for bottom and top points
@@ -150,3 +153,11 @@ show_checkers <-  function(xgid, bearoff = "right", player_color = "black") {
   ggforce::geom_circle(mapping = ggplot2::aes(x0 = x, y0 = y, fill = player, r = 1/26),
                        show.legend = F, inherit.aes = F, data = df)
   }
+
+
+flip_xgid <- function(xgid) {
+  substr(xgid, 7, 18)  <- stringi::stri_reverse(substr(xgid, 7, 18))
+  substr(xgid, 19, 30) <- stringi::stri_reverse(substr(xgid, 19, 30))
+
+  return(xgid)
+}
