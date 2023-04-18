@@ -67,7 +67,7 @@ show_bar <- function() {
 }
 
 
-show_cube <- function(xgid, bearoff) {
+show_cube <- function(xgid) {
   ratio <- 11/13 # Board is 11 checkers high, 13 checkers wide. Move to global env?
 
   cube_size <- 0.08
@@ -85,7 +85,7 @@ show_cube <- function(xgid, bearoff) {
 }
 
 
-show_cube_value <- function(xgid, bearoff) {
+show_cube_value <- function(xgid) {
 
   cube_value = substr(xgid, 33, 33) %>% as.numeric()
   cube_value = 2^cube_value
