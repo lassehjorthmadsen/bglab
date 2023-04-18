@@ -68,7 +68,7 @@ show_cube <- function(xgid) {
   ratio <- 11/13 # Board is 11 checkers high, 13 checkers wide. Move to global env?
 
   cube_size <- 0.09
-  cube_position <- str_split(xgid, ":")[[1]][3] %>% as.numeric()
+  cube_position <- stringr::str_split(xgid, ":")[[1]][3] %>% as.numeric()
 
   y_position <- 10/22 * ratio + cube_position * - 10/22 * ratio
 
@@ -86,16 +86,16 @@ show_cube <- function(xgid) {
 show_cube_value <- function(xgid) {
   ratio <- 11/13 # Board is 11 checkers high, 13 checkers wide. Move to global env?
 
-  cube_value <- str_split(xgid, ":")[[1]][2] %>% as.numeric()
+  cube_value <- stringr::str_split(xgid, ":")[[1]][2] %>% as.numeric()
   cube_value <- 2^cube_value
   if (cube_value == 1) cube_value <-64
 
-  cube_position <- str_split(xgid, ":")[[1]][3] %>% as.numeric()
+  cube_position <- stringr::str_split(xgid, ":")[[1]][3] %>% as.numeric()
 
   y_position <- 10/22 * ratio + cube_position * - 10/22 * ratio
 
   ggplot2::geom_text(ggplot2::aes(x = -0.05, y = y_position, label = cube_value),
-                     size = rel(5.5),  color = "black", vjust = 0,
+                     size = ggplot2::rel(5.5),  color = "black", vjust = 0,
                      nudge_y = 0.025, nudge_x = -0.005)
 }
 
