@@ -4,14 +4,20 @@
 \alias{ggboard}
 \title{Display a backgammon diagram from an eXtreme Gammon id}
 \usage{
-ggboard(xgid)
+ggboard(xgid, bearoff = "right")
 }
 \arguments{
 \item{xgid}{character}
+
+\item{bearoff}{character. Side to bear off from. Either "right" (default) or "left"}
 }
 \value{
 ggplot object
 }
 \description{
 Display a backgammon diagram from an eXtreme Gammon id
+}
+\examples{
+ggboard("XGID=-b----E-C---eE---c-e----B-:0:0:1:64:0:0:0:7:10")
+
 }

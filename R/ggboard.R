@@ -1,33 +1,30 @@
 #' Display a backgammon diagram from an eXtreme Gammon id
 #'
 #' @param xgid character
+#' @param bearoff character. Side to bear off from. Either "right" (default) or "left"
 #'
 #' @return ggplot object
 #'
 #' @examples
 #' ggboard("XGID=-b----E-C---eE---c-e----B-:0:0:1:64:0:0:0:7:10")
-#' ggboard("XGID=-a-B--E-B-a-dDB--b-bcb----:1:1:-1:63:0:0:0:3:8")
-#' ggboard("XGID=-a-B--E-B-a-dDB--b-bcb----:1:1:-1:63:0:0:0:3:8", bearoff = "left)
-#' ggboard("XGID=-a-a-BCBC---cC---cbd-Ba---:1:-1:1:00:0:0:0:7:10")
 #'
 #' @importFrom ggforce geom_circle
+#' @importFrom stringi stri_reverse
 #'
 #' @export
 ggboard <- function(xgid, bearoff = "right") {
 
   if (bearoff == "left") xgid <- flip_xgid(xgid)
 
-  position <- ggplot() +
-    show_points() +
-    show_cube(xgid) +
+  position <- ggplot2::ggplot() +
     show_points() +
     show_bar() +
     show_border() +
     show_numbers(bearoff) +
     show_checkers(xgid) +
-    show_cube(xgid, bearoff) +
-    #show_cube_value(xgid, bearoff) +
-    coord_fixed() +
+    show_cube(xgid) +
+    #show_cube_value(xgid) +
+    ggplot2::coord_fixed() +
     ggplot2::scale_fill_manual(values = c("white", "darkgrey", "black", "lightgrey")) +
     ggplot2::theme_void()
 
@@ -71,7 +68,7 @@ show_cube <- function(xgid) {
   ratio <- 11/13 # Board is 11 checkers high, 13 checkers wide. Move to global env?
 
   cube_size <- 0.08
-  cube_position = substr(xgid, 35, 36) %>% str_remove(":") %>% as.numeric()
+  cube_position = substr(xgid, 35, 36) %>% stringr::str_remove(":") %>% as.numeric()
 
   y_position <- 10/22 * ratio + cube_position * -10/22 * ratio
 
@@ -91,7 +88,7 @@ show_cube_value <- function(xgid) {
   cube_value = 2^cube_value
   if (cube_value == 1) cube_value <-64
 
-  cube_position = substr(xgid, 35, 36) %>% str_remove(":") %>% as.numeric()
+  cube_position = substr(xgid, 35, 36) %>% stringr::str_remove(":") %>% as.numeric()
   y_position <- -0.5 * cube_position + 0.5
 
 
@@ -114,17 +111,17 @@ show_numbers <- function(bearoff = "right") {
     stop("bearoff parameter must be either 'right' or 'left'")
   }
 
-  df = tibble(x, y, label)
+  df = dplyr::tibble(x, y, label)
 
-  ggplot2::geom_text(data = df, mapping = aes(x = x, y = y, label = label), color = "black", size = 3)
+  ggplot2::geom_text(data = df, mapping = ggplot2::aes(x = x, y = y, label = label), color = "black", size = 3)
 
 }
 
 
 show_checkers <-  function(xgid, bearoff = "right") {
   df <- xgid2df(xgid)
-  ggforce::geom_circle(mapping = ggplot2::aes(x0 = x, y0 = y, fill = player, r = 1/26),
-                       show.legend = F, inherit.aes = F, data = df)
+  ggforce::geom_circle(data = df, ggplot2::aes(x0 = .data$x, y0 = .data$y, fill = .data$player, r = 1/26),
+                       show.legend = F, inherit.aes = F)
   }
 
 
@@ -158,17 +155,16 @@ xgid2df <- function(xgid) {
     if (entry != "-") {
       player_checkers <- match(entry, LETTERS)
       opponent_checkers <- match(entry, letters)
-      no_checkers <- coalesce(player_checkers, opponent_checkers)
+      no_checkers <- dplyr::coalesce(player_checkers, opponent_checkers)
 
       if (is.na(no_checkers)) stop(paste("Illegal character found in XGID string: ", entry))
 
       x_point <- rep(x_coord[i], no_checkers)
 
-      y_point <- case_when(i < 14 ~ y_coord_bottom[1:no_checkers],
+      y_point <- dplyr::case_when(i < 14 ~ y_coord_bottom[1:no_checkers],
                            i > 13 ~ y_coord_top[1:no_checkers])
 
-      p_point <-  rep(if_else(is.na(player_checkers), "top", "bottom"), no_checkers)
-
+      p_point <-  rep(dplyr::if_else(is.na(player_checkers), "top", "bottom"), no_checkers)
 
       x <-  c(x, x_point)
       y <-  c(y, y_point)
@@ -176,7 +172,7 @@ xgid2df <- function(xgid) {
     }
   }
 
-  df <- tibble(x = x, y = y, player = player)
+  df <- dplyr::tibble(x = x, y = y, player = player)
 
   return(df)
 }

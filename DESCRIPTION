@@ -9,11 +9,13 @@ Description: Hopefully a growing collection of notebooks with analysis,
 License: MIT + file LICENSE
 Imports: 
     dplyr,
+    ggforce,
     ggplot2,
     magrittr,
     purrr,
     readr,
     rlang,
+    stringi,
     stringr
 Suggests: 
     rmarkdown
