@@ -23,10 +23,10 @@ ggboard <- function(xgid, bearoff = "right") {
     show_numbers(bearoff) +
     show_checkers(xgid) +
     show_cube(xgid) +
-    #show_cube_value(xgid) +
+    show_cube_value(xgid) +
     ggplot2::coord_fixed() +
-    ggplot2::scale_fill_manual(values = c("white", "darkgrey", "black", "lightgrey")) +
-    ggplot2::theme_void()
+    ggplot2::scale_fill_manual(values = c("white", "#cccccc", "black", "white")) +
+    ggplot2::theme_void(base_size = 20)
 
   return(position)
 }
@@ -45,7 +45,7 @@ show_points <- function() {
 
   ggplot2::geom_polygon(data = triangles,
                           ggplot2::aes(x = x, y = y, fill = fill, group = group),
-                 show.legend = F, color = "darkgrey")
+                 show.legend = F, color = "black", size = 0.2)
 }
 
 
@@ -53,47 +53,50 @@ show_border <- function() {
   ratio <- 11/13 # Board is 11 checkers high, 13 checkers wide. Move to global env?
 
   ggplot2::geom_rect(ggplot2::aes(xmin = 0, xmax = 1, ymin = 0, ymax = ratio),
-            fill = NA, colour = "darkgrey", size = 0.5)
+            fill = NA, colour = "black", size = 0.2)
 }
 
 
 show_bar <- function() {
   ratio <- 11/13 # Board is 11 checkers high, 13 checkers wide. Move to global env?
   ggplot2::geom_rect(ggplot2::aes(xmin = 6/13, xmax = 7/13, ymin = 0, ymax = ratio),
-            fill = "white", colour = "darkgrey", size = 0.5, inherit.aes = F)
+            fill = "white", colour = "black", size = 0.2, inherit.aes = F)
 }
 
 
 show_cube <- function(xgid) {
   ratio <- 11/13 # Board is 11 checkers high, 13 checkers wide. Move to global env?
 
-  cube_size <- 0.08
-  cube_position = substr(xgid, 35, 36) %>% stringr::str_remove(":") %>% as.numeric()
+  cube_size <- 0.09
+  cube_position <- str_split(xgid, ":")[[1]][3] %>% as.numeric()
 
-  y_position <- 10/22 * ratio + cube_position * -10/22 * ratio
+  y_position <- 10/22 * ratio + cube_position * - 10/22 * ratio
 
   ggplot2::geom_rect(ggplot2::aes(xmin = -0.01 - cube_size,
                                   xmax = -0.01,
                                   ymin = y_position,
                                   ymax = y_position + cube_size),
-                     color = "darkgrey",
+                     color = "black",
+                     size = 0.2,
                      fill = "white",
                      linejoin = "round")
 }
 
 
 show_cube_value <- function(xgid) {
+  ratio <- 11/13 # Board is 11 checkers high, 13 checkers wide. Move to global env?
 
-  cube_value = substr(xgid, 33, 33) %>% as.numeric()
-  cube_value = 2^cube_value
+  cube_value <- str_split(xgid, ":")[[1]][2] %>% as.numeric()
+  cube_value <- 2^cube_value
   if (cube_value == 1) cube_value <-64
 
-  cube_position = substr(xgid, 35, 36) %>% stringr::str_remove(":") %>% as.numeric()
-  y_position <- -0.5 * cube_position + 0.5
+  cube_position <- str_split(xgid, ":")[[1]][3] %>% as.numeric()
 
+  y_position <- 10/22 * ratio + cube_position * - 10/22 * ratio
 
-  ggplot2::geom_label(ggplot2::aes(x = -0.06, y = y_position, label = cube_value),
-                      size = 4,  color = "black")
+  ggplot2::geom_text(ggplot2::aes(x = -0.05, y = y_position, label = cube_value),
+                     size = rel(5.5),  color = "black", vjust = 0,
+                     nudge_y = 0.025, nudge_x = -0.005)
 }
 
 
@@ -121,7 +124,7 @@ show_numbers <- function(bearoff = "right") {
 show_checkers <-  function(xgid, bearoff = "right") {
   df <- xgid2df(xgid)
   ggforce::geom_circle(data = df, ggplot2::aes(x0 = .data$x, y0 = .data$y, fill = .data$player, r = 1/26),
-                       show.legend = F, inherit.aes = F)
+                       size = 0.2, show.legend = F)
   }
 
 
