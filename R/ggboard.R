@@ -8,6 +8,8 @@
 #' @examples
 #' ggboard("XGID=-b----E-C---eE---c-e----B-:0:0:1:64:0:0:0:7:10")
 #'
+#' ggboard("XGID=bb----E-C---cC---c-e----BB:0:0:1:64:0:0:0:7:10")
+#'
 #' @importFrom ggforce geom_circle
 #' @importFrom stringi stri_reverse
 #'
@@ -164,8 +166,10 @@ xgid2df <- function(xgid) {
 
       x_point <- rep(x_coord[i], no_checkers)
 
-      y_point <- dplyr::case_when(i < 14 ~ y_coord_bottom[1:no_checkers],
-                           i > 13 ~ y_coord_top[1:no_checkers])
+      y_point <- dplyr::case_when(i == 1 ~ y_coord_bottom[5:2][1:no_checkers],
+                                  i == 26 ~ y_coord_top[5:2][1:no_checkers],
+                                  i < 14 ~ y_coord_bottom[1:no_checkers],
+                                  i > 13 ~ y_coord_top[1:no_checkers])
 
       p_point <-  rep(dplyr::if_else(is.na(player_checkers), "top", "bottom"), no_checkers)
 

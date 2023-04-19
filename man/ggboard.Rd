@@ -20,4 +20,6 @@ Display a backgammon diagram from an eXtreme Gammon id
 \examples{
 ggboard("XGID=-b----E-C---eE---c-e----B-:0:0:1:64:0:0:0:7:10")
 
+ggboard("XGID=-b----E-C---eE---c-e----B-:0:0:1:64:0:0:0:7:10")
+
 }
