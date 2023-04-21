@@ -45,10 +45,8 @@ ggboard <- function(xgid, bearoff = "right") {
 
 
 show_points <- function() {
-  ratio <- 11/13 # Board is 11 checkers high, 13 checkers wide. Move to global env?
-
   x <- 0:12 %>% purrr::map(~ rep(0:2/26, 2) + .x * 2/26) %>% unlist()
-  y <- rep(c(0, 5/11, 0, 1, 6/11, 1), 13) * ratio
+  y <- rep(c(0, 5/11, 0, 1, 6/11, 1), 13) * board_ratio
   fill <- rep(c(rep(T, 3), rep(F, 3), rep(F, 3), rep(T, 3)), 3)
   fill <- c(fill, rep(F, 6), fill)
   group <- 1:26 %>% purrr::map(rep, 3) %>% unlist()
@@ -62,33 +60,27 @@ show_points <- function() {
 
 
 show_border <- function() {
-  ratio <- 11/13 # Board is 11 checkers high, 13 checkers wide. Move to global env?
-
-  ggplot2::geom_rect(ggplot2::aes(xmin = 0, xmax = 1, ymin = 0, ymax = ratio),
+  ggplot2::geom_rect(ggplot2::aes(xmin = 0, xmax = 1, ymin = 0, ymax = board_ratio),
             fill = NA, colour = "black", size = 0.2)
 }
 
 
 show_bar <- function() {
-  ratio <- 11/13 # Board is 11 checkers high, 13 checkers wide. Move to global env?
-  ggplot2::geom_rect(ggplot2::aes(xmin = 6/13, xmax = 7/13, ymin = 0, ymax = ratio),
+  ggplot2::geom_rect(ggplot2::aes(xmin = 6/13, xmax = 7/13, ymin = 0, ymax = board_ratio),
             fill = "white", colour = "black", size = 0.2, inherit.aes = F)
 }
 
 show_tray <- function() {
-  ratio <- 11/13 # Board is 11 checkers high, 13 checkers wide. Move to global env?
-  ggplot2::geom_rect(ggplot2::aes(xmin = 13/13, xmax = 14/13, ymin = 0, ymax = ratio),
+  ggplot2::geom_rect(ggplot2::aes(xmin = 13/13, xmax = 14/13, ymin = 0, ymax = board_ratio),
                      fill = NA, colour = "black", size = 0.2, inherit.aes = F)
 }
 
 
 show_cube <- function(xgid) {
-  ratio <- 11/13 # Board is 11 checkers high, 13 checkers wide. Move to global env?
-
   cube_size <- 0.09
   cube_position <- stringr::str_split(xgid, ":")[[1]][3] %>% as.numeric()
 
-  y_position <- 10/22 * ratio + cube_position * - 10/22 * ratio
+  y_position <- 10/22 * board_ratio + cube_position * - 10/22 * board_ratio
 
   ggplot2::geom_rect(ggplot2::aes(xmin = -0.01 - cube_size,
                                   xmax = -0.01,
@@ -102,15 +94,13 @@ show_cube <- function(xgid) {
 
 
 show_cube_value <- function(xgid) {
-  ratio <- 11/13 # Board is 11 checkers high, 13 checkers wide. Move to global env?
-
   cube_value <- stringr::str_split(xgid, ":")[[1]][2] %>% as.numeric()
   cube_value <- 2^cube_value
   if (cube_value == 1) cube_value <-64
 
   cube_position <- stringr::str_split(xgid, ":")[[1]][3] %>% as.numeric()
 
-  y_position <- 10/22 * ratio + cube_position * - 10/22 * ratio
+  y_position <- 10/22 * board_ratio + cube_position * - 10/22 * board_ratio
 
   ggplot2::geom_text(ggplot2::aes(x = -0.05, y = y_position, label = cube_value),
                      size = ggplot2::rel(5.5),  color = "black", vjust = 0,
@@ -119,10 +109,8 @@ show_cube_value <- function(xgid) {
 
 
 show_numbers <- function(bearoff = "right") {
-  ratio <- 11/13 # Board is 11 checkers high, 13 checkers wide. Move to global env?
-
   x <- rep(0:12  * 2/26 + 1/26, 2)
-  y <- c(rep(-0.02, 13), rep(ratio + 0.03, 13))
+  y <- c(rep(-0.02, 13), rep(board_ratio + 0.03, 13))
 
   if (bearoff == "left") {
     label <- as.character(c(1:6, NA, 7:12, 24:19, NA, 18:13))
@@ -147,14 +135,12 @@ show_checkers <-  function(xgid, bearoff = "right") {
 
 
 show_excess_checkers <-  function(xgid, bearoff = "right") {
-  ratio <- 11/13 # Board is 11 checkers high, 13 checkers wide. Move to global env?
-
   df <- xgid2df(xgid)
 
   df <- df %>%
     dplyr::count(.data$x, .data$player) %>%
     dplyr::filter(.data$n > 5) %>%
-    dplyr::mutate(y = dplyr::if_else(.data$player == "bottom", 9/22 * ratio, 13/22 * ratio),
+    dplyr::mutate(y = dplyr::if_else(.data$player == "bottom", 9/22 * board_ratio, 13/22 * board_ratio),
            color = .data$player)
 
   ggplot2::geom_text(data = df, ggplot2::aes(x = .data$x, y = .data$y, label = .data$n, color = .data$color),
@@ -163,9 +149,6 @@ show_excess_checkers <-  function(xgid, bearoff = "right") {
 
 
 xgid2df <- function(xgid) {
-
-  ratio <- 11/13 # Board is 11 checkers high, 13 checkers wide. Move to global env?
-
   # Init vars to populate
   x <- NULL
   y <- NULL
@@ -180,8 +163,8 @@ xgid2df <- function(xgid) {
   x_coord[c(1,26)] <- 12/26 + 1/26
 
   # y-coordinates for bottom and top points
-  y_coord_bottom <- seq(1/22, 9/22, 2/22) * ratio
-  y_coord_top <- seq(21/22, 13/22, -2/22) * ratio
+  y_coord_bottom <- seq(1/22, 9/22, 2/22) * board_ratio
+  y_coord_top <- seq(21/22, 13/22, -2/22) * board_ratio
 
   # Loop over all 26 points (#1 is our bar, #26 is opp's bar)
   for (i in seq(1, 26)) {
