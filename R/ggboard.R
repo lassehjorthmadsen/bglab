@@ -12,14 +12,17 @@
 #' # Middle game position, match to 7, player owns cube
 #' ggboard("XGID=-b--BBC-C---cC---cBbc-b---:1:1:1:00:0:0:0:11:10")
 #'
-#' # Same position, player to play 51:
+#' # Same position, bottom player to play 51:
 #' ggboard("XGID=-b--BBC-C---cC---cBbc-b---:1:1:1:51:0:0:0:11:10")
 #'
-#' # Position with multiple checkers off:
+#' # Position with multiple checkers off and one on the bar:
 #' ggboard("XGID=aFDaA--------------a-Acbb-:1:-1:1:42:3:0:0:7:10")
 #'
 #' # Same positon, bear off at the left:
 #' ggboard("XGID=aFDaA--------------a-Acbb-:1:-1:1:42:3:0:0:7:10", "left")
+#'
+#' # Both sides have excess checkers:
+#' ggboard("XGID=-----FI------------hfa----:0:0:1:52:0:0:3:0:10")
 #'
 #' @importFrom ggforce geom_circle
 #' @importFrom stringi stri_reverse
@@ -45,7 +48,7 @@ ggboard <- function(xgid, bearoff = "right") {
     show_game_info(xgid) +
     ggplot2::coord_fixed() +
     ggplot2::scale_fill_manual(values = c("white", "#cccccc", "black", "white")) +
-    ggplot2::scale_color_manual(values = c("white", "black")) +
+    ggplot2::scale_color_manual(values = c("top" = "white", "bottom" = "black")) +
     ggplot2::theme_void(base_size = 20)
 
   return(position)
@@ -85,10 +88,10 @@ show_tray <- function() {
 
 
 show_cube <- function(xgid) {
-  cube_size <- 0.09
+  cube_size <- 2 * checker_radius
   cube_position <- stringr::str_split(xgid, ":")[[1]][3] %>% as.numeric()
 
-  y_position <- 10/22 * board_ratio + cube_position * - 10/22 * board_ratio
+  y_position <- (10/22 + cube_position * - 10/22) * board_ratio
 
   ggplot2::geom_rect(ggplot2::aes(xmin = -0.01 - cube_size,
                                   xmax = -0.01,
@@ -104,15 +107,15 @@ show_cube <- function(xgid) {
 show_cube_value <- function(xgid) {
   cube_value <- stringr::str_split(xgid, ":")[[1]][2] %>% as.numeric()
   cube_value <- 2^cube_value
-  if (cube_value == 1) cube_value <-64
+  if (cube_value == 1) cube_value <- 64
 
   cube_position <- stringr::str_split(xgid, ":")[[1]][3] %>% as.numeric()
 
   y_position <- 10/22 * board_ratio + cube_position * - 10/22 * board_ratio
 
   ggplot2::geom_text(ggplot2::aes(x = -0.05, y = y_position, label = cube_value),
-                     size = ggplot2::rel(5.5),  color = "black", vjust = 0,
-                     nudge_y = 0.018, nudge_x = -0.002)
+                     size = ggplot2::rel(4.5),  color = "black", vjust = 0,
+                     nudge_y = 0.016, nudge_x = 0.004)
 }
 
 
@@ -142,19 +145,27 @@ show_checkers <-  function(xgid, bearoff = "right") {
   }
 
 
-show_excess_checkers <-  function(xgid, bearoff = "right") {
+show_excess_checkers <-  function(xgid) {
   df <- xgid2df(xgid)
 
-  df <- df %>%
-    dplyr::count(.data$x, .data$player) %>%
-    dplyr::filter(.data$n > 5) %>%
-    dplyr::mutate(y = dplyr::if_else(.data$player == "bottom", 9/22 * board_ratio, 13/22 * board_ratio),
-           color = dplyr::if_else(.data$player == "bottom", "top", "bottom"))
+  excess <- df %>%
+    dplyr::add_count(.data$point, .data$player) %>%
+    dplyr::filter(.data$n > 5, !is.na(y))
 
-  ggplot2::geom_text(data = df, ggplot2::aes(x = .data$x,
+  top <- excess %>%
+    filter(point > 13) %>%
+    filter(y == min(y))
+
+  bottom <- excess %>%
+    filter(point < 14) %>%
+    filter(y == max(y))
+
+  excess <- bind_rows(top, bottom)
+
+  ggplot2::geom_text(data = excess, ggplot2::aes(x = .data$x,
                                              y = .data$y,
                                              label = .data$n,
-                                             color = .data$color),
+                                             color = .data$player),
                      fontface = "bold",
                      hjust = 0.5, vjust = 0.5,
                      size = ggplot2::rel(3),
@@ -184,14 +195,15 @@ show_off_checkers <-  function(xgid, bearoff = "right") {
 
   player <- c(rep("bottom", bottom_off), rep("top", top_off))
 
-  off_checker_border <- c(rep("top", bottom_off), rep("bottom", top_off))
+  #off_checker_border <- c(rep("top", bottom_off), rep("bottom", top_off))
 
-  df <- dplyr::tibble(x = x, y = y, player = player, off_checker_border = off_checker_border)
+  df <- dplyr::tibble(x = x, y = y, player = player)
 
   ggplot2::geom_rect(data = df, ggplot2::aes(xmin = .data$x, xmax = .data$x + 1.95 * checker_radius,
                                              ymin = .data$y, ymax = .data$y + thickness,
                                              fill = .data$player,
-                                             color = .data$off_checker_border),
+                                             color = .data$player,
+                                             linejoin = "round"),
                      show.legend = F)
 }
 
@@ -233,6 +245,7 @@ xgid2df <- function(xgid) {
   x <- NULL
   y <- NULL
   player <- NULL
+  point <- NULL
 
   # x-coordinates for each point
   x_coord <- rep(NULL, 26)
@@ -265,14 +278,17 @@ xgid2df <- function(xgid) {
                                   i > 13 ~ y_coord_top[1:no_checkers])
 
       p_point <-  rep(dplyr::if_else(is.na(player_checkers), "top", "bottom"), no_checkers)
+      point_no <- rep(i, no_checkers)
+
 
       x <-  c(x, x_point)
       y <-  c(y, y_point)
       player <- c(player, p_point)
+      point <- c(point, point_no)
     }
   }
 
-  df <- dplyr::tibble(x = x, y = y, player = player)
+  df <- dplyr::tibble(x = x, y = y, player = player, point = point)
 
   return(df)
 }
