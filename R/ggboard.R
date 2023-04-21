@@ -15,6 +15,9 @@
 #' # Position with multiple checkers on the bar:
 #' ggboard("XGID=bb----E-C---cC---c-e----BB:0:0:1:64:0:0:0:7:10")
 #'
+#' #' # Position with multiple checkers off:
+#' ggboard("XGID=aBBAA-----------------bcc-:0:0:1:64:0:0:0:7:10")
+#'
 #' @importFrom ggforce geom_circle
 #' @importFrom stringi stri_reverse
 #'
@@ -29,15 +32,16 @@ ggboard <- function(xgid, bearoff = "right") {
     show_points() +
     show_border() +
     show_bar() +
-    show_tray() +
+    #show_tray() +
     show_numbers(bearoff) +
     show_checkers(xgid) +
     show_excess_checkers(xgid) +
+    show_off_checkers(xgid) +
     show_cube(xgid) +
     show_cube_value(xgid) +
     ggplot2::coord_fixed() +
     ggplot2::scale_fill_manual(values = c("white", "#cccccc", "black", "white")) +
-    ggplot2::scale_color_manual(values = c("black", "white")) +
+    ggplot2::scale_color_manual(values = c("white", "black")) +
     ggplot2::theme_void(base_size = 20)
 
   return(position)
@@ -129,7 +133,7 @@ show_numbers <- function(bearoff = "right") {
 
 show_checkers <-  function(xgid, bearoff = "right") {
   df <- xgid2df(xgid)
-  ggforce::geom_circle(data = df, ggplot2::aes(x0 = .data$x, y0 = .data$y, fill = .data$player, r = 1/26),
+  ggforce::geom_circle(data = df, ggplot2::aes(x0 = .data$x, y0 = .data$y, fill = .data$player, r = checker_radius),
                        size = 0.2, show.legend = F)
   }
 
@@ -145,6 +149,36 @@ show_excess_checkers <-  function(xgid, bearoff = "right") {
 
   ggplot2::geom_text(data = df, ggplot2::aes(x = .data$x, y = .data$y, label = .data$n, color = .data$color),
                      fontface = "bold", show.legend = F)
+}
+
+
+show_off_checkers <-  function(xgid, bearoff = "right") {
+  df <- xgid2df(xgid)
+
+  checker_count <- df %>% dplyr::count(player) %>% dplyr::pull(.data$n)
+
+  if (sum(checker_count) >= 15) return(NULL)
+
+  bottom_off <- 15 - checker_count[1]
+  top_off <- 15 - checker_count[2]
+
+  thickness <- 0.6 * checker_radius
+  ymax <- board_ratio - thickness
+
+  x <- rep(1.01, 30 - sum(checker_count))
+  y <- c(seq(0, (bottom_off - 1) * thickness, thickness),
+         seq(ymax, ymax - (top_off - 1) * thickness, -thickness))
+  player <- c(rep("bottom", bottom_off), rep("top", top_off))
+  off_checker_border <- c(rep("top", bottom_off), rep("bottom", top_off))
+
+
+  df <- dplyr::tibble(x = x, y = y, player = player, off_checker_border = off_checker_border)
+
+  ggplot2::geom_rect(data = df, ggplot2::aes(xmin = .data$x, xmax = .data$x + 1.95 * checker_radius,
+                                             ymin = .data$y, ymax = .data$y + thickness,
+                                             fill = .data$player,
+                                             color = .data$off_checker_border),
+                     show.legend = F)
 }
 
 
