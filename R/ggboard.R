@@ -6,8 +6,13 @@
 #' @return ggplot object
 #'
 #' @examples
+#' # Starting position:
 #' ggboard("XGID=-b----E-C---eE---c-e----B-:0:0:1:64:0:0:0:7:10")
 #'
+#' # Position with more than five checkers on points:
+#' ggboard("XGID=-b----G-C---dC---c-f----B-:0:0:1:64:0:0:0:7:10")
+#'
+#' # Position with multiple checkers on the bar:
 #' ggboard("XGID=bb----E-C---cC---c-e----BB:0:0:1:64:0:0:0:7:10")
 #'
 #' @importFrom ggforce geom_circle
@@ -16,18 +21,23 @@
 #' @export
 ggboard <- function(xgid, bearoff = "right") {
 
+  if (nchar(xgid) < 51) stop("xgid string does not contain at least 51 characters")
+
   if (bearoff == "left") xgid <- flip_xgid(xgid)
 
   position <- ggplot2::ggplot() +
     show_points() +
-    show_bar() +
     show_border() +
+    show_bar() +
+    show_tray() +
     show_numbers(bearoff) +
     show_checkers(xgid) +
+    show_excess_checkers(xgid) +
     show_cube(xgid) +
     show_cube_value(xgid) +
     ggplot2::coord_fixed() +
     ggplot2::scale_fill_manual(values = c("white", "#cccccc", "black", "white")) +
+    ggplot2::scale_color_manual(values = c("black", "white")) +
     ggplot2::theme_void(base_size = 20)
 
   return(position)
@@ -63,6 +73,12 @@ show_bar <- function() {
   ratio <- 11/13 # Board is 11 checkers high, 13 checkers wide. Move to global env?
   ggplot2::geom_rect(ggplot2::aes(xmin = 6/13, xmax = 7/13, ymin = 0, ymax = ratio),
             fill = "white", colour = "black", size = 0.2, inherit.aes = F)
+}
+
+show_tray <- function() {
+  ratio <- 11/13 # Board is 11 checkers high, 13 checkers wide. Move to global env?
+  ggplot2::geom_rect(ggplot2::aes(xmin = 13/13, xmax = 14/13, ymin = 0, ymax = ratio),
+                     fill = NA, colour = "black", size = 0.2, inherit.aes = F)
 }
 
 
@@ -130,9 +146,23 @@ show_checkers <-  function(xgid, bearoff = "right") {
   }
 
 
-xgid2df <- function(xgid) {
+show_excess_checkers <-  function(xgid, bearoff = "right") {
+  ratio <- 11/13 # Board is 11 checkers high, 13 checkers wide. Move to global env?
 
-  if (nchar(xgid) < 51) stop("xgid string does not contain at least 51 characters")
+  df <- xgid2df(xgid)
+
+  df <- df %>%
+    dplyr::count(.data$x, .data$player) %>%
+    dplyr::filter(.data$n > 5) %>%
+    dplyr::mutate(y = dplyr::if_else(.data$player == "bottom", 9/22 * ratio, 13/22 * ratio),
+           color = .data$player)
+
+  ggplot2::geom_text(data = df, ggplot2::aes(x = .data$x, y = .data$y, label = .data$n, color = .data$color),
+                     fontface = "bold", show.legend = F)
+}
+
+
+xgid2df <- function(xgid) {
 
   ratio <- 11/13 # Board is 11 checkers high, 13 checkers wide. Move to global env?
 

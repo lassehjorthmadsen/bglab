@@ -18,8 +18,13 @@ ggplot object
 Display a backgammon diagram from an eXtreme Gammon id
 }
 \examples{
+# Starting position:
 ggboard("XGID=-b----E-C---eE---c-e----B-:0:0:1:64:0:0:0:7:10")
 
-ggboard("XGID=-b----E-C---eE---c-e----B-:0:0:1:64:0:0:0:7:10")
+# Position with more than five checkers on points:
+ggboard("XGID=-b----G-C---dC---c-f----B-:0:0:1:64:0:0:0:7:10")
+
+# Position with multiple checkers on the bar:
+ggboard("XGID=bb----E-C---cC---c-e----BB:0:0:1:64:0:0:0:7:10")
 
 }
