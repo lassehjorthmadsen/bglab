@@ -7,16 +7,19 @@
 #'
 #' @examples
 #' # Starting position:
-#' ggboard("XGID=-b----E-C---eE---c-e----B-:0:0:1:64:0:0:0:7:10")
+#' ggboard("XGID=-b----E-C---eE---c-e----B-:0:0:1:52:0:0:3:0:10")
 #'
-#' # Position with more than five checkers on points:
-#' ggboard("XGID=-b----G-C---dC---c-f----B-:0:0:1:64:0:0:0:7:10")
+#' # Middle game position, match to 7, player owns cube
+#' ggboard("XGID=-b--BBC-C---cC---cBbc-b---:1:1:1:00:0:0:0:11:10")
 #'
-#' # Position with multiple checkers on the bar:
-#' ggboard("XGID=bb----E-C---cC---c-e----BB:0:0:1:64:0:0:0:7:10")
+#' # Same position, player to play 51:
+#' ggboard("XGID=-b--BBC-C---cC---cBbc-b---:1:1:1:51:0:0:0:11:10")
 #'
-#' #' # Position with multiple checkers off:
-#' ggboard("XGID=aBBAA-----------------bcc-:0:0:1:64:0:0:0:7:10")
+#' # Position with multiple checkers off:
+#' ggboard("XGID=aFDaA--------------a-Acbb-:1:-1:1:42:3:0:0:7:10")
+#'
+#' # Same positon, bear off at the left:
+#' ggboard("XGID=aFDaA--------------a-Acbb-:1:-1:1:42:3:0:0:7:10", "left")
 #'
 #' @importFrom ggforce geom_circle
 #' @importFrom stringi stri_reverse
@@ -77,7 +80,7 @@ show_bar <- function() {
 
 show_tray <- function() {
   ggplot2::geom_rect(ggplot2::aes(xmin = 13/13, xmax = 14/13, ymin = 0, ymax = board_ratio),
-                     fill = NA, colour = "black", size = 0.2, inherit.aes = F)
+                     fill = NA, colour = "black", size = 0.2)
 }
 
 
@@ -109,7 +112,7 @@ show_cube_value <- function(xgid) {
 
   ggplot2::geom_text(ggplot2::aes(x = -0.05, y = y_position, label = cube_value),
                      size = ggplot2::rel(5.5),  color = "black", vjust = 0,
-                     nudge_y = 0.025, nudge_x = -0.005)
+                     nudge_y = 0.018, nudge_x = -0.002)
 }
 
 
@@ -146,19 +149,27 @@ show_excess_checkers <-  function(xgid, bearoff = "right") {
     dplyr::count(.data$x, .data$player) %>%
     dplyr::filter(.data$n > 5) %>%
     dplyr::mutate(y = dplyr::if_else(.data$player == "bottom", 9/22 * board_ratio, 13/22 * board_ratio),
-           color = .data$player)
+           color = dplyr::if_else(.data$player == "bottom", "top", "bottom"))
 
-  ggplot2::geom_text(data = df, ggplot2::aes(x = .data$x, y = .data$y, label = .data$n, color = .data$color),
-                     fontface = "bold", show.legend = F)
+  ggplot2::geom_text(data = df, ggplot2::aes(x = .data$x,
+                                             y = .data$y,
+                                             label = .data$n,
+                                             color = .data$color),
+                     fontface = "bold",
+                     hjust = 0.5, vjust = 0.5,
+                     size = ggplot2::rel(3),
+                     show.legend = F)
 }
 
 
 show_off_checkers <-  function(xgid, bearoff = "right") {
   df <- xgid2df(xgid)
 
-  checker_count <- df %>% dplyr::count(player) %>% dplyr::pull(.data$n)
+  checker_count <- df %>%
+    dplyr::count(player) %>%
+    dplyr::pull(.data$n)
 
-  if (sum(checker_count) >= 15) return(NULL)
+  if (sum(checker_count) >= 30) return(NULL)
 
   bottom_off <- 15 - checker_count[1]
   top_off <- 15 - checker_count[2]
@@ -167,11 +178,13 @@ show_off_checkers <-  function(xgid, bearoff = "right") {
   ymax <- board_ratio - thickness
 
   x <- rep(1.01, 30 - sum(checker_count))
+
   y <- c(seq(0, (bottom_off - 1) * thickness, thickness),
          seq(ymax, ymax - (top_off - 1) * thickness, -thickness))
-  player <- c(rep("bottom", bottom_off), rep("top", top_off))
-  off_checker_border <- c(rep("top", bottom_off), rep("bottom", top_off))
 
+  player <- c(rep("bottom", bottom_off), rep("top", top_off))
+
+  off_checker_border <- c(rep("top", bottom_off), rep("bottom", top_off))
 
   df <- dplyr::tibble(x = x, y = y, player = player, off_checker_border = off_checker_border)
 
@@ -198,11 +211,20 @@ show_game_info <-  function(xgid) {
   match_top <- case_when(info["match_length"] == "0" ~ NA_character_,
                             info["match_length"] != "0" ~ paste0("Score: ", info["score_bottom"], "/", info["match_length"]))
 
+  action <-  case_when(info["turn"] == "1" & !info["dice"] %in% c("00", "D", "B", "R")
+                       ~ paste("White to play", info["dice"]),
+                       info["turn"] == "1" & !info["dice"] %in% c("D", "B", "R")
+                       ~ "White to play")
 
-  df <- tibble(x = c(0, 0, 1, 1), y = c(-0.08, 0.94, -0.08, 0.94), hjust = c(0, 0, 1, 1), info_text = c(match_bottom, match_top, pips_bottom, pips_top))
 
-  ggplot2::geom_text(data = df, ggplot2::aes(x = x, y = y, label = info_text, hjust = hjust),
-                     size = ggplot2::rel(3.2), color = "black")
+  df <- tibble(x = c(0, 0, 1, 1, 0.5),
+               y = c(-0.08, 0.94, -0.08, 0.94, -0.14),
+               hjust = c(0, 0, 1, 1, 0.5),
+               fontface = c(rep("plain", 4), "bold"),
+               info_text = c(match_bottom, match_top, pips_bottom, pips_top, action))
+
+  ggplot2::geom_text(data = df, ggplot2::aes(x = x, y = y, label = info_text, hjust = hjust, fontface = fontface),
+                     size = ggplot2::rel(3), color = "black")
 }
 
 
