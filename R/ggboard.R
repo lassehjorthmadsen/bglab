@@ -39,6 +39,7 @@ ggboard <- function(xgid, bearoff = "right") {
     show_off_checkers(xgid) +
     show_cube(xgid) +
     show_cube_value(xgid) +
+    show_game_info(xgid) +
     ggplot2::coord_fixed() +
     ggplot2::scale_fill_manual(values = c("white", "#cccccc", "black", "white")) +
     ggplot2::scale_color_manual(values = c("white", "black")) +
@@ -126,7 +127,7 @@ show_numbers <- function(bearoff = "right") {
 
   df = dplyr::tibble(x, y, label)
 
-  ggplot2::geom_text(data = df, mapping = ggplot2::aes(x = x, y = y, label = label), color = "black", size = 3)
+  ggplot2::geom_text(data = df, mapping = ggplot2::aes(x = x, y = y, label = label), color = "grey20", size = rel(3))
 
 }
 
@@ -179,6 +180,29 @@ show_off_checkers <-  function(xgid, bearoff = "right") {
                                              fill = .data$player,
                                              color = .data$off_checker_border),
                      show.legend = F)
+}
+
+
+show_game_info <-  function(xgid) {
+  info <- get_game_info(xgid)
+  pip_count <- get_pip_count(xgid)
+
+  #if (info["turn"] == 1) turn_text <- "White's turn" else turn_text <- "Black's turn"
+
+  pips_bottom <- paste0("Pip count: ", pip_count["pips_bottom"])
+  pips_top <- paste0("Pip count: ", pip_count["pips_top"])
+
+  match_bottom <- case_when(info["match_length"] == "0" ~ "Moneygame",
+                            info["match_length"] != "0" ~ paste0("Score: ", info["score_bottom"], "/", info["match_length"]))
+
+  match_top <- case_when(info["match_length"] == "0" ~ NA_character_,
+                            info["match_length"] != "0" ~ paste0("Score: ", info["score_bottom"], "/", info["match_length"]))
+
+
+  df <- tibble(x = c(0, 0, 1, 1), y = c(-0.08, 0.94, -0.08, 0.94), hjust = c(0, 0, 1, 1), info_text = c(match_bottom, match_top, pips_bottom, pips_top))
+
+  ggplot2::geom_text(data = df, ggplot2::aes(x = x, y = y, label = info_text, hjust = hjust),
+                     size = ggplot2::rel(3.2), color = "black")
 }
 
 
@@ -237,4 +261,25 @@ flip_xgid <- function(xgid) {
   substr(xgid, 19, 30) <- stringi::stri_reverse(substr(xgid, 19, 30))
 
   return(xgid)
+}
+
+
+get_game_info <- function(xgid) {
+  info <- stringr::str_split(xgid, ":")[[1]][4:10]
+  names(info) <- c("turn", "dice", "score_bottom", "score_top", "crawford_jacoby", "match_length", "max_cube")
+
+  return(info)
+}
+
+get_pip_count <- function(xgid) {
+
+  position <- stringr::str_split(xgid, ":")[[1]][1] %>% stringr::str_remove("XGID=")
+  pips_bottom <- 0
+  pips_top <- 0
+
+  for (i in seq(2, 26)) pips_bottom <- pips_bottom + match(substr(position, i, i), LETTERS, nomatch = 0) * (i - 1)
+  for (i in seq(1, 25)) pips_top <- pips_top + match(substr(position, i, i), letters, nomatch = 0) * (26 - i)
+
+  return (c("pips_bottom" = pips_bottom, "pips_top" = pips_top))
+
 }
