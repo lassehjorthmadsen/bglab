@@ -133,10 +133,11 @@ show_numbers <- function(bearoff = "right") {
     stop("bearoff parameter must be either 'right' or 'left'")
   }
 
-  df = dplyr::tibble(x, y, label)
-
-  ggplot2::geom_text(data = df, mapping = ggplot2::aes(x = x, y = y, label = label), color = "grey20", size = rel(3))
-
+  ggplot2::geom_text(
+    mapping = ggplot2::aes(x = x, y = y, label = label),
+    color = "grey20",
+    size = ggplot2::rel(3)
+  )
 }
 
 
@@ -163,14 +164,14 @@ show_excess_checkers <-  function(xgid) {
     dplyr::filter(.data$n > 5 | (.data$n > 4 & .data$point %in% c(1, 26)))
 
   top_half <- excess %>%
-    filter(point > 13) %>%
-    filter(y == min(y, na.rm = T))
+    dplyr::filter(.data$point > 13) %>%
+    dplyr::filter(.data$y == min(.data$y, na.rm = T))
 
   bottom_half <- excess %>%
-    filter(point < 14) %>%
-    filter(y == max(y, na.rm = T))
+    dplyr::filter(.data$point < 14) %>%
+    dplyr::filter(.data$y == max(.data$y, na.rm = T))
 
-  excess <- bind_rows(top_half, bottom_half)
+  excess <- dplyr::bind_rows(top_half, bottom_half)
 
   ggplot2::geom_text(data = excess, ggplot2::aes(x = .data$x,
                                              y = .data$y,
@@ -232,25 +233,28 @@ show_game_info <-  function(xgid) {
   pips_bottom <- paste0("Pip count: ", pip_count["pips_bottom"])
   pips_top <- paste0("Pip count: ", pip_count["pips_top"])
 
-  match_bottom <- case_when(info["match_length"] == "0" ~ "Moneygame",
+  match_bottom <- dplyr::case_when(info["match_length"] == "0" ~ "Moneygame",
                             info["match_length"] != "0" ~ paste0("Score: ", info["score_bottom"], "/", info["match_length"]))
 
-  match_top <- case_when(info["match_length"] == "0" ~ NA_character_,
+  match_top <- dplyr::case_when(info["match_length"] == "0" ~ NA_character_,
                             info["match_length"] != "0" ~ paste0("Score: ", info["score_bottom"], "/", info["match_length"]))
 
-  action <-  case_when(info["turn"] == "1" & !info["dice"] %in% c("00", "D", "B", "R")
+  action <-  dplyr::case_when(info["turn"] == "1" & !info["dice"] %in% c("00", "D", "B", "R")
                        ~ paste("White to play", info["dice"]),
                        info["turn"] == "1" & !info["dice"] %in% c("D", "B", "R")
                        ~ "White to play")
 
 
-  df <- tibble(x = c(0, 0, 1, 1, 0.5),
+  df <- dplyr::tibble(x = c(0, 0, 1, 1, 0.5),
                y = c(-0.08, 0.94, -0.08, 0.94, -0.14),
                hjust = c(0, 0, 1, 1, 0.5),
                fontface = c(rep("plain", 4), "bold"),
                info_text = c(match_bottom, match_top, pips_bottom, pips_top, action))
 
-  ggplot2::geom_text(data = df, ggplot2::aes(x = x, y = y, label = info_text, hjust = hjust, fontface = fontface),
+  ggplot2::geom_text(data = df, ggplot2::aes(x = .data$x, y = .data$y,
+                                             label = .data$info_text,
+                                             hjust = .data$hjust,
+                                             fontface = .data$fontface),
                      size = ggplot2::rel(3), color = "black")
 }
 

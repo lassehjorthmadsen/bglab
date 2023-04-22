@@ -19,12 +19,24 @@ Display a backgammon diagram from an eXtreme Gammon id
 }
 \examples{
 # Starting position:
-ggboard("XGID=-b----E-C---eE---c-e----B-:0:0:1:64:0:0:0:7:10")
+ggboard("XGID=-b----E-C---eE---c-e----B-:0:0:1:52:0:0:3:0:10")
 
-# Position with more than five checkers on points:
-ggboard("XGID=-b----G-C---dC---c-f----B-:0:0:1:64:0:0:0:7:10")
+# Middle game position, match to 7, player owns cube
+ggboard("XGID=-b--BBC-C---cC---cBbc-b---:1:1:1:00:0:0:0:11:10")
 
-# Position with multiple checkers on the bar:
-ggboard("XGID=bb----E-C---cC---c-e----BB:0:0:1:64:0:0:0:7:10")
+# Same position, bottom player to play 51:
+ggboard("XGID=-b--BBC-C---cC---cBbc-b---:1:1:1:51:0:0:0:11:10")
+
+# Position with multiple checkers off and one on the bar:
+ggboard("XGID=aFDaA--------------a-Acbb-:1:-1:1:42:3:0:0:7:10")
+
+# Same positon, bear off at the left:
+ggboard("XGID=aFDaA--------------a-Acbb-:1:-1:1:42:3:0:0:7:10", "left")
+
+# All checkers off:
+ggboard("XGID=--------------------------:1:-1:1:00:3:0:0:7:10")
+
+# Both sides have several point with excess checkers:
+ggboard("XGID=e----FI------------fd-----:3:-1:1:52:0:0:3:0:10")
 
 }
