@@ -21,8 +21,11 @@
 #' # Same positon, bear off at the left:
 #' ggboard("XGID=aFDaA--------------a-Acbb-:1:-1:1:42:3:0:0:7:10", "left")
 #'
-#' # Both sides have excess checkers:
-#' ggboard("XGID=-----FI------------hfa----:0:0:1:52:0:0:3:0:10")
+#' # All checkers off:
+#' ggboard("XGID=--------------------------:1:-1:1:00:3:0:0:7:10")
+#'
+#' # Both sides have several point with excess checkers:
+#' ggboard("XGID=e----FI------------fd-----:3:-1:1:52:0:0:3:0:10")
 #'
 #' @importFrom ggforce geom_circle
 #' @importFrom stringi stri_reverse
@@ -32,15 +35,13 @@ ggboard <- function(xgid, bearoff = "right") {
 
   if (nchar(xgid) < 51) stop("xgid string does not contain at least 51 characters")
 
-  if (bearoff == "left") xgid <- flip_xgid(xgid)
-
   position <- ggplot2::ggplot() +
     show_points() +
     show_border() +
     show_bar() +
     #show_tray() +
     show_numbers(bearoff) +
-    show_checkers(xgid) +
+    show_checkers(xgid, bearoff) +
     show_excess_checkers(xgid) +
     show_off_checkers(xgid) +
     show_cube(xgid) +
@@ -120,6 +121,7 @@ show_cube_value <- function(xgid) {
 
 
 show_numbers <- function(bearoff = "right") {
+
   x <- rep(0:12  * 2/26 + 1/26, 2)
   y <- c(rep(-0.02, 13), rep(board_ratio + 0.03, 13))
 
@@ -139,7 +141,13 @@ show_numbers <- function(bearoff = "right") {
 
 
 show_checkers <-  function(xgid, bearoff = "right") {
+
+  if (bearoff == "left") xgid <- flip_xgid(xgid)
+
   df <- xgid2df(xgid)
+
+  if (nrow(df) == 0) return(NULL) # No checkers on board
+
   ggforce::geom_circle(data = df, ggplot2::aes(x0 = .data$x, y0 = .data$y, fill = .data$player, r = checker_radius),
                        size = 0.2, show.legend = F)
   }
@@ -148,19 +156,21 @@ show_checkers <-  function(xgid, bearoff = "right") {
 show_excess_checkers <-  function(xgid) {
   df <- xgid2df(xgid)
 
+  if (nrow(df) == 0) return(NULL) # No checkers on board
+
   excess <- df %>%
     dplyr::add_count(.data$point, .data$player) %>%
-    dplyr::filter(.data$n > 5, !is.na(y))
+    dplyr::filter(.data$n > 5 | (.data$n > 4 & .data$point %in% c(1, 26)))
 
-  top <- excess %>%
+  top_half <- excess %>%
     filter(point > 13) %>%
-    filter(y == min(y))
+    filter(y == min(y, na.rm = T))
 
-  bottom <- excess %>%
+  bottom_half <- excess %>%
     filter(point < 14) %>%
-    filter(y == max(y))
+    filter(y == max(y, na.rm = T))
 
-  excess <- bind_rows(top, bottom)
+  excess <- bind_rows(top_half, bottom_half)
 
   ggplot2::geom_text(data = excess, ggplot2::aes(x = .data$x,
                                              y = .data$y,
@@ -176,11 +186,16 @@ show_excess_checkers <-  function(xgid) {
 show_off_checkers <-  function(xgid, bearoff = "right") {
   df <- xgid2df(xgid)
 
-  checker_count <- df %>%
-    dplyr::count(player) %>%
-    dplyr::pull(.data$n)
+  if (nrow(df) == 0) {
+    # No checkers on board
+    checker_count <- c(0, 0)
+  } else {
+    checker_count <- df %>%
+      dplyr::count(player) %>%
+      dplyr::pull(.data$n)
+  }
 
-  if (sum(checker_count) >= 30) return(NULL)
+  if (sum(checker_count) >= 30) return(NULL) # No checkers off
 
   bottom_off <- 15 - checker_count[1]
   top_off <- 15 - checker_count[2]
@@ -202,8 +217,8 @@ show_off_checkers <-  function(xgid, bearoff = "right") {
   ggplot2::geom_rect(data = df, ggplot2::aes(xmin = .data$x, xmax = .data$x + 1.95 * checker_radius,
                                              ymin = .data$y, ymax = .data$y + thickness,
                                              fill = .data$player,
-                                             color = .data$player,
-                                             linejoin = "round"),
+                                             color = .data$player),
+                     linejoin = "round",
                      show.legend = F)
 }
 
