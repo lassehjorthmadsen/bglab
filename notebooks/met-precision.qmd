@@ -1,9 +1,10 @@
 ---
-title: "Match Equity Precison "
+title: "Match Equity Precision "
 author: "Lasse Hjorth Madsen"
 date: today 
 format: html
 toc: true
+toc-expand: true
 editor: visual
 execute:
   echo: false
@@ -14,10 +15,22 @@ execute:
 library(tidyverse)
 devtools::load_all()
 
-theme_set(theme_minimal() +
-  theme(legend.position = c(1, 1), legend.justification = c(1, 1), legend.background = element_rect(fill = "white", color = NA)))
+theme_set(
+  theme_minimal() +
+    theme(
+      legend.position = c(1, 1),
+      legend.justification = c(1, 1),
+      legend.background = element_rect(fill = "white", color = NA)
+    )
+)
 
 met <- get_met(filename = "..\\data-raw\\Kazaross XG2.met")
+
+# Gammon and backgammon frequencies for gammonish take points
+gamfreq_x <- 0.260
+bgfreq_x <-  0.012
+gamfreq_y <- 0.260
+bgfreq_y <-  0.012  
 
 tp <- met %>% 
   as_tibble() %>% 
@@ -28,21 +41,43 @@ tp <- met %>%
   select(x, y, mwc, cube) %>%
   expand_grid(., precision = 2:6) %>% 
   rowwise() %>% 
-  mutate(`Take point` = tp(x, y, cube, round(met, precision))) %>% 
+  mutate(
+    `Take point` = tp(x, y, cube, round(met, precision)),
+    `Gammonish take point` = tp_gammons(
+      x,
+      y,
+      gamfreq_x,
+      bgfreq_x,
+      gamfreq_y,
+      bgfreq_y,
+      cube,
+      round(met, precision)
+    )
+  ) %>% 
   ungroup()
 ```
 
 ## Why This?
 
-Match equity calculations in backgammon can be tricky. For a long time, I had the nagging suspicion that maybe those calculations might not be as reliable as we would like to think.
+Match equity calculations in backgammon can be tricky and hard to perform over the table. How accurate can we hope to be when calculating take points that involve more than one entry in a match equity table?
 
 Let's do a couple of simple experiments and try to find out.
 
-## Example
+## The rounding problem
 
-Here's one example that is fairly straight forward. You're in the beginning of a 17-point match, off for a bad start, trailing 0-5 or 17-away, 12-away, or (-17,-12). You're facing a double in a bearoff that you consider a small money pass. Should trailing make you more or less inclined to accept? 
+Here's one example that is fairly straight forward. You're in the beginning of a 17-point match, off for a bad start, trailing 0-5 or 17-away, 12-away, or (-17,-12). You're facing a double in a bearoff that you consider a borderline take/pass for money. 
 
-For simplicity let's do the calculations assuming no redoubles, since this is a bearoff with limited recube potential anyway. Using the Kazaross XG2 match equity table, with full six digit precision, the calculation goes like this.
+Perhaps something like this:
+
+```{r}
+#| fig-width: 4
+#| fig-height: 4
+ggboard("XGID=-DB-------------------bbb-:0:0:-1:00:0:5:0:17:10")
+```
+
+Should trailing as white make you more or less inclined to accept a double from black? 
+
+For simplicity let's do the calculations assuming no redoubles, since this example is a bearoff with no recube potential anyway. Using the Kazaross XG2 match equity table, with full six digit precision, the calculation goes like this.
 
 ```{r}
 pass <- mwc(17, 11, met)
@@ -58,7 +93,7 @@ gain <- twin - pass
 - Taking and losing means (-17,-10), $mwc=`r tlose`$, for a loss of: $`r pass` - `r tlose` = `r loss`$ 
 - $Take\ point = \frac{loss}{loss+gain} = \frac{`r loss`}{`r loss` + `r gain`} = `r loss/(loss + gain)`$ 
 
-Your take point is a bit *higher* that for money, you should be *less* inclined to take; so you probably have a *pass* if this is borderline for money.
+Your take point is a bit *higher* than for money, you should be *less* inclined to take; so you probably have a *pass* if this is borderline for money.
 
 But of course, nobody can do calculations like this with six digits over the board. If you're a really good tournament player, you might attempt doing the same calculations rounded to two digits (whole percentages).
 
@@ -151,7 +186,7 @@ tp %>%
        subtitle = "by opponent's score and number of digits used for match equities",
        x = "Opponent needs", color = "No. of digits") 
 ```
-We see that the 2-digit calculations are often off by a fair amount. The (-17,-12) exampe I mentioned, is not the only one.
+We see that the 2-digit calculations are often off by a fair amount. The (-17,-12) example I mentioned earlier, is not the only one.
 
 Let's extend this again with many small plots for different scores:
 
@@ -173,12 +208,15 @@ tp %>%
   theme(legend.position = c(1, 0), legend.justification = c(1, 0)) +
   guides(colour = guide_legend(ncol = 2))
 ```
-From the chart is pretty evident that two digit precision just doesn't cut it for calculating these kind of take points: They are all over the place, basically.
+From the chart it is pretty evident that two-digit precision just doesn't cut it for calculating these kind of take points: They are all over the place, basically.
 
 ```{r}
 diffs <- tp %>% 
-  filter(x > 1, y > 1, precision %in% c(2,6)) %>% 
-  select(x, y, precision, `Take point`) %>% 
+  filter(x > 1, y > 1, precision %in% c(2, 6)) %>% 
+  select(x, y, precision, `Take point`, `Gammonish take point`) %>%
+  rename(`Gammonless take point` = `Take point`) %>% 
+  pivot_longer(cols = c(`Gammonless take point`, `Gammonish take point`), 
+               names_to = "type", values_to = "Take point") %>% 
   pivot_wider(names_from = precision, values_from = `Take point`) %>% 
   mutate(diff = `2` - `6`)
 ```
@@ -189,16 +227,73 @@ The distribution of differences looks like this:
 
 ```{r}
 diffs %>% 
-  filter(!is.na(diff)) %>% 
+  filter(!is.na(diff), type == "Gammonless take point") %>% 
   ggplot(aes(x = diff)) +
   geom_density() +
   scale_x_continuous(breaks = seq(-0.5, 0.7, 0.1), 
                      minor_breaks = seq(-0.5, 0.7, 0.025)) +
-  labs(title = "Distribution of taking point rounding errors",
+  labs(title = "Distribution of gammonless taking point rounding errors",
        subtitle = "All pre-crawford scores in 25-point matches",
        x = "Difference: Two-digit take point - six-digit take point",
        y = "Density")
 ```
 We see that is is very common for the two-digit take point to be off by a couple of percentage points; sometimes as much as five percentage points.
 
-## Conclusion
+(In some extreme cases the difference between two-digit and six-digit take points can be as high as $0.78$; this is because of scores like (-2,-23) where the leader's rounded $mwc$ is $1.00$ even after passing; there's no measurable gain from taking and winning, so the take point becomes $1.00$). 
+
+### With gammons
+
+Before we wrap up, let's have a look at how take points with and without rounding error look when we also have gammons and backgammons. We use gammon and backgammon *frequencies*, that is, the proportion of games won or lost, that result in a gammon or backgammon. For illustration, we use frequencies similar to what can be expected at the beginning of a money game:
+
+- Player's gammon frequency: $`r gamfreq_x`$
+- Player's backgammon frequency: $`r bgfreq_x`$
+- Opponent's gammon frequency: $`r gamfreq_y`$
+- Opponent's gammon frequency: $`r bgfreq_y`$
+
+
+A plot similar to the one earlier, this time comparing take points with and without gammons, 2- and 6-digit precision, when 17-away, vs. opponent score:
+
+```{r}
+tp %>% 
+  filter(x %in% c(17), y > 3, precision %in% c(2, 6)) %>% 
+  rename(`Gammonless take point` = `Take point`) %>% 
+  pivot_longer(cols = c(`Gammonless take point`, `Gammonish take point`), 
+               names_to = "type", values_to = "Take point") %>% 
+  ggplot(aes(x = y, y = `Take point`, color = factor(precision), group = precision)) +
+  facet_wrap(facets = vars(type)) +
+  geom_point() +
+  geom_line() +
+  labs(title = "Take points at 17-away", 
+       subtitle = "No cube, position type gammonless vs gammonish",
+       x = "Opponent needs", 
+       color = "No. of digits") 
+```
+For gammonish positions the take points tend to increase with size of lead, but using only two digits basically create so much noise to that the calculations are meaningless. 
+
+Funny enough, it seems that the noise is actually sightly *smaller* when working with positions where gammons and backgammons are possible. This is probably because the most destructive rounding errors then to be cancel out when we have more numbers involved. 
+
+The density plot of take point rounding errors confirm this: 
+
+```{r}
+diffs %>% 
+  filter(!is.na(diff)) %>% 
+  ggplot(aes(x = diff, fill = type)) +
+  geom_density(alpha = 0.4) +
+  scale_x_continuous(breaks = seq(-0.5, 0.7, 0.1), 
+                     minor_breaks = seq(-0.5, 0.7, 0.025)) +
+  labs(title = "Distribution of taking point rounding errors",
+       subtitle = "All pre-crawford scores in 25-point matches",
+       x = "Difference: Two-digit take point - six-digit take point",
+       y = "Density",
+       fill = "Take point type")
+```
+
+## Conclusions
+
+- It seems that doing take point calculations that involve several entries in the match equity table really requires at least three digit precision.
+- Since this is not feasible to do over the board, the best practial approach is probably to study benchmark positions and to use heuristics along those lines:
+  - When one player need 2, 3, or 4 points to win, be aware that those remaining points are particular valuable.
+  - Automatic redoubles creating *overage* for one player and has a big impact on take decisions.  
+  - When leading, be slightly *more* willing to take doubles in races where no gammons are possible.
+  - When leading, be slightly *less* willing to take doubles in games where gammons are a real possibility.
+  

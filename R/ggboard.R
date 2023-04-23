@@ -163,6 +163,8 @@ show_excess_checkers <-  function(xgid) {
     dplyr::add_count(.data$point, .data$player) %>%
     dplyr::filter(.data$n > 5 | (.data$n > 4 & .data$point %in% c(1, 26)))
 
+  if (nrow(excess) == 0) return(NULL) # No excess checkers found
+
   top_half <- excess %>%
     dplyr::filter(.data$point > 13) %>%
     dplyr::filter(.data$y == min(.data$y, na.rm = T))
@@ -231,19 +233,20 @@ show_game_info <-  function(xgid) {
   #if (info["turn"] == 1) turn_text <- "White's turn" else turn_text <- "Black's turn"
 
   pips_bottom <- paste0("Pip count: ", pip_count["pips_bottom"])
+
   pips_top <- paste0("Pip count: ", pip_count["pips_top"])
 
   match_bottom <- dplyr::case_when(info["match_length"] == "0" ~ "Moneygame",
                             info["match_length"] != "0" ~ paste0("Score: ", info["score_bottom"], "/", info["match_length"]))
 
   match_top <- dplyr::case_when(info["match_length"] == "0" ~ NA_character_,
-                            info["match_length"] != "0" ~ paste0("Score: ", info["score_bottom"], "/", info["match_length"]))
+                            info["match_length"] != "0" ~ paste0("Score: ", info["score_top"], "/", info["match_length"]))
 
-  action <-  dplyr::case_when(info["turn"] == "1" & !info["dice"] %in% c("00", "D", "B", "R")
-                       ~ paste("White to play", info["dice"]),
-                       info["turn"] == "1" & !info["dice"] %in% c("D", "B", "R")
-                       ~ "White to play")
+  turn <- dplyr::case_when(info["turn"] == "1" ~ "White to play",
+                           info["turn"] == "-1" ~ "Black to play")
 
+  action <-  dplyr::case_when(!info["dice"] %in% c("00", "D", "B", "R") ~ paste(turn, info["dice"]),
+                              TRUE ~ paste0(turn, ". Cube action?"))
 
   df <- dplyr::tibble(x = c(0, 0, 1, 1, 0.5),
                y = c(-0.08, 0.94, -0.08, 0.94, -0.14),
@@ -322,8 +325,10 @@ flip_xgid <- function(xgid) {
 
 
 get_game_info <- function(xgid) {
-  info <- stringr::str_split(xgid, ":")[[1]][4:10]
-  names(info) <- c("turn", "dice", "score_bottom", "score_top", "crawford_jacoby", "match_length", "max_cube")
+  info <- stringr::str_split(xgid, ":")[[1]]
+  names(info) <- c("position", "cube_value", "cube_position", "turn", "dice",
+                   "score_bottom", "score_top", "crawford_jacoby", "match_length",
+                   "max_cube")
 
   return(info)
 }

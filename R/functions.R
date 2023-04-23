@@ -86,6 +86,52 @@ tp <- function(a, b, cube, met, last_roll = FALSE) {
 }
 
 
+
+#' Calculate cubeless, take points at different scores, including gammons and backgammons
+#'
+#' @param a number of points that player needs
+#' @param b number of points that opponent needs
+#' @param gamfreq_a proportion of player's wins that are gammons
+#' @param bgfreq_a proportion of player's wins that are backgammons
+#' @param gamfreq_b proportion of player's losses that are gammons
+#' @param bgfreq_b proportion of player's losses that are backgammons
+#' @param cube cube value (before doubling)
+#' @param met match equity table
+#'
+#' @return double. Take point
+#' @export
+#'
+tp_gammons <- function(a, b, gamfreq_a, bgfreq_a, gamfreq_b, bgfreq_b, cube, met) {
+
+  if ((gamfreq_a + bgfreq_a > 1) | (gamfreq_b + bgfreq_b > 1)) {
+    stop("Sum of gammon and backgammon freqencies cannot exceed 1 for either player")
+  }
+
+  if (b <= 2 * cube) {
+    multiply <- 4 # We have an automatic recube
+  } else {
+    multiply <- 2 # The cube value will be double if we take
+  }
+
+  drop <- mwc(a, b - cube, met)
+
+  takewin <-
+    (1 - gamfreq_a - bgfreq_a) * mwc(a - multiply * cube, b, met) + # ordinary win
+    (gamfreq_a) * mwc(a - 2 * multiply * cube, b, met) +            # gammon win
+    (bgfreq_a) * mwc(a - 3 * multiply * cube, b, met)               # backgammon win
+
+  takelose <-
+    (1 - gamfreq_b - bgfreq_b) * mwc(a, b - multiply * cube, met) + # ordinary loss
+    (gamfreq_b) * mwc(a, b - 2 * multiply * cube, met) +            # gammon loss
+    (bgfreq_b) * mwc(a, b - 3 * multiply * cube, met)               # backgammon loss
+
+  gain <- takewin - drop
+  loss <- drop - takelose
+
+  return(loss / (loss + gain))
+}
+
+
 #' Get match equity table from *.met file (used by Extreme Gammon)
 #'
 #' @param filename file location
