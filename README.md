@@ -1,5 +1,5 @@
 # R-package: `backgammon`
-This is a collection of useful functions for making related to backgammon.
+This is a collection of useful functions for calculations related to backgammon.
 
 For example, `ggboard()` creates backgammon positions using the `ggplot2` 
 package. 
