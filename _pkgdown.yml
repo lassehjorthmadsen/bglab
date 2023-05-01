@@ -4,16 +4,9 @@ template:
   bootstrap: 5
 
 reference:
-- title: Constants
-  desc: >
-    Constants used for diagram design.
-  contents:
-  - boad_ratio
-  - checker_radius
-
 - title: Diagrams
   desc: >
-    Functions for drawing diagrams
+    Function for drawing diagrams
   contents:
   - ggboard
 
@@ -27,3 +20,10 @@ reference:
   - mwc
   - tp
   - tp_gammons
+
+- title: Constants
+  desc: >
+    Constants used for diagram design.
+  contents:
+  - board_ratio
+  - checker_radius
