@@ -1,4 +1,29 @@
 url: https://lassehjorthmadsen.github.io/backgammon/
+
 template:
   bootstrap: 5
 
+reference:
+- title: Constants
+  desc: >
+    Constants used for diagram design.
+  contents:
+  - boad_ratio
+  - checker_radius
+
+- title: Diagrams
+  desc: >
+    Functions for drawing diagrams
+  contents:
+  - ggboard
+
+- title: Functions
+  desc: >
+    Calculate familiar metrics like takepoint, equivalent-to-moneygame, etc.
+  contents:
+  - emg
+  - get_met
+  - gwc2mwc
+  - mwc
+  - tp
+  - tp_gammons
