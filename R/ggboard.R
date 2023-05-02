@@ -33,7 +33,7 @@ ggboard <- function(xgid, bearoff = "right") {
     show_points() +
     show_border() +
     show_bar() +
-    #show_tray() +
+    # show_tray() +
     show_numbers(bearoff) +
     show_checkers(xgid, bearoff) +
     show_excess_checkers(xgid) +
