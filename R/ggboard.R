@@ -120,9 +120,9 @@ show_numbers <- function(bearoff = "right") {
   y <- c(rep(-0.02, 13), rep(board_ratio + 0.03, 13))
 
   if (bearoff == "left") {
-    label <- as.character(c(1:6, NA, 7:12, 24:19, NA, 18:13))
+    label <- as.character(c(1:6, "", 7:12, 24:19, "", 18:13))
   } else if  (bearoff == "right") {
-    label = as.character(c(12:7, NA, 6:1, 13:18, NA, 19:24))
+    label = as.character(c(12:7, "", 6:1, 13:18, "", 19:24))
   } else {
     stop("bearoff parameter must be either 'right' or 'left'")
   }
@@ -233,7 +233,7 @@ show_game_info <-  function(xgid) {
   match_bottom <- dplyr::case_when(info["match_length"] == "0" ~ "Moneygame",
                             info["match_length"] != "0" ~ paste0("Score: ", info["score_bottom"], "/", info["match_length"]))
 
-  match_top <- dplyr::case_when(info["match_length"] == "0" ~ NA_character_,
+  match_top <- dplyr::case_when(info["match_length"] == "0" ~ "",
                             info["match_length"] != "0" ~ paste0("Score: ", info["score_top"], "/", info["match_length"]))
 
   turn <- dplyr::case_when(info["turn"] == "1" ~ "White to play",
