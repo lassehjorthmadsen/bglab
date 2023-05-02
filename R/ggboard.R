@@ -42,7 +42,7 @@ ggboard <- function(xgid, bearoff = "right") {
     show_cube_value(xgid) +
     show_game_info(xgid) +
     ggplot2::coord_fixed() +
-    ggplot2::scale_fill_manual(values = c("white", "#cccccc", "black", "white")) +
+    ggplot2::scale_fill_manual(values = c("odd" = "white", "even" = "#cccccc", "top" = "black", "bottom" = "white")) +
     ggplot2::scale_color_manual(values = c("top" = "white", "bottom" = "black")) +
     ggplot2::theme_void(base_size = 20)
 
@@ -53,8 +53,8 @@ ggboard <- function(xgid, bearoff = "right") {
 show_points <- function() {
   x <- 0:12 %>% purrr::map(~ rep(0:2/26, 2) + .x * 2/26) %>% unlist()
   y <- rep(c(0, 5/11, 0, 1, 6/11, 1), 13) * board_ratio
-  fill <- rep(c(rep(T, 3), rep(F, 3), rep(F, 3), rep(T, 3)), 3)
-  fill <- c(fill, rep(F, 6), fill)
+  fill <- rep(c(rep("odd", 3), rep("even", 3), rep("even", 3), rep("odd", 3)), 3)
+  fill <- c(fill, rep("odd", 6), fill)
   group <- 1:26 %>% purrr::map(rep, 3) %>% unlist()
 
   triangles <- dplyr::tibble(x = x, y = y, fill = fill, group = group)
