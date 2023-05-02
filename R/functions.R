@@ -136,7 +136,7 @@ tp_gammons <- function(a, b, gamfreq_a, bgfreq_a, gamfreq_b, bgfreq_b, cube, met
 #'
 #' @param W Average cubeless value of games ultimately won
 #' @param L Average cubeless value of games ultimately lost
-#' @param x
+#' @param x cube-life index, between 0 and 1
 #' @return double. Take point
 #' @export
 #'

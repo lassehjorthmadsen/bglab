@@ -10,6 +10,8 @@ tp_janowski(W, L, x = 2/3)
 \item{W}{Average cubeless value of games ultimately won}
 
 \item{L}{Average cubeless value of games ultimately lost}
+
+\item{x}{cube-life index, between 0 and 1}
 }
 \value{
 double. Take point
