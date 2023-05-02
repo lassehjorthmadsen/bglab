@@ -80,9 +80,9 @@ tp <- function(a, b, cube, met, last_roll = FALSE) {
   takelose <- mwc(a, b - multiply * cube, met)
 
   gain <- takewin - drop
-  loss <- drop - takelose
+  risk <- drop - takelose
 
-  return(loss / (loss + gain))
+  return(risk / (risk + gain))
 }
 
 
@@ -126,9 +126,23 @@ tp_gammons <- function(a, b, gamfreq_a, bgfreq_a, gamfreq_b, bgfreq_b, cube, met
     (bgfreq_b) * mwc(a, b - 3 * multiply * cube, met)               # backgammon loss
 
   gain <- takewin - drop
-  loss <- drop - takelose
+  risk <- drop - takelose
 
-  return(loss / (loss + gain))
+  return(risk / (risk + gain))
+}
+
+
+#' Calculate cubeful take points for money game, Janowski-style
+#'
+#' @param W Average cubeless value of games ultimately won
+#' @param L Average cubeless value of games ultimately lost
+#' @param x
+#' @return double. Take point
+#' @export
+#'
+tp_janowski <- function(W, L, x = 2/3) {
+  tp = (L - 0.5) / (W + L)
+  return(tp)
 }
 
 
