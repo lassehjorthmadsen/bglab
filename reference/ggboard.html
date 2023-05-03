@@ -66,36 +66,25 @@
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># Starting position:</span></span></span>
 <span class="r-in"><span><span class="fu">ggboard</span><span class="op">(</span><span class="st">"XGID=-b----E-C---eE---c-e----B-:0:0:1:52:0:0:3:0:10"</span><span class="op">)</span></span></span>
-<span class="r-plt img"><img src="ggboard-1.png" alt="" width="700" height="433"></span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> object 'y' not found</span>
 <span class="r-in"><span><span class="co"># Middle game position, match to 7, player owns cube</span></span></span>
 <span class="r-in"><span><span class="fu">ggboard</span><span class="op">(</span><span class="st">"XGID=-b--BBC-C---cC---cBbc-b---:1:1:1:00:0:0:0:11:10"</span><span class="op">)</span></span></span>
-<span class="r-plt img"><img src="ggboard-2.png" alt="" width="700" height="433"></span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> object 'y' not found</span>
 <span class="r-in"><span><span class="co"># Same position, bottom player to play 51:</span></span></span>
 <span class="r-in"><span><span class="fu">ggboard</span><span class="op">(</span><span class="st">"XGID=-b--BBC-C---cC---cBbc-b---:1:1:1:51:0:0:0:11:10"</span><span class="op">)</span></span></span>
-<span class="r-plt img"><img src="ggboard-3.png" alt="" width="700" height="433"></span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> object 'y' not found</span>
 <span class="r-in"><span><span class="co"># Position with multiple checkers off and one on the bar:</span></span></span>
 <span class="r-in"><span><span class="fu">ggboard</span><span class="op">(</span><span class="st">"XGID=aFDaA--------------a-Acbb-:1:-1:1:42:3:0:0:7:10"</span><span class="op">)</span></span></span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>There was 1 warning in `dplyr::filter()`.</span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> In argument: `.data$y == min(.data$y, na.rm = T)`.</span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> Caused by warning in `min()`:</span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span style="color: #BBBB00;">!</span> no non-missing arguments to min; returning Inf</span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Removed 1 rows containing non-finite values (`stat_circle()`).</span>
-<span class="r-plt img"><img src="ggboard-4.png" alt="" width="700" height="433"></span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> object 'y' not found</span>
 <span class="r-in"><span><span class="co"># Same positon, bear off at the left:</span></span></span>
 <span class="r-in"><span><span class="fu">ggboard</span><span class="op">(</span><span class="st">"XGID=aFDaA--------------a-Acbb-:1:-1:1:42:3:0:0:7:10"</span>, <span class="st">"left"</span><span class="op">)</span></span></span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>There was 1 warning in `dplyr::filter()`.</span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">ℹ</span> In argument: `.data$y == min(.data$y, na.rm = T)`.</span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> Caused by warning in `min()`:</span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span style="color: #BBBB00;">!</span> no non-missing arguments to min; returning Inf</span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Removed 1 rows containing non-finite values (`stat_circle()`).</span>
-<span class="r-plt img"><img src="ggboard-5.png" alt="" width="700" height="433"></span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> object 'y' not found</span>
 <span class="r-in"><span><span class="co"># All checkers off:</span></span></span>
 <span class="r-in"><span><span class="fu">ggboard</span><span class="op">(</span><span class="st">"XGID=--------------------------:1:-1:1:00:3:0:0:7:10"</span><span class="op">)</span></span></span>
-<span class="r-plt img"><img src="ggboard-6.png" alt="" width="700" height="433"></span>
+<span class="r-plt img"><img src="ggboard-1.png" alt="" width="700" height="433"></span>
 <span class="r-in"><span><span class="co"># Both sides have several point with excess checkers:</span></span></span>
 <span class="r-in"><span><span class="fu">ggboard</span><span class="op">(</span><span class="st">"XGID=e----FI------------fd-----:3:-1:1:52:0:0:3:0:10"</span><span class="op">)</span></span></span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Removed 7 rows containing non-finite values (`stat_circle()`).</span>
-<span class="r-plt img"><img src="ggboard-7.png" alt="" width="700" height="433"></span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> object 'y' not found</span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
