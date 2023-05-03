@@ -6,20 +6,32 @@
 #' @return ggplot object
 #'
 #' @examples
+#'
 #' # Starting position:
 #' ggboard("XGID=-b----E-C---eE---c-e----B-:0:0:1:52:0:0:3:0:10")
+#'
 #' # Middle game position, match to 7, player owns cube
 #' ggboard("XGID=-b--BBC-C---cC---cBbc-b---:1:1:1:00:0:0:0:11:10")
+#'
 #' # Same position, bottom player to play 51:
 #' ggboard("XGID=-b--BBC-C---cC---cBbc-b---:1:1:1:51:0:0:0:11:10")
+#'
 #' # Position with multiple checkers off and one on the bar:
 #' ggboard("XGID=aFDaA--------------a-Acbb-:1:-1:1:42:3:0:0:7:10")
+#'
 #' # Same positon, bear off at the left:
 #' ggboard("XGID=aFDaA--------------a-Acbb-:1:-1:1:42:3:0:0:7:10", "left")
+#'
 #' # All checkers off:
 #' ggboard("XGID=--------------------------:1:-1:1:00:3:0:0:7:10")
+#'
 #' # Both sides have several point with excess checkers:
 #' ggboard("XGID=e----FI------------fd-----:3:-1:1:52:0:0:3:0:10")
+#'
+#' # Example with beaver, Jacoby, Crawford
+#'
+#' # `ggboard()` returns a ggplot object; you can add title and subtitle
+#'
 #'
 #' @importFrom ggforce geom_circle
 #' @importFrom stringi stri_reverse
@@ -36,7 +48,7 @@ ggboard <- function(xgid, bearoff = "right") {
     # show_tray() +
     show_numbers(bearoff) +
     show_checkers(xgid, bearoff) +
-    show_excess_checkers(xgid) +
+    show_excess_checkers(xgid, bearoff) +
     show_off_checkers(xgid) +
     show_cube(xgid) +
     show_cube_value(xgid) +
@@ -138,17 +150,19 @@ show_numbers <- function(bearoff = "right") {
 show_checkers <-  function(xgid, bearoff = "right") {
 
   if (bearoff == "left") xgid <- flip_xgid(xgid)
-
   df <- xgid2df(xgid)
-
   if (nrow(df) == 0) return(NULL) # No checkers on board
+  df <- df %>% filter(!is.na(y))  # Don't draw excess checkers (>5)
 
   ggforce::geom_circle(data = df, ggplot2::aes(x0 = .data$x, y0 = .data$y, fill = .data$player, r = checker_radius),
                        size = 0.2, show.legend = F)
   }
 
 
-show_excess_checkers <-  function(xgid) {
+show_excess_checkers <-  function(xgid, bearoff = "right") {
+
+  if (bearoff == "left") xgid <- flip_xgid(xgid)
+
   df <- xgid2df(xgid)
 
   if (nrow(df) == 0) return(NULL) # No checkers on board
@@ -159,13 +173,20 @@ show_excess_checkers <-  function(xgid) {
 
   if (nrow(excess) == 0) return(NULL) # No excess checkers found
 
-  top_half <- excess %>%
-    dplyr::filter(.data$point > 13) %>%
-    dplyr::filter(.data$y == min(.data$y, na.rm = T))
+  # We split into top-half and bottom half; each share y-coordinate
+  top_half <- excess %>% dplyr::filter(.data$point > 13)
 
-  bottom_half <- excess %>%
-    dplyr::filter(.data$point < 14) %>%
-    dplyr::filter(.data$y == max(.data$y, na.rm = T))
+  if (nrow(top_half) > 0) {
+    # For top-half we pick the minimum y-coordinate
+    top_half <- top_half %>% dplyr::filter(.data$y == min(.data$y, na.rm = T))
+    }
+
+  bottom_half <- excess %>% dplyr::filter(.data$point < 14)
+
+  if (nrow(bottom_half) > 0) {
+    # For bottom-half we pick the maximum y-coordinate
+    bottom_half <- bottom_half %>% dplyr::filter(.data$y == max(.data$y, na.rm = T))
+  }
 
   excess <- dplyr::bind_rows(top_half, bottom_half)
 
