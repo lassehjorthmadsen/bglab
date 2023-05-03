@@ -10,7 +10,7 @@
 #' # Starting position:
 #' ggboard("XGID=-b----E-C---eE---c-e----B-:0:0:1:52:0:0:3:0:10")
 #'
-#' # Middle game position, match to 7, player owns cube
+#' # Middle game position, match to 11, bottom player owns cube
 #' ggboard("XGID=-b--BBC-C---cC---cBbc-b---:1:1:1:00:0:0:0:11:10")
 #'
 #' # Same position, bottom player to play 51:
@@ -152,7 +152,7 @@ show_checkers <-  function(xgid, bearoff = "right") {
   if (bearoff == "left") xgid <- flip_xgid(xgid)
   df <- xgid2df(xgid)
   if (nrow(df) == 0) return(NULL) # No checkers on board
-  df <- df %>% filter(!is.na(y))  # Don't draw excess checkers (>5)
+  df <- dplyr::filter(df, !is.na(y))  # Don't draw excess checkers (>5)
 
   ggforce::geom_circle(data = df, ggplot2::aes(x0 = .data$x, y0 = .data$y, fill = .data$player, r = checker_radius),
                        size = 0.2, show.legend = F)
