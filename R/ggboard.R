@@ -32,7 +32,11 @@
 #'
 #' # ggboard() returns a ggplot object; you can add title and more
 #' id <- "XGID=-a--BBCBB--A-C----bbdbb-b-:1:1:1:00:2:0:0:5:10"
-#' ggboard(id) + ggplot2::labs(title = "Should White double, should Black take?", subtitle = "This one is tough", caption = id)
+#'
+#' ggboard(id) +
+#' ggplot2::labs(title = "Should White double, should Black take?",
+#'               subtitle = "This one is tough",
+#'               caption = id)
 #'
 #' # All checkers off, just to see how that looks
 #' ggboard("XGID=--------------------------:1:-1:1:00:3:0:0:7:10")
