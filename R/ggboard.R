@@ -38,7 +38,7 @@
 #'               subtitle = "This one is tough",
 #'               caption = id)
 #'
-#' # All checkers off, just to see how that looks
+#' # All checkers off, just to see how that looks like:
 #' ggboard("XGID=--------------------------:1:-1:1:00:3:0:0:7:10")
 #'
 #' @importFrom ggforce geom_circle
