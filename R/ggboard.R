@@ -6,7 +6,6 @@
 #' @return ggplot object
 #'
 #' @examples
-#'
 #' # Starting position:
 #' ggboard("XGID=-b----E-C---eE---c-e----B-:0:0:1:52:0:0:3:0:10")
 #'
@@ -22,15 +21,17 @@
 #' # Same positon, bear off at the left:
 #' ggboard("XGID=aFDaA--------------a-Acbb-:1:-1:1:42:3:0:0:7:10", "left")
 #'
-#' # All checkers off:
-#' ggboard("XGID=--------------------------:1:-1:1:00:3:0:0:7:10")
-#'
-#' # Both sides have several point with excess checkers:
+#' # Both sides have several points with excess checkers:
 #' ggboard("XGID=e----FI------------fd-----:3:-1:1:52:0:0:3:0:10")
 #'
-#' # Example with beaver, Jacoby, Crawford
+#' # Opening game, match to 3, Crawford:
+#' ggboard("XGID=-b---BD-B---cE--abbe----B-:0:0:1:44:2:0:1:3:10")
 #'
-#' # `ggboard()` returns a ggplot object; you can add title and subtitle
+#' # Moneygame with beaver and Jacoby rule (Kauder paradox)
+#' ggboard("XGID=-BBBBBC------A--caacbbba-A:0:0:1:00:0:0:3:0:10")
+#'
+#' # All checkers off, just to see how that looks
+#' ggboard("XGID=--------------------------:1:-1:1:00:3:0:0:7:10")
 #'
 #'
 #' @importFrom ggforce geom_circle
@@ -56,7 +57,10 @@ ggboard <- function(xgid, bearoff = "right") {
     ggplot2::coord_fixed() +
     ggplot2::scale_fill_manual(values = c("odd" = "white", "even" = "#cccccc", "top" = "black", "bottom" = "white")) +
     ggplot2::scale_color_manual(values = c("top" = "white", "bottom" = "black")) +
-    ggplot2::theme_void(base_size = 20)
+    ggplot2::theme_void(base_size = 20) +
+    ggplot2::theme(plot.title = ggplot2::element_text(size = 12, margin = ggplot2::margin(10, 0, 0, 0)),
+                   plot.subtitle = ggplot2::element_text(size = 9, margin = ggplot2::margin(5, 0, 5, 0)),
+                   plot.caption = ggplot2::element_text(size = 7, margin = ggplot2::margin(5, 0, 0, 0)))
 
   return(position)
 }
@@ -245,14 +249,25 @@ show_game_info <-  function(xgid) {
   info <- get_game_info(xgid)
   pip_count <- get_pip_count(xgid)
 
-  #if (info["turn"] == 1) turn_text <- "White's turn" else turn_text <- "Black's turn"
-
   pips_bottom <- paste0("Pip count: ", pip_count["pips_bottom"])
 
   pips_top <- paste0("Pip count: ", pip_count["pips_top"])
 
-  match_bottom <- dplyr::case_when(info["match_length"] == "0" ~ "Moneygame",
-                            info["match_length"] != "0" ~ paste0("Score: ", info["score_bottom"], "/", info["match_length"]))
+  crawford_note <- dplyr::case_when(info["match_length"] != "0" &
+                                      info["crawford_jacoby"] == "1" ~ ", Crawford",
+                                    TRUE ~ "")
+
+  jacoby_note <- dplyr::case_when(info["match_length"] == "0" &
+                                    info["crawford_jacoby"] == "1" ~ ", Jacoby, no beaver",
+                                  info["match_length"] == "0" &
+                                    info["crawford_jacoby"] == "2" ~ ", no Jacoby, beaver",
+                                  info["match_length"] == "0" &
+                                    info["crawford_jacoby"] == "3" ~ ", Jacoby and beaver",
+                                  TRUE ~ "")
+
+  match_bottom <- dplyr::case_when(info["match_length"] == "0" ~ paste0("Moneygame", jacoby_note),
+                            info["match_length"] != "0" ~
+                              paste0("Score: ", info["score_bottom"], "/", info["match_length"], crawford_note))
 
   match_top <- dplyr::case_when(info["match_length"] == "0" ~ "",
                             info["match_length"] != "0" ~ paste0("Score: ", info["score_top"], "/", info["match_length"]))
