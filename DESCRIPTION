@@ -1,10 +1,10 @@
 Package: backgammon
-Title: Various Notebooks Related To Backgammon Theory
+Title: Various Tools Related To Backgammon Analysis
 Version: 0.0.0.9000
 Authors@R: 
     person("Lasse", "Hjorth Madsen", , "lassehjorthmadsen@gmail.com", role = c("aut", "cre"))
-Description: A growing collection of useful functions and match equity tables 
-    for backgammon analysis.
+Description: A collection of useful functions and match equity tables 
+    for backgammon analysis and displaying positions.
 License: MIT + file LICENSE
 Imports: 
     dplyr,
