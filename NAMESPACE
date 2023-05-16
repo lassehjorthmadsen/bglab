@@ -2,10 +2,12 @@
 
 export("%>%")
 export(emg)
+export(eq_janowski)
 export(get_met)
 export(ggboard)
 export(gwc2mwc)
 export(mwc)
+export(outcome_probs)
 export(tp)
 export(tp_gammons)
 export(tp_janowski)

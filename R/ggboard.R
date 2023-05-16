@@ -18,7 +18,7 @@
 #' # Position with multiple checkers off and one on the bar:
 #' ggboard("XGID=aFDaA--------------a-Acbb-:1:-1:1:42:3:0:0:7:10")
 #'
-#' # Same positon, bear off at the left:
+#' # Same position, bear off at the left:
 #' ggboard("XGID=aFDaA--------------a-Acbb-:1:-1:1:42:3:0:0:7:10", "left")
 #'
 #' # Both sides have several points with excess checkers:
@@ -163,7 +163,7 @@ show_checkers <-  function(xgid, bearoff = "right") {
   if (bearoff == "left") xgid <- flip_xgid(xgid)
   df <- xgid2df(xgid)
   if (nrow(df) == 0) return(NULL) # No checkers on board
-  df <- dplyr::filter(df, !is.na(y))  # Don't draw excess checkers (>5)
+  df <- dplyr::filter(df, !is.na(.data$y))  # Don't draw excess checkers (>5)
 
   ggforce::geom_circle(data = df, ggplot2::aes(x0 = .data$x, y0 = .data$y, fill = .data$player, r = checker_radius),
                        size = 0.2, show.legend = F)

@@ -141,19 +141,86 @@ tp_gammons <- function(a, b, gamfreq_a, bgfreq_a, gamfreq_b, bgfreq_b, cube, met
 #' @export
 #'
 tp_janowski <- function(W, L, x = 2/3) {
-  tp = (L - 0.5) / (W + L)
+  tp = (L - 0.5) / (W + L + 0.5 * x)
   return(tp)
 }
 
 
+#' Calculate equity for money game, Janowski-style
+#'
+#' @param outcome_probs numeric vector of length 6, representing outcome
+#' probabilities (must always sum to 1 or 100)
+#' @param C Cube position: 0: Center; 1: player; -1: opponent
+#' @param p Probability of winning
+#' @param x cube-life index, between 0 and 1
+#' @return double. Equity
+#' @examples
+#' probs <- c(31, 4, 0, 47, 17, 1)
+#' eq_janowski(outcome_probs = probs, C = 1, p = 0.5)
+#'
+#' @export
+eq_janowski <- function(outcome_probs, C, p, x = 2 / 3) {
+  outcome_probs <-
+    dplyr::case_when(
+      sum(outcome_probs) == 1 ~ outcome_probs,
+      sum(outcome_probs) == 100 ~ outcome_probs / 100,
+      TRUE ~ NaN
+    )
+
+  if (any(is.nan(outcome_probs))) stop("outcome_probs must sum to 1 or 100")
+
+  expected_outcome <- outcome_probs * c(1, 2, 3, -1, -2, -3)
+  W <- sum(expected_outcome[1:3]) / sum(outcome_probs[1:3])
+  L <- - sum(expected_outcome[4:6]) / sum(outcome_probs[4:6])
+
+  eq <- dplyr::case_when(
+    C ==  1 ~ p * (W + L + 0.5 * x) - L,
+    C == -1 ~ p * (W + L + 0.5 * x) - L - 0.5 * x,
+    C ==  0 ~ (4 / (4 - x)) * (p * (W + L + 0.5 * x) - L - 0.25 * x),
+    TRUE ~ NaN
+  )
+
+  if (is.nan(eq)) stop("Cube position, C, must be one of -1, 0, 1")
+  return(eq)
+}
+
+
+#' Convert outcome distributions from eXtreme Gammon to probabilities
+#'
+#' @param xg_probs numeric vector of length 6, corresponding to the
+#' winning chances reported by eXtreme Gammon. Can be percentages or
+#' decimal fractions.
+#'
+#' @return named numeric vector of length 6, representing outcome
+#' probabilities (always sum to 1 or 100)
+#'
+#' @examples
+#' # XGID=-a-BaBC-A---eE---c-e----B-:0:0:1:00:0:0:0:0:10
+#' # 4-ply winning chances:
+#' outcome_probs(c(61.94, 24.09, 1.04, 38.06, 8.54, 0.42))
+#'
+#' @export
+outcome_probs <- function(xg_probs) {
+
+  if (!(xg_probs[1] + xg_probs[4]) %in% c(1, 100))
+    stop("Winning probabilities must sum to either 1 or 100")
+
+  out <- c("win_single" = xg_probs[1] - xg_probs[2],
+           "win_gammon" = xg_probs[2] - xg_probs[3],
+           "win_bg" = xg_probs[3],
+           "lose_single" = xg_probs[4] - xg_probs[5],
+           "lose_gammon" = xg_probs[5] - xg_probs[6],
+           "lose_bg" = xg_probs[6]
+           )
+
+  return(out)
+}
+
 #' Get match equity table from *.met file (used by Extreme Gammon)
 #'
 #' @param filename file location
-#'
 #' @return matrix
-#'
 #' @importFrom rlang .data
-#'
 #' @export
 #'
 get_met <- function(filename = "data-raw\\Kazaross XG2.met") {
