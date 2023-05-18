@@ -235,6 +235,9 @@ outcome_probs <- function(xg_probs) {
 #' Defaults to TRUE
 #'
 #' @return data.frame with rownames
+#'
+#' @importFrom stats addmargins
+#'
 #' @export
 #'
 #' @examples

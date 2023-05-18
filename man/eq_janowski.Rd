@@ -4,10 +4,10 @@
 \alias{eq_janowski}
 \title{Calculate equity for money game, Janowski-style}
 \usage{
-eq_janowski(outcome_probs, C, p, x = 2/3)
+eq_janowski(probs, C, p, x = 2/3)
 }
 \arguments{
-\item{outcome_probs}{numeric vector of length 6, representing outcome
+\item{probs}{numeric vector of length 6, representing outcome
 probabilities (must always sum to 1 or 100)}
 
 \item{C}{Cube position: 0: Center; 1: player; -1: opponent}
@@ -24,6 +24,6 @@ Calculate equity for money game, Janowski-style
 }
 \examples{
 probs <- c(31, 4, 0, 47, 17, 1)
-eq_janowski(outcome_probs = probs, C = 1, p = 0.5)
+eq_janowski(probs = probs, C = 1, p = 0.5)
 
 }

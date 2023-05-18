@@ -2,14 +2,13 @@
 % Please edit documentation in R/functions.R
 \name{tp_janowski}
 \alias{tp_janowski}
-\title{Calculate cubeful take points for money game, Janowski-style}
+\title{Calculate take points for money game, Janowski-style}
 \usage{
-tp_janowski(W, L, x = 2/3)
+tp_janowski(probs, x = 2/3)
 }
 \arguments{
-\item{W}{Average cubeless value of games ultimately won}
-
-\item{L}{Average cubeless value of games ultimately lost}
+\item{probs}{numeric vector of length 6, representing outcome
+probabilities (must always sum to 1 or 100)}
 
 \item{x}{cube-life index, between 0 and 1}
 }
@@ -17,5 +16,5 @@ tp_janowski(W, L, x = 2/3)
 double. Take point
 }
 \description{
-Calculate cubeful take points for money game, Janowski-style
+Calculate take points for money game, Janowski-style
 }
