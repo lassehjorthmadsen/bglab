@@ -30,7 +30,7 @@ ggboard("XGID=-b--BBC-C---cC---cBbc-b---:1:1:1:51:0:0:0:11:10")
 # Position with multiple checkers off and one on the bar:
 ggboard("XGID=aFDaA--------------a-Acbb-:1:-1:1:42:3:0:0:7:10")
 
-# Same positon, bear off at the left:
+# Same position, bear off at the left:
 ggboard("XGID=aFDaA--------------a-Acbb-:1:-1:1:42:3:0:0:7:10", "left")
 
 # Both sides have several points with excess checkers:

@@ -132,15 +132,22 @@ tp_gammons <- function(a, b, gamfreq_a, bgfreq_a, gamfreq_b, bgfreq_b, cube, met
 }
 
 
-#' Calculate cubeful take points for money game, Janowski-style
+#' Calculate take points for money game, Janowski-style
 #'
-#' @param W Average cubeless value of games ultimately won
-#' @param L Average cubeless value of games ultimately lost
+#' @param probs numeric vector of length 6, representing outcome
+#' probabilities (must always sum to 1 or 100)
 #' @param x cube-life index, between 0 and 1
 #' @return double. Take point
 #' @export
 #'
-tp_janowski <- function(W, L, x = 2/3) {
+tp_janowski <- function(probs, x = 2/3) {
+
+  probs <- check_probs(probs)
+
+  expected_outcome <- probs * c(1, 2, 3, -1, -2, -3)
+  W <- sum(expected_outcome[1:3]) / sum(probs[1:3])
+  L <- - sum(expected_outcome[4:6]) / sum(probs[4:6])
+
   tp = (L - 0.5) / (W + L + 0.5 * x)
   return(tp)
 }
@@ -148,7 +155,7 @@ tp_janowski <- function(W, L, x = 2/3) {
 
 #' Calculate equity for money game, Janowski-style
 #'
-#' @param outcome_probs numeric vector of length 6, representing outcome
+#' @param probs numeric vector of length 6, representing outcome
 #' probabilities (must always sum to 1 or 100)
 #' @param C Cube position: 0: Center; 1: player; -1: opponent
 #' @param p Probability of winning
@@ -156,34 +163,38 @@ tp_janowski <- function(W, L, x = 2/3) {
 #' @return double. Equity
 #' @examples
 #' probs <- c(31, 4, 0, 47, 17, 1)
-#' eq_janowski(outcome_probs = probs, C = 1, p = 0.5)
+#' eq_janowski(probs = probs, C = 1, p = 0.5)
 #'
 #' @export
-eq_janowski <- function(outcome_probs, C, p, x = 2 / 3) {
-  outcome_probs <-
-    dplyr::case_when(
-      sum(outcome_probs) == 1 ~ outcome_probs,
-      sum(outcome_probs) == 100 ~ outcome_probs / 100,
-      TRUE ~ NaN
-    )
+eq_janowski <- function(probs, C, p, x = 2/3) {
 
-  if (any(is.nan(outcome_probs))) stop("outcome_probs must sum to 1 or 100")
+  if (!1 %in% c(-1, 0, 1)) stop("Cube position, C, must be one of -1, 0, 1")
 
-  expected_outcome <- outcome_probs * c(1, 2, 3, -1, -2, -3)
-  W <- sum(expected_outcome[1:3]) / sum(outcome_probs[1:3])
-  L <- - sum(expected_outcome[4:6]) / sum(outcome_probs[4:6])
+  probs <- check_probs(probs)
+  expected_outcome <- probs * c(1, 2, 3, -1, -2, -3)
+  W <- sum(expected_outcome[1:3]) / sum(probs[1:3])
+  L <- - sum(expected_outcome[4:6]) / sum(probs[4:6])
 
   eq <- dplyr::case_when(
     C ==  1 ~ p * (W + L + 0.5 * x) - L,
     C == -1 ~ p * (W + L + 0.5 * x) - L - 0.5 * x,
-    C ==  0 ~ (4 / (4 - x)) * (p * (W + L + 0.5 * x) - L - 0.25 * x),
-    TRUE ~ NaN
+    C ==  0 ~ (4 / (4 - x)) * (p * (W + L + 0.5 * x) - L - 0.25 * x)
   )
 
-  if (is.nan(eq)) stop("Cube position, C, must be one of -1, 0, 1")
   return(eq)
 }
 
+check_probs <- function(probs) {
+
+  if (!is.numeric(probs)) stop("probs must be numeric vector")
+  if (length(probs) != 6)  stop("probs must have length 6")
+
+  if (any(probs > 1)) probs <- probs / 100 # Convert percentages
+
+  if (abs(1 - sum(probs)) > 1e-7) stop("probs must sum to 1 or 100")
+
+  return (probs)
+}
 
 #' Convert outcome distributions from eXtreme Gammon to probabilities
 #'
@@ -215,6 +226,32 @@ outcome_probs <- function(xg_probs) {
 
   return(out)
 }
+
+#' Format winning probablities in nice table
+#'
+#' @param probs numeric vector of length 6, representing outcome
+#' probabilities (must always sum to 1 or 100)
+#' @param margins boolean. Should margin totals be added?
+#' Defaults to TRUE
+#'
+#' @return data.frame with rownames
+#' @export
+#'
+#' @examples
+#' probs_table(c(35.64, 13.27, 0.87, 36.32, 13.27, 0.63))
+#'
+probs_table <-  function(probs, margins = TRUE) {
+
+  m <- matrix(probs, nrow = 2, byrow = TRUE,
+              dimnames = list(c("Player wins", "Opponent wins"),
+                              c("Regular", "Gammon", "Backgammon")))
+
+  if (margins) m <- m %>% addmargins()
+  tab <- m %>% as.data.frame()
+
+  return(tab)
+}
+
 
 #' Get match equity table from *.met file (used by Extreme Gammon)
 #'
