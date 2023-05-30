@@ -104,7 +104,7 @@ tp <- function(a, b, cube, met, last_roll = FALSE) {
 tp_gammons <- function(a, b, gamfreq_a, bgfreq_a, gamfreq_b, bgfreq_b, cube, met) {
 
   if ((gamfreq_a + bgfreq_a > 1) | (gamfreq_b + bgfreq_b > 1)) {
-    stop("Sum of gammon and backgammon freqencies cannot exceed 1 for either player")
+    stop("Sum of gammon and backgammon frequencies cannot exceed 1 for either player")
   }
 
   if (b <= 2 * cube) {
@@ -270,7 +270,7 @@ get_met <- function(filename = "data-raw\\Kazaross XG2.met") {
         # Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
         # i Please use `"0"` instead of `.data$0`
 
-  rest <- readr::read_delim(filename, skip = 21, delim = " ", n_max = 16, col_names = as.character(1:25), col_types = list(.default = "c"))
+  rest <- readr::read_delim(filename, skip = 21, delim = " ", col_names = as.character(1:25), col_types = list(.default = "c"))
 
   met <- dplyr::bind_rows(top9, rest) %>%
     dplyr::select(where(~!all(is.na(.x)))) %>%
