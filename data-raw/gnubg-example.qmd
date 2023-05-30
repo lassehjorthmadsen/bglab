@@ -1,0 +1,97 @@
+---
+title: "Reproduce example in GNUBG Docs"
+author: "Lasse Hjorth Madsen"
+format:
+  html:
+    code-fold: true
+    df-print: kable
+execute: 
+  warning: false
+---
+
+```{r}
+library(dplyr)
+devtools::load_all()
+```
+
+
+## The example
+
+Let's try to reproduce the "live" take points in the example position in the GNU Backgammon [manual](https://www.gnu.org/software/gnubg/manual/gnubg.pdf). 
+
+```{r}
+met <- get_met("../data-raw/Woolsey.met")
+
+probs <- c(0.454, 0.103, 0.001, 0.546, 0.106, 0.003)
+gfw = 106/546; bgfw = 0 # 3/545
+gfb = 103/454; bgfb = 0 # 1/454
+
+# This means that White, our opponent, wins game with prob 0.546
+# White's gammon rate, gfw, is 106/546
+# White leads (-4,-7) in match
+```
+
+```{r}
+df <- tibble(`Cube value` = c(4, 2, 1),
+             `TP for Black (-7,-4)` = c(
+               tp_gammons(7, 4, gfb, bgfb, gfw, bgfw, 4, met),
+               tp_gammons(7, 4, gfb, bgfb, gfw, bgfw, 2, met),
+               tp_gammons(7, 4, gfb, bgfb, gfw, bgfw, 1, met)),
+             `TP for White (-4,-7)` = c(
+               tp_gammons(4, 7, gfw, bgfw, gfb, bgfb, 4, met),
+               tp_gammons(4, 7, gfw, bgfw, gfb, bgfb, 2, met),
+               tp_gammons(4, 7, gfw, bgfw, gfb, bgfb, 1, met))
+             )
+
+df
+```
+
+
+```{r}
+high_tp <- tp_gammons(4, 7, gfw, bgfw, gfb, bgfb, 2, met)
+```
+
+The level-1 cube take points don't match the table in the manual, since that are "live" take points. The level-2 and level-4 doubles all result in a dead cube, so they should match -- and they do. 
+
+Let's try to do a live cube takepoint, and fix the grossly underestimated takepoint for Black at `(-7,-4)`:
+
+```{r}
+tp_live <- 
+tp_gammons(7, 4, gfb, bgfb, gfw, bgfw, 1, met) * (1 - tp_gammons(4, 7, gfw, bgfw, gfb, bgfb, 2, met))
+
+tp_live
+```
+For some reason, it doesn't match exactly the 24.5% figure in the table. The reason it *should* work, is that Black, trailing, has a juicy potiential recube if accepting the initial double. As we have seen, White's take point when doubled to 4, is `r high_tp` so Black need only get to `r 1 - tp_gammons(4, 7, gfw, 0, gfb, 0, 2, met)` game winning chances to double White out. If he has `r tp_live` game winning chances, then the chance that he gets to double before he loses, is:
+
+$$p(E) = \frac{`r tp_live`}{`r tp_live` + `r 1-high_tp-tp_live`} = `r tp_live/(tp_live + 1 - high_tp - tp_live)`$$
+
+How about the White level-1 TP?
+
+```{r}
+tp_live2 <- 
+tp_gammons(4, 7, gfw, bgfw, gfb, bgfb, 1, met) * (1 - tp_gammons(7, 4, gfb, bgfb, gfw, bgfw, 2, met))
+
+tp_live2
+```
+
+Also too low; table says 27.3%
+
+How aobut a simple example: Same score, no gammons. Trailer's takepoint:
+
+```{r}
+tp_gammons(7,4,0,0,0,0,1,met)
+
+```
+
+Leader's takepoint on the recube:
+
+```{r}
+tp_gammons(4,7,0,0,0,0,2,met)
+```
+
+Adjusted, live, takepoint:
+
+```{r}
+tp_gammons(7,4,0,0,0,0,1,met) * (1-tp_gammons(4,7,0,0,0,0,2,met))
+```
+These all check out with both GNU BG and XG. I must be applying the live-cube transformation wrongly, but only when gammons are in play. All take-points seem to be fine.

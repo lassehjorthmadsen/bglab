@@ -266,11 +266,14 @@ probs_table <-  function(probs, margins = TRUE) {
 get_met <- function(filename = "data-raw\\Kazaross XG2.met") {
 
   top9 <- readr::read_delim(filename, skip = 12, delim = " ", n_max =  9, col_names = as.character(0:25), col_types = list(.default = "c")) %>%
-    dplyr::select(-.data$`0`)
+    dplyr::select(-.data$`0`) # Use `0` not .data$`0`?
+        # Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
+        # i Please use `"0"` instead of `.data$0`
 
   rest <- readr::read_delim(filename, skip = 21, delim = " ", n_max = 16, col_names = as.character(1:25), col_types = list(.default = "c"))
 
   met <- dplyr::bind_rows(top9, rest) %>%
+    dplyr::select(where(~!all(is.na(.x)))) %>%
     dplyr::mutate(`1` = stringr::str_remove(.data$`1`, "^.+=")) %>%
     dplyr::mutate(dplyr::across(dplyr::everything(), as.numeric)) %>%
     as.matrix()
