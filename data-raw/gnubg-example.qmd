@@ -121,10 +121,40 @@ spot <- tibble(`Cube value` = c(1, 2, 1, 1, 2, 1),
                `GNU says` = c("25.810%", "32.609%", "17.394%", "22.868%", "7.096% (Fully live)", "21.245%")
                ) %>% 
   rowwise() %>% 
-  mutate(`My calculated TP` = if_else(`TP-type` == "Live", 
+  mutate(`My calculated TP` = 100 * if_else(`TP-type` == "Live", 
                                       tp_gammons(`Taker needs`, `Doubler needs`, 0, 0, 0, 0, `Cube value`, kaz) * 
                                         (1 - tp_gammons(`Doubler needs`, `Taker needs`, 0, 0, 0, 0, 2 * `Cube value`, kaz)),
                                       tp_gammons(`Taker needs`, `Doubler needs`, 0, 0, 0, 0, `Cube value`, kaz)))
 
 spot
 ```
+They all match exactly.
+
+Trying another example with one player trailing (-5,-3) and both having a gammon frequency of 0.1, i.e. 10 percent of wins will be gammons:
+
+
+```{r}
+
+spot2 <- tibble(
+  `Cube value` = c(1, 2, 1),
+  `Taker needs` = c(5, 3, 5),
+  `Doubler needs` = c(3, 5, 3),
+  `Taker's gammon freq` = c(0.1, 0.1, 0.1),
+  `Doubler's gammon freq` = c(0.1, 0.1, 0.1),
+  `TP-type` = c("Cubeless", "Cubeless", "Live"),
+  `GNU says` = c("29.795%", "35.541%", "20.552%")
+) %>%
+  rowwise() %>%
+  mutate(`My calculated TP` = 100 * if_else(
+    `TP-type` == "Live",
+    tp_gammons(`Taker needs`, `Doubler needs`, `Taker's gammon freq`, 0, `Doubler's gammon freq`, 0, `Cube value`, kaz) *
+      (1 - tp_gammons(`Doubler needs`, `Taker needs`, `Doubler's gammon freq`, 0, `Taker's gammon freq`, 0, 2 * `Cube value`, kaz)
+      ),
+    tp_gammons(`Taker needs`, `Doubler needs`, `Taker's gammon freq`, 0, `Doubler's gammon freq`, 0, `Cube value`, kaz)
+  )) %>% 
+  ungroup()
+
+spot2
+```
+
+We agree on the cubeless takepoints, but not on the live one, *when gammons are in play*. Why, oh, why is this?
