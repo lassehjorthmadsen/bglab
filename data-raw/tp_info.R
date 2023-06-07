@@ -3,7 +3,7 @@
 
 library(tidyverse)
 devtools::load_all()
-source("data-raw/tp_info.R")
+#source("data-raw/tp_info.R")
 met <- get_met()[1:5, 1:5]
 
 # The no-gammon take points agree with the bots:
@@ -17,7 +17,7 @@ tp_info(5,3,0.1,0.1,1,met)
 tp_info(5,3,1,1,1,met)
 
 # How does this situation look from the opponent's perspective?
-# ... he can pass for 0.5 or take for the match, so clearly tp_any = 0.5
+# ... he can pass for 0.5 or take for the match, so clearly any tp = 0.5
 tp_info(3,5,1,1,2,met)
 
 # So, in this special case of certain gammons, can you take at (-5, -3)
@@ -27,12 +27,14 @@ tp_info(3,5,1,1,2,met)
 # i.e. the probability that our 0.17 goes to 0.50 before it drops to
 # zero is 0.3416 -- just what we need to take.
 
-# Of course, this is a bit artificial; we would double automatically.
-# In that case: risk = 0.2564, gain = 0.7436,
-# tp = 0.2564 / (0.2564 + 0.7436) = 0.2564, which is GNU's number
+# Of course, this is a bit artificial; we would double automatically,
+# since we lose the match if we lose the game (and a certain gammon).
+# In that case: tp = 0.2564; what we have if we pass.
 
 # There's no way we can do better by holding off. How is GNU taking into
 # account this kind of desperation double?
+
+
 
 tp_info <- function(x, y, xgf, ygf, cube, met) {
 

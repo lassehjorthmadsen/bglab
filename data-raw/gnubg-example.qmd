@@ -17,7 +17,7 @@ devtools::load_all()
 
 ## The example
 
-Let's try to reproduce the "live" take points in the example position in the GNU Backgammon [manual](https://www.gnu.org/software/gnubg/manual/gnubg.pdf). 
+Let's try to reproduce the "live" take points in the example position in the GNU Backgammon [manual](https://www.gnu.org/software/gnubg/manual/gnubg.pdf), section "Technical Notes|Equities explained".
 
 ```{r}
 woo <- get_met("../data-raw/Woolsey.met")
@@ -158,3 +158,5 @@ spot2
 ```
 
 We agree on the cubeless takepoints, but not on the live one, *when gammons are in play*. Why, oh, why is this?
+
+
