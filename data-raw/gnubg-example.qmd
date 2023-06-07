@@ -17,7 +17,7 @@ devtools::load_all()
 
 ## The example
 
-Let's try to reproduce the "live" take points in the example position in the GNU Backgammon [manual](https://www.gnu.org/software/gnubg/manual/gnubg.pdf), section "Technical Notes|Equities explained".
+Let's try to reproduce the "live" take points in the example position in the GNU Backgammon [manual](https://www.gnu.org/software/gnubg/manual/gnubg.pdf), section 10.4.5.2 Live cube equities.
 
 ```{r}
 woo <- get_met("../data-raw/Woolsey.met")
@@ -41,7 +41,7 @@ In this opening position, we're Black, trailing (-7,-4), against White. We're sm
 probs
 ```
 
-The cubeless takepoints I calculate are as follows:
+The cubeless take points I calculate are as follows:
 
 ```{r}
 df <- tibble(`Cube value` = c(4, 2, 1),
@@ -65,7 +65,7 @@ high_tp <- tp_gammons(4, 7, gfw, bgfw, gfb, bgfb, 2, woo)
 
 The level-1 cube take points don't match the table in the manual, since that are "live" take points. The level-2 and level-4 doubles all result in a dead cube, so they should match -- and they do. 
 
-Let's try to do a live cube takepoint, and fix the grossly underestimated takepoint for Black at `(-7,-4)`:
+Let's try to do a live cube take point, and fix the grossly underestimated take point for Black at `(-7,-4)`:
 
 ```{r}
 tp_live <- 
@@ -88,20 +88,20 @@ tp_live2
 
 Also too low; table says 27.3%
 
-How about a simple example: Same score, no gammons. Trailer's takepoint:
+How about a simple example: Same score, no gammons. Trailer's take point:
 
 ```{r}
 tp_gammons(7,4,0,0,0,0,1,woo)
 
 ```
 
-Leader's takepoint on the recube:
+Leader's take point on the recube:
 
 ```{r}
 tp_gammons(4,7,0,0,0,0,2,woo)
 ```
 
-Adjusted, live, takepoint:
+Adjusted, live, take point:
 
 ```{r}
 tp_gammons(7,4,0,0,0,0,1,woo) * (1-tp_gammons(4,7,0,0,0,0,2,woo))
@@ -157,6 +157,6 @@ spot2 <- tibble(
 spot2
 ```
 
-We agree on the cubeless takepoints, but not on the live one, *when gammons are in play*. Why, oh, why is this?
+We agree on the cubeless take points, but not on the live one, *when gammons are in play*. Why, oh, why is this?
 
 
