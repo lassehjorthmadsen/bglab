@@ -1,5 +1,5 @@
 # Try a slightly different angle for implementing
-# calcualtion of live take points w/gammons
+# calculation of live take points w/gammons
 
 library(tidyverse)
 devtools::load_all()

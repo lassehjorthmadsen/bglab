@@ -86,7 +86,6 @@ tp <- function(a, b, cube, met, last_roll = FALSE) {
 }
 
 
-
 #' Calculate cubeless, take points at different scores, including gammons and backgammons
 #'
 #' @param a number of points that player needs
@@ -132,6 +131,63 @@ tp_gammons <- function(a, b, gamfreq_a, bgfreq_a, gamfreq_b, bgfreq_b, cube, met
 }
 
 
+#' Calculate cubeful take points at different scores, as a function of gammons,
+#' and backgammons, cube level, cube efficiency, and match equity table
+#'
+#' @param x number of points that player needs
+#' @param y number of points that opponent needs
+#' @param xg proportion of player's wins that are gammons
+#' @param xbg proportion of player's wins that are backgammons
+#' @param yg proportion of player's losses that are gammons
+#' @param ybg proportion of player's losses that are backgammons
+#' @param cube cube value (before doubling)
+#' @param met match equity table
+#' @param cube_eff Cube efficiency, defaults to 0.68
+#'
+#' @return List of take points in different flavours, and informative metrics
+#' from the calculation
+#'
+#' @export
+#'
+tp_info <- function(x, y, xg, xbg, yg, ybg, cube, met, cube_eff = 0.68) {
+
+  D <- mwc(x, y - cube, met)
+
+  W <- (1 - xg - xbg) * mwc(x - 2 * cube, y, met) +
+    xg  * mwc(x - 4 * cube, y, met) +
+    xbg * mwc(x - 8 * cube, y, met)
+
+  L <- (1 - yg - ybg) * mwc(x, y - 2 * cube, met) +
+    yg  * mwc(x, y - 4 * cube, met) +
+    ybg * mwc(x, y - 8 * cube, met)
+
+  risk <- D - L
+  gain <- W - D
+
+  tp_dead <- risk / (risk + gain)
+
+  if (tp_dead == 0) {
+    tp_live <- 0
+    tp_real <- 0
+  } else {
+    tp_live <- tp_dead * (1 - tp_info(y, x, yg, ybg, xg, xbg, 2 * cube, met, cube_eff)["tp_live"])
+    tp_real <- cube_eff * tp_live + (1 - cube_eff) * tp_dead
+  }
+
+  info <- c(
+    "D" = D,
+    "W" = W,
+    "L" = L,
+    "risk" = risk,
+    "gain" = gain,
+    "tp_dead" = tp_dead,
+    "tp_live" = unname(tp_live),
+    "tp_real" = unname(tp_real)
+  )
+  return(info)
+}
+
+
 #' Calculate take points for money game, Janowski-style
 #'
 #' @param probs numeric vector of length 6, representing outcome
@@ -140,7 +196,7 @@ tp_gammons <- function(a, b, gamfreq_a, bgfreq_a, gamfreq_b, bgfreq_b, cube, met
 #' @return double. Take point
 #' @export
 #'
-tp_janowski <- function(probs, x = 2/3) {
+tp_money <- function(probs, x = 2/3) {
 
   probs <- check_probs(probs)
 
@@ -163,10 +219,10 @@ tp_janowski <- function(probs, x = 2/3) {
 #' @return double. Equity
 #' @examples
 #' probs <- c(31, 4, 0, 47, 17, 1)
-#' eq_janowski(probs = probs, C = 1, p = 0.5)
+#' eq_money(probs = probs, C = 1, p = 0.5)
 #'
 #' @export
-eq_janowski <- function(probs, C, p, x = 2/3) {
+eq_money <- function(probs, C, p, x = 2/3) {
 
   if (!1 %in% c(-1, 0, 1)) stop("Cube position, C, must be one of -1, 0, 1")
 
@@ -273,7 +329,7 @@ get_met <- function(filename = "data-raw\\Kazaross XG2.met") {
   rest <- readr::read_delim(filename, skip = 21, delim = " ", col_names = as.character(1:25), col_types = list(.default = "c"))
 
   met <- dplyr::bind_rows(top9, rest) %>%
-    dplyr::select(where(~!all(is.na(.x)))) %>%
+    dplyr::select(tidyselect::where(~!all(is.na(.x)))) %>%
     dplyr::mutate(`1` = stringr::str_remove(.data$`1`, "^.+=")) %>%
     dplyr::mutate(dplyr::across(dplyr::everything(), as.numeric)) %>%
     as.matrix()
