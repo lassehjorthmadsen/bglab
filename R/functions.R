@@ -329,7 +329,7 @@ get_met <- function(filename = "data-raw\\Kazaross XG2.met") {
   rest <- readr::read_delim(filename, skip = 21, delim = " ", col_names = as.character(1:25), col_types = list(.default = "c"))
 
   met <- dplyr::bind_rows(top9, rest) %>%
-    dplyr::select(tidyselect::where(~!all(is.na(.x)))) %>%
+    dplyr::select(tidyselect::vars_select_helpers$where(~!all(is.na(.x)))) %>%
     dplyr::mutate(`1` = stringr::str_remove(.data$`1`, "^.+=")) %>%
     dplyr::mutate(dplyr::across(dplyr::everything(), as.numeric)) %>%
     as.matrix()
