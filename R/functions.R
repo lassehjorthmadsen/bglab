@@ -130,36 +130,41 @@ tp_gammons <- function(a, b, gamfreq_a, bgfreq_a, gamfreq_b, bgfreq_b, cube, met
   return(risk / (risk + gain))
 }
 
-
 #' Calculate cubeful take points at different scores, as a function of gammons,
 #' and backgammons, cube level, cube efficiency, and match equity table
 #'
 #' @param x number of points that player needs
 #' @param y number of points that opponent needs
-#' @param xg proportion of player's wins that are gammons
-#' @param xbg proportion of player's wins that are backgammons
-#' @param yg proportion of player's losses that are gammons
-#' @param ybg proportion of player's losses that are backgammons
-#' @param cube cube value (before doubling)
+#' @param probs numeric vector of length 6, representing outcome
+#' probabilities (must always sum to 1 or 100)
+#' #' @param cube cube value (before doubling)
 #' @param met match equity table
 #' @param cube_eff Cube efficiency, defaults to 0.68
 #'
-#' @return List of take points in different flavours, and informative metrics
-#' from the calculation
+#' @return List of take points in different flavors, along with informative
+#' metrics from the calculation
 #'
 #' @export
 #'
-tp_info <- function(x, y, xg, xbg, yg, ybg, cube, met, cube_eff = 0.68) {
+tp_info <- function(x, y, probs, cube, met, cube_eff = 0.68) {
 
-  D <- mwc(x, y - cube, met)
+  probs <- check_probs(probs)
+  probs_fliped <- c(probs[4:6], probs[1:3]) # For opponent's perspective
 
-  W <- (1 - xg - xbg) * mwc(x - 2 * cube, y, met) +
-    xg  * mwc(x - 4 * cube, y, met) +
-    xbg * mwc(x - 8 * cube, y, met)
+  D <- mwc(x, y - cube, met)                # drop, lose cube value
 
-  L <- (1 - yg - ybg) * mwc(x, y - 2 * cube, met) +
-    yg  * mwc(x, y - 4 * cube, met) +
-    ybg * mwc(x, y - 8 * cube, met)
+  outcomes <- c(mwc(x - 2 * cube, y, met),  # Take, win regular
+                mwc(x - 4 * cube, y, met),  # Take, win gammon
+                mwc(x - 6 * cube, y, met),  # Take, win backgammon
+                mwc(x, y - 2 * cube, met),  # Take, lose regular
+                mwc(x, y - 4 * cube, met),  # Take, lose gammon
+                mwc(x, y - 6 * cube , met)  # Take, lose backgammon
+                )
+
+  expected_outcome <- probs * outcomes
+
+  W <- sum(expected_outcome[1:3]) / sum(probs[1:3])
+  L <- sum(expected_outcome[4:6]) / sum(probs[4:6])
 
   risk <- D - L
   gain <- W - D
@@ -170,7 +175,7 @@ tp_info <- function(x, y, xg, xbg, yg, ybg, cube, met, cube_eff = 0.68) {
     tp_live <- 0
     tp_real <- 0
   } else {
-    tp_live <- tp_dead * (1 - tp_info(y, x, yg, ybg, xg, xbg, 2 * cube, met, cube_eff)["tp_live"])
+    tp_live <- tp_dead * (1 - tp_info(y, x, probs_fliped, 2 * cube, met, cube_eff)["tp_live"])
     tp_real <- cube_eff * tp_live + (1 - cube_eff) * tp_dead
   }
 
@@ -186,7 +191,6 @@ tp_info <- function(x, y, xg, xbg, yg, ybg, cube, met, cube_eff = 0.68) {
   )
   return(info)
 }
-
 
 #' Calculate take points for money game, Janowski-style
 #'
