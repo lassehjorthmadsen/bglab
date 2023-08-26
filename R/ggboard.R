@@ -229,13 +229,24 @@ show_off_checkers <-  function(xgid, bearoff = "right") {
   bottom_off <- 15 - checker_count[1]
   top_off <- 15 - checker_count[2]
 
-  thickness <- 0.6 * checker_radius
+  thickness <- 0.6 * checker_radius  # How thick are the checkers?
   ymax <- board_ratio - thickness
 
+  # x-coords for plotting checkers off
   x <- rep(1.01, 30 - sum(checker_count))
 
-  y <- c(seq(0, (bottom_off - 1) * thickness, thickness),
-         seq(ymax, ymax - (top_off - 1) * thickness, -thickness))
+  # y-coords for plotting checkers off
+  if (bottom_off > 0) {
+    y_bottom <- seq(0, (bottom_off - 1) * thickness, thickness)
+  } else {
+    y_bottom <- NULL}
+
+  if (top_off > 0) {
+    y_top <- seq(ymax, ymax - (top_off - 1) * thickness, -thickness)
+  } else {
+    y_top <- NULL}
+
+  y <- c(y_bottom, y_top)
 
   player <- c(rep("bottom", bottom_off), rep("top", top_off))
 
