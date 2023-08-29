@@ -5,20 +5,15 @@
 \title{Calculate cubeful take points at different scores, as a function of gammons,
 and backgammons, cube level, cube efficiency, and match equity table}
 \usage{
-tp_info(x, y, xg, xbg, yg, ybg, cube, met, cube_eff = 0.68)
+tp_info(x, y, probs, cube, met, cube_eff = 0.68)
 }
 \arguments{
 \item{x}{number of points that player needs}
 
 \item{y}{number of points that opponent needs}
 
-\item{xg}{proportion of player's wins that are gammons}
-
-\item{xbg}{proportion of player's wins that are backgammons}
-
-\item{yg}{proportion of player's losses that are gammons}
-
-\item{ybg}{proportion of player's losses that are backgammons}
+\item{probs}{numeric vector of length 6, representing outcome
+probabilities (must always sum to 1 or 100)}
 
 \item{cube}{cube value (before doubling)}
 
@@ -27,8 +22,8 @@ tp_info(x, y, xg, xbg, yg, ybg, cube, met, cube_eff = 0.68)
 \item{cube_eff}{Cube efficiency, defaults to 0.68}
 }
 \value{
-List of take points in different flavours, and informative metrics
-from the calculation
+List of take points in different flavors, along with informative
+metrics from the calculation
 }
 \description{
 Calculate cubeful take points at different scores, as a function of gammons,
