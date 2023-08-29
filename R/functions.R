@@ -137,7 +137,7 @@ tp_gammons <- function(a, b, gamfreq_a, bgfreq_a, gamfreq_b, bgfreq_b, cube, met
 #' @param y number of points that opponent needs
 #' @param probs numeric vector of length 6, representing outcome
 #' probabilities (must always sum to 1 or 100)
-#' #' @param cube cube value (before doubling)
+#' @param cube cube value (before doubling)
 #' @param met match equity table
 #' @param cube_eff Cube efficiency, defaults to 0.68
 #'
@@ -191,6 +191,27 @@ tp_info <- function(x, y, probs, cube, met, cube_eff = 0.68) {
   )
   return(info)
 }
+
+#' Calculate gammon value for a score and cube level:
+#' The gain from winning a gammon instead of single game, divided
+#' by the loss from losing a single game instead of winning one.
+#'
+#' @param x number of points that player needs
+#' @param y number of points that opponent needs
+#' @param cube cube value
+#' @param met match equity table
+#'
+#' @return a real number, the value of winning a gammon
+#' @export
+#'
+gammon_value <- function(x, y, cube, met) {
+
+  gain <- mwc(x - 2 * cube, y, met) - mwc(x - cube, y, met)
+  loss <- mwc(x - cube, y, met) - mwc(x, y - cube, met)
+
+  return(gain/loss)
+}
+
 
 #' Calculate take points for money game, Janowski-style
 #'
