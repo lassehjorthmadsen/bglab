@@ -10,7 +10,7 @@ reference:
   contents:
   - ggboard
 
-- title: Functions
+- title: Calculations
   desc: >
     Calculate familiar metrics like takepoint, equivalent-to-moneygame, etc.
   contents:
@@ -21,6 +21,7 @@ reference:
   - tp
   - tp_gammons
   - tp_info
+  - gammon_value
   - tp_money
   - eq_money
   - outcome_probs
