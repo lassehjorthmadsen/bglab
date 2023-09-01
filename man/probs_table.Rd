@@ -2,13 +2,13 @@
 % Please edit documentation in R/functions.R
 \name{probs_table}
 \alias{probs_table}
-\title{Format winning probablities in nice table}
+\title{Put winning probabilities in nice table}
 \usage{
 probs_table(probs, margins = TRUE)
 }
 \arguments{
 \item{probs}{numeric vector of length 6, representing outcome
-probabilities (must always sum to 1 or 100)}
+probabilities (must sum to 1 or 100)}
 
 \item{margins}{boolean. Should margin totals be added?
 Defaults to TRUE}
@@ -17,7 +17,7 @@ Defaults to TRUE}
 data.frame with rownames
 }
 \description{
-Format winning probablities in nice table
+Put winning probabilities in nice table
 }
 \examples{
 probs_table(c(35.64, 13.27, 0.87, 36.32, 13.27, 0.63))

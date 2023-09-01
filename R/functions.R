@@ -308,10 +308,10 @@ outcome_probs <- function(xg_probs) {
   return(out)
 }
 
-#' Format winning probablities in nice table
+#' Put winning probabilities in nice table
 #'
 #' @param probs numeric vector of length 6, representing outcome
-#' probabilities (must always sum to 1 or 100)
+#' probabilities (must sum to 1 or 100)
 #' @param margins boolean. Should margin totals be added?
 #' Defaults to TRUE
 #'
@@ -336,6 +336,41 @@ probs_table <-  function(probs, margins = TRUE) {
   return(tab)
 }
 
+
+#' Compute take points at a given match score, create a nice table
+#' to compare those with money game take points
+#'
+#' @param x number of points that player needs
+#' @param y number of points that opponent needs
+#' @param probs numeric vector of length 6, representing outcome
+#' probabilities (must sum to 1 or 100)
+#' @param cube cube value
+#' @param met match equity table
+#'
+#' @return data.frame
+#'
+#' @export
+#'
+tp_table <-  function(x, y, probs, cube, met) {
+
+  col_names <- c("Cube assumptions",
+                 "Moneygame takepoint",
+                 paste0(x, "-away, ", y, "-away takepoint"))
+
+  dummy <- c(0.5, 0, 0, 0.5, 0, 0)
+
+  tp_tab <- data.frame(
+    col1 = c("Dead cube, no gammons", "Dead cube, gammons", "Both cube and gammons"),
+    col2 = c(tp_money(dummy, 0), tp_money(probs, x = 0), tp_money(probs, x = 0.68)),
+    col3 = c(tp_info(x, y, dummy, cube, met)["tp_dead"],
+                    tp_info(x, y, probs, cube, met)["tp_dead"],
+                    tp_info(x, y, probs, cube, met)["tp_real"])
+  )
+
+  names(tp_tab) <- col_names
+
+  return(tp_tab)
+}
 
 #' Get match equity table from *.met file (used by Extreme Gammon)
 #'
