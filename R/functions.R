@@ -354,8 +354,8 @@ probs_table <-  function(probs, margins = TRUE) {
 tp_table <-  function(x, y, probs, cube, met) {
 
   col_names <- c("Cube assumptions",
-                 "Moneygame takepoint",
-                 paste0(x, "-away, ", y, "-away takepoint"))
+                 "Money game take point",
+                 paste0(x, "-away, ", y, "-away take point"))
 
   dummy <- c(0.5, 0, 0, 0.5, 0, 0)
 
