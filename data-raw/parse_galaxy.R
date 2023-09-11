@@ -2,6 +2,7 @@ library(tidyverse)
 library(stringr)
 
 file_path <- "c:\\Users\\LMDN\\AppData\\Local\\gnubg\\scripts\\output\\match1486073_analyzed.txt"
+file_path <- "c:\\Users\\lasse\\Dropbox\\Backgammon\\Matches\\Galaxy matches\\analyzed\\match807838_analyzed.txt"
 
 # Function to parse a single file
 parse_file <- function(file_path) {
@@ -18,7 +19,7 @@ parse_file <- function(file_path) {
   match_length <- match_info[7] %>% as.numeric()
 
   # 2. Extract date and place from line 4 and 5
-  date <- str_extract(lines[4], "(?<=Date: ).*") %>% parse_date(format = "%d/%m/%Y")
+  date <- str_extract(lines[4], "(?<=Date: ).*") %>% parse_date(format = "%m/%d/%Y")
   place <- str_extract(lines[5], "(?<=Place: ).*")
 
   # 3. Split file into a list of positions, using "Move number" as separator
@@ -28,7 +29,16 @@ parse_file <- function(file_path) {
 
   df_list <- list()
 
+  # Initialize vars
+  no_pos   <- length(positions)
+  pos_id   <- character(length = no_pos)
+  match_id <- character(length = no_pos)
+  decision <- character(length = no_pos)
+  turn     <- character(length = no_pos)
+  cube_ana <- character(length = no_pos)
+
   # 4. For each position:
+
   for (p in seq_along(positions)) {
     # position_lines <- str_split(position, "\n")[[1]]
 
@@ -42,8 +52,13 @@ parse_file <- function(file_path) {
     decision[p] <- str_extract(positions[[p]][20], "moves|doubles|accepts|passes|resigns")
     turn[p] <- str_extract(positions[[p]][20], "\\*\\s\\w+") %>% str_remove("\\* ")
 
-    # Other tasks like extracting decision, board text, etc.
-    # Note: You may need to adjust the regex patterns and string manipulations
+    # Extract board
+    board_lines <- str_detect(positions[[p]], "^(\\s\\+|\\s\\||v\\||Pip)")
+    board[p] <- positions[[p]][board_lines] %>% paste(collapse = "\n")
+
+    # Extract cube analysis
+    cube_lines <- str_detect(positions[[p]], "^(Cube analysis|[0-9]-ply cube)|Cubeful equities|1\\. No|2\\. Double|3\\. Double|Proper")
+    cube_ana[p] <- positions[[p]][cube_lines] %>% paste(collapse = "\n")
 
     # ... (Add your code here for the other tasks)
 

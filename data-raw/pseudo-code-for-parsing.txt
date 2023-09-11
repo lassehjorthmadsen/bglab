@@ -28,10 +28,10 @@ Suggestion for pseudocode:
 	- Extract Positon ID and Match ID from lines containing "Positon ID" and "Match ID"
 	- Extract decision type, turn and possibly roll from first line
 	- Extract decision from lines beginning with "*" and containing moves/accepts/doubles/passes
-	- Extract board text by concatenating lines containg "GNU Backagmmon", "Match ID", "+12", "+13", "|", "Pipcounts:"
+	- Extract board text by concatenating lines containg "GNU Backgammon", "Match ID", "+12", "+13", "|", "Pipcounts:"
 	- Extract checker play analysis by concatenating lines beginning with "     " or "*    "
 	- Extract cube decision analysis by concatenating lines containing "Cube analysis", "equity", "six numbers", "No double", "Double, pass", "Double, take", "Proper cube action"
-	- Extract play made from lines containing "moves", "doubles", "passes" 
+	- Extract play made from lines containing "moves", "doubles", "passes"
 	- Extract size of checker play error by finding the value in parenthesis at the end of the line, if present
 	- Extract size of cube decision error by by checking if the actual action equals the proper cube action
 5. Unlist all the positions into a dataframe
