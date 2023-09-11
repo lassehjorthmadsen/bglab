@@ -1,0 +1,154 @@
+The score (after 4 games) is: lasse 6, ariete 3 (match to 7 points), post-Crawford play
+
+Match Information:
+Date: 8/8/2023
+Place: BackgammonGalaxy
+
+Move number 1:  lasse to play 41
+
+ GNU Backgammon  Position ID: 4HPwATDgc/ABMA
+                 Match ID   : MADmAGAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: lasse
+ | X           O    |   | O              X |     6 points
+ | X           O    |   | O              X |     Rolled 41
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+^|                  |BAR|                  |     7 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     
+ | O           X    |   | X              O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: ariete
+Pip counts: O 167, X 167
+
+* lasse moves 24/23 13/9
+
+Rolled 41:
+     1. Cubeful 0-ply    24/23 24/20                  Eq.: -0.954
+       0.496 0.123 0.005 - 0.504 0.135 0.004
+*    2. Cubeful 0-ply    24/23 13/9                   Eq.: -0.963 (-0.009)
+       0.498 0.139 0.008 - 0.502 0.140 0.007
+     3. Cubeful 0-ply    24/20 6/5                    Eq.: -1.000 (-0.046)
+       0.490 0.123 0.006 - 0.510 0.147 0.007
+     4. Cubeful 0-ply    13/8                         Eq.: -1.000 (-0.046)
+       0.488 0.139 0.009 - 0.512 0.149 0.007
+     5. Cubeful 0-ply    13/9 6/5                     Eq.: -1.000 (-0.046)
+       0.490 0.140 0.010 - 0.510 0.153 0.012
+
+
+Move number 2:  ariete on roll, cube decision?
+
+ GNU Backgammon  Position ID: 4HPhASjgc/ABMA
+                 Match ID   : cAngAGAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: lasse
+ | X        O  O    |   | O              X |     6 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     7 points match (Cube: 1)
+ |                  |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     On roll
+ | O           X    |   | X           O  O |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: ariete
+Pip counts: O 162, X 167
+
+* ariete doubles
+
+
+Cube analysis
+0-ply cubeless equity +0.148 (Money: +0.004)
+  0.502 0.140 0.007 - 0.498 0.139 0.008
+Cubeful equities:
+1. Double, take        +0.963
+2. Double, pass        +1.000  (+0.037)
+3. No double           +0.702  (-0.261)
+Proper cube action: Double, take
+Move number 3:  ariete doubles to 2
+
+ GNU Backgammon  Position ID: 4HPhASjgc/ABMA
+                 Match ID   : cBHgAGAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: lasse
+ | X        O  O    |   | O              X |     6 points
+ | X           O    |   | O              X |     Cube offered at 2
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     
+ |                  |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X           O  O |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: ariete
+Pip counts: O 162, X 167
+
+* lasse rejects
+
+Alert: wrong pass (-0.037)!
+ [doubtful]
+Cube analysis
+0-ply cubeless equity -0.148 (Money: -0.004)
+  0.498 0.139 0.008 - 0.502 0.140 0.007
+Cubeful equities:
+1. Double, take        -0.963
+2. Double, pass        -1.000  (-0.037)
+3. No double           -0.702  (+0.261)
+Proper cube action: Double, take
+ariete wins 1 point
+
+Game statistics for game 5
+
+Player                                   lasse                   ariete                 
+
+Checkerplay statistics
+
+Total moves                                1                       0                    
+Unforced moves                             1                       0                    
+Unmarked moves                             1                       0                    
+Moves marked doubtful                      0                       0                    
+Moves marked bad                           0                       0                    
+Moves marked very bad                      0                       0                    
+Error total EMG (MWC)                         -0.009 ( -0.149%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                         -9.2   ( -0.149%)       -0.0   ( -0.000%) 
+Chequerplay rating                       Advanced                n/a                    
+
+
+Cube statistics
+
+Total cube decisions                       1                       1                    
+Close or actual cube decisions             1                       1                    
+Doubles                                    0                       1                    
+Takes                                      0                       0                    
+Passes                                     1                       0                    
+Missed doubles below CP (EMG (MWC))        0                       0                    
+Missed doubles above CP (EMG (MWC))        0                       0                    
+Wrong doubles below DP (EMG (MWC))         0                       0                    
+Wrong doubles above TG (EMG (MWC))         0                       0                    
+Wrong takes (EMG (MWC))                    0                       0                    
+Wrong passes (EMG (MWC))                   1 (-0.037 ( -0.600%))   0                    
+Error total EMG (MWC)                         -0.037 ( -0.600%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                        -37.2   ( -0.600%)       -0.0   ( -0.000%) 
+Cube decision rating                     Awful!                  Supernatural           
+
+
+Overall statistics
+
+Error total EMG (MWC)                         -0.046 ( -0.749%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                        -23.2   ( -0.375%)       -0.0   ( -0.000%) 
+Snowie error rate                            -46.4   ( +0.000%)       -0.0   ( +0.000%) 
+Overall rating                           Casual player           Supernatural           
+Error based abs. FIBS rating             1905.7                  2050.0                 
+Chequerplay errors rating loss            115.0                  n/a                    
+Cube errors rating loss                    29.3                     0.0                 
+
+
+
+
+Output generated Tue Sep 12 00:14:25 2023
+ by GNU Backgammon 1.07.001-mingw 32-Bit 20221114 (Text Export version 1.128)
+
