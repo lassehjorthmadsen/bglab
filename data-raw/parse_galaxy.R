@@ -31,8 +31,6 @@ parse_file <- function(file_path) {
   positions <- split(lines, splits)
   positions <- positions[-1]  # Remove the first element which is empty
 
-  df_list <- list()
-
   # Initialize vars
   no_pos   <- length(positions)
   pos_id   <- character(length = no_pos)
@@ -43,6 +41,9 @@ parse_file <- function(file_path) {
   move_eq  <- character(length = no_pos)
   board    <- character(length = no_pos)
   roll     <- character(length = no_pos)
+  cube_txt <- character(length = no_pos)
+  cube_err <- numeric(length = no_pos)
+  move_err <- numeric(length = no_pos)
 
   legal_rolls <- expand_grid(x = 1:6, y = 1:6)
   legal_rolls <- paste0(legal_rolls$x, legal_rolls$y)
@@ -54,7 +55,6 @@ parse_file <- function(file_path) {
     # CAN WE RELY ON THIS INFORMATION ALWAYS BEING IN LINE 1?
     roll[p] <- str_sub(positions[[p]][1], -2, -1)
     if (!roll[p] %in% legal_rolls) roll[p] <- NA
-
 
     # Extract Position ID and Match ID from lines containing "Position ID" and "Match ID"
     # CAN WE RELY ON THIS INFORMATION ALWAYS BEING IN LINE 3 AND 4?
@@ -79,11 +79,31 @@ parse_file <- function(file_path) {
     move_lines <- str_detect(positions[[p]], "^\\s+\\d|^\\*\\s+\\d")
     move_eq[p] <- positions[[p]][move_lines] %>% paste(collapse = "\n")
     if (move_eq[p] == "") move_eq[p] <- NA
-    move_eq[p] %>% cat()
 
-    # ... (Add your code here for the other tasks)
+    # Extract move error
+    play_line <- str_detect(positions[[p]], "^\\*\\s{4}")
 
+    error <- positions[[p]][play_line] %>%
+      str_extract("\\(\\-.+\\)$") %>%
+      str_remove_all("[\\(\\)]") %>%
+      as.numeric()
 
+    if (length(error) == 0) error <- NA
+
+    move_err[p] <- error
+
+    # Extract cube error
+    alert_line <- str_detect(positions[[p]], "Alert: wrong")
+    error_text <- positions[[p]][alert_line]
+    if (length(error_text) == 0) error_text <- NA
+    cube_txt[p] <- error
+
+    error <- cube_txt[p] %>%
+      str_extract("\\(\\-.+\\)$") %>%
+      str_remove_all("[\\(\\)]") %>%
+      as.numeric()
+
+    cube_err[p] <- error
   }
 
     # Put together in nice data frame
@@ -101,6 +121,8 @@ parse_file <- function(file_path) {
       decision = decision,
       turn = turn,
       roll = roll,
+      move_err = move_err,
+      cube_err = cube_err,
       board = board,
       cube_eq = cube_eq,
       move_eq = move_eq
@@ -114,4 +136,10 @@ parse_file <- function(file_path) {
 
 # Example usage:
 df <- parse_file(file_path)
-print(df)
+df
+
+# Checks
+df %>% count(file)
+df %>% count(roll)
+df %>% summary()
+
