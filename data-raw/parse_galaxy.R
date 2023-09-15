@@ -19,12 +19,22 @@ parse_files <- function(files) {
 
     # 1. Extract score, match length and player names from the first line
     # This assumes that each file contains a single game from a match
-    match_info <- str_match(lines[1], "(.*): (.*) ([0-9]+), (.*) ([0-9]+) \\(match to ([0-9]+) points\\)")
-    player1 <- match_info[3]
-    score1  <- match_info[4] %>% as.numeric()
-    player2 <- match_info[5]
-    score2  <- match_info[6] %>% as.numeric()
-    length  <- match_info[7] %>% as.numeric()
+
+    # BUG FOR 1-POINTERS (AND UNLIMITED?) "pointS"
+    # Include information about (post-) Crawford
+    # match_info <- str_match(lines[1], "(.*): (.*) ([0-9]+), (.*) ([0-9]+) \\(match to ([0-9]+) points\\)")
+    # player1 <- match_info[3]
+    # score1  <- match_info[4] %>% as.numeric()
+    # player2 <- match_info[5]
+    # score2  <- match_info[6] %>% as.numeric()
+    # length  <- match_info[7] %>% as.numeric()
+
+    match_info <- str_split(lines[1], " |,") %>% unlist()
+    player1 <- match_info[7]
+    score1  <- match_info[8] %>% as.numeric()
+    player2 <- match_info[10]
+    score2  <- match_info[11] %>% as.numeric()
+    length  <- match_info[14] %>% as.numeric()
 
     # 2. Extract date and place from line 4 and 5
     date <- str_extract(lines[4], "(?<=Date: ).*") %>% parse_date(format = "%m/%d/%Y")
@@ -36,20 +46,20 @@ parse_files <- function(files) {
     positions <- positions[-1]  # Remove the first element with game metadata
 
     # Initialize vars
-    no_pos   <- length(positions)
-    pos_id   <- character(length = no_pos)
-    match_id <- character(length = no_pos)
-    move_no  <- integer(length = no_pos)
-    play     <- character(length = no_pos) # play made: roll/double/take/reject/cannot move
-    turn     <- character(length = no_pos)
-    cube_eq  <- character(length = no_pos)
-    move_eq  <- character(length = no_pos)
-    board    <- character(length = no_pos)
-    roll     <- character(length = no_pos)
-    proper   <- character(length = no_pos) # Proper cube action: "No double, take" etc.
-    mistake  <- logical(length = no_pos)   # TRUE if a cube mistake was made
-    cube_err <- numeric(length = no_pos)   # Size of cube error (0 if correct action, NA if no cube available)
-    move_err <- numeric(length = no_pos)   # Size of move error (0 if correct move, including forced and no moves)
+    no_pos    <- length(positions)
+    pos_id    <- character(length = no_pos)
+    match_id  <- character(length = no_pos)
+    move_no   <- integer(length = no_pos)
+    play      <- character(length = no_pos) # Play made: Roll/Double/Take, etc.
+    turn      <- character(length = no_pos)
+    cube_eq   <- character(length = no_pos)
+    move_eq   <- character(length = no_pos)
+    board     <- character(length = no_pos)
+    roll      <- character(length = no_pos)
+    proper_ca <- character(length = no_pos) # Proper cube action: "No double, take" etc.
+    mistake   <- logical(length = no_pos)   # TRUE if a cube mistake was made (remove later)
+    cube_err  <- numeric(length = no_pos)   # Size of cube error (0 if correct action, NA if no cube available)
+    move_err  <- numeric(length = no_pos)   # Size of move error (0 if correct move, including forced and no moves)
 
     # 4. For each position:
 
@@ -84,7 +94,7 @@ parse_files <- function(files) {
       if (length(proper_text) == 0) proper_text <- NA
       proper_text <- str_remove(proper_text, "Proper cube action: ")
       proper_text <- str_remove(proper_text, " \\(.+\\)")
-      proper[p] <- proper_text
+      proper_ca[p] <- proper_text
 
       # Extract move analysis
       move_lines <- str_detect(positions[[p]], "^\\s+\\d|^\\*\\s+\\d")
@@ -105,11 +115,11 @@ parse_files <- function(files) {
 
       # Extract cube error
       mistake[p] <-
-        (proper[p] == "Double, take" & !play[p] %in% c("doubles", "accepts")) |
-        (proper[p] == "Double, pass" & !play[p] %in% c("doubles", "rejects")) |
-        (proper[p] == "No double, take" & !play[p] %in% c("moves", "accepts", "cannot")) |
-        (proper[p] == "Too good to double, pass" & play[p] %in% c("doubles", "accepts")) |
-        (proper[p] == "Too good to double, take" & play[p] %in% c("doubles", "rejects"))
+        ((str_detect(proper_ca[p], "pass") & play[p] == "accepts"))   | # Wrong take
+        ((str_detect(proper_ca[p], "take") & play[p] == "rejects"))   | # Wrong pass
+        ((str_detect(proper_ca[p], "No|Too") & play[p] == "doubles")) | # Wrong double
+        ((str_detect(proper_ca[p], "Double|Redouble") &
+            str_detect(play[p], "moves|cannot")))                    # Wrong no double
 
       cube_err[p] <- mistake[p]
     }
@@ -130,7 +140,7 @@ parse_files <- function(files) {
         play = play,
         turn = turn,
         roll = roll,
-        proper = proper,
+        proper_ca = proper_ca,
         mistake = mistake,
         move_err = move_err,
         cube_err = cube_err,
@@ -139,10 +149,14 @@ parse_files <- function(files) {
         move_eq = move_eq
       )
 
-    # 7. Clean the data frame
-
     big_df <- bind_rows(big_df, df)
   }
+
+  # A bit of cleaning
+
+  big_df <- big_df %>%
+    mutate(play = case_match(play, c("moves", "cannot") ~  "Rolls", .default = play),
+           play = str_to_title(play))
 
   return(big_df)
 }
@@ -156,11 +170,36 @@ df <- parse_files(files)
 
 # Checks
 
-# Do we have the right file(s)?
-df %>% count(file) # Why do we miss one?
+# Do we have the right file(s)? YES (We miss one that's empty)
+df %>% count(file)
+setdiff(basename(files), unique(df$file))
 
-# Do the mistake flag agree with "proper" and "play"
-df %>% count(mistake, play, proper) # NO FIX LOGIC
+# Are match length and score as expected? YES
+# (But note that unlimited games show up as matches to e.g. 8, 16)
+df %>% count(score1)
+df %>% count(score2)
+df %>% count(length)
+df %>% count(score1, score2, length)
+
+# Are both player's scores and the match length constant within each game? YES
+df %>%
+  group_by(file) %>%
+  summarise(across(c(length, score1, score2), ~ min(.x) - max(.x))) %>%
+  select(-1) %>%
+  colSums()
+
+# Names for both players are populated? YES
+df %>% count(player1)
+df %>% count(player2)
+df %>% count(is.na(player1), is.na(player2))
+
+# Inspect all possible plays and "proper cube actions" Looks good.
+# Do we have same number of doubles and takes + rejects? YES
+df %>% count(play)
+df %>% count(proper_ca)
+
+# Does the mistake flag agree with "proper_ca" and "play" YES
+df %>% count(mistake, play, proper_ca) %>% view()
 
 # Do we have valid dice rolls? YES
 df %>% count(roll, sort = T) %>% view()
@@ -171,19 +210,12 @@ df %>% count(play, is.na(roll))
 # Are rolls never doubles and never NA on the first move? YES
 df %>% filter(move_no == 1) %>% count(roll)
 
-# Are move numbers consecutive integers as long as each game?
+# Are move numbers consecutive integers as long as each game? YES
 df %>%
   group_by(file) %>%
   summarise(rows = n(), moves = max(move_no)) %>%
   mutate(okay = rows == moves) %>%
   count(okay)
-
-# Are both player's scores and the match length constant within each game? YES (Investigate NAs)
-df %>%
-  group_by(file) %>%
-  summarise(across(c(length, score1, score2), ~ min(.x) - max(.x))) %>%
-  select(-1) %>%
-  colSums(na.rm = T)
 
 # Do each player have about the same no of turns? # YES (Investigate the one case of diff = -2)
 df %>% group_by(file) %>%
@@ -191,14 +223,3 @@ df %>% group_by(file) %>%
   summarise(rolls_diff = min(n) - max(n)) %>%
   ungroup() %>%
   count(rolls_diff)
-
-# Valid values for "play"?
-df %>% count(play)
-
-# Do we have same number of doubles and takes + rejects? YES (see above)
-
-# Does "cannot move" always generate zero move error, but sometimes a cube error?
-df %>% filter(play == "cannot") %>% count(move_err)  # INVESTIGATE NA
-df %>% filter(play == "cannot") %>% count(mistake)   # INVESTIGATE
-
-# Do we have same number of doubles and takes + rejects?
