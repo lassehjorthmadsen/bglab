@@ -1,7 +1,7 @@
 The score (after 4 games) is: jotial 6, lasse 5 (match to 7 points), post-Crawford play
 
 Match Information:
-Date: 7/13/2023
+Date: 16/09/2023
 Place: BackgammonGalaxy
 
 Move number 1:  jotial to play 63
@@ -26,16 +26,16 @@ Pip counts: O 167, X 167
 * jotial moves 24/18 13/10
 
 Rolled 63:
-     1. Cubeful 0-ply    24/15                        Eq.: -0.957
-       0.511 0.126 0.005 - 0.489 0.136 0.004
-*    2. Cubeful 0-ply    24/18 13/10                  Eq.: -0.979 (-0.021)
-       0.505 0.133 0.007 - 0.495 0.139 0.006
-     3. Cubeful 0-ply    24/21 13/7                   Eq.: -1.000 (-0.043)
-       0.488 0.127 0.007 - 0.512 0.136 0.006
-     4. Cubeful 0-ply    24/21 24/18                  Eq.: -1.000 (-0.043)
-       0.492 0.119 0.005 - 0.508 0.143 0.004
-     5. Cubeful 0-ply    13/10 13/7                   Eq.: -1.000 (-0.043)
-       0.480 0.140 0.010 - 0.520 0.148 0.010
+*    1. Cubeful 3-ply    24/18 13/10                  Eq.: -0.979
+       0.505 0.135 0.007 - 0.495 0.141 0.006
+     2. Cubeful 3-ply    24/15                        Eq.: -0.981 (-0.002)
+       0.505 0.123 0.005 - 0.495 0.135 0.005
+     3. Cubeful 3-ply    24/21 13/7                   Eq.: -1.000 (-0.021)
+       0.487 0.136 0.007 - 0.513 0.140 0.006
+     4. Cubeful 3-ply    24/21 24/18                  Eq.: -1.000 (-0.021)
+       0.493 0.121 0.006 - 0.507 0.149 0.005
+     5. Cubeful 2-ply    13/4                         Eq.: -1.000 (-0.021)
+       0.482 0.138 0.007 - 0.518 0.142 0.007
 
 
 Move number 2:  lasse on roll, cube decision?
@@ -61,12 +61,12 @@ Pip counts: O 158, X 167
 
 
 Cube analysis
-0-ply cubeless equity +0.268 (Money: -0.005)
-  0.495 0.139 0.006 - 0.505 0.133 0.007
+3-ply cubeless equity +0.271 (Money: -0.006)
+  0.495 0.141 0.006 - 0.505 0.135 0.007
 Cubeful equities:
 1. Double, take        +0.979
 2. Double, pass        +1.000  (+0.021)
-3. No double           +0.751  (-0.227)
+3. No double           +0.905  (-0.074)
 Proper cube action: Double, take
 Move number 3:  lasse doubles to 2
 
@@ -92,12 +92,12 @@ Pip counts: O 158, X 167
 Alert: wrong pass (-0.021)!
 
 Cube analysis
-0-ply cubeless equity -0.268 (Money: +0.005)
-  0.505 0.133 0.007 - 0.495 0.139 0.006
+3-ply cubeless equity -0.271 (Money: +0.006)
+  0.505 0.135 0.007 - 0.495 0.141 0.006
 Cubeful equities:
 1. Double, take        -0.979
 2. Double, pass        -1.000  (-0.021)
-3. No double           -0.751  (+0.227)
+3. No double           -0.905  (+0.074)
 Proper cube action: Double, take
 lasse wins 1 point
 
@@ -105,7 +105,7 @@ Game statistics for game 5
 
 Player                                   jotial                  lasse                  
 
-Checkerplay statistics
+Chequerplay statistics
 
 Total moves                                1                       0                    
 Unforced moves                             1                       0                    
@@ -113,9 +113,9 @@ Unmarked moves                             1                       0
 Moves marked doubtful                      0                       0                    
 Moves marked bad                           0                       0                    
 Moves marked very bad                      0                       0                    
-Error total EMG (MWC)                         -0.021 ( -0.527%)       -0.000 ( -0.000%) 
-Error rate mEMG (MWC)                        -21.1   ( -0.527%)       -0.0   ( -0.000%) 
-Chequerplay rating                       Casual player           n/a                    
+Error total EMG (MWC)                         -0.000 ( -0.000%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                         -0.0   ( -0.000%)       -0.0   ( -0.000%) 
+Chequerplay rating                       Supernatural            n/a                    
 
 
 Cube statistics
@@ -130,25 +130,25 @@ Missed doubles above CP (EMG (MWC))        0                       0
 Wrong doubles below DP (EMG (MWC))         0                       0                    
 Wrong doubles above TG (EMG (MWC))         0                       0                    
 Wrong takes (EMG (MWC))                    0                       0                    
-Wrong passes (EMG (MWC))                   1 (-0.021 ( -0.536%))   0                    
-Error total EMG (MWC)                         -0.021 ( -0.536%)       -0.000 ( -0.000%) 
-Error rate mEMG (MWC)                        -21.5   ( -0.536%)       -0.0   ( -0.000%) 
+Wrong passes (EMG (MWC))                   1 (-0.021 ( -0.531%))   0                    
+Error total EMG (MWC)                         -0.021 ( -0.531%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                        -21.3   ( -0.531%)       -0.0   ( -0.000%) 
 Cube decision rating                     Casual player           Supernatural           
 
 
 Overall statistics
 
-Error total EMG (MWC)                         -0.043 ( -1.063%)       -0.000 ( -0.000%) 
-Error rate mEMG (MWC)                        -21.3   ( -0.532%)       -0.0   ( -0.000%) 
-Snowie error rate                            -42.5   ( +0.000%)       -0.0   ( +0.000%) 
-Overall rating                           Casual player           Supernatural           
-Error based abs. FIBS rating             1770.9                  2050.0                 
-Chequerplay errors rating loss            262.1                  n/a                    
-Cube errors rating loss                    16.9                     0.0                 
+Error total EMG (MWC)                         -0.021 ( -0.531%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                        -10.6   ( -0.266%)       -0.0   ( -0.000%) 
+Snowie error rate                            -21.3   ( +0.000%)       -0.0   ( +0.000%) 
+Overall rating                           Advanced                Supernatural           
+Error based abs. FIBS rating             2033.2                  2050.0                 
+Chequerplay errors rating loss              0.0                  n/a                    
+Cube errors rating loss                    16.8                     0.0                 
 
 
 
 
-Output generated Sat Sep 16 15:20:51 2023
+Output generated Sat Sep 16 21:03:11 2023
  by GNU Backgammon 1.07.001-mingw 32-Bit 20221114 (Text Export version 1.128)
 

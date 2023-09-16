@@ -1,7 +1,7 @@
 The score (after 3 games) is: nicknacks 1, lasse 2 (match to 3 points), post-Crawford play
 
 Match Information:
-Date: 8/17/2023
+Date: 16/09/2023
 Place: BackgammonGalaxy
 
 Move number 1:  nicknacks to play 32
@@ -26,16 +26,16 @@ Pip counts: O 167, X 167
 * nicknacks moves 24/21 13/11
 
 Rolled 32:
-*    1. Cubeful 0-ply    24/21 13/11                  Eq.: +0.776
-       0.507 0.135 0.007 - 0.493 0.133 0.006
-     2. Cubeful 0-ply    24/22 13/10                  Eq.: +0.775 (-0.001)
-       0.506 0.137 0.007 - 0.494 0.134 0.006
-     3. Cubeful 0-ply    13/11 13/10                  Eq.: +0.763 (-0.013)
-       0.496 0.149 0.010 - 0.504 0.144 0.009
-     4. Cubeful 0-ply    24/22 24/21                  Eq.: +0.733 (-0.043)
-       0.493 0.122 0.006 - 0.507 0.136 0.004
-     5. Cubeful 0-ply    13/8                         Eq.: +0.728 (-0.048)
-       0.488 0.139 0.009 - 0.512 0.149 0.007
+*    1. Cubeful 3-ply    24/21 13/11                  Eq.: +0.935
+       0.503 0.135 0.006 - 0.497 0.131 0.005
+     2. Cubeful 3-ply    24/22 24/21                  Eq.: +0.931 (-0.004)
+       0.495 0.120 0.005 - 0.505 0.127 0.004
+     3. Cubeful 3-ply    13/8                         Eq.: +0.926 (-0.009)
+       0.490 0.134 0.005 - 0.510 0.139 0.006
+     4. Cubeful 3-ply    13/11 13/10                  Eq.: +0.925 (-0.010)
+       0.499 0.151 0.007 - 0.501 0.142 0.008
+     5. Cubeful 2-ply    24/22 13/10                  Eq.: +0.922 (-0.013)
+       0.498 0.137 0.006 - 0.502 0.136 0.006
 
 
 Move number 2:  lasse to play 41
@@ -60,16 +60,16 @@ Pip counts: O 162, X 167
 * lasse moves 24/23 8/4*
 
 Rolled 41:
-*    1. Cubeful 0-ply    24/23 8/4*                   Eq.: -1.000
-       0.464 0.120 0.006 - 0.536 0.156 0.010
-     2. Cubeful 0-ply    24/23 24/20                  Eq.: -1.000 (-0.000)
-       0.453 0.100 0.003 - 0.547 0.155 0.005
-     3. Cubeful 0-ply    13/8                         Eq.: -1.000 (-0.000)
-       0.444 0.114 0.005 - 0.556 0.158 0.008
-     4. Cubeful 0-ply    24/23 13/9                   Eq.: -1.000 (-0.000)
-       0.443 0.109 0.004 - 0.557 0.160 0.009
-     5. Cubeful 0-ply    8/4*/3                       Eq.: -1.000 (-0.000)
-       0.449 0.119 0.007 - 0.551 0.166 0.012
+*    1. Cubeful 3-ply    24/23 8/4*                   Eq.: -1.000
+       0.459 0.122 0.005 - 0.541 0.158 0.008
+     2. Cubeful 3-ply    24/23 24/20                  Eq.: -1.000 (-0.000)
+       0.455 0.110 0.005 - 0.545 0.164 0.006
+     3. Cubeful 3-ply    13/8                         Eq.: -1.000 (-0.000)
+       0.449 0.113 0.004 - 0.551 0.160 0.008
+     4. Cubeful 3-ply    8/4*/3                       Eq.: -1.000 (-0.000)
+       0.450 0.120 0.005 - 0.550 0.167 0.011
+     5. Cubeful 2-ply    6/1*                         Eq.: -1.000 (-0.000)
+       0.438 0.106 0.003 - 0.562 0.165 0.010
 
 
 Move number 3:  nicknacks on roll, cube decision?
@@ -95,12 +95,12 @@ Pip counts: O 166, X 162
 
 
 Cube analysis
-0-ply cubeless equity +0.384 (Money: +0.112)
-  0.536 0.156 0.010 - 0.464 0.120 0.006
+3-ply cubeless equity +0.398 (Money: +0.121)
+  0.541 0.158 0.008 - 0.459 0.122 0.005
 Cubeful equities:
 1. Double, pass        +1.000
-2. Double, take        +1.146  (+0.146)
-3. No double           +0.832  (-0.168)
+2. Double, take        +1.165  (+0.165)
+3. No double           +0.976  (-0.024)
 Proper cube action: Double, pass
 Move number 4:  nicknacks doubles to 2
 
@@ -125,12 +125,12 @@ Pip counts: O 166, X 162
 
 
 Cube analysis
-0-ply cubeless equity -0.384 (Money: -0.112)
-  0.464 0.120 0.006 - 0.536 0.156 0.010
+3-ply cubeless equity -0.398 (Money: -0.121)
+  0.459 0.122 0.005 - 0.541 0.158 0.008
 Cubeful equities:
 1. Double, pass        -1.000
-2. Double, take        -1.146  (-0.146)
-3. No double           -0.832  (+0.168)
+2. Double, take        -1.165  (-0.165)
+3. No double           -0.976  (+0.024)
 Proper cube action: Double, pass
 nicknacks wins 1 point
 
@@ -138,7 +138,7 @@ Game statistics for game 4
 
 Player                                   nicknacks               lasse                  
 
-Checkerplay statistics
+Chequerplay statistics
 
 Total moves                                1                       1                    
 Unforced moves                             1                       1                    
@@ -182,6 +182,6 @@ Cube errors rating loss                     0.0                     0.0
 
 
 
-Output generated Sat Sep 16 15:07:23 2023
+Output generated Sat Sep 16 18:18:57 2023
  by GNU Backgammon 1.07.001-mingw 32-Bit 20221114 (Text Export version 1.128)
 

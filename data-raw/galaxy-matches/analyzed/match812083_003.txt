@@ -1,7 +1,7 @@
 The score (after 2 games) is: sarukhanov 1, lasse 2 (match to 3 points), post-Crawford play
 
 Match Information:
-Date: 6/19/2023
+Date: 16/09/2023
 Place: BackgammonGalaxy
 
 Move number 1:  lasse to play 52
@@ -26,16 +26,16 @@ Pip counts: O 167, X 167
 * lasse moves 24/22 13/8
 
 Rolled 52:
-*    1. Cubeful 0-ply    24/22 13/8                   Eq.: -0.968
-       0.508 0.135 0.007 - 0.492 0.132 0.005
-     2. Cubeful 0-ply    13/11 13/8                   Eq.: -1.000 (-0.032)
-       0.496 0.149 0.010 - 0.504 0.143 0.007
-     3. Cubeful 0-ply    13/8 6/4                     Eq.: -1.000 (-0.032)
-       0.482 0.136 0.010 - 0.518 0.148 0.009
-     4. Cubeful 0-ply    13/6                         Eq.: -1.000 (-0.032)
-       0.477 0.137 0.009 - 0.523 0.151 0.007
-     5. Cubeful 0-ply    24/22 8/3                    Eq.: -1.000 (-0.032)
-       0.469 0.122 0.007 - 0.531 0.158 0.008
+*    1. Cubeful 3-ply    24/22 13/8                   Eq.: -0.993
+       0.502 0.137 0.006 - 0.498 0.132 0.005
+     2. Cubeful 3-ply    13/11 13/8                   Eq.: -1.000 (-0.007)
+       0.498 0.150 0.007 - 0.502 0.142 0.007
+     3. Cubeful 3-ply    13/8 6/4                     Eq.: -1.000 (-0.007)
+       0.488 0.137 0.006 - 0.512 0.141 0.007
+     4. Cubeful 3-ply    13/6                         Eq.: -1.000 (-0.007)
+       0.480 0.137 0.006 - 0.520 0.148 0.007
+     5. Cubeful 2-ply    24/22 8/3                    Eq.: -1.000 (-0.007)
+       0.461 0.123 0.006 - 0.539 0.156 0.008
 
 
 Move number 2:  sarukhanov on roll, cube decision?
@@ -61,12 +61,12 @@ Pip counts: O 167, X 160
 
 
 Cube analysis
-0-ply cubeless equity +0.247 (Money: -0.021)
-  0.492 0.132 0.005 - 0.508 0.135 0.007
+3-ply cubeless equity +0.261 (Money: -0.010)
+  0.498 0.132 0.005 - 0.502 0.137 0.006
 Cubeful equities:
-1. Double, take        +0.968
-2. Double, pass        +1.000  (+0.032)
-3. No double           +0.737  (-0.230)
+1. Double, take        +0.993
+2. Double, pass        +1.000  (+0.007)
+3. No double           +0.909  (-0.084)
 Proper cube action: Double, take
 Move number 3:  sarukhanov doubles to 2
 
@@ -89,15 +89,15 @@ Pip counts: O 167, X 160
 
 * lasse rejects
 
-Alert: wrong pass (-0.032)!
- [doubtful]
+Alert: wrong pass (-0.007)!
+
 Cube analysis
-0-ply cubeless equity -0.247 (Money: +0.021)
-  0.508 0.135 0.007 - 0.492 0.132 0.005
+3-ply cubeless equity -0.261 (Money: +0.010)
+  0.502 0.137 0.006 - 0.498 0.132 0.005
 Cubeful equities:
-1. Double, take        -0.968
-2. Double, pass        -1.000  (-0.032)
-3. No double           -0.737  (+0.230)
+1. Double, take        -0.993
+2. Double, pass        -1.000  (-0.007)
+3. No double           -0.909  (+0.084)
 Proper cube action: Double, take
 sarukhanov wins 1 point
 
@@ -105,7 +105,7 @@ Game statistics for game 3
 
 Player                                   sarukhanov              lasse                  
 
-Checkerplay statistics
+Chequerplay statistics
 
 Total moves                                0                       1                    
 Unforced moves                             0                       1                    
@@ -130,25 +130,25 @@ Missed doubles above CP (EMG (MWC))        0                       0
 Wrong doubles below DP (EMG (MWC))         0                       0                    
 Wrong doubles above TG (EMG (MWC))         0                       0                    
 Wrong takes (EMG (MWC))                    0                       0                    
-Wrong passes (EMG (MWC))                   0                       1 (-0.032 ( -0.807%))
-Error total EMG (MWC)                         -0.000 ( -0.000%)       -0.032 ( -0.807%) 
-Error rate mEMG (MWC)                         -0.0   ( -0.000%)      -32.3   ( -0.807%) 
-Cube decision rating                     Supernatural            Beginner               
+Wrong passes (EMG (MWC))                   0                       1 (-0.007 ( -0.182%))
+Error total EMG (MWC)                         -0.000 ( -0.000%)       -0.007 ( -0.182%) 
+Error rate mEMG (MWC)                         -0.0   ( -0.000%)       -7.3   ( -0.182%) 
+Cube decision rating                     Supernatural            Expert                 
 
 
 Overall statistics
 
-Error total EMG (MWC)                         -0.000 ( -0.000%)       -0.032 ( -0.807%) 
-Error rate mEMG (MWC)                         -0.0   ( -0.000%)      -16.1   ( -0.404%) 
-Snowie error rate                             -0.0   ( +0.000%)      -32.3   ( +0.000%) 
-Overall rating                           Supernatural            Intermediate           
-Error based abs. FIBS rating             2050.0                  2027.7                 
+Error total EMG (MWC)                         -0.000 ( -0.000%)       -0.007 ( -0.182%) 
+Error rate mEMG (MWC)                         -0.0   ( -0.000%)       -3.6   ( -0.091%) 
+Snowie error rate                             -0.0   ( +0.000%)       -7.3   ( +0.000%) 
+Overall rating                           Supernatural            World class            
+Error based abs. FIBS rating             2050.0                  2045.0                 
 Chequerplay errors rating loss           n/a                        0.0                 
-Cube errors rating loss                     0.0                    22.3                 
+Cube errors rating loss                     0.0                     5.0                 
 
 
 
 
-Output generated Sat Sep 16 15:18:12 2023
+Output generated Sat Sep 16 20:32:42 2023
  by GNU Backgammon 1.07.001-mingw 32-Bit 20221114 (Text Export version 1.128)
 

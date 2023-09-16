@@ -1,7 +1,7 @@
 The score (after 3 games) is: antmen 1, lasse 2 (match to 3 points), post-Crawford play
 
 Match Information:
-Date: 6/17/2023
+Date: 16/09/2023
 Place: BackgammonGalaxy
 
 Move number 1:  antmen to play 43
@@ -26,16 +26,16 @@ Pip counts: O 167, X 167
 * antmen moves 13/10 13/9
 
 Rolled 43:
-     1. Cubeful 0-ply    24/21 13/9                   Eq.: +0.777
-       0.507 0.138 0.007 - 0.493 0.132 0.006
-     2. Cubeful 0-ply    24/20 13/10                  Eq.: +0.776 (-0.002)
-       0.506 0.136 0.007 - 0.494 0.132 0.006
-*    3. Cubeful 0-ply    13/10 13/9                   Eq.: +0.756 (-0.021)
-       0.494 0.150 0.011 - 0.506 0.143 0.009
-     4. Cubeful 0-ply    24/21 24/20                  Eq.: +0.747 (-0.030)
-       0.497 0.120 0.005 - 0.503 0.131 0.004
-     5. Cubeful 0-ply    13/9 8/5                     Eq.: +0.702 (-0.075)
-       0.480 0.139 0.010 - 0.520 0.156 0.012
+     1. Cubeful 3-ply    24/21 24/20                  Eq.: +0.932
+       0.504 0.121 0.005 - 0.496 0.124 0.004
+     2. Cubeful 3-ply    24/21 13/9                   Eq.: +0.926 (-0.007)
+       0.500 0.139 0.007 - 0.500 0.134 0.006
+     3. Cubeful 3-ply    24/20 13/10                  Eq.: +0.923 (-0.010)
+       0.499 0.136 0.007 - 0.501 0.132 0.006
+*    4. Cubeful 3-ply    13/10 13/9                   Eq.: +0.919 (-0.014)
+       0.500 0.156 0.008 - 0.500 0.140 0.008
+     5. Cubeful 2-ply    13/6                         Eq.: +0.902 (-0.031)
+       0.478 0.136 0.006 - 0.522 0.145 0.006
 
 
 Move number 2:  lasse to play 42
@@ -60,16 +60,16 @@ Pip counts: O 160, X 167
 * lasse moves 8/4 6/4
 
 Rolled 42:
-*    1. Cubeful 0-ply    8/4 6/4                      Eq.: -1.000
-       0.500 0.159 0.011 - 0.500 0.159 0.008
-     2. Cubeful 0-ply    13/11 13/9                   Eq.: -1.000 (-0.000)
-       0.459 0.139 0.010 - 0.541 0.174 0.013
-     3. Cubeful 0-ply    24/22 13/9                   Eq.: -1.000 (-0.000)
-       0.461 0.129 0.008 - 0.539 0.179 0.010
-     4. Cubeful 0-ply    24/20 13/11                  Eq.: -1.000 (-0.000)
-       0.454 0.123 0.007 - 0.546 0.186 0.009
-     5. Cubeful 0-ply    13/7                         Eq.: -1.000 (-0.000)
-       0.439 0.123 0.008 - 0.561 0.176 0.012
+*    1. Cubeful 3-ply    8/4 6/4                      Eq.: -1.000
+       0.495 0.150 0.008 - 0.505 0.163 0.010
+     2. Cubeful 3-ply    13/11 13/9                   Eq.: -1.000 (-0.000)
+       0.460 0.140 0.007 - 0.540 0.179 0.013
+     3. Cubeful 3-ply    24/22 13/9                   Eq.: -1.000 (-0.000)
+       0.458 0.126 0.006 - 0.542 0.180 0.009
+     4. Cubeful 3-ply    24/20 13/11                  Eq.: -1.000 (-0.000)
+       0.453 0.124 0.007 - 0.547 0.186 0.011
+     5. Cubeful 2-ply    24/18                        Eq.: -1.000 (-0.000)
+       0.451 0.118 0.006 - 0.549 0.186 0.007
 
 
 Move number 3:  antmen on roll, cube decision?
@@ -95,13 +95,13 @@ Pip counts: O 160, X 161
 
 
 Cube analysis
-0-ply cubeless equity +0.317 (Money: -0.004)
-  0.500 0.159 0.008 - 0.500 0.159 0.011
+3-ply cubeless equity +0.335 (Money: +0.023)
+  0.505 0.163 0.010 - 0.495 0.150 0.008
 Cubeful equities:
-1. Double, take        +1.000
-2. Double, pass        +1.000  (+0.000)
-3. No double           +0.781  (-0.218)
-Proper cube action: Double, take
+1. Double, pass        +1.000
+2. Double, take        +1.019  (+0.019)
+3. No double           +0.918  (-0.082)
+Proper cube action: Double, pass
 Move number 4:  antmen doubles to 2
 
  GNU Backgammon  Position ID: mGfwATDgc8UBMA
@@ -123,23 +123,22 @@ Pip counts: O 160, X 161
 
 * lasse rejects
 
-Alert: wrong pass (-0.000)!
 
 Cube analysis
-0-ply cubeless equity -0.317 (Money: +0.004)
-  0.500 0.159 0.011 - 0.500 0.159 0.008
+3-ply cubeless equity -0.335 (Money: -0.023)
+  0.495 0.150 0.008 - 0.505 0.163 0.010
 Cubeful equities:
-1. Double, take        -1.000
-2. Double, pass        -1.000  (-0.000)
-3. No double           -0.781  (+0.218)
-Proper cube action: Double, take
+1. Double, pass        -1.000
+2. Double, take        -1.019  (-0.019)
+3. No double           -0.918  (+0.082)
+Proper cube action: Double, pass
 antmen wins 1 point
 
 Game statistics for game 4
 
 Player                                   antmen                  lasse                  
 
-Checkerplay statistics
+Chequerplay statistics
 
 Total moves                                1                       1                    
 Unforced moves                             1                       1                    
@@ -147,9 +146,9 @@ Unmarked moves                             1                       1
 Moves marked doubtful                      0                       0                    
 Moves marked bad                           0                       0                    
 Moves marked very bad                      0                       0                    
-Error total EMG (MWC)                         -0.021 ( -0.525%)       -0.000 ( -0.000%) 
-Error rate mEMG (MWC)                        -21.0   ( -0.525%)       -0.0   ( -0.000%) 
-Chequerplay rating                       Casual player           Supernatural           
+Error total EMG (MWC)                         -0.014 ( -0.338%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                        -13.5   ( -0.338%)       -0.0   ( -0.000%) 
+Chequerplay rating                       Intermediate            Supernatural           
 
 
 Cube statistics
@@ -164,25 +163,25 @@ Missed doubles above CP (EMG (MWC))        0                       0
 Wrong doubles below DP (EMG (MWC))         0                       0                    
 Wrong doubles above TG (EMG (MWC))         0                       0                    
 Wrong takes (EMG (MWC))                    0                       0                    
-Wrong passes (EMG (MWC))                   0                       1 (-0.000 ( -0.009%))
-Error total EMG (MWC)                         -0.000 ( -0.000%)       -0.000 ( -0.009%) 
-Error rate mEMG (MWC)                         -0.0   ( -0.000%)       -0.4   ( -0.009%) 
+Wrong passes (EMG (MWC))                   0                       0                    
+Error total EMG (MWC)                         -0.000 ( -0.000%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                         -0.0   ( -0.000%)       -0.0   ( -0.000%) 
 Cube decision rating                     Supernatural            Supernatural           
 
 
 Overall statistics
 
-Error total EMG (MWC)                         -0.021 ( -0.525%)       -0.000 ( -0.009%) 
-Error rate mEMG (MWC)                        -10.5   ( -0.262%)       -0.2   ( -0.004%) 
-Snowie error rate                            -10.5   ( +0.000%)       -0.2   ( +0.000%) 
-Overall rating                           Advanced                Supernatural           
-Error based abs. FIBS rating             1686.7                  2049.8                 
-Chequerplay errors rating loss            363.3                     0.0                 
-Cube errors rating loss                     0.0                     0.2                 
+Error total EMG (MWC)                         -0.014 ( -0.338%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                         -6.8   ( -0.169%)       -0.0   ( -0.000%) 
+Snowie error rate                             -6.8   ( +0.000%)       -0.0   ( +0.000%) 
+Overall rating                           Expert                  Supernatural           
+Error based abs. FIBS rating             1815.8                  2050.0                 
+Chequerplay errors rating loss            234.2                     0.0                 
+Cube errors rating loss                     0.0                     0.0                 
 
 
 
 
-Output generated Sat Sep 16 15:17:27 2023
+Output generated Sat Sep 16 20:25:12 2023
  by GNU Backgammon 1.07.001-mingw 32-Bit 20221114 (Text Export version 1.128)
 

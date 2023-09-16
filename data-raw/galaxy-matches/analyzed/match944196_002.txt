@@ -1,7 +1,7 @@
 The score (after 1 game) is: beaver_take_all 1, lasse 0 (match to 3 points)
 
 Match Information:
-Date: 7/22/2023
+Date: 16/09/2023
 Place: BackgammonGalaxy
 
 Move number 1:  beaver_take_all to play 31
@@ -26,16 +26,16 @@ Pip counts: O 167, X 167
 * beaver_take_all moves 8/5 6/5
 
 Rolled 31:
-*    1. Cubeful 0-ply    8/5 6/5                      Eq.: +0.088
-       0.551 0.174 0.013 - 0.449 0.124 0.005
-     2. Cubeful 0-ply    24/20                        Eq.: -0.160 (-0.248)
-       0.497 0.125 0.005 - 0.503 0.135 0.004
-     3. Cubeful 0-ply    24/23 13/10                  Eq.: -0.162 (-0.250)
-       0.497 0.137 0.008 - 0.503 0.140 0.007
-     4. Cubeful 0-ply    24/23 24/21                  Eq.: -0.164 (-0.253)
-       0.496 0.123 0.005 - 0.504 0.135 0.004
-     5. Cubeful 0-ply    13/9                         Eq.: -0.187 (-0.275)
-       0.491 0.143 0.009 - 0.509 0.143 0.008
+*    1. Cubeful 2-ply    8/5 6/5                      Eq.: +0.094
+       0.551 0.167 0.008 - 0.449 0.115 0.004
+     2. Cubeful 2-ply    24/23 13/10                  Eq.: -0.175 (-0.268)
+       0.496 0.139 0.006 - 0.504 0.138 0.006
+     3. Cubeful 2-ply    24/20                        Eq.: -0.188 (-0.282)
+       0.494 0.127 0.006 - 0.506 0.135 0.005
+     4. Cubeful 2-ply    24/23 24/21                  Eq.: -0.194 (-0.288)
+       0.492 0.124 0.005 - 0.508 0.135 0.005
+     5. Cubeful 2-ply    13/9                         Eq.: -0.203 (-0.296)
+       0.490 0.144 0.007 - 0.510 0.141 0.007
 
 
 Move number 2:  lasse to play 42
@@ -60,25 +60,25 @@ Pip counts: O 163, X 167
 * lasse moves 8/4 6/4
 
 Cube analysis
-0-ply cubeless equity -0.258 (Money: -0.159)
-  0.449 0.124 0.005 - 0.551 0.174 0.013
+3-ply cubeless equity -0.267 (Money: -0.163)
+  0.447 0.116 0.005 - 0.553 0.170 0.008
 Cubeful equities:
-1. No double           -0.088
-2. Double, pass        +1.000  (+1.088)
-3. Double, take        -0.242  (-0.154)
-Proper cube action: No double, take (12.4%)
+1. No double           -0.102
+2. Double, pass        +1.000  (+1.102)
+3. Double, take        -0.275  (-0.172)
+Proper cube action: No double, take (13.5%)
 
 Rolled 42:
-*    1. Cubeful 0-ply    8/4 6/4                      Eq.: -0.046
-       0.456 0.135 0.008 - 0.544 0.175 0.008
-     2. Cubeful 0-ply    24/22 13/9                   Eq.: -0.192 (-0.146)
-       0.430 0.108 0.005 - 0.570 0.186 0.010
-     3. Cubeful 0-ply    13/11 13/9                   Eq.: -0.240 (-0.194)
-       0.415 0.116 0.007 - 0.585 0.193 0.015
-     4. Cubeful 0-ply    24/18                        Eq.: -0.255 (-0.209)
-       0.420 0.094 0.003 - 0.580 0.198 0.007
-     5. Cubeful 0-ply    13/9 6/4                     Eq.: -0.322 (-0.275)
-       0.400 0.104 0.006 - 0.600 0.212 0.019
+*    1. Cubeful 2-ply    8/4 6/4                      Eq.: -0.037
+       0.458 0.133 0.006 - 0.542 0.168 0.008
+     2. Cubeful 2-ply    24/22 13/9                   Eq.: -0.198 (-0.161)
+       0.425 0.112 0.005 - 0.575 0.183 0.010
+     3. Cubeful 2-ply    24/18                        Eq.: -0.234 (-0.197)
+       0.424 0.097 0.004 - 0.576 0.194 0.008
+     4. Cubeful 2-ply    13/11 13/9                   Eq.: -0.241 (-0.204)
+       0.414 0.119 0.006 - 0.586 0.192 0.014
+     5. Cubeful 2-ply    13/9 6/4                     Eq.: -0.329 (-0.292)
+       0.399 0.102 0.005 - 0.601 0.212 0.018
 
 
 Move number 3:  beaver_take_all to play 65
@@ -103,24 +103,24 @@ Pip counts: O 163, X 161
 * beaver_take_all moves 24/13
 
 Cube analysis
-0-ply cubeless equity +0.226 (Money: +0.130)
-  0.544 0.175 0.008 - 0.456 0.135 0.008
+3-ply cubeless equity +0.205 (Money: +0.115)
+  0.540 0.165 0.008 - 0.460 0.133 0.005
 Cubeful equities:
-1. No double           +0.046
-2. Double, pass        +1.000  (+0.954)
-3. Double, take        -0.383  (-0.429)
-Proper cube action: No double, take (31.0%)
+1. No double           +0.013
+2. Double, pass        +1.000  (+0.987)
+3. Double, take        -0.681  (-0.694)
+Proper cube action: No double, take (41.3%)
 
 Rolled 65:
-*    1. Cubeful 0-ply    24/13                        Eq.: +0.040
-       0.545 0.141 0.006 - 0.455 0.129 0.003
-     2. Cubeful 0-ply    24/18 13/8                   Eq.: -0.030 (-0.070)
-       0.530 0.152 0.008 - 0.470 0.142 0.004
-     3. Cubeful 0-ply    13/8 13/7                    Eq.: -0.173 (-0.213)
-       0.495 0.159 0.011 - 0.505 0.150 0.009
-     4. Cubeful 0-ply    13/2                         Eq.: -0.341 (-0.381)
+*    1. Cubeful 3-ply    24/13                        Eq.: +0.056
+       0.550 0.137 0.006 - 0.450 0.124 0.004
+     2. Cubeful 3-ply    24/18 13/8                   Eq.: -0.003 (-0.060)
+       0.540 0.162 0.010 - 0.460 0.142 0.006
+     3. Cubeful 2-ply    13/8 13/7                    Eq.: -0.179 (-0.236)
+       0.500 0.159 0.010 - 0.500 0.153 0.009
+     4. Cubeful 0-ply    13/2                         Eq.: -0.341 (-0.397)
        0.466 0.145 0.009 - 0.534 0.172 0.011
-     5. Cubeful 0-ply    13/7 8/3                     Eq.: -0.651 (-0.691)
+     5. Cubeful 0-ply    13/7 8/3                     Eq.: -0.651 (-0.707)
        0.427 0.126 0.009 - 0.573 0.211 0.021
 
 
@@ -146,25 +146,25 @@ Pip counts: O 152, X 161
 * lasse moves 13/9 13/8
 
 Cube analysis
-0-ply cubeless equity -0.182 (Money: -0.106)
-  0.455 0.129 0.003 - 0.545 0.141 0.006
+3-ply cubeless equity -0.189 (Money: -0.116)
+  0.450 0.124 0.004 - 0.550 0.137 0.006
 Cubeful equities:
-1. No double           -0.040
-2. Double, pass        +1.000  (+1.040)
-3. Double, take        -0.197  (-0.157)
-Proper cube action: No double, take (13.1%)
+1. No double           -0.056
+2. Double, pass        +1.000  (+1.056)
+3. Double, take        -0.239  (-0.183)
+Proper cube action: No double, take (14.8%)
 
 Rolled 54:
-*    1. Cubeful 0-ply    13/9 13/8                    Eq.: -0.167
-       0.422 0.129 0.004 - 0.578 0.148 0.008
-     2. Cubeful 0-ply    13/4                         Eq.: -0.241 (-0.074)
-       0.408 0.120 0.004 - 0.592 0.159 0.008
-     3. Cubeful 0-ply    13/9 6/1*                    Eq.: -0.292 (-0.125)
-       0.397 0.120 0.003 - 0.603 0.174 0.012
-     4. Cubeful 0-ply    13/8 6/2                     Eq.: -0.357 (-0.190)
-       0.385 0.102 0.003 - 0.615 0.170 0.011
-     5. Cubeful 0-ply    13/9 8/3                     Eq.: -0.398 (-0.231)
-       0.376 0.107 0.004 - 0.624 0.191 0.018
+*    1. Cubeful 3-ply    13/9 13/8                    Eq.: -0.177
+       0.419 0.121 0.003 - 0.581 0.143 0.007
+     2. Cubeful 3-ply    13/4                         Eq.: -0.225 (-0.048)
+       0.409 0.115 0.003 - 0.591 0.147 0.006
+     3. Cubeful 2-ply    13/9 6/1*                    Eq.: -0.290 (-0.114)
+       0.398 0.118 0.003 - 0.602 0.172 0.011
+     4. Cubeful 2-ply    13/8 6/2                     Eq.: -0.349 (-0.173)
+       0.387 0.102 0.003 - 0.613 0.168 0.009
+     5. Cubeful 2-ply    13/9 8/3                     Eq.: -0.398 (-0.222)
+       0.377 0.102 0.003 - 0.623 0.186 0.016
 
 
 Move number 5:  beaver_take_all to play 43
@@ -189,25 +189,25 @@ Pip counts: O 152, X 152
 * beaver_take_all moves 13/10 13/9
 
 Cube analysis
-0-ply cubeless equity +0.256 (Money: +0.178)
-  0.578 0.148 0.008 - 0.422 0.129 0.004
+3-ply cubeless equity +0.268 (Money: +0.188)
+  0.581 0.143 0.007 - 0.419 0.121 0.003
 Cubeful equities:
-1. No double           +0.167
-2. Double, pass        +1.000  (+0.833)
-3. Double, take        -0.138  (-0.304)
-Proper cube action: No double, take (26.8%)
+1. No double           +0.177
+2. Double, pass        +1.000  (+0.823)
+3. Double, take        -0.353  (-0.530)
+Proper cube action: No double, take (39.2%)
 
 Rolled 43:
-*    1. Cubeful 0-ply    13/10 13/9                   Eq.: +0.004
-       0.544 0.161 0.009 - 0.456 0.156 0.007
-     2. Cubeful 0-ply    24/20 13/10                  Eq.: -0.076 (-0.080)
-       0.528 0.138 0.006 - 0.472 0.161 0.005
-     3. Cubeful 0-ply    13/6                         Eq.: -0.092 (-0.096)
-       0.519 0.140 0.007 - 0.481 0.150 0.003
-     4. Cubeful 0-ply    13/9 6/3                     Eq.: -0.251 (-0.255)
-       0.494 0.146 0.009 - 0.506 0.190 0.009
-     5. Cubeful 0-ply    13/9 8/5                     Eq.: -0.271 (-0.275)
-       0.486 0.145 0.008 - 0.514 0.183 0.009
+*    1. Cubeful 2-ply    13/10 13/9                   Eq.: -0.002
+       0.543 0.158 0.008 - 0.457 0.149 0.006
+     2. Cubeful 2-ply    13/6                         Eq.: -0.092 (-0.090)
+       0.522 0.137 0.006 - 0.478 0.147 0.004
+     3. Cubeful 2-ply    24/20 13/10                  Eq.: -0.124 (-0.122)
+       0.526 0.137 0.007 - 0.474 0.166 0.005
+     4. Cubeful 2-ply    13/9 6/3                     Eq.: -0.272 (-0.270)
+       0.492 0.137 0.007 - 0.508 0.182 0.009
+     5. Cubeful 2-ply    13/9 8/5                     Eq.: -0.273 (-0.271)
+       0.486 0.145 0.007 - 0.514 0.172 0.008
 
 
 Move number 6:  lasse to play 52
@@ -232,25 +232,25 @@ Pip counts: O 145, X 152
 * lasse moves 24/22 6/1*
 
 Cube analysis
-0-ply cubeless equity -0.170 (Money: -0.095)
-  0.456 0.156 0.007 - 0.544 0.161 0.009
+3-ply cubeless equity -0.186 (Money: -0.104)
+  0.457 0.146 0.006 - 0.543 0.162 0.008
 Cubeful equities:
-1. No double           -0.004
-2. Double, pass        +1.000  (+1.004)
-3. Double, take        -0.121  (-0.117)
-Proper cube action: No double, take (10.4%)
+1. No double           -0.008
+2. Double, pass        +1.000  (+1.008)
+3. Double, take        -0.143  (-0.135)
+Proper cube action: No double, take (11.8%)
 
 Rolled 52:
-*    1. Cubeful 0-ply    24/22 6/1*                   Eq.: -0.259
-       0.405 0.134 0.006 - 0.595 0.200 0.014
-     2. Cubeful 0-ply    24/22 9/4                    Eq.: -0.329 (-0.070)
-       0.392 0.113 0.005 - 0.608 0.187 0.007
-     3. Cubeful 0-ply    9/7 6/1*                     Eq.: -0.358 (-0.099)
-       0.380 0.125 0.004 - 0.620 0.189 0.014
-     4. Cubeful 0-ply    24/22 13/8                   Eq.: -0.358 (-0.100)
-       0.386 0.111 0.005 - 0.614 0.198 0.010
-     5. Cubeful 0-ply    13/11 6/1*                   Eq.: -0.364 (-0.105)
-       0.379 0.130 0.005 - 0.621 0.201 0.018
+*    1. Cubeful 2-ply    24/22 6/1*                   Eq.: -0.230
+       0.408 0.135 0.006 - 0.592 0.199 0.014
+     2. Cubeful 2-ply    9/7 6/1*                     Eq.: -0.348 (-0.118)
+       0.382 0.128 0.005 - 0.618 0.196 0.015
+     3. Cubeful 2-ply    13/11 6/1*                   Eq.: -0.365 (-0.135)
+       0.379 0.130 0.005 - 0.621 0.207 0.019
+     4. Cubeful 2-ply    24/22 9/4                    Eq.: -0.375 (-0.145)
+       0.382 0.105 0.003 - 0.618 0.181 0.007
+     5. Cubeful 2-ply    24/22 13/8                   Eq.: -0.378 (-0.148)
+       0.382 0.106 0.004 - 0.618 0.191 0.010
 
 
 Move number 7:  beaver_take_all to play 66
@@ -275,13 +275,13 @@ Pip counts: O 146, X 145
 * beaver_take_all cannot move
 
 Cube analysis
-0-ply cubeless equity +0.384 (Money: +0.265)
-  0.595 0.200 0.014 - 0.405 0.134 0.006
+3-ply cubeless equity +0.373 (Money: +0.256)
+  0.593 0.196 0.012 - 0.407 0.134 0.005
 Cubeful equities:
-1. No double           +0.259
-2. Double, pass        +1.000  (+0.741)
-3. Double, take        -0.016  (-0.275)
-Proper cube action: No double, take (27.1%)
+1. No double           +0.221
+2. Double, pass        +1.000  (+0.779)
+3. Double, take        -0.257  (-0.478)
+Proper cube action: No double, take (38.0%)
 
 Rolled 66:
 *    Cannot move
@@ -310,12 +310,12 @@ Pip counts: O 146, X 145
 
 
 Cube analysis
-0-ply cubeless equity +0.263 (Money: +0.250)
-  0.553 0.262 0.013 - 0.447 0.125 0.007
+3-ply cubeless equity +0.233 (Money: +0.231)
+  0.551 0.257 0.011 - 0.449 0.131 0.007
 Cubeful equities:
-1. Double, take        +0.676
-2. Double, pass        +1.000  (+0.324)
-3. No double           +0.575  (-0.100)
+1. Double, take        +0.648
+2. Double, pass        +1.000  (+0.352)
+3. No double           +0.523  (-0.125)
 Proper cube action: Double, take
 Move number 9:  lasse doubles to 2
 
@@ -340,12 +340,12 @@ Pip counts: O 146, X 145
 
 
 Cube analysis
-0-ply cubeless equity -0.263 (Money: -0.250)
-  0.447 0.125 0.007 - 0.553 0.262 0.013
+3-ply cubeless equity -0.233 (Money: -0.231)
+  0.449 0.131 0.007 - 0.551 0.257 0.011
 Cubeful equities:
-1. Double, take        -0.676
-2. Double, pass        -1.000  (-0.324)
-3. No double           -0.575  (+0.100)
+1. Double, take        -0.648
+2. Double, pass        -1.000  (-0.352)
+3. No double           -0.523  (+0.125)
 Proper cube action: Double, take
 Move number 10:  lasse to play 63
 
@@ -369,16 +369,16 @@ Pip counts: O 146, X 145
 * lasse moves 24/21 22/16*
 
 Rolled 63:
-*    1. Cubeful 0-ply    24/21 22/16*                 Eq.: +0.380
-       0.573 0.246 0.013 - 0.427 0.131 0.009
-     2. Cubeful 0-ply    24/15*                       Eq.: +0.361 (-0.019)
-       0.566 0.241 0.012 - 0.434 0.133 0.009
-     3. Cubeful 0-ply    22/16* 13/10                 Eq.: +0.353 (-0.027)
-       0.555 0.255 0.012 - 0.445 0.144 0.012
-     4. Cubeful 0-ply    22/16*/13                    Eq.: +0.328 (-0.052)
-       0.555 0.229 0.007 - 0.445 0.121 0.006
-     5. Cubeful 0-ply    22/16* 9/6                   Eq.: +0.325 (-0.055)
-       0.550 0.237 0.010 - 0.450 0.130 0.007
+*    1. Cubeful 3-ply    24/21 22/16*                 Eq.: +0.389
+       0.580 0.241 0.012 - 0.420 0.120 0.006
+     2. Cubeful 3-ply    24/15*                       Eq.: +0.361 (-0.028)
+       0.567 0.238 0.012 - 0.433 0.132 0.007
+     3. Cubeful 3-ply    22/16* 13/10                 Eq.: +0.351 (-0.038)
+       0.553 0.258 0.014 - 0.447 0.140 0.010
+     4. Cubeful 3-ply    22/16*/13                    Eq.: +0.330 (-0.060)
+       0.558 0.225 0.009 - 0.442 0.124 0.006
+     5. Cubeful 2-ply    22/16* 9/6                   Eq.: +0.335 (-0.055)
+       0.555 0.235 0.010 - 0.445 0.128 0.006
 
 
 Move number 11:  beaver_take_all to play 63
@@ -487,19 +487,19 @@ v|                  |BAR|                  |     3 points match
 Pip counts: O 159, X 131
 
 * lasse moves 16/15*/9
-Alert: bad move ( -0.061)
+Alert: doubtful move ( -0.039)
 
 Rolled 61:
-     1. Cubeful 0-ply    16/15* 9/3*                  Eq.: +0.772
-       0.689 0.414 0.022 - 0.311 0.071 0.002
-     2. Cubeful 0-ply    21/15* 8/7                   Eq.: +0.728 (-0.044)
-       0.693 0.360 0.016 - 0.307 0.067 0.002
-     3. Cubeful 0-ply    16/15* 13/7                  Eq.: +0.724 (-0.048)
-       0.679 0.385 0.017 - 0.321 0.076 0.003
-*    4. Cubeful 0-ply    16/15*/9                     Eq.: +0.711 (-0.061)
-       0.687 0.354 0.014 - 0.313 0.061 0.001
-     5. Cubeful 0-ply    21/15* 16/15                 Eq.: +0.699 (-0.073)
-       0.688 0.338 0.015 - 0.312 0.056 0.001
+     1. Cubeful 3-ply    16/15* 9/3*                  Eq.: +0.749
+       0.676 0.416 0.021 - 0.324 0.076 0.004
+     2. Cubeful 3-ply    21/15* 16/15                 Eq.: +0.724 (-0.025)
+       0.699 0.343 0.016 - 0.301 0.060 0.002
+*    3. Cubeful 3-ply    16/15*/9                     Eq.: +0.709 (-0.039)
+       0.686 0.355 0.016 - 0.314 0.064 0.003
+     4. Cubeful 3-ply    16/15* 13/7                  Eq.: +0.706 (-0.043)
+       0.670 0.385 0.018 - 0.330 0.080 0.005
+     5. Cubeful 2-ply    21/15* 8/7                   Eq.: +0.715 (-0.034)
+       0.683 0.366 0.017 - 0.317 0.075 0.003
 
 
 Move number 15:  beaver_take_all to play 41
@@ -547,19 +547,19 @@ v|                  |BAR|                  |     3 points match
 Pip counts: O 174, X 124
 
 * lasse moves 21/11
-Alert: bad move ( -0.083)
+Alert: bad move ( -0.085)
 
 Rolled 64:
-     1. Cubeful 0-ply    13/3*                        Eq.: +0.974
-       0.745 0.507 0.030 - 0.255 0.054 0.002
-     2. Cubeful 0-ply    9/3* 8/4                     Eq.: +0.930 (-0.044)
-       0.728 0.498 0.027 - 0.272 0.059 0.002
-*    3. Cubeful 0-ply    21/11                        Eq.: +0.891 (-0.083)
-       0.746 0.418 0.016 - 0.254 0.042 0.001
-     4. Cubeful 0-ply    13/7 8/4                     Eq.: +0.870 (-0.104)
-       0.718 0.456 0.019 - 0.282 0.059 0.002
-     5. Cubeful 0-ply    13/9 13/7                    Eq.: +0.863 (-0.111)
-       0.720 0.444 0.017 - 0.280 0.056 0.002
+     1. Cubeful 3-ply    13/3*                        Eq.: +0.972
+       0.739 0.518 0.028 - 0.261 0.053 0.003
+     2. Cubeful 3-ply    9/3* 8/4                     Eq.: +0.946 (-0.026)
+       0.728 0.514 0.027 - 0.272 0.058 0.003
+*    3. Cubeful 3-ply    21/11                        Eq.: +0.887 (-0.085)
+       0.749 0.407 0.018 - 0.251 0.039 0.002
+     4. Cubeful 2-ply    13/7 8/4                     Eq.: +0.859 (-0.113)
+       0.714 0.451 0.020 - 0.286 0.060 0.002
+     5. Cubeful 2-ply    21/15 13/9                   Eq.: +0.855 (-0.117)
+       0.733 0.408 0.018 - 0.267 0.049 0.001
 
 
 Move number 17:  beaver_take_all to play 64
@@ -609,16 +609,16 @@ Pip counts: O 174, X 114
 * lasse moves 11/10 8/3*
 
 Rolled 51:
-     1. Cubeful 0-ply    8/7 8/3*                     Eq.: +1.093
-       0.782 0.557 0.032 - 0.218 0.045 0.001
-*    2. Cubeful 0-ply    11/10 8/3*                   Eq.: +1.077 (-0.016)
-       0.779 0.545 0.033 - 0.221 0.042 0.001
-     3. Cubeful 0-ply    8/3* 4/3                     Eq.: +1.061 (-0.033)
-       0.774 0.538 0.030 - 0.226 0.046 0.001
-     4. Cubeful 0-ply    9/3*                         Eq.: +1.058 (-0.035)
-       0.773 0.538 0.031 - 0.227 0.043 0.001
-     5. Cubeful 0-ply    8/3*/2                       Eq.: +1.053 (-0.041)
-       0.769 0.539 0.029 - 0.231 0.046 0.001
+     1. Cubeful 3-ply    8/7 8/3*                     Eq.: +1.085
+       0.775 0.562 0.029 - 0.225 0.043 0.002
+     2. Cubeful 3-ply    9/3*                         Eq.: +1.059 (-0.026)
+       0.772 0.542 0.028 - 0.228 0.041 0.002
+*    3. Cubeful 3-ply    11/10 8/3*                   Eq.: +1.057 (-0.028)
+       0.767 0.549 0.029 - 0.233 0.043 0.002
+     4. Cubeful 3-ply    8/3* 4/3                     Eq.: +1.055 (-0.030)
+       0.769 0.543 0.028 - 0.231 0.043 0.002
+     5. Cubeful 2-ply    8/3*/2                       Eq.: +1.029 (-0.056)
+       0.764 0.527 0.026 - 0.236 0.047 0.001
 
 
 Move number 19:  beaver_take_all to play 54
@@ -669,16 +669,16 @@ Pip counts: O 172, X 108
 * lasse moves 13/5* 10/6 9/5
 
 Rolled 44:
-*    1. Cubeful 0-ply    13/5* 10/6 9/5               Eq.: +1.425
-       0.855 0.751 0.059 - 0.145 0.016 0.000
-     2. Cubeful 0-ply    13/5*(2)                     Eq.: +1.419 (-0.006)
-       0.853 0.749 0.057 - 0.147 0.018 0.000
-     3. Cubeful 0-ply    13/5* 9/5(2)                 Eq.: +1.411 (-0.014)
-       0.850 0.745 0.058 - 0.150 0.017 0.000
-     4. Cubeful 0-ply    10/6 9/5*(2) 8/4             Eq.: +1.398 (-0.027)
-       0.846 0.742 0.057 - 0.154 0.019 0.000
-     5. Cubeful 0-ply    13/5* 9/5 8/4                Eq.: +1.396 (-0.030)
-       0.846 0.738 0.053 - 0.154 0.020 0.000
+*    1. Cubeful 3-ply    13/5* 10/6 9/5               Eq.: +1.450
+       0.869 0.748 0.042 - 0.131 0.015 0.001
+     2. Cubeful 3-ply    13/5* 9/5(2)                 Eq.: +1.433 (-0.018)
+       0.865 0.738 0.040 - 0.135 0.016 0.001
+     3. Cubeful 3-ply    13/5* 9/5 8/4                Eq.: +1.427 (-0.024)
+       0.861 0.740 0.041 - 0.139 0.018 0.001
+     4. Cubeful 3-ply    13/5*(2)                     Eq.: +1.417 (-0.033)
+       0.859 0.734 0.041 - 0.141 0.017 0.001
+     5. Cubeful 2-ply    10/6 9/5*(2) 8/4             Eq.: +1.414 (-0.036)
+       0.855 0.739 0.048 - 0.145 0.019 0.000
 
 
 Move number 21:  beaver_take_all to play 21
@@ -727,21 +727,18 @@ v|                  |BAR|                  |     3 points match
 Pip counts: O 175, X 92
 
 * lasse moves 13/11 9/3
-Alert: bad move ( -0.092)
 
 Rolled 22:
-     1. Cubeful 0-ply    5/3(2) 4/2*(2)               Eq.: +1.537
-       0.890 0.795 0.031 - 0.110 0.014 0.000
-     2. Cubeful 0-ply    13/9 4/2*(2)                 Eq.: +1.495 (-0.042)
-       0.869 0.795 0.057 - 0.131 0.018 0.000
-     3. Cubeful 0-ply    13/11 5/3 4/2*(2)            Eq.: +1.486 (-0.051)
-       0.867 0.789 0.042 - 0.133 0.024 0.001
-     4. Cubeful 0-ply    13/11 9/7 4/2*(2)            Eq.: +1.480 (-0.057)
-       0.867 0.782 0.046 - 0.133 0.020 0.000
-     5. Cubeful 0-ply    9/7 5/3 4/2*(2)              Eq.: +1.476 (-0.061)
-       0.867 0.778 0.048 - 0.133 0.022 0.000
-*   13. Cubeful 0-ply    13/11 9/3                    Eq.: +1.445 (-0.092)
-       0.867 0.747 0.041 - 0.133 0.006 0.000
+     1. Cubeful 3-ply    13/9 4/2*(2)                 Eq.: +1.519
+       0.887 0.783 0.037 - 0.113 0.015 0.001
+     2. Cubeful 3-ply    5/3(2) 4/2*(2)               Eq.: +1.515 (-0.005)
+       0.890 0.772 0.025 - 0.110 0.011 0.000
+*    3. Cubeful 3-ply    13/11 9/3                    Eq.: +1.512 (-0.008)
+       0.889 0.770 0.038 - 0.111 0.005 0.000
+     4. Cubeful 3-ply    13/11 5/3 4/2*(2)            Eq.: +1.503 (-0.016)
+       0.880 0.779 0.036 - 0.120 0.019 0.001
+     5. Cubeful 3-ply    13/11(2) 4/2*(2)             Eq.: +1.496 (-0.023)
+       0.880 0.772 0.036 - 0.120 0.015 0.001
 
 
 Move number 23:  beaver_take_all to play 44
@@ -789,21 +786,19 @@ v|                  |BAR|                  |     3 points match
 Pip counts: O 175, X 84
 
 * lasse moves 13/10 11/9
-Alert: doubtful move ( -0.053)
+Alert: doubtful move ( -0.033)
 
 Rolled 32:
-     1. Cubeful 0-ply    8/5 6/4                      Eq.: +1.505
-       0.883 0.775 0.044 - 0.117 0.006 0.000
-     2. Cubeful 0-ply    11/9 8/5                     Eq.: +1.498 (-0.007)
-       0.881 0.773 0.044 - 0.119 0.005 0.000
-     3. Cubeful 0-ply    5/3 5/2*                     Eq.: +1.490 (-0.015)
-       0.870 0.787 0.038 - 0.130 0.018 0.000
-     4. Cubeful 0-ply    8/3                          Eq.: +1.485 (-0.021)
-       0.875 0.772 0.042 - 0.125 0.006 0.000
-     5. Cubeful 0-ply    11/9 6/3                     Eq.: +1.471 (-0.034)
-       0.873 0.762 0.039 - 0.127 0.006 0.000
-*   10. Cubeful 0-ply    13/10 11/9                   Eq.: +1.452 (-0.053)
-       0.864 0.761 0.046 - 0.136 0.004 0.000
+     1. Cubeful 3-ply    11/9 8/5                     Eq.: +1.565
+       0.900 0.804 0.040 - 0.100 0.004 0.000
+     2. Cubeful 3-ply    8/5 6/4                      Eq.: +1.565 (-0.001)
+       0.900 0.803 0.039 - 0.100 0.004 0.000
+     3. Cubeful 3-ply    13/11 8/5                    Eq.: +1.543 (-0.022)
+       0.894 0.793 0.040 - 0.106 0.003 0.000
+     4. Cubeful 3-ply    13/10 6/4                    Eq.: +1.536 (-0.029)
+       0.892 0.790 0.041 - 0.108 0.004 0.000
+*    5. Cubeful 3-ply    13/10 11/9                   Eq.: +1.533 (-0.033)
+       0.890 0.790 0.041 - 0.110 0.004 0.000
 
 
 Move number 25:  beaver_take_all to play 51
@@ -851,19 +846,19 @@ v|                  |BAR|                  |     3 points match
 Pip counts: O 175, X 79
 
 * lasse moves 10/9 6/2*
-Alert: doubtful move ( -0.034)
+Alert: doubtful move ( -0.042)
 
 Rolled 41:
-     1. Cubeful 0-ply    8/7 6/2*                     Eq.: +1.635
-       0.910 0.855 0.051 - 0.090 0.006 0.000
-     2. Cubeful 0-ply    6/2* 3/2                     Eq.: +1.620 (-0.015)
-       0.904 0.852 0.060 - 0.096 0.006 0.000
-     3. Cubeful 0-ply    6/2*/1                       Eq.: +1.619 (-0.016)
-       0.906 0.847 0.054 - 0.094 0.003 0.000
-*    4. Cubeful 0-ply    10/9 6/2*                    Eq.: +1.601 (-0.034)
-       0.896 0.850 0.064 - 0.104 0.005 0.000
-     5. Cubeful 0-ply    9/8 6/2*                     Eq.: +1.600 (-0.035)
-       0.900 0.840 0.060 - 0.100 0.005 0.000
+     1. Cubeful 3-ply    6/2* 3/2                     Eq.: +1.680
+       0.925 0.870 0.049 - 0.075 0.006 0.000
+     2. Cubeful 3-ply    8/7 6/2*                     Eq.: +1.677 (-0.002)
+       0.924 0.870 0.050 - 0.076 0.006 0.000
+     3. Cubeful 3-ply    9/8 6/2*                     Eq.: +1.643 (-0.036)
+       0.918 0.847 0.044 - 0.082 0.005 0.000
+*    4. Cubeful 3-ply    10/9 6/2*                    Eq.: +1.638 (-0.042)
+       0.915 0.847 0.049 - 0.085 0.005 0.000
+     5. Cubeful 3-ply    6/2*/1                       Eq.: +1.623 (-0.056)
+       0.908 0.847 0.039 - 0.092 0.003 0.000
 
 
 Move number 27:  beaver_take_all to play 32
@@ -912,19 +907,18 @@ v|                  |BAR|                  |     3 points match
 Pip counts: O 175, X 97
 
 * lasse moves bar/21
-Alert: doubtful move ( -0.039)
 
 Rolled 31:
-     1. Cubeful 0-ply    bar/22 8/7                   Eq.: +1.370
-       0.850 0.703 0.037 - 0.150 0.014 0.000
-*    2. Cubeful 0-ply    bar/21                       Eq.: +1.331 (-0.039)
-       0.836 0.692 0.037 - 0.164 0.013 0.000
-     3. Cubeful 0-ply    bar/22 3/2*                  Eq.: +1.328 (-0.042)
-       0.828 0.705 0.044 - 0.172 0.032 0.001
-     4. Cubeful 0-ply    bar/22 9/8                   Eq.: +1.325 (-0.044)
-       0.841 0.676 0.034 - 0.159 0.013 0.000
-     5. Cubeful 0-ply    bar/24 9/6                   Eq.: +1.321 (-0.049)
-       0.833 0.687 0.039 - 0.167 0.015 0.000
+*    1. Cubeful 3-ply    bar/21                       Eq.: +1.398
+       0.857 0.719 0.038 - 0.143 0.012 0.000
+     2. Cubeful 3-ply    bar/22 8/7                   Eq.: +1.393 (-0.006)
+       0.851 0.725 0.037 - 0.149 0.014 0.000
+     3. Cubeful 3-ply    bar/24 9/6                   Eq.: +1.379 (-0.019)
+       0.848 0.717 0.038 - 0.152 0.014 0.000
+     4. Cubeful 3-ply    bar/22 9/8                   Eq.: +1.378 (-0.021)
+       0.851 0.710 0.036 - 0.149 0.012 0.000
+     5. Cubeful 2-ply    bar/24 8/5                   Eq.: +1.343 (-0.055)
+       0.837 0.702 0.032 - 0.163 0.019 0.001
 
 
 Move number 29:  beaver_take_all to play 54
@@ -974,16 +968,16 @@ Pip counts: O 175, X 93
 * lasse moves 21/16 9/6
 
 Rolled 53:
-*    1. Cubeful 0-ply    21/16 9/6                    Eq.: +1.443
-       0.868 0.742 0.041 - 0.132 0.006 0.000
-     2. Cubeful 0-ply    21/16 8/5                    Eq.: +1.434 (-0.009)
-       0.868 0.733 0.037 - 0.132 0.007 0.000
-     3. Cubeful 0-ply    21/18 9/4                    Eq.: +1.423 (-0.020)
-       0.864 0.730 0.041 - 0.136 0.008 0.000
-     4. Cubeful 0-ply    9/4 8/5                      Eq.: +1.423 (-0.020)
-       0.862 0.735 0.039 - 0.138 0.011 0.000
-     5. Cubeful 0-ply    21/18 8/3                    Eq.: +1.416 (-0.027)
-       0.862 0.727 0.037 - 0.138 0.009 0.000
+     1. Cubeful 3-ply    21/16 8/5                    Eq.: +1.505
+       0.886 0.770 0.040 - 0.114 0.007 0.000
+*    2. Cubeful 3-ply    21/16 9/6                    Eq.: +1.503 (-0.002)
+       0.885 0.769 0.039 - 0.115 0.006 0.000
+     3. Cubeful 3-ply    21/13                        Eq.: +1.488 (-0.017)
+       0.883 0.758 0.037 - 0.117 0.005 0.000
+     4. Cubeful 3-ply    21/18 9/4                    Eq.: +1.485 (-0.020)
+       0.880 0.762 0.037 - 0.120 0.007 0.000
+     5. Cubeful 2-ply    9/6 9/4                      Eq.: +1.461 (-0.043)
+       0.871 0.755 0.041 - 0.129 0.010 0.000
 
 
 Move number 31:  beaver_take_all to play 53
@@ -1033,12 +1027,12 @@ Pip counts: O 175, X 85
 * lasse moves 16/4 8/2*(2)
 
 Rolled 66:
-*    1. Cubeful 0-ply    16/4 8/2*(2)                 Eq.: +1.819
-       0.966 0.931 0.051 - 0.034 0.000 0.000
-     2. Cubeful 0-ply    16/10 9/3 8/2*(2)            Eq.: +1.815 (-0.004)
-       0.964 0.930 0.051 - 0.036 0.000 0.000
-     3. Cubeful 0-ply    16/4 9/3 8/2*                Eq.: +1.635 (-0.184)
-       0.910 0.855 0.053 - 0.090 0.003 0.000
+*    1. Cubeful 3-ply    16/4 8/2*(2)                 Eq.: +1.835
+       0.969 0.942 0.051 - 0.031 0.000 0.000
+     2. Cubeful 3-ply    16/10 9/3 8/2*(2)            Eq.: +1.829 (-0.006)
+       0.966 0.941 0.051 - 0.034 0.000 0.000
+     3. Cubeful 2-ply    16/4 9/3 8/2*                Eq.: +1.689 (-0.147)
+       0.929 0.872 0.046 - 0.071 0.006 0.000
 
 
 Move number 33:  beaver_take_all to play 41
@@ -1088,16 +1082,16 @@ Pip counts: O 177, X 61
 * lasse moves 9/4 6/5
 
 Rolled 51:
-*    1. Cubeful 0-ply    9/4 6/5                      Eq.: +1.839
-       0.973 0.938 0.057 - 0.027 0.000 0.000
-     2. Cubeful 0-ply    9/3                          Eq.: +1.827 (-0.012)
-       0.969 0.934 0.049 - 0.031 0.000 0.000
-     3. Cubeful 0-ply    6/1 4/3                      Eq.: +1.820 (-0.019)
-       0.965 0.933 0.043 - 0.035 0.000 0.000
-     4. Cubeful 0-ply    9/8 6/1                      Eq.: +1.819 (-0.020)
-       0.965 0.933 0.049 - 0.035 0.000 0.000
-     5. Cubeful 0-ply    6/5 6/1                      Eq.: +1.656 (-0.183)
-       0.916 0.866 0.034 - 0.084 0.004 0.000
+*    1. Cubeful 3-ply    9/4 6/5                      Eq.: +1.822
+       0.963 0.941 0.041 - 0.037 0.000 0.000
+     2. Cubeful 3-ply    9/3                          Eq.: +1.812 (-0.010)
+       0.962 0.932 0.057 - 0.038 0.000 0.000
+     3. Cubeful 3-ply    9/8 6/1                      Eq.: +1.807 (-0.014)
+       0.960 0.931 0.044 - 0.040 0.000 0.000
+     4. Cubeful 3-ply    6/1 4/3                      Eq.: +1.795 (-0.027)
+       0.956 0.927 0.044 - 0.044 0.000 0.000
+     5. Cubeful 2-ply    6/5 6/1                      Eq.: +1.685 (-0.137)
+       0.931 0.864 0.032 - 0.069 0.005 0.000
 
 
 Move number 35:  beaver_take_all to play 66
@@ -1147,16 +1141,16 @@ Pip counts: O 177, X 55
 * lasse moves 5/2 4/off
 
 Rolled 43:
-     1. Cubeful 0-ply    6/3 6/2                      Eq.: +1.849
-       0.976 0.942 0.044 - 0.024 0.000 0.000
-*    2. Cubeful 0-ply    5/2 4/off                    Eq.: +1.832 (-0.016)
-       0.970 0.937 0.063 - 0.030 0.000 0.000
-     3. Cubeful 0-ply    5/1 4/1                      Eq.: +1.820 (-0.029)
-       0.966 0.933 0.043 - 0.034 0.000 0.000
-     4. Cubeful 0-ply    4/1 4/off                    Eq.: +1.819 (-0.030)
-       0.965 0.933 0.062 - 0.035 0.000 0.000
-     5. Cubeful 0-ply    6/3 5/1                      Eq.: +1.651 (-0.198)
-       0.907 0.877 0.037 - 0.093 0.003 0.000
+     1. Cubeful 3-ply    6/3 6/2                      Eq.: +1.850
+       0.971 0.954 0.038 - 0.029 0.000 0.000
+*    2. Cubeful 3-ply    5/2 4/off                    Eq.: +1.830 (-0.019)
+       0.964 0.947 0.049 - 0.036 0.000 0.000
+     3. Cubeful 3-ply    5/1 4/1                      Eq.: +1.810 (-0.040)
+       0.957 0.941 0.030 - 0.043 0.000 0.000
+     4. Cubeful 3-ply    4/1 4/off                    Eq.: +1.794 (-0.055)
+       0.953 0.933 0.052 - 0.047 0.000 0.000
+     5. Cubeful 2-ply    6/3 4/off                    Eq.: +1.694 (-0.156)
+       0.933 0.869 0.044 - 0.067 0.000 0.000
 
 
 Move number 37:  beaver_take_all to play 64
@@ -1206,15 +1200,15 @@ Pip counts: O 177, X 48
 * lasse moves 6/2 6/1
 
 Rolled 54:
-*    1. Cubeful 0-ply    6/2 6/1                      Eq.: +1.845
-       0.970 0.950 0.044 - 0.030 0.000 0.000
-     2. Cubeful 0-ply    5/1 5/off                    Eq.: +1.817 (-0.028)
-       0.964 0.934 0.055 - 0.036 0.000 0.000
-     3. Cubeful 0-ply    6/1 4/off                    Eq.: +1.583 (-0.262)
-       0.876 0.871 0.047 - 0.124 0.000 0.000
-     4. Cubeful 0-ply    5/off 4/off                  Eq.: +1.528 (-0.317)
-       0.861 0.847 0.070 - 0.139 0.000 0.000
-     5. Cubeful 0-ply    6/2 5/off                    Eq.: +1.357 (-0.488)
+*    1. Cubeful 3-ply    6/2 6/1                      Eq.: +1.780
+       0.948 0.928 0.038 - 0.052 0.000 0.000
+     2. Cubeful 3-ply    5/1 5/off                    Eq.: +1.762 (-0.018)
+       0.942 0.922 0.050 - 0.058 0.000 0.000
+     3. Cubeful 2-ply    6/1 4/off                    Eq.: +1.543 (-0.237)
+       0.878 0.826 0.048 - 0.122 0.000 0.000
+     4. Cubeful 2-ply    5/off 4/off                  Eq.: +1.509 (-0.270)
+       0.870 0.808 0.059 - 0.130 0.000 0.000
+     5. Cubeful 0-ply    6/2 5/off                    Eq.: +1.357 (-0.423)
        0.803 0.789 0.049 - 0.197 0.000 0.000
 
 
@@ -1265,16 +1259,16 @@ Pip counts: O 177, X 39
 * lasse moves 5/4 5/2
 
 Rolled 31:
-     1. Cubeful 0-ply    4/off                        Eq.: +1.847
-       0.970 0.953 0.050 - 0.030 0.000 0.000
-*    2. Cubeful 0-ply    5/4 5/2                      Eq.: +1.834 (-0.013)
-       0.965 0.949 0.037 - 0.035 0.000 0.000
-     3. Cubeful 0-ply    4/1 2/1                      Eq.: +1.830 (-0.017)
-       0.965 0.946 0.029 - 0.035 0.000 0.000
-     4. Cubeful 0-ply    3/2 3/off                    Eq.: +1.705 (-0.143)
-       0.933 0.881 0.035 - 0.067 0.000 0.000
-     5. Cubeful 0-ply    5/2 1/off                    Eq.: +1.582 (-0.266)
-       0.876 0.870 0.054 - 0.124 0.000 0.000
+*    1. Cubeful 3-ply    5/4 5/2                      Eq.: +1.895
+       0.988 0.965 0.026 - 0.012 0.000 0.000
+     2. Cubeful 3-ply    4/off                        Eq.: +1.853 (-0.042)
+       0.975 0.949 0.045 - 0.025 0.000 0.000
+     3. Cubeful 3-ply    4/1 2/1                      Eq.: +1.840 (-0.055)
+       0.970 0.944 0.025 - 0.030 0.000 0.000
+     4. Cubeful 2-ply    3/2 3/off                    Eq.: +1.675 (-0.220)
+       0.920 0.877 0.029 - 0.080 0.000 0.000
+     5. Cubeful 2-ply    5/2 1/off                    Eq.: +1.576 (-0.319)
+       0.887 0.842 0.035 - 0.113 0.000 0.000
 
 
 Move number 41:  beaver_take_all to play 41
@@ -1485,10 +1479,10 @@ Pip counts: O 168, X 16
 * lasse moves 2/1 2/off
 
 Rolled 21:
-     1. Cubeful 0-ply    2/off 1/off                  Eq.: +1.941
-       0.999 0.991 0.021 - 0.001 0.000 0.000
-*    2. Cubeful 0-ply    2/1 2/off                    Eq.: +1.940 (-0.001)
-       0.998 0.990 0.008 - 0.002 0.000 0.000
+*    1. Cubeful 3-ply    2/1 2/off                    Eq.: +1.952
+       1.000 1.000 0.007 - 0.000 0.000 0.000
+     2. Cubeful 3-ply    2/off 1/off                  Eq.: +1.947 (-0.005)
+       0.999 0.996 0.033 - 0.001 0.000 0.000
 
 
 lasse wins 4 points
@@ -1497,23 +1491,23 @@ Game statistics for game 2
 
 Player                                   beaver_take_all         lasse                  
 
-Checkerplay statistics
+Chequerplay statistics
 
 Total moves                               23                      23                    
 Unforced moves                             3                      22                    
-Unmarked moves                            23                      17                    
+Unmarked moves                            23                      19                    
 Moves marked doubtful                      0                       3                    
-Moves marked bad                           0                       3                    
+Moves marked bad                           0                       1                    
 Moves marked very bad                      0                       0                    
-Error total EMG (MWC)                         -0.000 ( +0.000%)       -0.409 (-13.843%) 
-Error rate mEMG (MWC)                         -0.0   ( +0.000%)      -18.6   ( -0.629%) 
-Chequerplay rating                       Supernatural            Casual player          
+Error total EMG (MWC)                         -0.000 ( +0.000%)       -0.256 ( -8.669%) 
+Error rate mEMG (MWC)                         -0.0   ( +0.000%)      -11.6   ( -0.394%) 
+Chequerplay rating                       Supernatural            Advanced               
 
 
 Cube statistics
 
 Total cube decisions                       4                       4                    
-Close or actual cube decisions             1                       4                    
+Close or actual cube decisions             1                       2                    
 Doubles                                    0                       1                    
 Takes                                      1                       0                    
 Passes                                     0                       0                    
@@ -1530,12 +1524,12 @@ Cube decision rating                     Supernatural            Supernatural
 
 Overall statistics
 
-Error total EMG (MWC)                         -0.000 ( +0.000%)       -0.409 (-13.843%) 
-Error rate mEMG (MWC)                         -0.0   ( +0.000%)      -15.7   ( -0.532%) 
-Snowie error rate                             -0.0   ( +0.000%)       -8.9   ( +0.000%) 
-Overall rating                           Supernatural            Intermediate           
-Error based abs. FIBS rating             2050.0                  1728.5                 
-Chequerplay errors rating loss              0.0                   321.5                 
+Error total EMG (MWC)                         -0.000 ( +0.000%)       -0.256 ( -8.669%) 
+Error rate mEMG (MWC)                         -0.0   ( +0.000%)      -10.7   ( -0.361%) 
+Snowie error rate                             -0.0   ( +0.000%)       -5.6   ( +0.000%) 
+Overall rating                           Supernatural            Advanced               
+Error based abs. FIBS rating             2050.0                  1848.6                 
+Chequerplay errors rating loss              0.0                   201.4                 
 Cube errors rating loss                     0.0                     0.0                 
 
 
@@ -1545,50 +1539,50 @@ Match statistics
 
 Player                                   beaver_take_all         lasse                  
 
-Checkerplay statistics
+Chequerplay statistics
 
 Total moves                               33                      33                    
 Unforced moves                            13                      29                    
-Unmarked moves                            29                      25                    
-Moves marked doubtful                      3                       5                    
-Moves marked bad                           1                       3                    
+Unmarked moves                            30                      29                    
+Moves marked doubtful                      2                       3                    
+Moves marked bad                           1                       1                    
 Moves marked very bad                      0                       0                    
-Error total EMG (MWC)                         -0.204 ( -2.028%)       -0.479 (-14.538%) 
-Error rate mEMG (MWC)                        -15.7   ( -0.156%)      -16.5   ( -0.501%) 
-Chequerplay rating                       Intermediate            Intermediate           
+Error total EMG (MWC)                         -0.208 ( -2.066%)       -0.308 ( -9.183%) 
+Error rate mEMG (MWC)                        -16.0   ( -0.159%)      -10.6   ( -0.317%) 
+Chequerplay rating                       Intermediate            Advanced               
 
 
 Cube statistics
 
 Total cube decisions                      14                      15                    
-Close or actual cube decisions             4                       8                    
+Close or actual cube decisions             4                       7                    
 Doubles                                    1                       1                    
 Takes                                      1                       0                    
 Passes                                     0                       1                    
-Missed doubles below CP (EMG (MWC))        0                       1 (-0.015 ( -0.146%))
-Missed doubles above CP (EMG (MWC))        1 (-0.082 ( -0.817%))   0                    
+Missed doubles below CP (EMG (MWC))        0                       1 (-0.006 ( -0.059%))
+Missed doubles above CP (EMG (MWC))        1 (-0.125 ( -1.240%))   0                    
 Wrong doubles below DP (EMG (MWC))         0                       0                    
-Wrong doubles above TG (EMG (MWC))         1 (-0.027 ( -0.270%))   0                    
+Wrong doubles above TG (EMG (MWC))         0                       0                    
 Wrong takes (EMG (MWC))                    0                       0                    
 Wrong passes (EMG (MWC))                   0                       0                    
-Error total EMG (MWC)                         -0.109 ( -1.087%)       -0.015 ( -0.146%) 
-Error rate mEMG (MWC)                        -27.3   ( -0.272%)       -1.8   ( -0.018%) 
+Error total EMG (MWC)                         -0.125 ( -1.240%)       -0.006 ( -0.059%) 
+Error rate mEMG (MWC)                        -31.2   ( -0.310%)       -0.8   ( -0.008%) 
 Cube decision rating                     Beginner                Supernatural           
 
 
 Overall statistics
 
-Error total EMG (MWC)                         -0.313 ( -3.114%)       -0.493 (-14.684%) 
-Error rate mEMG (MWC)                        -18.4   ( -0.183%)      -13.3   ( -0.397%) 
-Snowie error rate                             -4.7   ( +0.000%)       -7.5   ( +0.000%) 
-Overall rating                           Casual player           Intermediate           
-Error based abs. FIBS rating             1759.8                  1763.1                 
-Chequerplay errors rating loss            271.4                   285.6                 
-Cube errors rating loss                    18.8                     1.3                 
+Error total EMG (MWC)                         -0.332 ( -3.306%)       -0.314 ( -9.241%) 
+Error rate mEMG (MWC)                        -19.6   ( -0.194%)       -8.7   ( -0.257%) 
+Snowie error rate                             -5.0   ( +0.000%)       -4.8   ( +0.000%) 
+Overall rating                           Casual player           Advanced               
+Error based abs. FIBS rating             1752.0                  1865.8                 
+Chequerplay errors rating loss            276.5                   183.6                 
+Cube errors rating loss                    21.5                     0.6                 
 
 
 
 
-Output generated Sat Sep 16 15:21:41 2023
+Output generated Sat Sep 16 21:09:53 2023
  by GNU Backgammon 1.07.001-mingw 32-Bit 20221114 (Text Export version 1.128)
 

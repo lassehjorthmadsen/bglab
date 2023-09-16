@@ -1,7 +1,7 @@
 The score (after 5 games) is: holdvfold 5, lasse 6 (match to 7 points), post-Crawford play
 
 Match Information:
-Date: 9/6/2023
+Date: 06/09/2023
 Place: BackgammonGalaxy
 
 Move number 1:  holdvfold to play 32
@@ -26,16 +26,16 @@ Pip counts: O 167, X 167
 * holdvfold moves 13/11 13/10
 
 Rolled 32:
-     1. Cubeful 0-ply    24/21 13/11                  Eq.: +0.776
-       0.507 0.135 0.007 - 0.493 0.133 0.006
-     2. Cubeful 0-ply    24/22 13/10                  Eq.: +0.775 (-0.001)
-       0.506 0.137 0.007 - 0.494 0.134 0.006
-*    3. Cubeful 0-ply    13/11 13/10                  Eq.: +0.763 (-0.013)
-       0.496 0.149 0.010 - 0.504 0.144 0.009
-     4. Cubeful 0-ply    24/22 24/21                  Eq.: +0.733 (-0.043)
-       0.493 0.122 0.006 - 0.507 0.136 0.004
-     5. Cubeful 0-ply    13/8                         Eq.: +0.728 (-0.048)
-       0.488 0.139 0.009 - 0.512 0.149 0.007
+     1. Cubeful 3-ply    24/21 13/11                  Eq.: +0.935
+       0.503 0.135 0.006 - 0.497 0.131 0.005
+     2. Cubeful 3-ply    24/22 24/21                  Eq.: +0.931 (-0.004)
+       0.495 0.120 0.005 - 0.505 0.127 0.004
+     3. Cubeful 3-ply    13/8                         Eq.: +0.926 (-0.009)
+       0.490 0.134 0.005 - 0.510 0.139 0.006
+*    4. Cubeful 3-ply    13/11 13/10                  Eq.: +0.925 (-0.010)
+       0.499 0.151 0.007 - 0.501 0.142 0.008
+     5. Cubeful 2-ply    24/22 13/10                  Eq.: +0.922 (-0.013)
+       0.498 0.137 0.006 - 0.502 0.136 0.006
 
 
 Move number 2:  lasse to play 65
@@ -60,16 +60,16 @@ Pip counts: O 162, X 167
 * lasse moves 24/13
 
 Rolled 65:
-*    1. Cubeful 0-ply    24/13                        Eq.: -1.000
-       0.488 0.121 0.005 - 0.512 0.162 0.004
-     2. Cubeful 0-ply    24/18 13/8                   Eq.: -1.000 (-0.000)
-       0.467 0.123 0.007 - 0.533 0.178 0.006
-     3. Cubeful 0-ply    13/8 13/7                    Eq.: -1.000 (-0.000)
-       0.446 0.132 0.009 - 0.554 0.164 0.010
-     4. Cubeful 0-ply    13/2                         Eq.: -1.000 (-0.000)
-       0.425 0.123 0.008 - 0.575 0.185 0.013
-     5. Cubeful 0-ply    13/7 8/3                     Eq.: -1.000 (-0.000)
-       0.422 0.120 0.008 - 0.578 0.195 0.017
+*    1. Cubeful 3-ply    24/13                        Eq.: -1.000
+       0.491 0.113 0.005 - 0.509 0.160 0.005
+     2. Cubeful 3-ply    24/18 13/8                   Eq.: -1.000 (-0.000)
+       0.471 0.130 0.008 - 0.529 0.174 0.007
+     3. Cubeful 3-ply    13/8 13/7                    Eq.: -1.000 (-0.000)
+       0.455 0.133 0.007 - 0.545 0.164 0.010
+     4. Cubeful 3-ply    13/2                         Eq.: -1.000 (-0.000)
+       0.428 0.125 0.006 - 0.572 0.191 0.012
+     5. Cubeful 2-ply    13/7 8/3                     Eq.: -1.008 (-0.008)
+       0.422 0.117 0.006 - 0.578 0.195 0.016
 
 
 Move number 3:  holdvfold on roll, cube decision?
@@ -95,12 +95,12 @@ Pip counts: O 162, X 156
 
 
 Cube analysis
-0-ply cubeless equity +0.348 (Money: +0.064)
-  0.512 0.162 0.004 - 0.488 0.121 0.005
+3-ply cubeless equity +0.340 (Money: +0.066)
+  0.509 0.160 0.005 - 0.491 0.113 0.005
 Cubeful equities:
 1. Double, pass        +1.000
-2. Double, take        +1.048  (+0.048)
-3. No double           +0.802  (-0.198)
+2. Double, take        +1.037  (+0.037)
+3. No double           +0.931  (-0.069)
 Proper cube action: Double, pass
 Move number 4:  holdvfold doubles to 2
 
@@ -125,12 +125,12 @@ Pip counts: O 162, X 156
 
 
 Cube analysis
-0-ply cubeless equity -0.348 (Money: -0.064)
-  0.488 0.121 0.005 - 0.512 0.162 0.004
+3-ply cubeless equity -0.340 (Money: -0.066)
+  0.491 0.113 0.005 - 0.509 0.160 0.005
 Cubeful equities:
 1. Double, pass        -1.000
-2. Double, take        -1.048  (-0.048)
-3. No double           -0.802  (+0.198)
+2. Double, take        -1.037  (-0.037)
+3. No double           -0.931  (+0.069)
 Proper cube action: Double, pass
 holdvfold wins 1 point
 
@@ -138,7 +138,7 @@ Game statistics for game 6
 
 Player                                   holdvfold               lasse                  
 
-Checkerplay statistics
+Chequerplay statistics
 
 Total moves                                1                       1                    
 Unforced moves                             1                       1                    
@@ -146,9 +146,9 @@ Unmarked moves                             1                       1
 Moves marked doubtful                      0                       0                    
 Moves marked bad                           0                       0                    
 Moves marked very bad                      0                       0                    
-Error total EMG (MWC)                         -0.013 ( -0.332%)       -0.000 ( -0.000%) 
-Error rate mEMG (MWC)                        -13.3   ( -0.332%)       -0.0   ( -0.000%) 
-Chequerplay rating                       Intermediate            Supernatural           
+Error total EMG (MWC)                         -0.010 ( -0.253%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                        -10.1   ( -0.253%)       -0.0   ( -0.000%) 
+Chequerplay rating                       Advanced                Supernatural           
 
 
 Cube statistics
@@ -171,17 +171,17 @@ Cube decision rating                     Supernatural            Supernatural
 
 Overall statistics
 
-Error total EMG (MWC)                         -0.013 ( -0.332%)       -0.000 ( -0.000%) 
-Error rate mEMG (MWC)                         -6.6   ( -0.166%)       -0.0   ( -0.000%) 
-Snowie error rate                             -6.6   ( +0.000%)       -0.0   ( +0.000%) 
+Error total EMG (MWC)                         -0.010 ( -0.253%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                         -5.1   ( -0.127%)       -0.0   ( -0.000%) 
+Snowie error rate                             -5.1   ( +0.000%)       -0.0   ( +0.000%) 
 Overall rating                           Expert                  Supernatural           
-Error based abs. FIBS rating             1884.7                  2050.0                 
-Chequerplay errors rating loss            165.3                     0.0                 
+Error based abs. FIBS rating             1924.0                  2050.0                 
+Chequerplay errors rating loss            126.0                     0.0                 
 Cube errors rating loss                     0.0                     0.0                 
 
 
 
 
-Output generated Sat Sep 16 15:15:14 2023
+Output generated Sat Sep 16 19:57:11 2023
  by GNU Backgammon 1.07.001-mingw 32-Bit 20221114 (Text Export version 1.128)
 

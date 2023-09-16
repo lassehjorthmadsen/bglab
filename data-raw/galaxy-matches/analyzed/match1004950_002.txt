@@ -1,7 +1,7 @@
 The score (after 1 game) is: airway12 1, lasse 0 (match to 5 points)
 
 Match Information:
-Date: 8/2/2023
+Date: 16/09/2023
 Place: BackgammonGalaxy
 
 Move number 1:  lasse to play 32
@@ -26,16 +26,16 @@ Pip counts: O 167, X 167
 * lasse moves 13/11 13/10
 
 Rolled 32:
-     1. Cubeful 0-ply    24/21 13/11                  Eq.: -0.008
-       0.507 0.135 0.007 - 0.493 0.133 0.006
-     2. Cubeful 0-ply    24/22 13/10                  Eq.: -0.011 (-0.004)
-       0.506 0.137 0.007 - 0.494 0.134 0.006
-*    3. Cubeful 0-ply    13/11 13/10                  Eq.: -0.034 (-0.026)
-       0.496 0.149 0.010 - 0.504 0.144 0.009
-     4. Cubeful 0-ply    24/22 24/21                  Eq.: -0.077 (-0.069)
-       0.493 0.122 0.006 - 0.507 0.136 0.004
-     5. Cubeful 0-ply    13/8                         Eq.: -0.081 (-0.073)
-       0.488 0.139 0.009 - 0.512 0.149 0.007
+*    1. Cubeful 3-ply    13/11 13/10                  Eq.: -0.027
+       0.497 0.151 0.006 - 0.503 0.142 0.008
+     2. Cubeful 3-ply    24/21 13/11                  Eq.: -0.028 (-0.001)
+       0.502 0.135 0.007 - 0.498 0.134 0.005
+     3. Cubeful 3-ply    24/22 13/10                  Eq.: -0.037 (-0.010)
+       0.498 0.137 0.006 - 0.502 0.135 0.005
+     4. Cubeful 3-ply    24/22 24/21                  Eq.: -0.071 (-0.044)
+       0.494 0.121 0.005 - 0.506 0.133 0.004
+     5. Cubeful 2-ply    13/8                         Eq.: -0.077 (-0.050)
+       0.490 0.136 0.006 - 0.510 0.143 0.006
 
 
 Move number 2:  airway12 to play 62
@@ -60,25 +60,26 @@ Pip counts: O 167, X 162
 * airway12 moves 13/11 13/7
 
 Cube analysis
-0-ply cubeless equity +0.048 (Money: +0.001)
-  0.504 0.144 0.009 - 0.496 0.149 0.010
+3-ply cubeless equity +0.045 (Money: -0.003)
+  0.503 0.142 0.008 - 0.497 0.151 0.006
 Cubeful equities:
-1. No double           +0.034
-2. Double, pass        +1.000  (+0.966)
-3. Double, take        -0.412  (-0.446)
-Proper cube action: No double, take (31.6%)
+1. No double           +0.027
+2. Double, pass        +1.000  (+0.973)
+3. Double, take        -0.434  (-0.461)
+Proper cube action: No double, take (32.2%)
+Alert: doubtful move ( -0.042)
 
 Rolled 62:
-     1. Cubeful 0-ply    24/18 13/11                  Eq.: -0.177
-       0.462 0.123 0.008 - 0.538 0.187 0.010
-     2. Cubeful 0-ply    24/22 13/7                   Eq.: -0.178 (-0.002)
-       0.456 0.122 0.008 - 0.544 0.173 0.010
-     3. Cubeful 0-ply    24/16                        Eq.: -0.181 (-0.004)
-       0.460 0.115 0.006 - 0.540 0.180 0.007
-*    4. Cubeful 0-ply    13/11 13/7                   Eq.: -0.186 (-0.009)
-       0.452 0.133 0.009 - 0.548 0.174 0.013
-     5. Cubeful 0-ply    13/5                         Eq.: -0.195 (-0.018)
-       0.448 0.131 0.009 - 0.552 0.171 0.013
+     1. Cubeful 3-ply    24/18 13/11                  Eq.: -0.126
+       0.473 0.127 0.007 - 0.527 0.176 0.008
+     2. Cubeful 3-ply    24/16                        Eq.: -0.158 (-0.032)
+       0.465 0.118 0.006 - 0.535 0.176 0.008
+*    3. Cubeful 3-ply    13/11 13/7                   Eq.: -0.168 (-0.042)
+       0.458 0.133 0.007 - 0.542 0.173 0.012
+     4. Cubeful 3-ply    24/22 13/7                   Eq.: -0.169 (-0.043)
+       0.456 0.124 0.007 - 0.544 0.170 0.009
+     5. Cubeful 2-ply    24/22 24/18                  Eq.: -0.183 (-0.056)
+       0.460 0.122 0.007 - 0.540 0.182 0.007
 
 
 Move number 3:  lasse to play 33
@@ -103,26 +104,26 @@ Pip counts: O 159, X 162
 * lasse moves 24/18*(2)
 
 Cube analysis
-0-ply cubeless equity +0.097 (Money: +0.141)
-  0.548 0.174 0.013 - 0.452 0.133 0.009
+3-ply cubeless equity +0.087 (Money: +0.130)
+  0.542 0.173 0.012 - 0.458 0.133 0.007
 Cubeful equities:
-1. No double           +0.186
-2. Double, pass        +1.000  (+0.814)
-3. Double, take        -0.068  (-0.254)
-Proper cube action: No double, take (23.8%)
-Alert: bad move ( -0.071)
+1. No double           +0.168
+2. Double, pass        +1.000  (+0.832)
+3. Double, take        -0.104  (-0.272)
+Proper cube action: No double, take (24.6%)
+Alert: bad move ( -0.069)
 
 Rolled 33:
-     1. Cubeful 0-ply    24/18* 6/3(2)                Eq.: +0.507
-       0.609 0.228 0.024 - 0.391 0.105 0.005
-     2. Cubeful 0-ply    24/18* 8/5(2)                Eq.: +0.438 (-0.070)
-       0.592 0.228 0.025 - 0.408 0.120 0.009
-*    3. Cubeful 0-ply    24/18*(2)                    Eq.: +0.436 (-0.071)
-       0.610 0.175 0.012 - 0.390 0.086 0.003
-     4. Cubeful 0-ply    8/5(2) 6/3(2)                Eq.: +0.352 (-0.156)
-       0.572 0.221 0.021 - 0.428 0.124 0.007
-     5. Cubeful 0-ply    24/18*/15 13/10              Eq.: +0.335 (-0.172)
-       0.581 0.188 0.014 - 0.419 0.115 0.006
+     1. Cubeful 3-ply    24/18* 6/3(2)                Eq.: +0.530
+       0.608 0.222 0.023 - 0.392 0.102 0.006
+     2. Cubeful 3-ply    24/18* 8/5(2)                Eq.: +0.516 (-0.014)
+       0.597 0.236 0.025 - 0.403 0.108 0.006
+*    3. Cubeful 3-ply    24/18*(2)                    Eq.: +0.461 (-0.069)
+       0.610 0.179 0.012 - 0.390 0.095 0.003
+     4. Cubeful 2-ply    8/5(2) 6/3(2)                Eq.: +0.419 (-0.111)
+       0.589 0.216 0.018 - 0.411 0.121 0.006
+     5. Cubeful 2-ply    24/21(2) 6/3(2)              Eq.: +0.361 (-0.169)
+       0.585 0.177 0.009 - 0.415 0.087 0.002
 
 
 Move number 4:  airway12 to play 61
@@ -147,22 +148,22 @@ Pip counts: O 177, X 150
 * airway12 moves bar/24 11/5
 
 Cube analysis
-0-ply cubeless equity -0.291 (Money: -0.319)
-  0.390 0.086 0.003 - 0.610 0.175 0.012
+3-ply cubeless equity -0.283 (Money: -0.314)
+  0.390 0.095 0.003 - 0.610 0.179 0.012
 Cubeful equities:
-1. No double           -0.436
-2. Double, pass        +1.000  (+1.436)
-3. Double, take        -1.283  (-0.848)
-Proper cube action: No double, take (37.1%)
-Alert: doubtful move ( -0.055)
+1. No double           -0.461
+2. Double, pass        +1.000  (+1.461)
+3. Double, take        -1.434  (-0.972)
+Proper cube action: No double, take (40.0%)
+Alert: bad move ( -0.081)
 
 Rolled 61:
-     1. Cubeful 0-ply    bar/18                       Eq.: -0.574
-       0.367 0.083 0.003 - 0.633 0.209 0.016
-*    2. Cubeful 0-ply    bar/24 11/5                  Eq.: -0.629 (-0.055)
-       0.351 0.083 0.003 - 0.649 0.197 0.017
-     3. Cubeful 0-ply    bar/24 8/2                   Eq.: -0.830 (-0.256)
-       0.336 0.078 0.003 - 0.664 0.229 0.024
+     1. Cubeful 3-ply    bar/18                       Eq.: -0.581
+       0.368 0.081 0.002 - 0.632 0.198 0.013
+*    2. Cubeful 3-ply    bar/24 11/5                  Eq.: -0.662 (-0.081)
+       0.348 0.079 0.002 - 0.652 0.193 0.014
+     3. Cubeful 2-ply    bar/24 8/2                   Eq.: -0.930 (-0.349)
+       0.321 0.073 0.002 - 0.679 0.233 0.023
 
 
 Move number 5:  lasse to play 65
@@ -185,16 +186,15 @@ v|                  |BAR|                  |     5 points match (Cube: 1)
 Pip counts: O 170, X 150
 
 * lasse moves 11/5 10/5
-Alert: missed double (-0.029)!
 
 Cube analysis
-0-ply cubeless equity +0.399 (Money: +0.426)
-  0.649 0.197 0.017 - 0.351 0.083 0.003
+3-ply cubeless equity +0.405 (Money: +0.431)
+  0.652 0.193 0.014 - 0.348 0.079 0.002
 Cubeful equities:
-1. Double, take        +0.629
-2. Double, pass        +1.000  (+0.371)
-3. No double           +0.600  (-0.029)
-Proper cube action: Double, take
+1. No double           +0.662
+2. Double, pass        +1.000  (+0.338)
+3. Double, take        +0.638  (-0.024)
+Proper cube action: No double, take (6.7%)
 
 Rolled 65:
 *    1. Cubeful 0-ply    11/5 10/5                    Eq.: +0.632
@@ -231,25 +231,25 @@ Pip counts: O 170, X 139
 * airway12 moves 13/5 6/2(2)
 
 Cube analysis
-0-ply cubeless equity -0.431 (Money: -0.454)
-  0.348 0.070 0.001 - 0.652 0.205 0.016
+3-ply cubeless equity -0.431 (Money: -0.456)
+  0.340 0.078 0.002 - 0.660 0.200 0.015
 Cubeful equities:
-1. No double           -0.632
-2. Double, pass        +1.000  (+1.632)
-3. Double, take        -1.629  (-0.998)
-Proper cube action: No double, take (37.9%)
+1. No double           -0.734
+2. Double, pass        +1.000  (+1.734)
+3. Double, take        -1.863  (-1.129)
+Proper cube action: No double, take (39.4%)
 
 Rolled 44:
-*    1. Cubeful 0-ply    13/5 6/2(2)                  Eq.: -0.830
-       0.318 0.078 0.001 - 0.682 0.203 0.013
-     2. Cubeful 0-ply    13/5 8/4(2)                  Eq.: -0.854 (-0.024)
-       0.322 0.080 0.002 - 0.678 0.217 0.017
-     3. Cubeful 0-ply    13/5 13/9(2)                 Eq.: -0.946 (-0.116)
-       0.294 0.062 0.001 - 0.706 0.191 0.012
-     4. Cubeful 0-ply    8/4(2) 6/2(2)                Eq.: -0.956 (-0.126)
-       0.315 0.078 0.002 - 0.685 0.233 0.021
-     5. Cubeful 0-ply    13/5 8/4 6/2                 Eq.: -1.000 (-0.170)
-       0.304 0.074 0.002 - 0.696 0.228 0.022
+     1. Cubeful 3-ply    13/5 8/4(2)                  Eq.: -0.728
+       0.339 0.092 0.002 - 0.661 0.209 0.017
+*    2. Cubeful 3-ply    13/5 6/2(2)                  Eq.: -0.742 (-0.014)
+       0.334 0.084 0.002 - 0.666 0.203 0.015
+     3. Cubeful 3-ply    8/4(2) 6/2(2)                Eq.: -0.784 (-0.056)
+       0.336 0.090 0.002 - 0.664 0.221 0.020
+     4. Cubeful 2-ply    13/5 8/4 6/2                 Eq.: -0.886 (-0.158)
+       0.318 0.084 0.002 - 0.682 0.220 0.019
+     5. Cubeful 2-ply    13/5 13/9(2)                 Eq.: -0.965 (-0.236)
+       0.288 0.060 0.001 - 0.712 0.185 0.012
 
 
 Move number 7:  lasse on roll, cube decision?
@@ -275,12 +275,12 @@ Pip counts: O 154, X 139
 
 
 Cube analysis
-0-ply cubeless equity +0.475 (Money: +0.501)
-  0.682 0.203 0.013 - 0.318 0.078 0.001
+3-ply cubeless equity +0.437 (Money: +0.465)
+  0.666 0.203 0.015 - 0.334 0.084 0.002
 Cubeful equities:
-1. Double, take        +0.830
-2. Double, pass        +1.000  (+0.170)
-3. No double           +0.716  (-0.114)
+1. Double, take        +0.742
+2. Double, pass        +1.000  (+0.258)
+3. No double           +0.713  (-0.029)
 Proper cube action: Double, take
 Move number 8:  lasse doubles to 2
 
@@ -303,15 +303,15 @@ Pip counts: O 154, X 139
 
 * airway12 rejects
 
-Alert: wrong pass (-0.170)!
+Alert: wrong pass (-0.258)!
  [very bad]
 Cube analysis
-0-ply cubeless equity -0.475 (Money: -0.501)
-  0.318 0.078 0.001 - 0.682 0.203 0.013
+3-ply cubeless equity -0.437 (Money: -0.465)
+  0.334 0.084 0.002 - 0.666 0.203 0.015
 Cubeful equities:
-1. Double, take        -0.830
-2. Double, pass        -1.000  (-0.170)
-3. No double           -0.716  (+0.114)
+1. Double, take        -0.742
+2. Double, pass        -1.000  (-0.258)
+3. No double           -0.713  (+0.029)
 Proper cube action: Double, take
 lasse wins 1 point
 
@@ -319,17 +319,17 @@ Game statistics for game 2
 
 Player                                   airway12                lasse                  
 
-Checkerplay statistics
+Chequerplay statistics
 
 Total moves                                3                       3                    
 Unforced moves                             3                       3                    
-Unmarked moves                             2                       2                    
+Unmarked moves                             1                       2                    
 Moves marked doubtful                      1                       0                    
-Moves marked bad                           0                       1                    
+Moves marked bad                           1                       1                    
 Moves marked very bad                      0                       0                    
-Error total EMG (MWC)                         -0.064 ( -0.474%)       -0.097 ( -0.721%) 
-Error rate mEMG (MWC)                        -21.3   ( -0.158%)      -32.5   ( -0.240%) 
-Chequerplay rating                       Casual player           Beginner               
+Error total EMG (MWC)                         -0.137 ( -1.015%)       -0.069 ( -0.508%) 
+Error rate mEMG (MWC)                        -45.8   ( -0.338%)      -22.9   ( -0.169%) 
+Chequerplay rating                       Awful!                  Casual player          
 
 
 Cube statistics
@@ -339,30 +339,30 @@ Close or actual cube decisions             1                       2
 Doubles                                    0                       1                    
 Takes                                      0                       0                    
 Passes                                     1                       0                    
-Missed doubles below CP (EMG (MWC))        0                       1 (-0.029 ( -0.216%))
+Missed doubles below CP (EMG (MWC))        0                       0                    
 Missed doubles above CP (EMG (MWC))        0                       0                    
 Wrong doubles below DP (EMG (MWC))         0                       0                    
 Wrong doubles above TG (EMG (MWC))         0                       0                    
 Wrong takes (EMG (MWC))                    0                       0                    
-Wrong passes (EMG (MWC))                   1 (-0.170 ( -1.257%))   0                    
-Error total EMG (MWC)                         -0.170 ( -1.257%)       -0.029 ( -0.216%) 
-Error rate mEMG (MWC)                       -169.9   ( -1.257%)      -14.6   ( -0.108%) 
-Cube decision rating                     Awful!                  Intermediate           
+Wrong passes (EMG (MWC))                   1 (-0.258 ( -1.909%))   0                    
+Error total EMG (MWC)                         -0.258 ( -1.909%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                       -258.1   ( -1.909%)       -0.0   ( -0.000%) 
+Cube decision rating                     Awful!                  Supernatural           
 
 
 Overall statistics
 
-Error total EMG (MWC)                         -0.234 ( -1.730%)       -0.127 ( -0.937%) 
-Error rate mEMG (MWC)                        -58.5   ( -0.433%)      -25.3   ( -0.187%) 
-Snowie error rate                            -39.0   ( +0.000%)      -21.1   ( +0.000%) 
-Overall rating                           Awful!                  Casual player          
-Error based abs. FIBS rating             1624.4                  1587.3                 
-Chequerplay errors rating loss            296.7                   451.6                 
-Cube errors rating loss                   129.0                    11.1                 
+Error total EMG (MWC)                         -0.395 ( -2.925%)       -0.069 ( -0.508%) 
+Error rate mEMG (MWC)                        -98.8   ( -0.731%)      -13.7   ( -0.102%) 
+Snowie error rate                            -65.9   ( +0.000%)      -11.4   ( +0.000%) 
+Overall rating                           Awful!                  Intermediate           
+Error based abs. FIBS rating             1217.9                  1731.9                 
+Chequerplay errors rating loss            636.2                   318.1                 
+Cube errors rating loss                   195.9                     0.0                 
 
 
 
 
-Output generated Sat Sep 16 14:48:35 2023
+Output generated Sat Sep 16 16:56:52 2023
  by GNU Backgammon 1.07.001-mingw 32-Bit 20221114 (Text Export version 1.128)
 
