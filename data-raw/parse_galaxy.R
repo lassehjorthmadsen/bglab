@@ -1,8 +1,8 @@
 library(tidyverse)
 library(stringr)
 
-# Function to parse a single file
-parse_files <- function(files) {
+# Function to parse Galaxy match log files
+galaxy2df <- function(files) {
 
   files <- normalizePath(files)
   legal_rolls <- expand_grid(x = 1:6, y = 1:6)
@@ -17,18 +17,8 @@ parse_files <- function(files) {
     # Read the lines of the file into a vector
     lines <- read_lines(files[f])
 
-    # 1. Extract score, match length and player names from the first line
+    # Extract score, match length and player names from the first line
     # This assumes that each file contains a single game from a match
-
-    # BUG FOR 1-POINTERS (AND UNLIMITED?) "pointS"
-    # Include information about (post-) Crawford
-    # match_info <- str_match(lines[1], "(.*): (.*) ([0-9]+), (.*) ([0-9]+) \\(match to ([0-9]+) points\\)")
-    # player1 <- match_info[3]
-    # score1  <- match_info[4] %>% as.numeric()
-    # player2 <- match_info[5]
-    # score2  <- match_info[6] %>% as.numeric()
-    # length  <- match_info[7] %>% as.numeric()
-
     match_info <- str_split(lines[1], " |,") %>% unlist()
     player1 <- match_info[7]
     score1  <- match_info[8] %>% as.numeric()
@@ -36,11 +26,11 @@ parse_files <- function(files) {
     score2  <- match_info[11] %>% as.numeric()
     length  <- match_info[14] %>% as.numeric()
 
-    # 2. Extract date and place from line 4 and 5
+    # Extract date and place from line 4 and 5
     date <- str_extract(lines[4], "(?<=Date: ).*") %>% parse_date(format = "%m/%d/%Y")
     place <- str_extract(lines[5], "(?<=Place: ).*")
 
-    # 3. Split file into a list of positions, using "Move number" as separator
+    # Split file into a list of positions, using "Move number" as separator
     splits <- str_detect(lines, "Move number") %>% cumsum()
     positions <- split(lines, splits)
     positions <- positions[-1]  # Remove the first element with game metadata
@@ -61,21 +51,19 @@ parse_files <- function(files) {
     cube_err  <- numeric(length = no_pos)   # Size of cube error (0 if correct action, NA if no cube available)
     move_err  <- numeric(length = no_pos)   # Size of move error (0 if correct move, including forced and no moves)
 
-    # 4. For each position:
-
+    # Loop over all positions
     for (p in seq_along(positions)) {
+
       # Extract move number and roll (if available) from first line
       move_no[p] <- str_extract(positions[[p]][1], "\\d+") %>% as.integer()
       roll[p] <- str_sub(positions[[p]][1], -2, -1)
       if (!roll[p] %in% legal_rolls) roll[p] <- NA # If this is a take/pass decision, we have no roll
 
       # Extract Position ID and Match ID from lines containing "Position ID" and "Match ID"
-      # CAN WE RELY ON THIS INFORMATION ALWAYS BEING IN LINE 3 AND 4?
       pos_id[p] <- str_extract(positions[[p]][3], "(?<=: ).*")
       match_id[p] <- str_extract(positions[[p]][4], "(?<=: ).*")
 
       # Extract play and turn from line 20
-      # CAN WE RELY ON THIS INFORMATION ALWAYS BEING IN LINE 20?
       play[p] <- str_extract(positions[[p]][20], "moves|doubles|accepts|rejects|resigns|cannot")
       turn[p] <- str_extract(positions[[p]][20], "\\*\\s\\w+") %>% str_remove("\\* ")
 
@@ -84,7 +72,7 @@ parse_files <- function(files) {
       board[p] <- positions[[p]][board_lines] %>% paste(collapse = "\n")
 
       # Extract cube analysis
-      cube_lines <- str_detect(positions[[p]], "^(Cube analysis|[0-9]-ply cube)|Cubeful equities|1\\. No|2\\. Double|3\\. Double|Proper")
+      cube_lines <- str_detect(positions[[p]], "^(Cube analysis|[0-9]-ply cube)|Cubeful equities|^1\\.\\s|^2\\.\\s|^3\\.\\s|Proper")
       cube_eq[p] <- positions[[p]][cube_lines] %>% paste(collapse = "\n")
       if (cube_eq[p] == "") cube_eq[p] <- NA
 
@@ -119,9 +107,17 @@ parse_files <- function(files) {
         ((str_detect(proper_ca[p], "take") & play[p] == "rejects"))   | # Wrong pass
         ((str_detect(proper_ca[p], "No|Too") & play[p] == "doubles")) | # Wrong double
         ((str_detect(proper_ca[p], "Double|Redouble") &
-            str_detect(play[p], "moves|cannot")))                    # Wrong no double
+            str_detect(play[p], "moves|cannot")))                       # Wrong no double
 
-      cube_err[p] <- mistake[p]
+      potential_error <- positions[[p]][cube_lines][4:6] %>%
+        str_extract("\\(.+\\)$") %>%
+        str_remove_all("\\(|\\)") %>%
+        as.numeric()
+
+      potential_error <-
+        ifelse(all(is.na(potential_error)), NA, min(potential_error, na.rm = TRUE))
+
+      cube_err[p] <- mistake[p] * potential_error
     }
 
       # Put together in nice data frame
@@ -153,7 +149,6 @@ parse_files <- function(files) {
   }
 
   # A bit of cleaning
-
   big_df <- big_df %>%
     mutate(play = case_match(play, c("moves", "cannot") ~  "Rolls", .default = play),
            play = str_to_title(play))
@@ -161,12 +156,12 @@ parse_files <- function(files) {
   return(big_df)
 }
 
-file_path <- "c:\\Users\\lasse\\Dropbox\\Backgammon\\Matches\\Galaxy matches\\analyzed\\match807838_analyzed.txt"
-file_path <- "~\\R-Projects\\backgammon\\data-raw\\analyzed-matches"
+file_path <- "~\\R-Projects\\backgammon\\data-raw\\galaxy-matches\\analyzed"
+file_path <- "c:\\Users\\lasse\\R-Projects\\backgammon\\data-raw\\galaxy-matches\\analyzed"
 files <- list.files(file_path, pattern = "*.txt", full.names = TRUE)
 
 # Parse everything:
-df <- parse_files(files)
+df <- galaxy2df(files)
 
 # Checks
 
@@ -223,3 +218,6 @@ df %>% group_by(file) %>%
   summarise(rolls_diff = min(n) - max(n)) %>%
   ungroup() %>%
   count(rolls_diff)
+
+# Do cube errors look right?
+df %>% count(file, move_no, mistake, cube_err) %>% filter(cube_err != 0)
