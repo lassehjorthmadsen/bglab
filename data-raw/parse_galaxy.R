@@ -196,6 +196,9 @@ df %>% count(proper_ca)
 # Does the mistake flag agree with "proper_ca" and "play" YES
 df %>% count(mistake, play, proper_ca) %>% view()
 
+# Figure out the one cases of "doubles" and proper_ca = NA
+df %>% filter(is.na(mistake), play == "Doubles", is.na(proper_ca)) %>% view("temp")
+
 # Do we have valid dice rolls? YES
 df %>% count(roll, sort = T) %>% view()
 
@@ -212,7 +215,8 @@ df %>%
   mutate(okay = rows == moves) %>%
   count(okay)
 
-# Do each player have about the same no of turns? # YES (Investigate the one case of diff = -2)
+# Do each player have about the same no of turns? YES
+# (Investigate the one case of diff = -2)
 df %>% group_by(file) %>%
   count(turn) %>%
   summarise(rolls_diff = min(n) - max(n)) %>%
@@ -220,4 +224,21 @@ df %>% group_by(file) %>%
   count(rolls_diff)
 
 # Do cube errors look right?
-df %>% count(file, move_no, mistake, cube_err) %>% filter(cube_err != 0)
+# Investigate a few strange cases
+df %>% filter(mistake, cube_err == 0) %>% view()
+
+# Walk-through one random game
+game <- unique(df$file) %>% sample(1)
+temp <- df %>% filter(file == game)
+
+for (i in 1:nrow(temp)) {
+  cat("Move: ", temp$move_no[i])
+  cat("\n", temp$board[i], "\n")
+  cat("\n", temp$cube_eq[i], "\n")
+  cat("\n", temp$move_eq[i], "\n")
+  cat("\n", "Checker play error: ", temp$move_err[i])
+  cat("\n", "Cube action error: ", temp$cube_err[i], "\n")
+  readline(prompt="Press [enter] to continue")
+}
+
+# Random spot-checks:
