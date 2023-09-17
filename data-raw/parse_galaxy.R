@@ -17,17 +17,19 @@ galaxy2df <- function(files) {
     # Read the lines of the file into a vector
     lines <- read_lines(files[f])
 
-    # Extract score, match length and player names from the first line
+    # Extract game number, score, match length and player names from the first line
     # This assumes that each file contains a single game from a match
     match_info <- str_split(lines[1], " |,") %>% unlist()
+
+    game_no <- match_info[4] %>% as.numeric() %>% `+`(1)
     player1 <- match_info[7]
     score1  <- match_info[8] %>% as.numeric()
     player2 <- match_info[10]
     score2  <- match_info[11] %>% as.numeric()
     length  <- match_info[14] %>% as.numeric()
 
-    # Extract date and place from line 4 and 5
-    date <- str_extract(lines[4], "(?<=Date: ).*") %>% parse_date(format = "%m/%d/%Y")
+    # Extract date of analysis and place of playing from line 4 and 5
+    date <- str_extract(lines[4], "(?<=Date: ).*")
     place <- str_extract(lines[5], "(?<=Place: ).*")
 
     # Split file into a list of positions, using "Move number" as separator
@@ -123,8 +125,9 @@ galaxy2df <- function(files) {
       # Put together in nice data frame
       df <- tibble(
         file = file,
-        date = date,
-        place = place,
+        # date = date,
+        # place = place,
+        game_no = game_no,
         player1 = player1,
         player2 = player2,
         length = length,
@@ -156,13 +159,14 @@ galaxy2df <- function(files) {
   return(big_df)
 }
 
-file_path <- "~\\R-Projects\\backgammon\\data-raw\\galaxy-matches\\analyzed"
-file_path <- "c:\\Users\\lasse\\R-Projects\\backgammon\\data-raw\\galaxy-matches\\analyzed"
+file_path <- "data-raw\\galaxy-matches\\analyzed"
 files <- list.files(file_path, pattern = "*.txt", full.names = TRUE)
 
 # Parse everything:
-df <- galaxy2df(files)
+bgmoves <- galaxy2df(files)
 
+# Include in package
+usethis::use_data(bgmoves, overwrite = TRUE)
 # Checks
 
 # Do we have the right file(s)? YES (We miss one that's empty)
