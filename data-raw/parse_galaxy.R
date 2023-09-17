@@ -3,6 +3,7 @@ library(stringr)
 
 # Function to parse Galaxy match log files
 galaxy2df <- function(files) {
+  # This assumes that each file contains a single game from a match
 
   files <- normalizePath(files)
   legal_rolls <- expand_grid(x = 1:6, y = 1:6)
@@ -17,8 +18,10 @@ galaxy2df <- function(files) {
     # Read the lines of the file into a vector
     lines <- read_lines(files[f])
 
+    # Extract information on whether this is a Crawford-game
+    crawford <- str_detect(lines[1], "Crawford game")
+
     # Extract game number, score, match length and player names from the first line
-    # This assumes that each file contains a single game from a match
     match_info <- str_split(lines[1], " |,") %>% unlist()
 
     game_no <- match_info[4] %>% as.numeric() %>% `+`(1)
@@ -28,7 +31,7 @@ galaxy2df <- function(files) {
     score2  <- match_info[11] %>% as.numeric()
     length  <- match_info[14] %>% as.numeric()
 
-    # Extract date of analysis and place of playing from line 4 and 5
+    # Extract date and place of playing from line 4 and 5
     date <- str_extract(lines[4], "(?<=Date: ).*")
     place <- str_extract(lines[5], "(?<=Place: ).*")
 
@@ -74,7 +77,7 @@ galaxy2df <- function(files) {
       board[p] <- positions[[p]][board_lines] %>% paste(collapse = "\n")
 
       # Extract cube analysis
-      cube_lines <- str_detect(positions[[p]], "^(Cube analysis|[0-9]-ply cube)|Cubeful equities|^1\\.\\s|^2\\.\\s|^3\\.\\s|Proper")
+      cube_lines <- str_detect(positions[[p]], "^(Cube analysis|[0-9]-ply cube)|Cubeful equities|^\\s{2}\\d|^1\\.\\s|^2\\.\\s|^3\\.\\s|Proper")
       cube_eq[p] <- positions[[p]][cube_lines] %>% paste(collapse = "\n")
       if (cube_eq[p] == "") cube_eq[p] <- NA
 
@@ -87,19 +90,23 @@ galaxy2df <- function(files) {
       proper_ca[p] <- proper_text
 
       # Extract move analysis
-      move_lines <- str_detect(positions[[p]], "^\\s+\\d|^\\*\\s+\\d")
+      move_lines <- str_detect(positions[[p]], "^\\s{5}\\d\\.|^\\*\\s{4}\\d\\.")
       move_eq[p] <- positions[[p]][move_lines] %>% paste(collapse = "\n")
-      if (move_eq[p] == "") move_eq[p] <- NA
 
-      # Extract move error
+      # The line with the chosen move, beginning with *
       play_line <- str_detect(positions[[p]], "^\\*\\s{4}")
 
+      # Extract move error, if any. (The number in parenthesis at the end)
       error <- positions[[p]][play_line] %>%
         str_extract("\\(\\-.+\\)$") %>%
         str_remove_all("[\\(\\)]") %>%
         as.numeric()
 
-      if (length(error) == 0) error <- NA
+      if (move_eq[p] == "") {
+        error <- NA                   # No move equities found (this is a cube decision)
+      } else {
+        if (is.na(error)) error <- 0  # No move error found (correct play was made)
+      }
 
       move_err[p] <- error
 
@@ -125,14 +132,15 @@ galaxy2df <- function(files) {
       # Put together in nice data frame
       df <- tibble(
         file = file,
-        # date = date,
-        # place = place,
+        place = place,
+        date = date,
         game_no = game_no,
         player1 = player1,
         player2 = player2,
         length = length,
         score1 = score1,
         score2 = score2,
+        crawford = crawford,
         pos_id = pos_id,
         match_id = match_id,
         move_no = move_no,
@@ -153,6 +161,7 @@ galaxy2df <- function(files) {
 
   # A bit of cleaning
   big_df <- big_df %>%
+    select(-place) %>%  # Not very useful
     mutate(play = case_match(play, c("moves", "cannot") ~  "Rolls", .default = play),
            play = str_to_title(play))
 
@@ -164,56 +173,58 @@ files <- list.files(file_path, pattern = "*.txt", full.names = TRUE)
 
 # Parse everything:
 bgmoves <- galaxy2df(files)
-
-# Include in package
 usethis::use_data(bgmoves, overwrite = TRUE)
-# Checks
+devtools::load_all()
 
+# Checks
 # Do we have the right file(s)? YES (We miss one that's empty)
-df %>% count(file)
-setdiff(basename(files), unique(df$file))
+bgmoves %>% count(file)
+setdiff(basename(files), unique(bgmoves$file))
 
 # Are match length and score as expected? YES
 # (But note that unlimited games show up as matches to e.g. 8, 16)
-df %>% count(score1)
-df %>% count(score2)
-df %>% count(length)
-df %>% count(score1, score2, length)
+bgmoves %>% count(score1)
+bgmoves %>% count(score2)
+bgmoves %>% count(length)
+bgmoves %>% count(score1, score2, length) %>% view()
+
+# Are values for Crawford games consistent with score? YES
+bgmoves %>% count(crawford, (length - score1) == 1 | (length - score2) == 1)
 
 # Are both player's scores and the match length constant within each game? YES
-df %>%
+bgmoves %>%
   group_by(file) %>%
   summarise(across(c(length, score1, score2), ~ min(.x) - max(.x))) %>%
   select(-1) %>%
   colSums()
 
 # Names for both players are populated? YES
-df %>% count(player1)
-df %>% count(player2)
-df %>% count(is.na(player1), is.na(player2))
+bgmoves %>% count(player1)
+bgmoves %>% count(player2)
+bgmoves %>% count(is.na(player1), is.na(player2))
 
 # Inspect all possible plays and "proper cube actions" Looks good.
 # Do we have same number of doubles and takes + rejects? YES
-df %>% count(play)
-df %>% count(proper_ca)
+bgmoves %>% count(play)
+bgmoves %>% count(proper_ca)
 
 # Does the mistake flag agree with "proper_ca" and "play" YES
-df %>% count(mistake, play, proper_ca) %>% view()
+bgmoves %>% count(mistake, play, proper_ca) %>% view()
 
 # Figure out the one cases of "doubles" and proper_ca = NA
-df %>% filter(is.na(mistake), play == "Doubles", is.na(proper_ca)) %>% view("temp")
+bgmoves %>% filter(is.na(mistake), play == "Doubles", is.na(proper_ca)) %>% view("temp")
 
 # Do we have valid dice rolls? YES
-df %>% count(roll, sort = T) %>% view()
+bgmoves %>% count(roll, sort = T) %>% view()
 
 # Are rolls always NA in case of cube decisions? YES
-df %>% count(play, is.na(roll))
+bgmoves %>% count(play, is.na(roll))
 
 # Are rolls never doubles and never NA on the first move? YES
-df %>% filter(move_no == 1) %>% count(roll)
+bgmoves %>% filter(move_no == 1) %>% count(roll)
 
 # Are move numbers consecutive integers as long as each game? YES
-df %>%
+bgmoves %>%
   group_by(file) %>%
   summarise(rows = n(), moves = max(move_no)) %>%
   mutate(okay = rows == moves) %>%
@@ -221,7 +232,7 @@ df %>%
 
 # Do each player have about the same no of turns? YES
 # (Investigate the one case of diff = -2)
-df %>% group_by(file) %>%
+bgmoves %>% group_by(file) %>%
   count(turn) %>%
   summarise(rolls_diff = min(n) - max(n)) %>%
   ungroup() %>%
@@ -229,20 +240,37 @@ df %>% group_by(file) %>%
 
 # Do cube errors look right?
 # Investigate a few strange cases
-df %>% filter(mistake, cube_err == 0) %>% view()
+bgmoves %>% filter(mistake, cube_err == 0) %>% view()
 
 # Walk-through one random game
-game <- unique(df$file) %>% sample(1)
-temp <- df %>% filter(file == game)
+game <- unique(bgmoves$file) %>% sample(1)
+temp <- bgmoves %>% filter(file == game)
 
 for (i in 1:nrow(temp)) {
-  cat("Move: ", temp$move_no[i])
-  cat("\n", temp$board[i], "\n")
-  cat("\n", temp$cube_eq[i], "\n")
-  cat("\n", temp$move_eq[i], "\n")
-  cat("\n", "Checker play error: ", temp$move_err[i])
-  cat("\n", "Cube action error: ", temp$cube_err[i], "\n")
+  if (i == 1) cat("File: ", game, "\n")
+  cat("Move: ", temp$move_no[i], "\n")
+  cat(temp$board[i], "\n\n")
+  cat(temp$cube_eq[i], "\n\n")
+  cat(temp$move_eq[i], "\n\n")
+  cat("Checker play error: ", temp$move_err[i], "\n")
+  cat("Cube action error: ", temp$cube_err[i], "\n")
   readline(prompt="Press [enter] to continue")
 }
 
 # Random spot-checks:
+
+for (i in seq(10)) {
+  temp <- bgmoves %>% slice_sample(n = 1)
+
+  cat("File: ", temp$file, "\n",
+      "Move: ", temp$move_no, "\n",
+      "Match to:", temp$length, "\n",
+      temp$board, "\n",
+      temp$cube_eq, "\n",
+      temp$move_eq, "\n",
+      "Checker play error: ", temp$move_err, "\n",
+      "Cube action error: ", temp$cube_err, "\n",
+      sep = "")
+
+  readline(prompt="Press [enter] to continue")
+}
