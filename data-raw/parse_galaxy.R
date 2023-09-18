@@ -118,7 +118,7 @@ galaxy2df <- function(files) {
         ((str_detect(proper_ca[p], "Double|Redouble") &
             str_detect(play[p], "moves|cannot")))                       # Wrong no double
 
-      potential_error <- positions[[p]][cube_lines][4:6] %>%
+      potential_error <- positions[[p]][cube_lines][5:7] %>%
         str_extract("\\(.+\\)$") %>%
         str_remove_all("\\(|\\)") %>%
         as.numeric()
@@ -174,19 +174,15 @@ files <- list.files(file_path, pattern = "*.txt", full.names = TRUE)
 # Parse everything:
 bgmoves <- galaxy2df(files)
 usethis::use_data(bgmoves, overwrite = TRUE)
-devtools::load_all()
 
 # Checks
-# Do we have the right file(s)? YES (We miss one that's empty)
-bgmoves %>% count(file)
+# Do we have the right file(s)? YES
 setdiff(basename(files), unique(bgmoves$file))
 
 # Are match length and score as expected? YES
 # (But note that unlimited games show up as matches to e.g. 8, 16)
-bgmoves %>% count(score1)
-bgmoves %>% count(score2)
 bgmoves %>% count(length)
-bgmoves %>% count(score1, score2, length) %>% view()
+bgmoves %>% mutate(okay = score1 < length & score2 < length) %>% count(okay)
 
 # Are values for Crawford games consistent with score? YES
 bgmoves %>% count(crawford, (length - score1) == 1 | (length - score2) == 1)
@@ -199,20 +195,23 @@ bgmoves %>%
   colSums()
 
 # Names for both players are populated? YES
-bgmoves %>% count(player1)
-bgmoves %>% count(player2)
+bgmoves %>% count(player2, player1)
 bgmoves %>% count(is.na(player1), is.na(player2))
 
-# Inspect all possible plays and "proper cube actions" Looks good.
-# Do we have same number of doubles and takes + rejects? YES
+# Inspect all possible plays. Looks good.
 bgmoves %>% count(play)
+
+# Is a double always followed by a take or a pass? YES
+bgmoves %>% mutate(next_play = lead(play, 1)) %>%
+  filter(play == "Doubles") %>%
+  select(play, next_play) %>%
+  count(play, next_play)
+
+# Inspect all possible "proper cube actions". Looks good.
 bgmoves %>% count(proper_ca)
 
-# Does the mistake flag agree with "proper_ca" and "play" YES
+# Does the cube mistake flag agree with "proper_ca" and "play" YES
 bgmoves %>% count(mistake, play, proper_ca) %>% view()
-
-# Figure out the one cases of "doubles" and proper_ca = NA
-bgmoves %>% filter(is.na(mistake), play == "Doubles", is.na(proper_ca)) %>% view("temp")
 
 # Do we have valid dice rolls? YES
 bgmoves %>% count(roll, sort = T) %>% view()
@@ -230,17 +229,19 @@ bgmoves %>%
   mutate(okay = rows == moves) %>%
   count(okay)
 
-# Do each player have about the same no of turns? YES
-# (Investigate the one case of diff = -2)
+# Do each player have at most one less turn than the other? YES
 bgmoves %>% group_by(file) %>%
   count(turn) %>%
   summarise(rolls_diff = min(n) - max(n)) %>%
   ungroup() %>%
   count(rolls_diff)
 
-# Do cube errors look right?
-# Investigate a few strange cases
-bgmoves %>% filter(mistake, cube_err == 0) %>% view()
+# Are cube errors always negative? Yes.
+summary(bgmoves$cube_err)
+
+# Does the mistake flag aggree with the cube errors? YES
+# Few cases where mistake == TRUE and cube_err == 0, likely because of rounding
+bgmoves %>% count(mistake, cube_err <= 0)
 
 # Walk-through one random game
 game <- unique(bgmoves$file) %>% sample(1)
@@ -258,9 +259,8 @@ for (i in 1:nrow(temp)) {
 }
 
 # Random spot-checks:
-
 for (i in seq(10)) {
-  temp <- bgmoves %>% slice_sample(n = 1)
+  temp <- bgmoves %>% filter(cube_err < 0) %>% slice_sample(n = 1)
 
   cat("File: ", temp$file, "\n",
       "Move: ", temp$move_no, "\n",
