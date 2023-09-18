@@ -1,5 +1,5 @@
 library(tidyverse)
-library(stringr)
+devtools::load_all()
 
 # Function to parse Galaxy match log files
 galaxy2df <- function(files) {
