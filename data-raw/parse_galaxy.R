@@ -41,20 +41,20 @@ galaxy2df <- function(files) {
     positions <- positions[-1]  # Remove the first element with game metadata
 
     # Initialize vars
-    no_pos    <- length(positions)
-    pos_id    <- character(length = no_pos)
-    match_id  <- character(length = no_pos)
-    move_no   <- integer(length = no_pos)
-    play      <- character(length = no_pos) # Play made: Roll/Double/Take, etc.
-    turn      <- character(length = no_pos)
-    cube_eq   <- character(length = no_pos)
-    move_eq   <- character(length = no_pos)
-    board     <- character(length = no_pos)
-    roll      <- character(length = no_pos)
-    proper_ca <- character(length = no_pos) # Proper cube action: "No double, take" etc.
-    mistake   <- logical(length = no_pos)   # TRUE if a cube mistake was made (remove later)
-    cube_err  <- numeric(length = no_pos)   # Size of cube error (0 if correct action, NA if no cube available)
-    move_err  <- numeric(length = no_pos)   # Size of move error (0 if correct move, including forced and no moves)
+    no_pos     <- length(positions)
+    pos_id     <- character(length = no_pos)
+    match_id   <- character(length = no_pos)
+    move_no    <- integer(length = no_pos)
+    play       <- character(length = no_pos) # Play made: Roll/Double/Take, etc.
+    turn       <- character(length = no_pos)
+    cube_eq    <- character(length = no_pos)
+    move_eq    <- character(length = no_pos)
+    board      <- character(length = no_pos)
+    roll       <- character(length = no_pos)
+    proper_ca  <- character(length = no_pos) # Proper cube action: "No double, take" etc.
+    mistake_ca <- logical(length = no_pos)   # TRUE if a cube mistake was made (remove later)
+    cube_err   <- numeric(length = no_pos)   # Size of cube error (0 if correct action, NA if no cube available)
+    move_err   <- numeric(length = no_pos)   # Size of move error (0 if correct move, including forced and no moves)
 
     # Loop over all positions
     for (p in seq_along(positions)) {
@@ -77,7 +77,7 @@ galaxy2df <- function(files) {
       board[p] <- positions[[p]][board_lines] %>% paste(collapse = "\n")
 
       # Extract cube analysis
-      cube_lines <- str_detect(positions[[p]], "^(Cube analysis|[0-9]-ply cube)|Cubeful equities|^\\s{2}\\d|^1\\.\\s|^2\\.\\s|^3\\.\\s|Proper")
+      cube_lines <- str_detect(positions[[p]], "^(Cube analysis|[0-9]-ply cube)|Cubeful equities|^\\s{2}[\\d\\-]|^1\\.\\s|^2\\.\\s|^3\\.\\s|Proper")
       cube_eq[p] <- positions[[p]][cube_lines] %>% paste(collapse = "\n")
       if (cube_eq[p] == "") cube_eq[p] <- NA
 
@@ -88,6 +88,24 @@ galaxy2df <- function(files) {
       proper_text <- str_remove(proper_text, "Proper cube action: ")
       proper_text <- str_remove(proper_text, " \\(.+\\)")
       proper_ca[p] <- proper_text
+
+      # Extract cube error
+      mistake_ca[p] <-
+        ((str_detect(proper_ca[p], "pass") & play[p] == "accepts"))   | # Wrong take
+        ((str_detect(proper_ca[p], "take") & play[p] == "rejects"))   | # Wrong pass
+        ((str_detect(proper_ca[p], "No|Too") & play[p] == "doubles")) | # Wrong double
+        ((str_detect(proper_ca[p], "Double|Redouble") &
+            str_detect(play[p], "moves|cannot")))                       # Wrong no double
+
+      potential_error <- positions[[p]][cube_lines][5:7] %>%
+        str_extract("\\(.+\\)$") %>%
+        str_remove_all("\\(|\\)") %>%
+        as.numeric()
+
+      potential_error <-
+        ifelse(all(is.na(potential_error)), NA, min(potential_error, na.rm = TRUE))
+
+      cube_err[p] <- mistake_ca[p] * potential_error
 
       # Extract move analysis
       move_lines <- str_detect(positions[[p]], "^\\s{5}\\d\\.|^\\*\\s{4}\\d\\.")
@@ -109,24 +127,6 @@ galaxy2df <- function(files) {
       }
 
       move_err[p] <- error
-
-      # Extract cube error
-      mistake[p] <-
-        ((str_detect(proper_ca[p], "pass") & play[p] == "accepts"))   | # Wrong take
-        ((str_detect(proper_ca[p], "take") & play[p] == "rejects"))   | # Wrong pass
-        ((str_detect(proper_ca[p], "No|Too") & play[p] == "doubles")) | # Wrong double
-        ((str_detect(proper_ca[p], "Double|Redouble") &
-            str_detect(play[p], "moves|cannot")))                       # Wrong no double
-
-      potential_error <- positions[[p]][cube_lines][5:7] %>%
-        str_extract("\\(.+\\)$") %>%
-        str_remove_all("\\(|\\)") %>%
-        as.numeric()
-
-      potential_error <-
-        ifelse(all(is.na(potential_error)), NA, min(potential_error, na.rm = TRUE))
-
-      cube_err[p] <- mistake[p] * potential_error
     }
 
       # Put together in nice data frame
@@ -134,9 +134,9 @@ galaxy2df <- function(files) {
         file = file,
         place = place,
         date = date,
-        game_no = game_no,
         player1 = player1,
         player2 = player2,
+        game_no = game_no,
         length = length,
         score1 = score1,
         score2 = score2,
@@ -148,7 +148,7 @@ galaxy2df <- function(files) {
         turn = turn,
         roll = roll,
         proper_ca = proper_ca,
-        mistake = mistake,
+        mistake_ca = mistake_ca,
         move_err = move_err,
         cube_err = cube_err,
         board = board,
@@ -211,10 +211,10 @@ bgmoves %>% mutate(next_play = lead(play, 1)) %>%
 bgmoves %>% count(proper_ca)
 
 # Does the cube mistake flag agree with "proper_ca" and "play" YES
-bgmoves %>% count(mistake, play, proper_ca) %>% view()
+bgmoves %>% count(mistake_ca, play, proper_ca) %>% view("moves")
 
 # Do we have valid dice rolls? YES
-bgmoves %>% count(roll, sort = T) %>% view()
+bgmoves %>% count(roll, sort = T) %>% view("rolls")
 
 # Are rolls always NA in case of cube decisions? YES
 bgmoves %>% count(play, is.na(roll))
@@ -239,9 +239,9 @@ bgmoves %>% group_by(file) %>%
 # Are cube errors always negative? Yes.
 summary(bgmoves$cube_err)
 
-# Does the mistake flag aggree with the cube errors? YES
+# Does the mistake flag agree with the cube errors? YES
 # Few cases where mistake == TRUE and cube_err == 0, likely because of rounding
-bgmoves %>% count(mistake, cube_err <= 0)
+bgmoves %>% count(mistake_ca, cube_err < 0)
 
 # Walk-through one random game
 game <- unique(bgmoves$file) %>% sample(1)

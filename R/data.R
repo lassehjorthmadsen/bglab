@@ -2,9 +2,9 @@
 #'
 #' A set of backgammon moves/decisions from matches played on
 #' Backgammon Galaxy, analyzed by GNU Backgammon. Positions are
-#' the total set of moves from a a total of 312 matches, mostly
-#' 3-pointers, played against various opponents. It is the
-#' analysis files in text format, parsed into a single data frame,
+#' the total set of moves from a a total of 309 matches, mostly
+#' 3-pointers, played my me against various opponents. It is the
+#' analyses files in text format, parsed into a single data frame,
 #' using `backgammon::galaxy2df()`
 #'
 #' @format ## `bgmoves`
@@ -12,8 +12,8 @@
 #' \describe{
 #'   \item{file}{name of the original file; may serve as a match id}
 #'   \item{date}{date of match}
-#'   \item{game_no}{game number in this match}
 #'   \item{player1, player2}{nicknames of players}
+#'   \item{game_no}{game number in this match}
 #'   \item{length}{match length (a few unlimited games have the limit as match length)}
 #'   \item{score1, score2}{match score, player 1 and player2}
 #'   \item{crawford}{TRUE if this is the Crawford game, FALSE otherwise}
@@ -24,7 +24,7 @@
 #'   \item{turn}{nickgame of player who made the play}
 #'   \item{roll}{dice roll, if applicable (NA if this is a cube decision)}
 #'   \item{proper_ca}{Proper, i.e. optimal, cube action, as reported by GNU Backgammon}
-#'   \item{mistake}{TRUE if a cube action mistake was made, FALSE if correct cube action, NA if checker play decision}
+#'   \item{mistake_ca}{TRUE if a cube action mistake was made, FALSE if correct cube action, NA if checker play decision}
 #'   \item{move_err}{The size of checker play error, 0 if no error, NA in case of no move, or cube decision}
 #'   \item{cube_err}{The sice of cube action error, 0 if no error, NA in case of no cube available, or checker play decision}
 #'   \item{board}{An ASCII text representation of the board, as displayed by GNU Backgammon}
