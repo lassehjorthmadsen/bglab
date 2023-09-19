@@ -398,3 +398,178 @@ get_met <- function(filename = "data-raw\\Kazaross XG2.met") {
 
   return(met)
 }
+
+
+#' Parse GNU Backgammon Galaxy analysis files into data frame format
+#'
+#' @param files character vector with names of *.txt files to parse
+#'
+#' @return tibble
+#' @export
+#'
+txt2df <- function(files) {
+  # Assumes that each files contains file paths to files with
+  # a single game from a backgammon match analyzed by GNU Backgammon
+
+  files <- normalizePath(files)
+  legal_rolls <- tidyr::expand_grid(x = 1:6, y = 1:6)
+  legal_rolls <- paste0(legal_rolls$x, legal_rolls$y)
+  big_df <- NULL
+
+  # Loop over all files:
+  for (f in seq_along(files)) {
+
+    file = basename(files[f])
+
+    # Read the lines of the file into a vector
+    lines <- readr::read_lines(files[f])
+
+    # Extract information on whether this is a Crawford-game
+    crawford <- stringr::str_detect(lines[1], "Crawford game")
+
+    # Extract game number, score, match length and player names from the first line
+    match_info <- stringr::str_split(lines[1], " |,") %>% unlist()
+
+    game_no <- match_info[4] %>% as.numeric() %>% `+`(1)
+    player1 <- match_info[7]
+    score1  <- match_info[8] %>% as.numeric()
+    player2 <- match_info[10]
+    score2  <- match_info[11] %>% as.numeric()
+    length  <- match_info[14] %>% as.numeric()
+
+    # Extract date and place of playing from line 4 and 5
+    date <- stringr::str_extract(lines[4], "(?<=Date: ).*")
+    place <- stringr::str_extract(lines[5], "(?<=Place: ).*")
+
+    # Split file into a list of positions, using "Move number" as separator
+    splits <- stringr::str_detect(lines, "Move number") %>% cumsum()
+    positions <- split(lines, splits)
+    positions <- positions[-1]  # Remove the first element with game metadata
+
+    # Initialize vars
+    no_pos     <- length(positions)
+    pos_id     <- character(length = no_pos)
+    match_id   <- character(length = no_pos)
+    move_no    <- integer(length = no_pos)
+    play       <- character(length = no_pos) # Play made: Roll/Double/Take, etc.
+    turn       <- character(length = no_pos)
+    cube_eq    <- character(length = no_pos)
+    move_eq    <- character(length = no_pos)
+    board      <- character(length = no_pos)
+    roll       <- character(length = no_pos)
+    proper_ca  <- character(length = no_pos) # Proper cube action: "No double, take" etc.
+    mistake_ca <- logical(length = no_pos)   # TRUE if a cube mistake was made (remove later)
+    cube_err   <- numeric(length = no_pos)   # Size of cube error (0 if correct action, NA if no cube available)
+    move_err   <- numeric(length = no_pos)   # Size of move error (0 if correct move, including forced and no moves)
+
+    # Loop over all positions
+    for (p in seq_along(positions)) {
+
+      # Extract move number and roll (if available) from first line
+      move_no[p] <- stringr::str_extract(positions[[p]][1], "\\d+") %>% as.integer()
+      roll[p] <- stringr::str_sub(positions[[p]][1], -2, -1)
+      if (!roll[p] %in% legal_rolls) roll[p] <- NA # If this is a take/pass decision, we have no roll
+
+      # Extract Position ID and Match ID from lines containing "Position ID" and "Match ID"
+      pos_id[p] <- stringr::str_extract(positions[[p]][3], "(?<=: ).*")
+      match_id[p] <- stringr::str_extract(positions[[p]][4], "(?<=: ).*")
+
+      # Extract play and turn from line 20
+      play[p] <- stringr::str_extract(positions[[p]][20], "moves|doubles|accepts|rejects|resigns|cannot")
+      turn[p] <- stringr::str_extract(positions[[p]][20], "\\*\\s\\w+") %>% stringr::str_remove("\\* ")
+
+      # Extract board
+      board_lines <- stringr::str_detect(positions[[p]], "^(\\s\\+|\\s\\||v\\||Pip)")
+      board[p] <- positions[[p]][board_lines] %>% paste(collapse = "\n")
+
+      # Extract cube analysis
+      cube_lines <- stringr::str_detect(positions[[p]], "^(Cube analysis|[0-9]-ply cube)|Cubeful equities|^\\s{2}[\\d\\-]|^1\\.\\s|^2\\.\\s|^3\\.\\s|Proper")
+      cube_eq[p] <- positions[[p]][cube_lines] %>% paste(collapse = "\n")
+      if (cube_eq[p] == "") cube_eq[p] <- NA
+
+      # Extract proper cube action
+      proper_line <- stringr::str_detect(positions[[p]], "Proper cube action:")
+      proper_text <- positions[[p]][proper_line]
+      if (length(proper_text) == 0) proper_text <- NA
+      proper_text <- stringr::str_remove(proper_text, "Proper cube action: ")
+      proper_text <- stringr::str_remove(proper_text, " \\(.+\\)")
+      proper_ca[p] <- proper_text
+
+      # Extract cube error
+      mistake_ca[p] <-
+        ((stringr::str_detect(proper_ca[p], "pass") & play[p] == "accepts"))   | # Wrong take
+        ((stringr::str_detect(proper_ca[p], "take") & play[p] == "rejects"))   | # Wrong pass
+        ((stringr::str_detect(proper_ca[p], "No|Too") & play[p] == "doubles")) | # Wrong double
+        ((stringr::str_detect(proper_ca[p], "Double|Redouble") &
+            stringr::str_detect(play[p], "moves|cannot")))                       # Wrong no double
+
+      potential_error <- positions[[p]][cube_lines][5:7] %>%
+        stringr::str_extract("\\(.+\\)$") %>%
+        stringr::str_remove_all("\\(|\\)") %>%
+        as.numeric()
+
+      potential_error <-
+        ifelse(all(is.na(potential_error)), NA, min(potential_error, na.rm = TRUE))
+
+      cube_err[p] <- mistake_ca[p] * potential_error
+
+      # Extract move analysis
+      move_lines <- stringr::str_detect(positions[[p]], "^\\s{5}\\d\\.|^\\*\\s{4}\\d\\.")
+      move_eq[p] <- positions[[p]][move_lines] %>% paste(collapse = "\n")
+
+      # The line with the chosen move, beginning with *
+      play_line <- stringr::str_detect(positions[[p]], "^\\*\\s{4}")
+
+      # Extract move error, if any. (The number in parenthesis at the end)
+      error <- positions[[p]][play_line] %>%
+        stringr::str_extract("\\(\\-.+\\)$") %>%
+        stringr::str_remove_all("[\\(\\)]") %>%
+        as.numeric()
+
+      if (move_eq[p] == "") {
+        error <- NA                   # No move equities found (this is a cube decision)
+      } else {
+        if (is.na(error)) error <- 0  # No move error found (correct play was made)
+      }
+
+      move_err[p] <- error
+    }
+
+    # Put together in nice data frame
+    df <- tidyr::tibble(
+      file = file,
+      place = place,
+      date = date,
+      player1 = player1,
+      player2 = player2,
+      game_no = game_no,
+      length = length,
+      score1 = score1,
+      score2 = score2,
+      crawford = crawford,
+      pos_id = pos_id,
+      match_id = match_id,
+      move_no = move_no,
+      play = play,
+      turn = turn,
+      roll = roll,
+      proper_ca = proper_ca,
+      mistake_ca = mistake_ca,
+      move_err = move_err,
+      cube_err = cube_err,
+      board = board,
+      cube_eq = cube_eq,
+      move_eq = move_eq
+    )
+
+    big_df <- dplyr::bind_rows(big_df, df)
+  }
+
+  # A bit of cleaning
+  big_df <- big_df %>%
+    dplyr::select(-place) %>%  # Not very useful
+    dplyr::mutate(play = dplyr::case_match(play, c("moves", "cannot") ~  "Rolls", .default = play),
+           play = stringr::str_to_title(play))
+
+  return(big_df)
+}
