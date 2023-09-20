@@ -68,7 +68,7 @@ mwc <- function(a, b, met) {
 #'
 #' @examples
 #' met <- get_met()
-#' tp(3,5, 1, met)
+#' tp(3, 5, 1, met)
 #'
 #' @export
 #'
@@ -385,7 +385,6 @@ tp_table <-  function(x, y, probs, cube, met) {
 #' @export
 #'
 #'@examples
-#'library(backgammon)
 #'met <- get_met()
 #'met[1:5, 1:5]
 #'met <- get_met("Woolsey.met")
