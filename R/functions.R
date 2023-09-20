@@ -372,23 +372,39 @@ tp_table <-  function(x, y, probs, cube, met) {
   return(tp_tab)
 }
 
-#' Get match equity table from *.met file (used by Extreme Gammon)
+#' Get match equity table from *.met file (used by eXtreme Gammon)
 #'
-#' @param filename file location
+#' @param filename name of *.met file. Defaults to "Kazaross-XG2.met"
 #' @return matrix
 #' @importFrom rlang .data
 #' @export
 #'
-get_met <- function(filename = "data-raw\\Kazaross XG2.met") {
+#'@examples
+#'library(backgammon)
+#'met <- get_met()
+#'met[1:5, 1:5]
+#'met <- get_met("Woolsey.met")
+#'met[1:5, 1:5]
 
-  top9 <- readr::read_delim(filename, skip = 12, delim = " ", n_max =  9, col_names = as.character(0:25), col_types = list(.default = "c")) %>%
+get_met <- function(filename = "Kazaross-XG2.met") {
+
+  met_path <- system.file("extdata", package = "backgammon")
+  available_mets <- list.files(path = met_path, pattern = "*.met")
+  if (!filename %in% available_mets) stop(paste(filename, "not found.\nAvailable mets:", paste(available_mets, collapse = ", ")))
+
+  path <- system.file(file.path("extdata", filename), package = "backgammon")
+
+  lines <- readr::read_lines(path)
+  firstline <- stringr::str_detect(lines, " 1=") %>% which()
+
+  top_lines <- readr::read_delim(path, skip = firstline - 1, delim = " ", n_max =  9, col_names = as.character(0:25), col_types = list(.default = "c")) %>%
     dplyr::select(-.data$`0`) # Use `0` not .data$`0`?
         # Use of .data in tidyselect expressions was deprecated in tidyselect 1.2.0.
         # i Please use `"0"` instead of `.data$0`
 
-  rest <- readr::read_delim(filename, skip = 21, delim = " ", col_names = as.character(1:25), col_types = list(.default = "c"))
+  rest <- readr::read_delim(path, skip = firstline + 8, delim = " ", col_names = as.character(1:25), col_types = list(.default = "c"))
 
-  met <- dplyr::bind_rows(top9, rest) %>%
+  met <- dplyr::bind_rows(top_lines, rest) %>%
     dplyr::select(tidyselect::vars_select_helpers$where(~!all(is.na(.x)))) %>%
     dplyr::mutate(`1` = stringr::str_remove(.data$`1`, "^.+=")) %>%
     dplyr::mutate(dplyr::across(dplyr::everything(), as.numeric)) %>%

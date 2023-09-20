@@ -2,16 +2,23 @@
 % Please edit documentation in R/functions.R
 \name{get_met}
 \alias{get_met}
-\title{Get match equity table from *.met file (used by Extreme Gammon)}
+\title{Get match equity table from *.met file (used by eXtreme Gammon)}
 \usage{
-get_met(filename = "data-raw\\\\Kazaross XG2.met")
+get_met(filename = "Kazaross-XG2.met")
 }
 \arguments{
-\item{filename}{file location}
+\item{filename}{name of *.met file. Defaults to "Kazaross-XG2.met"}
 }
 \value{
 matrix
 }
 \description{
-Get match equity table from *.met file (used by Extreme Gammon)
+Get match equity table from *.met file (used by eXtreme Gammon)
+}
+\examples{
+library(backgammon)
+met <- get_met()
+met[1:5, 1:5]
+met <- get_met("Woolsey.met")
+met[1:5, 1:5]
 }
