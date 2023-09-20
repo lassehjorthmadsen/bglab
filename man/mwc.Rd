@@ -19,3 +19,8 @@ double. Match winning chance
 \description{
 Look up match winning chances at different scores
 }
+\examples{
+met <- get_met() # Get the default Kazaross XG2 table
+mwc(3, 5, met)   # Match winning chance at 3-away, 5-away
+
+}

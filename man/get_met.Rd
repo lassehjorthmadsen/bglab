@@ -16,7 +16,6 @@ matrix
 Get match equity table from *.met file (used by eXtreme Gammon)
 }
 \examples{
-library(backgammon)
 met <- get_met()
 met[1:5, 1:5]
 met <- get_met("Woolsey.met")

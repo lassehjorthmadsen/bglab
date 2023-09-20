@@ -16,11 +16,15 @@ named numeric vector of length 6, representing outcome
 probabilities (always sum to 1 or 100)
 }
 \description{
-Convert outcome distributions from eXtreme Gammon to probabilities
+Both eXtreme Gammon and GNU Backgammon report estimated outcome
+probabilities in a cumulative way: The number under "wins" is the
+probability of winning an ordinary game, a gammon or a backgammon.
+Sometimes it can be convenient to have discrete probabilities.
 }
 \examples{
 # XGID=-a-BaBC-A---eE---c-e----B-:0:0:1:00:0:0:0:0:10
-# 4-ply winning chances:
-outcome_probs(c(61.94, 24.09, 1.04, 38.06, 8.54, 0.42))
+# 4-ply winning chances, reported in a cummulative fashion:
+cum_probs <- c(61.94, 24.09, 1.04, 38.06, 8.54, 0.42)
+outcome_probs(cum_probs)
 
 }

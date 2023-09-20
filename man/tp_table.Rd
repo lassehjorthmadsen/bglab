@@ -26,3 +26,7 @@ data.frame
 Compute take points at a given match score, create a nice table
 to compare those with money game take points
 }
+\examples{
+probs(c(35.64, 13.27, 0.87, 36.32, 13.27, 0.63))
+
+}

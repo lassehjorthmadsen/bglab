@@ -23,3 +23,8 @@ double
 \description{
 Calculate match winning chance from game winning chances
 }
+\examples{
+met <- get_met()
+gwc2mwc(0.5, 3, 5, 1, met)
+
+}

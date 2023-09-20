@@ -23,3 +23,8 @@ double
 \description{
 Scale match winning chance to equivalent to money game
 }
+\examples{
+met <- get_met()
+emg(0.5, 3, 5, 1, met)
+
+}

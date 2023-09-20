@@ -7,6 +7,11 @@
 #' @param met match equity table
 #'
 #' @return double
+#'
+#' @examples
+#' met <- get_met()
+#' emg(0.5, 3, 5, 1, met)
+#'
 #' @export
 #'
 emg <- function(mwc, a, b, cube, met) {
@@ -27,12 +32,16 @@ emg <- function(mwc, a, b, cube, met) {
 #' @param met match equity table
 #'
 #' @return double
+#'
+#' @examples
+#' met <- get_met()
+#' gwc2mwc(0.5, 3, 5, 1, met)
+#'
 #' @export
 #'
 gwc2mwc <- function(pwin, a, b, cube, met) {
   return (pwin * mwc(a - cube, b, met) + (1 - pwin) * mwc(a, b - cube, met))
 }
-
 
 #'  Look up match winning chances at different scores
 #'
@@ -41,6 +50,11 @@ gwc2mwc <- function(pwin, a, b, cube, met) {
 #' @param met match equity table
 #'
 #' @return double. Match winning chance
+#'
+#' @examples
+#' met <- get_met() # Get the default Kazaross XG2 table
+#' mwc(3, 5, met)   # Match winning chance at 3-away, 5-away
+#'
 #' @export
 #'
 mwc <- function(a, b, met) {
@@ -284,6 +298,11 @@ check_probs <- function(probs) {
 
 #' Convert outcome distributions from eXtreme Gammon to probabilities
 #'
+#' Both eXtreme Gammon and GNU Backgammon report estimated outcome
+#' probabilities in a cumulative way: The number under "wins" is the
+#' probability of winning an ordinary game, a gammon or a backgammon.
+#' Sometimes it can be convenient to have discrete probabilities.
+#'
 #' @param xg_probs numeric vector of length 6, corresponding to the
 #' winning chances reported by eXtreme Gammon. Can be percentages or
 #' decimal fractions.
@@ -293,8 +312,9 @@ check_probs <- function(probs) {
 #'
 #' @examples
 #' # XGID=-a-BaBC-A---eE---c-e----B-:0:0:1:00:0:0:0:0:10
-#' # 4-ply winning chances:
-#' outcome_probs(c(61.94, 24.09, 1.04, 38.06, 8.54, 0.42))
+#' # 4-ply winning chances, reported in a cummulative fashion:
+#' cum_probs <- c(61.94, 24.09, 1.04, 38.06, 8.54, 0.42)
+#' outcome_probs(cum_probs)
 #'
 #' @export
 outcome_probs <- function(xg_probs) {
@@ -325,7 +345,11 @@ outcome_probs <- function(xg_probs) {
 #' @importFrom stats addmargins
 #'
 #' @examples
-#' probs_table(c(35.64, 13.27, 0.87, 36.32, 13.27, 0.63))
+#' XGID=-a-BaBC-A---eE---c-e----B-:0:0:1:00:0:0:0:0:10
+#' 4-ply winning chances, reported in a cumulative fashion:
+#' cum_probs <- c(61.94, 24.09, 1.04, 38.06, 8.54, 0.42)
+#' probs <- outcome_probs(cum_probs)
+#' probs_table(probs)
 #'
 #' @export
 #'
@@ -351,6 +375,10 @@ probs_table <-  function(probs, margins = TRUE) {
 #' probabilities (must sum to 1 or 100)
 #' @param cube cube value
 #' @param met match equity table
+#'
+#' @examples
+#' probs(c(35.64, 13.27, 0.87, 36.32, 13.27, 0.63))
+
 #'
 #' @return data.frame
 #'

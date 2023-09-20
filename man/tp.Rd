@@ -25,6 +25,6 @@ Calculate cubeless, gammonless take points at different scores
 }
 \examples{
 met <- get_met()
-tp(3,5, 1, met)
+tp(3, 5, 1, met)
 
 }
