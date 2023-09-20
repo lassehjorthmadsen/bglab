@@ -10,7 +10,9 @@
 #'
 #' @examples
 #' met <- get_met()
-#' emg(0.5, 3, 5, 1, met)
+#' # If I have 0.7 to win the match at 3-away, 5-away,
+#' # how good is this on an money game scale?
+#' emg(0.7, 3, 5, 1, met)
 #'
 #' @export
 #'
