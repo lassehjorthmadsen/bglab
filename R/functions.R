@@ -65,6 +65,11 @@ mwc <- function(a, b, met) {
 #' @param met match equity table
 #'
 #' @return double. Take point
+#'
+#' @examples
+#' met <- get_met()
+#' tp(3,5, 1, met)
+#'
 #' @export
 #'
 tp <- function(a, b, cube, met, last_roll = FALSE) {
@@ -319,10 +324,10 @@ outcome_probs <- function(xg_probs) {
 #'
 #' @importFrom stats addmargins
 #'
-#' @export
-#'
 #' @examples
 #' probs_table(c(35.64, 13.27, 0.87, 36.32, 13.27, 0.63))
+#'
+#' @export
 #'
 probs_table <-  function(probs, margins = TRUE) {
 
