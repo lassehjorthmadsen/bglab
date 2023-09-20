@@ -377,8 +377,12 @@ probs_table <-  function(probs, margins = TRUE) {
 #' @param met match equity table
 #'
 #' @examples
-#' probs(c(35.64, 13.27, 0.87, 36.32, 13.27, 0.63))
-
+#' met <- get_met()
+#' # XGID=-a-BaBC-A---eE---c-e----B-:0:0:1:00:0:0:0:0:10
+#' # 4-ply winning chances, reported in a cumulative fashion:
+#' cum_probs <- c(61.94, 24.09, 1.04, 38.06, 8.54, 0.42)
+#' probs <- outcome_probs(cum_probs)
+#' tp_table(3, 5, probs, 1, met)
 #'
 #' @return data.frame
 #'
