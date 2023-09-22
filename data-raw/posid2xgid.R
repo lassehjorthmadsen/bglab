@@ -1,80 +1,67 @@
-# Uncomment the following lines if the packages are not installed
-# install.packages("bitops")
-# install.packages("base64enc")
-
 library(bitops)
 library(base64enc)
+library(tidyverse)
+library(stringi)
 
+# 00000111 11001110 00001111 10000000 00001100 00000111 11001110 00001111 10000000 00001100
 
-# Function to convert GNUBG Position ID to XGID position string
-convert_position_id <- function(gnubg_position_id) {
-  # Decode the Base64 encoded Position ID
-  decoded_bytes <- base64decode(gnubg_position_id)
+# Starting point example
+id <- "00000111110011100000111110000000000011000000011111001110000011111000000000001100"
+pad <- rep("0", 84 - nchar(id)) %>% paste0(collapse = "")
+charset <- c(LETTERS, letters, 0:9, "+", "/")
 
-  # Initialize empty position string for XGID
-  xgid_position <- ""
+starts8 <- seq(1, 80, 8)
+starts6 <- seq(1, 80, 6)
 
-  # Loop through each byte and convert to bits
-  for(byte in decoded_bytes) {
-    # Get 8-bit binary representation of the byte
-    bits <- intToBits(byte)
+id_chars <- id %>%
+  str_sub(starts8, starts8 + 7) %>%
+  stri_reverse() %>%
+  paste0(collapse = "") %>%
+  paste0(pad, collapse = "") %>%
+  str_sub(starts6, starts6 + 5) %>%
+  strtoi(base = 2) %>%
+  map_chr(~ charset[.x + 1]) %>%
+  paste0(collapse = "")
 
-    # Loop through the bits to construct the position string
-    # In GNUBG, a '1' represents a checker and a '0' separates points
-    ones_count <- 0
-    for(bit in bits) {
-      if(bit) {
-        ones_count <- ones_count + 1
-      } else {
-        if(ones_count > 0) {
-          xgid_position <- paste0(xgid_position, LETTERS[ones_count])
-        } else {
-          xgid_position <- paste0(xgid_position, "-")
-        }
-        ones_count <- 0
-      }
-    }
-  }
+id_chars
+id_chars == "4HPwATDgc/ABMA"
 
-  return(xgid_position)
+# Reverse engineer
+id_chars <- "4HPwATDgc/ABMA"
+
+id_int <- id_chars %>%
+  str_split("") %>%
+  pluck(1) %>%
+  map_int(~ which(.x == charset))
+
+chr2bin <- function(char, charset) {
+  # Convert Base64 character to its 6-bit binary representation
+
+  idx <- which(charset == char) - 1  # -1 because R is 1-indexed
+  bin_str <- intToBits(idx)[1:6] %>% as.integer() %>% rev() %>% paste0(collapse = "")
+  return(bin_str)
 }
 
 
-# Function to convert GNUBG Match ID to XGID match information
-convert_match_id <- function(gnubg_match_id) {
-  # Decode the Base64 encoded Match ID
-  decoded_bytes <- base64decode(gnubg_match_id)
+posid2bin <- function(pos_id, charset) {
+  # From GNU backgammon position id in Base64  to binary string
 
-  # Convert bytes to bits and parse according to GNUBG documentation
-  # For simplification, directly using byte values for this example
+  big_bin <- str_split(pos_id, "") %>%
+    pluck(1) %>%
+    map_chr(chr2bin, charset = charset) %>%
+    paste0(collapse = "")
 
-  cube_value_byte <- bitAnd(decoded_bytes[1], as.integer(15))  # First 4 bits
-  cube_value <- 2 ^ cube_value_byte
+  # Convert every 8 bits to their little-endian form
+  starts <- seq(1, nchar(big_bin), by = 8)
 
-  cube_owner_byte <- bitAnd(bitShiftR(decoded_bytes[1], 4), as.integer(3))  # Bits 5-6
-  cube_position <- ifelse(cube_owner_byte == 3, 0, cube_owner_byte)
+  big_bin_endian <- map_chr(starts, ~ stri_reverse(substr(big_bin, ., . + 7))) %>%
+    paste0(collapse = "")
 
-  # Other fields can be parsed similarly
-
-  # Create the XGID match string
-  xgid_match <- paste0(":", cube_value, ":", cube_position, ":1:00:0:0:0:0:0")
-
-  return(xgid_match)
+  return(little_endian_bits)
 }
 
+# Test the function
+id_char <- "4HPwATDgc/ABMA"
+posid2bin(id_char, charset)
+id
 
-
-# Example usage
-gnubg_position_id <- "4HPwATDgc/ABMA"
-gnubg_match_id <- "QYkqASAAIAAA"
-
-xgid_position <- convert_position_id(gnubg_position_id)
-xgid_match <- convert_match_id(gnubg_match_id)
-
-xgid <- paste0("XGID=", xgid_position, xgid_match)
-
-print(paste0("Converted XGID: ", xgid))
-
-
-devtools::load_all()
-ggboard(xgid)
