@@ -1,9 +1,5 @@
-library(bitops)
-library(base64enc)
 library(tidyverse)
 library(stringi)
-
-# 00000111 11001110 00001111 10000000 00001100 00000111 11001110 00001111 10000000 00001100
 
 # Starting point example
 id <- "00000111110011100000111110000000000011000000011111001110000011111000000000001100"
@@ -55,13 +51,63 @@ posid2bin <- function(pos_id, charset) {
   starts <- seq(1, nchar(big_bin), by = 8)
 
   big_bin_endian <- map_chr(starts, ~ stri_reverse(substr(big_bin, ., . + 7))) %>%
-    paste0(collapse = "")
+    paste0(collapse = "") %>%
+    str_sub(1,80)
 
-  return(little_endian_bits)
+  return(big_bin_endian)
 }
 
 # Test the function
-id_char <- "4HPwATDgc/ABMA"
-posid2bin(id_char, charset)
+posid2bin(id_chars, charset)
 id
 
+
+posid2xg <- function(pos_id, charset) {
+  # Converts binary string with GNU BG position id to XG position id
+
+  pos_id_bin <- posid2bin(pos_id, charset)
+
+  split_id <- str_split(pos_id_bin, "") %>%
+    pluck(1)
+
+  i <- 0
+  point <- matrix(rep(1, 50), nrow = 2, ncol = 25)
+
+  for (player in c(1, 2)) {
+    point_no <- 1
+    checkers <- 1
+
+      while (point_no <= 25) {
+        i <- i + 1
+
+        if (split_id[i] == "1") {
+          checkers <- checkers + 1
+          point[player, point_no] <- checkers
+          } else {
+            point_no <- point_no + 1
+            checkers <- 1
+          }
+      }
+  }
+
+
+  point
+
+  id_chars1 <- c(0, letters)
+  id_chars2 <- c(NA, LETTERS)
+
+  xgtop <- id_chars1[c(point[1, 25], point[1, 1:24])]
+  xgbot <- c(point[2, 25], point[2, 1:24], NA) %>% rev()
+
+
+  id_chars1 <- c(NA, letters)
+  id_chars2 <- c(NA, LETTERS)
+
+  id_chars1[point[1,]]
+  id_chars2[point[2,]]
+
+  return(point)
+
+}
+
+posid2xg(pos_id, charset)
