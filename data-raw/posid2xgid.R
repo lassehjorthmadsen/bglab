@@ -1,80 +1,94 @@
-# Uncomment the following lines if the packages are not installed
-# install.packages("bitops")
-# install.packages("base64enc")
+library(tidyverse)
+library(stringi)
+devtools::load_all()
 
-library(bitops)
-library(base64enc)
+chr2bin <- function(char, charset) {
+  # Convert Base64 character to its 6-bit binary representation
+  idx <- which(charset == char) - 1  # -1 because R is 1-indexed
+  bin_str <- intToBits(idx)[1:6] %>% as.integer() %>% rev() %>% paste0(collapse = "")
+  return(bin_str)
+}
+
+pos_id2bin <- function(pos_id, charset) {
+  # Convert GNU backgammon position id in Base64 to binary string
+  big_bin <- str_split(pos_id, "") %>%
+    pluck(1) %>%
+    map_chr(chr2bin, charset = charset) %>%
+    paste0(collapse = "")
+
+  # Convert every 8 bits to their little-endian form
+  starts <- seq(1, nchar(big_bin), by = 8)
+
+  big_bin_endian <- map_chr(starts, ~ stri_reverse(substr(big_bin, ., . + 7))) %>%
+    paste0(collapse = "") %>%
+    str_sub(1,80)
+
+  return(big_bin_endian)
+}
 
 
-# Function to convert GNUBG Position ID to XGID position string
-convert_position_id <- function(gnubg_position_id) {
-  # Decode the Base64 encoded Position ID
-  decoded_bytes <- base64decode(gnubg_position_id)
+pos_id2xg <- function(pos_id, charset, perspective) {
+  # Converts binary string with GNU BG position id to XGID position substring
 
-  # Initialize empty position string for XGID
-  xgid_position <- ""
+  if (!perspective %in% c(1, 2)) stop("perspective parameter must be either 1 or two")
 
-  # Loop through each byte and convert to bits
-  for(byte in decoded_bytes) {
-    # Get 8-bit binary representation of the byte
-    bits <- intToBits(byte)
+  # pos_id to bit string
+  pos_id_bin <- pos_id2bin(pos_id, charset)
+  split_id <- str_split(pos_id_bin, "") %>% pluck(1)
 
-    # Loop through the bits to construct the position string
-    # In GNUBG, a '1' represents a checker and a '0' separates points
-    ones_count <- 0
-    for(bit in bits) {
-      if(bit) {
-        ones_count <- ones_count + 1
-      } else {
-        if(ones_count > 0) {
-          xgid_position <- paste0(xgid_position, LETTERS[ones_count])
-        } else {
-          xgid_position <- paste0(xgid_position, "-")
-        }
-        ones_count <- 0
+  # initialize point matrix with NA
+  point <- matrix(rep(NA, 50), nrow = 2, ncol = 25)
+  i <- 0
+
+  for (player in c(1, 2)) {
+    point_no <- 1
+    checkers <- 0
+
+      while (point_no <= 25) {
+        i <- i + 1
+
+        if (split_id[i] == "1") {
+          checkers <- checkers + 1
+          point[player, point_no] <- checkers
+          } else {
+            point_no <- point_no + 1
+            checkers <- 0
+          }
       }
-    }
   }
 
-  return(xgid_position)
+  char_notation <- cbind(c(letters[point[1, 25]], LETTERS[point[1, 1:24]], NA),
+                            c(NA, rev(letters[point[2, 1:24]]), LETTERS[point[2, 25]]))
+
+  if (perspective == 1) {
+    vec1 <- c(letters[point[1, 25]], LETTERS[point[1, 1:24]], NA)
+    vec2 <- c(NA, rev(letters[point[2, 1:24]]), LETTERS[point[2, 25]])
+  } else {
+    vec1 <- c(letters[point[2, 25]], LETTERS[point[2, 1:24]], NA)
+    vec2 <- c(NA, rev(letters[point[1, 1:24]]), LETTERS[point[1, 25]])
+  }
+
+xg_pos <- coalesce(vec1, vec2) %>%
+  replace_na("-") %>%
+  paste0(collapse = "")
+
+  return(xg_pos)
 }
 
 
-# Function to convert GNUBG Match ID to XGID match information
-convert_match_id <- function(gnubg_match_id) {
-  # Decode the Base64 encoded Match ID
-  decoded_bytes <- base64decode(gnubg_match_id)
+xg <- pos_id2xg("sHPMATDgc/ADIA", charset, 1)
+dummy <- paste0("XGID=", xg, ":0:0:1:52:0:0:3:0:10")
+ggboard(dummy)
 
-  # Convert bytes to bits and parse according to GNUBG documentation
-  # For simplification, directly using byte values for this example
+xg <- pos_id2xg("0PPgAyCwc8wBMA", charset, 2)
+dummy <- paste0("XGID=", xg, ":0:0:1:52:0:0:3:0:10")
+ggboard(dummy)
 
-  cube_value_byte <- bitAnd(decoded_bytes[1], as.integer(15))  # First 4 bits
-  cube_value <- 2 ^ cube_value_byte
+xg <- pos_id2xg("jOfgAFKwecwIQg", charset, 1)
+dummy <- paste0("XGID=", xg, ":0:0:1:52:0:0:3:0:10")
+ggboard(dummy)
 
-  cube_owner_byte <- bitAnd(bitShiftR(decoded_bytes[1], 4), as.integer(3))  # Bits 5-6
-  cube_position <- ifelse(cube_owner_byte == 3, 0, cube_owner_byte)
-
-  # Other fields can be parsed similarly
-
-  # Create the XGID match string
-  xgid_match <- paste0(":", cube_value, ":", cube_position, ":1:00:0:0:0:0:0")
-
-  return(xgid_match)
-}
-
-
-
-# Example usage
-gnubg_position_id <- "4HPwATDgc/ABMA"
-gnubg_match_id <- "QYkqASAAIAAA"
-
-xgid_position <- convert_position_id(gnubg_position_id)
-xgid_match <- convert_match_id(gnubg_match_id)
-
-xgid <- paste0("XGID=", xgid_position, xgid_match)
-
-print(paste0("Converted XGID: ", xgid))
-
-
-devtools::load_all()
-ggboard(xgid)
+# BUG:
+xg <- pos_id2xg("33YDAEDbthsAAA", charset, 1)
+dummy <- paste0("XGID=", xg, ":0:0:1:52:0:0:3:0:10")
+ggboard(dummy)
