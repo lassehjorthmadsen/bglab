@@ -1,0 +1,2046 @@
+The score (after 0 games) is: frutariano 0, lasse 0 (match to 5 points)
+
+Match Information:
+Date: 17/09/2023
+Place: BackgammonGalaxy
+
+Move number 1:  lasse to play 65
+
+ GNU Backgammon  Position ID: 4HPwATDgc/ABMA
+                 Match ID   : cAi3AAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: frutariano
+ | X           O    |   | O              X |     0 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     Rolled 65
+ | O           X    |   | X              O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 167, X 167
+
+* lasse moves 24/13
+
+Rolled 65:
+*    1. Cubeful 3-ply    24/13                        Eq.: +0.095
+       0.531 0.122 0.005 - 0.469 0.122 0.003
+     2. Cubeful 3-ply    24/18 13/8                   Eq.: +0.035 (-0.060)
+       0.512 0.130 0.006 - 0.488 0.131 0.005
+     3. Cubeful 2-ply    13/8 13/7                    Eq.: -0.064 (-0.159)
+       0.480 0.139 0.008 - 0.520 0.142 0.007
+     4. Cubeful 2-ply    13/2                         Eq.: -0.130 (-0.225)
+       0.466 0.134 0.007 - 0.534 0.156 0.008
+     5. Cubeful 2-ply    24/18 8/3                    Eq.: -0.162 (-0.257)
+       0.465 0.119 0.006 - 0.535 0.164 0.008
+
+
+Move number 2:  frutariano to play 64
+
+ GNU Backgammon  Position ID: 4HPwAyDgc/ABMA
+                 Match ID   : MAGzAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: frutariano
+ | X           O    |   | O              X |     0 points
+ | X           O    |   | O                |     Rolled 64
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | 6                |   | O                |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     
+ | O           X    |   | X              O |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 167, X 156
+
+* frutariano moves 24/18 13/9
+
+Cube analysis
+3-ply cubeless equity -0.064 (Money: -0.063)
+  0.469 0.122 0.003 - 0.531 0.122 0.005
+Cubeful equities:
+1. No double           -0.095
+2. Double, pass        +1.000  (+1.095)
+3. Double, take        -0.503  (-0.408)
+Proper cube action: No double, take (27.1%)
+
+Rolled 64:
+     1. Cubeful 3-ply    8/2 6/2                      Eq.: -0.157
+       0.451 0.127 0.003 - 0.549 0.135 0.005
+*    2. Cubeful 3-ply    24/18 13/9                   Eq.: -0.169 (-0.011)
+       0.453 0.105 0.003 - 0.547 0.128 0.004
+     3. Cubeful 3-ply    24/14                        Eq.: -0.196 (-0.039)
+       0.450 0.098 0.002 - 0.550 0.136 0.003
+     4. Cubeful 3-ply    24/20 13/7                   Eq.: -0.217 (-0.060)
+       0.438 0.110 0.003 - 0.562 0.134 0.005
+     5. Cubeful 2-ply    13/9 13/7                    Eq.: -0.227 (-0.070)
+       0.436 0.118 0.004 - 0.564 0.142 0.009
+
+
+Move number 3:  lasse to play 42
+
+ GNU Backgammon  Position ID: 4HPhQSDgc/ADIA
+                 Match ID   : cAmqAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: frutariano
+ | X        O  O    |   | O              X |     0 points
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | 6                |   | O                |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     Rolled 42
+ | O           X  O |   | X              O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 157, X 156
+
+* lasse moves 8/4 6/4
+
+Cube analysis
+3-ply cubeless equity +0.115 (Money: +0.117)
+  0.547 0.128 0.004 - 0.453 0.105 0.003
+Cubeful equities:
+1. No double           +0.169
+2. Double, pass        +1.000  (+0.831)
+3. Double, take        -0.081  (-0.250)
+Proper cube action: No double, take (23.1%)
+
+Rolled 42:
+     1. Cubeful 3-ply    13/7*                        Eq.: +0.090
+       0.525 0.133 0.006 - 0.475 0.123 0.005
+*    2. Cubeful 3-ply    8/4 6/4                      Eq.: +0.066 (-0.024)
+       0.518 0.115 0.003 - 0.482 0.108 0.003
+     3. Cubeful 2-ply    24/18                        Eq.: -0.095 (-0.186)
+       0.483 0.089 0.002 - 0.517 0.126 0.003
+     4. Cubeful 2-ply    24/20 13/11                  Eq.: -0.127 (-0.217)
+       0.475 0.096 0.003 - 0.525 0.135 0.004
+     5. Cubeful 2-ply    24/22 13/9                   Eq.: -0.157 (-0.247)
+       0.466 0.101 0.003 - 0.534 0.144 0.005
+
+
+Move number 4:  frutariano to play 65
+
+ GNU Backgammon  Position ID: mGfwAyDgc+FBIA
+                 Match ID   : MAG3AAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: frutariano
+ | X        O  O    |   | O              X |     0 points
+ | X           O    |   | O                |     Rolled 65
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | 6                |   | O                |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X     X          |     
+ | O           X  O |   | X     X        O |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 157, X 150
+
+* frutariano moves 24/18 13/8
+
+Cube analysis
+3-ply cubeless equity -0.043 (Money: -0.044)
+  0.482 0.108 0.003 - 0.518 0.115 0.003
+Cubeful equities:
+1. No double           -0.066
+2. Double, pass        +1.000  (+1.066)
+3. Double, take        -0.459  (-0.393)
+Proper cube action: No double, take (26.9%)
+
+Rolled 65:
+*    1. Cubeful 2-ply    24/18 13/8                   Eq.: +0.069
+       0.515 0.095 0.002 - 0.485 0.073 0.001
+     2. Cubeful 2-ply    24/18 6/1*                   Eq.: -0.084 (-0.153)
+       0.473 0.097 0.002 - 0.527 0.101 0.003
+     3. Cubeful 2-ply    24/18 9/4                    Eq.: -0.095 (-0.165)
+       0.471 0.091 0.002 - 0.529 0.097 0.002
+     4. Cubeful 2-ply    24/18 8/3                    Eq.: -0.137 (-0.206)
+       0.465 0.097 0.002 - 0.535 0.116 0.003
+     5. Cubeful 0-ply    9/3 8/3                      Eq.: -0.275 (-0.344)
+       0.429 0.113 0.003 - 0.571 0.166 0.005
+
+
+Move number 5:  lasse to play 11
+
+ GNU Backgammon  Position ID: 4PPCwQCYZ/ADIA
+                 Match ID   : cImkAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: frutariano
+ | X        O  O    |   | O              X |     0 points
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ | 6                |   | O                |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ | O                |   | X                |     
+ | O           X  O |   | X     X          |     Rolled 11
+ | O           X  O |   | X     X          |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 146, X 150
+
+* lasse moves 24/22 6/5(2)
+
+Cube analysis
+3-ply cubeless equity -0.042 (Money: -0.044)
+  0.489 0.071 0.001 - 0.511 0.092 0.002
+Cubeful equities:
+1. No double           -0.060
+2. Double, pass        +1.000  (+1.060)
+3. Double, take        -0.462  (-0.403)
+Proper cube action: No double, take (27.5%)
+
+Rolled 11:
+*    1. Cubeful 3-ply    24/22 6/5(2)                 Eq.: -0.192
+       0.452 0.059 0.001 - 0.548 0.100 0.002
+     2. Cubeful 3-ply    6/5(2) 4/3(2)                Eq.: -0.234 (-0.042)
+       0.441 0.071 0.001 - 0.559 0.119 0.002
+     3. Cubeful 3-ply    24/21 6/5                    Eq.: -0.272 (-0.080)
+       0.435 0.061 0.001 - 0.565 0.124 0.002
+     4. Cubeful 2-ply    24/20                        Eq.: -0.288 (-0.096)
+       0.427 0.048 0.000 - 0.573 0.105 0.002
+     5. Cubeful 2-ply    24/22 6/4                    Eq.: -0.294 (-0.103)
+       0.429 0.060 0.001 - 0.571 0.127 0.002
+
+
+Move number 6:  frutariano to play 11
+
+ GNU Backgammon  Position ID: 2GbwAwjg88LBAA
+                 Match ID   : MIGkAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: frutariano
+ | X        O  O    |   | O        X       |     0 points
+ | X           O    |   | O                |     Rolled 11
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ | 6                |   | O                |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ | O                |   |                  |     
+ | O           X  O |   | X  X  X          |     
+ | O           X  O |   | X  X  X          |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 146, X 146
+
+* frutariano moves 8/7(2) 6/5(2)
+
+Cube analysis
+3-ply cubeless equity +0.135 (Money: +0.139)
+  0.548 0.100 0.002 - 0.452 0.059 0.001
+Cubeful equities:
+1. No double           +0.192
+2. Double, pass        +1.000  (+0.808)
+3. Double, take        -0.061  (-0.253)
+Proper cube action: No double, take (23.8%)
+
+Rolled 11:
+*    1. Cubeful 3-ply    8/7(2) 6/5(2)                Eq.: +0.208
+       0.547 0.124 0.002 - 0.453 0.082 0.001
+     2. Cubeful 3-ply    9/8 6/5(3)                   Eq.: +0.116 (-0.091)
+       0.528 0.080 0.001 - 0.472 0.055 0.001
+     3. Cubeful 2-ply    9/7 8/7(2)                   Eq.: +0.097 (-0.111)
+       0.525 0.075 0.001 - 0.475 0.054 0.001
+     4. Cubeful 2-ply    9/7 6/5(2)                   Eq.: +0.085 (-0.122)
+       0.517 0.102 0.002 - 0.483 0.071 0.001
+     5. Cubeful 2-ply    8/5 6/5                      Eq.: -0.002 (-0.210)
+       0.492 0.099 0.002 - 0.508 0.079 0.001
+
+
+Move number 7:  lasse to play 66
+
+ GNU Backgammon  Position ID: sNvCwQDYZvADCA
+                 Match ID   : cAm7AAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: frutariano
+ | X        O  O  O |   | O  O     X       |     0 points
+ | X           O  O |   | O  O             |     
+ | X                |   | O                |     
+ | X                |   |                  |     
+ | 6                |   |                  |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ | O                |   |                  |     
+ | O           X  O |   | X  X  X          |     Rolled 66
+ | O           X  O |   | X  X  X          |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 142, X 146
+
+* lasse moves 22/16*/10 8/2(2)
+
+Cube analysis
+3-ply cubeless equity -0.133 (Money: -0.137)
+  0.453 0.082 0.001 - 0.547 0.124 0.002
+Cubeful equities:
+1. No double           -0.208
+2. Double, pass        +1.000  (+1.208)
+3. Double, take        -0.693  (-0.485)
+Proper cube action: No double, take (28.7%)
+
+Rolled 66:
+*    1. Cubeful 0-ply    22/16*/10 8/2(2)             Eq.: +0.576
+       0.642 0.199 0.001 - 0.358 0.061 0.000
+     2. Cubeful 0-ply    22/16*/4 8/2                 Eq.: +0.133 (-0.442)
+       0.529 0.163 0.002 - 0.471 0.120 0.002
+
+
+Move number 8:  frutariano to play 63
+
+ GNU Backgammon  Position ID: ZhviBwCw2+BgQA
+                 Match ID   : MAGvAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: frutariano
+ | X           O  O | O | O  O             |     0 points
+ | X           O  O |   | O  O             |     Rolled 63
+ | X                |   | O                |     
+ | X                |   |                  |     
+ | 6                |   |                  |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ | O                |   |                  |     
+ | O              O |   | X  X  X     X    |     
+ | O     X        O |   | X  X  X     X    |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 158, X 122
+
+* frutariano moves bar/22 13/7
+
+Cube analysis
+3-ply cubeless equity -0.383 (Money: -0.394)
+  0.369 0.078 0.002 - 0.631 0.208 0.004
+Cubeful equities:
+1. No double           -0.603
+2. Double, pass        +1.000  (+1.603)
+3. Double, take        -1.262  (-0.659)
+Proper cube action: No double, take (29.1%)
+
+Rolled 63:
+*    1. Cubeful 2-ply    bar/22 13/7                  Eq.: -0.450
+       0.380 0.079 0.002 - 0.620 0.155 0.002
+     2. Cubeful 2-ply    bar/16                       Eq.: -0.631 (-0.180)
+       0.329 0.048 0.001 - 0.671 0.141 0.002
+     3. Cubeful 2-ply    bar/22 8/2                   Eq.: -0.636 (-0.185)
+       0.342 0.072 0.002 - 0.658 0.187 0.004
+     4. Cubeful 2-ply    bar/22 7/1                   Eq.: -0.757 (-0.306)
+       0.321 0.068 0.002 - 0.679 0.194 0.004
+
+
+Move number 9:  lasse to play 51
+
+ GNU Backgammon  Position ID: sLvBYAhmG+IHAA
+                 Match ID   : cImmAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: frutariano
+ | X           O  O |   | O  O             |     0 points
+ | X           O  O |   | O  O             |     
+ | X              O |   | O                |     
+ | X                |   |                  |     
+ | 6                |   |                  |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |                  |     
+ | O              O |   | X  X  X     X    |     Rolled 51
+ | O     X        O |   | X  X  X  O  X    |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 149, X 122
+
+* lasse moves 10/4
+
+Cube analysis
+3-ply cubeless equity +0.342 (Money: +0.350)
+  0.628 0.162 0.001 - 0.372 0.070 0.001
+Cubeful equities:
+1. No double           +0.494
+2. Double, pass        +1.000  (+0.506)
+3. Double, take        +0.439  (-0.056)
+Proper cube action: No double, take (9.9%)
+
+Rolled 51:
+*    1. Cubeful 2-ply    10/4                         Eq.: +0.469
+       0.634 0.134 0.001 - 0.366 0.065 0.000
+     2. Cubeful 2-ply    10/5 2/1                     Eq.: +0.324 (-0.145)
+       0.597 0.122 0.001 - 0.403 0.083 0.000
+     3. Cubeful 0-ply    10/5 6/5                     Eq.: +0.021 (-0.448)
+       0.509 0.113 0.001 - 0.491 0.118 0.001
+     4. Cubeful 0-ply    10/5 4/3*                    Eq.: -0.137 (-0.606)
+       0.463 0.151 0.001 - 0.537 0.171 0.003
+     5. Cubeful 0-ply    13/8 4/3*                    Eq.: -0.143 (-0.612)
+       0.467 0.159 0.002 - 0.533 0.192 0.008
+
+
+Move number 10:  frutariano to play 64
+
+ GNU Backgammon  Position ID: 5jbgBwCwu8FgCA
+                 Match ID   : MAGzAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: frutariano
+ | X           O  O |   | O  O             |     0 points
+ | X           O  O |   | O  O             |     Rolled 64
+ | X              O |   | O                |     
+ | X                |   |                  |     
+ | 6                |   |                  |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |       X          |     
+ | O              O |   | X  X  X     X    |     
+ | O              O |   | X  X  X  O  X    |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 149, X 116
+
+* frutariano moves 8/2 6/2
+
+Cube analysis
+3-ply cubeless equity -0.293 (Money: -0.298)
+  0.377 0.075 0.002 - 0.623 0.127 0.002
+Cubeful equities:
+1. No double           -0.431
+2. Double, pass        +1.000  (+1.431)
+3. Double, take        -1.077  (-0.645)
+Proper cube action: No double, take (31.1%)
+Alert: doubtful move ( -0.053)
+
+Rolled 64:
+     1. Cubeful 3-ply    22/18 8/2                    Eq.: -0.481
+       0.338 0.034 0.000 - 0.662 0.047 0.000
+     2. Cubeful 3-ply    13/9 13/7                    Eq.: -0.514 (-0.033)
+       0.366 0.071 0.001 - 0.634 0.164 0.001
+     3. Cubeful 3-ply    22/18 7/1                    Eq.: -0.529 (-0.047)
+       0.324 0.032 0.000 - 0.676 0.048 0.000
+*    4. Cubeful 3-ply    8/2 6/2                      Eq.: -0.535 (-0.053)
+       0.362 0.080 0.001 - 0.638 0.179 0.002
+     5. Cubeful 2-ply    22/16 8/4                    Eq.: -0.567 (-0.086)
+       0.337 0.045 0.001 - 0.663 0.127 0.002
+
+
+Move number 11:  lasse to play 22
+
+ GNU Backgammon  Position ID: xnbBYAjmNuAHAA
+                 Match ID   : cAmpAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: frutariano
+ | X           O  O |   | O  O        O    |     0 points
+ | X              O |   | O  O        O    |     
+ | X              O |   |                  |     
+ | X                |   |                  |     
+ | 6                |   |                  |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |       X          |     
+ | O              O |   | X  X  X     X    |     Rolled 22
+ | O              O |   | X  X  X  O  X    |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 139, X 116
+
+* lasse moves 13/9(2)
+
+Cube analysis
+3-ply cubeless equity +0.367 (Money: +0.376)
+  0.638 0.179 0.002 - 0.362 0.080 0.001
+Cubeful equities:
+1. No double           +0.535
+2. Double, pass        +1.000  (+0.465)
+3. Double, take        +0.508  (-0.027)
+Proper cube action: No double, take (5.4%)
+
+Rolled 22:
+*    1. Cubeful 3-ply    13/9(2)                      Eq.: +0.876
+       0.726 0.149 0.002 - 0.274 0.039 0.001
+     2. Cubeful 3-ply    13/11(2) 5/3*(2)             Eq.: +0.798 (-0.078)
+       0.684 0.227 0.003 - 0.316 0.064 0.002
+     3. Cubeful 2-ply    13/11(4)                     Eq.: +0.720 (-0.156)
+       0.692 0.129 0.001 - 0.308 0.042 0.000
+     4. Cubeful 2-ply    13/9 5/3*(2)                 Eq.: +0.664 (-0.212)
+       0.648 0.201 0.003 - 0.352 0.074 0.001
+     5. Cubeful 2-ply    13/11(3) 4/2                 Eq.: +0.614 (-0.262)
+       0.669 0.131 0.001 - 0.331 0.050 0.000
+
+
+Move number 12:  frutariano to play 11
+
+ GNU Backgammon  Position ID: 5jaGBwDGdsFgCA
+                 Match ID   : MIGkAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: frutariano
+ | X           O  O |   | O  O        O    |     0 points
+ | X              O |   | O  O        O    |     Rolled 11
+ | X              O |   |                  |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |       X          |     
+ | O        X     O |   | X  X  X     X    |     
+ | O        X     O |   | X  X  X  O  X    |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 139, X 108
+
+* frutariano moves 7/4 7/6
+
+Cube analysis
+3-ply cubeless equity -0.554 (Money: -0.563)
+  0.274 0.039 0.001 - 0.726 0.149 0.002
+Cubeful equities:
+1. No double           -0.876
+2. Double, pass        +1.000  (+1.876)
+3. Double, take        -1.844  (-0.968)
+Proper cube action: No double, take (34.0%)
+
+Rolled 11:
+*    1. Cubeful 3-ply    7/4 7/6                      Eq.: -1.000
+       0.290 0.070 0.002 - 0.710 0.277 0.005
+     2. Cubeful 3-ply    8/5 7/6                      Eq.: -1.000 (-0.000)
+       0.268 0.045 0.001 - 0.732 0.217 0.003
+     3. Cubeful 3-ply    7/4 5/4                      Eq.: -1.000 (-0.000)
+       0.282 0.060 0.001 - 0.718 0.284 0.004
+     4. Cubeful 3-ply    8/4                          Eq.: -1.000 (-0.000)
+       0.276 0.055 0.001 - 0.724 0.281 0.003
+     5. Cubeful 2-ply    7/3                          Eq.: -1.000 (-0.000)
+       0.279 0.064 0.002 - 0.721 0.286 0.006
+
+
+Move number 13:  lasse on roll, cube decision?
+
+ GNU Backgammon  Position ID: pl3BYAjmNoYHAA
+                 Match ID   : cAmgAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: frutariano
+ | X           O  O |   | O  O  O     O    |     0 points
+ | X                |   | O  O        O    |     
+ | X                |   | O                |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |       X          |     
+ | O        X     O |   | X  X  X     X    |     On roll
+ | O        X     O |   | X  X  X  O  X    |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 135, X 108
+
+* lasse doubles
+
+
+Cube analysis
+3-ply cubeless equity +0.613 (Money: +0.630)
+  0.710 0.277 0.005 - 0.290 0.070 0.002
+Cubeful equities:
+1. Double, pass        +1.000
+2. Double, take        +1.101  (+0.101)
+3. No double           +0.802  (-0.198)
+Proper cube action: Double, pass
+Move number 14:  lasse doubles to 2
+
+ GNU Backgammon  Position ID: pl3BYAjmNoYHAA
+                 Match ID   : cBGgAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: frutariano
+ | X           O  O |   | O  O  O     O    |     0 points
+ | X                |   | O  O        O    |     Cube offered at 2
+ | X                |   | O                |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |       X          |     
+ | O        X     O |   | X  X  X     X    |     
+ | O        X     O |   | X  X  X  O  X    |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 135, X 108
+
+* frutariano accepts
+
+Alert: wrong take (-0.101)!
+ [bad]
+Cube analysis
+3-ply cubeless equity -0.613 (Money: -0.630)
+  0.290 0.070 0.002 - 0.710 0.277 0.005
+Cubeful equities:
+1. Double, pass        -1.000
+2. Double, take        -1.101  (-0.101)
+3. No double           -0.802  (+0.198)
+Proper cube action: Double, pass
+Move number 15:  lasse to play 42
+
+ GNU Backgammon  Position ID: pl3BYAjmNoYHAA
+                 Match ID   : QQmqAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: frutariano (Cube: 2)
+ | X           O  O |   | O  O  O     O    |     0 points
+ | X                |   | O  O        O    |     
+ | X                |   | O                |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |       X          |     
+ | O        X     O |   | X  X  X     X    |     Rolled 42
+ | O        X     O |   | X  X  X  O  X    |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 135, X 108
+
+* lasse moves 9/3*
+Alert: bad move ( -0.063)
+
+Rolled 42:
+     1. Cubeful 3-ply    13/11 13/9                   Eq.: +0.459
+       0.699 0.190 0.008 - 0.301 0.052 0.001
+     2. Cubeful 3-ply    13/9 4/2                     Eq.: +0.447 (-0.012)
+       0.720 0.129 0.002 - 0.280 0.038 0.001
+*    3. Cubeful 3-ply    9/3*                         Eq.: +0.395 (-0.063)
+       0.642 0.310 0.009 - 0.358 0.126 0.004
+     4. Cubeful 0-ply    13/9 6/4                     Eq.: +0.085 (-0.373)
+       0.594 0.124 0.001 - 0.406 0.090 0.001
+     5. Cubeful 0-ply    6/4 6/2                      Eq.: +0.019 (-0.439)
+       0.585 0.089 0.000 - 0.415 0.095 0.000
+
+
+Move number 16:  frutariano to play 51
+
+ GNU Backgammon  Position ID: 1m2EBwCmXcFgQA
+                 Match ID   : AYGmAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: frutariano (Cube: 2)
+ | X           O  O | O | O  O  O     O    |     0 points
+ | X                |   | O  O        O    |     Rolled 51
+ | X                |   | O                |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |       X          |     
+ | O              O |   | X  X  X     X    |     
+ | O        X     O |   | X  X  X  X  X    |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 138, X 102
+
+* frutariano moves bar/24 7/2
+
+Cube analysis
+3-ply cubeless equity -0.529 (Money: -0.471)
+  0.358 0.126 0.004 - 0.642 0.310 0.009
+Cubeful equities:
+1. No double           -0.395
+2. Double, pass        +1.000  (+1.395)
+3. Double, take        -1.038  (-0.643)
+Proper cube action: No redouble, take (31.6%)
+Alert: bad move ( -0.077)
+
+Rolled 51:
+     1. Cubeful 3-ply    bar/24 8/3                   Eq.: -0.575
+       0.303 0.080 0.002 - 0.697 0.311 0.006
+*    2. Cubeful 3-ply    bar/24 7/2                   Eq.: -0.653 (-0.077)
+       0.272 0.060 0.001 - 0.728 0.296 0.005
+     3. Cubeful 2-ply    bar/24 13/8                  Eq.: -0.677 (-0.102)
+       0.298 0.088 0.004 - 0.702 0.385 0.013
+     4. Cubeful 2-ply    bar/24 6/1                   Eq.: -0.709 (-0.134)
+       0.269 0.070 0.002 - 0.731 0.341 0.009
+     5. Cubeful 0-ply    bar/24 18/13                 Eq.: -1.047 (-0.472)
+       0.203 0.049 0.002 - 0.797 0.458 0.016
+
+
+Move number 17:  lasse to play 54
+
+ GNU Backgammon  Position ID: TjvBYCDWbYQHAA
+                 Match ID   : QYmyAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: frutariano (Cube: 2)
+ | X           O    |   | O  O  O     O    |     0 points
+ | X                |   | O  O        O    |     
+ | X                |   | O           O    |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |       X          |     
+ | O              O |   | X  X  X     X    |     Rolled 54
+ | O        X     O |   | X  X  X  X  X  O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 132, X 102
+
+* lasse moves 13/8 9/5
+Alert: doubtful move ( -0.052)
+
+Rolled 54:
+     1. Cubeful 3-ply    13/9 13/8                    Eq.: +0.403
+       0.673 0.224 0.009 - 0.327 0.091 0.003
+*    2. Cubeful 3-ply    13/8 9/5                     Eq.: +0.351 (-0.052)
+       0.649 0.238 0.011 - 0.351 0.100 0.003
+     3. Cubeful 3-ply    13/4                         Eq.: +0.322 (-0.081)
+       0.651 0.210 0.006 - 0.349 0.095 0.003
+     4. Cubeful 0-ply    13/9 6/1*                    Eq.: -0.107 (-0.509)
+       0.520 0.199 0.003 - 0.480 0.185 0.005
+     5. Cubeful 0-ply    9/4 6/2                      Eq.: -0.184 (-0.587)
+       0.503 0.142 0.003 - 0.497 0.159 0.003
+
+
+Move number 18:  frutariano to play 62
+
+ GNU Backgammon  Position ID: 1t0EBwBOO8FgIA
+                 Match ID   : AQGrAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: frutariano (Cube: 2)
+ | X           O    |   | O  O  O     O    |     0 points
+ | X                |   | O  O        O    |     Rolled 62
+ | X                |   | O           O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |    X  X          |     
+ | O              O |   | X  X  X     X    |     
+ | O           X  O |   | X  X  X  X  X  O |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 132, X 93
+
+* frutariano moves 24/22*/16
+
+Cube analysis
+3-ply cubeless equity -0.488 (Money: -0.444)
+  0.351 0.100 0.003 - 0.649 0.238 0.011
+Cubeful equities:
+1. No double           -0.351
+2. Double, pass        +1.000  (+1.351)
+3. Double, take        -1.088  (-0.736)
+Proper cube action: No redouble, take (35.3%)
+
+Rolled 62:
+*    1. Cubeful 2-ply    24/22*/16                    Eq.: -0.287
+       0.404 0.112 0.003 - 0.596 0.298 0.013
+     2. Cubeful 2-ply    24/18 6/4                    Eq.: -0.407 (-0.120)
+       0.261 0.015 0.000 - 0.739 0.042 0.000
+     3. Cubeful 2-ply    24/18 8/6                    Eq.: -0.468 (-0.181)
+       0.244 0.018 0.000 - 0.756 0.063 0.000
+     4. Cubeful 2-ply    24/18 5/3                    Eq.: -0.488 (-0.201)
+       0.238 0.017 0.000 - 0.762 0.065 0.000
+     5. Cubeful 2-ply    24/18 4/2                    Eq.: -0.549 (-0.261)
+       0.216 0.014 0.000 - 0.784 0.069 0.000
+
+
+Move number 19:  lasse to play 42
+
+ GNU Backgammon  Position ID: TjvByADmboIDQA
+                 Match ID   : QQmqAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: frutariano (Cube: 2)
+ | X           O    |   | O  O  O     O    |     0 points
+ | X                |   | O  O        O    |     
+ | X                |   | O           O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |    X  X          |     
+ | O              O |   | X  X  X     X    |     Rolled 42
+ | O        O  X  O | X | X  X  X     X    |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 124, X 115
+
+* lasse moves bar/21* 8/6
+
+Rolled 42:
+*    1. Cubeful 2-ply    bar/21* 8/6                  Eq.: +1.058
+       0.782 0.483 0.021 - 0.218 0.040 0.001
+     2. Cubeful 2-ply    bar/21* 13/11                Eq.: +0.970 (-0.088)
+       0.748 0.501 0.028 - 0.252 0.073 0.003
+     3. Cubeful 2-ply    bar/21* 4/2                  Eq.: +0.833 (-0.225)
+       0.727 0.437 0.020 - 0.273 0.067 0.002
+     4. Cubeful 2-ply    bar/21* 5/3                  Eq.: +0.729 (-0.329)
+       0.697 0.437 0.019 - 0.303 0.100 0.004
+     5. Cubeful 0-ply    bar/21* 6/4                  Eq.: +0.023 (-1.034)
+       0.544 0.245 0.008 - 0.456 0.164 0.010
+
+
+Move number 20:  frutariano to play 31
+
+ GNU Backgammon  Position ID: 5u6AAwSOnWBkQA
+                 Match ID   : AYGlAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: frutariano (Cube: 2)
+ | X           O    | O | O  O  X     O    |     0 points
+ | X                |   | O  O        O    |     Rolled 31
+ | X                |   | O           O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X  X  X          |     
+ | O              O |   | X  X  X     X    |     
+ | O        O     O |   | X  X  X     X    |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 145, X 109
+
+* frutariano moves bar/24 8/5
+
+Cube analysis
+3-ply cubeless equity -1.194 (Money: -1.047)
+  0.223 0.042 0.001 - 0.777 0.510 0.026
+Cubeful equities:
+1. No double           -1.083
+2. Double, pass        +1.000  (+2.083)
+3. Double, take        -1.900  (-0.817)
+Proper cube action: No redouble, take (28.2%)
+Alert: bad move ( -0.074)
+
+Rolled 31:
+     1. Cubeful 3-ply    bar/24 16/13                 Eq.: -0.867
+       0.251 0.054 0.001 - 0.749 0.416 0.010
+*    2. Cubeful 3-ply    bar/24 8/5                   Eq.: -0.941 (-0.074)
+       0.238 0.052 0.001 - 0.762 0.446 0.012
+     3. Cubeful 2-ply    bar/24 6/3                   Eq.: -1.140 (-0.273)
+       0.221 0.050 0.002 - 0.779 0.551 0.037
+     4. Cubeful 2-ply    bar/22 6/5                   Eq.: -1.188 (-0.321)
+       0.213 0.054 0.002 - 0.787 0.577 0.032
+     5. Cubeful 2-ply    bar/22 16/15                 Eq.: -1.202 (-0.335)
+       0.206 0.044 0.002 - 0.794 0.567 0.031
+
+
+Move number 21:  lasse to play 61
+
+ GNU Backgammon  Position ID: jjtgZCDm7oADBA
+                 Match ID   : QQmnAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: frutariano (Cube: 2)
+ | X                |   | O  O  X     O    |     0 points
+ | X                |   | O  O        O    |     
+ | X                |   | O  O        O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X  X  X          |     
+ | O              O |   | X  X  X     X    |     Rolled 61
+ | O        O     O |   | X  X  X     X  O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 141, X 109
+
+* lasse moves 21/14
+
+Rolled 61:
+*    1. Cubeful 3-ply    21/14                        Eq.: +0.528
+       0.690 0.272 0.009 - 0.310 0.064 0.002
+     2. Cubeful 3-ply    21/15 5/4                    Eq.: +0.474 (-0.054)
+       0.666 0.282 0.012 - 0.334 0.074 0.002
+     3. Cubeful 3-ply    21/15 6/5                    Eq.: +0.466 (-0.062)
+       0.667 0.276 0.011 - 0.333 0.075 0.002
+     4. Cubeful 2-ply    21/15 4/3                    Eq.: +0.346 (-0.182)
+       0.631 0.279 0.009 - 0.369 0.109 0.003
+     5. Cubeful 2-ply    21/15 2/1*                   Eq.: +0.280 (-0.248)
+       0.608 0.300 0.010 - 0.392 0.147 0.005
+
+
+Move number 22:  frutariano to play 22
+
+ GNU Backgammon  Position ID: 5u6ACwCOO2BkIA
+                 Match ID   : AQGpAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: frutariano (Cube: 2)
+ | X  X             |   | O  O        O    |     0 points
+ | X                |   | O  O        O    |     Rolled 22
+ | X                |   | O  O        O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X  X  X          |     
+ | O              O |   | X  X  X     X    |     
+ | O        O     O |   | X  X  X     X  O |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 141, X 102
+
+* frutariano moves 18/16(2) 13/11*(2)
+
+Cube analysis
+3-ply cubeless equity -0.660 (Money: -0.595)
+  0.310 0.064 0.002 - 0.690 0.272 0.009
+Cubeful equities:
+1. No double           -0.528
+2. Double, pass        +1.000  (+1.528)
+3. Double, take        -1.345  (-0.817)
+Proper cube action: No redouble, take (34.9%)
+
+Rolled 22:
+     1. Cubeful 3-ply    13/11*/9(2)                  Eq.: -0.421
+       0.354 0.088 0.002 - 0.646 0.292 0.009
+*    2. Cubeful 3-ply    18/16(2) 13/11*(2)           Eq.: -0.446 (-0.025)
+       0.331 0.069 0.002 - 0.669 0.255 0.006
+     3. Cubeful 3-ply    24/22 16/14 13/11*(2)        Eq.: -0.488 (-0.067)
+       0.330 0.069 0.002 - 0.670 0.283 0.008
+     4. Cubeful 2-ply    24/22 18/16(2) 13/11*        Eq.: -0.569 (-0.148)
+       0.322 0.070 0.002 - 0.678 0.332 0.012
+     5. Cubeful 2-ply    24/22 18/16 13/11*(2)        Eq.: -0.602 (-0.181)
+       0.310 0.072 0.002 - 0.690 0.338 0.010
+
+
+Move number 23:  lasse to play 62
+
+ GNU Backgammon  Position ID: jjsYHCDm7oADQA
+                 Match ID   : QQmrAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: frutariano (Cube: 2)
+ | X  O             |   | O  O        O    |     0 points
+ | X  O             |   | O  O        O    |     
+ | X                |   | O  O        O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |          O       |   | X  X  X          |     
+ |          O       |   | X  X  X     X    |     Rolled 62
+ |          O       | X | X  X  X     X  O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 133, X 113
+
+* lasse cannot move
+
+Rolled 62:
+*    Cannot move
+
+
+Move number 24:  frutariano to play 64
+
+ GNU Backgammon  Position ID: 5u6AA0COOxgcIA
+                 Match ID   : AQGzAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: frutariano (Cube: 2)
+ | X  O             |   | O  O        O    |     0 points
+ | X  O             |   | O  O        O    |     Rolled 64
+ | X                |   | O  O        O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |          O       |   | X  X  X          |     
+ |          O       |   | X  X  X     X    |     
+ |          O       | X | X  X  X     X  O |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 133, X 113
+
+* frutariano moves 24/14
+
+Cube analysis
+3-ply cubeless equity -0.387 (Money: -0.347)
+  0.393 0.077 0.002 - 0.607 0.207 0.005
+Cubeful equities:
+1. No double           -0.224
+2. Double, pass        +1.000  (+1.224)
+3. Double, take        -0.863  (-0.638)
+Proper cube action: No redouble, take (34.3%)
+
+Rolled 64:
+*    1. Cubeful 2-ply    24/14                        Eq.: -0.163
+       0.401 0.055 0.001 - 0.599 0.158 0.001
+     2. Cubeful 2-ply    16/6                         Eq.: -0.287 (-0.125)
+       0.368 0.079 0.002 - 0.632 0.208 0.006
+     3. Cubeful 2-ply    24/18 11/7                   Eq.: -0.344 (-0.181)
+       0.374 0.066 0.001 - 0.626 0.255 0.008
+     4. Cubeful 2-ply    24/18 6/2                    Eq.: -0.378 (-0.215)
+       0.342 0.044 0.001 - 0.658 0.204 0.002
+     5. Cubeful 2-ply    16/10 11/7                   Eq.: -0.503 (-0.340)
+       0.346 0.094 0.002 - 0.654 0.335 0.026
+
+
+Move number 25:  lasse to play 33
+
+ GNU Backgammon  Position ID: jjsYOQDm7oADQA
+                 Match ID   : QYmtAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: frutariano (Cube: 2)
+ | X  O             |   | O  O        O    |     0 points
+ | X  O             |   | O  O        O    |     
+ | X                |   | O  O        O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |          O       |   | X  X  X          |     
+ |          O       |   | X  X  X     X    |     Rolled 33
+ |    O     O       | X | X  X  X     X    |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 123, X 113
+
+* lasse moves bar/22 13/7 6/3
+
+Rolled 33:
+*    1. Cubeful 3-ply    bar/22 13/7 6/3              Eq.: +0.217
+       0.631 0.126 0.001 - 0.369 0.042 0.001
+     2. Cubeful 3-ply    bar/22 13/7 4/1              Eq.: +0.177 (-0.040)
+       0.619 0.119 0.001 - 0.381 0.044 0.001
+     3. Cubeful 3-ply    bar/22 13/4                  Eq.: +0.167 (-0.050)
+       0.620 0.105 0.001 - 0.380 0.039 0.001
+     4. Cubeful 3-ply    bar/22 13/7 5/2              Eq.: +0.149 (-0.068)
+       0.614 0.107 0.001 - 0.386 0.044 0.001
+     5. Cubeful 2-ply    bar/22 13/10(3)              Eq.: +0.157 (-0.060)
+       0.615 0.099 0.001 - 0.385 0.027 0.001
+
+
+Move number 26:  frutariano to play 52
+
+ GNU Backgammon  Position ID: 1t0CAwiOOxg5AA
+                 Match ID   : AYGqAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: frutariano (Cube: 2)
+ | X  O             |   | O  O     X  O    |     0 points
+ | X  O             |   | O  O        O    |     Rolled 52
+ |                  |   | O  O        O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |          O       |   |    X  X          |     
+ |          O       |   | X  X  X     X    |     
+ |    O     O     X |   | X  X  X  X  X    |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 123, X 101
+
+* frutariano moves 14/9 11/9
+
+Cube analysis
+3-ply cubeless equity -0.373 (Money: -0.347)
+  0.369 0.042 0.001 - 0.631 0.126 0.001
+Cubeful equities:
+1. No double           -0.217
+2. Double, pass        +1.000  (+1.217)
+3. Double, take        -1.001  (-0.784)
+Proper cube action: No redouble, take (39.2%)
+
+Rolled 52:
+*    1. Cubeful 2-ply    14/9 11/9                    Eq.: -0.134
+       0.396 0.042 0.001 - 0.604 0.114 0.001
+     2. Cubeful 2-ply    16/14 11/6                   Eq.: -0.318 (-0.184)
+       0.340 0.037 0.001 - 0.660 0.146 0.001
+     3. Cubeful 2-ply    16/14 6/1                    Eq.: -0.319 (-0.185)
+       0.333 0.030 0.000 - 0.667 0.129 0.001
+     4. Cubeful 2-ply    14/9 5/3*                    Eq.: -0.456 (-0.322)
+       0.359 0.063 0.001 - 0.641 0.309 0.006
+     5. Cubeful 2-ply    14/7                         Eq.: -0.474 (-0.340)
+       0.309 0.043 0.001 - 0.691 0.214 0.002
+
+
+Move number 27:  lasse to play 54
+
+ GNU Backgammon  Position ID: jjsmOADW3QIDCA
+                 Match ID   : QYmyAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: frutariano (Cube: 2)
+ | X  O     O       |   | O  O     X  O    |     0 points
+ | X        O       |   | O  O        O    |     
+ |                  |   | O  O        O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |          O       |   |    X  X          |     
+ |          O       |   | X  X  X     X    |     Rolled 54
+ |          O     X |   | X  X  X  X  X    |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 116, X 101
+
+* lasse moves 22/13
+
+Rolled 54:
+*    1. Cubeful 0-ply    22/13                        Eq.: +0.432
+       0.761 0.012 0.000 - 0.239 0.004 0.000
+     2. Cubeful 0-ply    22/17 7/3                    Eq.: +0.048 (-0.384)
+       0.587 0.072 0.001 - 0.413 0.041 0.001
+     3. Cubeful 0-ply    22/17 5/1                    Eq.: -0.092 (-0.524)
+       0.536 0.086 0.002 - 0.464 0.076 0.002
+     4. Cubeful 0-ply    22/18 7/2                    Eq.: -0.094 (-0.526)
+       0.533 0.091 0.002 - 0.467 0.075 0.002
+     5. Cubeful 0-ply    7/2 5/1                      Eq.: -0.136 (-0.568)
+       0.512 0.113 0.002 - 0.488 0.089 0.003
+
+
+Move number 28:  frutariano to play 66
+
+ GNU Backgammon  Position ID: 1t0CBwCOOyY4AA
+                 Match ID   : AQG7AAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: frutariano (Cube: 2)
+ | X  O     O       |   | O  O        O    |     0 points
+ | X        O       |   | O  O        O    |     Rolled 66
+ | X                |   | O  O        O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |          O       |   |    X  X          |     
+ |          O       |   | X  X  X     X    |     
+ |          O     X |   | X  X  X  X  X    |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 116, X 92
+
+* frutariano moves 16/4 9/3(2)
+
+Cube analysis
+3-ply cubeless equity -0.550 (Money: -0.548)
+  0.229 0.003 0.000 - 0.771 0.009 0.000
+Cubeful equities:
+1. No double           -0.454
+2. Double, pass        +1.000  (+1.454)
+3. Double, take        -1.836  (-1.383)
+Proper cube action: No redouble, take (48.7%)
+
+Rolled 66:
+     1. Cubeful 3-ply    16/4 16/10(2)                Eq.: -0.011
+       0.409 0.000 0.000 - 0.591 0.000 0.000
+*    2. Cubeful 3-ply    16/4 9/3(2)                  Eq.: -0.019 (-0.009)
+       0.405 0.003 0.000 - 0.595 0.006 0.000
+     3. Cubeful 3-ply    16/4 11/5 9/3                Eq.: -0.020 (-0.009)
+       0.405 0.003 0.000 - 0.595 0.006 0.000
+     4. Cubeful 3-ply    16/10(3) 9/3                 Eq.: -0.020 (-0.009)
+       0.405 0.000 0.000 - 0.595 0.000 0.000
+     5. Cubeful 2-ply    16/10(3) 11/5                Eq.: -0.027 (-0.016)
+       0.404 0.000 0.000 - 0.596 0.000 0.000
+
+
+Move number 29:  lasse to play 33
+
+ GNU Backgammon  Position ID: bt1BMADW3QIHAA
+                 Match ID   : QYmtAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: frutariano (Cube: 2)
+ | X  O             |   | O  O  O  O  O    |     0 points
+ | X                |   | O  O     O  O    |     
+ | X                |   | O  O        O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |    X  X          |     
+ |          O       |   | X  X  X     X    |     Rolled 33
+ |          O     X |   | X  X  X  X  X    |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 92, X 92
+
+* lasse moves 13/7 13/10(2)
+
+Rolled 33:
+*    1. Cubeful 3-ply    13/7 13/10(2)                Eq.: +0.234
+       0.682 0.000 0.000 - 0.318 0.000 0.000
+     2. Cubeful 3-ply    13/10(3) 7/4                 Eq.: +0.230 (-0.003)
+       0.680 0.000 0.000 - 0.320 0.000 0.000
+     3. Cubeful 3-ply    13/10(3) 4/1                 Eq.: +0.224 (-0.009)
+       0.678 0.001 0.000 - 0.322 0.000 0.000
+     4. Cubeful 3-ply    13/10(3) 6/3                 Eq.: +0.221 (-0.013)
+       0.676 0.001 0.000 - 0.324 0.000 0.000
+     5. Cubeful 2-ply    13/10(3) 5/2                 Eq.: +0.226 (-0.008)
+       0.679 0.003 0.000 - 0.321 0.001 0.000
+
+
+Move number 30:  frutariano to play 52
+
+ GNU Backgammon  Position ID: 1t3GAABu3UEwAA
+                 Match ID   : AYGqAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: frutariano (Cube: 2)
+ |    O             |   | O  O  O  O  O    |     0 points
+ |                  |   | O  O     O  O    |     Rolled 52
+ |                  |   | O  O        O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |    X  X          |     
+ |       X  O     X |   | X  X  X     X    |     
+ |       X  O     X |   | X  X  X  X  X    |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 92, X 80
+
+* frutariano moves 16/14 16/11
+
+Cube analysis
+3-ply cubeless equity -0.364 (Money: -0.364)
+  0.318 0.000 0.000 - 0.682 0.000 0.000
+Cubeful equities:
+1. No double           -0.234
+2. Double, pass        +1.000  (+1.234)
+3. Double, take        -1.285  (-1.051)
+Proper cube action: No redouble, take (46.0%)
+
+Rolled 52:
+     1. Cubeful 3-ply    11/4                         Eq.: -0.293
+       0.293 0.001 0.000 - 0.707 0.002 0.000
+*    2. Cubeful 3-ply    16/14 16/11                  Eq.: -0.308 (-0.016)
+       0.287 0.000 0.000 - 0.713 0.000 0.000
+     3. Cubeful 3-ply    11/6 3/1                     Eq.: -0.324 (-0.031)
+       0.281 0.001 0.000 - 0.719 0.002 0.000
+     4. Cubeful 3-ply    11/9 6/1                     Eq.: -0.326 (-0.033)
+       0.280 0.000 0.000 - 0.720 0.001 0.000
+     5. Cubeful 2-ply    11/6 5/3                     Eq.: -0.331 (-0.039)
+       0.278 0.000 0.000 - 0.722 0.002 0.000
+
+
+Move number 31:  lasse to play 63
+
+ GNU Backgammon  Position ID: bt3BCADW3cYAAA
+                 Match ID   : QQmvAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: frutariano (Cube: 2)
+ |    O             |   | O  O  O  O  O    |     0 points
+ |    O             |   | O  O     O  O    |     
+ |                  |   | O  O        O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |    X  X          |     
+ |       X        X |   | X  X  X     X    |     Rolled 63
+ |    O  X        X |   | X  X  X  X  X    |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 85, X 80
+
+* lasse moves 10/4 7/4
+
+Rolled 63:
+*    1. Cubeful 3-ply    10/4 7/4                     Eq.: +0.353
+       0.729 0.000 0.000 - 0.271 0.000 0.000
+     2. Cubeful 3-ply    7/4 7/1                      Eq.: +0.350 (-0.003)
+       0.729 0.000 0.000 - 0.271 0.000 0.000
+     3. Cubeful 3-ply    10/1                         Eq.: +0.347 (-0.006)
+       0.727 0.000 0.000 - 0.273 0.000 0.000
+     4. Cubeful 3-ply    10/7 10/4                    Eq.: +0.339 (-0.014)
+       0.724 0.000 0.000 - 0.276 0.000 0.000
+     5. Cubeful 2-ply    7/1 6/3                      Eq.: +0.331 (-0.022)
+       0.722 0.000 0.000 - 0.278 0.000 0.000
+
+
+Move number 32:  frutariano to play 52
+
+ GNU Backgammon  Position ID: 1neLAABu3cEIAA
+                 Match ID   : AYGqAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: frutariano (Cube: 2)
+ |    O             |   | O  O  O  O  O    |     0 points
+ |    O             |   | O  O     O  O    |     Rolled 52
+ |                  |   | O  O        O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |       X          |    
+ |                  |   |       X          |     
+ |                  |   |    X  X          |     
+ |                  |   | X  X  X     X    |     
+ |    O  X        X |   | X  X  X  X  X    |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 85, X 71
+
+* frutariano moves 14/12 11/6
+
+Cube analysis
+3-ply cubeless equity -0.459 (Money: -0.459)
+  0.271 0.000 0.000 - 0.729 0.000 0.000
+Cubeful equities:
+1. No double           -0.353
+2. Double, pass        +1.000  (+1.353)
+3. Double, take        -1.583  (-1.230)
+Proper cube action: No redouble, take (47.6%)
+
+Rolled 52:
+     1. Cubeful 3-ply    11/4                         Eq.: -0.415
+       0.244 0.000 0.000 - 0.756 0.000 0.000
+     2. Cubeful 3-ply    11/9 11/6                    Eq.: -0.419 (-0.004)
+       0.242 0.000 0.000 - 0.758 0.000 0.000
+*    3. Cubeful 3-ply    14/12 11/6                   Eq.: -0.421 (-0.006)
+       0.241 0.000 0.000 - 0.759 0.000 0.000
+     4. Cubeful 3-ply    14/9 11/9                    Eq.: -0.424 (-0.009)
+       0.240 0.000 0.000 - 0.760 0.000 0.000
+     5. Cubeful 2-ply    14/9 6/4                     Eq.: -0.427 (-0.012)
+       0.239 0.000 0.000 - 0.761 0.000 0.000
+
+
+Move number 33:  lasse to play 61
+
+ GNU Backgammon  Position ID: bt2DAgDWd4sAAA
+                 Match ID   : QQmnAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: frutariano (Cube: 2)
+ | O  O             |   | O  O  O  O  O    |     0 points
+ |                  |   | O  O     O  O    |     
+ |                  |   | O  O        O    |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |       X          |    
+ |                  |   |       X          |     
+ |                  |   |    X  X          |     
+ |                  |   | X  X  X     X    |     Rolled 61
+ |       X        X |   | X  X  X  X  X    |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 78, X 71
+
+* lasse moves 10/4 7/6
+
+Rolled 61:
+*    1. Cubeful 3-ply    10/4 7/6                     Eq.: +0.387
+       0.743 0.000 0.000 - 0.257 0.000 0.000
+     2. Cubeful 3-ply    7/1 4/3                      Eq.: +0.380 (-0.007)
+       0.740 0.000 0.000 - 0.260 0.000 0.000
+     3. Cubeful 3-ply    10/3                         Eq.: +0.377 (-0.011)
+       0.739 0.000 0.000 - 0.261 0.000 0.000
+     4. Cubeful 3-ply    10/9 7/1                     Eq.: +0.373 (-0.014)
+       0.737 0.000 0.000 - 0.263 0.000 0.000
+     5. Cubeful 2-ply    10/4 2/1                     Eq.: +0.348 (-0.039)
+       0.729 0.000 0.000 - 0.271 0.000 0.000
+
+
+Move number 34:  frutariano to play 53
+
+ GNU Backgammon  Position ID: 1u8OAABu3YMCAA
+                 Match ID   : AYGuAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: frutariano (Cube: 2)
+ | O  O             |   | O  O  O  O  O    |     0 points
+ |                  |   | O  O     O  O    |     Rolled 53
+ |                  |   | O  O        O    |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |       6          |    
+ |                  |   |       X          |     
+ |                  |   | X  X  X          |     
+ |                  |   | X  X  X     X    |     
+ |                  |   | X  X  X  X  X    |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 78, X 64
+
+* frutariano moves 12/9 11/6
+
+Cube analysis
+3-ply cubeless equity -0.486 (Money: -0.486)
+  0.257 0.000 0.000 - 0.743 0.000 0.000
+Cubeful equities:
+1. No double           -0.387
+2. Double, pass        +1.000  (+1.387)
+3. Double, take        -1.671  (-1.284)
+Proper cube action: No redouble, take (48.1%)
+
+Rolled 53:
+     1. Cubeful 3-ply    12/4                         Eq.: -0.403
+       0.250 0.000 0.000 - 0.750 0.000 0.000
+*    2. Cubeful 3-ply    12/9 11/6                    Eq.: -0.413 (-0.009)
+       0.246 0.000 0.000 - 0.754 0.000 0.000
+     3. Cubeful 3-ply    12/7 11/8                    Eq.: -0.443 (-0.040)
+       0.233 0.000 0.000 - 0.767 0.000 0.000
+     4. Cubeful 3-ply    11/3                         Eq.: -0.451 (-0.048)
+       0.230 0.000 0.000 - 0.770 0.000 0.000
+     5. Cubeful 2-ply    12/9 6/1                     Eq.: -0.462 (-0.059)
+       0.226 0.000 0.000 - 0.774 0.000 0.000
+
+
+Move number 35:  lasse to play 63
+
+ GNU Backgammon  Position ID: bt1HAADW7w4AAA
+                 Match ID   : QQmvAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: frutariano (Cube: 2)
+ |          O       |   | O  O  O  O  O    |     0 points
+ |                  |   | O  O     O  O    |     
+ |                  |   | O  O        O    |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |       6          |    
+ |                  |   |       X          |     
+ |                  |   | X  X  X          |     
+ |                  |   | X  X  X     X    |     Rolled 63
+ |                  |   | X  X  X  X  X    |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 70, X 64
+
+* lasse moves 6/off 3/off
+
+Rolled 63:
+*    1. Cubeful 3-ply    6/off 3/off                  Eq.: +0.455
+       0.771 0.000 0.000 - 0.229 0.000 0.000
+     2. Cubeful 3-ply    6/off 4/1                    Eq.: +0.453 (-0.002)
+       0.770 0.000 0.000 - 0.230 0.000 0.000
+     3. Cubeful 3-ply    6/off 5/2                    Eq.: +0.406 (-0.048)
+       0.751 0.000 0.000 - 0.249 0.000 0.000
+     4. Cubeful 3-ply    6/3 6/off                    Eq.: +0.403 (-0.052)
+       0.749 0.000 0.000 - 0.251 0.000 0.000
+
+
+Move number 36:  frutariano to play 11
+
+ GNU Backgammon  Position ID: 5ncDAIBb9xEAAA
+                 Match ID   : AYGkAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: frutariano (Cube: 2)
+ |          O       |   | O  O  O  O  O    |     0 points
+ |                  |   | O  O     O  O    |     Rolled 11
+ |                  |   | O  O        O    |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |       6          |    
+ |                  |   |       X          |     
+ |                  |   |    X  X          |     
+ |                  |   | X  X  X     X    | X   
+ |                  |   | X  X  X     X    | X   0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 70, X 55
+
+* frutariano moves 9/5
+
+Cube analysis
+3-ply cubeless equity -0.542 (Money: -0.542)
+  0.229 0.000 0.000 - 0.771 0.000 0.000
+Cubeful equities:
+1. No double           -0.455
+2. Double, pass        +1.000  (+1.455)
+3. Double, take        -1.839  (-1.384)
+Proper cube action: No redouble, take (48.8%)
+
+Rolled 11:
+     1. Cubeful 3-ply    6/4 6/5 2/1                  Eq.: -0.640
+       0.152 0.000 0.000 - 0.848 0.000 0.000
+     2. Cubeful 3-ply    9/8 6/4 2/1                  Eq.: -0.643 (-0.004)
+       0.150 0.000 0.000 - 0.850 0.000 0.000
+     3. Cubeful 3-ply    6/4 5/4 2/1                  Eq.: -0.650 (-0.010)
+       0.147 0.000 0.000 - 0.853 0.000 0.000
+     4. Cubeful 3-ply    9/6 2/1                      Eq.: -0.656 (-0.016)
+       0.145 0.000 0.000 - 0.855 0.000 0.000
+*    5. Cubeful 3-ply    9/5                          Eq.: -0.658 (-0.018)
+       0.144 0.000 0.000 - 0.856 0.000 0.000
+
+
+Move number 37:  lasse to play 63
+
+ GNU Backgammon  Position ID: br0PAADmdwMAAA
+                 Match ID   : QQmvAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: frutariano (Cube: 2)
+ |                  |   | O  O  O  O  O    |     0 points
+ |                  |   | O  O     O  O    |     
+ |                  |   | O  O        O    |     
+ |                  |   | O  O             |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |       6          |    
+ |                  |   |       X          |     
+ |                  |   |    X  X          |     
+ |                  |   | X  X  X     X    | X   Rolled 63
+ |                  |   | X  X  X     X    | X   0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 66, X 55
+
+* lasse moves 6/off 4/1
+
+Rolled 63:
+*    1. Cubeful 3-ply    6/off 4/1                    Eq.: +0.670
+       0.861 0.000 0.000 - 0.139 0.000 0.000
+     2. Cubeful 3-ply    6/off 5/2                    Eq.: +0.645 (-0.025)
+       0.850 0.000 0.000 - 0.150 0.000 0.000
+     3. Cubeful 3-ply    6/3 6/off                    Eq.: +0.643 (-0.028)
+       0.849 0.000 0.000 - 0.151 0.000 0.000
+
+
+Move number 38:  frutariano to play 63
+
+ GNU Backgammon  Position ID: zXcBAMCt9wEAAA
+                 Match ID   : AQGvAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: frutariano (Cube: 2)
+ |                  |   | O  O  O  O  O    |     0 points
+ |                  |   | O  O     O  O    |     Rolled 63
+ |                  |   | O  O        O    |     
+ |                  |   | O  O             |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |       X          |    
+ |                  |   |       X          |     
+ |                  |   |    X  X          | X   
+ |                  |   |    X  X     X    | X   
+ |                  |   | X  X  X     X  X | X   0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 66, X 46
+
+* frutariano moves 6/off 3/off
+
+Cube analysis
+3-ply cubeless equity -0.722 (Money: -0.722)
+  0.139 0.000 0.000 - 0.861 0.000 0.000
+Cubeful equities:
+1. No double           -0.670
+2. Double, pass        +1.000  (+1.670)
+3. Double, take        -2.201  (-1.531)
+Proper cube action: No redouble, take (47.8%)
+
+Rolled 63:
+*    1. Cubeful 3-ply    6/off 3/off                  Eq.: -0.657
+       0.144 0.000 0.000 - 0.856 0.000 0.000
+     2. Cubeful 3-ply    6/3 6/off                    Eq.: -0.704 (-0.047)
+       0.125 0.000 0.000 - 0.875 0.000 0.000
+     3. Cubeful 3-ply    6/off 5/2                    Eq.: -0.728 (-0.072)
+       0.114 0.000 0.000 - 0.886 0.000 0.000
+     4. Cubeful 2-ply    6/off 4/1                    Eq.: -0.740 (-0.084)
+       0.109 0.000 0.000 - 0.891 0.000 0.000
+
+
+Move number 39:  lasse to play 51
+
+ GNU Backgammon  Position ID: rt4DAEDzXQAAAA
+                 Match ID   : QYmmAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: frutariano (Cube: 2)
+ |                  |   | O  O  O  O  O    | O   0 points
+ |                  |   | O  O        O    | O   
+ |                  |   | O  O        O    |     
+ |                  |   | O  O             |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |       X          |    
+ |                  |   |       X          |     
+ |                  |   |    X  X          | X   
+ |                  |   |    X  X     X    | X   Rolled 51
+ |                  |   | X  X  X     X  X | X   0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 57, X 46
+
+* lasse moves 5/off 1/off
+
+Rolled 51:
+*    1. Cubeful 3-ply    5/off 1/off                  Eq.: +0.621
+       0.841 0.000 0.000 - 0.159 0.000 0.000
+     2. Cubeful 3-ply    5/off 4/3                    Eq.: +0.619 (-0.003)
+       0.840 0.000 0.000 - 0.160 0.000 0.000
+     3. Cubeful 2-ply    5/off 2/1                    Eq.: +0.536 (-0.085)
+       0.806 0.000 0.000 - 0.194 0.000 0.000
+     4. Cubeful 2-ply    5/4 5/off                    Eq.: +0.519 (-0.103)
+       0.798 0.000 0.000 - 0.202 0.000 0.000
+     5. Cubeful 2-ply    6/off                        Eq.: +0.512 (-0.110)
+       0.795 0.000 0.000 - 0.205 0.000 0.000
+
+
+Move number 40:  frutariano to play 42
+
+ GNU Backgammon  Position ID: 5lsAAHD1HgAAAA
+                 Match ID   : AQGqAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: frutariano (Cube: 2)
+ |                  |   | O  O  O  O  O    | O   0 points
+ |                  |   | O  O        O    | O   Rolled 42
+ |                  |   | O  O        O    |     
+ |                  |   | O  O             |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |       X          | X  
+ |                  |   |       X          | X   
+ |                  |   |       X          | X   
+ |                  |   |    X  X     X    | X   
+ |                  |   | X  X  X     X    | X   0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 57, X 40
+
+* frutariano moves 4/off 2/off
+
+Cube analysis
+3-ply cubeless equity -0.681 (Money: -0.681)
+  0.159 0.000 0.000 - 0.841 0.000 0.000
+Cubeful equities:
+1. No double           -0.621
+2. Double, pass        +1.000  (+1.621)
+3. Double, take        -2.151  (-1.529)
+Proper cube action: No redouble, take (48.5%)
+
+Rolled 42:
+*    1. Cubeful 3-ply    4/off 2/off                  Eq.: -0.710
+       0.122 0.000 0.000 - 0.878 0.000 0.000
+     2. Cubeful 3-ply    5/1 2/off                    Eq.: -0.726 (-0.016)
+       0.115 0.000 0.000 - 0.885 0.000 0.000
+     3. Cubeful 3-ply    6/off                        Eq.: -0.738 (-0.028)
+       0.110 0.000 0.000 - 0.890 0.000 0.000
+     4. Cubeful 3-ply    6/4 5/1                      Eq.: -0.772 (-0.062)
+       0.096 0.000 0.000 - 0.904 0.000 0.000
+     5. Cubeful 2-ply    5/3 4/off                    Eq.: -0.777 (-0.067)
+       0.094 0.000 0.000 - 0.906 0.000 0.000
+
+
+Move number 41:  lasse to play 63
+
+ GNU Backgammon  Position ID: lvcAAGC+BQAAAA
+                 Match ID   : QQmvAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: frutariano (Cube: 2)
+ |                  |   | O  O     O  O    | O   0 points
+ |                  |   | O  O        O    | O   
+ |                  |   | O  O             | O   
+ |                  |   | O  O             | O   
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |       X          | X  
+ |                  |   |       X          | X   
+ |                  |   |       X          | X   
+ |                  |   |    X  X     X    | X   Rolled 63
+ |                  |   | X  X  X     X    | X   0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 51, X 40
+
+* lasse moves 6/off 4/1
+
+Rolled 63:
+*    1. Cubeful 3-ply    6/off 4/1                    Eq.: +0.709
+       0.877 0.000 0.000 - 0.123 0.000 0.000
+     2. Cubeful 3-ply    6/3 5/off                    Eq.: +0.676 (-0.033)
+       0.864 0.000 0.000 - 0.136 0.000 0.000
+     3. Cubeful 3-ply    6/off 5/2                    Eq.: +0.670 (-0.039)
+       0.861 0.000 0.000 - 0.139 0.000 0.000
+
+
+Move number 42:  frutariano to play 65
+
+ GNU Backgammon  Position ID: zRsAAFjeAwAAAA
+                 Match ID   : AQG3AAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: frutariano (Cube: 2)
+ |                  |   | O  O     O  O    | O   0 points
+ |                  |   | O  O        O    | O   Rolled 65
+ |                  |   | O  O             | O   
+ |                  |   | O  O             | O   
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  | X  
+ |                  |   |       X          | X   
+ |                  |   |       X          | X   
+ |                  |   |    X  X     X    | X   
+ |                  |   |    X  X     X  X | XX  0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 51, X 31
+
+* frutariano moves 6/off 5/off
+
+Cube analysis
+3-ply cubeless equity -0.755 (Money: -0.755)
+  0.123 0.000 0.000 - 0.877 0.000 0.000
+Cubeful equities:
+1. No double           -0.709
+2. Double, pass        +1.000  (+1.709)
+3. Double, take        -2.199  (-1.490)
+Proper cube action: No redouble, take (46.6%)
+
+Rolled 65:
+*    1. Cubeful 3-ply    6/off 5/off                  Eq.: -0.623
+       0.158 0.000 0.000 - 0.842 0.000 0.000
+     2. Cubeful 3-ply    6/1 6/off                    Eq.: -0.694 (-0.071)
+       0.128 0.000 0.000 - 0.872 0.000 0.000
+
+
+Move number 43:  lasse to play 21
+
+ GNU Backgammon  Position ID: ljsAADRvAAAAAA
+                 Match ID   : QQmlAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: frutariano (Cube: 2)
+ |                  |   | O  O     O  O    | OO  0 points
+ |                  |   | O  O        O    | O   
+ |                  |   | O  O             | O   
+ |                  |   |                  | O   
+ |                  |   |                  | O  
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  | X  
+ |                  |   |       X          | X   
+ |                  |   |       X          | X   
+ |                  |   |    X  X     X    | X   Rolled 21
+ |                  |   |    X  X     X  X | XX  0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 40, X 31
+
+* lasse moves 2/off 1/off
+
+Rolled 21:
+*    1. Cubeful 3-ply    2/off 1/off                  Eq.: +0.475
+       0.770 0.000 0.000 - 0.230 0.000 0.000
+     2. Cubeful 3-ply    4/3 2/off                    Eq.: +0.465 (-0.010)
+       0.765 0.000 0.000 - 0.235 0.000 0.000
+     3. Cubeful 3-ply    5/3 1/off                    Eq.: +0.395 (-0.080)
+       0.737 0.000 0.000 - 0.263 0.000 0.000
+     4. Cubeful 2-ply    4/2 1/off                    Eq.: +0.342 (-0.133)
+       0.722 0.000 0.000 - 0.278 0.000 0.000
+     5. Cubeful 2-ply    5/3 4/3                      Eq.: +0.332 (-0.143)
+       0.718 0.000 0.000 - 0.282 0.000 0.000
+
+
+Move number 44:  frutariano to play 53
+
+ GNU Backgammon  Position ID: 8gYAAJY7AAAAAA
+                 Match ID   : AYGuAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: frutariano (Cube: 2)
+ |                  |   | O  O     O  O    | OO  0 points
+ |                  |   | O  O        O    | O   Rolled 53
+ |                  |   | O  O             | O   
+ |                  |   |                  | O   
+ |                  |   |                  | O  
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  | X  
+ |                  |   |       X          | X   
+ |                  |   |       X          | XX  
+ |                  |   |    X  X          | XX  
+ |                  |   |    X  X     X    | XX  0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 40, X 28
+
+* frutariano moves 5/off 3/off
+
+Cube analysis
+3-ply cubeless equity -0.539 (Money: -0.539)
+  0.230 0.000 0.000 - 0.770 0.000 0.000
+Cubeful equities:
+1. No double           -0.475
+2. Double, pass        +1.000  (+1.475)
+3. Double, take        -1.829  (-1.354)
+Proper cube action: No redouble, take (47.9%)
+
+Rolled 53:
+*    1. Cubeful 3-ply    5/off 3/off                  Eq.: -0.516
+       0.217 0.000 0.000 - 0.783 0.000 0.000
+     2. Cubeful 3-ply    6/3 5/off                    Eq.: -0.547 (-0.031)
+       0.196 0.000 0.000 - 0.804 0.000 0.000
+     3. Cubeful 2-ply    6/1 3/off                    Eq.: -0.598 (-0.082)
+       0.177 0.000 0.000 - 0.823 0.000 0.000
+     4. Cubeful 2-ply    5/2 5/off                    Eq.: -0.630 (-0.114)
+       0.161 0.000 0.000 - 0.839 0.000 0.000
+     5. Cubeful 2-ply    6/3 6/1                      Eq.: -0.639 (-0.123)
+       0.153 0.000 0.000 - 0.847 0.000 0.000
+
+
+Move number 45:  lasse to play 43
+
+ GNU Backgammon  Position ID: xg4AAPIGAAAAAA
+                 Match ID   : QQmuAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: frutariano (Cube: 2)
+ |                  |   | O  O        O    | OO  0 points
+ |                  |   | O  O        O    | OO  
+ |                  |   | O                | OO  
+ |                  |   |                  | O   
+ |                  |   |                  | O  
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  | X  
+ |                  |   |       X          | X   
+ |                  |   |       X          | XX  
+ |                  |   |    X  X          | XX  Rolled 43
+ |                  |   |    X  X     X    | XX  0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 32, X 28
+
+* lasse moves 4/1 4/off
+
+Rolled 43:
+*    1. Cubeful 3-ply    4/1 4/off                    Eq.: +0.505
+       0.774 0.000 0.000 - 0.226 0.000 0.000
+     2. Cubeful 3-ply    5/2 4/off                    Eq.: +0.468 (-0.038)
+       0.757 0.000 0.000 - 0.243 0.000 0.000
+     3. Cubeful 2-ply    5/1 4/1                      Eq.: +0.270 (-0.235)
+       0.677 0.000 0.000 - 0.323 0.000 0.000
+     4. Cubeful 2-ply    5/2 5/1                      Eq.: +0.255 (-0.250)
+       0.670 0.000 0.000 - 0.330 0.000 0.000
+
+
+Move number 46:  frutariano to play 62
+
+ GNU Backgammon  Position ID: ZQMAAGMHAAAAAA
+                 Match ID   : AQGrAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: frutariano (Cube: 2)
+ |                  |   | O  O        O    | OO  0 points
+ |                  |   | O  O        O    | OO  Rolled 62
+ |                  |   | O                | OO  
+ |                  |   |                  | O   
+ |                  |   |                  | O  
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  | X  
+ |                  |   |                  | XX  
+ |                  |   |                  | XX  
+ |                  |   |    X  X          | XX  
+ |                  |   |    X  X     X  X | XX  0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 32, X 21
+
+* frutariano moves 6/off 2/off
+
+Cube analysis
+3-ply cubeless equity -0.549 (Money: -0.549)
+  0.226 0.000 0.000 - 0.774 0.000 0.000
+Cubeful equities:
+1. No double           -0.505
+2. Double, pass        +1.000  (+1.505)
+3. Double, take        -1.827  (-1.321)
+Proper cube action: No redouble, take (46.7%)
+
+Rolled 62:
+*    1. Cubeful 2-ply    6/off 2/off                  Eq.: -0.470
+       0.246 0.000 0.000 - 0.754 0.000 0.000
+     2. Cubeful 2-ply    6/4 6/off                    Eq.: -0.566 (-0.096)
+       0.202 0.000 0.000 - 0.798 0.000 0.000
+     3. Cubeful 2-ply    6/off 5/3                    Eq.: -0.575 (-0.105)
+       0.195 0.000 0.000 - 0.805 0.000 0.000
+
+
+Move number 47:  lasse to play 61
+
+ GNU Backgammon  Position ID: YgMAQNkAAAAAAA
+                 Match ID   : QQmnAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: frutariano (Cube: 2)
+ |                  |   | O  O        O    | OO  0 points
+ |                  |   | O  O             | OO  
+ |                  |   |                  | OO  
+ |                  |   |                  | OO  
+ |                  |   |                  | OO 
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  | X  
+ |                  |   |                  | XX  
+ |                  |   |                  | XX  
+ |                  |   |    X  X          | XX  Rolled 61
+ |                  |   |    X  X     X  X | XX  0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 24, X 21
+
+* lasse moves 5/off 1/off
+
+Rolled 61:
+*    1. Cubeful 3-ply    5/off 1/off                  Eq.: +0.445
+       0.738 0.000 0.000 - 0.262 0.000 0.000
+     2. Cubeful 3-ply    5/off 4/3                    Eq.: +0.369 (-0.077)
+       0.701 0.000 0.000 - 0.299 0.000 0.000
+     3. Cubeful 2-ply    5/4 5/off                    Eq.: +0.249 (-0.197)
+       0.656 0.000 0.000 - 0.344 0.000 0.000
+     4. Cubeful 2-ply    5/off 2/1                    Eq.: +0.232 (-0.213)
+       0.651 0.000 0.000 - 0.349 0.000 0.000
+
+
+Move number 48:  frutariano to play 64
+
+ GNU Backgammon  Position ID: sgAAQGwAAAAAAA
+                 Match ID   : AQGzAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: frutariano (Cube: 2)
+ |                  |   | O  O        O    | OO  0 points
+ |                  |   | O  O             | OO  Rolled 64
+ |                  |   |                  | OO  
+ |                  |   |                  | OO  
+ |                  |   |                  | OO 
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  | XX 
+ |                  |   |                  | XX  
+ |                  |   |                  | XX  
+ |                  |   |       X          | XX  
+ |                  |   |    X  X     X    | XXX 0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 24, X 15
+
+* frutariano moves 6/off 5/1
+
+Cube analysis
+3-ply cubeless equity -0.476 (Money: -0.476)
+  0.262 0.000 0.000 - 0.738 0.000 0.000
+Cubeful equities:
+1. No double           -0.445
+2. Double, pass        +1.000  (+1.445)
+3. Double, take        -1.615  (-1.169)
+Proper cube action: No redouble, take (44.7%)
+
+Rolled 64:
+*    1. Cubeful 3-ply    6/off 5/1                    Eq.: -0.387
+       0.291 0.000 0.000 - 0.709 0.000 0.000
+     2. Cubeful 3-ply    6/2 6/off                    Eq.: -0.441 (-0.054)
+       0.254 0.000 0.000 - 0.746 0.000 0.000
+
+
+Move number 49:  lasse to play 52
+
+ GNU Backgammon  Position ID: RQEAQBYAAAAAAA
+                 Match ID   : QYmqAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: frutariano (Cube: 2)
+ |                  |   | O  O        O  O | OOO 0 points
+ |                  |   |                  | OO  
+ |                  |   |                  | OO  
+ |                  |   |                  | OO  
+ |                  |   |                  | OO 
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  | XX 
+ |                  |   |                  | XX  
+ |                  |   |                  | XX  
+ |                  |   |       X          | XX  Rolled 52
+ |                  |   |    X  X     X    | XXX 0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 14, X 15
+
+* lasse moves 5/off 2/off
+
+Rolled 52:
+*    1. Cubeful 2-ply    5/off 2/off                  Eq.: +0.422
+       0.723 0.000 0.000 - 0.277 0.000 0.000
+     2. Cubeful 2-ply    5/off 4/2                    Eq.: +0.285 (-0.137)
+       0.659 0.000 0.000 - 0.341 0.000 0.000
+     3. Cubeful 2-ply    5/3 4/off                    Eq.: +0.239 (-0.184)
+       0.636 0.000 0.000 - 0.364 0.000 0.000
+
+
+Move number 50:  frutariano to play 43
+
+ GNU Backgammon  Position ID: GAAAKAoAAAAAAA
+                 Match ID   : AQGuAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: frutariano (Cube: 2)
+ |                  |   | O  O        O  O | OOO 0 points
+ |                  |   |                  | OO  Rolled 43
+ |                  |   |                  | OO  
+ |                  |   |                  | OO  
+ |                  |   |                  | OO 
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  | XX 
+ |                  |   |                  | XX  
+ |                  |   |                  | XXX 
+ |                  |   |       X          | XXX 
+ |                  |   |       X          | XXX 0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 14, X 8
+
+* frutariano moves 6/2 5/2
+
+Cube analysis
+3-ply cubeless equity -0.447 (Money: -0.447)
+  0.277 0.000 0.000 - 0.723 0.000 0.000
+Cubeful equities:
+1. No double           -0.424
+2. Double, pass        +1.000  (+1.424)
+3. Double, take        -1.399  (-0.975)
+Proper cube action: No redouble, take (40.7%)
+
+Rolled 43:
+*    1. Cubeful 3-ply    6/2 5/2                      Eq.: -0.781
+       0.109 0.000 0.000 - 0.891 0.000 0.000
+     2. Cubeful 3-ply    6/3 5/1                      Eq.: -0.818 (-0.038)
+       0.091 0.000 0.000 - 0.909 0.000 0.000
+
+
+Move number 51:  lasse to play 63
+
+ GNU Backgammon  Position ID: HQAAAAMAAAAAAA
+                 Match ID   : QQmvAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: frutariano (Cube: 2)
+ |                  |   |             O  O | OOO 0 points
+ |                  |   |             O    | OO  
+ |                  |   |             O    | OO  
+ |                  |   |                  | OO  
+ |                  |   |                  | OO 
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  | XX 
+ |                  |   |                  | XX  
+ |                  |   |                  | XXX 
+ |                  |   |       X          | XXX Rolled 63
+ |                  |   |       X          | XXX 0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 7, X 8
+
+* lasse moves 4/1 4/off
+
+Rolled 63:
+*    1. Cubeful 0-ply    4/1 4/off                    Eq.: +0.722
+       0.861 0.000 0.000 - 0.139 0.000 0.000
+
+
+Move number 52:  frutariano to play 64
+
+ GNU Backgammon  Position ID: AQAAdAAAAAAAAA
+                 Match ID   : AQGzAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: frutariano (Cube: 2)
+ |                  |   |             O  O | OOO 0 points
+ |                  |   |             O    | OO  Rolled 64
+ |                  |   |             O    | OO  
+ |                  |   |                  | OO  
+ |                  |   |                  | OO 
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  | XX 
+ |                  |   |                  | XXX 
+ |                  |   |                  | XXX 
+ |                  |   |                  | XXX 
+ |                  |   |                X | XXX 0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 7, X 1
+
+* frutariano moves 2/off(2)
+
+Cube analysis
+3-ply cubeless equity -0.722 (Money: -0.722)
+  0.139 0.000 0.000 - 0.861 0.000 0.000
+Cubeful equities:
+1. No double           -0.722
+2. Double, pass        +1.000  (+1.722)
+3. Double, take        -1.668  (-0.946)
+Proper cube action: No redouble, take (35.5%)
+
+Rolled 64:
+*    1. Cubeful 0-ply    2/off(2)                     Eq.: -1.000
+       0.000 0.000 0.000 - 1.000 0.000 0.000
+
+
+Move number 53:  lasse to play 11
+
+ GNU Backgammon  Position ID: BQAACAAAAAAAAA
+                 Match ID   : QYmkAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: frutariano (Cube: 2)
+ |                  |   |             O  O | OOO 0 points
+ |                  |   |                  | OOO 
+ |                  |   |                  | OOO 
+ |                  |   |                  | OO  
+ |                  |   |                  | OO 
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  | XX 
+ |                  |   |                  | XXX 
+ |                  |   |                  | XXX 
+ |                  |   |                  | XXX Rolled 11
+ |                  |   |                X | XXX 0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 3, X 1
+
+* lasse moves 1/off
+
+Rolled 11:
+*    1. Cubeful 0-ply    1/off                        Eq.: +1.000
+       1.000 0.000 0.000 - 0.000 0.000 0.000
+
+
+lasse wins 2 points
+
+Game statistics for game 1
+
+Player                                   frutariano              lasse                  
+
+Chequerplay statistics
+
+Total moves                               25                      26                    
+Unforced moves                            24                      23                    
+Unmarked moves                            22                      24                    
+Moves marked doubtful                      1                       1                    
+Moves marked bad                           2                       1                    
+Moves marked very bad                      0                       0                    
+Error total EMG (MWC)                         -0.299 ( -3.962%)       -0.139 ( -1.888%) 
+Error rate mEMG (MWC)                        -12.4   ( -0.165%)       -6.1   ( -0.082%) 
+Chequerplay rating                       Intermediate            Expert                 
+
+
+Cube statistics
+
+Total cube decisions                      26                       6                    
+Close or actual cube decisions             1                       3                    
+Doubles                                    0                       1                    
+Takes                                      1                       0                    
+Passes                                     0                       0                    
+Missed doubles below CP (EMG (MWC))        0                       0                    
+Missed doubles above CP (EMG (MWC))        0                       0                    
+Wrong doubles below DP (EMG (MWC))         0                       0                    
+Wrong doubles above TG (EMG (MWC))         0                       0                    
+Wrong takes (EMG (MWC))                    1 (-0.101 ( -0.782%))   0                    
+Wrong passes (EMG (MWC))                   0                       0                    
+Error total EMG (MWC)                         -0.101 ( -0.782%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                       -101.1   ( -0.782%)       -0.0   ( -0.000%) 
+Cube decision rating                     Awful!                  Supernatural           
+
+
+Overall statistics
+
+Error total EMG (MWC)                         -0.400 ( -4.743%)       -0.139 ( -1.888%) 
+Error rate mEMG (MWC)                        -16.0   ( -0.190%)       -5.4   ( -0.073%) 
+Snowie error rate                             -7.8   ( +0.000%)       -2.7   ( +0.000%) 
+Overall rating                           Intermediate            Expert                 
+Error based abs. FIBS rating             1800.2                  1965.9                 
+Chequerplay errors rating loss            173.0                    84.1                 
+Cube errors rating loss                    76.7                     0.0                 
+
+
+
+
+Output generated Fri Sep 29 10:57:03 2023
+ by GNU Backgammon 1.07.001-mingw 32-Bit 20221114 (Text Export version 1.128)
+
