@@ -11,8 +11,8 @@ chr2bin <- function(char, charset) {
   return(bin_str)
 }
 
-pos_id2bin <- function(pos_id, charset) {
-  # Convert GNU backgammon position id in Base64 to binary string
+id2bin <- function(pos_id, charset) {
+  # Convert GNU backgammon position or match id in Base64 to binary string
   big_bin <- str_split(pos_id, "") %>%
     pluck(1) %>%
     map_chr(chr2bin, charset = charset) %>%
@@ -28,31 +28,11 @@ pos_id2bin <- function(pos_id, charset) {
   return(big_bin_endian)
 }
 
-
-match_id2bin <- function(match_id, charset) {
-  # Convert GNU backgammon position id in Base64 to binary string
-  big_bin <- str_split(match_id, "") %>%
-    pluck(1) %>%
-    map_chr(chr2bin, charset = charset) %>%
-    paste0(collapse = "")
-
-  # Convert every 8 bits to their little-endian form
-  starts <- seq(1, nchar(big_bin), by = 4)
-
-  big_bin_endian <- map_chr(starts, ~ stri_reverse(substr(big_bin, ., . + 5))) %>%
-    paste0(collapse = "") %>%
-    str_sub(1,80)
-
-  return(big_bin_endian)
-}
-
-
-
 pos_id2xg <- function(pos_id, charset) {
   # Converts binary string with GNU BG position id to XGID position sub-string
 
   # pos_id to bit string
-  pos_id_bin <- pos_id2bin(pos_id, charset)
+  pos_id_bin <- id2bin(pos_id, charset)
   split_id <- str_split(pos_id_bin, "") %>% pluck(1)
 
   # initialize point matrix with NA
@@ -101,8 +81,12 @@ pos_id2xg <- function(pos_id, charset) {
 
 match_id2xg <- function(match_id, charset) {
   # match_id to bit string
-  match_id_bin <- match_id2bin(match_id, charset)
-  split_id <- str_split(match_id_bin, "") %>% pluck(1)
+  match_id_bin <- id2bin(match_id, charset)
+
+  starts <- c(1, 5, 7, 8, 9, 12, 13, 14, 16, 19, 22, 37, 52)
+  ends <- c(starts[-1] - 1, 66)
+
+  split_id <- map2_chr(starts, ends, ~ substr(match_id_bin, .x, .y))
 
   xg_match <- match_id_bin
   return(xg_match)
@@ -110,43 +94,58 @@ match_id2xg <- function(match_id, charset) {
 
 # Example
 # For example, assume the score is 2-4 in a 9 point match with player 0 holding a 2-cube, and
-# player 1 has just rolled 52. The
-# match key for this will be (note that the bit order is reversed below for readability)
-# 1000 00 1 0 100 1 0 00 101 010 100100000000000 010000000000000 001000000000000
-# In little endian the bytes looks like:
-#   01000001 10001001 00101010 00000001 00100000 00000000 00100000 00000000 00
+# player 1 has just rolled 52.
+
+# Example from gnubg.pdf (the bit order is reversed for readability). Match key:
+#         1000 00 1 0 100 1 0 00 101 010 100100000000000 010000000000000 001000000000000
+
+# Should look like this in little endian:
+#         01000001 10001001 00101010 00000001 00100000 00000000 00100000 00000000 00
+
+# Rearrange example to confirm. The key is the bit string, split up in 8 bit pieces, each reversed:
+#         10000010 10010001 01010100 10000000 00000100 00000000 00000100 00000000 00
+
 
 match_id <- "QYkqASAAIAAA"
 match_id2xg(match_id, charset)
 
-check <- "010000011000100100101010000000010010000000000000001000000000000000"
+# Result:
+#        100000101001000101010100100000000000010000000000000001000000000000000000
+
+# Rearrange to match key bit string
+#        10000010 10010001 01010100 10000000 00000100 00000000 00000100 00000000 00 000000
+
+# spacing
+#        1000 00 1 0 100 1 0 00 101 010 100100000000000 010000000000000 001000000000000000000
+
+
 
 
 # Spot checks:
-xg <- pos_id2xg("sHPMATDgc/ADIA", charset, 1)
+xg <- pos_id2xg("sHPMATDgc/ADIA", charset)
 dummy <- paste0("XGID=", xg, ":0:0:1:52:0:0:3:0:10")
 ggboard(dummy)
 
-xg <- pos_id2xg("0PPgAyCwc8wBMA", charset, 1)
+xg <- pos_id2xg("0PPgAyCwc8wBMA", charset)
 dummy <- paste0("XGID=", xg, ":0:0:1:52:0:0:3:0:10")
 ggboard(dummy)
 
-xg <- pos_id2xg("jOfgAFKwecwIQg", charset, 1)
+xg <- pos_id2xg("jOfgAFKwecwIQg", charset)
 dummy <- paste0("XGID=", xg, ":0:0:1:52:0:0:3:0:10")
 ggboard(dummy)
 
-xg <- pos_id2xg("33YDAEDbthsAAA", charset, 1)
+xg <- pos_id2xg("33YDAEDbthsAAA", charset)
 dummy <- paste0("XGID=", xg, ":0:0:1:52:0:0:3:0:10")
 ggboard(dummy)
 
-xg <- pos_id2xg("2+4OAADfdgMAQA", charset, 1)
+xg <- pos_id2xg("2+4OAADfdgMAQA", charset)
 dummy <- paste0("XGID=", xg, ":0:0:1:52:0:0:3:0:10")
 ggboard(dummy)
 
-xg <- pos_id2xg("bQEAgG+7EQAAAA", charset, 1)
+xg <- pos_id2xg("bQEAgG+7EQAAAA", charset)
 dummy <- paste0("XGID=", xg, ":0:0:1:52:0:0:3:0:10")
 ggboard(dummy)
 
-xg <- pos_id2xg("X90AAKAKAAAAAA", charset, 1)
+xg <- pos_id2xg("X90AAKAKAAAAAA", charset)
 dummy <- paste0("XGID=", xg, ":0:0:1:52:0:0:3:0:10")
 ggboard(dummy)
