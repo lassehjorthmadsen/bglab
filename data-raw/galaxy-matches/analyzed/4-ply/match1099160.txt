@@ -1,0 +1,317 @@
+The score (after 0 games) is: sario 0, lasse 0 (match to 5 points)
+
+Match Information:
+Date: 16/09/2023
+Place: BackgammonGalaxy
+
+Move number 1:  lasse to play 52
+
+ GNU Backgammon  Position ID: 4HPwATDgc/ABMA
+                 Match ID   : cIiqAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: sario
+ | X           O    |   | O              X |     0 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     Rolled 52
+ | O           X    |   | X              O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 167, X 167
+
+* lasse moves 24/22 13/8
+
+Rolled 52:
+*    1. Cubeful 4-ply    24/22 13/8                   Eq.: +0.007
+       0.501 0.136 0.005 - 0.499 0.131 0.004
+     2. Cubeful 4-ply    13/11 13/8                   Eq.: +0.001 (-0.006)
+       0.499 0.148 0.007 - 0.501 0.141 0.006
+     3. Cubeful 4-ply    13/8 6/4                     Eq.: -0.045 (-0.052)
+       0.489 0.134 0.006 - 0.511 0.140 0.007
+     4. Cubeful 2-ply    13/6                         Eq.: -0.085 (-0.092)
+       0.477 0.136 0.007 - 0.523 0.149 0.006
+     5. Cubeful 2-ply    13/11 8/3                    Eq.: -0.143 (-0.150)
+       0.464 0.135 0.008 - 0.536 0.161 0.011
+
+
+Move number 2:  sario to play 41
+
+ GNU Backgammon  Position ID: 4PPgASTgc/ABMA
+                 Match ID   : MAGmAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: sario
+ | X           O    |   | O        X     X |     0 points
+ | X           O    |   | O                |     Rolled 41
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ | O                |   | X                |    
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     
+ | O           X    |   | X              O |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 167, X 160
+
+* sario moves 24/23 24/20
+
+Cube analysis
+4-ply cubeless equity -0.008 (Money: -0.008)
+  0.499 0.131 0.004 - 0.501 0.136 0.005
+Cubeful equities:
+1. No double           -0.007
+2. Double, pass        +1.000  (+1.007)
+3. Double, take        -0.355  (-0.349)
+Proper cube action: No double, take (25.7%)
+
+Rolled 41:
+     1. Cubeful 4-ply    13/8                         Eq.: -0.180
+       0.458 0.117 0.004 - 0.542 0.152 0.007
+*    2. Cubeful 4-ply    24/23 24/20                  Eq.: -0.188 (-0.008)
+       0.459 0.106 0.004 - 0.541 0.149 0.005
+     3. Cubeful 4-ply    8/3*                         Eq.: -0.224 (-0.043)
+       0.449 0.118 0.005 - 0.551 0.165 0.011
+     4. Cubeful 4-ply    24/23 13/9                   Eq.: -0.232 (-0.052)
+       0.446 0.115 0.004 - 0.554 0.163 0.008
+     5. Cubeful 2-ply    6/1*                         Eq.: -0.228 (-0.048)
+       0.447 0.113 0.004 - 0.553 0.165 0.010
+
+
+Move number 3:  lasse to play 51
+
+ GNU Backgammon  Position ID: 4HPwARHg8+ABJA
+                 Match ID   : cImmAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: sario
+ | X           O    |   | O        X     X |     0 points
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ | O                |   | X                |    
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     Rolled 51
+ | O           X    |   | X  O        O    |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 162, X 160
+
+* lasse moves 13/8 6/5*
+
+Cube analysis
+4-ply cubeless equity +0.124 (Money: +0.127)
+  0.541 0.149 0.005 - 0.459 0.106 0.004
+Cubeful equities:
+1. No double           +0.188
+2. Double, pass        +1.000  (+0.812)
+3. Double, take        -0.060  (-0.248)
+Proper cube action: No double, take (23.4%)
+
+Rolled 51:
+*    1. Cubeful 4-ply    13/8 6/5*                    Eq.: +0.038
+       0.506 0.139 0.005 - 0.494 0.122 0.006
+     2. Cubeful 4-ply    22/21 13/8                   Eq.: -0.016 (-0.053)
+       0.497 0.117 0.004 - 0.503 0.120 0.004
+     3. Cubeful 4-ply    24/23 13/8                   Eq.: -0.042 (-0.080)
+       0.490 0.116 0.004 - 0.510 0.123 0.004
+     4. Cubeful 2-ply    22/16                        Eq.: -0.065 (-0.102)
+       0.490 0.104 0.003 - 0.510 0.131 0.005
+     5. Cubeful 2-ply    24/18                        Eq.: -0.068 (-0.105)
+       0.488 0.112 0.004 - 0.512 0.136 0.005
+
+
+Move number 4:  sario to play 33
+
+ GNU Backgammon  Position ID: 0PPBASTgc/ABSA
+                 Match ID   : MIGtAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: sario
+ | X           O    | O | O        X     X |     0 points
+ | X           O    |   | O                |     Rolled 33
+ | X           O    |   | O                |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ | O           X    |   |                  |    
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X  X        O    |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 167, X 154
+
+* sario moves bar/22 23/20* 6/3*(2)
+
+Cube analysis
+4-ply cubeless equity -0.027 (Money: -0.028)
+  0.494 0.122 0.006 - 0.506 0.139 0.005
+Cubeful equities:
+1. No double           -0.038
+2. Double, pass        +1.000  (+1.038)
+3. Double, take        -0.401  (-0.364)
+Proper cube action: No double, take (26.0%)
+
+Rolled 33:
+*    1. Cubeful 2-ply    bar/22 23/20* 6/3*(2)        Eq.: +0.474
+       0.606 0.196 0.013 - 0.394 0.082 0.002
+     2. Cubeful 2-ply    bar/22 23/20* 13/10(2)       Eq.: +0.272 (-0.203)
+       0.572 0.150 0.007 - 0.428 0.100 0.004
+     3. Cubeful 2-ply    bar/22 23/20* 8/5(2)         Eq.: +0.244 (-0.230)
+       0.556 0.164 0.009 - 0.444 0.102 0.004
+     4. Cubeful 2-ply    bar/22 23/20* 13/10 6/3*     Eq.: +0.231 (-0.243)
+       0.553 0.166 0.011 - 0.447 0.109 0.005
+     5. Cubeful 2-ply    bar/22 13/10 6/3*(2)         Eq.: +0.124 (-0.351)
+       0.525 0.163 0.010 - 0.475 0.129 0.005
+
+
+Move number 5:  lasse to play 33
+
+ GNU Backgammon  Position ID: jHPwAQng+eAAaA
+                 Match ID   : cImtAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: sario
+ | X           O    |   | O        O     X |     0 points
+ | X           O    |   | O        O       |     
+ | X           O    |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ | O           X    |   |                  |    
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    | X | X                |     Rolled 33
+ | O           X    | X | X  O     O       |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 155, X 177
+
+* lasse cannot move
+
+Cube analysis
+4-ply cubeless equity -0.331 (Money: -0.338)
+  0.391 0.084 0.002 - 0.609 0.193 0.013
+Cubeful equities:
+1. No double           -0.502
+2. Double, pass        +1.000  (+1.502)
+3. Double, take        -1.092  (-0.590)
+Proper cube action: No double, take (28.2%)
+
+Rolled 33:
+*    Cannot move
+
+
+Move number 6:  sario on roll, cube decision?
+
+ GNU Backgammon  Position ID: 4PngAGiMc/ABCQ
+                 Match ID   : MAGgAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: sario
+ | X           O    |   | O        O     X |     0 points
+ | X           O    |   | O        O       |     On roll
+ | X           O    |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ | O           X    |   |                  |    
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    | X | X                |     
+ | O           X    | X | X  O     O       |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 155, X 177
+
+* sario doubles
+
+
+Cube analysis
+4-ply cubeless equity +0.550 (Money: +0.563)
+  0.674 0.262 0.020 - 0.326 0.065 0.003
+Cubeful equities:
+1. Double, take        +0.930
+2. Double, pass        +1.000  (+0.070)
+3. No double           +0.833  (-0.098)
+Proper cube action: Double, take
+Move number 7:  sario doubles to 2
+
+ GNU Backgammon  Position ID: 4PngAGiMc/ABCQ
+                 Match ID   : MBmgAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: sario
+ | X           O    |   | O        O     X |     0 points
+ | X           O    |   | O        O       |     
+ | X           O    |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     
+ | O           X    |   |                  |    
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    | X | X                |     Cube offered at 2
+ | O           X    | X | X  O     O       |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 155, X 177
+
+* lasse rejects
+
+Alert: wrong pass (-0.070)!
+ [bad]
+Cube analysis
+4-ply cubeless equity -0.550 (Money: -0.563)
+  0.326 0.065 0.003 - 0.674 0.262 0.020
+Cubeful equities:
+1. Double, take        -0.930
+2. Double, pass        -1.000  (-0.070)
+3. No double           -0.833  (+0.098)
+Proper cube action: Double, take
+sario wins 1 point
+
+Game statistics for game 1
+
+Player                                   sario                   lasse                  
+
+Chequerplay statistics
+
+Total moves                                2                       3                    
+Unforced moves                             2                       2                    
+Unmarked moves                             2                       3                    
+Moves marked doubtful                      0                       0                    
+Moves marked bad                           0                       0                    
+Moves marked very bad                      0                       0                    
+Error total EMG (MWC)                         -0.008 ( -0.060%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                         -3.9   ( -0.030%)       -0.0   ( -0.000%) 
+Chequerplay rating                       World class             Supernatural           
+
+
+Cube statistics
+
+Total cube decisions                       3                       3                    
+Close or actual cube decisions             1                       1                    
+Doubles                                    1                       0                    
+Takes                                      0                       0                    
+Passes                                     0                       1                    
+Missed doubles below CP (EMG (MWC))        0                       0                    
+Missed doubles above CP (EMG (MWC))        0                       0                    
+Wrong doubles below DP (EMG (MWC))         0                       0                    
+Wrong doubles above TG (EMG (MWC))         0                       0                    
+Wrong takes (EMG (MWC))                    0                       0                    
+Wrong passes (EMG (MWC))                   0                       1 (-0.070 ( -0.539%))
+Error total EMG (MWC)                         -0.000 ( -0.000%)       -0.070 ( -0.539%) 
+Error rate mEMG (MWC)                         -0.0   ( -0.000%)      -69.8   ( -0.539%) 
+Cube decision rating                     Supernatural            Awful!                 
+
+
+Overall statistics
+
+Error total EMG (MWC)                         -0.008 ( -0.060%)       -0.070 ( -0.539%) 
+Error rate mEMG (MWC)                         -2.6   ( -0.020%)      -23.3   ( -0.180%) 
+Snowie error rate                             -1.6   ( +0.000%)      -14.0   ( +0.000%) 
+Overall rating                           World class             Casual player          
+Error based abs. FIBS rating             1995.9                  1997.0                 
+Chequerplay errors rating loss             54.1                     0.0                 
+Cube errors rating loss                     0.0                    53.0                 
+
+
+
+
+Output generated Fri Sep 29 14:25:03 2023
+ by GNU Backgammon 1.07.001-mingw 32-Bit 20221114 (Text Export version 1.128)
+
