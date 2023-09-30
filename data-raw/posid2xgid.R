@@ -86,10 +86,48 @@ match_id2xg <- function(match_id, charset) {
   starts <- c(1, 5, 7, 8, 9, 12, 13, 14, 16, 19, 22, 37, 52)
   ends <- c(starts[-1] - 1, 66)
 
-  split_id <- map2_chr(starts, ends, ~ substr(match_id_bin, .x, .y))
+  split_id <- map2_chr(starts, ends, ~ substr(match_id_bin, .x, .y)) %>%
+    stri_reverse()
 
-  xg_match <- match_id_bin
-  return(xg_match)
+  cube <- split_id[1] %>% strtoi(2)
+
+  cubeowner <- case_when(split_id[2] == "00" ~ 1,
+                         split_id[2] == "10" ~ -1,
+                         split_id[2] == "11" ~ 0)
+
+  diceowner <- case_when(split_id[3] == "0" ~ 1,
+                         split_id[3] == "1" ~ -1)
+
+  crawford <- split_id[4] %>% strtoi(2)
+
+  gamestate <- case_when(split_id[5] == "000" ~ "No game started",
+                         split_id[5] == "001" ~ "Playing a game",
+                         split_id[5] == "010" ~ "Game over",
+                         split_id[5] == "011" ~ "Resigned",
+                         split_id[5] == "100" ~ "Droped")
+
+  turnowner <- split_id[6] %>% strtoi(2) %>% `*`(2) %>% `-`(1)
+
+  double <- split_id[7] %>% strtoi(2)
+
+  resign <- case_when(split_id[8] == "00" ~ "No resignation",
+                      split_id[8] == "01" ~ "Resigns single",
+                      split_id[8] == "10" ~ "Resigns gammon",
+                      split_id[8] == "11" ~ "Resigns backgmmon",
+                      TRUE ~ NA)
+  die1 <- split_id[9] %>% strtoi(2)
+  die2 <- split_id[10] %>% strtoi(2)
+  dice <- paste0(die1, die2)
+
+  length <- split_id[11] %>% strtoi(2)
+
+  score1 <- split_id[12] %>% strtoi(2)
+
+  score2 <- split_id[13] %>% strtoi(2)
+
+  xg_mat <- paste("", cube, cubeowner, turnowner, dice, score1, score2, crawford, length, "10", sep = ":")
+
+  return(xg_mat)
 }
 
 # Example
@@ -106,18 +144,12 @@ match_id2xg <- function(match_id, charset) {
 #         10000010 10010001 01010100 10000000 00000100 00000000 00000100 00000000 00
 
 
+pos_id <- "4HPwATDgc/ABMA"
 match_id <- "QYkqASAAIAAA"
-match_id2xg(match_id, charset)
-
-# Result:
-#        100000101001000101010100100000000000010000000000000001000000000000000000
-
-# Rearrange to match key bit string
-#        10000010 10010001 01010100 10000000 00000100 00000000 00000100 00000000 00 000000
-
-# spacing
-#        1000 00 1 0 100 1 0 00 101 010 100100000000000 010000000000000 001000000000000000000
-
+pid <- pos_id2xg(pos_id, charset)
+mid <- match_id2xg(match_id, charset)
+xgid <- paste0("XGID=", pid, mid)
+ggboard(xgid)
 
 
 
