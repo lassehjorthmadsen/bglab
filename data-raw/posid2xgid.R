@@ -152,8 +152,7 @@ xgid <- paste0("XGID=", pid, mid)
 ggboard(xgid)
 
 
-
-# Spot checks:
+# Spot checks of position id conversion:
 xg <- pos_id2xg("sHPMATDgc/ADIA", charset)
 dummy <- paste0("XGID=", xg, ":0:0:1:52:0:0:3:0:10")
 ggboard(dummy)
@@ -181,3 +180,26 @@ ggboard(dummy)
 xg <- pos_id2xg("X90AAKAKAAAAAA", charset)
 dummy <- paste0("XGID=", xg, ":0:0:1:52:0:0:3:0:10")
 ggboard(dummy)
+
+# Random spot-checks:
+for (i in seq(10)) {
+  temp <- bgmoves %>% slice_sample(n = 1)
+
+  cat("File: ", temp$file, "\n",
+      "Move: ", temp$move_no, "\n",
+      "Match to:", temp$length, "\n",
+      temp$board, "\n",
+      temp$cube_eq, "\n",
+      temp$move_eq, "\n",
+      "Checker play error: ", temp$move_err, "\n",
+      "Cube action error: ", temp$cube_err, "\n",
+      sep = "")
+
+  pid <- pos_id2xg(temp$pos_id, charset)
+  mid <- match_id2xg(temp$match_id, charset)
+  xgid <- paste0("XGID=", pid, mid)
+  print(ggboard(xgid))
+
+  readline(prompt="Press [enter] to continue")
+}
+
