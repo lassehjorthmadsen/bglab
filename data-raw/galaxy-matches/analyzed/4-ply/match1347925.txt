@@ -1,0 +1,761 @@
+The score (after 0 games) is: minotaurus 0, lasse 0 (match to 5 points)
+
+Match Information:
+Date: 16/09/2023
+Place: BackgammonGalaxy
+
+Move number 1:  lasse to play 41
+
+ GNU Backgammon  Position ID: 4HPwATDgc/ABMA
+                 Match ID   : cAimAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: minotaurus
+ | X           O    |   | O              X |     0 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     Rolled 41
+ | O           X    |   | X              O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 167, X 167
+
+* lasse moves 24/23 13/9
+
+Rolled 41:
+*    1. Cubeful 4-ply    24/23 13/9                   Eq.: -0.003
+       0.497 0.142 0.006 - 0.503 0.134 0.006
+     2. Cubeful 4-ply    13/9 6/5                     Eq.: -0.026 (-0.023)
+       0.495 0.141 0.007 - 0.505 0.146 0.010
+     3. Cubeful 4-ply    24/23 24/20                  Eq.: -0.041 (-0.038)
+       0.491 0.125 0.006 - 0.509 0.134 0.005
+     4. Cubeful 4-ply    13/8                         Eq.: -0.041 (-0.038)
+       0.490 0.135 0.005 - 0.510 0.141 0.006
+     5. Cubeful 2-ply    24/20 6/5                    Eq.: -0.057 (-0.054)
+       0.489 0.126 0.006 - 0.511 0.142 0.008
+
+
+Move number 2:  minotaurus to play 55
+
+ GNU Backgammon  Position ID: 4HPhASjgc/ABMA
+                 Match ID   : MIG2AAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: minotaurus
+ | X           O    |   | O           X  X |     0 points
+ | X           O    |   | O                |     Rolled 55
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     
+ | O        X  X    |   | X              O |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 167, X 162
+
+* minotaurus moves 13/3(2)
+
+Cube analysis
+4-ply cubeless equity -0.001 (Money: -0.002)
+  0.503 0.134 0.006 - 0.497 0.142 0.006
+Cubeful equities:
+1. No double           +0.003
+2. Double, pass        +1.000  (+0.997)
+3. Double, take        -0.337  (-0.340)
+Proper cube action: No double, take (25.4%)
+Alert: bad move ( -0.065)
+
+Rolled 55:
+     1. Cubeful 4-ply    8/3(2) 6/1*(2)               Eq.: +0.143
+       0.517 0.203 0.006 - 0.483 0.134 0.006
+     2. Cubeful 4-ply    13/8(2) 6/1*(2)              Eq.: +0.097 (-0.046)
+       0.516 0.172 0.005 - 0.484 0.132 0.005
+*    3. Cubeful 4-ply    13/3(2)                      Eq.: +0.079 (-0.065)
+       0.513 0.170 0.007 - 0.487 0.136 0.006
+     4. Cubeful 2-ply    13/3 8/3 6/1*                Eq.: +0.061 (-0.082)
+       0.507 0.175 0.007 - 0.493 0.141 0.007
+     5. Cubeful 2-ply    13/3 6/1*(2)                 Eq.: -0.041 (-0.185)
+       0.482 0.163 0.005 - 0.518 0.149 0.008
+
+
+Move number 3:  lasse to play 61
+
+ GNU Backgammon  Position ID: jM/BATDgc+EBKA
+                 Match ID   : cAmnAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: minotaurus
+ | X           O    |   | O        O  X  X |     0 points
+ | X           O    |   | O        O       |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   | X                |    
+ |                  |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     Rolled 61
+ | O        X  X    |   | X              O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 147, X 162
+
+* lasse moves 13/7 8/7
+
+Cube analysis
+4-ply cubeless equity -0.058 (Money: -0.061)
+  0.487 0.136 0.006 - 0.513 0.170 0.007
+Cubeful equities:
+1. No double           -0.079
+2. Double, pass        +1.000  (+1.079)
+3. Double, take        -0.457  (-0.378)
+Proper cube action: No double, take (25.9%)
+
+Rolled 61:
+*    1. Cubeful 2-ply    13/7 8/7                     Eq.: -0.157
+       0.478 0.130 0.006 - 0.522 0.196 0.010
+     2. Cubeful 2-ply    24/23 13/7                   Eq.: -0.337 (-0.180)
+       0.426 0.110 0.004 - 0.574 0.186 0.012
+     3. Cubeful 2-ply    24/23 9/3                    Eq.: -0.353 (-0.195)
+       0.412 0.104 0.004 - 0.588 0.170 0.009
+     4. Cubeful 2-ply    24/18 9/8                    Eq.: -0.416 (-0.259)
+       0.419 0.101 0.004 - 0.581 0.238 0.007
+     5. Cubeful 2-ply    13/7 9/8                     Eq.: -0.434 (-0.277)
+       0.409 0.103 0.005 - 0.591 0.223 0.013
+
+
+Move number 4:  minotaurus to play 43
+
+ GNU Backgammon  Position ID: 4NvCASiMz8EBMA
+                 Match ID   : MAGuAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: minotaurus
+ | X           O    |   | O        O  X  X |     0 points
+ | X           O    |   | O        O       |     Rolled 43
+ | X           O    |   | O                |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   | X                |    
+ |                  |   | X                |     
+ | O                |   | X                |     
+ | O           X  X |   | X              O |     
+ | O        X  X  X |   | X              O |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 147, X 155
+
+* minotaurus moves 24/21 13/9
+
+Cube analysis
+4-ply cubeless equity +0.114 (Money: +0.119)
+  0.524 0.197 0.010 - 0.476 0.129 0.006
+Cubeful equities:
+1. No double           +0.169
+2. Double, pass        +1.000  (+0.831)
+3. Double, take        -0.080  (-0.249)
+Proper cube action: No double, take (23.1%)
+Alert: very bad move ( -0.175)
+
+Rolled 43:
+     1. Cubeful 4-ply    24/21 6/2*                   Eq.: +0.072
+       0.506 0.171 0.009 - 0.494 0.134 0.006
+*    2. Cubeful 4-ply    24/21 13/9                   Eq.: -0.103 (-0.175)
+       0.470 0.158 0.007 - 0.530 0.158 0.008
+     3. Cubeful 2-ply    24/21 24/20                  Eq.: -0.024 (-0.096)
+       0.493 0.158 0.008 - 0.507 0.154 0.005
+     4. Cubeful 2-ply    24/20 6/3                    Eq.: -0.101 (-0.174)
+       0.469 0.157 0.009 - 0.531 0.154 0.006
+     5. Cubeful 2-ply    24/20 13/10                  Eq.: -0.148 (-0.220)
+       0.459 0.155 0.008 - 0.541 0.163 0.008
+
+
+Move number 5:  lasse to play 54
+
+ GNU Backgammon  Position ID: jM+FASLg28IBKA
+                 Match ID   : cImyAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: minotaurus
+ | X        O  O    |   | O        O  X  X |     0 points
+ | X           O    |   | O        O       |     
+ | X           O    |   | O                |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   | X                |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ | O           X  X |   | X                |     Rolled 54
+ | O        X  X  X |   | X     O        O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 140, X 155
+
+* lasse moves 9/4* 8/4
+
+Cube analysis
+4-ply cubeless equity +0.060 (Money: +0.060)
+  0.530 0.158 0.008 - 0.470 0.158 0.007
+Cubeful equities:
+1. No double           +0.103
+2. Double, pass        +1.000  (+0.897)
+3. Double, take        -0.176  (-0.279)
+Proper cube action: No double, take (23.7%)
+
+Rolled 54:
+*    1. Cubeful 2-ply    9/4* 8/4                     Eq.: +0.166
+       0.538 0.191 0.011 - 0.462 0.154 0.009
+     2. Cubeful 2-ply    23/18 13/9                   Eq.: -0.014 (-0.180)
+       0.522 0.128 0.006 - 0.478 0.188 0.007
+     3. Cubeful 2-ply    13/9 6/1*                    Eq.: -0.067 (-0.233)
+       0.497 0.133 0.005 - 0.503 0.174 0.010
+     4. Cubeful 2-ply    13/9 13/8                    Eq.: -0.148 (-0.314)
+       0.480 0.123 0.006 - 0.520 0.186 0.011
+     5. Cubeful 0-ply    24/20 9/4*                   Eq.: -0.208 (-0.374)
+       0.465 0.122 0.007 - 0.535 0.207 0.012
+
+
+Move number 6:  minotaurus to play 54
+
+ GNU Backgammon  Position ID: mG/BASiMz4UBUA
+                 Match ID   : MIGyAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: minotaurus
+ | X        O  O    | O | O        O  X  X |     0 points
+ | X           O    |   | O        O       |     Rolled 54
+ | X           O    |   | O                |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   | X                |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ | O              X |   | X     X          |     
+ | O           X  X |   | X     X        O |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 144, X 146
+
+* minotaurus moves bar/20 24/20
+
+Cube analysis
+4-ply cubeless equity -0.115 (Money: -0.118)
+  0.462 0.155 0.009 - 0.538 0.194 0.012
+Cubeful equities:
+1. No double           -0.171
+2. Double, pass        +1.000  (+1.171)
+3. Double, take        -0.587  (-0.416)
+Proper cube action: No double, take (26.2%)
+
+Rolled 54:
+*    1. Cubeful 0-ply    bar/20 24/20                 Eq.: +0.292
+       0.567 0.154 0.006 - 0.433 0.073 0.002
+     2. Cubeful 0-ply    bar/20 6/2*                  Eq.: -0.213 (-0.505)
+       0.452 0.154 0.009 - 0.548 0.207 0.014
+     3. Cubeful 0-ply    bar/16                       Eq.: -0.271 (-0.563)
+       0.441 0.137 0.007 - 0.559 0.213 0.011
+     4. Cubeful 0-ply    bar/20 13/9                  Eq.: -0.324 (-0.616)
+       0.421 0.136 0.007 - 0.579 0.205 0.011
+     5. Cubeful 0-ply    bar/20 9/5                   Eq.: -0.418 (-0.710)
+       0.406 0.123 0.007 - 0.594 0.234 0.013
+
+
+Move number 7:  lasse to play 31
+
+ GNU Backgammon  Position ID: jM+FAQOYb8EBKA
+                 Match ID   : cImlAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: minotaurus
+ | X        O  O    |   | O        O  X  X |     0 points
+ | X           O    |   | O        O       |     
+ | X           O    |   | O                |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   | X                |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ | O              X |   | X  O  X          |     Rolled 31
+ | O           X  X |   | X  O  X          |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 135, X 146
+
+* lasse moves 23/20 8/7
+
+Cube analysis
+4-ply cubeless equity -0.213 (Money: -0.218)
+  0.428 0.083 0.002 - 0.572 0.154 0.005
+Cubeful equities:
+1. No double           -0.310
+2. Double, pass        +1.000  (+1.310)
+3. Double, take        -0.846  (-0.535)
+Proper cube action: No double, take (29.0%)
+Alert: doubtful move ( -0.034)
+
+Rolled 31:
+     1. Cubeful 4-ply    24/23 6/3                    Eq.: -0.446
+       0.382 0.078 0.002 - 0.618 0.133 0.005
+*    2. Cubeful 4-ply    23/20 8/7                    Eq.: -0.480 (-0.034)
+       0.397 0.079 0.002 - 0.603 0.202 0.006
+     3. Cubeful 4-ply    8/7 6/3                      Eq.: -0.488 (-0.042)
+       0.396 0.081 0.002 - 0.604 0.207 0.007
+     4. Cubeful 4-ply    24/21 8/7                    Eq.: -0.500 (-0.054)
+       0.393 0.077 0.002 - 0.607 0.213 0.006
+     5. Cubeful 2-ply    8/4                          Eq.: -0.523 (-0.077)
+       0.384 0.080 0.002 - 0.616 0.199 0.007
+
+
+Move number 8:  minotaurus to play 31
+
+ GNU Backgammon  Position ID: mO/AASGMz4UBAw
+                 Match ID   : MIGlAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: minotaurus
+ | X        O  O    |   | O  X     O     X |     0 points
+ | X           O    |   | O        O       |     Rolled 31
+ | X           O    |   | O                |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   | X                |    
+ |                  |   | X                |     
+ |                X |   | X                |     
+ | O              X |   | X  O  X          |     
+ | O              X |   | X  O  X          |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 135, X 142
+
+* minotaurus moves 8/5* 6/5
+
+Cube analysis
+4-ply cubeless equity +0.323 (Money: +0.332)
+  0.603 0.202 0.006 - 0.397 0.079 0.002
+Cubeful equities:
+1. No double           +0.480
+2. Double, pass        +1.000  (+0.520)
+3. Double, take        +0.403  (-0.077)
+Proper cube action: No double, take (12.9%)
+
+Rolled 31:
+*    1. Cubeful 0-ply    8/5* 6/5                     Eq.: +0.862
+       0.704 0.269 0.011 - 0.296 0.056 0.001
+     2. Cubeful 0-ply    9/5*                         Eq.: +0.261 (-0.601)
+       0.556 0.161 0.007 - 0.444 0.083 0.002
+     3. Cubeful 0-ply    6/5*/2                       Eq.: +0.168 (-0.694)
+       0.533 0.153 0.007 - 0.467 0.097 0.003
+     4. Cubeful 0-ply    8/5*/4                       Eq.: +0.166 (-0.696)
+       0.533 0.159 0.008 - 0.467 0.103 0.004
+     5. Cubeful 0-ply    6/5* 6/3                     Eq.: +0.141 (-0.721)
+       0.528 0.152 0.008 - 0.472 0.105 0.005
+
+
+Move number 9:  lasse to play 41
+
+ GNU Backgammon  Position ID: zJ6FAQOY78ABUA
+                 Match ID   : cAmmAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: minotaurus
+ | X        O  O    |   | O  O     O     X |     0 points
+ | X           O    |   | O  O     O       |     
+ | X                |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   | X                |    
+ |                  |   | X                |     
+ |                X |   | X                |     
+ | O              X |   | X  O  X          |     Rolled 41
+ | O              X | X | X  O  X          |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 131, X 147
+
+* lasse moves bar/24 6/2
+
+Cube analysis
+4-ply cubeless equity -0.606 (Money: -0.623)
+  0.298 0.056 0.002 - 0.702 0.267 0.009
+Cubeful equities:
+1. No double           -0.905
+2. Double, pass        +1.000  (+1.905)
+3. Double, take        -1.799  (-0.894)
+Proper cube action: No double, take (31.9%)
+
+Rolled 41:
+*    1. Cubeful 4-ply    bar/24 6/2                   Eq.: -0.989
+       0.283 0.052 0.001 - 0.717 0.197 0.010
+     2. Cubeful 4-ply    bar/24 7/3                   Eq.: -1.000 (-0.011)
+       0.281 0.052 0.001 - 0.719 0.202 0.010
+     3. Cubeful 4-ply    bar/24 13/9                  Eq.: -1.000 (-0.011)
+       0.275 0.054 0.002 - 0.725 0.209 0.014
+     4. Cubeful 4-ply    bar/21 24/23                 Eq.: -1.000 (-0.011)
+       0.304 0.061 0.002 - 0.696 0.328 0.009
+     5. Cubeful 2-ply    bar/21 7/6                   Eq.: -1.000 (-0.011)
+       0.286 0.058 0.002 - 0.714 0.323 0.010
+
+
+Move number 10:  minotaurus to play 64
+
+ GNU Backgammon  Position ID: Mu/AATDMnoUBAw
+                 Match ID   : MAGzAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: minotaurus
+ | X        O  O    |   | O  O     O     X |     0 points
+ | X           O    |   | O  O     O     X |     Rolled 64
+ | X                |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                X |   | X                |     
+ | O              X |   | X  O  X          |     
+ | O              X |   | X  O  X     X    |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 131, X 142
+
+* minotaurus moves 8/2 6/2
+Alert: missed double (-0.117)!
+ [bad]
+Cube analysis
+4-ply cubeless equity +0.578 (Money: +0.588)
+  0.717 0.197 0.010 - 0.283 0.052 0.001
+Cubeful equities:
+1. Double, take        +0.989
+2. Double, pass        +1.000  (+0.011)
+3. No double           +0.872  (-0.117)
+Proper cube action: Double, take
+
+Rolled 64:
+*    1. Cubeful 2-ply    8/2 6/2                      Eq.: +0.935
+       0.703 0.227 0.009 - 0.297 0.057 0.001
+     2. Cubeful 2-ply    13/9 13/7                    Eq.: +0.736 (-0.199)
+       0.664 0.203 0.010 - 0.336 0.060 0.001
+     3. Cubeful 2-ply    9/5 8/2                      Eq.: +0.613 (-0.322)
+       0.631 0.205 0.008 - 0.369 0.079 0.002
+     4. Cubeful 2-ply    13/3                         Eq.: +0.583 (-0.352)
+       0.630 0.193 0.010 - 0.370 0.069 0.002
+     5. Cubeful 2-ply    13/9 8/2                     Eq.: +0.580 (-0.355)
+       0.625 0.196 0.009 - 0.375 0.088 0.003
+
+
+Move number 11:  lasse to play 44
+
+ GNU Backgammon  Position ID: NjuFAQMy78ABMA
+                 Match ID   : cAmyAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: minotaurus
+ | X        O  O    |   | O  O     O  O  X |     0 points
+ | X                |   | O  O     O  O  X |     
+ | X                |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                X |   | X                |     
+ | O              X |   | X  O  X          |     Rolled 44
+ | O              X |   | X  O  X     X    |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 121, X 142
+
+* lasse moves 13/9(3) 6/2
+
+Cube analysis
+4-ply cubeless equity -0.566 (Money: -0.579)
+  0.298 0.057 0.001 - 0.702 0.223 0.009
+Cubeful equities:
+1. No double           -0.935
+2. Double, pass        +1.000  (+1.935)
+3. Double, take        -1.748  (-0.813)
+Proper cube action: No double, take (29.6%)
+
+Rolled 44:
+     1. Cubeful 4-ply    7/3(3) 6/2                   Eq.: -0.974
+       0.289 0.061 0.001 - 0.711 0.210 0.009
+*    2. Cubeful 4-ply    13/9(3) 6/2                  Eq.: -1.000 (-0.026)
+       0.263 0.044 0.001 - 0.737 0.168 0.006
+     3. Cubeful 4-ply    13/9 7/3(2) 6/2              Eq.: -1.000 (-0.026)
+       0.285 0.075 0.003 - 0.715 0.247 0.021
+     4. Cubeful 4-ply    13/9(3) 7/3                  Eq.: -1.000 (-0.026)
+       0.244 0.041 0.001 - 0.756 0.182 0.008
+     5. Cubeful 2-ply    7/3(2) 6/2(2)                Eq.: -1.000 (-0.026)
+       0.269 0.057 0.001 - 0.731 0.228 0.013
+
+
+Move number 12:  minotaurus to play 64
+
+ GNU Backgammon  Position ID: Zu4cADA2O4UBAw
+                 Match ID   : MAGzAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: minotaurus
+ |          O  O    |   | O  O     O  O  X |     0 points
+ |                  |   | O  O     O  O  X |     Rolled 64
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |          X     X |   | X                |     
+ | O        X     X |   | X  O  X     X    |     
+ | O        X     X |   | X  O  X     X    |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 121, X 126
+
+* minotaurus moves 13/9 8/2
+Alert: missed double (-0.145)!
+ [very bad]
+Cube analysis
+4-ply cubeless equity +0.593 (Money: +0.603)
+  0.737 0.168 0.006 - 0.263 0.044 0.001
+Cubeful equities:
+1. Double, pass        +1.000
+2. Double, take        +1.022  (+0.022)
+3. No double           +0.855  (-0.145)
+Proper cube action: Double, pass
+
+Rolled 64:
+*    1. Cubeful 2-ply    13/9 8/2                     Eq.: +0.772
+       0.686 0.160 0.005 - 0.314 0.051 0.001
+     2. Cubeful 2-ply    9/5 8/2                      Eq.: +0.678 (-0.095)
+       0.671 0.157 0.004 - 0.329 0.057 0.001
+     3. Cubeful 2-ply    13/3                         Eq.: +0.578 (-0.195)
+       0.633 0.162 0.005 - 0.367 0.072 0.002
+     4. Cubeful 2-ply    9/3 8/4                      Eq.: +0.529 (-0.243)
+       0.621 0.161 0.005 - 0.379 0.079 0.002
+     5. Cubeful 2-ply    13/9 13/7                    Eq.: +0.521 (-0.251)
+       0.631 0.158 0.005 - 0.369 0.071 0.001
+
+
+Move number 13:  lasse to play 21
+
+ GNU Backgammon  Position ID: bnYMAQNm7hwAMA
+                 Match ID   : cAmlAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: minotaurus
+ |          O       |   | O  O     O  O  X |     0 points
+ |          O       |   | O  O     O  O  X |     
+ |                  |   | O           O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |          X     X |   | X                |     
+ |          X     X |   | X  O  X     X    |     Rolled 21
+ | O        X     X |   | X  O  X     X    |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 111, X 126
+
+* lasse moves 9/6
+
+Cube analysis
+4-ply cubeless equity -0.462 (Money: -0.470)
+  0.319 0.052 0.001 - 0.681 0.156 0.005
+Cubeful equities:
+1. No double           -0.739
+2. Double, pass        +1.000  (+1.739)
+3. Double, take        -1.576  (-0.837)
+Proper cube action: No double, take (32.5%)
+
+Rolled 21:
+*    1. Cubeful 4-ply    9/6                          Eq.: -0.786
+       0.303 0.050 0.001 - 0.697 0.152 0.006
+     2. Cubeful 4-ply    6/3                          Eq.: -0.797 (-0.011)
+       0.300 0.050 0.001 - 0.700 0.152 0.006
+     3. Cubeful 4-ply    7/4                          Eq.: -0.810 (-0.024)
+       0.298 0.048 0.001 - 0.702 0.151 0.006
+     4. Cubeful 2-ply    9/7 4/3                      Eq.: -0.926 (-0.140)
+       0.273 0.042 0.001 - 0.727 0.144 0.007
+     5. Cubeful 2-ply    4/1                          Eq.: -0.940 (-0.154)
+       0.272 0.044 0.001 - 0.728 0.149 0.008
+
+
+Move number 14:  minotaurus to play 55
+
+ GNU Backgammon  Position ID: Zt4ZADBudgwBAw
+                 Match ID   : MIG2AAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: minotaurus
+ |          O       |   | O  O     O  O  X |     0 points
+ |          O       |   | O  O     O  O  X |     Rolled 55
+ |                  |   | O           O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                X |   | X                |     
+ |          X     X |   | X  O  X     X    |     
+ | O        X     X |   | X  O  X     X    |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 111, X 123
+
+* minotaurus moves 20/15(2) 9/4(2)
+Alert: missed double (-0.028)!
+
+Cube analysis
+4-ply cubeless equity +0.493 (Money: +0.501)
+  0.697 0.152 0.006 - 0.303 0.050 0.001
+Cubeful equities:
+1. Double, take        +0.786
+2. Double, pass        +1.000  (+0.214)
+3. No double           +0.758  (-0.028)
+Proper cube action: Double, take
+
+Rolled 55:
+     1. Cubeful 4-ply    20/15(2) 13/3                Eq.: +0.974
+       0.785 0.096 0.003 - 0.215 0.018 0.000
+*    2. Cubeful 4-ply    20/15(2) 9/4(2)              Eq.: +0.956 (-0.018)
+       0.836 0.130 0.003 - 0.164 0.013 0.000
+     3. Cubeful 4-ply    20/10(2)                     Eq.: +0.948 (-0.026)
+       0.805 0.106 0.003 - 0.195 0.016 0.000
+     4. Cubeful 4-ply    20/5 20/15                   Eq.: +0.930 (-0.044)
+       0.798 0.110 0.003 - 0.202 0.019 0.000
+     5. Cubeful 2-ply    13/3 9/4(2)                  Eq.: +0.913 (-0.061)
+       0.723 0.165 0.007 - 0.277 0.042 0.001
+
+
+Move number 15:  lasse to play 65
+
+ GNU Backgammon  Position ID: btsBGQBm3hkAMA
+                 Match ID   : cAm3AAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: minotaurus
+ |                  |   | O  O  O  O  O  X |     0 points
+ |                  |   | O  O  O  O  O  X |     
+ |                  |   | O           O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                X |   | X                |     
+ |       O  X     X |   | X     X     X    |     Rolled 65
+ | O     O  X     X |   | X     X     X    |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 91, X 123
+
+* lasse moves 7/1 6/1
+
+Cube analysis
+4-ply cubeless equity -0.784 (Money: -0.793)
+  0.164 0.013 0.000 - 0.836 0.130 0.003
+Cubeful equities:
+1. No double           -0.956
+2. Double, pass        +1.000  (+1.956)
+3. Double, take        -1.863  (-0.907)
+Proper cube action: No double, take (31.7%)
+
+Rolled 65:
+*    1. Cubeful 4-ply    7/1 6/1                      Eq.: -1.000
+       0.145 0.009 0.000 - 0.855 0.130 0.004
+     2. Cubeful 4-ply    9/3 6/1                      Eq.: -1.000 (-0.000)
+       0.142 0.011 0.000 - 0.858 0.130 0.004
+     3. Cubeful 4-ply    9/4 9/3                      Eq.: -1.000 (-0.000)
+       0.142 0.009 0.000 - 0.858 0.134 0.004
+     4. Cubeful 4-ply    9/3 7/2                      Eq.: -1.000 (-0.000)
+       0.139 0.009 0.000 - 0.861 0.131 0.004
+     5. Cubeful 2-ply    9/4 7/1                      Eq.: -1.000 (-0.000)
+       0.137 0.009 0.000 - 0.863 0.143 0.005
+
+
+Move number 16:  minotaurus on roll, cube decision?
+
+ GNU Backgammon  Position ID: m7kZADBu2wEZAA
+                 Match ID   : MAGgAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: minotaurus
+ |                  |   | O  O  O  O  O  X |     0 points
+ |                  |   | O  O  O  O  O  X |     On roll
+ |                  |   | O           O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X                |     
+ |       O  X     X |   | X     X     X  X |     
+ | O     O  X     X |   | X     X     X  X |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 91, X 112
+
+* minotaurus doubles
+
+
+Cube analysis
+4-ply cubeless equity +0.826 (Money: +0.835)
+  0.855 0.130 0.004 - 0.145 0.009 0.000
+Cubeful equities:
+1. Double, pass        +1.000
+2. Double, take        +1.550  (+0.550)
+3. No double           +0.964  (-0.036)
+Proper cube action: Double, pass
+Move number 17:  minotaurus doubles to 2
+
+ GNU Backgammon  Position ID: m7kZADBu2wEZAA
+                 Match ID   : MBmgAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: minotaurus
+ |                  |   | O  O  O  O  O  X |     0 points
+ |                  |   | O  O  O  O  O  X |     
+ |                  |   | O           O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X                |     
+ |       O  X     X |   | X     X     X  X |     Cube offered at 2
+ | O     O  X     X |   | X     X     X  X |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 91, X 112
+
+* lasse rejects
+
+
+Cube analysis
+4-ply cubeless equity -0.826 (Money: -0.835)
+  0.145 0.009 0.000 - 0.855 0.130 0.004
+Cubeful equities:
+1. Double, pass        -1.000
+2. Double, take        -1.550  (-0.550)
+3. No double           -0.964  (+0.036)
+Proper cube action: Double, pass
+minotaurus wins 1 point
+
+Game statistics for game 1
+
+Player                                   minotaurus              lasse                  
+
+Chequerplay statistics
+
+Total moves                                7                       8                    
+Unforced moves                             7                       8                    
+Unmarked moves                             5                       7                    
+Moves marked doubtful                      0                       1                    
+Moves marked bad                           1                       0                    
+Moves marked very bad                      1                       0                    
+Error total EMG (MWC)                         -0.258 ( -1.995%)       -0.059 ( -0.459%) 
+Error rate mEMG (MWC)                        -36.9   ( -0.285%)       -7.4   ( -0.057%) 
+Chequerplay rating                       Awful!                  Expert                 
+
+
+Cube statistics
+
+Total cube decisions                       8                       8                    
+Close or actual cube decisions             5                       1                    
+Doubles                                    1                       0                    
+Takes                                      0                       0                    
+Passes                                     0                       1                    
+Missed doubles below CP (EMG (MWC))        2 (-0.145 ( -1.117%))   0                    
+Missed doubles above CP (EMG (MWC))        1 (-0.145 ( -1.119%))   0                    
+Wrong doubles below DP (EMG (MWC))         0                       0                    
+Wrong doubles above TG (EMG (MWC))         0                       0                    
+Wrong takes (EMG (MWC))                    0                       0                    
+Wrong passes (EMG (MWC))                   0                       0                    
+Error total EMG (MWC)                         -0.289 ( -2.236%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                        -57.8   ( -0.447%)       -0.0   ( -0.000%) 
+Cube decision rating                     Awful!                  Supernatural           
+
+
+Overall statistics
+
+Error total EMG (MWC)                         -0.547 ( -4.231%)       -0.059 ( -0.459%) 
+Error rate mEMG (MWC)                        -45.6   ( -0.353%)       -6.6   ( -0.051%) 
+Snowie error rate                            -36.5   ( +0.000%)       -4.0   ( +0.000%) 
+Overall rating                           Awful!                  Expert                 
+Error based abs. FIBS rating             1493.7                  1946.8                 
+Chequerplay errors rating loss            512.4                   103.2                 
+Cube errors rating loss                    43.9                     0.0                 
+
+
+
+
+Output generated Sat Sep 30 06:19:40 2023
+ by GNU Backgammon 1.07.001-mingw 32-Bit 20221114 (Text Export version 1.128)
+

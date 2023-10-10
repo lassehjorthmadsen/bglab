@@ -1,0 +1,1479 @@
+The score (after 1 game) is: memsim 0, lasse 2 (match to 5 points)
+
+Match Information:
+Date: 07/09/2023
+Place: BackgammonGalaxy
+
+Move number 1:  memsim to play 62
+
+ GNU Backgammon  Position ID: 4HPwATDgc/ABMA
+                 Match ID   : MACrAAAAEAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: memsim
+ | X           O    |   | O              X |     0 points
+ | X           O    |   | O              X |     Rolled 62
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     
+ | O           X    |   | X              O |     2 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 167, X 167
+
+* memsim moves 24/18 13/11
+
+Rolled 62:
+*    1. Cubeful 4-ply    24/18 13/11                  Eq.: +0.097
+       0.508 0.131 0.006 - 0.492 0.135 0.006
+     2. Cubeful 4-ply    13/5                         Eq.: +0.069 (-0.028)
+       0.492 0.144 0.007 - 0.508 0.140 0.008
+     3. Cubeful 4-ply    24/16                        Eq.: +0.063 (-0.034)
+       0.502 0.122 0.004 - 0.498 0.138 0.005
+     4. Cubeful 4-ply    13/11 13/7                   Eq.: +0.035 (-0.062)
+       0.484 0.142 0.007 - 0.516 0.147 0.009
+     5. Cubeful 2-ply    24/22 24/18                  Eq.: +0.014 (-0.084)
+       0.489 0.119 0.005 - 0.511 0.145 0.005
+
+
+Move number 2:  lasse to play 42
+
+ GNU Backgammon  Position ID: 4HPkQSDgc/ABMA
+                 Match ID   : cAmqAAAAEAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: memsim
+ | X  O        O    |   | O              X |     0 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     Rolled 42
+ | O           X  O |   | X              O |     2 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 159, X 167
+
+* lasse moves 8/4 6/4
+
+Cube analysis
+4-ply cubeless equity +0.034 (Money: -0.012)
+  0.492 0.135 0.006 - 0.508 0.131 0.006
+Cubeful equities:
+1. No double           -0.097
+2. Double, pass        +1.000  (+1.097)
+3. Double, take        -0.858  (-0.761)
+Proper cube action: No double, take (40.9%)
+
+Rolled 42:
+     1. Cubeful 4-ply    13/7*                        Eq.: -0.158
+       0.481 0.133 0.006 - 0.519 0.142 0.008
+*    2. Cubeful 4-ply    8/4 6/4                      Eq.: -0.163 (-0.005)
+       0.474 0.131 0.004 - 0.526 0.131 0.006
+     3. Cubeful 2-ply    24/18                        Eq.: -0.281 (-0.123)
+       0.452 0.105 0.004 - 0.548 0.154 0.005
+     4. Cubeful 2-ply    24/22 24/20                  Eq.: -0.313 (-0.155)
+       0.442 0.102 0.004 - 0.558 0.150 0.005
+     5. Cubeful 2-ply    24/22 13/9                   Eq.: -0.321 (-0.163)
+       0.438 0.112 0.004 - 0.562 0.155 0.008
+
+
+Move number 3:  memsim to play 64
+
+ GNU Backgammon  Position ID: mGfwATDgc+RBIA
+                 Match ID   : MAGzAAAAEAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: memsim
+ | X  O        O    |   | O              X |     0 points
+ | X           O    |   | O              X |     Rolled 64
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X     X          |     
+ | O           X  O |   | X     X        O |     2 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 159, X 161
+
+* memsim moves 24/18 13/9
+
+Cube analysis
+4-ply cubeless equity +0.010 (Money: +0.053)
+  0.526 0.131 0.006 - 0.474 0.131 0.004
+Cubeful equities:
+1. No double           +0.163
+2. Double, pass        +1.000  (+0.837)
+3. Double, take        -0.017  (-0.180)
+Proper cube action: No double, take (17.7%)
+
+Rolled 64:
+*    1. Cubeful 2-ply    24/18 13/9                   Eq.: +0.271
+       0.555 0.139 0.005 - 0.445 0.102 0.003
+     2. Cubeful 2-ply    24/18 11/7                   Eq.: +0.103 (-0.169)
+       0.514 0.116 0.004 - 0.486 0.116 0.003
+     3. Cubeful 2-ply    13/7 11/7                    Eq.: +0.089 (-0.182)
+       0.509 0.134 0.006 - 0.491 0.148 0.005
+     4. Cubeful 2-ply    24/18 6/2                    Eq.: +0.078 (-0.194)
+       0.508 0.113 0.004 - 0.492 0.122 0.004
+     5. Cubeful 2-ply    24/18 8/4                    Eq.: +0.064 (-0.207)
+       0.503 0.119 0.004 - 0.497 0.129 0.004
+
+
+Move number 4:  lasse to play 22
+
+ GNU Backgammon  Position ID: 4HPJwQCYZ/ABMA
+                 Match ID   : cAmpAAAAEAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: memsim
+ | X  O     O  O    |   | O              X |     0 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ | O                |   | X                |     
+ | O           X  O |   | X     X          |     Rolled 22
+ | O           X  O |   | X     X          |     2 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 149, X 161
+
+* lasse moves 24/16*
+
+Cube analysis
+4-ply cubeless equity -0.105 (Money: -0.145)
+  0.447 0.102 0.003 - 0.553 0.139 0.004
+Cubeful equities:
+1. No double           -0.282
+2. Double, pass        +1.000  (+1.282)
+3. Double, take        -1.270  (-0.988)
+Proper cube action: No double, take (43.5%)
+
+Rolled 22:
+*    1. Cubeful 2-ply    24/16*                       Eq.: +0.053
+       0.531 0.138 0.003 - 0.469 0.112 0.004
+     2. Cubeful 2-ply    24/20(2)                     Eq.: -0.122 (-0.175)
+       0.461 0.069 0.001 - 0.539 0.057 0.001
+     3. Cubeful 2-ply    24/22(2) 13/11(2)            Eq.: -0.199 (-0.251)
+       0.448 0.091 0.002 - 0.552 0.094 0.002
+     4. Cubeful 0-ply    24/22(2) 13/9                Eq.: -0.269 (-0.322)
+       0.425 0.086 0.002 - 0.575 0.093 0.002
+     5. Cubeful 0-ply    24/22 13/11(3)               Eq.: -0.296 (-0.349)
+       0.437 0.101 0.003 - 0.563 0.139 0.005
+
+
+Move number 5:  memsim to play 41
+
+ GNU Backgammon  Position ID: mGfwESDgc+RgQA
+                 Match ID   : MAGmAAAAEAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: memsim
+ | X  O     X  O    | O | O              X |     0 points
+ | X           O    |   | O                |     Rolled 41
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ | O                |   | X                |     
+ | O           X  O |   | X     X          |     
+ | O           X  O |   | X     X          |     2 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 165, X 153
+
+* memsim moves bar/24 13/9*
+
+Cube analysis
+4-ply cubeless equity -0.126 (Money: -0.085)
+  0.469 0.113 0.003 - 0.531 0.137 0.004
+Cubeful equities:
+1. No double           -0.045
+2. Double, pass        +1.000  (+1.045)
+3. Double, take        -0.333  (-0.288)
+Proper cube action: No double, take (21.6%)
+
+Rolled 41:
+*    1. Cubeful 2-ply    bar/24 13/9*                 Eq.: +0.086
+       0.502 0.141 0.005 - 0.498 0.142 0.007
+     2. Cubeful 2-ply    bar/24 11/7                  Eq.: -0.161 (-0.247)
+       0.440 0.110 0.003 - 0.560 0.158 0.006
+     3. Cubeful 0-ply    bar/20                       Eq.: -0.216 (-0.302)
+       0.428 0.096 0.003 - 0.572 0.159 0.006
+     4. Cubeful 0-ply    bar/24 8/4                   Eq.: -0.265 (-0.351)
+       0.417 0.103 0.004 - 0.583 0.188 0.010
+     5. Cubeful 0-ply    bar/24 6/2                   Eq.: -0.277 (-0.363)
+       0.415 0.098 0.003 - 0.585 0.187 0.009
+
+
+Move number 6:  lasse to play 51
+
+ GNU Backgammon  Position ID: 4HPJYCCYZ/ABUA
+                 Match ID   : cImmAAAAEAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: memsim
+ | X  O     O  O    |   | O              X |     0 points
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ | O           X  O |   | X     X          |     Rolled 51
+ | O           X  O | X | X     X        O |     2 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 160, X 162
+
+* lasse moves bar/20 24/23
+
+Cube analysis
+4-ply cubeless equity +0.050 (Money: +0.002)
+  0.499 0.142 0.006 - 0.501 0.140 0.005
+Cubeful equities:
+1. No double           -0.087
+2. Double, pass        +1.000  (+1.087)
+3. Double, take        -0.827  (-0.741)
+Proper cube action: No double, take (40.5%)
+Alert: doubtful move ( -0.031)
+
+Rolled 51:
+     1. Cubeful 4-ply    bar/24 6/1*                  Eq.: -0.236
+       0.464 0.132 0.004 - 0.536 0.153 0.007
+*    2. Cubeful 4-ply    bar/20 24/23                 Eq.: -0.267 (-0.031)
+       0.461 0.118 0.004 - 0.539 0.157 0.005
+     3. Cubeful 4-ply    bar/24 13/8                  Eq.: -0.268 (-0.032)
+       0.459 0.121 0.004 - 0.541 0.159 0.005
+     4. Cubeful 4-ply    bar/20 6/5                   Eq.: -0.318 (-0.082)
+       0.453 0.120 0.005 - 0.547 0.169 0.008
+     5. Cubeful 2-ply    bar/24 8/3                   Eq.: -0.481 (-0.245)
+       0.416 0.119 0.004 - 0.584 0.195 0.013
+
+
+Move number 7:  memsim to play 52
+
+ GNU Backgammon  Position ID: mGfwARHgc8lgIA
+                 Match ID   : MIGqAAAAEAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: memsim
+ | X  O     O  O    |   | O  X        X    |     0 points
+ | X           O    |   | O                |     Rolled 52
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ | O           X  O |   | X     X          |     
+ | O           X  O |   | X     X        O |     2 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 160, X 156
+
+* memsim moves 11/9 6/1
+
+Cube analysis
+4-ply cubeless equity +0.070 (Money: +0.116)
+  0.539 0.157 0.005 - 0.461 0.118 0.004
+Cubeful equities:
+1. No double           +0.267
+2. Double, pass        +1.000  (+0.733)
+3. Double, take        +0.118  (-0.149)
+Proper cube action: No double, take (16.9%)
+
+Rolled 52:
+*    1. Cubeful 4-ply    11/9 6/1                     Eq.: +0.050
+       0.495 0.120 0.003 - 0.505 0.122 0.004
+     2. Cubeful 4-ply    9/4 6/4                      Eq.: +0.035 (-0.016)
+       0.490 0.124 0.004 - 0.510 0.132 0.005
+     3. Cubeful 4-ply    11/9 8/3                     Eq.: -0.026 (-0.076)
+       0.476 0.118 0.003 - 0.524 0.143 0.006
+     4. Cubeful 2-ply    13/8 11/9                    Eq.: -0.072 (-0.122)
+       0.465 0.108 0.003 - 0.535 0.136 0.005
+     5. Cubeful 2-ply    13/11 13/8                   Eq.: -0.089 (-0.139)
+       0.461 0.106 0.003 - 0.539 0.138 0.005
+
+
+Move number 8:  lasse to play 51
+
+ GNU Backgammon  Position ID: wXPDYCCYZ/ABEQ
+                 Match ID   : cImmAAAAEAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: memsim
+ | X        O  O    |   | O  X        X  O |     0 points
+ | X        O  O    |   | O                |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   |                  |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ | O           X  O |   | X     X          |     Rolled 51
+ | O           X  O |   | X     X        O |     2 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 153, X 156
+
+* lasse moves 23/22 13/8
+
+Cube analysis
+4-ply cubeless equity +0.053 (Money: +0.013)
+  0.505 0.122 0.004 - 0.495 0.120 0.003
+Cubeful equities:
+1. No double           -0.050
+2. Double, pass        +1.000  (+1.050)
+3. Double, take        -0.715  (-0.665)
+Proper cube action: No double, take (38.8%)
+
+Rolled 51:
+     1. Cubeful 4-ply    13/8 6/5                     Eq.: -0.153
+       0.486 0.132 0.005 - 0.514 0.147 0.005
+*    2. Cubeful 4-ply    23/22 13/8                   Eq.: -0.175 (-0.022)
+       0.482 0.122 0.004 - 0.518 0.148 0.003
+     3. Cubeful 4-ply    20/14                        Eq.: -0.181 (-0.027)
+       0.487 0.113 0.004 - 0.513 0.160 0.003
+     4. Cubeful 4-ply    23/22 20/15                  Eq.: -0.212 (-0.059)
+       0.484 0.110 0.004 - 0.516 0.170 0.003
+     5. Cubeful 2-ply    20/15 6/5                    Eq.: -0.189 (-0.036)
+       0.484 0.123 0.004 - 0.516 0.165 0.006
+
+
+Move number 9:  memsim to play 44
+
+ GNU Backgammon  Position ID: mOfgAQnBc8NgIA
+                 Match ID   : MAGyAAAAEAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: memsim
+ | X        O  O    |   | O  X     X     O |     0 points
+ | X        O  O    |   | O                |     Rolled 44
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |             X    |   | X                |     
+ | O           X  O |   | X     X          |     
+ | O           X  O |   | X     X        O |     2 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 153, X 150
+
+* memsim moves 9/5*/1 6/2(2)
+
+Cube analysis
+4-ply cubeless equity +0.016 (Money: +0.061)
+  0.518 0.148 0.003 - 0.482 0.122 0.004
+Cubeful equities:
+1. No double           +0.175
+2. Double, pass        +1.000  (+0.825)
+3. Double, take        -0.006  (-0.181)
+Proper cube action: No double, take (18.0%)
+Alert: very bad move ( -0.263)
+
+Rolled 44:
+     1. Cubeful 4-ply    13/5*(2)                     Eq.: +0.497
+       0.583 0.200 0.006 - 0.417 0.102 0.004
+     2. Cubeful 4-ply    13/5*/1 13/9                 Eq.: +0.426 (-0.071)
+       0.571 0.180 0.004 - 0.429 0.096 0.003
+     3. Cubeful 4-ply    9/5*(2) 8/4(2)               Eq.: +0.420 (-0.077)
+       0.556 0.222 0.006 - 0.444 0.122 0.006
+*    4. Cubeful 4-ply    9/5*/1 6/2(2)                Eq.: +0.234 (-0.263)
+       0.511 0.190 0.003 - 0.489 0.142 0.006
+     5. Cubeful 2-ply    18/14(2) 9/5*(2)             Eq.: +0.332 (-0.164)
+       0.559 0.164 0.005 - 0.441 0.123 0.005
+
+
+Move number 10:  lasse to play 33
+
+ GNU Backgammon  Position ID: G+bCYCCY5+ABRA
+                 Match ID   : cImtAAAAEAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: memsim
+ | X        O  O    |   | O        X  O  O |     0 points
+ | X           O    |   | O           O  O |     
+ | X           O    |   |                  |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |             X    |   | X                |     
+ | O           X  O |   | X     X          |     Rolled 33
+ | O           X  O | X | X     X        O |     2 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 137, X 155
+
+* lasse moves bar/22 8/5(3)
+
+Cube analysis
+4-ply cubeless equity -0.011 (Money: -0.067)
+  0.489 0.142 0.006 - 0.511 0.190 0.003
+Cubeful equities:
+1. No double           -0.234
+2. Double, pass        +1.000  (+1.234)
+3. Double, take        -0.965  (-0.731)
+Proper cube action: No double, take (37.2%)
+
+Rolled 33:
+*    1. Cubeful 4-ply    bar/22 8/5(3)                Eq.: +0.172
+       0.551 0.193 0.006 - 0.449 0.106 0.002
+     2. Cubeful 4-ply    bar/22 13/10 6/3(2)          Eq.: +0.091 (-0.081)
+       0.536 0.167 0.006 - 0.464 0.114 0.002
+     3. Cubeful 2-ply    bar/22 13/10 8/5(2)          Eq.: +0.047 (-0.126)
+       0.533 0.183 0.008 - 0.467 0.144 0.003
+     4. Cubeful 2-ply    bar/22 13/10(2) 8/5          Eq.: +0.035 (-0.137)
+       0.524 0.157 0.006 - 0.476 0.122 0.002
+     5. Cubeful 2-ply    bar/22 8/5 6/3(2)            Eq.: +0.033 (-0.139)
+       0.524 0.162 0.005 - 0.476 0.127 0.002
+
+
+Move number 11:  memsim to play 11
+
+ GNU Backgammon  Position ID: 2D3gAQwb5sJgIA
+                 Match ID   : MIGkAAAAEAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: memsim
+ | X        O  O    |   | O        X  O  O |     0 points
+ | X           O    |   | O        X  O  O |     Rolled 11
+ | X           O    |   |                  |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X  X             |     
+ | O              O |   | X  X  X          |     
+ | O              O |   | X  X  X        O |     2 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 137, X 143
+
+* memsim moves 24/23 9/7 8/7
+
+Cube analysis
+4-ply cubeless equity -0.242 (Money: -0.193)
+  0.449 0.106 0.002 - 0.551 0.193 0.006
+Cubeful equities:
+1. No double           -0.172
+2. Double, pass        +1.000  (+1.172)
+3. Double, take        -0.486  (-0.314)
+Proper cube action: No double, take (21.1%)
+
+Rolled 11:
+*    1. Cubeful 4-ply    24/23 9/7 8/7                Eq.: -0.188
+       0.445 0.115 0.002 - 0.555 0.208 0.007
+     2. Cubeful 4-ply    24/23 9/6                    Eq.: -0.205 (-0.017)
+       0.439 0.114 0.002 - 0.561 0.206 0.006
+     3. Cubeful 2-ply    24/23 18/17(2) 9/8           Eq.: -0.272 (-0.084)
+       0.427 0.101 0.001 - 0.573 0.222 0.006
+     4. Cubeful 2-ply    24/23 9/8 6/5(2)             Eq.: -0.284 (-0.096)
+       0.421 0.103 0.002 - 0.579 0.220 0.006
+     5. Cubeful 2-ply    9/6 8/7                      Eq.: -0.371 (-0.183)
+       0.395 0.116 0.002 - 0.605 0.243 0.011
+
+
+Move number 12:  lasse to play 51
+
+ GNU Backgammon  Position ID: G7bBYBDYPeABDA
+                 Match ID   : cImmAAAAEAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: memsim
+ | X           O  O |   | O        X  O  O |     0 points
+ | X           O  O |   | O        X  O  O |     
+ | X                |   |                  |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X  X             |     
+ | O              O |   | X  X  X          |     Rolled 51
+ | O              O |   | X  X  X     O    |     2 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 133, X 143
+
+* lasse moves 13/8 6/5
+
+Cube analysis
+4-ply cubeless equity +0.263 (Money: +0.208)
+  0.555 0.208 0.007 - 0.445 0.115 0.002
+Cubeful equities:
+1. No double           +0.188
+2. Double, pass        +1.000  (+0.812)
+3. Double, take        -0.301  (-0.489)
+Proper cube action: No double, take (37.6%)
+
+Rolled 51:
+     1. Cubeful 4-ply    13/8 5/4                     Eq.: +0.024
+       0.510 0.177 0.005 - 0.490 0.115 0.002
+     2. Cubeful 4-ply    6/1 5/4                      Eq.: +0.023 (-0.001)
+       0.512 0.172 0.004 - 0.488 0.114 0.002
+*    3. Cubeful 4-ply    13/8 6/5                     Eq.: +0.019 (-0.005)
+       0.508 0.174 0.005 - 0.492 0.113 0.002
+     4. Cubeful 2-ply    6/5 6/1                      Eq.: -0.077 (-0.101)
+       0.489 0.160 0.004 - 0.511 0.126 0.002
+     5. Cubeful 2-ply    22/16                        Eq.: -0.150 (-0.174)
+       0.500 0.170 0.007 - 0.500 0.201 0.003
+
+
+Move number 13:  memsim to play 44
+
+ GNU Backgammon  Position ID: 2DvBAQwbtsFgEA
+                 Match ID   : MAGyAAAAEAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: memsim
+ | X           O  O |   | O        X  O  O |     0 points
+ | X           O  O |   | O        X  O  O |     Rolled 44
+ | X                |   |                  |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |    X             |     
+ |                  |   | X  X             |     
+ | O              O |   | X  X  X          |     
+ | O           X  O |   | X  X  X     O    |     2 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 133, X 137
+
+* memsim moves 18/14(2) 13/9(2)
+
+Cube analysis
+4-ply cubeless equity -0.128 (Money: -0.080)
+  0.492 0.113 0.002 - 0.508 0.174 0.005
+Cubeful equities:
+1. No double           -0.019
+2. Double, pass        +1.000  (+1.019)
+3. Double, take        -0.258  (-0.239)
+Proper cube action: No double, take (19.0%)
+Alert: bad move ( -0.075)
+
+Rolled 44:
+     1. Cubeful 4-ply    13/5(2)                      Eq.: +0.021
+       0.497 0.129 0.002 - 0.503 0.170 0.005
+     2. Cubeful 4-ply    13/9(2) 8/4(2)               Eq.: -0.034 (-0.055)
+       0.484 0.124 0.002 - 0.516 0.180 0.006
+*    3. Cubeful 4-ply    18/14(2) 13/9(2)             Eq.: -0.054 (-0.075)
+       0.485 0.108 0.002 - 0.515 0.180 0.006
+     4. Cubeful 2-ply    18/10(2)                     Eq.: -0.164 (-0.184)
+       0.454 0.106 0.001 - 0.546 0.200 0.005
+     5. Cubeful 2-ply    18/14(2) 8/4(2)              Eq.: -0.175 (-0.196)
+       0.452 0.106 0.001 - 0.548 0.202 0.006
+
+
+Move number 14:  lasse to play 41
+
+ GNU Backgammon  Position ID: G7YNBhDYO8EBDA
+                 Match ID   : cAmmAAAAEAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: memsim
+ | X        O  O  O |   | O        X  O  O |     0 points
+ | X        O  O  O |   | O        X  O  O |     
+ | X                |   |                  |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |    X             |     
+ |                  |   | X  X             |     
+ |    O             |   | X  X  X          |     Rolled 41
+ |    O        X    |   | X  X  X     O    |     2 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 117, X 137
+
+* lasse moves 13/8
+
+Cube analysis
+4-ply cubeless equity +0.154 (Money: +0.105)
+  0.515 0.180 0.006 - 0.485 0.108 0.002
+Cubeful equities:
+1. No double           +0.054
+2. Double, pass        +1.000  (+0.946)
+3. Double, take        -0.605  (-0.659)
+Proper cube action: No double, take (41.1%)
+
+Rolled 41:
+*    1. Cubeful 2-ply    13/8                         Eq.: +0.064
+       0.515 0.165 0.005 - 0.485 0.092 0.002
+     2. Cubeful 2-ply    6/2* 5/4                     Eq.: -0.131 (-0.194)
+       0.483 0.166 0.005 - 0.517 0.145 0.003
+     3. Cubeful 2-ply    8/7 6/2*                     Eq.: -0.174 (-0.237)
+       0.473 0.157 0.005 - 0.527 0.148 0.003
+     4. Cubeful 2-ply    8/4 5/4                      Eq.: -0.181 (-0.244)
+       0.442 0.120 0.003 - 0.558 0.086 0.001
+     5. Cubeful 2-ply    13/9 5/4                     Eq.: -0.197 (-0.261)
+       0.454 0.134 0.003 - 0.546 0.120 0.002
+
+
+Move number 15:  memsim to play 54
+
+ GNU Backgammon  Position ID: 2DuDAQwbtg0GEA
+                 Match ID   : MIGyAAAAEAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: memsim
+ | X        O  O  O |   | O        X  O  O |     0 points
+ | X        O  O  O |   | O        X  O  O |     Rolled 54
+ |                  |   |                  |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |    X             |     
+ |                  |   | X  X             |     
+ |    O        X    |   | X  X  X          |     
+ |    O        X    |   | X  X  X     O    |     2 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 117, X 132
+
+* memsim moves 23/14
+
+Cube analysis
+4-ply cubeless equity -0.142 (Money: -0.100)
+  0.486 0.092 0.002 - 0.514 0.162 0.005
+Cubeful equities:
+1. No double           -0.057
+2. Double, pass        +1.000  (+1.057)
+3. Double, take        -0.332  (-0.275)
+Proper cube action: No double, take (20.7%)
+
+Rolled 54:
+*    1. Cubeful 0-ply    23/14                        Eq.: +0.397
+       0.634 0.049 0.000 - 0.366 0.050 0.000
+     2. Cubeful 0-ply    14/10 14/9                   Eq.: -0.178 (-0.576)
+       0.442 0.110 0.001 - 0.558 0.182 0.008
+     3. Cubeful 0-ply    23/18 14/10                  Eq.: -0.279 (-0.676)
+       0.434 0.094 0.001 - 0.566 0.243 0.016
+     4. Cubeful 0-ply    14/5                         Eq.: -0.436 (-0.833)
+       0.384 0.115 0.001 - 0.616 0.284 0.019
+     5. Cubeful 0-ply    23/18 9/5                    Eq.: -0.635 (-1.032)
+       0.348 0.090 0.001 - 0.652 0.345 0.022
+
+
+Move number 16:  lasse to play 43
+
+ GNU Backgammon  Position ID: G7YNDgDYO4MBDA
+                 Match ID   : cAmuAAAAEAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: memsim
+ | X        O  O  O |   | O        X  O  O |     0 points
+ | X        O  O  O |   | O        X  O  O |     
+ |                  |   |                  |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |    X             |     
+ |    O             |   | X  X             |     
+ |    O        X    |   | X  X  X          |     Rolled 43
+ |    O        X    |   | X  X  X          |     2 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 108, X 132
+
+* lasse moves 8/4 6/3
+
+Cube analysis
+4-ply cubeless equity -0.230 (Money: -0.247)
+  0.372 0.060 0.001 - 0.628 0.051 0.001
+Cubeful equities:
+1. No double           -0.373
+2. Double, pass        +1.000  (+1.373)
+3. Double, take        -1.646  (-1.274)
+Proper cube action: No double, take (48.1%)
+Alert: doubtful move ( -0.035)
+
+Rolled 43:
+     1. Cubeful 4-ply    6/2 5/2                      Eq.: -0.349
+       0.380 0.061 0.001 - 0.620 0.048 0.001
+     2. Cubeful 4-ply    8/4 5/2                      Eq.: -0.358 (-0.009)
+       0.379 0.060 0.001 - 0.621 0.052 0.001
+*    3. Cubeful 4-ply    8/4 6/3                      Eq.: -0.384 (-0.035)
+       0.370 0.055 0.001 - 0.630 0.048 0.001
+     4. Cubeful 4-ply    6/3 5/1                      Eq.: -0.407 (-0.058)
+       0.365 0.055 0.001 - 0.635 0.054 0.001
+     5. Cubeful 2-ply    5/2 5/1                      Eq.: -0.432 (-0.083)
+       0.356 0.055 0.001 - 0.644 0.055 0.001
+
+
+Move number 17:  memsim on roll, cube decision?
+
+ GNU Backgammon  Position ID: dG+CAQwbtg0OAA
+                 Match ID   : MAGgAAAAEAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: memsim
+ | X        O  O  O |   | O        X  O  O |     0 points
+ | X        O  O  O |   | O        X  O  O |     On roll
+ |                  |   |                  |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |    X             |     
+ |    O             |   |    X  X          |     
+ |    O             |   | X  X  X          |     
+ |    O        X    |   | X  X  X  X       |     2 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 108, X 125
+
+* memsim doubles
+
+Alert: wrong double (-0.114)!
+ [bad]
+Cube analysis
+4-ply cubeless equity +0.237 (Money: +0.254)
+  0.630 0.048 0.001 - 0.370 0.055 0.001
+Cubeful equities:
+1. No double           +0.384
+2. Double, pass        +1.000  (+0.616)
+3. Double, take        +0.270  (-0.114)
+Proper cube action: No double, take (15.6%)
+Move number 18:  memsim doubles to 2
+
+ GNU Backgammon  Position ID: dG+CAQwbtg0OAA
+                 Match ID   : MBmgAAAAEAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: memsim
+ | X        O  O  O |   | O        X  O  O |     0 points
+ | X        O  O  O |   | O        X  O  O |     
+ |                  |   |                  |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     
+ |                  |   |                  |    
+ |                  |   |    X             |     
+ |    O             |   |    X  X          |     
+ |    O             |   | X  X  X          |     Cube offered at 2
+ |    O        X    |   | X  X  X  X       |     2 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 108, X 125
+
+* lasse accepts
+
+
+Cube analysis
+4-ply cubeless equity -0.237 (Money: -0.254)
+  0.370 0.055 0.001 - 0.630 0.048 0.001
+Cubeful equities:
+1. No double           -0.384
+2. Double, pass        -1.000  (-0.616)
+3. Double, take        -0.270  (+0.114)
+Proper cube action: No double, take (15.6%)
+Move number 19:  memsim to play 64
+
+ GNU Backgammon  Position ID: dG+CAQwbtg0OAA
+                 Match ID   : EQGzAAAAEAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: memsim
+ | X        O  O  O |   | O        X  O  O |     0 points
+ | X        O  O  O |   | O        X  O  O |     Rolled 64
+ |                  |   |                  |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |    X             |     
+ |    O             |   |    X  X          |     
+ |    O             |   | X  X  X          |     
+ |    O        X    |   | X  X  X  X       |     2 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 108, X 125
+
+* memsim moves 14/10 14/8
+
+Rolled 64:
+     1. Cubeful 4-ply    14/4                         Eq.: +0.169
+       0.608 0.061 0.001 - 0.392 0.091 0.003
+*    2. Cubeful 4-ply    14/10 14/8                   Eq.: +0.141 (-0.028)
+       0.585 0.079 0.002 - 0.415 0.097 0.003
+     3. Cubeful 2-ply    14/10 8/2                    Eq.: -0.030 (-0.198)
+       0.501 0.113 0.004 - 0.499 0.174 0.008
+     4. Cubeful 2-ply    8/4 8/2                      Eq.: -0.086 (-0.254)
+       0.497 0.073 0.001 - 0.503 0.147 0.003
+     5. Cubeful 2-ply    14/8 9/5                     Eq.: -0.150 (-0.319)
+       0.467 0.095 0.003 - 0.533 0.218 0.008
+
+
+Move number 20:  lasse to play 65
+
+ GNU Backgammon  Position ID: G7ZbCAB0b4IBDA
+                 Match ID   : UQm3AAAAEAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: memsim
+ | X     O  O  O  O |   | O        X  O  O |     0 points
+ | X        O  O  O |   | O        X  O  O |     
+ |             O    |   |                  |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |    X             |     
+ |                  |   |    X  X          |     
+ |                  |   | X  X  X          |     Rolled 65
+ |    O        X    |   | X  X  X  X       |     2 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 98, X 125
+
+* lasse moves 13/7 8/3
+
+Cube analysis
+4-ply cubeless equity -0.200 (Money: -0.152)
+  0.415 0.097 0.003 - 0.585 0.079 0.002
+Cubeful equities:
+1. No double           -0.141
+2. Double, pass        +1.000  (+1.141)
+3. Double, take        -1.498  (-1.357)
+Proper cube action: No redouble, take (54.3%)
+
+Rolled 65:
+*    1. Cubeful 4-ply    13/7 8/3                     Eq.: -0.293
+       0.336 0.035 0.001 - 0.664 0.045 0.001
+     2. Cubeful 4-ply    13/8 13/7                    Eq.: -0.294 (-0.001)
+       0.330 0.028 0.000 - 0.670 0.034 0.001
+     3. Cubeful 4-ply    13/2                         Eq.: -0.341 (-0.048)
+       0.321 0.032 0.001 - 0.679 0.053 0.001
+     4. Cubeful 2-ply    8/2 6/1                      Eq.: -0.433 (-0.140)
+       0.283 0.030 0.000 - 0.717 0.057 0.001
+     5. Cubeful 2-ply    13/7 6/1                     Eq.: -0.476 (-0.183)
+       0.275 0.029 0.000 - 0.725 0.074 0.001
+
+
+Move number 21:  memsim to play 43
+
+ GNU Backgammon  Position ID: 7N4CAQwbtlsIAA
+                 Match ID   : EQGuAAAAEAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: memsim
+ | X     O  O  O  O |   | O        X  O  O |     0 points
+ |          O  O  O |   | O        X  O  O |     Rolled 43
+ |             O    |   |                  |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |    X             |     
+ |                  |   |    X  X          |     
+ |                  |   | X  X  X  X       |     
+ |    O           X |   | X  X  X  X       |     2 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 98, X 114
+
+* memsim moves 14/11 10/6
+
+Rolled 43:
+*    1. Cubeful 4-ply    14/11 10/6                   Eq.: +0.236
+       0.647 0.032 0.000 - 0.353 0.038 0.001
+     2. Cubeful 4-ply    14/7                         Eq.: +0.192 (-0.044)
+       0.627 0.037 0.001 - 0.373 0.051 0.001
+     3. Cubeful 2-ply    14/10 8/5                    Eq.: +0.187 (-0.048)
+       0.615 0.062 0.002 - 0.385 0.088 0.003
+     4. Cubeful 2-ply    10/6 8/5                     Eq.: +0.091 (-0.144)
+       0.580 0.058 0.001 - 0.420 0.122 0.004
+     5. Cubeful 0-ply    14/11 8/4                    Eq.: -0.005 (-0.240)
+       0.542 0.059 0.001 - 0.458 0.163 0.005
+
+
+Move number 22:  lasse to play 31
+
+ GNU Backgammon  Position ID: G243AQDs3gIBDA
+                 Match ID   : UYmlAAAAEAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: memsim
+ | X  O     O  O  O |   | O        X  O  O |     0 points
+ |          O  O  O |   | O        X  O  O |     
+ |             O    |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |    X             |     
+ |                  |   |    X  X          |     
+ |                  |   | X  X  X  X       |     Rolled 31
+ |                X |   | X  X  X  X       |     2 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 91, X 114
+
+* lasse moves 5/2 4/3
+
+Cube analysis
+4-ply cubeless equity -0.306 (Money: -0.288)
+  0.353 0.038 0.001 - 0.647 0.032 0.000
+Cubeful equities:
+1. No double           -0.236
+2. Double, pass        +1.000  (+1.236)
+3. Double, take        -1.861  (-1.626)
+Proper cube action: No redouble, take (56.8%)
+
+Rolled 31:
+     1. Cubeful 4-ply    7/6 5/2                      Eq.: -0.239
+       0.347 0.030 0.000 - 0.653 0.024 0.000
+*    2. Cubeful 4-ply    5/2 4/3                      Eq.: -0.242 (-0.002)
+       0.348 0.030 0.000 - 0.652 0.025 0.001
+     3. Cubeful 4-ply    13/12 5/2                    Eq.: -0.243 (-0.003)
+       0.347 0.030 0.000 - 0.653 0.025 0.001
+     4. Cubeful 4-ply    5/2 3/2                      Eq.: -0.247 (-0.007)
+       0.346 0.029 0.000 - 0.654 0.026 0.001
+     5. Cubeful 2-ply    5/4 5/2                      Eq.: -0.273 (-0.033)
+       0.335 0.023 0.000 - 0.665 0.025 0.000
+
+
+Move number 23:  memsim to play 54
+
+ GNU Backgammon  Position ID: ut0CAQwbbjcBAA
+                 Match ID   : EYGyAAAAEAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: memsim
+ | X  O     O  O  O |   | O        X  O  O |     0 points
+ |          O  O  O |   | O        X  O  O |     Rolled 54
+ |             O    |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |    X     X       |     
+ |                  |   | X  X  X  X       |     
+ |                X |   | X  X  X  X  X    |     2 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 91, X 110
+
+* memsim moves 11/2
+
+Rolled 54:
+*    1. Cubeful 4-ply    11/2                         Eq.: +0.126
+       0.605 0.021 0.000 - 0.395 0.043 0.001
+     2. Cubeful 4-ply    11/7 6/1                     Eq.: +0.118 (-0.008)
+       0.603 0.020 0.000 - 0.397 0.045 0.001
+     3. Cubeful 4-ply    9/4 8/4                      Eq.: +0.107 (-0.019)
+       0.575 0.074 0.006 - 0.425 0.119 0.004
+     4. Cubeful 4-ply    11/6 8/4                     Eq.: +0.107 (-0.019)
+       0.580 0.060 0.004 - 0.420 0.081 0.003
+     5. Cubeful 2-ply    8/4 6/1                      Eq.: -0.049 (-0.176)
+       0.522 0.058 0.002 - 0.478 0.141 0.006
+
+
+Move number 24:  lasse to play 32
+
+ GNU Backgammon  Position ID: O9xuAAC63QIBDA
+                 Match ID   : UYmpAAAAEAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: memsim
+ | X        O  O  O |   | O        X  O  O |     0 points
+ |          O  O  O |   | O        X  O  O |     
+ |             O    |   | O           O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |    X     X       |     
+ |                  |   | X  X  X  X       |     Rolled 32
+ |                X |   | X  X  X  X  X    |     2 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 82, X 110
+
+* lasse moves 5/2 3/1
+
+Cube analysis
+4-ply cubeless equity -0.202 (Money: -0.188)
+  0.395 0.043 0.001 - 0.605 0.021 0.000
+Cubeful equities:
+1. No double           -0.126
+2. Double, pass        +1.000  (+1.126)
+3. Double, take        -1.617  (-1.491)
+Proper cube action: No redouble, take (57.0%)
+
+Rolled 32:
+*    1. Cubeful 4-ply    5/2 3/1                      Eq.: -0.086
+       0.415 0.049 0.001 - 0.585 0.024 0.001
+     2. Cubeful 4-ply    13/11 5/2                    Eq.: -0.094 (-0.008)
+       0.408 0.047 0.001 - 0.592 0.019 0.000
+     3. Cubeful 4-ply    7/2                          Eq.: -0.099 (-0.013)
+       0.405 0.046 0.001 - 0.595 0.019 0.000
+     4. Cubeful 4-ply    13/8                         Eq.: -0.114 (-0.028)
+       0.402 0.046 0.001 - 0.598 0.025 0.001
+     5. Cubeful 2-ply    13/10 3/1                    Eq.: -0.128 (-0.042)
+       0.396 0.039 0.000 - 0.604 0.026 0.001
+
+
+Move number 25:  memsim to play 32
+
+ GNU Backgammon  Position ID: bdsCAQw73G4AAA
+                 Match ID   : EYGpAAAAEAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: memsim
+ | X        O  O  O |   | O        X  O  O |     0 points
+ |          O  O  O |   | O        X  O  O |     Rolled 32
+ |             O    |   | O           O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |                  |     
+ |                  |   | X  X  X  X  X    |     
+ |                X |   | X  X  X  X  X  X |     2 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 82, X 105
+
+* memsim moves 9/7 9/6
+
+Rolled 32:
+*    1. Cubeful 2-ply    9/7 9/6                      Eq.: +0.267
+       0.668 0.016 0.000 - 0.332 0.020 0.000
+     2. Cubeful 2-ply    6/1                          Eq.: +0.024 (-0.243)
+       0.565 0.017 0.000 - 0.435 0.054 0.001
+     3. Cubeful 2-ply    7/4 6/4                      Eq.: -0.028 (-0.295)
+       0.525 0.050 0.003 - 0.475 0.080 0.001
+     4. Cubeful 2-ply    8/5 7/5                      Eq.: -0.032 (-0.300)
+       0.518 0.065 0.004 - 0.482 0.079 0.002
+     5. Cubeful 0-ply    7/2                          Eq.: -0.246 (-0.513)
+       0.447 0.032 0.000 - 0.553 0.125 0.002
+
+
+Move number 26:  lasse to play 62
+
+ GNU Backgammon  Position ID: O7w7AABt2wIBDA
+                 Match ID   : UQmrAAAAEAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: memsim
+ | X           O  O |   | O        X  O  O |     0 points
+ |             O  O |   | O        X  O  O |     
+ |             O  O |   | O           O    |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |                  |     
+ |                  |   | X  X  X  X  X    |     Rolled 62
+ |                X |   | X  X  X  X  X  X |     2 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 77, X 105
+
+* lasse moves 13/11 7/1
+
+Cube analysis
+4-ply cubeless equity -0.326 (Money: -0.317)
+  0.338 0.023 0.000 - 0.662 0.016 0.000
+Cubeful equities:
+1. No double           -0.254
+2. Double, pass        +1.000  (+1.254)
+3. Double, take        -1.948  (-1.694)
+Proper cube action: No redouble, take (57.5%)
+
+Rolled 62:
+*    1. Cubeful 4-ply    13/11 7/1                    Eq.: -0.267
+       0.335 0.021 0.000 - 0.665 0.015 0.000
+     2. Cubeful 4-ply    13/5                         Eq.: -0.279 (-0.012)
+       0.330 0.020 0.000 - 0.670 0.016 0.000
+     3. Cubeful 4-ply    13/7 3/1                     Eq.: -0.307 (-0.040)
+       0.318 0.017 0.000 - 0.682 0.018 0.000
+     4. Cubeful 4-ply    7/1 6/4                      Eq.: -0.322 (-0.055)
+       0.311 0.014 0.000 - 0.689 0.019 0.000
+     5. Cubeful 2-ply    13/7 6/4                     Eq.: -0.306 (-0.039)
+       0.317 0.014 0.000 - 0.683 0.018 0.000
+
+
+Move number 27:  memsim to play 62
+
+ GNU Backgammon  Position ID: 27ZBAAw7vDsAAA
+                 Match ID   : EQGrAAAAEAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: memsim
+ |             O  O |   | O        X  O  O |     0 points
+ |             O  O |   | O        X  O  O |     Rolled 62
+ |             O  O |   | O           O    |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |                  |     
+ |                  |   | X  X  X  X  X  X |     
+ |    X             |   | X  X  X  X  X  X |     2 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 77, X 97
+
+* memsim moves 8/6 7/1
+
+Rolled 62:
+*    1. Cubeful 0-ply    8/6 7/1                      Eq.: +0.201
+       0.641 0.012 0.000 - 0.359 0.018 0.000
+     2. Cubeful 0-ply    8/2 6/4                      Eq.: -0.150 (-0.352)
+       0.490 0.016 0.000 - 0.510 0.064 0.000
+     3. Cubeful 0-ply    7/1 6/4                      Eq.: -0.161 (-0.362)
+       0.485 0.016 0.000 - 0.515 0.065 0.000
+     4. Cubeful 0-ply    8/2 7/5                      Eq.: -0.244 (-0.446)
+       0.449 0.017 0.000 - 0.551 0.078 0.001
+     5. Cubeful 0-ply    8/6 8/2                      Eq.: -0.431 (-0.632)
+       0.370 0.011 0.000 - 0.630 0.078 0.001
+
+
+Move number 28:  lasse to play 66
+
+ GNU Backgammon  Position ID: d/g2AADbtkEADA
+                 Match ID   : UQm7AAAAEAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: memsim
+ |             O  O |   | O        X  O  O |     0 points
+ |             O  O |   | O        X  O  O |     
+ |                  |   | O           O  O |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |                  |     
+ |                  |   | X  X  X  X  X  X |     Rolled 66
+ |    X             |   | X  X  X  X  X  X |     2 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 69, X 97
+
+* lasse moves 22/4 11/5
+
+Cube analysis
+4-ply cubeless equity -0.257 (Money: -0.250)
+  0.371 0.021 0.000 - 0.629 0.012 0.000
+Cubeful equities:
+1. No double           -0.186
+2. Double, pass        +1.000  (+1.186)
+3. Double, take        -1.756  (-1.570)
+Proper cube action: No redouble, take (57.0%)
+
+Rolled 66:
+     1. Cubeful 4-ply    22/10 22/16 11/5             Eq.: -0.061
+       0.421 0.000 0.000 - 0.579 0.000 0.000
+     2. Cubeful 4-ply    22/10(2)                     Eq.: -0.062 (-0.000)
+       0.421 0.000 0.000 - 0.579 0.000 0.000
+     3. Cubeful 4-ply    22/4 22/16                   Eq.: -0.072 (-0.011)
+       0.416 0.000 0.000 - 0.584 0.000 0.000
+*    4. Cubeful 4-ply    22/4 11/5                    Eq.: -0.077 (-0.016)
+       0.418 0.013 0.000 - 0.582 0.002 0.000
+
+
+Move number 29:  memsim to play 32
+
+ GNU Backgammon  Position ID: 2+4GAAh3+DYAAA
+                 Match ID   : EYGpAAAAEAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: memsim
+ |             O  O |   | O        X  O  O |     0 points
+ |             O  O |   | O           O  O |     Rolled 32
+ |                  |   | O           O  O |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |    X  X          |     
+ |                  |   | X  X  X  X  X  X |     
+ |                  |   | X  X  X  X  X  X |     2 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 69, X 73
+
+* memsim moves 6/3*/1
+
+Rolled 32:
+*    1. Cubeful 2-ply    6/3*/1                       Eq.: +0.065
+       0.585 0.003 0.000 - 0.415 0.008 0.000
+     2. Cubeful 2-ply    6/1                          Eq.: -0.110 (-0.175)
+       0.505 0.002 0.000 - 0.495 0.005 0.000
+     3. Cubeful 0-ply    8/3*                         Eq.: -0.340 (-0.405)
+       0.412 0.003 0.000 - 0.588 0.058 0.001
+     4. Cubeful 0-ply    7/4 6/4                      Eq.: -0.421 (-0.486)
+       0.371 0.003 0.000 - 0.629 0.024 0.000
+     5. Cubeful 0-ply    8/6 8/5                      Eq.: -0.536 (-0.600)
+       0.321 0.001 0.000 - 0.679 0.018 0.000
+
+
+Move number 30:  lasse to play 62
+
+ GNU Backgammon  Position ID: 7/A2AADb7gYAQA
+                 Match ID   : UQmrAAAAEAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: memsim
+ |             O  O |   | O           O  O |     0 points
+ |             O  O |   | O           O  O |     
+ |                  |   | O           O  O |     
+ |                  |   | O              O |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |    X  X          |     
+ |                  |   | X  X  X  X  X  X |     Rolled 62
+ |                  | X | X  X  X  X  X  X |     2 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 64, X 76
+
+* lasse cannot move
+
+Cube analysis
+4-ply cubeless equity -0.158 (Money: -0.156)
+  0.420 0.006 0.000 - 0.580 0.002 0.000
+Cubeful equities:
+1. No double           -0.063
+2. Double, pass        +1.000  (+1.063)
+3. Double, take        -1.470  (-1.407)
+Proper cube action: No redouble, take (57.0%)
+
+Rolled 62:
+*    Cannot move
+
+
+Move number 31:  memsim to play 31
+
+ GNU Backgammon  Position ID: 2+4GAEDv8DYAAA
+                 Match ID   : EYGlAAAAEAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: memsim
+ |             O  O |   | O           O  O |     0 points
+ |             O  O |   | O           O  O |     Rolled 31
+ |                  |   | O           O  O |     
+ |                  |   | O              O |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |    X  X          |     
+ |                  |   | X  X  X  X  X  X |     
+ |                  | X | X  X  X  X  X  X |     2 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 64, X 76
+
+* memsim moves 8/5 6/5
+
+Rolled 31:
+*    1. Cubeful 2-ply    8/5 6/5                      Eq.: +0.286
+       0.675 0.004 0.000 - 0.325 0.009 0.000
+     2. Cubeful 2-ply    6/2                          Eq.: +0.129 (-0.157)
+       0.613 0.002 0.000 - 0.387 0.009 0.000
+     3. Cubeful 0-ply    6/3 2/1                      Eq.: -0.216 (-0.502)
+       0.465 0.003 0.000 - 0.535 0.043 0.000
+     4. Cubeful 0-ply    8/7 6/3                      Eq.: -0.314 (-0.599)
+       0.425 0.003 0.000 - 0.575 0.068 0.001
+     5. Cubeful 0-ply    7/6 7/4                      Eq.: -0.327 (-0.612)
+       0.416 0.003 0.000 - 0.584 0.044 0.001
+
+
+Move number 32:  lasse to play 61
+
+ GNU Backgammon  Position ID: 79gtAADb7gYAQA
+                 Match ID   : UQmnAAAAEAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: memsim
+ |             O  O |   | O  O        O  O |     0 points
+ |                O |   | O  O        O  O |     
+ |                  |   | O           O  O |     
+ |                  |   |                O |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |    X  X          |     
+ |                  |   | X  X  X  X  X  X |     Rolled 61
+ |                  | X | X  X  X  X  X  X |     2 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 60, X 76
+
+* lasse cannot move
+
+Cube analysis
+4-ply cubeless equity -0.347 (Money: -0.344)
+  0.325 0.008 0.000 - 0.675 0.003 0.000
+Cubeful equities:
+1. No double           -0.289
+2. Double, pass        +1.000  (+1.289)
+3. Double, take        -1.937  (-1.648)
+Proper cube action: No redouble, take (56.1%)
+
+Rolled 61:
+*    Cannot move
+
+
+Move number 33:  memsim to play 55
+
+ GNU Backgammon  Position ID: 2+4GAEDv2C0AAA
+                 Match ID   : EYG2AAAAEAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: memsim
+ |             O  O |   | O  O        O  O |     0 points
+ |                O |   | O  O        O  O |     Rolled 55
+ |                  |   | O           O  O |     
+ |                  |   |                O |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |    X  X          |     
+ |                  |   | X  X  X  X  X  X |     
+ |                  | X | X  X  X  X  X  X |     2 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 60, X 76
+
+* memsim moves 7/2 6/1(3)
+
+Rolled 55:
+*    1. Cubeful 4-ply    7/2 6/1(3)                   Eq.: +0.178
+       0.619 0.001 0.000 - 0.381 0.032 0.000
+     2. Cubeful 4-ply    8/3 7/2(2) 6/1               Eq.: +0.148 (-0.030)
+       0.598 0.002 0.000 - 0.402 0.014 0.000
+     3. Cubeful 2-ply    8/3 6/1(3)                   Eq.: +0.048 (-0.130)
+       0.558 0.002 0.000 - 0.442 0.024 0.000
+     4. Cubeful 0-ply    7/2(2) 6/1(2)                Eq.: -0.314 (-0.492)
+       0.428 0.002 0.000 - 0.572 0.092 0.000
+     5. Cubeful 0-ply    8/3 7/2(2) 5/off             Eq.: -0.406 (-0.585)
+       0.375 0.002 0.000 - 0.625 0.000 0.000
+
+
+Move number 34:  lasse to play 53
+
+ GNU Backgammon  Position ID: f48pAADb7gYAQA
+                 Match ID   : UYmuAAAAEAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: memsim
+ |             O  O |   |    O        O  O |     0 points
+ |                  |   |    O        O  O |     
+ |                  |   |             O  O |     
+ |                  |   |             O  O |     
+ |                  |   |                7 |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |    X  X          |     
+ |                  |   | X  X  X  X  X  X |     Rolled 53
+ |                  | X | X  X  X  X  X  X |     2 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 40, X 76
+
+* lasse moves bar/17*
+
+Cube analysis
+4-ply cubeless equity -0.209 (Money: -0.206)
+  0.381 0.032 0.000 - 0.619 0.001 0.000
+Cubeful equities:
+1. No double           -0.178
+2. Double, pass        +1.000  (+1.178)
+3. Double, take        -1.366  (-1.188)
+Proper cube action: No redouble, take (50.2%)
+
+Rolled 53:
+*    1. Cubeful 0-ply    bar/17*                      Eq.: +1.022
+       0.976 0.044 0.000 - 0.024 0.000 0.000
+     2. Cubeful 0-ply    bar/22 6/1                   Eq.: -0.498 (-1.520)
+       0.223 0.002 0.000 - 0.777 0.000 0.000
+
+
+Move number 35:  memsim to play 11
+
+ GNU Backgammon  Position ID: 2+4GQAB/jwkAQA
+                 Match ID   : EYGkAAAAEAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: memsim
+ |             X  O | O |    O        O  O |     0 points
+ |                  |   |    O        O  O |     Rolled 11
+ |                  |   |             O  O |     
+ |                  |   |             O  O |     
+ |                  |   |                7 |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |    X  X          |     
+ |                  |   | X  X  X  X  X  X |     
+ |                  |   | X  X  X  X  X  X |     2 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 57, X 68
+
+* memsim cannot move
+
+Rolled 11:
+*    Cannot move
+
+
+Move number 36:  lasse on roll, cube decision?
+
+ GNU Backgammon  Position ID: f48JAEDb7gZAAA
+                 Match ID   : UQmgAAAAEAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: memsim
+ |             X  O | O |    O        O  O |     0 points
+ |                  |   |    O        O  O |     
+ |                  |   |             O  O |     
+ |                  |   |             O  O |     
+ |                  |   |                7 |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |    X  X          |     
+ |                  |   | X  X  X  X  X  X |     On roll
+ |                  |   | X  X  X  X  X  X |     2 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 57, X 68
+
+* lasse doubles
+
+Alert: wrong double (-0.033)!
+ [doubtful]
+Cube analysis
+4-ply cubeless equity +1.010 (Money: +1.014)
+  0.981 0.051 0.000 - 0.019 0.000 0.000
+Cubeful equities:
+1. No double           +1.033
+2. Double, take        +1.817  (+0.784)
+3. Double, pass        +1.000  (-0.033)
+Proper cube action: Too good to redouble, pass (4.1%)
+Move number 37:  lasse doubles to 4
+
+ GNU Backgammon  Position ID: f48JAEDb7gZAAA
+                 Match ID   : URGgAAAAEAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: memsim
+ |             X  O | O |    O        O  O |     0 points
+ |                  |   |    O        O  O |     Cube offered at 4
+ |                  |   |             O  O |     
+ |                  |   |             O  O |     
+ |                  |   |                7 |    
+v|                  |BAR|                  |     
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |    X  X          |     
+ |                  |   | X  X  X  X  X  X |     
+ |                  |   | X  X  X  X  X  X |     2 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 57, X 68
+
+* memsim rejects
+
+
+Cube analysis
+4-ply cubeless equity -1.010 (Money: -1.014)
+  0.019 0.000 0.000 - 0.981 0.051 0.000
+Cubeful equities:
+1. No double           -1.033
+2. Double, take        -1.817  (-0.784)
+3. Double, pass        -1.000  (+0.033)
+Proper cube action: Too good to redouble, pass (4.1%)
+lasse wins 2 points
+
+Game statistics for game 2
+
+Player                                   memsim                  lasse                  
+
+Chequerplay statistics
+
+Total moves                               17                      16                    
+Unforced moves                            16                      14                    
+Unmarked moves                            15                      14                    
+Moves marked doubtful                      0                       2                    
+Moves marked bad                           1                       0                    
+Moves marked very bad                      1                       0                    
+Error total EMG (MWC)                         -0.366 ( -3.384%)       -0.117 ( -1.158%) 
+Error rate mEMG (MWC)                        -22.9   ( -0.211%)       -8.3   ( -0.083%) 
+Chequerplay rating                       Casual player           Advanced               
+
+
+Cube statistics
+
+Total cube decisions                       9                      18                    
+Close or actual cube decisions             3                       2                    
+Doubles                                    1                       1                    
+Takes                                      0                       1                    
+Passes                                     1                       0                    
+Missed doubles below CP (EMG (MWC))        0                       0                    
+Missed doubles above CP (EMG (MWC))        0                       0                    
+Wrong doubles below DP (EMG (MWC))         1 (-0.114 ( -0.982%))   0                    
+Wrong doubles above TG (EMG (MWC))         0                       1 (-0.033 ( -0.568%))
+Wrong takes (EMG (MWC))                    0                       0                    
+Wrong passes (EMG (MWC))                   0                       0                    
+Error total EMG (MWC)                         -0.114 ( -0.982%)       -0.033 ( -0.568%) 
+Error rate mEMG (MWC)                        -38.1   ( -0.327%)      -16.6   ( -0.284%) 
+Cube decision rating                     Awful!                  Intermediate           
+
+
+Overall statistics
+
+Error total EMG (MWC)                         -0.480 ( -4.366%)       -0.150 ( -1.726%) 
+Error rate mEMG (MWC)                        -25.3   ( -0.230%)       -9.4   ( -0.108%) 
+Snowie error rate                            -14.5   ( +0.000%)       -4.5   ( +0.000%) 
+Overall rating                           Casual player           Advanced               
+Error based abs. FIBS rating             1703.2                  1921.5                 
+Chequerplay errors rating loss            317.9                   115.9                 
+Cube errors rating loss                    28.9                    12.6                 
+
+
+
+
+Output generated Sat Sep 30 23:41:11 2023
+ by GNU Backgammon 1.07.001-mingw 32-Bit 20221114 (Text Export version 1.128)
+
