@@ -10,3 +10,9 @@ board_ratio <- 11/13 # By design, board is 11 checkers high, 13 checkers wide
 #' @description This variable stores the radius of checkers used in
 #'   diagrams produced by `ggboard()`. For use in some helper functions.
 checker_radius <- 1/26 # Since board is 13 checkers wide
+
+#' @name gnu_chars
+#' @title Characters used in position and match ids
+#' @description This variable stores the set of charactgers used by
+#'   GNU Backgammon in position id and match id
+gnu_chars <- c(LETTERS, letters, 0:9, "+", "/")

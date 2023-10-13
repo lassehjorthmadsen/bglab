@@ -347,8 +347,8 @@ outcome_probs <- function(xg_probs) {
 #' @importFrom stats addmargins
 #'
 #' @examples
-#' XGID=-a-BaBC-A---eE---c-e----B-:0:0:1:00:0:0:0:0:10
-#' 4-ply winning chances, reported in a cumulative fashion:
+#' # XGID=-a-BaBC-A---eE---c-e----B-:0:0:1:00:0:0:0:0:10
+#' # 4-ply winning chances, reported in a cumulative fashion:
 #' cum_probs <- c(61.94, 24.09, 1.04, 38.06, 8.54, 0.42)
 #' probs <- outcome_probs(cum_probs)
 #' probs_table(probs)
@@ -533,7 +533,7 @@ txt2df <- function(files) {
       turn[p] <- stringr::str_extract(positions[[p]][20], "\\*\\s\\w+") %>% stringr::str_remove("\\* ")
 
       # Extract board
-      board_lines <- stringr::str_detect(positions[[p]], "^(\\s\\+|\\s\\||v\\||Pip)")
+      board_lines <- stringr::str_detect(positions[[p]], "^(\\s\\+|\\s\\||Pip)|BAR")
       board[p] <- positions[[p]][board_lines] %>% paste(collapse = "\n")
 
       # Extract cube analysis
@@ -618,6 +618,8 @@ txt2df <- function(files) {
 
     big_df <- dplyr::bind_rows(big_df, df)
   }
+
+  # Add xgid
 
   # A bit of cleaning
   big_df <- big_df %>%

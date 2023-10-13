@@ -4,7 +4,7 @@
 devtools::load_all()
 
 # Get files
-file_path <- "data-raw\\galaxy-matches\\analyzed"
+file_path <- "data-raw\\galaxy-matches\\analyzed\\4-ply"
 files <- list.files(file_path, pattern = "*.txt", full.names = TRUE)
 
 # Parse files

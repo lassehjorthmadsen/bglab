@@ -2,20 +2,18 @@ library(tidyverse)
 library(stringi)
 devtools::load_all()
 
-charset <- c(LETTERS, letters, 0:9, "+", "/")
-
-chr2bin <- function(char, charset) {
+chr2bin <- function(char) {
   # Convert Base64 character to its 6-bit binary representation
-  idx <- which(charset == char) - 1  # -1 because R is 1-indexed
+  idx <- which(gnu_chars == char) - 1  # -1 because R is 1-indexed
   bin_str <- intToBits(idx)[1:6] %>% as.integer() %>% rev() %>% paste0(collapse = "")
   return(bin_str)
 }
 
-id2bin <- function(pos_id, charset) {
+id2bin <- function(pos_id) {
   # Convert GNU backgammon position or match id in Base64 to binary string
   big_bin <- str_split(pos_id, "") %>%
     pluck(1) %>%
-    map_chr(chr2bin, charset = charset) %>%
+    map_chr(chr2bin) %>%
     paste0(collapse = "")
 
   # Convert every 8 bits to their little-endian form
@@ -28,11 +26,11 @@ id2bin <- function(pos_id, charset) {
   return(big_bin_endian)
 }
 
-posid2xgid <- function(pos_id, charset, turn = "bottom") {
+posid2xgid <- function(pos_id, turn = "bottom") {
   # Converts binary string with GNU BG position id to XGID position sub-string
 
   # pos_id to bit string
-  pos_id_bin <- id2bin(pos_id, charset)
+  pos_id_bin <- id2bin(pos_id)
   split_id <- str_split(pos_id_bin, "") %>% pluck(1)
 
   # initialize point matrix with NA
@@ -80,9 +78,9 @@ posid2xgid <- function(pos_id, charset, turn = "bottom") {
 }
 
 
-matchid2xgid <- function(match_id, charset) {
+matchid2xgid <- function(match_id) {
   # match_id to bit string
-  match_id_bin <- id2bin(match_id, charset)
+  match_id_bin <- id2bin(match_id)
 
   starts <- c(1, 5, 7, 8, 9, 12, 13, 14, 16, 19, 22, 37, 52)
   ends <- c(starts[-1] - 1, 66)
@@ -133,9 +131,9 @@ matchid2xgid <- function(match_id, charset) {
 }
 
 
-gnuid2xgid <- function(pos_id, match_id, charset) {
+gnuid2xgid <- function(pos_id, match_id) {
 
-  mid <- matchid2xgid(match_id, charset)
+  mid <- matchid2xgid(match_id)
 
   if ((str_split(mid, ":")[[1]][[4]] == "1" & str_split(mid, ":")[[1]][[5]] != "D") |
       (str_split(mid, ":")[[1]][[4]] == "-1" & str_split(mid, ":")[[1]][[5]] == "D")
@@ -144,7 +142,7 @@ gnuid2xgid <- function(pos_id, match_id, charset) {
       turn <- "top"
     }
 
-  pid <- posid2xgid(pos_id, charset, turn = turn)
+  pid <- posid2xgid(pos_id, turn = turn)
   xgid <- paste0("XGID=", pid, mid)
 
   return(xgid)
@@ -168,7 +166,7 @@ for (i in seq(50)) {
       "Cube action error: ", temp$cube_err, "\n",
       sep = "")
 
-  xgid <- gnuid2xgid(temp$pos_id, temp$match_id, charset)
+  xgid <- gnuid2xgid(temp$pos_id, temp$match_id)
   print(ggboard(xgid))
 
   readline(prompt="Press [enter] to continue")
@@ -195,7 +193,7 @@ for (i in (1:nrow(random_game))) {
       "Cube action error: ", temp$cube_err, "\n",
       sep = "")
 
-  xgid <- gnuid2xgid(temp$pos_id, temp$match_id, charset)
+  xgid <- gnuid2xgid(temp$pos_id, temp$match_id)
   print(ggboard(xgid))
 
   readline(prompt="Press [enter] to continue")
@@ -224,7 +222,7 @@ for (i in (1:nrow(examples))) {
       "Cube action error: ", temp$cube_err, "\n",
       sep = "")
 
-  xgid <- gnuid2xgid(temp$pos_id, temp$match_id, charset)
+  xgid <- gnuid2xgid(temp$pos_id, temp$match_id)
   print(ggboard(xgid))
 
   readline(prompt="Press [enter] to continue")
@@ -232,5 +230,5 @@ for (i in (1:nrow(examples))) {
 
 
 # Can we calculate xgid for all gnu ids? Seems so.
-ids <- map2(bgmoves$pos_id, bgmoves$match_id, gnuid2xgid, charset)
+ids <- map2(bgmoves$pos_id, bgmoves$match_id, gnuid2xgid)
 ids %>% map_int(nchar) %>% table()
