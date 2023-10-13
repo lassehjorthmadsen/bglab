@@ -620,12 +620,18 @@ txt2df <- function(files) {
   }
 
   # Add xgid
+  big_df <- big_df %>%
+    dplyr::rowwise() %>%
+    dplyr::mutate(xgid = gnuid2xgid(pos_id, match_id)) %>%
+    dplyr::ungroup()
 
   # A bit of cleaning
   big_df <- big_df %>%
     dplyr::select(-place) %>%  # Not very useful
-    dplyr::mutate(play = dplyr::case_match(play, c("moves", "cannot") ~  "Rolls", .default = play),
-           play = stringr::str_to_title(play))
+    dplyr::mutate(
+      play = dplyr::case_match(play, c("moves", "cannot") ~  "Rolls", .default = play),
+      play = stringr::str_to_title(play)
+      )
 
   return(big_df)
 }

@@ -82,34 +82,77 @@ summary(bgmoves$cube_err)
 # Few cases where mistake == TRUE and cube_err == 0, likely because of rounding
 bgmoves %>% count(mistake_ca, cube_err < 0)
 
-# Walk-through one random game
-game <- unique(bgmoves$file) %>% sample(1)
-temp <- bgmoves %>% filter(file == game)
-
-for (i in 1:nrow(temp)) {
-  if (i == 1) cat("File: ", game, "\n")
-  cat("Move: ", temp$move_no[i], "\n")
-  cat(temp$board[i], "\n\n")
-  cat(temp$cube_eq[i], "\n\n")
-  cat(temp$move_eq[i], "\n\n")
-  cat("Checker play error: ", temp$move_err[i], "\n")
-  cat("Cube action error: ", temp$cube_err[i], "\n")
-  readline(prompt="Press [enter] to continue")
-}
-
 # Random spot-checks:
-for (i in seq(10)) {
+for (i in seq(50)) {
   temp <- bgmoves %>% filter(cube_err < 0) %>% slice_sample(n = 1)
 
-  cat("File: ", temp$file, "\n",
+  cat("\014",
+      "File: ", temp$file, "\n",
       "Move: ", temp$move_no, "\n",
-      "Match to:", temp$length, "\n",
+      "Position id: ", temp$pos_id, "\n",
+      "Match id: ", temp$match_id, "\n",
+      "Match to: ", temp$length, "\n",
       temp$board, "\n",
       temp$cube_eq, "\n",
       temp$move_eq, "\n",
       "Checker play error: ", temp$move_err, "\n",
       "Cube action error: ", temp$cube_err, "\n",
       sep = "")
+
+  print(ggboard(temp$xgid))
+
+  readline(prompt="Press [enter] to continue")
+}
+
+# Walk through one random game:
+random_file <- bgmoves %>% slice_sample(n = 1) %>% pull(file)
+random_game <- bgmoves %>% filter(file == random_file)
+random_game <- bgmoves %>% filter(file == "match1105425_003.txt")
+
+for (i in (1:nrow(random_game))) {
+  temp <- random_game %>% slice(i)
+
+  cat("File: ", temp$file, "\n",
+      "Move: ", temp$move_no, "\n",
+      "Position id: ", temp$pos_id, "\n",
+      "Match id: ", temp$match_id, "\n",
+      "Match to: ", temp$length, "\n",
+      temp$board, "\n",
+      temp$cube_eq, "\n",
+      temp$move_eq, "\n",
+      "Checker play error: ", temp$move_err, "\n",
+      "Cube action error: ", temp$cube_err, "\n",
+      sep = "")
+
+  print(ggboard(temp$xgid))
+
+  readline(prompt="Press [enter] to continue")
+}
+
+
+# loop through all play types
+examples <- bgmoves %>%
+  group_by(turn == "lasse", proper_ca) %>%
+  slice_sample(n = 1) %>%
+  ungroup()
+
+for (i in (1:nrow(examples))) {
+  temp <- examples %>% slice(i)
+  cat("\014")
+
+  cat("File: ", temp$file, "\n",
+      "Move: ", temp$move_no, "\n",
+      "Position id: ", temp$pos_id, "\n",
+      "Match id: ", temp$match_id, "\n",
+      "Match to: ", temp$length, "\n",
+      temp$board, "\n",
+      temp$cube_eq, "\n",
+      temp$move_eq, "\n",
+      "Checker play error: ", temp$move_err, "\n",
+      "Cube action error: ", temp$cube_err, "\n",
+      sep = "")
+
+  print(ggboard(temp$xgid))
 
   readline(prompt="Press [enter] to continue")
 }

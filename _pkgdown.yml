@@ -36,9 +36,11 @@ reference:
 
 - title: Parsing
   desc: >
-    Function to parse *.txt files with GNU Backgammon analysis to data frame format
+    Functions to parse *.txt files with GNU Backgammon analysis to data frame format,
+    and to convert from GNU Backgammon position/match id to eXtreme Backgammon xgid.
   contents:
   - txt2df
+  - posid2xgid
 
 - title: Constants
   desc: >

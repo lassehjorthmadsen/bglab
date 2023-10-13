@@ -30,6 +30,7 @@
 #'   \item{board}{An ASCII text representation of the board, as displayed by GNU Backgammon}
 #'   \item{cube_eq}{An ASCII text with the cube decision equities, as displayed by GNU Backgammon}
 #'   \item{move_eq}{An ASCII text with the checker play decision equities, as displayed by GNU Backgammon}
+#'   \item{xgid}{eXtreme Backgammon position identifier, xgid}
 #' }
 #' @source <https://github.com/lassehjorthmadsen/backgammon>
 "bgmoves"
