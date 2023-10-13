@@ -1,0 +1,281 @@
+The score (after 1 game) is: gooner1 0, lasse 1 (match to 3 points)
+
+Match Information:
+Date: 16/09/2023
+Place: BackgammonGalaxy
+
+Move number 1:  lasse to play 31
+
+ GNU Backgammon  Position ID: 4HPwATDgc/ABMA
+                 Match ID   : cIhlAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: gooner1
+ | X           O    |   | O              X |     0 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     Rolled 31
+ | O           X    |   | X              O |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 167, X 167
+
+* lasse moves 8/5 6/5
+
+Rolled 31:
+*    1. Cubeful 2-ply    8/5 6/5                      Eq.: +0.094
+       0.551 0.167 0.008 - 0.449 0.115 0.004
+     2. Cubeful 2-ply    24/23 13/10                  Eq.: -0.175 (-0.268)
+       0.496 0.139 0.006 - 0.504 0.138 0.006
+     3. Cubeful 2-ply    24/20                        Eq.: -0.188 (-0.282)
+       0.494 0.127 0.006 - 0.506 0.135 0.005
+     4. Cubeful 2-ply    24/23 24/21                  Eq.: -0.194 (-0.288)
+       0.492 0.124 0.005 - 0.508 0.135 0.005
+     5. Cubeful 2-ply    13/9                         Eq.: -0.203 (-0.296)
+       0.490 0.144 0.007 - 0.510 0.141 0.007
+
+
+Move number 2:  gooner1 to play 62
+
+ GNU Backgammon  Position ID: sGfwATDgc/ABMA
+                 Match ID   : MAFrAAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: gooner1
+ | X           O    |   | O              X |     0 points
+ | X           O    |   | O              X |     Rolled 62
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+^|                  |BAR|                  |     3 points match (Cube: 1)
+ | O                |   |                  |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X  X           O |     
+ | O           X    |   | X  X           O |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 167, X 163
+
+* gooner1 moves 24/16
+
+Cube analysis
+2-ply cubeless equity -0.259 (Money: -0.157)
+  0.449 0.115 0.004 - 0.551 0.167 0.008
+Cubeful equities:
+1. No double           -0.094
+2. Double, pass        +1.000  (+1.094)
+3. Double, take        -0.266  (-0.172)
+Proper cube action: No double, take (13.6%)
+Alert: doubtful move ( -0.038)
+
+Rolled 62:
+     1. Cubeful 2-ply    24/18 13/11                  Eq.: -0.197
+       0.431 0.104 0.005 - 0.569 0.196 0.010
+*    2. Cubeful 2-ply    24/16                        Eq.: -0.235 (-0.038)
+       0.424 0.095 0.003 - 0.576 0.189 0.007
+     3. Cubeful 2-ply    24/22 24/18                  Eq.: -0.268 (-0.071)
+       0.418 0.095 0.004 - 0.582 0.209 0.007
+     4. Cubeful 2-ply    24/18 8/6                    Eq.: -0.301 (-0.104)
+       0.408 0.096 0.004 - 0.592 0.203 0.008
+     5. Cubeful 2-ply    13/5                         Eq.: -0.307 (-0.111)
+       0.401 0.106 0.005 - 0.599 0.195 0.014
+
+
+Move number 3:  lasse to play 22
+
+ GNU Backgammon  Position ID: 4HPwESCwZ/ABMA
+                 Match ID   : cAlpAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: gooner1
+ | X           O    |   | O              X |     0 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ | O                |   |                  |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X  X             |     Rolled 22
+ | O        O  X    |   | X  X           O |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 159, X 163
+
+* lasse moves 13/9* 6/4(2)
+
+Cube analysis
+2-ply cubeless equity +0.386 (Money: +0.251)
+  0.576 0.189 0.007 - 0.424 0.095 0.003
+Cubeful equities:
+1. No double           +0.235
+2. Double, pass        +1.000  (+0.765)
+3. Double, take        -0.391  (-0.626)
+Proper cube action: No double, take (45.0%)
+
+Rolled 22:
+*    1. Cubeful 2-ply    13/9* 6/4(2)                 Eq.: +0.658
+       0.672 0.251 0.014 - 0.328 0.071 0.003
+     2. Cubeful 2-ply    13/9*(2)                     Eq.: +0.468 (-0.190)
+       0.631 0.218 0.012 - 0.369 0.085 0.003
+     3. Cubeful 2-ply    13/11(2) 6/4(2)              Eq.: +0.400 (-0.258)
+       0.615 0.205 0.008 - 0.385 0.086 0.003
+     4. Cubeful 2-ply    24/22 13/9* 13/11            Eq.: +0.388 (-0.270)
+       0.611 0.219 0.012 - 0.389 0.089 0.004
+     5. Cubeful 2-ply    24/22(2) 13/9*               Eq.: +0.383 (-0.275)
+       0.608 0.205 0.009 - 0.392 0.080 0.002
+
+
+Move number 4:  gooner1 to play 61
+
+ GNU Backgammon  Position ID: 2GbhATDgc/ABUA
+                 Match ID   : MAFnAAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: gooner1
+ | X           O    | O | O              X |     0 points
+ | X           O    |   | O              X |     Rolled 61
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     3 points match (Cube: 1)
+ | O                |   |                  |    
+ | O                |   |                  |     
+ | O                |   |                  |     
+ | O           X    |   | X  X  X          |     
+ | O        X  X    |   | X  X  X        O |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 168, X 155
+
+* gooner1 moves bar/18
+
+Cube analysis
+2-ply cubeless equity -0.736 (Money: -0.535)
+  0.328 0.071 0.003 - 0.672 0.251 0.014
+Cubeful equities:
+1. No double           -0.658
+2. Double, pass        +1.000  (+1.658)
+3. Double, take        -1.034  (-0.375)
+Proper cube action: No double, take (18.5%)
+
+Rolled 61:
+*    1. Cubeful 2-ply    bar/18                       Eq.: -0.739
+       0.317 0.065 0.003 - 0.683 0.280 0.013
+     2. Cubeful 2-ply    bar/24 13/7                  Eq.: -0.792 (-0.053)
+       0.299 0.065 0.003 - 0.701 0.258 0.025
+     3. Cubeful 2-ply    bar/24 8/2                   Eq.: -0.902 (-0.163)
+       0.277 0.058 0.002 - 0.723 0.284 0.026
+
+
+Move number 5:  lasse on roll, cube decision?
+
+ GNU Backgammon  Position ID: 4HPwQSDYZuEBMA
+                 Match ID   : cAlgAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: gooner1
+ | X           O    |   | O              X |     0 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ | O                |   |                  |    
+ | O                |   |                  |     
+ | O                |   |                  |     
+ | O           X    |   | X  X  X          |     On roll
+ | O        X  X  O |   | X  X  X        O |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 161, X 155
+
+* lasse doubles
+
+Alert: wrong double (-0.278)!
+ [very bad]
+Cube analysis
+2-ply cubeless equity +0.824 (Money: +0.591)
+  0.683 0.280 0.013 - 0.317 0.065 0.003
+Cubeful equities:
+1. No double           +0.739
+2. Double, pass        +1.000  (+0.261)
+3. Double, take        +0.462  (-0.278)
+Proper cube action: No double, take (51.6%)
+Move number 6:  lasse doubles to 2
+
+ GNU Backgammon  Position ID: 4HPwQSDYZuEBMA
+                 Match ID   : cBFgAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: gooner1
+ | X           O    |   | O              X |     0 points
+ | X           O    |   | O              X |     Cube offered at 2
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     
+ | O                |   |                  |    
+ | O                |   |                  |     
+ | O                |   |                  |     
+ | O           X    |   | X  X  X          |     
+ | O        X  X  O |   | X  X  X        O |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 161, X 155
+
+* gooner1 rejects
+
+Alert: wrong pass (-0.538)!
+ [very bad]
+Cube analysis
+2-ply cubeless equity -0.824 (Money: -0.591)
+  0.317 0.065 0.003 - 0.683 0.280 0.013
+Cubeful equities:
+1. No double           -0.739
+2. Double, pass        -1.000  (-0.261)
+3. Double, take        -0.462  (+0.278)
+Proper cube action: No double, take (51.6%)
+lasse wins 1 point
+
+Game statistics for game 2
+
+Player                                   gooner1                 lasse                  
+
+Chequerplay statistics
+
+Total moves                                2                       2                    
+Unforced moves                             2                       2                    
+Unmarked moves                             1                       2                    
+Moves marked doubtful                      1                       0                    
+Moves marked bad                           0                       0                    
+Moves marked very bad                      0                       0                    
+Error total EMG (MWC)                         -0.038 ( -0.479%)       -0.000 ( +0.000%) 
+Error rate mEMG (MWC)                        -19.1   ( -0.240%)       -0.0   ( +0.000%) 
+Chequerplay rating                       Casual player           Supernatural           
+
+
+Cube statistics
+
+Total cube decisions                       3                       2                    
+Close or actual cube decisions             1                       1                    
+Doubles                                    0                       1                    
+Takes                                      0                       0                    
+Passes                                     1                       0                    
+Missed doubles below CP (EMG (MWC))        0                       0                    
+Missed doubles above CP (EMG (MWC))        0                       0                    
+Wrong doubles below DP (EMG (MWC))         0                       1 (-0.278 ( -3.480%))
+Wrong doubles above TG (EMG (MWC))         0                       0                    
+Wrong takes (EMG (MWC))                    0                       0                    
+Wrong passes (EMG (MWC))                   1 (-0.538 ( -6.750%))   0                    
+Error total EMG (MWC)                         -0.538 ( -6.750%)       -0.278 ( -3.480%) 
+Error rate mEMG (MWC)                       -538.4   ( -6.750%)     -277.5   ( -3.480%) 
+Cube decision rating                     Awful!                  Awful!                 
+
+
+Overall statistics
+
+Error total EMG (MWC)                         -0.577 ( -7.230%)       -0.278 ( -3.480%) 
+Error rate mEMG (MWC)                       -192.2   ( -2.410%)      -92.5   ( -1.160%) 
+Snowie error rate                           -144.2   ( +0.000%)      -69.4   ( +0.000%) 
+Overall rating                           Awful!                  Awful!                 
+Error based abs. FIBS rating             1347.7                  1858.5                 
+Chequerplay errors rating loss            330.8                     0.0                 
+Cube errors rating loss                   371.5                   191.5                 
+
+
+
+
+Output generated Tue Oct 10 09:23:54 2023
+ by GNU Backgammon 1.07.001-mingw 32-Bit 20221114 (Text Export version 1.128)
+

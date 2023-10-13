@@ -1,0 +1,354 @@
+The score (after 1 game) is: rambiz 0, lasse 2 (match to 7 points)
+
+Match Information:
+Date: 16/09/2023
+Place: BackgammonGalaxy
+
+Move number 1:  rambiz to play 65
+
+ GNU Backgammon  Position ID: 4HPwATDgc/ABMA
+                 Match ID   : MAD3AAAAEAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rambiz
+ | X           O    |   | O              X |     0 points
+ | X           O    |   | O              X |     Rolled 65
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+^|                  |BAR|                  |     7 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     
+ | O           X    |   | X              O |     2 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 167, X 167
+
+* rambiz moves 24/13
+
+Rolled 65:
+*    1. Cubeful 2-ply    24/13                        Eq.: +0.167
+       0.528 0.125 0.004 - 0.472 0.124 0.003
+     2. Cubeful 2-ply    24/18 13/8                   Eq.: +0.131 (-0.036)
+       0.513 0.133 0.006 - 0.487 0.131 0.004
+     3. Cubeful 2-ply    13/8 13/7                    Eq.: +0.033 (-0.134)
+       0.480 0.139 0.008 - 0.520 0.140 0.007
+     4. Cubeful 2-ply    13/2                         Eq.: -0.029 (-0.196)
+       0.466 0.135 0.007 - 0.534 0.154 0.008
+     5. Cubeful 2-ply    24/18 8/3                    Eq.: -0.065 (-0.232)
+       0.465 0.118 0.006 - 0.535 0.161 0.008
+
+
+Move number 2:  lasse to play 62
+
+ GNU Backgammon  Position ID: 4HPwAyDgc/ABMA
+                 Match ID   : cAnrAAAAEAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rambiz
+ | X           O    |   | O              X |     0 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     7 points match (Cube: 1)
+ | 6                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     Rolled 62
+ | O           X    |   | X              O |     2 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 156, X 167
+
+* lasse moves 24/18 13/11
+
+Cube analysis
+2-ply cubeless equity -0.063 (Money: -0.057)
+  0.472 0.124 0.003 - 0.528 0.125 0.004
+Cubeful equities:
+1. No double           -0.167
+2. Double, pass        +1.000  (+1.167)
+3. Double, take        -0.743  (-0.577)
+Proper cube action: No double, take (33.1%)
+
+Rolled 62:
+*    1. Cubeful 2-ply    24/18 13/11                  Eq.: -0.262
+       0.454 0.102 0.003 - 0.546 0.133 0.005
+     2. Cubeful 2-ply    24/16                        Eq.: -0.304 (-0.042)
+       0.443 0.096 0.002 - 0.557 0.136 0.005
+     3. Cubeful 2-ply    13/5                         Eq.: -0.305 (-0.043)
+       0.439 0.114 0.004 - 0.561 0.134 0.007
+     4. Cubeful 2-ply    13/11 13/7                   Eq.: -0.308 (-0.045)
+       0.442 0.121 0.004 - 0.558 0.145 0.009
+     5. Cubeful 2-ply    24/22 13/7                   Eq.: -0.326 (-0.064)
+       0.434 0.108 0.003 - 0.566 0.139 0.006
+
+
+Move number 3:  rambiz to play 62
+
+ GNU Backgammon  Position ID: 4HPkQSDgc/ADIA
+                 Match ID   : MAHrAAAAEAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rambiz
+ | X           O  X |   | O              X |     0 points
+ | X           O    |   | O                |     Rolled 62
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     7 points match (Cube: 1)
+ | 6                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     
+ | O  X        X    |   | X              O |     2 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 156, X 159
+
+* rambiz moves 24/22 13/7*
+
+Cube analysis
+2-ply cubeless equity +0.130 (Money: +0.125)
+  0.546 0.133 0.005 - 0.454 0.102 0.003
+Cubeful equities:
+1. No double           +0.262
+2. Double, pass        +1.000  (+0.738)
+3. Double, take        +0.127  (-0.136)
+Proper cube action: No double, take (15.5%)
+Alert: doubtful move ( -0.045)
+
+Rolled 62:
+     1. Cubeful 2-ply    13/11 13/7*                  Eq.: +0.247
+       0.541 0.147 0.006 - 0.459 0.117 0.005
+*    2. Cubeful 2-ply    24/22 13/7*                  Eq.: +0.202 (-0.045)
+       0.531 0.134 0.005 - 0.469 0.115 0.004
+     3. Cubeful 2-ply    13/7*/5                      Eq.: +0.150 (-0.097)
+       0.516 0.137 0.005 - 0.484 0.126 0.005
+     4. Cubeful 2-ply    13/7* 8/6                    Eq.: +0.113 (-0.133)
+       0.506 0.133 0.005 - 0.494 0.125 0.005
+     5. Cubeful 2-ply    13/7* 6/4                    Eq.: +0.042 (-0.205)
+       0.491 0.126 0.005 - 0.509 0.144 0.008
+
+
+Move number 4:  lasse to play 66
+
+ GNU Backgammon  Position ID: 4OvgAwjgc+QBUA
+                 Match ID   : cAn7AAAAEAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rambiz
+ | X           O  O |   | O              X |     0 points
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     7 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     Rolled 66
+ | O  X        X    | X | X        O       |     2 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 148, X 166
+
+* lasse cannot move
+
+Cube analysis
+2-ply cubeless equity -0.089 (Money: -0.083)
+  0.469 0.115 0.004 - 0.531 0.134 0.005
+Cubeful equities:
+1. No double           -0.202
+2. Double, pass        +1.000  (+1.202)
+3. Double, take        -0.844  (-0.642)
+Proper cube action: No double, take (34.8%)
+
+Rolled 66:
+*    Cannot move
+
+
+Move number 5:  rambiz to play 44
+
+ GNU Backgammon  Position ID: 4HPkAVDg6+ADCA
+                 Match ID   : MAHyAAAAEAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rambiz
+ | X           O  O |   | O              X |     0 points
+ | X           O    |   | O                |     Rolled 44
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     7 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     
+ | O  X        X    | X | X        O       |     2 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 148, X 166
+
+* rambiz moves 22/14* 13/9(2)
+Alert: missed double (-0.036)!
+ [doubtful]
+Cube analysis
+2-ply cubeless equity +0.414 (Money: +0.409)
+  0.639 0.203 0.010 - 0.361 0.079 0.003
+Cubeful equities:
+1. Double, take        +0.737
+2. Double, pass        +1.000  (+0.263)
+3. No double           +0.700  (-0.036)
+Proper cube action: Double, take
+
+Rolled 44:
+     1. Cubeful 2-ply    22/14* 8/4(2)                Eq.: +0.979
+       0.712 0.293 0.017 - 0.288 0.052 0.001
+*    2. Cubeful 2-ply    22/14* 13/9(2)               Eq.: +0.971 (-0.008)
+       0.724 0.244 0.012 - 0.276 0.049 0.001
+     3. Cubeful 2-ply    22/14* 6/2(2)                Eq.: +0.965 (-0.014)
+       0.707 0.259 0.012 - 0.293 0.053 0.001
+     4. Cubeful 2-ply    22/14*/10 13/9               Eq.: +0.945 (-0.034)
+       0.714 0.246 0.012 - 0.286 0.051 0.001
+     5. Cubeful 2-ply    22/14*/6                     Eq.: +0.942 (-0.037)
+       0.691 0.216 0.008 - 0.309 0.058 0.001
+
+
+Move number 6:  lasse to play 64
+
+ GNU Backgammon  Position ID: 4OuGCwDgc/AAaA
+                 Match ID   : cAnzAAAAEAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: rambiz
+ | X        O  O  O |   | O              X |     0 points
+ | X        O  O    |   | O                |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     7 points match (Cube: 1)
+ |                  |   | X                |    
+ |                  |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    | X | X                |     Rolled 64
+ | O  O        X    | X | X                |     2 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 132, X 180
+
+* lasse moves bar/21
+
+Cube analysis
+2-ply cubeless equity -0.658 (Money: -0.653)
+  0.276 0.049 0.001 - 0.724 0.244 0.012
+Cubeful equities:
+1. No double           -0.971
+2. Double, pass        +1.000  (+1.971)
+3. Double, take        -2.010  (-1.039)
+Proper cube action: No double, take (34.5%)
+
+Rolled 64:
+*    1. Cubeful 0-ply    bar/21                       Eq.: -1.000
+       0.255 0.040 0.002 - 0.745 0.294 0.018
+
+
+Move number 7:  rambiz on roll, cube decision?
+
+ GNU Backgammon  Position ID: 4HPwAFHg64YLAA
+                 Match ID   : MAHgAAAAEAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rambiz
+ | X        O  O  O |   | O     X        X |     0 points
+ | X        O  O    |   | O                |     On roll
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     7 points match (Cube: 1)
+ |                  |   | X                |    
+ |                  |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     
+ | O  O        X    | X | X                |     2 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 132, X 176
+
+* rambiz doubles
+
+Alert: wrong double (-0.048)!
+ [doubtful]
+Cube analysis
+2-ply cubeless equity +0.783 (Money: +0.778)
+  0.750 0.301 0.018 - 0.250 0.040 0.002
+Cubeful equities:
+1. No double           +1.048
+2. Double, take        +1.525  (+0.477)
+3. Double, pass        +1.000  (-0.048)
+Proper cube action: Too good to double, pass (9.2%)
+Move number 8:  rambiz doubles to 2
+
+ GNU Backgammon  Position ID: 4HPwAFHg64YLAA
+                 Match ID   : MBngAAAAEAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: rambiz
+ | X        O  O  O |   | O     X        X |     0 points
+ | X        O  O    |   | O                |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     
+ |                  |   | X                |    
+ |                  |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     Cube offered at 2
+ | O  O        X    | X | X                |     2 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 132, X 176
+
+* lasse rejects
+
+
+Cube analysis
+2-ply cubeless equity -0.783 (Money: -0.778)
+  0.250 0.040 0.002 - 0.750 0.301 0.018
+Cubeful equities:
+1. No double           -1.048
+2. Double, take        -1.525  (-0.477)
+3. Double, pass        -1.000  (+0.048)
+Proper cube action: Too good to double, pass (9.2%)
+rambiz wins 1 point
+
+Game statistics for game 2
+
+Player                                   rambiz                  lasse                  
+
+Chequerplay statistics
+
+Total moves                                3                       3                    
+Unforced moves                             3                       1                    
+Unmarked moves                             2                       3                    
+Moves marked doubtful                      1                       0                    
+Moves marked bad                           0                       0                    
+Moves marked very bad                      0                       0                    
+Error total EMG (MWC)                         -0.053 ( -0.351%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                        -17.6   ( -0.117%)       -0.0   ( -0.000%) 
+Chequerplay rating                       Intermediate            Supernatural           
+
+
+Cube statistics
+
+Total cube decisions                       3                       4                    
+Close or actual cube decisions             3                       1                    
+Doubles                                    1                       0                    
+Takes                                      0                       0                    
+Passes                                     0                       1                    
+Missed doubles below CP (EMG (MWC))        1 (-0.036 ( -0.242%))   0                    
+Missed doubles above CP (EMG (MWC))        0                       0                    
+Wrong doubles below DP (EMG (MWC))         0                       0                    
+Wrong doubles above TG (EMG (MWC))         1 (-0.048 ( -0.320%))   0                    
+Wrong takes (EMG (MWC))                    0                       0                    
+Wrong passes (EMG (MWC))                   0                       0                    
+Error total EMG (MWC)                         -0.085 ( -0.563%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                        -28.2   ( -0.188%)       -0.0   ( -0.000%) 
+Cube decision rating                     Beginner                Supernatural           
+
+
+Overall statistics
+
+Error total EMG (MWC)                         -0.138 ( -0.914%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                        -22.9   ( -0.152%)       -0.0   ( -0.000%) 
+Snowie error rate                            -22.9   ( +0.000%)       -0.0   ( +0.000%) 
+Overall rating                           Casual player           Supernatural           
+Error based abs. FIBS rating             1808.4                  2050.0                 
+Chequerplay errors rating loss            219.3                     0.0                 
+Cube errors rating loss                    22.3                     0.0                 
+
+
+
+
+Output generated Tue Oct 10 09:05:15 2023
+ by GNU Backgammon 1.07.001-mingw 32-Bit 20221114 (Text Export version 1.128)
+
