@@ -47,7 +47,7 @@
 #' @export
 ggboard <- function(xgid, bearoff = "right") {
 
-  if (nchar(xgid) < 51) stop("xgid string does not contain at least 51 characters")
+  if (nchar(xgid) < 50) stop("xgid string does not contain at least 50 characters")
 
   position <- ggplot2::ggplot() +
     show_points() +
@@ -294,7 +294,10 @@ show_game_info <-  function(xgid) {
                            info["turn"] == "-1" ~ "Black to play")
 
   action <-  dplyr::case_when(!info["dice"] %in% c("00", "D", "B", "R") ~ paste(turn, info["dice"]),
-                              TRUE ~ paste0(turn, ". Cube action?"))
+                              info["dice"] == "00" ~ paste0(turn, ". Cube action?"),
+                              info["dice"] == "D" & info["turn"] == "1" ~ "Black doubles. Take or pass?",
+                              info["dice"] == "D" & info["turn"] == "-1" ~ "White doubles. Take or pass?",
+                              TRUE ~ paste0(turn, ". Beaver? Racoon?"))
 
   df <- dplyr::tibble(x = c(0, 0, 1, 1, 0.5),
                y = c(-0.08, 0.94, -0.08, 0.94, -0.14),

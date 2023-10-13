@@ -28,7 +28,7 @@ id2bin <- function(pos_id, charset) {
   return(big_bin_endian)
 }
 
-pos_id2xg <- function(pos_id, charset) {
+posid2xgid <- function(pos_id, charset, turn = "bottom") {
   # Converts binary string with GNU BG position id to XGID position sub-string
 
   # pos_id to bit string
@@ -60,10 +60,8 @@ pos_id2xg <- function(pos_id, charset) {
   # Point O is where player 2 is on the bar, point 25 is where player 1 is on the bar.
   # (Since the bar is the logical 25th point for player 1).
 
-  # No. of checkers on each point for player 1:
+  # No. of checkers on each point for player 1 and 2:
   vec1 <- c(NA, point[1, ])      # Point 0 must be empty, only player 2 can be here
-
-  # No. of checkers on each point for player 2:
   vec2 <- c(rev(point[2, ]), NA) # Point 25 must be empty, only player 1 can be here
 
   # Convert to letters, XG-style:
@@ -75,11 +73,14 @@ pos_id2xg <- function(pos_id, charset) {
     replace_na("-") %>%
     paste0(collapse = "")
 
+  # xg uses top/bottom perspective; gnubg uses turnower/non-turnowner perspective
+  if (turn == "bottom") xg_pos <- chartr("A-Za-z", "a-zA-Z", stri_reverse(xg_pos))
+
   return(xg_pos)
 }
 
 
-match_id2xg <- function(match_id, charset) {
+matchid2xgid <- function(match_id, charset) {
   # match_id to bit string
   match_id_bin <- id2bin(match_id, charset)
 
@@ -91,8 +92,8 @@ match_id2xg <- function(match_id, charset) {
 
   cube <- split_id[1] %>% strtoi(2)
 
-  cubeowner <- case_when(split_id[2] == "00" ~ 1,
-                         split_id[2] == "10" ~ -1,
+  cubeowner <- case_when(split_id[2] == "00" ~ -1,
+                         split_id[2] == "01" ~ 1,
                          split_id[2] == "11" ~ 0)
 
   diceowner <- case_when(split_id[3] == "0" ~ 1,
@@ -115,79 +116,51 @@ match_id2xg <- function(match_id, charset) {
                       split_id[8] == "10" ~ "Resigns gammon",
                       split_id[8] == "11" ~ "Resigns backgmmon",
                       TRUE ~ NA)
+
   die1 <- split_id[9] %>% strtoi(2)
   die2 <- split_id[10] %>% strtoi(2)
   dice <- paste0(die1, die2)
 
+  if (double == 1) dice <- "D"
+
   length <- split_id[11] %>% strtoi(2)
-
-  score1 <- split_id[12] %>% strtoi(2)
-
-  score2 <- split_id[13] %>% strtoi(2)
+  score2 <- split_id[12] %>% strtoi(2)
+  score1 <- split_id[13] %>% strtoi(2)
 
   xg_mat <- paste("", cube, cubeowner, turnowner, dice, score1, score2, crawford, length, "10", sep = ":")
 
   return(xg_mat)
 }
 
-# Example
-# For example, assume the score is 2-4 in a 9 point match with player 0 holding a 2-cube, and
-# player 1 has just rolled 52.
 
-# Example from gnubg.pdf (the bit order is reversed for readability). Match key:
-#         1000 00 1 0 100 1 0 00 101 010 100100000000000 010000000000000 001000000000000
+gnuid2xgid <- function(pos_id, match_id, charset) {
 
-# Should look like this in little endian:
-#         01000001 10001001 00101010 00000001 00100000 00000000 00100000 00000000 00
+  mid <- matchid2xgid(match_id, charset)
 
-# Rearrange example to confirm. The key is the bit string, split up in 8 bit pieces, each reversed:
-#         10000010 10010001 01010100 10000000 00000100 00000000 00000100 00000000 00
+  if ((str_split(mid, ":")[[1]][[4]] == "1" & str_split(mid, ":")[[1]][[5]] != "D") |
+      (str_split(mid, ":")[[1]][[4]] == "-1" & str_split(mid, ":")[[1]][[5]] == "D")
+      ) {
+    turn <- "bottom"} else {
+      turn <- "top"
+    }
 
+  pid <- posid2xgid(pos_id, charset, turn = turn)
+  xgid <- paste0("XGID=", pid, mid)
 
-pos_id <- "4HPwATDgc/ABMA"
-match_id <- "QYkqASAAIAAA"
-pid <- pos_id2xg(pos_id, charset)
-mid <- match_id2xg(match_id, charset)
-xgid <- paste0("XGID=", pid, mid)
-ggboard(xgid)
+  return(xgid)
+}
 
-
-# Spot checks of position id conversion:
-xg <- pos_id2xg("sHPMATDgc/ADIA", charset)
-dummy <- paste0("XGID=", xg, ":0:0:1:52:0:0:3:0:10")
-ggboard(dummy)
-
-xg <- pos_id2xg("0PPgAyCwc8wBMA", charset)
-dummy <- paste0("XGID=", xg, ":0:0:1:52:0:0:3:0:10")
-ggboard(dummy)
-
-xg <- pos_id2xg("jOfgAFKwecwIQg", charset)
-dummy <- paste0("XGID=", xg, ":0:0:1:52:0:0:3:0:10")
-ggboard(dummy)
-
-xg <- pos_id2xg("33YDAEDbthsAAA", charset)
-dummy <- paste0("XGID=", xg, ":0:0:1:52:0:0:3:0:10")
-ggboard(dummy)
-
-xg <- pos_id2xg("2+4OAADfdgMAQA", charset)
-dummy <- paste0("XGID=", xg, ":0:0:1:52:0:0:3:0:10")
-ggboard(dummy)
-
-xg <- pos_id2xg("bQEAgG+7EQAAAA", charset)
-dummy <- paste0("XGID=", xg, ":0:0:1:52:0:0:3:0:10")
-ggboard(dummy)
-
-xg <- pos_id2xg("X90AAKAKAAAAAA", charset)
-dummy <- paste0("XGID=", xg, ":0:0:1:52:0:0:3:0:10")
-ggboard(dummy)
 
 # Random spot-checks:
-for (i in seq(10)) {
+for (i in seq(50)) {
+  cat("\014")
   temp <- bgmoves %>% slice_sample(n = 1)
 
   cat("File: ", temp$file, "\n",
       "Move: ", temp$move_no, "\n",
-      "Match to:", temp$length, "\n",
+      "Position id: ", temp$pos_id, "\n",
+      "Match id: ", temp$match_id, "\n",
+      "Match to: ", temp$length, "\n",
       temp$board, "\n",
       temp$cube_eq, "\n",
       temp$move_eq, "\n",
@@ -195,11 +168,69 @@ for (i in seq(10)) {
       "Cube action error: ", temp$cube_err, "\n",
       sep = "")
 
-  pid <- pos_id2xg(temp$pos_id, charset)
-  mid <- match_id2xg(temp$match_id, charset)
-  xgid <- paste0("XGID=", pid, mid)
+  xgid <- gnuid2xgid(temp$pos_id, temp$match_id, charset)
   print(ggboard(xgid))
 
   readline(prompt="Press [enter] to continue")
 }
 
+
+# loop through one random game:
+random_file <- bgmoves %>% slice_sample(n = 1) %>% pull(file)
+random_game <- bgmoves %>% filter(file == random_file)
+random_game <- bgmoves %>% filter(file == "match1105425_003.txt")
+
+for (i in (1:nrow(random_game))) {
+  temp <- random_game %>% slice(i)
+
+  cat("File: ", temp$file, "\n",
+      "Move: ", temp$move_no, "\n",
+      "Position id: ", temp$pos_id, "\n",
+      "Match id: ", temp$match_id, "\n",
+      "Match to: ", temp$length, "\n",
+      temp$board, "\n",
+      temp$cube_eq, "\n",
+      temp$move_eq, "\n",
+      "Checker play error: ", temp$move_err, "\n",
+      "Cube action error: ", temp$cube_err, "\n",
+      sep = "")
+
+  xgid <- gnuid2xgid(temp$pos_id, temp$match_id, charset)
+  print(ggboard(xgid))
+
+  readline(prompt="Press [enter] to continue")
+}
+
+
+# loop through all play types
+examples <- bgmoves %>%
+  group_by(play, turn == "lasse") %>%
+  slice_sample(n = 1) %>%
+  ungroup()
+
+for (i in (1:nrow(examples))) {
+  temp <- examples %>% slice(i)
+  cat("\014")
+
+  cat("File: ", temp$file, "\n",
+      "Move: ", temp$move_no, "\n",
+      "Position id: ", temp$pos_id, "\n",
+      "Match id: ", temp$match_id, "\n",
+      "Match to: ", temp$length, "\n",
+      temp$board, "\n",
+      temp$cube_eq, "\n",
+      temp$move_eq, "\n",
+      "Checker play error: ", temp$move_err, "\n",
+      "Cube action error: ", temp$cube_err, "\n",
+      sep = "")
+
+  xgid <- gnuid2xgid(temp$pos_id, temp$match_id, charset)
+  print(ggboard(xgid))
+
+  readline(prompt="Press [enter] to continue")
+}
+
+
+# Can we calculate xgid for all gnu ids? Seems so.
+ids <- map2(bgmoves$pos_id, bgmoves$match_id, gnuid2xgid, charset)
+ids %>% map_int(nchar) %>% table()
