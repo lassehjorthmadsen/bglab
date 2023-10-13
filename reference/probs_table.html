@@ -66,7 +66,17 @@ Defaults to TRUE</p></dd>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># XGID=-a-BaBC-A---eE---c-e----B-:0:0:1:00:0:0:0:0:10</span></span></span>
+<span class="r-in"><span><span class="co"># 4-ply winning chances, reported in a cumulative fashion:</span></span></span>
+<span class="r-in"><span><span class="va">cum_probs</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">61.94</span>, <span class="fl">24.09</span>, <span class="fl">1.04</span>, <span class="fl">38.06</span>, <span class="fl">8.54</span>, <span class="fl">0.42</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">probs</span> <span class="op">&lt;-</span> <span class="fu"><a href="outcome_probs.html">outcome_probs</a></span><span class="op">(</span><span class="va">cum_probs</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu">probs_table</span><span class="op">(</span><span class="va">probs</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>               Regular Gammon Backgammon    Sum</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Player wins     37.85  23.05       1.04  61.94</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Opponent wins   29.52   8.12       0.42  38.06</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Sum             67.37  31.17       1.46 100.00</span>
+<span class="r-in"><span></span></span>
+</code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
     </nav></aside></div>
