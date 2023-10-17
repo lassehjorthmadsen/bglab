@@ -572,7 +572,7 @@ txt2df <- function(files) {
       move_eq[p] <- positions[[p]][move_lines] %>% paste(collapse = "\n")
 
       # The line with the chosen move, beginning with *
-      play_line <- stringr::str_detect(positions[[p]], "^\\*\\s{4}")
+      play_line <- stringr::str_detect(positions[[p]], "^\\*\\s{2,4}")
 
       # Extract move error, if any. (The number in parenthesis at the end)
       error <- positions[[p]][play_line] %>%
