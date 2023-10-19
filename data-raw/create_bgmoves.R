@@ -132,7 +132,7 @@ for (i in (1:nrow(random_game))) {
 
 # loop through all play types
 examples <- bgmoves %>%
-  group_by(turn == "lasse", proper_ca) %>%
+  group_by(turn == "lasse", proper_ca, play) %>%
   slice_sample(n = 1) %>%
   ungroup()
 
