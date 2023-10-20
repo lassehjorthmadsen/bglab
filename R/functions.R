@@ -566,7 +566,7 @@ txt2df <- function(files) {
         ifelse(all(is.na(potential_error)), NA, min(potential_error, na.rm = TRUE))
 
       # Special case if the mistake is a take of a too-good double
-      if (proper_ca[p] == "Too good to double, pass" & play[p] == "accepts") {
+      if (str_starts(proper_ca[p], "Too good") & play[p] == "accepts") {
         potential_error <- cube_eq[p] %>%
           str_extract("Double, take\\s+\\-\\d\\.\\d+") %>%
           str_remove("Double, take\\s+") %>%
