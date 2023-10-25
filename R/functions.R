@@ -231,6 +231,64 @@ tp_info <- function(x, y, probs, cube, met, cube_eff = 0.68) {
   return(info)
 }
 
+
+#' Double point calculation including gammons
+#'
+#' Calculate cubeless double points at different scores, including gammons and backgammons
+#'
+#' @param x number of points that player needs
+#' @param y number of points that opponent needs
+#' @param probs numeric vector of length 6, representing outcome
+#' probabilities (must always sum to 1 or 100)
+#' @param cube cube value (before doubling)
+#' @param met match equity table
+#'
+#' @return List of take points in different flavors, along with informative
+#' metrics from the calculation
+#'
+#' @export
+#'
+dp_gammons <- function(x, y, probs, cube, met) {
+
+  probs <- check_probs(probs)
+
+  # Average equity after: no double, win
+  nw <- c(mwc(x - 1 * cube, y, met),  # Win regular
+          mwc(x - 2 * cube, y, met),  # Win gammon
+          mwc(x - 3 * cube, y, met))  # Win backgammon
+
+  nw <- sum(nw * probs[1:3] / sum(probs[1:3]))
+
+  # Average equity after: no double, lose
+  nl <- c(mwc(x, y - 1 * cube, met),  # Lose regular
+          mwc(x, y - 2 * cube, met),  # Lose gammon
+          mwc(x, y - 3 * cube , met)) # Lose backgammon
+
+  nl <- sum(nl * probs[4:6] / sum(probs[4:6]))
+
+  # Average equity after: double, win
+  dw  <- c(mwc(x - 2 * cube, y, met),  # Win regular
+           mwc(x - 4 * cube, y, met),  # Win gammon
+           mwc(x - 6 * cube, y, met))  # Win backgammon
+
+  dw <- sum(dw * probs[1:3] / sum(probs[1:3]))
+
+  # Average equity after: double, lose
+  dl  <- c(mwc(x, y - 2 * cube, met),  # Lose regular
+           mwc(x, y - 4 * cube, met),  # Lose gammon
+           mwc(x, y - 6 * cube , met)) # Lose backgammon
+
+  dl <- sum(dl * probs[4:6] / sum(probs[4:6]))
+
+  risk <- nl - dl
+  gain <- dw - nw
+
+  id_dead <- risk / (risk + gain)
+
+  return(id_dead)
+}
+
+
 #' Gammon value
 #'
 #' Calculate gammon value for a score and cube level:
