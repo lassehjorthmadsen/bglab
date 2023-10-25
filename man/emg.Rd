@@ -2,7 +2,7 @@
 % Please edit documentation in R/functions.R
 \name{emg}
 \alias{emg}
-\title{Scale match winning chance to equivalent to money game}
+\title{Scale match winning chances to money game}
 \usage{
 emg(mwc, a, b, cube, met)
 }
@@ -21,12 +21,13 @@ emg(mwc, a, b, cube, met)
 double
 }
 \description{
-Scale match winning chance to equivalent to money game
+This scales a match winning chance at a certain score
+to the more familiar [-1, +1] money game-like interval.
 }
 \examples{
-met <- get_met()
 # If I have 0.7 to win the match at 3-away, 5-away,
 # how good is this on an money game scale?
+met <- get_met() # Get the default Kazaross XG2 table
 emg(0.7, 3, 5, 1, met)
 
 }

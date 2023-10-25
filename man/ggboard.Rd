@@ -2,7 +2,7 @@
 % Please edit documentation in R/ggboard.R
 \name{ggboard}
 \alias{ggboard}
-\title{Display a backgammon diagram from an eXtreme Gammon id}
+\title{Create diagram from eXtreme Gammon id}
 \usage{
 ggboard(xgid, bearoff = "right")
 }
@@ -15,7 +15,8 @@ ggboard(xgid, bearoff = "right")
 ggplot object
 }
 \description{
-Display a backgammon diagram from an eXtreme Gammon id
+Generate a \code{ggplot2::ggplot()} object containing a backgammon diagram
+from an eXtreme Gammon id string
 }
 \examples{
 # Starting position:

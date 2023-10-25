@@ -2,7 +2,7 @@
 % Please edit documentation in R/functions.R
 \name{tp}
 \alias{tp}
-\title{Calculate cubeless, gammonless take points at different scores}
+\title{Simple take point calculation}
 \usage{
 tp(x, y, cube, met, last_roll = FALSE)
 }
@@ -24,7 +24,7 @@ double. Take point
 Calculate cubeless, gammonless take points at different scores
 }
 \examples{
-met <- get_met()
+met <- get_met() # Get the default Kazaross XG2 table
 tp(3, 5, 1, met)
 
 }

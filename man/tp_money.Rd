@@ -2,7 +2,7 @@
 % Please edit documentation in R/functions.R
 \name{tp_money}
 \alias{tp_money}
-\title{Calculate take points for money game, Janowski-style}
+\title{Take points, money game}
 \usage{
 tp_money(probs, x = 2/3)
 }

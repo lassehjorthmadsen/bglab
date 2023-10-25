@@ -2,7 +2,7 @@
 % Please edit documentation in R/functions.R
 \name{tp_gammons}
 \alias{tp_gammons}
-\title{Calculate cubeless, take points at different scores, including gammons and backgammons}
+\title{Take point calculation including gammons}
 \usage{
 tp_gammons(x, y, probs, cube, met)
 }
@@ -22,5 +22,5 @@ probabilities (must always sum to 1 or 100)}
 double. Take point
 }
 \description{
-Calculate cubeless, take points at different scores, including gammons and backgammons
+Calculate cubeless take points at different scores, including gammons and backgammons
 }

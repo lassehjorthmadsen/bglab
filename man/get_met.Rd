@@ -2,7 +2,7 @@
 % Please edit documentation in R/functions.R
 \name{get_met}
 \alias{get_met}
-\title{Get match equity table from *.met file (used by eXtreme Gammon)}
+\title{Get match equity table}
 \usage{
 get_met(filename = "Kazaross-XG2.met")
 }
@@ -13,11 +13,13 @@ get_met(filename = "Kazaross-XG2.met")
 matrix
 }
 \description{
-Get match equity table from *.met file (used by eXtreme Gammon)
+Get match equity table from *.met file (used by eXtreme Gammon). Available tables
+are \code{GnuBG-11-point.met}, \code{Jacobs-Trice.met}, \code{Snowie.met}, \code{Woolsey.met},
+\code{Kazaross-XG2.met}, and \code{Rockwell-Kazaross.met}
 }
 \examples{
-met <- get_met()
+met <- get_met() # Get the default Kazaross XG2 table
 met[1:5, 1:5]
-met <- get_met("Woolsey.met")
+met <- get_met("Woolsey.met") # Get the older Kit Woolsey table
 met[1:5, 1:5]
 }

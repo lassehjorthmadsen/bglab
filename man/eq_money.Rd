@@ -2,7 +2,7 @@
 % Please edit documentation in R/functions.R
 \name{eq_money}
 \alias{eq_money}
-\title{Calculate equity for money game, Janowski-style}
+\title{Equity, money game}
 \usage{
 eq_money(probs, C, p, x = 2/3)
 }

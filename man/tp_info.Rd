@@ -2,8 +2,7 @@
 % Please edit documentation in R/functions.R
 \name{tp_info}
 \alias{tp_info}
-\title{Calculate cubeful take points at different scores, as a function of gammons,
-and backgammons, cube level, cube efficiency, and match equity table}
+\title{Take points in different flavors}
 \usage{
 tp_info(x, y, probs, cube, met, cube_eff = 0.68)
 }
@@ -26,6 +25,6 @@ List of take points in different flavors, along with informative
 metrics from the calculation
 }
 \description{
-Calculate cubeful take points at different scores, as a function of gammons,
+Calculate cubeless and cubeful take points at different scores, as a function of gammons,
 and backgammons, cube level, cube efficiency, and match equity table
 }

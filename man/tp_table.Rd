@@ -2,8 +2,7 @@
 % Please edit documentation in R/functions.R
 \name{tp_table}
 \alias{tp_table}
-\title{Compute take points at a given match score, create a nice table
-to compare those with money game take points}
+\title{Compare take points}
 \usage{
 tp_table(x, y, probs, cube, met)
 }

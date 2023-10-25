@@ -2,7 +2,7 @@
 % Please edit documentation in R/functions.R
 \name{probs_table}
 \alias{probs_table}
-\title{Put winning probabilities in nice table}
+\title{Probability table}
 \usage{
 probs_table(probs, margins = TRUE)
 }

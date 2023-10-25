@@ -1,4 +1,7 @@
-#' Display a backgammon diagram from an eXtreme Gammon id
+#' Create diagram from eXtreme Gammon id
+#'
+#' Generate a `ggplot2::ggplot()` object containing a backgammon diagram
+#' from an eXtreme Gammon id string
 #'
 #' @param xgid character
 #' @param bearoff character. Side to bear off from. Either "right" (default) or "left"

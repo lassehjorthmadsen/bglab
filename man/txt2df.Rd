@@ -2,7 +2,7 @@
 % Please edit documentation in R/functions.R
 \name{txt2df}
 \alias{txt2df}
-\title{Parse GNU Backgammon Galaxy analysis files into data frame format}
+\title{Convert analysis files to data frame}
 \usage{
 txt2df(files)
 }
@@ -13,5 +13,5 @@ txt2df(files)
 tibble
 }
 \description{
-Parse GNU Backgammon Galaxy analysis files into data frame format
+Parse GNU Backgammon Galaxy analysis *.txt files into data frame format
 }

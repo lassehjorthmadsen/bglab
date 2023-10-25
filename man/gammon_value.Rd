@@ -2,9 +2,7 @@
 % Please edit documentation in R/functions.R
 \name{gammon_value}
 \alias{gammon_value}
-\title{Calculate gammon value for a score and cube level:
-The gain from winning a gammon instead of single game, divided
-by the loss from losing a single game instead of winning one.}
+\title{Gammon value}
 \usage{
 gammon_value(x, y, cube, met)
 }

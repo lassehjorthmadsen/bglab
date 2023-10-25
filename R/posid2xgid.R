@@ -1,4 +1,7 @@
-#' Convert GNU BG position and match ids to xgid
+#' From GNU BG ids to XGIDs
+#'
+#' Convert GNU Backgammon position and match ids to XGID, the format
+#' used by eXtreme Gammon
 #'
 #' @param pos_id character. GNU Backgammon position id
 #' @param match_id character. GNU Backgammon match id
@@ -26,7 +29,6 @@ gnuid2xgid <- function(pos_id, match_id) {
 
   return(xgid)
 }
-
 
 chr2bin <- function(char) {
   # Convert Base64 character to its 6-bit binary representation

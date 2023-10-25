@@ -1,4 +1,7 @@
-#' Scale match winning chance to equivalent to money game
+#' Scale match winning chances to money game
+#'
+#' This scales a match winning chance at a certain score
+#' to the more familiar \[-1, +1\] money game-like interval.
 #'
 #' @param mwc current match winning chances for player
 #' @param a number of points that player needs
@@ -9,9 +12,9 @@
 #' @return double
 #'
 #' @examples
-#' met <- get_met()
 #' # If I have 0.7 to win the match at 3-away, 5-away,
 #' # how good is this on an money game scale?
+#' met <- get_met() # Get the default Kazaross XG2 table
 #' emg(0.7, 3, 5, 1, met)
 #'
 #' @export
@@ -27,6 +30,9 @@ emg <- function(mwc, a, b, cube, met) {
 
 #' Calculate match winning chance from game winning chances
 #'
+#' Given the game winning probablity, match score, and cube
+#' value, what is a players match winning probability?
+#'
 #' @param pwin game winning chances (cubeless)
 #' @param x number of points that player needs
 #' @param y number of points that opponent needs
@@ -36,7 +42,7 @@ emg <- function(mwc, a, b, cube, met) {
 #' @return double
 #'
 #' @examples
-#' met <- get_met()
+#' met <- get_met() # Get the default Kazaross XG2 table
 #' gwc2mwc(0.5, 3, 5, 1, met)
 #'
 #' @export
@@ -45,7 +51,11 @@ gwc2mwc <- function(pwin, x, y, cube, met) {
   return (pwin * mwc(x - cube, y, met) + (1 - pwin) * mwc(x, y - cube, met))
 }
 
-#'  Look up match winning chances at different scores
+
+#'  Match winning chances at score
+#'
+#'  Look up match winning chances at different scores in a given
+#'  match equity table
 #'
 #' @param x number of points that player needs
 #' @param y number of points that opponent needs
@@ -72,6 +82,8 @@ mwc <- function(x, y, met) {
 }
 
 
+#' Simple take point calculation
+#'
 #' Calculate cubeless, gammonless take points at different scores
 #'
 #' @param x number of points that player needs
@@ -83,7 +95,7 @@ mwc <- function(x, y, met) {
 #' @return double. Take point
 #'
 #' @examples
-#' met <- get_met()
+#' met <- get_met() # Get the default Kazaross XG2 table
 #' tp(3, 5, 1, met)
 #'
 #' @export
@@ -107,7 +119,9 @@ tp <- function(x, y, cube, met, last_roll = FALSE) {
 }
 
 
-#' Calculate cubeless, take points at different scores, including gammons and backgammons
+#' Take point calculation including gammons
+#'
+#' Calculate cubeless take points at different scores, including gammons and backgammons
 #'
 #' @param x number of points that player needs
 #' @param y number of points that opponent needs
@@ -153,7 +167,9 @@ tp_gammons <- function(x, y, probs, cube, met) {
 }
 
 
-#' Calculate cubeful take points at different scores, as a function of gammons,
+#' Take points in different flavors
+#'
+#' Calculate cubeless and cubeful take points at different scores, as a function of gammons,
 #' and backgammons, cube level, cube efficiency, and match equity table
 #'
 #' @param x number of points that player needs
@@ -215,6 +231,8 @@ tp_info <- function(x, y, probs, cube, met, cube_eff = 0.68) {
   return(info)
 }
 
+#' Gammon value
+#'
 #' Calculate gammon value for a score and cube level:
 #' The gain from winning a gammon instead of single game, divided
 #' by the loss from losing a single game instead of winning one.
@@ -236,6 +254,8 @@ gammon_value <- function(x, y, cube, met) {
 }
 
 
+#' Take points, money game
+#'
 #' Calculate take points for money game, Janowski-style
 #'
 #' @param probs numeric vector of length 6, representing outcome
@@ -257,6 +277,8 @@ tp_money <- function(probs, x = 2/3) {
 }
 
 
+#' Equity, money game
+#'
 #' Calculate equity for money game, Janowski-style
 #'
 #' @param probs numeric vector of length 6, representing outcome
@@ -300,6 +322,8 @@ check_probs <- function(probs) {
   return (probs)
 }
 
+#' Outcome probabilities
+#'
 #' Convert outcome distributions from eXtreme Gammon to probabilities
 #'
 #' Both eXtreme Gammon and GNU Backgammon report estimated outcome
@@ -337,6 +361,8 @@ outcome_probs <- function(xg_probs) {
   return(out)
 }
 
+#' Probability table
+#'
 #' Put winning probabilities in nice table
 #'
 #' @param probs numeric vector of length 6, representing outcome
@@ -370,6 +396,8 @@ probs_table <-  function(probs, margins = TRUE) {
 }
 
 
+#' Compare take points
+#'
 #' Compute take points at a given match score, create a nice table
 #' to compare those with money game take points
 #'
@@ -413,7 +441,11 @@ tp_table <-  function(x, y, probs, cube, met) {
   return(tp_tab)
 }
 
-#' Get match equity table from *.met file (used by eXtreme Gammon)
+#' Get match equity table
+#'
+#' Get match equity table from *.met file (used by eXtreme Gammon). Available tables
+#' are `GnuBG-11-point.met`, `Jacobs-Trice.met`, `Snowie.met`, `Woolsey.met`,
+#' `Kazaross-XG2.met`, and `Rockwell-Kazaross.met`
 #'
 #' @param filename name of *.met file. Defaults to "Kazaross-XG2.met"
 #' @return matrix
@@ -421,9 +453,9 @@ tp_table <-  function(x, y, probs, cube, met) {
 #' @export
 #'
 #'@examples
-#'met <- get_met()
+#'met <- get_met() # Get the default Kazaross XG2 table
 #'met[1:5, 1:5]
-#'met <- get_met("Woolsey.met")
+#'met <- get_met("Woolsey.met") # Get the older Kit Woolsey table
 #'met[1:5, 1:5]
 
 get_met <- function(filename = "Kazaross-XG2.met") {
@@ -456,7 +488,9 @@ get_met <- function(filename = "Kazaross-XG2.met") {
 }
 
 
-#' Parse GNU Backgammon Galaxy analysis files into data frame format
+#' Convert analysis files to data frame
+#'
+#' Parse GNU Backgammon Galaxy analysis *.txt files into data frame format
 #'
 #' @param files character vector with names of *.txt files to parse
 #'

@@ -2,7 +2,7 @@
 % Please edit documentation in R/posid2xgid.R
 \name{gnuid2xgid}
 \alias{gnuid2xgid}
-\title{Convert GNU BG position and match ids to xgid}
+\title{From GNU BG ids to XGIDs}
 \usage{
 gnuid2xgid(pos_id, match_id)
 }
@@ -15,7 +15,8 @@ gnuid2xgid(pos_id, match_id)
 character
 }
 \description{
-Convert GNU BG position and match ids to xgid
+Convert GNU Backgammon position and match ids to XGID, the format
+used by eXtreme Gammon
 }
 \examples{
 gnuid2xgid(pos_id = "4HPwATDgc/ABMA", match_id = "8IhuACAACAAE")

@@ -2,7 +2,7 @@
 % Please edit documentation in R/functions.R
 \name{mwc}
 \alias{mwc}
-\title{Look up match winning chances at different scores}
+\title{Match winning chances at score}
 \usage{
 mwc(x, y, met)
 }
@@ -17,7 +17,8 @@ mwc(x, y, met)
 double. Match winning chance
 }
 \description{
-Look up match winning chances at different scores
+Look up match winning chances at different scores in a given
+match equity table
 }
 \examples{
 met <- get_met() # Get the default Kazaross XG2 table

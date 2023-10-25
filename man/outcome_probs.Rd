@@ -2,7 +2,7 @@
 % Please edit documentation in R/functions.R
 \name{outcome_probs}
 \alias{outcome_probs}
-\title{Convert outcome distributions from eXtreme Gammon to probabilities}
+\title{Outcome probabilities}
 \usage{
 outcome_probs(xg_probs)
 }
@@ -16,6 +16,9 @@ named numeric vector of length 6, representing outcome
 probabilities (always sum to 1 or 100)
 }
 \description{
+Convert outcome distributions from eXtreme Gammon to probabilities
+}
+\details{
 Both eXtreme Gammon and GNU Backgammon report estimated outcome
 probabilities in a cumulative way: The number under "wins" is the
 probability of winning an ordinary game, a gammon or a backgammon.

@@ -21,10 +21,11 @@ gwc2mwc(pwin, x, y, cube, met)
 double
 }
 \description{
-Calculate match winning chance from game winning chances
+Given the game winning probablity, match score, and cube
+value, what is a players match winning probability?
 }
 \examples{
-met <- get_met()
+met <- get_met() # Get the default Kazaross XG2 table
 gwc2mwc(0.5, 3, 5, 1, met)
 
 }
