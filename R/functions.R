@@ -28,8 +28,8 @@ emg <- function(mwc, a, b, cube, met) {
 #' Calculate match winning chance from game winning chances
 #'
 #' @param pwin game winning chances (cubeless)
-#' @param a number of points that player needs
-#' @param b number of points that opponent needs
+#' @param x number of points that player needs
+#' @param y number of points that opponent needs
 #' @param cube cube value
 #' @param met match equity table
 #'
@@ -41,14 +41,14 @@ emg <- function(mwc, a, b, cube, met) {
 #'
 #' @export
 #'
-gwc2mwc <- function(pwin, a, b, cube, met) {
-  return (pwin * mwc(a - cube, b, met) + (1 - pwin) * mwc(a, b - cube, met))
+gwc2mwc <- function(pwin, x, y, cube, met) {
+  return (pwin * mwc(x - cube, y, met) + (1 - pwin) * mwc(x, y - cube, met))
 }
 
 #'  Look up match winning chances at different scores
 #'
-#' @param a number of points that player needs
-#' @param b number of points that opponent needs
+#' @param x number of points that player needs
+#' @param y number of points that opponent needs
 #' @param met match equity table
 #'
 #' @return double. Match winning chance
@@ -59,13 +59,13 @@ gwc2mwc <- function(pwin, a, b, cube, met) {
 #'
 #' @export
 #'
-mwc <- function(a, b, met) {
-  if (a <= 0) {
+mwc <- function(x, y, met) {
+  if (x <= 0) {
     win <- 1
-    } else if (b <= 0) {
+    } else if (y <= 0) {
     win <- 0
     } else {
-    win <- met[a, b]
+    win <- met[x, y]
   }
 
   return(win)
@@ -74,11 +74,11 @@ mwc <- function(a, b, met) {
 
 #' Calculate cubeless, gammonless take points at different scores
 #'
-#' @param a number of points that player needs
-#' @param b number of points that opponent needs
+#' @param x number of points that player needs
+#' @param y number of points that opponent needs
 #' @param cube cube value (before doubling)
-#' @param last_roll treat this as a last roll position; no automatic redouble available
 #' @param met match equity table
+#' @param last_roll treat this as a last roll position; no automatic redouble available
 #'
 #' @return double. Take point
 #'
@@ -88,17 +88,17 @@ mwc <- function(a, b, met) {
 #'
 #' @export
 #'
-tp <- function(a, b, cube, met, last_roll = FALSE) {
+tp <- function(x, y, cube, met, last_roll = FALSE) {
 
-  if (!last_roll & b <= 2 * cube) {
-    multiply <- 4 # We have an automatic recube
+  if (!last_roll & y <= 2 * cube) {
+    auto <- 2 # We have an automatic recube
   } else {
-    multiply <- 2 # The cube value will be double if we take
+    auto <- 1 # We do not have an automatic recube
   }
 
-  drop <- mwc(a, b - cube, met)
-  takewin <- mwc(a - multiply * cube, b, met)
-  takelose <- mwc(a, b - multiply * cube, met)
+  drop <- mwc(x, y - cube, met)
+  takewin <- mwc(x - 2 * cube * auto, y, met)
+  takelose <- mwc(x, y - 2 * cube * auto, met)
 
   gain <- takewin - drop
   risk <- drop - takelose
@@ -109,8 +109,8 @@ tp <- function(a, b, cube, met, last_roll = FALSE) {
 
 #' Calculate cubeless, take points at different scores, including gammons and backgammons
 #'
-#' @param a number of points that player needs
-#' @param b number of points that opponent needs
+#' @param x number of points that player needs
+#' @param y number of points that opponent needs
 #' @param probs numeric vector of length 6, representing outcome
 #' probabilities (must always sum to 1 or 100)
 #' @param cube cube value (before doubling)
@@ -316,7 +316,7 @@ check_probs <- function(probs) {
 #'
 #' @examples
 #' # XGID=-a-BaBC-A---eE---c-e----B-:0:0:1:00:0:0:0:0:10
-#' # 4-ply winning chances, reported in a cummulative fashion:
+#' # 4-ply winning chances, reported in a cumulative fashion:
 #' cum_probs <- c(61.94, 24.09, 1.04, 38.06, 8.54, 0.42)
 #' outcome_probs(cum_probs)
 #'

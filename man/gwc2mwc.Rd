@@ -4,14 +4,14 @@
 \alias{gwc2mwc}
 \title{Calculate match winning chance from game winning chances}
 \usage{
-gwc2mwc(pwin, a, b, cube, met)
+gwc2mwc(pwin, x, y, cube, met)
 }
 \arguments{
 \item{pwin}{game winning chances (cubeless)}
 
-\item{a}{number of points that player needs}
+\item{x}{number of points that player needs}
 
-\item{b}{number of points that opponent needs}
+\item{y}{number of points that opponent needs}
 
 \item{cube}{cube value}
 

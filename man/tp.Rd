@@ -4,12 +4,12 @@
 \alias{tp}
 \title{Calculate cubeless, gammonless take points at different scores}
 \usage{
-tp(a, b, cube, met, last_roll = FALSE)
+tp(x, y, cube, met, last_roll = FALSE)
 }
 \arguments{
-\item{a}{number of points that player needs}
+\item{x}{number of points that player needs}
 
-\item{b}{number of points that opponent needs}
+\item{y}{number of points that opponent needs}
 
 \item{cube}{cube value (before doubling)}
 

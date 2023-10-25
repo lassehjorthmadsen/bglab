@@ -23,7 +23,7 @@ Sometimes it can be convenient to have discrete probabilities.
 }
 \examples{
 # XGID=-a-BaBC-A---eE---c-e----B-:0:0:1:00:0:0:0:0:10
-# 4-ply winning chances, reported in a cummulative fashion:
+# 4-ply winning chances, reported in a cumulative fashion:
 cum_probs <- c(61.94, 24.09, 1.04, 38.06, 8.54, 0.42)
 outcome_probs(cum_probs)
 

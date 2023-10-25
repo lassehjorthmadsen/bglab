@@ -4,12 +4,12 @@
 \alias{mwc}
 \title{Look up match winning chances at different scores}
 \usage{
-mwc(a, b, met)
+mwc(x, y, met)
 }
 \arguments{
-\item{a}{number of points that player needs}
+\item{x}{number of points that player needs}
 
-\item{b}{number of points that opponent needs}
+\item{y}{number of points that opponent needs}
 
 \item{met}{match equity table}
 }

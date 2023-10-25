@@ -4,20 +4,15 @@
 \alias{tp_gammons}
 \title{Calculate cubeless, take points at different scores, including gammons and backgammons}
 \usage{
-tp_gammons(a, b, gamfreq_a, bgfreq_a, gamfreq_b, bgfreq_b, cube, met)
+tp_gammons(x, y, probs, cube, met)
 }
 \arguments{
-\item{a}{number of points that player needs}
+\item{x}{number of points that player needs}
 
-\item{b}{number of points that opponent needs}
+\item{y}{number of points that opponent needs}
 
-\item{gamfreq_a}{proportion of player's wins that are gammons}
-
-\item{bgfreq_a}{proportion of player's wins that are backgammons}
-
-\item{gamfreq_b}{proportion of player's losses that are gammons}
-
-\item{bgfreq_b}{proportion of player's losses that are backgammons}
+\item{probs}{numeric vector of length 6, representing outcome
+probabilities (must always sum to 1 or 100)}
 
 \item{cube}{cube value (before doubling)}
 
