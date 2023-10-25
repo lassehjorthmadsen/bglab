@@ -42,33 +42,22 @@
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">tp_gammons</span><span class="op">(</span><span class="va">a</span>, <span class="va">b</span>, <span class="va">gamfreq_a</span>, <span class="va">bgfreq_a</span>, <span class="va">gamfreq_b</span>, <span class="va">bgfreq_b</span>, <span class="va">cube</span>, <span class="va">met</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">tp_gammons</span><span class="op">(</span><span class="va">x</span>, <span class="va">y</span>, <span class="va">probs</span>, <span class="va">cube</span>, <span class="va">met</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
     <h2 id="arguments">Arguments<a class="anchor" aria-label="anchor" href="#arguments"></a></h2>
-    <dl><dt>a</dt>
+    <dl><dt>x</dt>
 <dd><p>number of points that player needs</p></dd>
 
 
-<dt>b</dt>
+<dt>y</dt>
 <dd><p>number of points that opponent needs</p></dd>
 
 
-<dt>gamfreq_a</dt>
-<dd><p>proportion of player's wins that are gammons</p></dd>
-
-
-<dt>bgfreq_a</dt>
-<dd><p>proportion of player's wins that are backgammons</p></dd>
-
-
-<dt>gamfreq_b</dt>
-<dd><p>proportion of player's losses that are gammons</p></dd>
-
-
-<dt>bgfreq_b</dt>
-<dd><p>proportion of player's losses that are backgammons</p></dd>
+<dt>probs</dt>
+<dd><p>numeric vector of length 6, representing outcome
+probabilities (must always sum to 1 or 100)</p></dd>
 
 
 <dt>cube</dt>
