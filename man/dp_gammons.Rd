@@ -19,8 +19,7 @@ probabilities (must always sum to 1 or 100)}
 \item{met}{match equity table}
 }
 \value{
-List of take points in different flavors, along with informative
-metrics from the calculation
+double. Double point
 }
 \description{
 Calculate cubeless double points at different scores, including gammons and backgammons

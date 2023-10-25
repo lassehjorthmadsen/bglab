@@ -243,8 +243,7 @@ tp_info <- function(x, y, probs, cube, met, cube_eff = 0.68) {
 #' @param cube cube value (before doubling)
 #' @param met match equity table
 #'
-#' @return List of take points in different flavors, along with informative
-#' metrics from the calculation
+#' @return double. Double point
 #'
 #' @export
 #'
