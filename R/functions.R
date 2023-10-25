@@ -111,45 +111,47 @@ tp <- function(a, b, cube, met, last_roll = FALSE) {
 #'
 #' @param a number of points that player needs
 #' @param b number of points that opponent needs
-#' @param gamfreq_a proportion of player's wins that are gammons
-#' @param bgfreq_a proportion of player's wins that are backgammons
-#' @param gamfreq_b proportion of player's losses that are gammons
-#' @param bgfreq_b proportion of player's losses that are backgammons
+#' @param probs numeric vector of length 6, representing outcome
+#' probabilities (must always sum to 1 or 100)
 #' @param cube cube value (before doubling)
 #' @param met match equity table
 #'
 #' @return double. Take point
 #' @export
 #'
-tp_gammons <- function(a, b, gamfreq_a, bgfreq_a, gamfreq_b, bgfreq_b, cube, met) {
+tp_gammons <- function(x, y, probs, cube, met) {
 
-  if ((gamfreq_a + bgfreq_a > 1) | (gamfreq_b + bgfreq_b > 1)) {
-    stop("Sum of gammon and backgammon frequencies cannot exceed 1 for either player")
-  }
+  probs <- check_probs(probs)
 
-  if (b <= 2 * cube) {
-    multiply <- 4 # We have an automatic recube
+  if (y <= 2 * cube) {
+    auto <- 2 # We have an automatic recube
   } else {
-    multiply <- 2 # The cube value will be double if we take
+    auto <- 1 # We do not have an automatic recube
   }
 
-  drop <- mwc(a, b - cube, met)
+  D <- mwc(x, y - cube, met)                # drop, lose cube value
 
-  takewin <-
-    (1 - gamfreq_a - bgfreq_a) * mwc(a - multiply * cube, b, met) + # ordinary win
-    (gamfreq_a) * mwc(a - 2 * multiply * cube, b, met) +            # gammon win
-    (bgfreq_a) * mwc(a - 3 * multiply * cube, b, met)               # backgammon win
+  outcomes <- c(mwc(x - 2 * cube * auto, y, met),  # Take, win regular
+                mwc(x - 4 * cube * auto, y, met),  # Take, win gammon
+                mwc(x - 6 * cube * auto, y, met),  # Take, win backgammon
+                mwc(x, y - 2 * cube * auto, met),  # Take, lose regular
+                mwc(x, y - 4 * cube * auto, met),  # Take, lose gammon
+                mwc(x, y - 6 * cube * auto, met)   # Take, lose backgammon
+  )
 
-  takelose <-
-    (1 - gamfreq_b - bgfreq_b) * mwc(a, b - multiply * cube, met) + # ordinary loss
-    (gamfreq_b) * mwc(a, b - 2 * multiply * cube, met) +            # gammon loss
-    (bgfreq_b) * mwc(a, b - 3 * multiply * cube, met)               # backgammon loss
+  expected_outcome <- probs * outcomes
 
-  gain <- takewin - drop
-  risk <- drop - takelose
+  W <- sum(expected_outcome[1:3]) / sum(probs[1:3])
+  L <- sum(expected_outcome[4:6]) / sum(probs[4:6])
 
-  return(risk / (risk + gain))
+  risk <- D - L
+  gain <- W - D
+
+  tp_dead <- risk / (risk + gain)
+
+  return(tp_dead)
 }
+
 
 #' Calculate cubeful take points at different scores, as a function of gammons,
 #' and backgammons, cube level, cube efficiency, and match equity table
