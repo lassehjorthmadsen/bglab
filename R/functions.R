@@ -737,3 +737,60 @@ txt2df <- function(files) {
 
   return(big_df)
 }
+
+
+#' Checker locations as integer vector
+#'
+#' Takes the checker locations from a XGID string (first 26 elements)
+#' and turns it into a signed integer vector with 26 elements where
+#' positive numbers indicate how many checkers one player has on a
+#' point; negative numbers are the other player's count of checkers.
+#' The remainder of elements represent derived features, like amount of
+#' contact.
+#'
+#' @param xgid character
+#' @param flip logical, defaults to FALSE. Should the sides be flipped?
+#'
+#' @return vector of length 26 with signed integers
+#' @export
+#'
+#' @examples
+#' xgid2vec("XGID=-b----E-C---eE---c-e----B-:0:0:1:52:0:0:3:0:10")
+
+xgid2vec <- function(xgid, flip = FALSE) {
+  subid <- substr(xgid, 6, 31) # Checker locations
+
+  vec <- str_split(subid, "") %>%
+    unlist() %>%
+    map_int(match, c(letters, LETTERS)) %>%
+    # Some crazy shit to turn letter matches into vector with signed integers
+    map_int(~  (.x - 26 * (.x %/% 26)) * (1 - 2 * (.x %/% 26))) %>%
+    replace_na(0)
+
+  if (flip) vec <- vec %>% rev() %>% `*`(-1)
+
+  # Amount of contact. First, find opponent's deepest point:
+  opp_low <- min(which(vec > 0))
+
+  # Then, find the pips required to move everything past that point:
+  pips <- vec * (0:25 - (opp_low - 2))
+
+  # Sum those pips to get a measure of contact:
+  contact <- pips[pips < 0] %>% sum() %>% abs()
+
+  vec[27] <- contact
+
+  # Pip counts
+  pips1 <- vec[1:26] * 25:0
+  pips1 <- pips1[pips1 > 0] %>% sum() %>% abs()
+
+  pips2 <- vec[1:26] * 0:25
+  pips2 <- pips2[pips2 < 0] %>% sum() %>% abs()
+
+  vec[28] <- pips1
+  vec[29] <- pips2
+
+  return(vec)
+}
+
+
