@@ -387,6 +387,7 @@ get_game_info <- function(xgid) {
   return(info)
 }
 
+
 get_pip_count <- function(xgid) {
 
   position <- stringr::str_split(xgid, ":")[[1]][1] %>% stringr::str_remove("XGID=")
