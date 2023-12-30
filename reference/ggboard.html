@@ -69,35 +69,35 @@ from an eXtreme Gammon id string</p>
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># Starting position:</span></span></span>
 <span class="r-in"><span><span class="fu">ggboard</span><span class="op">(</span><span class="st">"XGID=-b----E-C---eE---c-e----B-:0:0:1:52:0:0:3:0:10"</span><span class="op">)</span></span></span>
-<span class="r-plt img"><img src="ggboard-1.png" alt="" width="700" height="433"></span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in pluck(., scheme):</span> could not find function "pluck"</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Middle game position, match to 11, bottom player owns cube</span></span></span>
 <span class="r-in"><span><span class="fu">ggboard</span><span class="op">(</span><span class="st">"XGID=-b--BBC-C---cC---cBbc-b---:1:1:1:00:0:0:0:11:10"</span><span class="op">)</span></span></span>
-<span class="r-plt img"><img src="ggboard-2.png" alt="" width="700" height="433"></span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in pluck(., scheme):</span> could not find function "pluck"</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Same position, bottom player to play 51:</span></span></span>
 <span class="r-in"><span><span class="fu">ggboard</span><span class="op">(</span><span class="st">"XGID=-b--BBC-C---cC---cBbc-b---:1:1:1:51:0:0:0:11:10"</span><span class="op">)</span></span></span>
-<span class="r-plt img"><img src="ggboard-3.png" alt="" width="700" height="433"></span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in pluck(., scheme):</span> could not find function "pluck"</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Position with multiple checkers off and one on the bar:</span></span></span>
 <span class="r-in"><span><span class="fu">ggboard</span><span class="op">(</span><span class="st">"XGID=aFDaA--------------a-Acbb-:1:-1:1:42:3:0:0:7:10"</span><span class="op">)</span></span></span>
-<span class="r-plt img"><img src="ggboard-4.png" alt="" width="700" height="433"></span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in pluck(., scheme):</span> could not find function "pluck"</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Same position, bear off at the left:</span></span></span>
 <span class="r-in"><span><span class="fu">ggboard</span><span class="op">(</span><span class="st">"XGID=aFDaA--------------a-Acbb-:1:-1:1:42:3:0:0:7:10"</span>, <span class="st">"left"</span><span class="op">)</span></span></span>
-<span class="r-plt img"><img src="ggboard-5.png" alt="" width="700" height="433"></span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in pluck(., scheme):</span> could not find function "pluck"</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Both sides have several points with excess checkers:</span></span></span>
 <span class="r-in"><span><span class="fu">ggboard</span><span class="op">(</span><span class="st">"XGID=e----FI------------fd-----:3:-1:1:52:0:0:3:0:10"</span><span class="op">)</span></span></span>
-<span class="r-plt img"><img src="ggboard-6.png" alt="" width="700" height="433"></span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in pluck(., scheme):</span> could not find function "pluck"</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Opening game, match to 3, Crawford:</span></span></span>
 <span class="r-in"><span><span class="fu">ggboard</span><span class="op">(</span><span class="st">"XGID=-b---BD-B---cE--abbe----B-:0:0:1:44:2:0:1:3:10"</span><span class="op">)</span></span></span>
-<span class="r-plt img"><img src="ggboard-7.png" alt="" width="700" height="433"></span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in pluck(., scheme):</span> could not find function "pluck"</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Moneygame with beaver and Jacoby rule (Kauder paradox)</span></span></span>
 <span class="r-in"><span><span class="fu">ggboard</span><span class="op">(</span><span class="st">"XGID=-BBBBBC------A--caacbbba-A:0:0:1:00:0:0:3:0:10"</span><span class="op">)</span></span></span>
-<span class="r-plt img"><img src="ggboard-8.png" alt="" width="700" height="433"></span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in pluck(., scheme):</span> could not find function "pluck"</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># ggboard() returns a ggplot object; you can add title and more</span></span></span>
 <span class="r-in"><span><span class="va">id</span> <span class="op">&lt;-</span> <span class="st">"XGID=-a--BBCBB--A-C----bbdbb-b-:1:1:1:00:2:0:0:5:10"</span></span></span>
@@ -106,11 +106,11 @@ from an eXtreme Gammon id string</p>
 <span class="r-in"><span><span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Should White double, should Black take?"</span>,</span></span>
 <span class="r-in"><span>              subtitle <span class="op">=</span> <span class="st">"This one is tough"</span>,</span></span>
 <span class="r-in"><span>              caption <span class="op">=</span> <span class="va">id</span><span class="op">)</span></span></span>
-<span class="r-plt img"><img src="ggboard-9.png" alt="" width="700" height="433"></span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in pluck(., scheme):</span> could not find function "pluck"</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># All checkers off, just to see how that looks like:</span></span></span>
 <span class="r-in"><span><span class="fu">ggboard</span><span class="op">(</span><span class="st">"XGID=--------------------------:1:-1:1:00:3:0:0:7:10"</span><span class="op">)</span></span></span>
-<span class="r-plt img"><img src="ggboard-10.png" alt="" width="700" height="433"></span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in pluck(., scheme):</span> could not find function "pluck"</span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
