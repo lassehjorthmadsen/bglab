@@ -4,19 +4,23 @@
 \alias{xgid2vec}
 \title{Checker locations as integer vector}
 \usage{
-xgid2vec(xgid)
+xgid2vec(xgid, flip = FALSE)
 }
 \arguments{
-\item{xgid}{}
+\item{xgid}{character}
+
+\item{flip}{logical, defaults to FALSE. Should the sides be flipped?}
 }
 \value{
 vector of length 26 with signed integers
 }
 \description{
 Takes the checker locations from a XGID string (first 26 elements)
-and turns it into a signed integer vector of length 26, where
+and turns it into a signed integer vector with 26 elements where
 positive numbers indicate how many checkers one player has on a
 point; negative numbers are the other player's count of checkers.
+The remainder of elements represent derived features, like amount of
+contact.
 }
 \examples{
 xgid2vec("XGID=-b----E-C---eE---c-e----B-:0:0:1:52:0:0:3:0:10")

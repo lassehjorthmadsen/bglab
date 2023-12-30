@@ -517,11 +517,11 @@ tp_table <-  function(x, y, probs, cube, met) {
 
 get_met <- function(filename = "Kazaross-XG2.met") {
 
-  met_path <- system.file("extdata", package = "backgammon")
+  met_path <- system.file("extdata", package = "bglab")
   available_mets <- list.files(path = met_path, pattern = "*.met")
   if (!filename %in% available_mets) stop(paste(filename, "not found.\nAvailable mets:", paste(available_mets, collapse = ", ")))
 
-  path <- system.file(file.path("extdata", filename), package = "backgammon")
+  path <- system.file(file.path("extdata", filename), package = "bglab")
 
   lines <- readr::read_lines(path)
   firstline <- stringr::str_detect(lines, " 1=") %>% which()
@@ -760,12 +760,12 @@ txt2df <- function(files) {
 xgid2vec <- function(xgid, flip = FALSE) {
   subid <- substr(xgid, 6, 31) # Checker locations
 
-  vec <- str_split(subid, "") %>%
+  vec <- stringr::str_split(subid, "") %>%
     unlist() %>%
-    map_int(match, c(letters, LETTERS)) %>%
+    purrr::map_int(match, c(letters, LETTERS)) %>%
     # Some crazy shit to turn letter matches into vector with signed integers
-    map_int(~  (.x - 26 * (.x %/% 26)) * (1 - 2 * (.x %/% 26))) %>%
-    replace_na(0)
+    purrr::map_int(~  (.x - 26 * (.x %/% 26)) * (1 - 2 * (.x %/% 26))) %>%
+    tidyr::replace_na(0)
 
   if (flip) vec <- vec %>% rev() %>% `*`(-1)
 
