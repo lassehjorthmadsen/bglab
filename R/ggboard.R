@@ -5,6 +5,7 @@
 #'
 #' @param xgid character
 #' @param bearoff character. Side to bear off from. Either "right" (default) or "left"
+#' @param scheme name of color scheme, defaults to "bw"
 #'
 #' @return ggplot object
 #'
@@ -48,14 +49,17 @@
 #' @importFrom stringi stri_reverse
 #'
 #' @export
-ggboard <- function(xgid, bearoff = "right") {
+ggboard <- function(xgid, bearoff = "right", scheme = "bw") {
 
+  if (!scheme %in% names(color_schemes)) stop("Unknown color scheme")
   if (nchar(xgid) < 50) stop("xgid string does not contain at least 50 characters")
 
+  color_scheme <- color_schemes %>% pluck(scheme)
+
   position <- ggplot2::ggplot() +
+    show_board(color_scheme$board_fill, color_scheme$board_border) +
     show_points() +
-    show_border() +
-    show_bar() +
+    show_bar(color_scheme$bar_fill, color_scheme$board_border) +
     # show_tray() +
     show_numbers(bearoff) +
     show_checkers(xgid, bearoff) +
@@ -65,8 +69,17 @@ ggboard <- function(xgid, bearoff = "right") {
     show_cube_value(xgid) +
     show_game_info(xgid) +
     ggplot2::coord_fixed() +
-    ggplot2::scale_fill_manual(values = c("odd" = "white", "even" = "#cccccc", "top" = "black", "bottom" = "white")) +
-    ggplot2::scale_color_manual(values = c("top" = "white", "bottom" = "black")) +
+    ggplot2::scale_fill_manual(
+      values = c("odd" = color_scheme$odd_points_fill,
+                 "even" = color_scheme$even_points_fill,
+                 "top" = color_scheme$top_checker_fill,
+                 "bottom" = color_scheme$bottom_checker_fill,
+                 "board" = color_scheme$board_fill)
+      ) +
+    ggplot2::scale_color_manual(
+      values = c("top" = color_scheme$top_checker_off_border,
+                 "bottom" = color_scheme$bottom_checker_off_border)
+      ) +
     ggplot2::theme_void(base_size = 20) +
     ggplot2::theme(plot.title = ggplot2::element_text(size = 12, margin = ggplot2::margin(10, 0, 0, 0)),
                    plot.subtitle = ggplot2::element_text(size = 9, margin = ggplot2::margin(5, 0, 5, 0)),
@@ -91,15 +104,15 @@ show_points <- function() {
 }
 
 
-show_border <- function() {
+show_board <- function(fill, color) {
   ggplot2::geom_rect(ggplot2::aes(xmin = 0, xmax = 1, ymin = 0, ymax = board_ratio),
-            fill = NA, colour = "black", size = 0.2)
+            fill = fill, color = color, size = 0.2)
 }
 
 
-show_bar <- function() {
+show_bar <- function(fill, color) {
   ggplot2::geom_rect(ggplot2::aes(xmin = 6/13, xmax = 7/13, ymin = 0, ymax = board_ratio),
-            fill = "white", colour = "black", size = 0.2, inherit.aes = F)
+            fill = fill, color = color, size = 0.2, inherit.aes = F)
 }
 
 show_tray <- function() {
