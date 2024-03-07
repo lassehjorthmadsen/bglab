@@ -1,0 +1,1853 @@
+The score (after 1 game) is: Ophris 8, Llabba 0 (match to 13 points)
+
+Match Information:
+Date: 26/06/2023
+Event: Online match
+Round: Round 0
+Place: Backgammon Studio
+Comments: [ClockType "Live8 780/10"]
+
+
+Move number 1:  Ophris to play 65
+
+ GNU Backgammon  Position ID: 4HPwATDgc/ABMA
+                 Match ID   : MAC3AYAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Ophris
+ | X           O    |   | O              X |     8 points
+ | X           O    |   | O              X |     Rolled 65
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+^|                  |BAR|                  |     13 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     
+ | O           X    |   | X              O |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 167, X 167
+
+* Ophris moves 24/13
+
+Rolled 65:
+*    1. Cubeful 4-ply    24/13                        Eq.: -0.109
+       0.531 0.123 0.005 - 0.469 0.126 0.003
+     2. Cubeful 4-ply    24/18 13/8                   Eq.: -0.174 (-0.065)
+       0.512 0.132 0.006 - 0.488 0.133 0.004
+     3. Cubeful 2-ply    13/8 13/7                    Eq.: -0.280 (-0.171)
+       0.480 0.138 0.008 - 0.520 0.141 0.007
+     4. Cubeful 2-ply    13/2                         Eq.: -0.361 (-0.252)
+       0.466 0.135 0.007 - 0.534 0.157 0.008
+     5. Cubeful 2-ply    24/18 8/3                    Eq.: -0.385 (-0.277)
+       0.466 0.122 0.007 - 0.534 0.169 0.008
+
+
+Move number 2:  Llabba to play 31
+
+ GNU Backgammon  Position ID: 4HPwAyDgc/ABMA
+                 Match ID   : cImlAYAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Ophris
+ | X           O    |   | O              X |     8 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     13 points match (Cube: 1)
+ | 6                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     Rolled 31
+ | O           X    |   | X              O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 156, X 167
+
+* Llabba moves 8/5 6/5
+
+Cube analysis
+4-ply cubeless equity -0.058 (Money: -0.059)
+  0.469 0.126 0.003 - 0.531 0.123 0.005
+Cubeful equities:
+1. No double           +0.109
+2. Double, pass        +1.000  (+0.891)
+3. Double, take        -0.028  (-0.137)
+Proper cube action: No double, take (13.3%)
+
+Rolled 31:
+*    1. Cubeful 2-ply    8/5 6/5                      Eq.: +0.163
+       0.481 0.142 0.005 - 0.519 0.117 0.005
+     2. Cubeful 2-ply    13/10 6/5                    Eq.: +0.016 (-0.147)
+       0.448 0.121 0.005 - 0.552 0.145 0.010
+     3. Cubeful 2-ply    24/23 13/10                  Eq.: -0.016 (-0.178)
+       0.440 0.113 0.003 - 0.560 0.135 0.006
+     4. Cubeful 2-ply    24/21 6/5                    Eq.: -0.022 (-0.184)
+       0.444 0.106 0.004 - 0.556 0.138 0.007
+     5. Cubeful 2-ply    13/9                         Eq.: -0.040 (-0.202)
+       0.432 0.113 0.004 - 0.568 0.136 0.007
+
+
+Move number 3:  Ophris to play 11
+
+ GNU Backgammon  Position ID: sGfwATDgc/ADIA
+                 Match ID   : MIGkAYAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Ophris
+ | X           O    |   | O              X |     8 points
+ | X           O    |   | O              X |     Rolled 11
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+^|                  |BAR|                  |     13 points match (Cube: 1)
+ | 6                |   |                  |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X  X             |     
+ | O           X    |   | X  X           O |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 156, X 163
+
+* Ophris moves 8/7(2) 6/5(2)
+
+Cube analysis
+4-ply cubeless equity +0.014 (Money: +0.014)
+  0.519 0.118 0.006 - 0.481 0.144 0.005
+Cubeful equities:
+1. No double           -0.180
+2. Double, pass        +1.000  (+1.180)
+3. Double, take        -1.226  (-1.046)
+Proper cube action: No double, take (47.0%)
+Alert: doubtful move ( -0.032)
+
+Rolled 11:
+     1. Cubeful 4-ply    24/22 6/5(2)                 Eq.: +0.010
+       0.567 0.129 0.006 - 0.433 0.120 0.003
+*    2. Cubeful 4-ply    8/7(2) 6/5(2)                Eq.: -0.022 (-0.032)
+       0.553 0.142 0.005 - 0.447 0.121 0.003
+     3. Cubeful 4-ply    8/5 6/5                      Eq.: -0.060 (-0.070)
+       0.544 0.134 0.005 - 0.456 0.123 0.003
+     4. Cubeful 2-ply    24/23 6/5(3)                 Eq.: -0.100 (-0.110)
+       0.535 0.128 0.004 - 0.465 0.132 0.003
+     5. Cubeful 2-ply    6/4(2)                       Eq.: -0.110 (-0.120)
+       0.530 0.126 0.004 - 0.470 0.130 0.003
+
+
+Move number 4:  Llabba to play 11
+
+ GNU Backgammon  Position ID: sFvwAyCwZ/ABMA
+                 Match ID   : cImkAYAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Ophris
+ | X           O  O |   | O  O           X |     8 points
+ | X              O |   | O  O           X |     
+ | X                |   | O                |     
+ | X                |   |                  |     
+ | X                |   |                  |    
+v|                  |BAR|                  |     13 points match (Cube: 1)
+ | 6                |   |                  |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X  X             |     Rolled 11
+ | O           X    |   | X  X           O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 152, X 163
+
+* Llabba moves 24/22(2)
+
+Cube analysis
+4-ply cubeless equity -0.126 (Money: -0.130)
+  0.447 0.121 0.003 - 0.553 0.142 0.005
+Cubeful equities:
+1. No double           +0.022
+2. Double, pass        +1.000  (+0.978)
+3. Double, take        -0.145  (-0.167)
+Proper cube action: No double, take (14.6%)
+
+Rolled 11:
+     1. Cubeful 4-ply    6/4(2)                       Eq.: -0.001
+       0.437 0.124 0.004 - 0.563 0.140 0.006
+*    2. Cubeful 4-ply    24/22(2)                     Eq.: -0.011 (-0.010)
+       0.437 0.105 0.003 - 0.563 0.103 0.003
+     3. Cubeful 4-ply    24/22 24/23 6/5              Eq.: -0.080 (-0.079)
+       0.426 0.105 0.004 - 0.574 0.154 0.005
+     4. Cubeful 4-ply    24/21 6/5                    Eq.: -0.095 (-0.094)
+       0.421 0.105 0.003 - 0.579 0.149 0.006
+     5. Cubeful 2-ply    24/22 8/7(2)                 Eq.: -0.090 (-0.089)
+       0.422 0.105 0.003 - 0.578 0.150 0.006
+
+
+Move number 5:  Ophris to play 63
+
+ GNU Backgammon  Position ID: sGfwAQywW/ADIA
+                 Match ID   : MAGvAYAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Ophris
+ | X           O  O |   | O  O     X       |     8 points
+ | X              O |   | O  O     X       |     Rolled 63
+ | X                |   | O                |     
+ | X                |   |                  |     
+ | X                |   |                  |    
+^|                  |BAR|                  |     13 points match (Cube: 1)
+ | 6                |   |                  |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X  X             |     
+ | O           X    |   | X  X           O |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 152, X 159
+
+* Ophris moves 13/7 8/5
+
+Cube analysis
+4-ply cubeless equity +0.122 (Money: +0.124)
+  0.563 0.103 0.003 - 0.437 0.105 0.003
+Cubeful equities:
+1. No double           +0.011
+2. Double, pass        +1.000  (+0.989)
+3. Double, take        -0.687  (-0.698)
+Proper cube action: No double, take (41.4%)
+
+Rolled 63:
+*    1. Cubeful 4-ply    13/7 8/5                     Eq.: -0.077
+       0.536 0.100 0.002 - 0.464 0.107 0.002
+     2. Cubeful 4-ply    24/18 8/5                    Eq.: -0.105 (-0.028)
+       0.535 0.086 0.002 - 0.465 0.113 0.002
+     3. Cubeful 2-ply    24/15                        Eq.: -0.223 (-0.145)
+       0.504 0.079 0.001 - 0.496 0.124 0.003
+     4. Cubeful 2-ply    13/10 8/2                    Eq.: -0.226 (-0.149)
+       0.498 0.110 0.002 - 0.502 0.135 0.004
+     5. Cubeful 2-ply    13/10 13/7                   Eq.: -0.227 (-0.149)
+       0.500 0.118 0.003 - 0.500 0.135 0.005
+
+
+Move number 6:  Llabba to play 64
+
+ GNU Backgammon  Position ID: cHfgAyCwZ/ABDA
+                 Match ID   : cAmzAYAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Ophris
+ | X              O |   | O  O     X       |     8 points
+ | X              O |   | O  O     X       |     
+ | X              O |   | O  O             |     
+ | X                |   |                  |     
+ | X                |   |                  |    
+v|                  |BAR|                  |     13 points match (Cube: 1)
+ | O                |   |                  |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X  X             |     Rolled 64
+ | O           X    |   | X  X           O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 143, X 159
+
+* Llabba moves 13/9 13/7
+
+Cube analysis
+4-ply cubeless equity -0.064 (Money: -0.065)
+  0.464 0.107 0.002 - 0.536 0.100 0.002
+Cubeful equities:
+1. No double           +0.077
+2. Double, pass        +1.000  (+0.923)
+3. Double, take        -0.087  (-0.164)
+Proper cube action: No double, take (15.1%)
+
+Rolled 64:
+*    1. Cubeful 4-ply    13/9 13/7                    Eq.: -0.062
+       0.427 0.102 0.003 - 0.573 0.130 0.004
+     2. Cubeful 4-ply    13/3                         Eq.: -0.106 (-0.045)
+       0.412 0.097 0.003 - 0.588 0.115 0.004
+     3. Cubeful 4-ply    8/2 6/2                      Eq.: -0.130 (-0.069)
+       0.403 0.094 0.002 - 0.597 0.101 0.003
+     4. Cubeful 2-ply    22/16 13/9                   Eq.: -0.164 (-0.102)
+       0.417 0.088 0.003 - 0.583 0.188 0.007
+     5. Cubeful 2-ply    13/7 6/2                     Eq.: -0.222 (-0.160)
+       0.388 0.086 0.003 - 0.612 0.149 0.006
+
+
+Move number 7:  Ophris to play 53
+
+ GNU Backgammon  Position ID: sNfCAQxwd+ADIA
+                 Match ID   : MIGuAYAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Ophris
+ | X              O |   | O  O     X       |     8 points
+ | X              O |   | O  O     X       |     Rolled 53
+ | X              O |   | O  O             |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match (Cube: 1)
+ | O                |   |                  |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X  X             |     
+ | O        X  X  X |   | X  X           O |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 143, X 149
+
+* Ophris moves 24/16*
+
+Cube analysis
+4-ply cubeless equity +0.170 (Money: +0.174)
+  0.573 0.130 0.004 - 0.427 0.102 0.003
+Cubeful equities:
+1. No double           +0.062
+2. Double, pass        +1.000  (+0.938)
+3. Double, take        -0.659  (-0.721)
+Proper cube action: No double, take (43.5%)
+
+Rolled 53:
+*    1. Cubeful 0-ply    24/16*                       Eq.: +0.348
+       0.654 0.122 0.002 - 0.346 0.072 0.001
+     2. Cubeful 0-ply    13/5                         Eq.: -0.290 (-0.637)
+       0.471 0.101 0.002 - 0.529 0.131 0.003
+     3. Cubeful 0-ply    7/2 5/2                      Eq.: -0.322 (-0.670)
+       0.466 0.103 0.002 - 0.534 0.143 0.003
+     4. Cubeful 0-ply    24/21 13/8                   Eq.: -0.376 (-0.724)
+       0.466 0.110 0.003 - 0.534 0.175 0.006
+     5. Cubeful 0-ply    13/10 7/2                    Eq.: -0.383 (-0.731)
+       0.455 0.107 0.003 - 0.545 0.158 0.007
+
+
+Move number 8:  Llabba to play 54
+
+ GNU Backgammon  Position ID: cHfgIwCw1+AARg
+                 Match ID   : cImyAYAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Ophris
+ | X              O |   | O  O     X       |     8 points
+ | X              O |   | O  O     X       |     
+ | X              O |   | O  O             |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     13 points match (Cube: 1)
+ | O                |   |                  |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X  X             |     Rolled 54
+ | O        O  X  X | X | X  X             |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 135, X 165
+
+* Llabba moves bar/16
+
+Cube analysis
+4-ply cubeless equity -0.382 (Money: -0.388)
+  0.335 0.070 0.001 - 0.665 0.125 0.003
+Cubeful equities:
+1. No double           -0.387
+2. Double, pass        +1.000  (+1.387)
+3. Double, take        -0.726  (-0.339)
+Proper cube action: No double, take (19.6%)
+
+Rolled 54:
+*    1. Cubeful 4-ply    bar/16                       Eq.: -0.500
+       0.306 0.044 0.001 - 0.694 0.096 0.003
+     2. Cubeful 4-ply    bar/21 13/8                  Eq.: -0.507 (-0.007)
+       0.308 0.053 0.002 - 0.692 0.118 0.004
+     3. Cubeful 4-ply    bar/21 8/3                   Eq.: -0.532 (-0.032)
+       0.300 0.053 0.002 - 0.700 0.124 0.005
+     4. Cubeful 4-ply    bar/21 7/2                   Eq.: -0.557 (-0.057)
+       0.295 0.051 0.001 - 0.705 0.125 0.004
+     5. Cubeful 2-ply    bar/21 6/1                   Eq.: -0.568 (-0.068)
+       0.288 0.051 0.002 - 0.712 0.130 0.005
+
+
+Move number 9:  Ophris to play 31
+
+ GNU Backgammon  Position ID: sNfgCAxwd+AjAA
+                 Match ID   : MIGlAYAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Ophris
+ | X        X     O |   | O  O     X       |     8 points
+ | X              O |   | O  O     X       |     Rolled 31
+ | X              O |   | O  O             |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match (Cube: 1)
+ | O                |   |                  |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X  X             |     
+ | O        O  X  X |   | X  X             |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 135, X 156
+
+* Ophris moves 16/13 7/6
+
+Cube analysis
+4-ply cubeless equity +0.435 (Money: +0.440)
+  0.694 0.096 0.003 - 0.306 0.044 0.001
+Cubeful equities:
+1. No double           +0.500
+2. Double, pass        +1.000  (+0.500)
+3. Double, take        +0.309  (-0.190)
+Proper cube action: No double, take (27.6%)
+
+Rolled 31:
+*    1. Cubeful 4-ply    16/13 7/6                    Eq.: +0.471
+       0.685 0.068 0.001 - 0.315 0.032 0.000
+     2. Cubeful 4-ply    16/13 6/5                    Eq.: +0.438 (-0.033)
+       0.675 0.071 0.001 - 0.325 0.035 0.000
+     3. Cubeful 2-ply    7/4 5/4                      Eq.: +0.294 (-0.177)
+       0.637 0.110 0.003 - 0.363 0.070 0.001
+     4. Cubeful 2-ply    13/9*                        Eq.: +0.246 (-0.225)
+       0.626 0.146 0.005 - 0.374 0.092 0.003
+     5. Cubeful 2-ply    16/13 5/4                    Eq.: +0.200 (-0.271)
+       0.611 0.089 0.001 - 0.389 0.072 0.001
+
+
+Move number 10:  Llabba to play 61
+
+ GNU Backgammon  Position ID: cG/gBwCw1+AIDA
+                 Match ID   : cAmnAYAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Ophris
+ | X        X     O |   | O  O     X       |     8 points
+ | X              O |   | O  O     X       |     
+ | X                |   | O  O             |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     13 points match (Cube: 1)
+ | 6                |   |                  |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X  X             |     Rolled 61
+ | O           X  X |   | X  X             |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 131, X 156
+
+* Llabba moves 16/10 6/5
+
+Cube analysis
+4-ply cubeless equity -0.404 (Money: -0.407)
+  0.315 0.032 0.000 - 0.685 0.068 0.001
+Cubeful equities:
+1. No double           -0.471
+2. Double, pass        +1.000  (+1.471)
+3. Double, take        -0.872  (-0.401)
+Proper cube action: No double, take (21.4%)
+
+Rolled 61:
+     1. Cubeful 4-ply    13/7 6/5                     Eq.: -0.495
+       0.307 0.037 0.001 - 0.693 0.077 0.002
+*    2. Cubeful 4-ply    16/10 6/5                    Eq.: -0.516 (-0.021)
+       0.297 0.030 0.001 - 0.703 0.049 0.001
+     3. Cubeful 4-ply    13/7 8/7                     Eq.: -0.518 (-0.022)
+       0.301 0.038 0.001 - 0.699 0.087 0.002
+     4. Cubeful 4-ply    16/10 8/7                    Eq.: -0.525 (-0.030)
+       0.295 0.030 0.001 - 0.705 0.052 0.001
+     5. Cubeful 2-ply    16/9                         Eq.: -0.516 (-0.020)
+       0.295 0.032 0.001 - 0.705 0.053 0.001
+
+
+Move number 11:  Ophris on roll, cube decision?
+
+ GNU Backgammon  Position ID: cNfEAQxwb+AHAA
+                 Match ID   : MAGgAYAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Ophris
+ | X              O |   | O  O     X       |     8 points
+ | X              O |   | O  O     X       |     On roll
+ | X                |   | O  O             |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match (Cube: 1)
+ | 6                |   |                  |    
+ | O                |   |                  |     
+ | O                |   | X  X             |     
+ | O           X    |   | X  X             |     
+ | O     X     X  X |   | X  X             |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 131, X 149
+
+* Ophris doubles
+
+Alert: wrong double (-0.138)!
+ [very bad]
+Cube analysis
+4-ply cubeless equity +0.422 (Money: +0.425)
+  0.703 0.049 0.001 - 0.297 0.030 0.001
+Cubeful equities:
+1. No double           +0.516
+2. Double, pass        +1.000  (+0.484)
+3. Double, take        +0.378  (-0.138)
+Proper cube action: No double, take (22.2%)
+Move number 12:  Ophris doubles to 2
+
+ GNU Backgammon  Position ID: cNfEAQxwb+AHAA
+                 Match ID   : MBmgAYAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Ophris
+ | X              O |   | O  O     X       |     8 points
+ | X              O |   | O  O     X       |     
+ | X                |   | O  O             |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     
+ | 6                |   |                  |    
+ | O                |   |                  |     
+ | O                |   | X  X             |     
+ | O           X    |   | X  X             |     Cube offered at 2
+ | O     X     X  X |   | X  X             |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 131, X 149
+
+* Llabba accepts
+
+
+Cube analysis
+4-ply cubeless equity -0.422 (Money: -0.425)
+  0.297 0.030 0.001 - 0.703 0.049 0.001
+Cubeful equities:
+1. No double           -0.516
+2. Double, pass        -1.000  (-0.484)
+3. Double, take        -0.378  (+0.138)
+Proper cube action: No double, take (22.2%)
+Move number 13:  Ophris to play 43
+
+ GNU Backgammon  Position ID: cNfEAQxwb+AHAA
+                 Match ID   : EQGuAYAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Ophris
+ | X              O |   | O  O     X       |     8 points
+ | X              O |   | O  O     X       |     Rolled 43
+ | X                |   | O  O             |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match
+ | 6                |   |                  |    
+ | O                |   |                  |     
+ | O                |   | X  X             |     
+ | O           X    |   | X  X             |     
+ | O     X     X  X |   | X  X             |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba (Cube: 2)
+Pip counts: O 131, X 149
+
+* Ophris moves 13/6
+
+Rolled 43:
+*    1. Cubeful 2-ply    13/6                         Eq.: +0.189
+       0.696 0.049 0.000 - 0.304 0.029 0.000
+     2. Cubeful 2-ply    13/10 6/2                    Eq.: +0.096 (-0.093)
+       0.676 0.061 0.001 - 0.324 0.042 0.001
+     3. Cubeful 2-ply    6/2 5/2                      Eq.: +0.059 (-0.130)
+       0.656 0.051 0.000 - 0.344 0.042 0.000
+     4. Cubeful 2-ply    13/10 5/1                    Eq.: +0.048 (-0.141)
+       0.661 0.061 0.001 - 0.339 0.047 0.000
+     5. Cubeful 2-ply    13/10 13/9                   Eq.: -0.144 (-0.333)
+       0.613 0.094 0.003 - 0.387 0.083 0.002
+
+
+Move number 14:  Llabba to play 61
+
+ GNU Backgammon  Position ID: cN/ABwBw18QBDA
+                 Match ID   : UQmnAYAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Ophris
+ | X              O |   | O  O     X       |     8 points
+ | X              O |   | O  O     X       |     
+ | X                |   | O  O             |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     13 points match
+ | O                |   |                  |    
+ | O                |   |                  |     
+ | O                |   | X  X             |     
+ | O           X    |   | X  X             |     Rolled 61
+ | O     X     X  X |   | X  X             |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba (Cube: 2)
+Pip counts: O 124, X 149
+
+* Llabba moves 10/4 5/4
+
+Cube analysis
+4-ply cubeless equity -0.405 (Money: -0.422)
+  0.300 0.025 0.000 - 0.700 0.046 0.000
+Cubeful equities:
+1. No double           -0.205
+2. Double, pass        +1.000  (+1.205)
+3. Double, take        -0.533  (-0.328)
+Proper cube action: No redouble, take (21.4%)
+
+Rolled 61:
+     1. Cubeful 4-ply    13/7 5/4                     Eq.: -0.229
+       0.290 0.026 0.001 - 0.710 0.049 0.001
+*    2. Cubeful 4-ply    10/4 5/4                     Eq.: -0.233 (-0.004)
+       0.289 0.025 0.001 - 0.711 0.046 0.001
+     3. Cubeful 4-ply    13/7 10/9                    Eq.: -0.233 (-0.004)
+       0.289 0.025 0.001 - 0.711 0.047 0.001
+     4. Cubeful 4-ply    10/4 8/7                     Eq.: -0.233 (-0.004)
+       0.288 0.026 0.001 - 0.712 0.047 0.001
+     5. Cubeful 2-ply    10/3                         Eq.: -0.225 (+0.004)
+       0.289 0.030 0.001 - 0.711 0.049 0.001
+
+
+Move number 15:  Ophris to play 31
+
+ GNU Backgammon  Position ID: 2K7BAQxw38AHAA
+                 Match ID   : EYGlAYAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Ophris
+ | X              O |   | O  O     X       |     8 points
+ | X              O |   | O  O     X       |     Rolled 31
+ | X                |   | O  O             |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     13 points match
+ | O                |   |                  |    
+ | O                |   |                  |     
+ | O                |   | X                |     
+ | O           X    |   | X  X  X          |     
+ | O           X  X |   | X  X  X          |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba (Cube: 2)
+Pip counts: O 124, X 142
+
+* Ophris moves 6/2
+
+Rolled 31:
+*    1. Cubeful 4-ply    6/2                          Eq.: +0.153
+       0.683 0.044 0.000 - 0.317 0.027 0.000
+     2. Cubeful 4-ply    13/10 6/5                    Eq.: +0.101 (-0.052)
+       0.671 0.056 0.001 - 0.329 0.041 0.001
+     3. Cubeful 4-ply    5/1                          Eq.: +0.098 (-0.055)
+       0.666 0.049 0.000 - 0.334 0.035 0.000
+     4. Cubeful 2-ply    7/4 5/4                      Eq.: -0.144 (-0.298)
+       0.597 0.068 0.001 - 0.403 0.077 0.001
+     5. Cubeful 0-ply    13/9                         Eq.: -0.232 (-0.385)
+       0.578 0.073 0.001 - 0.422 0.088 0.001
+
+
+Move number 16:  Llabba to play 32
+
+ GNU Backgammon  Position ID: 4t7ABwDYrsEBDA
+                 Match ID   : UYmpAYAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Ophris
+ | X              O |   | O  O     X  O    |     8 points
+ | X              O |   | O  O     X       |     
+ | X                |   | O  O             |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     13 points match
+ | O                |   |                  |    
+ | O                |   |                  |     
+ | O                |   | X                |     
+ | O           X    |   | X  X  X          |     Rolled 32
+ | O           X  X |   | X  X  X          |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba (Cube: 2)
+Pip counts: O 120, X 142
+
+* Llabba moves 13/11 6/3
+
+Cube analysis
+4-ply cubeless equity -0.366 (Money: -0.382)
+  0.317 0.027 0.000 - 0.683 0.044 0.000
+Cubeful equities:
+1. No double           -0.153
+2. Double, pass        +1.000  (+1.153)
+3. Double, take        -0.455  (-0.301)
+Proper cube action: No redouble, take (20.7%)
+
+Rolled 32:
+     1. Cubeful 4-ply    8/3                          Eq.: -0.183
+       0.304 0.030 0.001 - 0.696 0.046 0.001
+     2. Cubeful 4-ply    6/3 5/3                      Eq.: -0.190 (-0.007)
+       0.302 0.029 0.001 - 0.698 0.047 0.001
+*    3. Cubeful 4-ply    13/11 6/3                    Eq.: -0.190 (-0.007)
+       0.302 0.029 0.001 - 0.698 0.046 0.001
+     4. Cubeful 4-ply    7/5 6/3                      Eq.: -0.191 (-0.008)
+       0.302 0.029 0.001 - 0.698 0.045 0.001
+     5. Cubeful 2-ply    13/11 8/5                    Eq.: -0.189 (-0.006)
+       0.301 0.031 0.001 - 0.699 0.044 0.000
+
+
+Move number 17:  Ophris to play 52
+
+ GNU Backgammon  Position ID: tK2RAQzi3sAHAA
+                 Match ID   : EYGqAYAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Ophris
+ | X              O |   | O  O     X  O    |     8 points
+ | X              O |   | O  O     X       |     Rolled 52
+ |                  |   | O  O             |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match
+ | O                |   |                  |    
+ | O                |   |                  |     
+ | O                |   |                  |     
+ | O           X    |   | X  X  X          |     
+ | O  X        X  X |   | X  X  X  X       |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba (Cube: 2)
+Pip counts: O 120, X 137
+
+* Ophris moves 13/6
+
+Rolled 52:
+*    1. Cubeful 2-ply    13/6                         Eq.: +0.208
+       0.702 0.043 0.000 - 0.298 0.025 0.000
+     2. Cubeful 2-ply    13/11 6/1                    Eq.: +0.037 (-0.171)
+       0.651 0.060 0.001 - 0.349 0.052 0.001
+     3. Cubeful 2-ply    7/5 7/2                      Eq.: -0.097 (-0.305)
+       0.612 0.048 0.000 - 0.388 0.055 0.000
+     4. Cubeful 0-ply    13/11 13/8                   Eq.: -0.369 (-0.576)
+       0.562 0.079 0.001 - 0.438 0.123 0.001
+     5. Cubeful 0-ply    6/4 6/1                      Eq.: -0.583 (-0.791)
+       0.527 0.078 0.001 - 0.473 0.145 0.001
+
+
+Move number 18:  Llabba to play 54
+
+ GNU Backgammon  Position ID: 4r6BBwC0rZEBDA
+                 Match ID   : UYmyAYAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Ophris
+ | X              O |   | O  O     X  O    |     8 points
+ | X              O |   | O  O     X       |     
+ |                  |   | O  O             |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ | O                |   |                  |     
+ | O                |   |                  |     
+ | O           X    |   | X  X  X          |     Rolled 54
+ | O  X        X  X |   | X  X  X  X       |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba (Cube: 2)
+Pip counts: O 113, X 137
+
+* Llabba moves 11/7 8/3
+
+Cube analysis
+4-ply cubeless equity -0.420 (Money: -0.435)
+  0.293 0.022 0.000 - 0.707 0.043 0.000
+Cubeful equities:
+1. No double           -0.227
+2. Double, pass        +1.000  (+1.227)
+3. Double, take        -0.570  (-0.343)
+Proper cube action: No redouble, take (21.8%)
+
+Rolled 54:
+     1. Cubeful 4-ply    11/2                         Eq.: -0.214
+       0.297 0.023 0.000 - 0.703 0.043 0.001
+     2. Cubeful 4-ply    8/4 7/2                      Eq.: -0.216 (-0.001)
+       0.297 0.023 0.000 - 0.703 0.043 0.001
+     3. Cubeful 4-ply    8/3 6/2                      Eq.: -0.216 (-0.002)
+       0.297 0.022 0.000 - 0.703 0.043 0.001
+*    4. Cubeful 4-ply    11/7 8/3                     Eq.: -0.224 (-0.009)
+       0.295 0.023 0.000 - 0.705 0.046 0.001
+     5. Cubeful 2-ply    11/6 8/4                     Eq.: -0.208 (+0.006)
+       0.297 0.026 0.000 - 0.703 0.040 0.000
+
+
+Move number 19:  Ophris to play 64
+
+ GNU Backgammon  Position ID: bNuCAQzivoEHAA
+                 Match ID   : EQGzAYAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Ophris
+ | X              O |   | O  O     X  O    |     8 points
+ | X              O |   | O  O     X       |     Rolled 64
+ |                  |   | O  O             |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ | O                |   |                  |     
+ | O                |   |                  |     
+ | O              X |   | X  X  X  X       |     
+ | O           X  X |   | X  X  X  X       |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba (Cube: 2)
+Pip counts: O 113, X 128
+
+* Ophris moves 13/7 6/2
+
+Rolled 64:
+*    1. Cubeful 4-ply    13/7 6/2                     Eq.: +0.253
+       0.715 0.038 0.000 - 0.285 0.018 0.000
+     2. Cubeful 4-ply    13/7 5/1                     Eq.: +0.204 (-0.049)
+       0.699 0.059 0.001 - 0.301 0.027 0.000
+     3. Cubeful 0-ply    13/9 13/7                    Eq.: -0.458 (-0.711)
+       0.522 0.054 0.001 - 0.478 0.102 0.001
+     4. Cubeful 0-ply    7/1 6/2                      Eq.: -0.828 (-1.081)
+       0.469 0.066 0.000 - 0.531 0.147 0.001
+     5. Cubeful 0-ply    7/1 5/1                      Eq.: -0.965 (-1.218)
+       0.443 0.059 0.000 - 0.557 0.156 0.001
+
+
+Move number 20:  Llabba to play 64
+
+ GNU Backgammon  Position ID: xr0DBwBs24IBDA
+                 Match ID   : UQmzAYAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Ophris
+ | X              O |   | O  O     X  O    |     8 points
+ | X              O |   | O  O     X  O    |     
+ |                O |   | O  O             |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ | O                |   |                  |     
+ | O              X |   | X  X  X  X       |     Rolled 64
+ | O           X  X |   | X  X  X  X       |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba (Cube: 2)
+Pip counts: O 103, X 128
+
+* Llabba moves 8/2 7/3
+
+Cube analysis
+4-ply cubeless equity -0.437 (Money: -0.450)
+  0.285 0.018 0.000 - 0.715 0.038 0.000
+Cubeful equities:
+1. No double           -0.253
+2. Double, pass        +1.000  (+1.253)
+3. Double, take        -0.616  (-0.363)
+Proper cube action: No redouble, take (22.4%)
+
+Rolled 64:
+*    1. Cubeful 4-ply    8/2 7/3                      Eq.: -0.260
+       0.284 0.018 0.000 - 0.716 0.039 0.001
+     2. Cubeful 4-ply    8/2 6/2                      Eq.: -0.268 (-0.008)
+       0.281 0.017 0.000 - 0.719 0.038 0.001
+     3. Cubeful 4-ply    8/4 7/1                      Eq.: -0.270 (-0.010)
+       0.281 0.018 0.000 - 0.719 0.041 0.001
+     4. Cubeful 4-ply    13/9 13/7                    Eq.: -0.275 (-0.015)
+       0.279 0.017 0.000 - 0.721 0.033 0.000
+     5. Cubeful 2-ply    7/1 5/1                      Eq.: -0.266 (-0.006)
+       0.280 0.020 0.000 - 0.720 0.042 0.000
+
+
+Move number 21:  Ophris to play 43
+
+ GNU Backgammon  Position ID: um2BAQzGvQMHAA
+                 Match ID   : EQGuAYAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Ophris
+ | X              O |   | O  O     X  O    |     8 points
+ | X              O |   | O  O     X  O    |     Rolled 43
+ |                O |   | O  O             |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ | O                |   |          X       |     
+ | O                |   | X  X  X  X       |     
+ | O              X |   | X  X  X  X  X    |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba (Cube: 2)
+Pip counts: O 103, X 118
+
+* Ophris moves 13/6
+
+Rolled 43:
+*    1. Cubeful 2-ply    13/6                         Eq.: +0.239
+       0.710 0.039 0.000 - 0.290 0.019 0.000
+     2. Cubeful 2-ply    13/10 6/2                    Eq.: +0.109 (-0.130)
+       0.667 0.062 0.002 - 0.333 0.042 0.001
+     3. Cubeful 2-ply    13/10 5/1                    Eq.: +0.077 (-0.162)
+       0.659 0.062 0.001 - 0.341 0.048 0.001
+     4. Cubeful 2-ply    6/2 5/2                      Eq.: +0.031 (-0.208)
+       0.644 0.038 0.000 - 0.356 0.036 0.000
+     5. Cubeful 0-ply    7/4 6/2                      Eq.: -0.234 (-0.474)
+       0.584 0.077 0.001 - 0.416 0.097 0.000
+
+
+Move number 22:  Llabba to play 21
+
+ GNU Backgammon  Position ID: xn0HBgC6bYEBDA
+                 Match ID   : UQmlAYAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Ophris
+ | X              O |   | O  O     X  O    |     8 points
+ | X              O |   | O  O     X  O    |     
+ |                O |   | O  O             |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |          X       |     
+ | O                |   | X  X  X  X       |     Rolled 21
+ | O              X |   | X  X  X  X  X    |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba (Cube: 2)
+Pip counts: O 96, X 118
+
+* Llabba moves 7/5 3/2
+
+Cube analysis
+4-ply cubeless equity -0.435 (Money: -0.449)
+  0.287 0.018 0.000 - 0.713 0.041 0.001
+Cubeful equities:
+1. No double           -0.256
+2. Double, pass        +1.000  (+1.256)
+3. Double, take        -0.607  (-0.351)
+Proper cube action: No redouble, take (21.8%)
+
+Rolled 21:
+*    1. Cubeful 4-ply    7/5 3/2                      Eq.: -0.263
+       0.284 0.021 0.000 - 0.716 0.042 0.001
+     2. Cubeful 4-ply    7/6 3/1                      Eq.: -0.277 (-0.014)
+       0.278 0.019 0.000 - 0.722 0.044 0.001
+     3. Cubeful 4-ply    3/2 3/1                      Eq.: -0.280 (-0.017)
+       0.277 0.018 0.000 - 0.723 0.044 0.001
+     4. Cubeful 4-ply    7/4                          Eq.: -0.285 (-0.022)
+       0.276 0.019 0.000 - 0.724 0.042 0.001
+     5. Cubeful 2-ply    13/11 3/2                    Eq.: -0.276 (-0.013)
+       0.278 0.021 0.000 - 0.722 0.046 0.001
+
+
+Move number 23:  Ophris to play 51
+
+ GNU Backgammon  Position ID: tt2AAQzGfQcGAA
+                 Match ID   : EYGmAYAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Ophris
+ | X              O |   | O  O     X  O    |     8 points
+ | X              O |   | O  O     X  O    |     Rolled 51
+ |                O |   | O  O             |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |    X             |     
+ | O                |   | X  X  X  X  X    |     
+ | O                |   | X  X  X  X  X    |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba (Cube: 2)
+Pip counts: O 96, X 115
+
+* Ophris moves 6/5 6/1
+
+Rolled 51:
+*    1. Cubeful 4-ply    6/5 6/1                      Eq.: +0.260
+       0.714 0.044 0.000 - 0.286 0.019 0.000
+     2. Cubeful 4-ply    6/1 2/1                      Eq.: +0.240 (-0.020)
+       0.708 0.041 0.000 - 0.292 0.020 0.000
+     3. Cubeful 4-ply    7/2 6/5                      Eq.: +0.195 (-0.066)
+       0.691 0.045 0.001 - 0.309 0.025 0.000
+     4. Cubeful 2-ply    7/1                          Eq.: +0.150 (-0.110)
+       0.684 0.044 0.000 - 0.316 0.030 0.000
+     5. Cubeful 0-ply    6/1 5/4                      Eq.: -0.375 (-0.635)
+       0.544 0.054 0.000 - 0.456 0.104 0.001
+
+
+Move number 24:  Llabba to play 52
+
+ GNU Backgammon  Position ID: jXcHBgC23YABDA
+                 Match ID   : UYmqAYAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Ophris
+ | X              O |   | O  O     X  O  O |     8 points
+ | X              O |   | O  O     X  O    |     
+ |                O |   | O  O             |     
+ |                  |   |    O             |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |    X             |     
+ | O                |   | X  X  X  X  X    |     Rolled 52
+ | O                |   | X  X  X  X  X    |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba (Cube: 2)
+Pip counts: O 90, X 115
+
+* Llabba moves 13/6
+
+Cube analysis
+4-ply cubeless equity -0.439 (Money: -0.454)
+  0.286 0.019 0.000 - 0.714 0.044 0.000
+Cubeful equities:
+1. No double           -0.260
+2. Double, pass        +1.000  (+1.260)
+3. Double, take        -0.610  (-0.349)
+Proper cube action: No redouble, take (21.7%)
+
+Rolled 52:
+*    1. Cubeful 4-ply    13/6                         Eq.: -0.282
+       0.282 0.019 0.000 - 0.718 0.038 0.000
+     2. Cubeful 4-ply    13/8 5/3                     Eq.: -0.295 (-0.012)
+       0.279 0.019 0.000 - 0.721 0.043 0.000
+     3. Cubeful 4-ply    13/11 13/8                   Eq.: -0.303 (-0.021)
+       0.278 0.017 0.000 - 0.722 0.033 0.001
+     4. Cubeful 4-ply    22/17 5/3                    Eq.: -0.319 (-0.036)
+       0.278 0.029 0.000 - 0.722 0.119 0.001
+     5. Cubeful 2-ply    6/1 5/3                      Eq.: -0.293 (-0.011)
+       0.273 0.016 0.000 - 0.727 0.048 0.001
+
+
+Move number 25:  Ophris to play 65
+
+ GNU Backgammon  Position ID: tt0BAQyNdwcGAA
+                 Match ID   : EQG3AYAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Ophris
+ | X              O |   | O  O     X  O  O |     8 points
+ |                O |   | O  O     X  O    |     Rolled 65
+ |                O |   | O  O             |     
+ |                  |   |    O             |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X  X             |     
+ | O                |   | X  X  X  X  X    |     
+ | O                |   | X  X  X  X  X    |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba (Cube: 2)
+Pip counts: O 90, X 108
+
+* Ophris moves 7/1 6/1
+
+Rolled 65:
+*    1. Cubeful 0-ply    7/1 6/1                      Eq.: +0.074
+       0.658 0.034 0.000 - 0.342 0.033 0.000
+     2. Cubeful 0-ply    13/8 13/7                    Eq.: -0.349 (-0.423)
+       0.522 0.025 0.000 - 0.478 0.062 0.000
+     3. Cubeful 0-ply    13/2                         Eq.: -0.433 (-0.507)
+       0.500 0.037 0.001 - 0.500 0.068 0.001
+     4. Cubeful 0-ply    13/7 6/1                     Eq.: -0.451 (-0.524)
+       0.493 0.035 0.000 - 0.507 0.066 0.001
+     5. Cubeful 0-ply    7/2 7/1                      Eq.: -0.683 (-0.757)
+       0.479 0.050 0.000 - 0.521 0.117 0.001
+
+
+Move number 26:  Llabba to play 31
+
+ GNU Backgammon  Position ID: N94GBgC23QEBDA
+                 Match ID   : UYmlAYAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Ophris
+ | X              O |   | O  O     X  O  O |     8 points
+ |                O |   | O  O     X  O  O |     
+ |                  |   |    O           O |     
+ |                  |   |    O             |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X  X             |     
+ | O                |   | X  X  X  X  X    |     Rolled 31
+ | O                |   | X  X  X  X  X    |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba (Cube: 2)
+Pip counts: O 79, X 108
+
+* Llabba moves 5/1
+
+Cube analysis
+4-ply cubeless equity -0.353 (Money: -0.364)
+  0.319 0.023 0.000 - 0.681 0.027 0.000
+Cubeful equities:
+1. No double           -0.166
+2. Double, pass        +1.000  (+1.166)
+3. Double, take        -0.455  (-0.289)
+Proper cube action: No redouble, take (19.9%)
+
+Rolled 31:
+*    1. Cubeful 4-ply    5/1                          Eq.: -0.139
+       0.332 0.037 0.001 - 0.668 0.062 0.001
+     2. Cubeful 4-ply    6/3 5/4                      Eq.: -0.149 (-0.010)
+       0.331 0.034 0.001 - 0.669 0.056 0.001
+     3. Cubeful 4-ply    6/2                          Eq.: -0.154 (-0.016)
+       0.329 0.034 0.001 - 0.671 0.054 0.000
+     4. Cubeful 4-ply    13/9                         Eq.: -0.204 (-0.065)
+       0.309 0.026 0.001 - 0.691 0.025 0.000
+     5. Cubeful 2-ply    13/10 5/4                    Eq.: -0.173 (-0.035)
+       0.316 0.026 0.000 - 0.684 0.025 0.000
+
+
+Move number 27:  Ophris to play 41
+
+ GNU Backgammon  Position ID: bdsBAQw33gYGAA
+                 Match ID   : EQGmAYAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Ophris
+ | X              O |   | O  O     X  O  O |     8 points
+ |                O |   | O  O     X  O  O |     Rolled 41
+ |                  |   |    O           O |     
+ |                  |   |    O             |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X                |     
+ | O                |   | X  X  X  X  X    |     
+ | O                |   | X  X  X  X  X  X |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba (Cube: 2)
+Pip counts: O 79, X 104
+
+* Ophris moves 13/12* 5/1
+
+Rolled 41:
+*    1. Cubeful 2-ply    13/12* 5/1                   Eq.: +0.215
+       0.694 0.100 0.001 - 0.306 0.034 0.001
+     2. Cubeful 2-ply    13/12*/8                     Eq.: +0.133 (-0.083)
+       0.666 0.113 0.001 - 0.334 0.064 0.002
+     3. Cubeful 2-ply    13/12* 13/9                  Eq.: +0.100 (-0.116)
+       0.653 0.113 0.001 - 0.347 0.077 0.003
+     4. Cubeful 0-ply    5/1 2/1                      Eq.: -0.133 (-0.348)
+       0.592 0.025 0.000 - 0.408 0.047 0.000
+     5. Cubeful 0-ply    6/5 6/2                      Eq.: -0.201 (-0.416)
+       0.571 0.023 0.000 - 0.429 0.053 0.000
+
+
+Move number 28:  Llabba to play 51
+
+ GNU Backgammon  Position ID: b9wGBQBt2wEARg
+                 Match ID   : UYmmAYAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Ophris
+ | O              O |   | O  O     X  O  O |     8 points
+ |                O |   | O  O     X  O  O |     
+ |                  |   |    O           O |     
+ |                  |   |                O |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X                |     
+ |                  |   | X  X  X  X  X    |     Rolled 51
+ | O                | X | X  X  X  X  X  X |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba (Cube: 2)
+Pip counts: O 74, X 116
+
+* Llabba cannot move
+
+Cube analysis
+4-ply cubeless equity -0.423 (Money: -0.455)
+  0.309 0.032 0.001 - 0.691 0.104 0.001
+Cubeful equities:
+1. No double           -0.233
+2. Double, pass        +1.000  (+1.233)
+3. Double, take        -0.476  (-0.243)
+Proper cube action: No redouble, take (16.5%)
+
+Rolled 51:
+*    Cannot move
+
+
+Move number 29:  Ophris to play 21
+
+ GNU Backgammon  Position ID: bdsBAEZv3AYFAA
+                 Match ID   : EQGlAYAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Ophris
+ | O              O |   | O  O     X  O  O |     8 points
+ |                O |   | O  O     X  O  O |     Rolled 21
+ |                  |   |    O           O |     
+ |                  |   |                O |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X                |     
+ |                  |   | X  X  X  X  X    |     
+ | O                | X | X  X  X  X  X  X |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba (Cube: 2)
+Pip counts: O 74, X 116
+
+* Ophris moves 13/11 12/11
+
+Rolled 21:
+     1. Cubeful 4-ply    7/6 7/5                      Eq.: +0.309
+       0.707 0.134 0.001 - 0.293 0.028 0.001
+*    2. Cubeful 4-ply    13/11 12/11                  Eq.: +0.300 (-0.009)
+       0.715 0.106 0.001 - 0.285 0.021 0.000
+     3. Cubeful 2-ply    13/10                        Eq.: +0.208 (-0.101)
+       0.687 0.111 0.001 - 0.313 0.045 0.001
+     4. Cubeful 2-ply    13/11 7/6                    Eq.: +0.193 (-0.116)
+       0.684 0.123 0.001 - 0.316 0.063 0.004
+     5. Cubeful 2-ply    13/12 7/5                    Eq.: +0.152 (-0.157)
+       0.667 0.115 0.001 - 0.333 0.043 0.001
+
+
+Move number 30:  Llabba to play 22
+
+ GNU Backgammon  Position ID: b9yGAQBt2wEARg
+                 Match ID   : UQmpAYAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Ophris
+ |    O           O |   | O  O     X  O  O |     8 points
+ |    O           O |   | O  O     X  O  O |     
+ |                  |   |    O           O |     
+ |                  |   |                O |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X                |     
+ |                  |   | X  X  X  X  X    |     Rolled 22
+ |                  | X | X  X  X  X  X  X |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba (Cube: 2)
+Pip counts: O 71, X 116
+
+* Llabba cannot move
+
+Cube analysis
+4-ply cubeless equity -0.484 (Money: -0.514)
+  0.285 0.021 0.000 - 0.715 0.106 0.001
+Cubeful equities:
+1. No double           -0.300
+2. Double, pass        +1.000  (+1.300)
+3. Double, take        -0.608  (-0.308)
+Proper cube action: No redouble, take (19.1%)
+
+Rolled 22:
+*    Cannot move
+
+
+Move number 31:  Ophris to play 43
+
+ GNU Backgammon  Position ID: bdsBAEZv3IYBAA
+                 Match ID   : EQGuAYAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Ophris
+ |    O           O |   | O  O     X  O  O |     8 points
+ |    O           O |   | O  O     X  O  O |     Rolled 43
+ |                  |   |    O           O |     
+ |                  |   |                O |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X                |     
+ |                  |   | X  X  X  X  X    |     
+ |                  | X | X  X  X  X  X  X |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba (Cube: 2)
+Pip counts: O 71, X 116
+
+* Ophris moves 11/7 5/2
+
+Rolled 43:
+*    1. Cubeful 4-ply    11/7 5/2                     Eq.: +0.146
+       0.671 0.098 0.001 - 0.329 0.029 0.000
+     2. Cubeful 4-ply    11/8 11/7                    Eq.: +0.116 (-0.029)
+       0.649 0.118 0.001 - 0.351 0.039 0.001
+     3. Cubeful 2-ply    11/8 5/1                     Eq.: +0.036 (-0.109)
+       0.629 0.101 0.001 - 0.371 0.063 0.002
+     4. Cubeful 0-ply    11/4                         Eq.: -0.220 (-0.365)
+       0.585 0.129 0.002 - 0.415 0.100 0.004
+     5. Cubeful 0-ply    7/4 5/1                      Eq.: -0.807 (-0.953)
+       0.496 0.117 0.001 - 0.504 0.169 0.005
+
+
+Move number 32:  Llabba to play 21
+
+ GNU Backgammon  Position ID: 79gOAQBt2wEARg
+                 Match ID   : UQmlAYAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Ophris
+ |    O           O |   | O  O     X  O  O |     8 points
+ |                O |   | O  O     X  O  O |     
+ |                O |   |             O  O |     
+ |                  |   |                O |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X                |     
+ |                  |   | X  X  X  X  X    |     Rolled 21
+ |                  | X | X  X  X  X  X  X |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba (Cube: 2)
+Pip counts: O 64, X 116
+
+* Llabba cannot move
+
+Cube analysis
+4-ply cubeless equity -0.382 (Money: -0.412)
+  0.329 0.029 0.000 - 0.671 0.098 0.001
+Cubeful equities:
+1. No double           -0.146
+2. Double, pass        +1.000  (+1.146)
+3. Double, take        -0.405  (-0.260)
+Proper cube action: No redouble, take (18.5%)
+
+Rolled 21:
+*    Cannot move
+
+
+Move number 33:  Ophris to play 66
+
+ GNU Backgammon  Position ID: bdsBAEbv2A4BAA
+                 Match ID   : EQG7AYAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Ophris
+ |    O           O |   | O  O     X  O  O |     8 points
+ |                O |   | O  O     X  O  O |     Rolled 66
+ |                O |   |             O  O |     
+ |                  |   |                O |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X                |     
+ |                  |   | X  X  X  X  X    |     
+ |                  | X | X  X  X  X  X  X |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba (Cube: 2)
+Pip counts: O 64, X 116
+
+* Ophris moves 11/5 7/1(3)
+
+Rolled 66:
+*    1. Cubeful 0-ply    11/5 7/1(3)                  Eq.: +0.443
+       0.728 0.236 0.000 - 0.272 0.007 0.000
+
+
+Move number 34:  Llabba to play 61
+
+ GNU Backgammon  Position ID: f8cNAABt2wEARg
+                 Match ID   : UQmnAYAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Ophris
+ |                  |   | O  O     X  O  O |     8 points
+ |                  |   | O  O     X  O  O |     
+ |                  |   |    O        O  O |     
+ |                  |   |                O |     
+ |                  |   |                7 |    
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X                |     
+ |                  |   | X  X  X  X  X    |     Rolled 61
+ |                  | X | X  X  X  X  X  X |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba (Cube: 2)
+Pip counts: O 40, X 116
+
+* Llabba cannot move
+
+Cube analysis
+4-ply cubeless equity -0.586 (Money: -0.643)
+  0.296 0.006 0.000 - 0.704 0.241 0.000
+Cubeful equities:
+1. No double           -0.382
+2. Double, pass        +1.000  (+1.382)
+3. Double, take        -0.638  (-0.257)
+Proper cube action: No redouble, take (15.7%)
+
+Rolled 61:
+*    Cannot move
+
+
+Move number 35:  Ophris to play 51
+
+ GNU Backgammon  Position ID: bdsBAEZ/xw0AAA
+                 Match ID   : EYGmAYAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Ophris
+ |                  |   | O  O     X  O  O |     8 points
+ |                  |   | O  O     X  O  O |     Rolled 51
+ |                  |   |    O        O  O |     
+ |                  |   |                O |     
+ |                  |   |                7 |    
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X                |     
+ |                  |   | X  X  X  X  X    |     
+ |                  | X | X  X  X  X  X  X |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba (Cube: 2)
+Pip counts: O 40, X 116
+
+* Ophris moves 6/5 6/1
+
+Rolled 51:
+*    1. Cubeful 2-ply    6/5 6/1                      Eq.: +0.795
+       0.837 0.298 0.000 - 0.163 0.000 0.000
+     2. Cubeful 2-ply    5/off 1/off                  Eq.: +0.565 (-0.230)
+       0.730 0.386 0.001 - 0.270 0.000 0.000
+     3. Cubeful 2-ply    5/off 2/1                    Eq.: +0.463 (-0.332)
+       0.709 0.318 0.001 - 0.291 0.000 0.000
+     4. Cubeful 0-ply    6/off                        Eq.: -0.077 (-0.872)
+       0.531 0.228 0.001 - 0.469 0.000 0.000
+     5. Cubeful 0-ply    6/1 2/1                      Eq.: -0.317 (-1.112)
+       0.519 0.181 0.000 - 0.481 0.062 0.001
+
+
+Move number 36:  Llabba to play 55
+
+ GNU Backgammon  Position ID: /44HAABt2wEARg
+                 Match ID   : UYm2AYAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Ophris
+ |                  |   |    O     X  O  O |     8 points
+ |                  |   |    O     X  O  O |     
+ |                  |   |    O        O  O |     
+ |                  |   |    O           O |     
+ |                  |   |                8 |    
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X                |     
+ |                  |   | X  X  X  X  X    |     Rolled 55
+ |                  | X | X  X  X  X  X  X |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba (Cube: 2)
+Pip counts: O 34, X 116
+
+* Llabba cannot move
+
+Cube analysis
+4-ply cubeless equity -0.914 (Money: -0.984)
+  0.158 0.000 0.000 - 0.842 0.300 0.000
+Cubeful equities:
+1. No double           -0.812
+2. Double, pass        +1.000  (+1.812)
+3. Double, take        -1.226  (-0.414)
+Proper cube action: No redouble, take (18.6%)
+
+Rolled 55:
+*    Cannot move
+
+
+Move number 37:  Ophris to play 22
+
+ GNU Backgammon  Position ID: bdsBAEb/jgcAAA
+                 Match ID   : EQGpAYAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Ophris
+ |                  |   |    O     X  O  O |     8 points
+ |                  |   |    O     X  O  O |     Rolled 22
+ |                  |   |    O        O  O |     
+ |                  |   |    O           O |     
+ |                  |   |                8 |    
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X                |     
+ |                  |   | X  X  X  X  X    |     
+ |                  | X | X  X  X  X  X  X |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba (Cube: 2)
+Pip counts: O 34, X 116
+
+* Ophris moves 2/off(3)
+
+Rolled 22:
+*    1. Cubeful 0-ply    2/off(3)                     Eq.: +0.693
+       0.765 0.426 0.003 - 0.235 0.000 0.000
+
+
+Move number 38:  Llabba to play 31
+
+ GNU Backgammon  Position ID: //AAAKBtOwDACA
+                 Match ID   : UYmlAYAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Ophris
+ |                  |   |    O     X     O | O   8 points
+ |                  |   |    O     X     O | O   
+ |                  |   |    O           O | O   
+ |                  |   |    O           O |     
+ |                  |   |                8 |    
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X                |     
+ |                  |   | X  X  X  X  X    |     Rolled 31
+ |                  | X | X  X  X  X  X  X |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba (Cube: 2)
+Pip counts: O 28, X 116
+
+* Llabba moves bar/21
+
+Cube analysis
+4-ply cubeless equity -0.855 (Money: -0.957)
+  0.238 0.000 0.000 - 0.762 0.430 0.003
+Cubeful equities:
+1. No double           -0.699
+2. Double, pass        +1.000  (+1.699)
+3. Double, take        -0.936  (-0.237)
+Proper cube action: No redouble, take (12.3%)
+
+Rolled 31:
+*    1. Cubeful 2-ply    bar/21                       Eq.: -0.824
+       0.211 0.000 0.000 - 0.789 0.512 0.003
+     2. Cubeful 2-ply    bar/22 6/5                   Eq.: -0.987 (-0.163)
+       0.162 0.000 0.000 - 0.838 0.553 0.005
+     3. Cubeful 2-ply    bar/22 2/1                   Eq.: -1.006 (-0.182)
+       0.156 0.000 0.000 - 0.844 0.557 0.005
+     4. Cubeful 2-ply    bar/22 4/3                   Eq.: -1.044 (-0.220)
+       0.146 0.000 0.000 - 0.854 0.572 0.005
+     5. Cubeful 2-ply    bar/22 5/4                   Eq.: -1.056 (-0.232)
+       0.141 0.000 0.000 - 0.859 0.570 0.004
+
+
+Move number 39:  Ophris to play 53
+
+ GNU Backgammon  Position ID: bdsBAA3/8AAAAA
+                 Match ID   : EYGuAYAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Ophris
+ |                  |   |    O  X  X     O | O   8 points
+ |                  |   |    O     X     O | O   Rolled 53
+ |                  |   |    O           O | O   
+ |                  |   |    O           O |     
+ |                  |   |                8 |    
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X                |     
+ |                  |   | X  X  X  X  X    |     
+ |                  |   | X  X  X  X  X  X |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba (Cube: 2)
+Pip counts: O 28, X 112
+
+* Ophris moves 5/2 5/off
+
+Rolled 53:
+*    1. Cubeful 0-ply    5/2 5/off                    Eq.: +0.942
+       0.829 0.527 0.003 - 0.171 0.000 0.000
+
+
+Move number 40:  Llabba to play 32
+
+ GNU Backgammon  Position ID: /2IAANC2HQDQAA
+                 Match ID   : UYmpAYAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Ophris
+ |                  |   |    O  X  X  O  O | O   8 points
+ |                  |   |    O     X     O | O   
+ |                  |   |                O | O   
+ |                  |   |                O | O   
+ |                  |   |                8 |    
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X                |     
+ |                  |   | X  X  X  X  X    |     Rolled 32
+ |                  |   | X  X  X  X  X  X |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba (Cube: 2)
+Pip counts: O 20, X 112
+
+* Llabba moves 6/1
+
+Cube analysis
+4-ply cubeless equity -1.037 (Money: -1.157)
+  0.179 0.000 0.000 - 0.821 0.514 0.001
+Cubeful equities:
+1. No double           -0.912
+2. Double, pass        +1.000  (+1.912)
+3. Double, take        -1.217  (-0.305)
+Proper cube action: No redouble, take (13.8%)
+
+Rolled 32:
+     1. Cubeful 4-ply    22/17                        Eq.: -0.946
+       0.185 0.000 0.000 - 0.815 0.575 0.001
+*    2. Cubeful 4-ply    6/1                          Eq.: -0.953 (-0.008)
+       0.199 0.000 0.000 - 0.801 0.633 0.001
+     3. Cubeful 4-ply    22/19 6/4                    Eq.: -0.973 (-0.027)
+       0.183 0.000 0.000 - 0.817 0.608 0.001
+     4. Cubeful 4-ply    22/19 3/1                    Eq.: -1.004 (-0.058)
+       0.174 0.000 0.000 - 0.826 0.618 0.001
+     5. Cubeful 2-ply    22/19 4/2                    Eq.: -1.117 (-0.171)
+       0.142 0.000 0.000 - 0.858 0.643 0.003
+
+
+Move number 41:  Ophris to play 64
+
+ GNU Backgammon  Position ID: 27YBAA3/YgAAAA
+                 Match ID   : EQGzAYAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Ophris
+ |                  |   |    O  X  X  O  O | O   8 points
+ |                  |   |    O     X     O | O   Rolled 64
+ |                  |   |                O | O   
+ |                  |   |                O | O   
+ |                  |   |                8 |    
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |                  |     
+ |                  |   | X  X  X  X  X  X |     
+ |                  |   | X  X  X  X  X  X |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba (Cube: 2)
+Pip counts: O 20, X 107
+
+* Ophris moves 5/1 5/off
+
+Rolled 64:
+*    1. Cubeful 0-ply    5/1 5/off                    Eq.: +1.692
+       1.000 0.901 0.000 - 0.000 0.000 0.000
+
+
+Move number 42:  Llabba to play 43
+
+ GNU Backgammon  Position ID: /wUAANi2DQBoAA
+                 Match ID   : UQmuAYAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Ophris
+ |                  |   |       X  X  O  O | O   8 points
+ |                  |   |          X     O | O   
+ |                  |   |                O | O   
+ |                  |   |                O | O   
+ |                  |   |                9 | O  
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |                  |     
+ |                  |   | X  X  X  X  X  X |     Rolled 43
+ |                  |   | X  X  X  X  X  X |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba (Cube: 2)
+Pip counts: O 11, X 107
+
+* Llabba moves 22/18 21/18
+
+Cube analysis
+4-ply cubeless equity -1.692 (Money: -1.901)
+  -0.000 0.000 0.000 - 1.000 0.901 0.000
+Cubeful equities:
+1. No double           -1.692
+2. Double, pass        +1.000  (+2.692)
+3. Double, take        -2.052  (-0.360)
+Proper cube action: No redouble, take (11.8%)
+
+Rolled 43:
+     1. Cubeful 4-ply    22/19 22/18                  Eq.: -1.715
+       0.000 0.000 0.000 - 1.000 0.931 0.000
+*    2. Cubeful 4-ply    22/18 21/18                  Eq.: -1.716 (-0.001)
+       0.000 0.000 0.000 - 1.000 0.932 0.000
+     3. Cubeful 4-ply    22/15                        Eq.: -1.717 (-0.001)
+       0.000 0.000 0.000 - 1.000 0.933 0.000
+     4. Cubeful 4-ply    22/19 21/17                  Eq.: -1.717 (-0.002)
+       0.000 0.000 0.000 - 1.000 0.934 0.001
+     5. Cubeful 2-ply    21/14                        Eq.: -1.719 (-0.003)
+       0.000 0.000 0.000 - 1.000 0.935 0.002
+
+
+Move number 43:  Ophris to play 33
+
+ GNU Backgammon  Position ID: 27YBYAj/BQAAAA
+                 Match ID   : EYGtAYAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Ophris
+ |                X |   |          X  O  O | O   8 points
+ |                X |   |                O | O   Rolled 33
+ |                  |   |                O | O   
+ |                  |   |                O | O   
+ |                  |   |                9 | O  
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |                  |     
+ |                  |   | X  X  X  X  X  X |     
+ |                  |   | X  X  X  X  X  X |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba (Cube: 2)
+Pip counts: O 11, X 100
+
+* Ophris moves 2/off 1/off(3)
+
+Rolled 33:
+*    1. Cubeful 0-ply    2/off 1/off(3)               Eq.: +1.754
+       1.000 0.982 0.000 - 0.000 0.000 0.000
+
+
+Move number 44:  Llabba to play 66
+
+ GNU Backgammon  Position ID: PwAAgG3bADAEAA
+                 Match ID   : UQm7AYAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Ophris
+ |                X |   |          X     O | OO  8 points
+ |                X |   |                O | OO  
+ |                  |   |                O | OO  
+ |                  |   |                O | OO  
+ |                  |   |                6 | O  
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |                  |     
+ |                  |   | X  X  X  X  X  X |     Rolled 66
+ |                  |   | X  X  X  X  X  X |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba (Cube: 2)
+Pip counts: O 6, X 100
+
+* Llabba moves 18/6(2)
+
+Cube analysis
+4-ply cubeless equity -1.759 (Money: -1.988)
+  -0.000 0.000 0.000 - 1.000 0.988 0.000
+Cubeful equities:
+1. No double           -1.759
+2. Double, pass        +1.000  (+2.759)
+3. Double, take        -2.079  (-0.320)
+Proper cube action: No redouble, take (10.4%)
+
+Rolled 66:
+     1. Cubeful 4-ply    22/16 18/6 18/12             Eq.: -1.636
+       0.000 0.000 0.000 - 1.000 0.828 0.000
+*    2. Cubeful 4-ply    18/6(2)                      Eq.: -1.639 (-0.004)
+       0.000 0.000 0.000 - 1.000 0.825 0.017
+     3. Cubeful 4-ply    22/10 18/6                   Eq.: -1.641 (-0.006)
+       0.000 0.000 0.000 - 1.000 0.835 0.000
+     4. Cubeful 4-ply    22/10 18/12(2)               Eq.: -1.643 (-0.008)
+       0.000 0.000 0.000 - 1.000 0.838 0.000
+     5. Cubeful 2-ply    22/4 18/12                   Eq.: -1.673 (-0.038)
+       0.000 0.000 0.000 - 1.000 0.877 0.000
+
+
+Move number 45:  Ophris to play 52
+
+ GNU Backgammon  Position ID: 27YHAAg/AAAAAA
+                 Match ID   : EYGqAYAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Ophris
+ |                  |   |          X     O | OO  8 points
+ |                  |   |                O | OO  Rolled 52
+ |                  |   |                O | OO  
+ |                  |   |                O | OO  
+ |                  |   |                6 | O  
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ |                  |   | X  X  X  X  X  X |     
+ |                  |   | X  X  X  X  X  X |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba (Cube: 2)
+Pip counts: O 6, X 76
+
+* Ophris moves 1/off(2)
+
+Rolled 52:
+*    1. Cubeful 0-ply    1/off(2)                     Eq.: +1.612
+       1.000 0.792 0.009 - 0.000 0.000 0.000
+
+
+Move number 46:  Llabba to play 62
+
+ GNU Backgammon  Position ID: DwAAYNv2AAABAA
+                 Match ID   : UQmrAYAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Ophris
+ |                  |   |          X     O | OOO 8 points
+ |                  |   |                O | OO  
+ |                  |   |                O | OO  
+ |                  |   |                O | OO  
+ |                  |   |                  | OO 
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ |                  |   | X  X  X  X  X  X |     Rolled 62
+ |                  |   | X  X  X  X  X  X |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba (Cube: 2)
+Pip counts: O 4, X 76
+
+* Llabba moves 22/14
+
+Cube analysis
+4-ply cubeless equity -1.614 (Money: -1.805)
+  -0.000 0.000 0.000 - 1.000 0.796 0.009
+Cubeful equities:
+1. No double           -1.614
+2. Double, pass        +1.000  (+2.614)
+3. Double, take        -2.019  (-0.404)
+Proper cube action: No redouble, take (13.4%)
+
+Rolled 62:
+*    1. Cubeful 4-ply    22/14                        Eq.: -1.697
+       0.000 0.000 0.000 - 1.000 0.907 0.000
+     2. Cubeful 4-ply    22/16 6/4                    Eq.: -1.715 (-0.018)
+       0.000 0.000 0.000 - 1.000 0.931 0.000
+     3. Cubeful 4-ply    22/16 5/3                    Eq.: -1.715 (-0.018)
+       0.000 0.000 0.000 - 1.000 0.931 0.000
+     4. Cubeful 4-ply    22/16 3/1                    Eq.: -1.715 (-0.018)
+       0.000 0.000 0.000 - 1.000 0.931 0.000
+     5. Cubeful 2-ply    22/16 4/2                    Eq.: -1.715 (-0.018)
+       0.000 0.000 0.000 - 1.000 0.931 0.000
+
+
+Move number 47:  Ophris to play 53
+
+ GNU Backgammon  Position ID: 27YHCAAPAAAAAA
+                 Match ID   : EYGuAYAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Ophris
+ |    X             |   |                O | OOO 8 points
+ |                  |   |                O | OO  Rolled 53
+ |                  |   |                O | OO  
+ |                  |   |                O | OO  
+ |                  |   |                  | OO 
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ |                  |   | X  X  X  X  X  X |     
+ |                  |   | X  X  X  X  X  X |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba (Cube: 2)
+Pip counts: O 4, X 68
+
+* Ophris moves 1/off(2)
+
+Rolled 53:
+*    1. Cubeful 0-ply    1/off(2)                     Eq.: +1.675
+       1.000 0.879 0.000 - 0.000 0.000 0.000
+
+
+Move number 48:  Llabba to play 64
+
+ GNU Backgammon  Position ID: AwAA2LY9QAAAAA
+                 Match ID   : UQmzAYAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Ophris
+ |    X             |   |                O | OOO 8 points
+ |                  |   |                O | OOO 
+ |                  |   |                  | OOO 
+ |                  |   |                  | OO  
+ |                  |   |                  | OO 
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ |                  |   | X  X  X  X  X  X |     Rolled 64
+ |                  |   | X  X  X  X  X  X |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba (Cube: 2)
+Pip counts: O 2, X 68
+
+* Llabba moves 14/8 5/1
+
+Cube analysis
+4-ply cubeless equity -1.683 (Money: -1.889)
+  -0.000 0.000 0.000 - 1.000 0.889 0.000
+Cubeful equities:
+1. No double           -1.683
+2. Double, pass        +1.000  (+2.683)
+3. Double, take        -2.048  (-0.365)
+Proper cube action: No redouble, take (12.0%)
+
+Rolled 64:
+     1. Cubeful 4-ply    14/4                         Eq.: -1.768
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+     2. Cubeful 4-ply    14/8 6/2                     Eq.: -1.768 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+*    3. Cubeful 4-ply    14/8 5/1                     Eq.: -1.768 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+
+
+Move number 49:  Ophris to play 66
+
+ GNU Backgammon  Position ID: t60nAAADAAAAAA
+                 Match ID   : EQG7AYAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Ophris
+ |                  |   |                O | OOO 8 points
+ |                  |   |                O | OOO Rolled 66
+ |                  |   |                  | OOO 
+ |                  |   |                  | OO  
+ |                  |   |                  | OO 
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X              X |     
+ |                  |   | X     X  X  X  X |     
+ |             X    |   | X  X  X  X  X  X |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba (Cube: 2)
+Pip counts: O 2, X 58
+
+* Ophris moves 1/off(2)
+
+Rolled 66:
+*    1. Cubeful 0-ply    1/off(2)                     Eq.: +1.768
+       1.000 1.000 0.000 - 0.000 0.000 0.000
+
+
+Ophris wins 4 points
+
+Game statistics for game 2
+
+Player                                   Ophris                  Llabba                 
+
+Chequerplay statistics
+
+Total moves                               24                      23                    
+Unforced moves                            16                      18                    
+Unmarked moves                            23                      23                    
+Moves marked doubtful                      1                       0                    
+Moves marked bad                           0                       0                    
+Moves marked very bad                      0                       0                    
+Error total EMG (MWC)                         -0.041 ( -0.163%)       -0.063 ( -0.307%) 
+Error rate mEMG (MWC)                         -2.6   ( -0.010%)       -3.5   ( -0.017%) 
+Chequerplay rating                       World class             World class            
+
+
+Cube statistics
+
+Total cube decisions                       5                      24                    
+Close or actual cube decisions             1                       2                    
+Doubles                                    1                       0                    
+Takes                                      0                       1                    
+Passes                                     0                       0                    
+Missed doubles below CP (EMG (MWC))        0                       0                    
+Missed doubles above CP (EMG (MWC))        0                       0                    
+Wrong doubles below DP (EMG (MWC))         1 (-0.138 ( -0.459%))   0                    
+Wrong doubles above TG (EMG (MWC))         0                       0                    
+Wrong takes (EMG (MWC))                    0                       0                    
+Wrong passes (EMG (MWC))                   0                       0                    
+Error total EMG (MWC)                         -0.138 ( -0.459%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                       -137.8   ( -0.459%)       -0.0   ( -0.000%) 
+Cube decision rating                     Awful!                  Supernatural           
+
+
+Overall statistics
+
+Error total EMG (MWC)                         -0.179 ( -0.622%)       -0.063 ( -0.307%) 
+Error rate mEMG (MWC)                        -10.5   ( -0.037%)       -3.1   ( -0.015%) 
+Snowie error rate                             -3.8   ( +0.000%)       -1.3   ( +0.000%) 
+Overall rating                           Advanced                World class            
+Error based abs. FIBS rating             1909.1                  2012.5                 
+Chequerplay errors rating loss             27.5                    37.5                 
+Cube errors rating loss                   113.4                     0.0                 
+
+
+
+
+Output generated Sat Feb 03 04:41:33 2024
+ by GNU Backgammon 1.07.001-mingw 32-Bit 20221114 (Text Export version 1.128)
+
