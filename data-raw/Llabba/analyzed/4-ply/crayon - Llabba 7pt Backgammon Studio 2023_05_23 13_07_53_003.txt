@@ -1,0 +1,535 @@
+The score (after 2 games) is: crayon 4, Llabba 1 (match to 7 points)
+
+Match Information:
+Date: 23/05/2023
+Event: Online match
+Round: Round 0
+Place: Backgammon Studio
+Comments: [ClockType "Speed 168/6"]
+
+
+Move number 1:  Llabba to play 32
+
+ GNU Backgammon  Position ID: 4HPwATDgc/ABMA
+                 Match ID   : cIjpAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: crayon
+ | X           O    |   | O              X |     4 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     7 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     Rolled 32
+ | O           X    |   | X              O |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 167, X 167
+
+* Llabba moves 13/11 13/10
+
+Rolled 32:
+     1. Cubeful 4-ply    24/21 13/11                  Eq.: +0.151
+       0.502 0.137 0.006 - 0.498 0.132 0.006
+*    2. Cubeful 4-ply    13/11 13/10                  Eq.: +0.150 (-0.001)
+       0.497 0.150 0.007 - 0.503 0.141 0.008
+     3. Cubeful 4-ply    24/22 13/10                  Eq.: +0.140 (-0.011)
+       0.498 0.138 0.006 - 0.502 0.133 0.006
+     4. Cubeful 4-ply    13/11 8/5                    Eq.: +0.112 (-0.040)
+       0.489 0.144 0.007 - 0.511 0.149 0.010
+     5. Cubeful 2-ply    13/8                         Eq.: +0.098 (-0.053)
+       0.489 0.137 0.006 - 0.511 0.143 0.006
+
+
+Move number 2:  crayon to play 41
+
+ GNU Backgammon  Position ID: 4HPKATDgc/ABMA
+                 Match ID   : MAHmAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: crayon
+ | X           O    |   | O              X |     4 points
+ | X           O    |   | O              X |     Rolled 41
+ | X           O    |   | O                |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     7 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     
+ | O  X  X     X    |   | X              O |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 167, X 162
+
+* crayon moves 24/23 13/9
+
+Cube analysis
+4-ply cubeless equity +0.023 (Money: -0.003)
+  0.503 0.141 0.008 - 0.497 0.150 0.007
+Cubeful equities:
+1. No double           -0.150
+2. Double, pass        +1.000  (+1.150)
+3. Double, take        -1.095  (-0.945)
+Proper cube action: No double, take (45.1%)
+
+Rolled 41:
+*    1. Cubeful 4-ply    24/23 13/9                   Eq.: -0.322
+       0.463 0.130 0.006 - 0.537 0.167 0.008
+     2. Cubeful 4-ply    13/9 6/5                     Eq.: -0.343 (-0.021)
+       0.469 0.133 0.007 - 0.531 0.180 0.014
+     3. Cubeful 2-ply    13/8                         Eq.: -0.406 (-0.084)
+       0.448 0.122 0.006 - 0.552 0.179 0.008
+     4. Cubeful 2-ply    13/9 8/7                     Eq.: -0.420 (-0.098)
+       0.446 0.126 0.007 - 0.554 0.178 0.014
+     5. Cubeful 2-ply    24/23 24/20                  Eq.: -0.421 (-0.099)
+       0.446 0.117 0.006 - 0.554 0.186 0.007
+
+
+Move number 3:  Llabba to play 42
+
+ GNU Backgammon  Position ID: 4HPhASjgc8oBMA
+                 Match ID   : cAnqAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: crayon
+ | X        O  O    |   | O              X |     4 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     7 points match (Cube: 1)
+ |                  |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     Rolled 42
+ | O  X  X     X    |   | X           O  O |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 162, X 162
+
+* Llabba moves 8/4 6/4
+
+Cube analysis
+4-ply cubeless equity +0.089 (Money: +0.112)
+  0.537 0.167 0.008 - 0.463 0.130 0.006
+Cubeful equities:
+1. No double           +0.322
+2. Double, pass        +1.000  (+0.678)
+3. Double, take        +0.237  (-0.085)
+Proper cube action: No double, take (11.2%)
+
+Rolled 42:
+*    1. Cubeful 2-ply    8/4 6/4                      Eq.: +0.286
+       0.527 0.174 0.009 - 0.473 0.136 0.008
+     2. Cubeful 2-ply    13/9 11/9                    Eq.: +0.106 (-0.180)
+       0.488 0.147 0.007 - 0.512 0.150 0.009
+     3. Cubeful 2-ply    24/20 13/11                  Eq.: +0.083 (-0.203)
+       0.487 0.136 0.007 - 0.513 0.153 0.008
+     4. Cubeful 2-ply    13/11 6/2*                   Eq.: +0.055 (-0.231)
+       0.478 0.141 0.008 - 0.522 0.166 0.013
+     5. Cubeful 2-ply    24/18                        Eq.: +0.035 (-0.251)
+       0.478 0.131 0.007 - 0.522 0.168 0.010
+
+
+Move number 4:  crayon to play 51
+
+ GNU Backgammon  Position ID: mGfKATDgc+EBKA
+                 Match ID   : MIHmAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: crayon
+ | X        O  O    |   | O              X |     4 points
+ | X           O    |   | O              X |     Rolled 51
+ | X           O    |   | O                |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     7 points match (Cube: 1)
+ |                  |   |                  |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X     X          |     
+ | O  X  X     X    |   | X     X     O  O |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 162, X 156
+
+* crayon moves 24/23 13/8
+
+Cube analysis
+4-ply cubeless equity -0.063 (Money: -0.088)
+  0.474 0.137 0.008 - 0.526 0.172 0.008
+Cubeful equities:
+1. No double           -0.293
+2. Double, pass        +1.000  (+1.293)
+3. Double, take        -1.414  (-1.120)
+Proper cube action: No double, take (46.4%)
+
+Rolled 51:
+*    1. Cubeful 4-ply    24/23 13/8                   Eq.: -0.602
+       0.392 0.110 0.005 - 0.608 0.168 0.008
+     2. Cubeful 4-ply    13/8 9/8                     Eq.: -0.667 (-0.066)
+       0.400 0.107 0.005 - 0.600 0.223 0.009
+     3. Cubeful 2-ply    23/22 13/8                   Eq.: -0.668 (-0.067)
+       0.405 0.113 0.007 - 0.595 0.227 0.012
+     4. Cubeful 2-ply    24/23 9/4                    Eq.: -0.690 (-0.088)
+       0.380 0.100 0.005 - 0.620 0.185 0.010
+     5. Cubeful 2-ply    23/18 9/8                    Eq.: -0.745 (-0.143)
+       0.394 0.102 0.006 - 0.606 0.243 0.010
+
+
+Move number 5:  Llabba to play 63
+
+ GNU Backgammon  Position ID: 4PPCARiYZ8oBMA
+                 Match ID   : cAnvAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: crayon
+ | X        O  O    |   | O              X |     4 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ |             O    |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     7 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X     X     O    |     Rolled 63
+ | O  X  X     X    |   | X     X     O    |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 156, X 156
+
+* Llabba moves 13/7 10/7
+
+Cube analysis
+4-ply cubeless equity +0.257 (Money: +0.276)
+  0.608 0.168 0.008 - 0.392 0.110 0.005
+Cubeful equities:
+1. No double           +0.602
+2. Double, pass        +1.000  (+0.398)
+3. Double, take        +0.578  (-0.024)
+Proper cube action: No double, take (5.7%)
+
+Rolled 63:
+*    1. Cubeful 2-ply    13/7 10/7                    Eq.: +0.553
+       0.602 0.165 0.007 - 0.398 0.118 0.006
+     2. Cubeful 2-ply    24/15                        Eq.: +0.437 (-0.116)
+       0.581 0.153 0.006 - 0.419 0.124 0.005
+     3. Cubeful 2-ply    11/5 8/5                     Eq.: +0.382 (-0.171)
+       0.550 0.179 0.009 - 0.450 0.129 0.007
+     4. Cubeful 2-ply    24/18 13/10                  Eq.: +0.366 (-0.187)
+       0.561 0.154 0.007 - 0.439 0.133 0.006
+     5. Cubeful 2-ply    13/10 11/5                   Eq.: +0.347 (-0.206)
+       0.548 0.165 0.008 - 0.452 0.134 0.008
+
+
+Move number 6:  crayon to play 63
+
+ GNU Backgammon  Position ID: mLeRATDg88IBGA
+                 Match ID   : MAHvAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: crayon
+ | X        O  O    |   | O              X |     4 points
+ | X           O    |   | O              X |     Rolled 63
+ |             O    |   | O                |     
+ |             O    |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     7 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ | O                |   | X                |     
+ | O           X  X |   | X     X     O    |     
+ | O  X        X  X |   | X     X     O    |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 156, X 147
+
+* crayon moves 23/14*
+
+Cube analysis
+4-ply cubeless equity -0.246 (Money: -0.267)
+  0.391 0.118 0.006 - 0.609 0.165 0.007
+Cubeful equities:
+1. No double           -0.594
+2. Double, pass        +1.000  (+1.594)
+3. Double, take        -1.849  (-1.255)
+Proper cube action: No double, take (44.1%)
+
+Rolled 63:
+*    1. Cubeful 2-ply    23/14*                       Eq.: -0.406
+       0.450 0.123 0.007 - 0.550 0.194 0.009
+     2. Cubeful 2-ply    9/3 6/3                      Eq.: -0.699 (-0.293)
+       0.363 0.109 0.005 - 0.637 0.166 0.006
+     3. Cubeful 0-ply    13/4                         Eq.: -1.000 (-0.594)
+       0.313 0.083 0.004 - 0.687 0.215 0.014
+     4. Cubeful 0-ply    9/3 8/5                      Eq.: -1.000 (-0.594)
+       0.314 0.079 0.004 - 0.686 0.224 0.015
+     5. Cubeful 0-ply    13/10 9/3                    Eq.: -1.000 (-0.594)
+       0.302 0.080 0.004 - 0.698 0.213 0.013
+
+
+Move number 7:  Llabba to play 61
+
+ GNU Backgammon  Position ID: 4PPCBRCYt8EAWA
+                 Match ID   : cAnnAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: crayon
+ | X        O  O    |   | O              X |     4 points
+ | X           O    |   | O              X |     
+ |             O    |   | O                |     
+ |             O    |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     7 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ | O                |   | X                |     
+ | O           X  X |   | X     X          |     Rolled 61
+ | O  O        X  X | X | X     X     O    |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 147, X 161
+
+* Llabba moves bar/18
+
+Cube analysis
+4-ply cubeless equity +0.160 (Money: +0.182)
+  0.554 0.197 0.009 - 0.446 0.125 0.007
+Cubeful equities:
+1. No double           +0.431
+2. Double, pass        +1.000  (+0.569)
+3. Double, take        +0.393  (-0.038)
+Proper cube action: No double, take (6.3%)
+
+Rolled 61:
+*    1. Cubeful 2-ply    bar/18                       Eq.: +0.192
+       0.505 0.168 0.006 - 0.495 0.143 0.009
+     2. Cubeful 2-ply    bar/24 8/2*                  Eq.: +0.081 (-0.111)
+       0.466 0.176 0.007 - 0.534 0.174 0.017
+     3. Cubeful 2-ply    bar/24 13/7                  Eq.: -0.019 (-0.211)
+       0.452 0.151 0.006 - 0.548 0.172 0.015
+     4. Cubeful 0-ply    bar/24 7/1                   Eq.: -0.193 (-0.385)
+       0.411 0.129 0.005 - 0.589 0.194 0.019
+
+
+Move number 8:  crayon to play 31
+
+ GNU Backgammon  Position ID: mLfBIDDg88IFEA
+                 Match ID   : MIHlAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: crayon
+ | X        O  O  X |   | O              X |     4 points
+ | X           O    |   | O              X |     Rolled 31
+ |             O    |   | O                |     
+ |             O    |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     7 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ | O                |   | X                |     
+ | O           X  X |   | X     X          |     
+ | O  O        X  X |   | X     X     O    |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 147, X 154
+
+* crayon moves 14/11 8/7*
+
+Cube analysis
+4-ply cubeless equity -0.012 (Money: -0.038)
+  0.492 0.144 0.010 - 0.508 0.169 0.006
+Cubeful equities:
+1. No double           -0.216
+2. Double, pass        +1.000  (+1.216)
+3. Double, take        -1.276  (-1.059)
+Proper cube action: No double, take (46.5%)
+Alert: very bad move ( -0.145)
+
+Rolled 31:
+     1. Cubeful 4-ply    8/5 6/5                      Eq.: -0.335
+       0.469 0.136 0.008 - 0.531 0.194 0.010
+*    2. Cubeful 4-ply    14/11 8/7*                   Eq.: -0.480 (-0.145)
+       0.441 0.129 0.008 - 0.559 0.211 0.015
+     3. Cubeful 2-ply    13/9                         Eq.: -0.538 (-0.202)
+       0.426 0.112 0.006 - 0.574 0.218 0.008
+     4. Cubeful 2-ply    14/13 9/6                    Eq.: -0.562 (-0.226)
+       0.416 0.103 0.005 - 0.584 0.211 0.005
+     5. Cubeful 2-ply    23/20 14/13                  Eq.: -0.587 (-0.251)
+       0.415 0.097 0.004 - 0.585 0.220 0.007
+
+
+Move number 9:  Llabba to play 52
+
+ GNU Backgammon  Position ID: 4OuSAxCYt8EAWA
+                 Match ID   : cInqAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: crayon
+ | X  O     O  O  O |   | O              X |     4 points
+ | X           O    |   | O              X |     
+ |             O    |   | O                |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     7 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ | O                |   | X                |     
+ | O           X  X |   | X     X          |     Rolled 52
+ | O           X  X | X | X     X     O    |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 143, X 161
+
+* Llabba moves bar/18*
+
+Cube analysis
+4-ply cubeless equity +0.183 (Money: +0.207)
+  0.559 0.211 0.015 - 0.441 0.129 0.008
+Cubeful equities:
+1. No double           +0.480
+2. Double, pass        +1.000  (+0.520)
+3. Double, take        +0.473  (-0.007)
+Proper cube action: No double, take (1.3%)
+
+Rolled 52:
+*    1. Cubeful 0-ply    bar/18*                      Eq.: +0.612
+       0.594 0.238 0.018 - 0.406 0.117 0.007
+     2. Cubeful 0-ply    bar/23 7/2*                  Eq.: +0.119 (-0.494)
+       0.473 0.194 0.012 - 0.527 0.182 0.018
+     3. Cubeful 0-ply    bar/20 6/4                   Eq.: +0.034 (-0.578)
+       0.465 0.151 0.009 - 0.535 0.169 0.011
+     4. Cubeful 0-ply    bar/20 24/22                 Eq.: +0.033 (-0.580)
+       0.466 0.153 0.008 - 0.534 0.178 0.009
+     5. Cubeful 0-ply    bar/20 13/11                 Eq.: -0.042 (-0.654)
+       0.448 0.149 0.008 - 0.552 0.193 0.016
+
+
+Move number 10:  crayon to play 64
+
+ GNU Backgammon  Position ID: mLfBIDDgc8kBSA
+                 Match ID   : MAHzAEAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: crayon
+ | X  O     O  O  X | O | O              X |     4 points
+ | X           O    |   | O              X |     Rolled 64
+ |             O    |   | O                |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     7 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ | O                |   | X                |     
+ | O           X  X |   | X     X          |     
+ | O           X  X |   | X     X     O    |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 161, X 154
+
+* crayon cannot move
+
+Cube analysis
+4-ply cubeless equity -0.331 (Money: -0.351)
+  0.396 0.109 0.006 - 0.604 0.240 0.018
+Cubeful equities:
+1. No double           -0.711
+2. Double, pass        +1.000  (+1.711)
+3. Double, take        -1.965  (-1.253)
+Proper cube action: No double, take (42.3%)
+
+Rolled 64:
+*    Cannot move
+
+
+Move number 11:  Llabba on roll, cube decision?
+
+ GNU Backgammon  Position ID: 4HPJAUiYt8EgMA
+                 Match ID   : cAngAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: crayon
+ | X  O     O  O  X | O | O              X |     4 points
+ | X           O    |   | O              X |     
+ |             O    |   | O                |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     7 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ | O                |   | X                |     
+ | O           X  X |   | X     X          |     On roll
+ | O           X  X |   | X     X     O    |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 161, X 154
+
+* Llabba doubles
+
+Alert: wrong double (-0.050)!
+ [doubtful]
+Cube analysis
+4-ply cubeless equity +0.760 (Money: +0.772)
+  0.703 0.394 0.046 - 0.297 0.070 0.004
+Cubeful equities:
+1. No double           +1.050
+2. Double, take        +1.729  (+0.678)
+3. Double, pass        +1.000  (-0.050)
+Proper cube action: Too good to double, pass (6.9%)
+Move number 12:  Llabba doubles to 2
+
+ GNU Backgammon  Position ID: 4HPJAUiYt8EgMA
+                 Match ID   : cBHgAEAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: crayon
+ | X  O     O  O  X | O | O              X |     4 points
+ | X           O    |   | O              X |     Cube offered at 2
+ |             O    |   | O                |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     
+ |                  |   |                  |    
+ |                  |   | X                |     
+ | O                |   | X                |     
+ | O           X  X |   | X     X          |     
+ | O           X  X |   | X     X     O    |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 161, X 154
+
+* crayon rejects
+
+
+Cube analysis
+4-ply cubeless equity -0.760 (Money: -0.772)
+  0.297 0.070 0.004 - 0.703 0.394 0.046
+Cubeful equities:
+1. No double           -1.050
+2. Double, take        -1.729  (-0.678)
+3. Double, pass        -1.000  (+0.050)
+Proper cube action: Too good to double, pass (6.9%)
+Llabba wins 1 point
+
+Game statistics for game 3
+
+Player                                   crayon                  Llabba                 
+
+Chequerplay statistics
+
+Total moves                                5                       5                    
+Unforced moves                             4                       5                    
+Unmarked moves                             4                       5                    
+Moves marked doubtful                      0                       0                    
+Moves marked bad                           0                       0                    
+Moves marked very bad                      1                       0                    
+Error total EMG (MWC)                         -0.145 ( -1.096%)       -0.001 ( -0.008%) 
+Error rate mEMG (MWC)                        -36.2   ( -0.274%)       -0.2   ( -0.002%) 
+Chequerplay rating                       Awful!                  Supernatural           
+
+
+Cube statistics
+
+Total cube decisions                       6                       5                    
+Close or actual cube decisions             1                       5                    
+Doubles                                    0                       1                    
+Takes                                      0                       0                    
+Passes                                     1                       0                    
+Missed doubles below CP (EMG (MWC))        0                       0                    
+Missed doubles above CP (EMG (MWC))        0                       0                    
+Wrong doubles below DP (EMG (MWC))         0                       0                    
+Wrong doubles above TG (EMG (MWC))         0                       1 (-0.050 ( -0.382%))
+Wrong takes (EMG (MWC))                    0                       0                    
+Wrong passes (EMG (MWC))                   0                       0                    
+Error total EMG (MWC)                         -0.000 ( -0.000%)       -0.050 ( -0.382%) 
+Error rate mEMG (MWC)                         -0.0   ( -0.000%)      -10.1   ( -0.076%) 
+Cube decision rating                     Supernatural            Advanced               
+
+
+Overall statistics
+
+Error total EMG (MWC)                         -0.145 ( -1.096%)       -0.052 ( -0.390%) 
+Error rate mEMG (MWC)                        -29.0   ( -0.219%)       -5.2   ( -0.039%) 
+Snowie error rate                            -14.5   ( +0.000%)       -5.2   ( +0.000%) 
+Overall rating                           Beginner                Expert                 
+Error based abs. FIBS rating             1599.6                  2039.4                 
+Chequerplay errors rating loss            450.4                     2.7                 
+Cube errors rating loss                     0.0                     8.0                 
+
+
+
+
+Output generated Wed Jan 31 22:31:13 2024
+ by GNU Backgammon 1.07.001-mingw 32-Bit 20221114 (Text Export version 1.128)
+

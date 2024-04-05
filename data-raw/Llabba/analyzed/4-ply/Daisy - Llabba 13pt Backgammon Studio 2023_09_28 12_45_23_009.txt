@@ -1,0 +1,2171 @@
+The score (after 8 games) is: Daisy 9, Llabba 7 (match to 13 points)
+
+Match Information:
+Date: 28/09/2023
+Event: Online match
+Place: Backgammon Studio
+Comments: [ClockType "Live3 780/10"]
+
+
+Move number 1:  Daisy to play 54
+
+ GNU Backgammon  Position ID: 4HPwATDgc/ABMA
+                 Match ID   : MICyAZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy
+ | X           O    |   | O              X |     9 points
+ | X           O    |   | O              X |     Rolled 54
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+^|                  |BAR|                  |     13 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     
+ | O           X    |   | X              O |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 167, X 167
+
+* Daisy moves 24/20 13/8
+
+Rolled 54:
+*    1. Cubeful 4-ply    24/20 13/8                   Eq.: +0.004
+       0.507 0.138 0.007 - 0.493 0.131 0.005
+     2. Cubeful 4-ply    13/9 13/8                    Eq.: -0.023 (-0.026)
+       0.499 0.153 0.008 - 0.501 0.139 0.006
+     3. Cubeful 4-ply    24/15                        Eq.: -0.032 (-0.036)
+       0.504 0.122 0.005 - 0.496 0.135 0.005
+     4. Cubeful 2-ply    13/4                         Eq.: -0.098 (-0.102)
+       0.482 0.139 0.007 - 0.518 0.143 0.007
+     5. Cubeful 2-ply    13/8 6/2                     Eq.: -0.163 (-0.167)
+       0.470 0.132 0.007 - 0.530 0.154 0.008
+
+
+Move number 2:  Llabba to play 44
+
+ GNU Backgammon  Position ID: 4PPgASHgc/ABMA
+                 Match ID   : cAmyAZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy
+ | X           O    |   | O              X |     9 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     13 points match (Cube: 1)
+ |                  |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     Rolled 44
+ | O           X    |   | X  O           O |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 158, X 167
+
+* Llabba moves 13/5*(2)
+
+Cube analysis
+4-ply cubeless equity -0.049 (Money: -0.024)
+  0.493 0.131 0.005 - 0.507 0.138 0.007
+Cubeful equities:
+1. No double           -0.004
+2. Double, pass        +1.000  (+1.004)
+3. Double, take        -0.338  (-0.334)
+Proper cube action: No double, take (25.0%)
+
+Rolled 44:
+*    1. Cubeful 2-ply    13/5*(2)                     Eq.: +0.522
+       0.597 0.214 0.010 - 0.403 0.097 0.004
+     2. Cubeful 2-ply    24/20(2) 13/9(2)             Eq.: +0.266 (-0.256)
+       0.561 0.115 0.003 - 0.439 0.063 0.001
+     3. Cubeful 2-ply    24/20(2) 13/5*               Eq.: +0.180 (-0.342)
+       0.529 0.140 0.005 - 0.471 0.086 0.003
+     4. Cubeful 0-ply    24/20(2) 6/2(2)              Eq.: +0.141 (-0.381)
+       0.525 0.113 0.003 - 0.475 0.073 0.001
+     5. Cubeful 0-ply    13/5* 8/4(2)                 Eq.: +0.124 (-0.398)
+       0.511 0.170 0.010 - 0.489 0.136 0.010
+
+
+Move number 3:  Daisy to play 64
+
+ GNU Backgammon  Position ID: sM/BATDg8+ABUA
+                 Match ID   : MAGzAZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy
+ | X           O    | O | O              X |     9 points
+ | X           O    |   | O              X |     Rolled 64
+ | X           O    |   | O                |     
+ |             O    |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     13 points match (Cube: 1)
+ |                  |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X  X             |     
+ | O           X    |   | X  X           O |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 163, X 151
+
+* Daisy moves bar/15
+
+Cube analysis
+4-ply cubeless equity -0.319 (Money: -0.318)
+  0.402 0.097 0.004 - 0.598 0.214 0.009
+Cubeful equities:
+1. No double           -0.538
+2. Double, pass        +1.000  (+1.538)
+3. Double, take        -1.689  (-1.151)
+Proper cube action: No double, take (42.8%)
+
+Rolled 64:
+*    1. Cubeful 2-ply    bar/15                       Eq.: -0.552
+       0.405 0.093 0.004 - 0.595 0.236 0.008
+     2. Cubeful 2-ply    bar/21 24/18                 Eq.: -0.706 (-0.154)
+       0.384 0.089 0.004 - 0.616 0.267 0.008
+     3. Cubeful 2-ply    bar/21 13/7                  Eq.: -0.817 (-0.265)
+       0.363 0.087 0.004 - 0.637 0.253 0.015
+     4. Cubeful 0-ply    bar/21 8/2                   Eq.: -0.829 (-0.277)
+       0.362 0.086 0.004 - 0.638 0.260 0.013
+
+
+Move number 4:  Llabba to play 61
+
+ GNU Backgammon  Position ID: 4PPgCSCwz8EBMA
+                 Match ID   : cAmnAZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy
+ | X           O    |   | O              X |     9 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ |             O    |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     13 points match (Cube: 1)
+ |                  |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X  X             |     Rolled 61
+ | O     O     X    |   | X  X           O |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 153, X 151
+
+* Llabba moves 13/7 8/7
+
+Cube analysis
+4-ply cubeless equity +0.343 (Money: +0.337)
+  0.595 0.236 0.008 - 0.405 0.092 0.004
+Cubeful equities:
+1. No double           +0.554
+2. Double, pass        +1.000  (+0.446)
+3. Double, take        +0.509  (-0.044)
+Proper cube action: No double, take (9.0%)
+
+Rolled 61:
+*    1. Cubeful 2-ply    13/7 8/7                     Eq.: +0.457
+       0.577 0.222 0.007 - 0.423 0.101 0.005
+     2. Cubeful 2-ply    24/18 6/5                    Eq.: +0.332 (-0.125)
+       0.562 0.180 0.006 - 0.438 0.097 0.003
+     3. Cubeful 2-ply    13/7 6/5                     Eq.: +0.244 (-0.213)
+       0.526 0.204 0.007 - 0.474 0.113 0.006
+     4. Cubeful 2-ply    8/1*                         Eq.: +0.234 (-0.223)
+       0.522 0.204 0.006 - 0.478 0.116 0.006
+     5. Cubeful 2-ply    24/23 24/18                  Eq.: +0.222 (-0.235)
+       0.540 0.161 0.005 - 0.460 0.103 0.003
+
+
+Move number 5:  Daisy to play 51
+
+ GNU Backgammon  Position ID: sG+DATDg8+AJIA
+                 Match ID   : MIGmAZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy
+ | X           O    |   | O              X |     9 points
+ | X           O    |   | O              X |     Rolled 51
+ |             O    |   | O                |     
+ |             O    |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     13 points match (Cube: 1)
+ |                  |   | X                |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X  X |   | X  X             |     
+ | O     O     X  X |   | X  X           O |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 153, X 144
+
+* Daisy moves 15/9
+
+Cube analysis
+4-ply cubeless equity -0.278 (Money: -0.277)
+  0.423 0.100 0.005 - 0.577 0.221 0.006
+Cubeful equities:
+1. No double           -0.461
+2. Double, pass        +1.000  (+1.461)
+3. Double, take        -1.580  (-1.119)
+Proper cube action: No double, take (43.4%)
+
+Rolled 51:
+*    1. Cubeful 4-ply    15/9                         Eq.: -0.662
+       0.378 0.090 0.003 - 0.622 0.237 0.007
+     2. Cubeful 4-ply    24/23 15/10                  Eq.: -0.709 (-0.048)
+       0.376 0.087 0.003 - 0.624 0.252 0.006
+     3. Cubeful 2-ply    15/10 6/5                    Eq.: -0.813 (-0.151)
+       0.371 0.089 0.004 - 0.629 0.274 0.014
+     4. Cubeful 2-ply    15/14 13/8                   Eq.: -0.901 (-0.239)
+       0.350 0.084 0.003 - 0.650 0.271 0.009
+     5. Cubeful 2-ply    15/10 8/7                    Eq.: -0.915 (-0.253)
+       0.352 0.082 0.003 - 0.648 0.268 0.014
+
+
+Move number 6:  Llabba on roll, cube decision?
+
+ GNU Backgammon  Position ID: 4PPCAyCwb4MBMA
+                 Match ID   : cAmgAZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy
+ | X        O  O    |   | O              X |     9 points
+ | X           O    |   | O              X |     
+ |             O    |   | O                |     
+ |             O    |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     13 points match (Cube: 1)
+ |                  |   | X                |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X  X |   | X  X             |     On roll
+ | O           X  X |   | X  X           O |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 147, X 144
+
+* Llabba doubles
+
+
+Cube analysis
+4-ply cubeless equity +0.402 (Money: +0.395)
+  0.622 0.237 0.007 - 0.378 0.090 0.003
+Cubeful equities:
+1. Double, take        +0.662
+2. Double, pass        +1.000  (+0.338)
+3. No double           +0.634  (-0.028)
+Proper cube action: Double, take
+Move number 7:  Llabba doubles to 2
+
+ GNU Backgammon  Position ID: 4PPCAyCwb4MBMA
+                 Match ID   : cBGgAZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy
+ | X        O  O    |   | O              X |     9 points
+ | X           O    |   | O              X |     Cube offered at 2
+ |             O    |   | O                |     
+ |             O    |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     
+ |                  |   | X                |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X  X |   | X  X             |     
+ | O           X  X |   | X  X           O |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 147, X 144
+
+* Daisy accepts
+
+
+Cube analysis
+4-ply cubeless equity -0.402 (Money: -0.395)
+  0.378 0.090 0.003 - 0.622 0.237 0.007
+Cubeful equities:
+1. Double, take        -0.662
+2. Double, pass        -1.000  (-0.338)
+3. No double           -0.634  (+0.028)
+Proper cube action: Double, take
+Move number 8:  Llabba to play 64
+
+ GNU Backgammon  Position ID: 4PPCAyCwb4MBMA
+                 Match ID   : QQmzAZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy (Cube: 2)
+ | X        O  O    |   | O              X |     9 points
+ | X           O    |   | O              X |     
+ |             O    |   | O                |     
+ |             O    |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     13 points match
+ |                  |   | X                |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X  X |   | X  X             |     Rolled 64
+ | O           X  X |   | X  X           O |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 147, X 144
+
+* Llabba moves 24/14
+
+Rolled 64:
+*    1. Cubeful 2-ply    24/14                        Eq.: +0.242
+       0.610 0.184 0.005 - 0.390 0.093 0.003
+     2. Cubeful 2-ply    24/20 24/18                  Eq.: +0.147 (-0.095)
+       0.579 0.171 0.006 - 0.421 0.112 0.004
+     3. Cubeful 2-ply    8/2 6/2                      Eq.: +0.138 (-0.104)
+       0.549 0.237 0.006 - 0.451 0.113 0.006
+     4. Cubeful 2-ply    24/20 13/7                   Eq.: +0.129 (-0.113)
+       0.561 0.192 0.007 - 0.439 0.104 0.005
+     5. Cubeful 2-ply    13/9 13/7                    Eq.: +0.101 (-0.141)
+       0.543 0.211 0.006 - 0.457 0.108 0.006
+
+
+Move number 9:  Daisy to play 32
+
+ GNU Backgammon  Position ID: sG+DBSDg88IDIA
+                 Match ID   : AYGpAZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy (Cube: 2)
+ | X  X     O  O    |   | O              X |     9 points
+ | X           O    |   | O                |     Rolled 32
+ |             O    |   | O                |     
+ |             O    |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     13 points match
+ |                  |   | X                |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X  X |   | X  X             |     
+ | O           X  X |   | X  X           O |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 147, X 134
+
+* Daisy moves 24/21 13/11*
+
+Cube analysis
+4-ply cubeless equity -0.326 (Money: -0.325)
+  0.385 0.093 0.003 - 0.615 0.185 0.005
+Cubeful equities:
+1. No double           -0.257
+2. Double, pass        +1.000  (+1.257)
+3. Double, take        -1.760  (-1.504)
+Proper cube action: No redouble, take (54.5%)
+
+Rolled 32:
+*    1. Cubeful 4-ply    24/21 13/11*                 Eq.: -0.224
+       0.417 0.097 0.004 - 0.583 0.220 0.009
+     2. Cubeful 4-ply    13/11*/8                     Eq.: -0.258 (-0.034)
+       0.390 0.096 0.003 - 0.610 0.197 0.006
+     3. Cubeful 4-ply    13/11* 9/6                   Eq.: -0.279 (-0.054)
+       0.385 0.095 0.003 - 0.615 0.203 0.007
+     4. Cubeful 2-ply    13/11* 13/10                 Eq.: -0.322 (-0.097)
+       0.387 0.103 0.004 - 0.613 0.237 0.016
+     5. Cubeful 2-ply    13/11* 8/5                   Eq.: -0.404 (-0.180)
+       0.370 0.095 0.004 - 0.630 0.262 0.021
+
+
+Move number 10:  Llabba to play 65
+
+ GNU Backgammon  Position ID: 4POSAwSwb4MBUA
+                 Match ID   : QQm3AZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy (Cube: 2)
+ | X  O     O  O    |   | O              X |     9 points
+ | X           O    |   | O                |     
+ |             O    |   | O                |     
+ |             O    |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     13 points match
+ |                  |   | X                |    
+ |                  |   | X                |     
+ | O                |   | X                |     
+ | O           X  X |   | X  X             |     Rolled 65
+ | O           X  X | X | X  X  O          |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 142, X 145
+
+* Llabba moves bar/14*
+
+Rolled 65:
+*    1. Cubeful 0-ply    bar/14*                      Eq.: +0.445
+       0.671 0.227 0.006 - 0.329 0.072 0.003
+     2. Cubeful 0-ply    bar/20 24/18                 Eq.: -0.038 (-0.482)
+       0.512 0.158 0.004 - 0.488 0.124 0.004
+     3. Cubeful 0-ply    bar/20 13/7                  Eq.: -0.146 (-0.591)
+       0.468 0.157 0.006 - 0.532 0.124 0.007
+     4. Cubeful 0-ply    bar/20 8/2                   Eq.: -0.232 (-0.677)
+       0.442 0.149 0.005 - 0.558 0.153 0.008
+     5. Cubeful 0-ply    bar/20 7/1                   Eq.: -0.254 (-0.699)
+       0.434 0.149 0.005 - 0.566 0.160 0.008
+
+
+Move number 11:  Daisy to play 52
+
+ GNU Backgammon  Position ID: sG+DBSDg88IBQg
+                 Match ID   : AYGqAZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy (Cube: 2)
+ | X  X     O  O    | O | O              X |     9 points
+ | X           O    |   | O                |     Rolled 52
+ |             O    |   | O                |     
+ |             O    |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     13 points match
+ |                  |   | X                |    
+ |                  |   | X                |     
+ | O                |   | X                |     
+ | O           X  X |   | X  X             |     
+ | O           X  X |   | X  X  O          |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 156, X 134
+
+* Daisy moves bar/23 21/16
+
+Cube analysis
+4-ply cubeless equity -0.518 (Money: -0.499)
+  0.330 0.067 0.003 - 0.670 0.220 0.010
+Cubeful equities:
+1. No double           -0.447
+2. Double, pass        +1.000  (+1.447)
+3. Double, take        -2.009  (-1.562)
+Proper cube action: No redouble, take (51.9%)
+
+Rolled 52:
+     1. Cubeful 4-ply    bar/23 6/1*                  Eq.: -0.639
+       0.286 0.061 0.002 - 0.714 0.278 0.019
+*    2. Cubeful 4-ply    bar/23 21/16                 Eq.: -0.653 (-0.014)
+       0.287 0.058 0.002 - 0.713 0.303 0.014
+     3. Cubeful 4-ply    bar/23 13/8                  Eq.: -0.686 (-0.047)
+       0.270 0.055 0.002 - 0.730 0.292 0.015
+     4. Cubeful 4-ply    bar/23 9/4                   Eq.: -0.690 (-0.051)
+       0.274 0.056 0.003 - 0.726 0.303 0.016
+     5. Cubeful 2-ply    bar/23 8/3                   Eq.: -0.706 (-0.067)
+       0.286 0.063 0.003 - 0.714 0.332 0.025
+
+
+Move number 12:  Llabba to play 66
+
+ GNU Backgammon  Position ID: 4PPCERCwb4MFIA
+                 Match ID   : QQm7AZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy (Cube: 2)
+ | X  X     O  O    |   | O              X |     9 points
+ | X           O    |   | O                |     
+ |             O    |   | O                |     
+ |             O    |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     13 points match
+ |                  |   | X                |    
+ |                  |   | X                |     
+ | O                |   | X                |     
+ | O           X  X |   | X  X             |     Rolled 66
+ | O        O  X  X |   | X  X        O    |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 149, X 134
+
+* Llabba moves 8/2*(2) 7/1(2)
+
+Rolled 66:
+*    1. Cubeful 2-ply    8/2*(2) 7/1(2)               Eq.: +0.934
+       0.747 0.485 0.012 - 0.253 0.044 0.001
+     2. Cubeful 2-ply    24/18 14/2* 8/2              Eq.: +0.813 (-0.121)
+       0.739 0.392 0.013 - 0.261 0.047 0.001
+     3. Cubeful 2-ply    14/2* 8/2(2)                 Eq.: +0.703 (-0.230)
+       0.709 0.366 0.009 - 0.291 0.047 0.001
+     4. Cubeful 2-ply    24/18 13/7 8/2*(2)           Eq.: +0.692 (-0.242)
+       0.698 0.375 0.014 - 0.302 0.059 0.003
+     5. Cubeful 2-ply    14/2* 13/7 8/2               Eq.: +0.621 (-0.313)
+       0.676 0.366 0.010 - 0.324 0.055 0.002
+
+
+Move number 13:  Daisy to play 42
+
+ GNU Backgammon  Position ID: G/uABSDg88IRQA
+                 Match ID   : AQGqAZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy (Cube: 2)
+ | X  X     O  O    | O | O              X |     9 points
+ | X           O    |   | O                |     Rolled 42
+ |             O    |   | O                |     
+ |             O    |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     13 points match
+ |                  |   | X                |    
+ |                  |   | X                |     
+ | O                |   | X                |     
+ | O                |   | X  X        X  X |     
+ | O        O       |   | X  X        X  X |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 151, X 110
+
+* Daisy moves bar/21 13/11*
+
+Cube analysis
+4-ply cubeless equity -1.040 (Money: -0.973)
+  0.246 0.042 0.002 - 0.754 0.495 0.014
+Cubeful equities:
+1. No double           -0.970
+2. Double, pass        +1.000  (+1.970)
+3. Double, take        -2.534  (-1.565)
+Proper cube action: No redouble, take (44.3%)
+
+Rolled 42:
+*    1. Cubeful 2-ply    bar/21 13/11*                Eq.: -0.696
+       0.322 0.072 0.003 - 0.678 0.408 0.026
+     2. Cubeful 2-ply    bar/21 16/14                 Eq.: -0.895 (-0.199)
+       0.253 0.046 0.002 - 0.747 0.448 0.012
+     3. Cubeful 0-ply    bar/21 8/6                   Eq.: -1.094 (-0.398)
+       0.212 0.044 0.002 - 0.788 0.532 0.017
+     4. Cubeful 0-ply    bar/21 9/7                   Eq.: -1.156 (-0.460)
+       0.202 0.037 0.001 - 0.798 0.559 0.020
+     5. Cubeful 0-ply    bar/21 6/4                   Eq.: -1.190 (-0.493)
+       0.214 0.042 0.002 - 0.786 0.585 0.038
+
+
+Move number 14:  Llabba to play 64
+
+ GNU Backgammon  Position ID: 4POSEQQb+4ABUA
+                 Match ID   : QQmzAZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy (Cube: 2)
+ | X  O     O  O    |   | O              X |     9 points
+ | X           O    |   | O                |     
+ |             O    |   | O                |     
+ |             O    |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     13 points match
+ |                  |   | X                |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ | O                |   | X  X        X  X |     Rolled 64
+ | O        O       | X | X  X  O     X  X |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 145, X 121
+
+* Llabba moves bar/15
+Alert: doubtful move ( -0.035)
+
+Rolled 64:
+     1. Cubeful 4-ply    bar/21 24/18                 Eq.: +0.417
+       0.597 0.335 0.028 - 0.403 0.099 0.004
+*    2. Cubeful 4-ply    bar/15                       Eq.: +0.382 (-0.035)
+       0.613 0.293 0.008 - 0.387 0.073 0.003
+     3. Cubeful 0-ply    bar/21 13/7                  Eq.: -0.160 (-0.577)
+       0.447 0.206 0.006 - 0.553 0.137 0.008
+
+
+Move number 15:  Daisy to play 55
+
+ GNU Backgammon  Position ID: G/uACSDg85IRBA
+                 Match ID   : AYG2AZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy (Cube: 2)
+ | X  O  X  O  O    |   | O              X |     9 points
+ | X           O    |   | O                |     Rolled 55
+ |             O    |   | O                |     
+ |             O    |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     13 points match
+ |                  |   | X                |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ | O                |   | X  X        X  X |     
+ | O        O       |   | X  X  O     X  X |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 145, X 111
+
+* Daisy moves 21/16 11/1* 6/1
+
+Cube analysis
+4-ply cubeless equity -0.477 (Money: -0.452)
+  0.387 0.073 0.003 - 0.613 0.293 0.008
+Cubeful equities:
+1. No double           -0.382
+2. Double, pass        +1.000  (+1.382)
+3. Double, take        -1.751  (-1.369)
+Proper cube action: No redouble, take (49.8%)
+
+Rolled 55:
+*    1. Cubeful 2-ply    21/16 11/1* 6/1              Eq.: -0.000
+       0.462 0.085 0.003 - 0.538 0.120 0.001
+     2. Cubeful 2-ply    21/16 11/6 8/3(2)            Eq.: -0.134 (-0.133)
+       0.416 0.052 0.002 - 0.584 0.127 0.001
+     3. Cubeful 2-ply    21/6 16/11                   Eq.: -0.238 (-0.238)
+       0.370 0.029 0.001 - 0.630 0.113 0.001
+     4. Cubeful 2-ply    8/3(2) 6/1*(2)               Eq.: -0.242 (-0.242)
+       0.438 0.172 0.005 - 0.562 0.297 0.022
+     5. Cubeful 2-ply    21/16 8/3(2) 6/1*            Eq.: -0.277 (-0.276)
+       0.404 0.098 0.004 - 0.596 0.249 0.006
+
+
+Move number 16:  Llabba to play 62
+
+ GNU Backgammon  Position ID: g+eFMQAb+4AJQA
+                 Match ID   : QQmrAZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy (Cube: 2)
+ | X     X  O  O    |   | O              O |     9 points
+ | X           O    |   | O              O |     
+ |             O    |   | O                |     
+ |             O    |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     13 points match
+ |                  |   | X                |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ | O        O       |   | X  X        X  X |     Rolled 62
+ | O        O       | X | X  X        X  X |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 125, X 112
+
+* Llabba moves bar/23 13/7
+
+Rolled 62:
+*    1. Cubeful 0-ply    bar/23 13/7                  Eq.: -0.404
+       0.390 0.112 0.001 - 0.610 0.166 0.010
+
+
+Move number 17:  Daisy to play 21
+
+ GNU Backgammon  Position ID: G/sCCRCD54UxAA
+                 Match ID   : AQGlAZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy (Cube: 2)
+ | X     X  O  O    |   | O           X  O |     9 points
+ |             O    |   | O              O |     Rolled 21
+ |             O    |   | O                |     
+ |             O    |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match
+ |                  |   | X                |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ | O        O       |   | X  X        X  X |     
+ | O        O     X |   | X  X        X  X |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 125, X 104
+
+* Daisy moves 13/12*/10*
+
+Cube analysis
+4-ply cubeless equity +0.312 (Money: +0.284)
+  0.614 0.160 0.009 - 0.386 0.111 0.003
+Cubeful equities:
+1. No double           +0.413
+2. Double, pass        +1.000  (+0.587)
+3. Double, take        -0.238  (-0.651)
+Proper cube action: No redouble, take (52.6%)
+
+Rolled 21:
+*    1. Cubeful 0-ply    13/12*/10*                   Eq.: +0.471
+       0.634 0.174 0.016 - 0.366 0.109 0.001
+     2. Cubeful 0-ply    9/7 8/7                      Eq.: +0.057 (-0.414)
+       0.474 0.058 0.002 - 0.526 0.082 0.000
+     3. Cubeful 0-ply    13/12* 9/7                   Eq.: -0.092 (-0.563)
+       0.474 0.112 0.009 - 0.526 0.247 0.008
+     4. Cubeful 0-ply    9/6                          Eq.: -0.093 (-0.564)
+       0.420 0.044 0.001 - 0.580 0.097 0.000
+     5. Cubeful 0-ply    13/12* 8/6                   Eq.: -0.115 (-0.586)
+       0.467 0.113 0.009 - 0.533 0.251 0.009
+
+
+Move number 18:  Llabba to play 63
+
+ GNU Backgammon  Position ID: g+cVMQAb+wIAZA
+                 Match ID   : QQmvAZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy (Cube: 2)
+ |       O  O  O    |   | O           X  O |     9 points
+ |             O    |   | O              O |     
+ |             O    |   | O                |     
+ |             O    |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     13 points match
+ |                  |   | X                |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ |          O       | X | X  X        X  X |     Rolled 63
+ | O        O     X | X | X  X        X  X |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 122, X 126
+
+* Llabba moves bar/22
+
+Rolled 63:
+*    1. Cubeful 0-ply    bar/22                       Eq.: -0.734
+       0.282 0.082 0.002 - 0.718 0.249 0.018
+
+
+Move number 19:  Daisy to play 54
+
+ GNU Backgammon  Position ID: G/sCAEqD5xUxAA
+                 Match ID   : AYGyAZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy (Cube: 2)
+ |       O  O  O    |   | O        X  X  O |     9 points
+ |             O    |   | O              O |     Rolled 54
+ |             O    |   | O                |     
+ |             O    |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match
+ |                  |   | X                |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ |          O       |   | X  X        X  X |     
+ | O        O     X | X | X  X        X  X |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 122, X 123
+
+* Daisy moves 10/5 9/5
+
+Cube analysis
+4-ply cubeless equity +0.639 (Money: +0.589)
+  0.715 0.216 0.014 - 0.285 0.069 0.001
+Cubeful equities:
+1. No double           +0.740
+2. Double, pass        +1.000  (+0.260)
+3. Double, take        +0.437  (-0.303)
+Proper cube action: No redouble, take (53.9%)
+
+Rolled 54:
+*    1. Cubeful 4-ply    10/5 9/5                     Eq.: +0.775
+       0.735 0.174 0.009 - 0.265 0.047 0.001
+     2. Cubeful 4-ply    9/4 8/4                      Eq.: +0.689 (-0.086)
+       0.709 0.153 0.008 - 0.291 0.059 0.001
+     3. Cubeful 2-ply    13/9 8/3*                    Eq.: +0.464 (-0.311)
+       0.640 0.183 0.012 - 0.360 0.127 0.002
+     4. Cubeful 0-ply    16/11 13/9                   Eq.: +0.407 (-0.368)
+       0.621 0.123 0.008 - 0.379 0.116 0.003
+     5. Cubeful 0-ply    13/9 6/1                     Eq.: +0.394 (-0.381)
+       0.609 0.116 0.007 - 0.391 0.095 0.001
+
+
+Move number 20:  Llabba to play 53
+
+ GNU Backgammon  Position ID: w54HMQAb+wIASg
+                 Match ID   : QYmuAZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy (Cube: 2)
+ |             O    |   | O  O     X  X  O |     9 points
+ |             O    |   | O  O           O |     
+ |             O    |   | O                |     
+ |             O    |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     13 points match
+ |                  |   | X                |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ |          O       |   | X  X        X  X |     Rolled 53
+ | O        O     X | X | X  X        X  X |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 113, X 123
+
+* Llabba moves bar/22 23/18
+
+Rolled 53:
+*    1. Cubeful 2-ply    bar/22 23/18                 Eq.: -0.658
+       0.305 0.055 0.001 - 0.695 0.106 0.003
+     2. Cubeful 2-ply    bar/22 6/1                   Eq.: -0.774 (-0.116)
+       0.264 0.033 0.000 - 0.736 0.123 0.004
+     3. Cubeful 2-ply    bar/22 7/2                   Eq.: -0.794 (-0.135)
+       0.259 0.034 0.000 - 0.741 0.133 0.004
+
+
+Move number 21:  Daisy to play 31
+
+ GNU Backgammon  Position ID: G/sCIAzDngcxAA
+                 Match ID   : AYGlAZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy (Cube: 2)
+ |             O  X |   | O  O     X     O |     9 points
+ |             O    |   | O  O     X     O |     Rolled 31
+ |             O    |   | O                |     
+ |             O    |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match
+ |                  |   | X                |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ |          O       |   | X  X        X  X |     
+ | O        O     X |   | X  X        X  X |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 113, X 115
+
+* Daisy moves 16/13 8/7*
+
+Cube analysis
+4-ply cubeless equity +0.481 (Money: +0.457)
+  0.703 0.101 0.003 - 0.297 0.051 0.001
+Cubeful equities:
+1. No double           +0.677
+2. Double, pass        +1.000  (+0.323)
+3. Double, take        +0.354  (-0.323)
+Proper cube action: No redouble, take (50.0%)
+
+Rolled 31:
+*    1. Cubeful 4-ply    16/13 8/7*                   Eq.: +0.653
+       0.703 0.107 0.003 - 0.297 0.073 0.001
+     2. Cubeful 4-ply    8/7* 8/5                     Eq.: +0.588 (-0.065)
+       0.685 0.110 0.003 - 0.315 0.086 0.002
+     3. Cubeful 4-ply    13/10 8/7*                   Eq.: +0.573 (-0.080)
+       0.677 0.117 0.004 - 0.323 0.090 0.001
+     4. Cubeful 2-ply    16/13 6/5                    Eq.: +0.491 (-0.162)
+       0.643 0.076 0.001 - 0.357 0.056 0.000
+     5. Cubeful 2-ply    16/15 16/13                  Eq.: +0.431 (-0.222)
+       0.622 0.073 0.001 - 0.378 0.066 0.000
+
+
+Move number 22:  Llabba to play 52
+
+ GNU Backgammon  Position ID: w14HIwAb+wIARg
+                 Match ID   : QYmqAZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy (Cube: 2)
+ |             O  O |   | O  O     X     O |     9 points
+ |             O    |   | O  O     X     O |     
+ |             O    |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     13 points match
+ |                  |   | X                |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ | O                |   | X  X        X  X |     Rolled 52
+ | O        O     X | X | X  X        X  X |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 109, X 122
+
+* Llabba moves bar/18*
+
+Rolled 52:
+*    1. Cubeful 0-ply    bar/18*                      Eq.: +0.099
+       0.529 0.258 0.003 - 0.471 0.116 0.004
+     2. Cubeful 0-ply    bar/23 6/1                   Eq.: -0.869 (-0.969)
+       0.242 0.033 0.000 - 0.758 0.127 0.004
+     3. Cubeful 0-ply    bar/23 7/2                   Eq.: -0.882 (-0.982)
+       0.240 0.032 0.000 - 0.760 0.126 0.003
+
+
+Move number 23:  Daisy to play 51
+
+ GNU Backgammon  Position ID: G/sCIAzDnoMRQA
+                 Match ID   : AYGmAZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy (Cube: 2)
+ |             O  X | O | O  O     X     O |     9 points
+ |             O    |   | O  O     X     O |     Rolled 51
+ |             O    |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match
+ |                  |   | X                |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ | O                |   | X  X        X  X |     
+ | O        O     X |   | X  X        X  X |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 127, X 115
+
+* Daisy cannot move
+
+Cube analysis
+4-ply cubeless equity -0.125 (Money: -0.125)
+  0.495 0.116 0.005 - 0.505 0.232 0.004
+Cubeful equities:
+1. No double           -0.028
+2. Double, pass        +1.000  (+1.028)
+3. Double, take        -1.036  (-1.008)
+Proper cube action: No redouble, take (49.5%)
+
+Rolled 51:
+*    Cannot move
+
+
+Move number 24:  Llabba to play 51
+
+ GNU Backgammon  Position ID: w56DEUAb+wIgDA
+                 Match ID   : QYmmAZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy (Cube: 2)
+ |             O  X | O | O  O     X     O |     9 points
+ |             O    |   | O  O     X     O |     
+ |             O    |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     13 points match
+ |                  |   | X                |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ | O                |   | X  X        X  X |     Rolled 51
+ | O        O     X |   | X  X        X  X |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 127, X 115
+
+* Llabba moves 18/13 6/5
+
+Rolled 51:
+*    1. Cubeful 2-ply    18/13 6/5                    Eq.: +0.304
+       0.582 0.309 0.005 - 0.418 0.098 0.004
+     2. Cubeful 2-ply    22/16                        Eq.: +0.222 (-0.081)
+       0.568 0.286 0.006 - 0.432 0.151 0.012
+     3. Cubeful 2-ply    22/21 18/13                  Eq.: +0.207 (-0.097)
+       0.557 0.295 0.005 - 0.443 0.145 0.012
+     4. Cubeful 2-ply    18/13 7/6                    Eq.: +0.102 (-0.202)
+       0.531 0.238 0.003 - 0.469 0.099 0.003
+     5. Cubeful 2-ply    7/2 6/5                      Eq.: +0.028 (-0.276)
+       0.512 0.218 0.003 - 0.488 0.111 0.004
+
+
+Move number 25:  Daisy to play 11
+
+ GNU Backgammon  Position ID: G/cCAQzDnoMRQA
+                 Match ID   : AYGkAZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy (Cube: 2)
+ | X           O    | O | O  O     X     O |     9 points
+ |             O    |   | O  O     X     O |     Rolled 11
+ |             O    |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X  X             |     
+ | O                |   | X  X        X  X |     
+ | O        O     X |   | X  X        X  X |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 127, X 109
+
+* Daisy cannot move
+
+Cube analysis
+4-ply cubeless equity -0.372 (Money: -0.357)
+  0.422 0.097 0.005 - 0.578 0.298 0.005
+Cubeful equities:
+1. No double           -0.286
+2. Double, pass        +1.000  (+1.286)
+3. Double, take        -1.407  (-1.121)
+Proper cube action: No redouble, take (46.6%)
+
+Rolled 11:
+*    Cannot move
+
+
+Move number 26:  Llabba to play 61
+
+ GNU Backgammon  Position ID: w56DEUAb9wIBDA
+                 Match ID   : QQmnAZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy (Cube: 2)
+ | X           O    | O | O  O     X     O |     9 points
+ |             O    |   | O  O     X     O |     
+ |             O    |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X  X             |     
+ | O                |   | X  X        X  X |     Rolled 61
+ | O        O     X |   | X  X        X  X |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 127, X 109
+
+* Llabba moves 22/21 22/16
+
+Rolled 61:
+*    1. Cubeful 4-ply    22/21 22/16                  Eq.: +0.535
+       0.652 0.369 0.007 - 0.348 0.118 0.010
+     2. Cubeful 4-ply    22/16 6/5                    Eq.: +0.507 (-0.028)
+       0.648 0.352 0.006 - 0.352 0.113 0.009
+     3. Cubeful 4-ply    22/15                        Eq.: +0.491 (-0.044)
+       0.629 0.387 0.008 - 0.371 0.135 0.012
+     4. Cubeful 4-ply    22/16 7/6                    Eq.: +0.467 (-0.068)
+       0.641 0.323 0.006 - 0.359 0.097 0.005
+     5. Cubeful 2-ply    22/21 13/7                   Eq.: +0.360 (-0.175)
+       0.611 0.291 0.004 - 0.389 0.087 0.003
+
+
+Move number 27:  Daisy to play 44
+
+ GNU Backgammon  Position ID: G/cCEQTDnoMRQA
+                 Match ID   : AQGyAZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy (Cube: 2)
+ | X        X  O    | O | O  O  X        O |     9 points
+ |             O    |   | O  O           O |     Rolled 44
+ |             O    |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X  X             |     
+ | O                |   | X  X        X  X |     
+ | O        O     X |   | X  X        X  X |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 127, X 102
+
+* Daisy moves bar/21 16/12* 8/4*(2)
+
+Cube analysis
+4-ply cubeless equity -0.578 (Money: -0.553)
+  0.348 0.118 0.010 - 0.652 0.369 0.007
+Cubeful equities:
+1. No double           -0.535
+2. Double, pass        +1.000  (+1.535)
+3. Double, take        -1.824  (-1.289)
+Proper cube action: No redouble, take (45.6%)
+Alert: bad move ( -0.062)
+
+Rolled 44:
+     1. Cubeful 4-ply    bar/21 13/9* 8/4*(2)         Eq.: +1.304
+       0.839 0.591 0.085 - 0.161 0.065 0.009
+*    2. Cubeful 4-ply    bar/21 16/12* 8/4*(2)        Eq.: +1.242 (-0.062)
+       0.823 0.565 0.076 - 0.177 0.070 0.004
+     3. Cubeful 2-ply    bar/21 16/12* 13/9*(2)       Eq.: +0.996 (-0.308)
+       0.790 0.343 0.034 - 0.210 0.049 0.001
+     4. Cubeful 0-ply    bar/21 16/12* 13/9* 8/4*     Eq.: +0.918 (-0.386)
+       0.763 0.432 0.049 - 0.237 0.094 0.005
+     5. Cubeful 0-ply    bar/21 16/12* 13/9*/5        Eq.: +0.893 (-0.411)
+       0.762 0.348 0.032 - 0.238 0.074 0.002
+
+
+Move number 28:  Llabba to play 66
+
+ GNU Backgammon  Position ID: Y3tCAwQb9wIIYA
+                 Match ID   : QQm7AZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy (Cube: 2)
+ | O        X  O    |   | O  O  O        O |     9 points
+ |                  |   | O  O  O        O |     
+ |                  |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X  X             |     
+ | O                | X | X  X        X  X |     Rolled 66
+ | O              X | X | X  X  O     X  X |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 111, X 118
+
+* Llabba cannot move
+
+Rolled 66:
+*    Cannot move
+
+
+Move number 29:  Daisy to play 53
+
+ GNU Backgammon  Position ID: G/cCCGBje0IDBA
+                 Match ID   : AYGuAZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy (Cube: 2)
+ | O        X  O    |   | O  O  O        O |     9 points
+ |                  |   | O  O  O        O |     Rolled 53
+ |                  |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X  X             |     
+ | O                | X | X  X        X  X |     
+ | O              X | X | X  X  O     X  X |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 111, X 118
+
+* Daisy moves 8/3 6/3
+
+Cube analysis
+4-ply cubeless equity +1.629 (Money: +1.504)
+  0.886 0.670 0.095 - 0.114 0.032 0.002
+Cubeful equities:
+1. No double           +1.549
+2. Double, take        +1.581  (+0.032)
+3. Double, pass        +1.000  (-0.549)
+Proper cube action: Too good to redouble, pass (94.5%)
+
+Rolled 53:
+*    1. Cubeful 2-ply    8/3 6/3                      Eq.: +1.653
+       0.912 0.703 0.107 - 0.088 0.019 0.000
+     2. Cubeful 2-ply    21/18* 12/7                  Eq.: +1.571 (-0.082)
+       0.899 0.667 0.096 - 0.101 0.015 0.000
+     3. Cubeful 2-ply    21/18* 13/8                  Eq.: +1.552 (-0.101)
+       0.896 0.657 0.100 - 0.104 0.017 0.000
+     4. Cubeful 2-ply    13/8 12/9*                   Eq.: +1.531 (-0.122)
+       0.893 0.648 0.100 - 0.107 0.022 0.001
+     5. Cubeful 2-ply    12/9*/4                      Eq.: +1.528 (-0.125)
+       0.890 0.651 0.100 - 0.110 0.022 0.000
+
+
+Move number 30:  Llabba to play 42
+
+ GNU Backgammon  Position ID: s+1AAwQb9wIIYA
+                 Match ID   : QQmqAZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy (Cube: 2)
+ | O        X       |   | O  O  O  O     O |     9 points
+ |                  |   | O  O  O  O     O |     
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X  X             |     
+ | O                | X | X  X        X  X |     Rolled 42
+ | O              X | X | X  X  O     X  X |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 103, X 118
+
+* Llabba moves bar/23
+
+Rolled 42:
+*    1. Cubeful 0-ply    bar/23                       Eq.: -1.499
+       0.110 0.021 0.000 - 0.890 0.647 0.073
+
+
+Move number 31:  Daisy to play 44
+
+ GNU Backgammon  Position ID: G/cCCEiz7UADBA
+                 Match ID   : AQGyAZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy (Cube: 2)
+ | O        X       |   | O  O  O  O  X  O |     9 points
+ |                  |   | O  O  O  O     O |     Rolled 44
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X  X             |     
+ | O                |   | X  X        X  X |     
+ | O              X | X | X  X  O     X  X |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 103, X 116
+
+* Daisy moves 13/9* 6/2*(3)
+
+Cube analysis
+4-ply cubeless equity +1.602 (Money: +1.474)
+  0.894 0.625 0.081 - 0.106 0.019 0.001
+Cubeful equities:
+1. No double           +1.546
+2. Double, take        +1.631  (+0.085)
+3. Double, pass        +1.000  (-0.546)
+Proper cube action: Too good to redouble, pass (86.5%)
+
+Rolled 44:
+*    1. Cubeful 4-ply    13/9* 6/2*(3)                Eq.: +1.774
+       0.924 0.755 0.105 - 0.076 0.017 0.001
+     2. Cubeful 4-ply    13/9*/5 12/8 6/2*            Eq.: +1.762 (-0.013)
+       0.922 0.752 0.136 - 0.078 0.022 0.002
+     3. Cubeful 4-ply    13/9*(2) 12/8 6/2*           Eq.: +1.734 (-0.040)
+       0.918 0.738 0.128 - 0.082 0.020 0.001
+     4. Cubeful 4-ply    13/9*(2) 6/2*(2)             Eq.: +1.726 (-0.048)
+       0.908 0.745 0.134 - 0.092 0.026 0.001
+     5. Cubeful 2-ply    13/9*/5 13/9 6/2*            Eq.: +1.714 (-0.060)
+       0.917 0.735 0.127 - 0.083 0.022 0.001
+
+
+Move number 32:  Llabba to play 51
+
+ GNU Backgammon  Position ID: u22IAgQb9wIAcA
+                 Match ID   : QYmmAZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy (Cube: 2)
+ | O        O       |   |    O  O  O  O  O |     9 points
+ |                  |   |    O  O  O  O  O |     
+ |                  |   |             O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  | X | X  X             |     
+ |                  | X | X  X        X  X |     Rolled 51
+ | O              X | X | X  X  O     X  X |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 87, X 127
+
+* Llabba cannot move
+
+Rolled 51:
+*    Cannot move
+
+
+Move number 33:  Daisy to play 31
+
+ GNU Backgammon  Position ID: G/cCAHC7bYgCBA
+                 Match ID   : AYGlAZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy (Cube: 2)
+ | O        O       |   |    O  O  O  O  O |     9 points
+ |                  |   |    O  O  O  O  O |     Rolled 31
+ |                  |   |             O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  | X | X  X             |     
+ |                  | X | X  X        X  X |     
+ | O              X | X | X  X  O     X  X |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 87, X 127
+
+* Daisy moves 21/18*/17
+
+Cube analysis
+4-ply cubeless equity +1.917 (Money: +1.753)
+  0.942 0.777 0.099 - 0.058 0.006 0.000
+Cubeful equities:
+1. No double           +1.858
+2. Double, take        +1.951  (+0.094)
+3. Double, pass        +1.000  (-0.858)
+Proper cube action: Too good to redouble, pass (90.2%)
+
+Rolled 31:
+     1. Cubeful 4-ply    21/18* 9/8                   Eq.: +1.920
+       0.947 0.815 0.142 - 0.053 0.005 0.000
+     2. Cubeful 4-ply    21/18* 13/12                 Eq.: +1.920 (-0.000)
+       0.948 0.814 0.143 - 0.052 0.004 0.000
+*    3. Cubeful 4-ply    21/18*/17                    Eq.: +1.919 (-0.001)
+       0.947 0.815 0.143 - 0.053 0.005 0.000
+     4. Cubeful 4-ply    21/18* 12/11                 Eq.: +1.916 (-0.003)
+       0.947 0.813 0.141 - 0.053 0.005 0.000
+     5. Cubeful 2-ply    21/18* 2/1                   Eq.: +1.898 (-0.022)
+       0.945 0.814 0.138 - 0.055 0.005 0.000
+
+
+Move number 34:  Llabba to play 43
+
+ GNU Backgammon  Position ID: u22IQgAb9wAAeA
+                 Match ID   : QQmuAZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy (Cube: 2)
+ | O        O       |   |    O  O  O  O  O |     9 points
+ |                  |   |    O  O  O  O  O |     
+ |                  |   |             O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  | X | X                |     
+ |                  | X | X  X             |     
+ |                  | X | X  X        X  X |     Rolled 43
+ | O           O    | X | X  X        X  X |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 83, X 145
+
+* Llabba cannot move
+
+Rolled 43:
+*    Cannot move
+
+
+Move number 35:  Daisy to play 61
+
+ GNU Backgammon  Position ID: G/cAAHi7bYhCAA
+                 Match ID   : AQGnAZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy (Cube: 2)
+ | O        O       |   |    O  O  O  O  O |     9 points
+ |                  |   |    O  O  O  O  O |     Rolled 61
+ |                  |   |             O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  | X | X                |     
+ |                  | X | X  X             |     
+ |                  | X | X  X        X  X |     
+ | O           O    | X | X  X        X  X |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 83, X 145
+
+* Daisy moves 17/16 13/7
+
+Cube analysis
+4-ply cubeless equity +2.001 (Money: +1.869)
+  0.952 0.821 0.146 - 0.048 0.003 0.000
+Cubeful equities:
+1. No double           +1.938
+2. Double, take        +2.022  (+0.084)
+3. Double, pass        +1.000  (-0.938)
+Proper cube action: Too good to redouble, pass (91.8%)
+
+Rolled 61:
+*    1. Cubeful 4-ply    17/16 13/7                   Eq.: +1.972
+       0.955 0.839 0.154 - 0.045 0.003 0.000
+     2. Cubeful 4-ply    13/7 12/11                   Eq.: +1.968 (-0.004)
+       0.955 0.835 0.148 - 0.045 0.003 0.000
+     3. Cubeful 4-ply    17/10                        Eq.: +1.967 (-0.005)
+       0.954 0.837 0.154 - 0.046 0.003 0.000
+     4. Cubeful 4-ply    13/7 9/8                     Eq.: +1.965 (-0.007)
+       0.953 0.838 0.151 - 0.047 0.003 0.000
+     5. Cubeful 2-ply    17/11 9/8                    Eq.: +1.964 (-0.008)
+       0.955 0.840 0.153 - 0.045 0.003 0.000
+
+
+Move number 36:  Llabba to play 62
+
+ GNU Backgammon  Position ID: u20SIQAb9wAAeA
+                 Match ID   : QQmrAZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy (Cube: 2)
+ | O        O     O |   |    O  O  O  O  O |     9 points
+ |                  |   |    O  O  O  O  O |     
+ |                  |   |             O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  | X | X                |     
+ |                  | X | X  X             |     
+ |                  | X | X  X        X  X |     Rolled 62
+ |          O       | X | X  X        X  X |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 76, X 145
+
+* Llabba moves bar/19
+
+Rolled 62:
+*    1. Cubeful 0-ply    bar/19                       Eq.: -1.937
+       0.046 0.003 0.000 - 0.954 0.831 0.127
+
+
+Move number 37:  Daisy to play 21
+
+ GNU Backgammon  Position ID: G/cAIHC7bRIhAA
+                 Match ID   : AQGlAZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy (Cube: 2)
+ | O        O     O |   | X  O  O  O  O  O |     9 points
+ |                  |   |    O  O  O  O  O |     Rolled 21
+ |                  |   |             O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  | X | X  X             |     
+ |                  | X | X  X        X  X |     
+ |          O       | X | X  X        X  X |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 76, X 139
+
+* Daisy moves 7/6*/4
+
+Cube analysis
+4-ply cubeless equity +2.012 (Money: +1.867)
+  0.953 0.827 0.136 - 0.047 0.003 0.000
+Cubeful equities:
+1. No double           +1.948
+2. Double, take        +2.029  (+0.081)
+3. Double, pass        +1.000  (-0.948)
+Proper cube action: Too good to redouble, pass (92.1%)
+
+Rolled 21:
+*    1. Cubeful 4-ply    7/6*/4                       Eq.: +1.973
+       0.956 0.836 0.147 - 0.044 0.002 0.000
+     2. Cubeful 4-ply    16/15 12/10                  Eq.: +1.914 (-0.059)
+       0.954 0.793 0.097 - 0.046 0.003 0.000
+     3. Cubeful 4-ply    12/10 9/8                    Eq.: +1.911 (-0.062)
+       0.954 0.792 0.096 - 0.046 0.003 0.000
+     4. Cubeful 4-ply    16/14 12/11                  Eq.: +1.910 (-0.063)
+       0.954 0.791 0.096 - 0.046 0.003 0.000
+     5. Cubeful 2-ply    12/9                         Eq.: +1.888 (-0.086)
+       0.952 0.786 0.084 - 0.048 0.004 0.000
+
+
+Move number 38:  Llabba to play 52
+
+ GNU Backgammon  Position ID: u90QIQAb9wAAeA
+                 Match ID   : QYmqAZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy (Cube: 2)
+ | O        O       |   |    O  O  O  O  O |     9 points
+ |                  |   |    O  O  O  O  O |     
+ |                  |   |       O     O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  | X | X                |     
+ |                  | X | X  X             |     
+ |                  | X | X  X        X  X |     Rolled 52
+ |          O       | X | X  X        X  X |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 73, X 145
+
+* Llabba cannot move
+
+Rolled 52:
+*    Cannot move
+
+
+Move number 39:  Daisy to play 31
+
+ GNU Backgammon  Position ID: G/cAAHi73RAhAA
+                 Match ID   : AYGlAZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy (Cube: 2)
+ | O        O       |   |    O  O  O  O  O |     9 points
+ |                  |   |    O  O  O  O  O |     Rolled 31
+ |                  |   |       O     O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  | X | X                |     
+ |                  | X | X  X             |     
+ |                  | X | X  X        X  X |     
+ |          O       | X | X  X        X  X |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 73, X 145
+
+* Daisy moves 16/13 9/8
+
+Cube analysis
+4-ply cubeless equity +2.036 (Money: +1.890)
+  0.959 0.836 0.138 - 0.041 0.001 0.000
+Cubeful equities:
+1. No double           +1.975
+2. Double, take        +2.064  (+0.090)
+3. Double, pass        +1.000  (-0.975)
+Proper cube action: Too good to redouble, pass (91.6%)
+
+Rolled 31:
+     1. Cubeful 4-ply    16/13 12/11                  Eq.: +2.001
+       0.961 0.844 0.142 - 0.039 0.001 0.000
+     2. Cubeful 4-ply    12/8                         Eq.: +1.999 (-0.002)
+       0.961 0.845 0.142 - 0.039 0.001 0.000
+     3. Cubeful 4-ply    9/5                          Eq.: +1.996 (-0.006)
+       0.960 0.842 0.141 - 0.040 0.001 0.000
+*    4. Cubeful 4-ply    16/13 9/8                    Eq.: +1.995 (-0.007)
+       0.960 0.843 0.144 - 0.040 0.002 0.000
+     5. Cubeful 2-ply    16/15 12/9                   Eq.: +1.996 (-0.006)
+       0.961 0.848 0.143 - 0.039 0.002 0.000
+
+
+Move number 40:  Llabba to play 55
+
+ GNU Backgammon  Position ID: u90IBQAb9wAAeA
+                 Match ID   : QYm2AZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy (Cube: 2)
+ | O           O    |   |    O  O  O  O  O |     9 points
+ |                  |   |    O  O  O  O  O |     
+ |                  |   |       O     O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  | X | X                |     
+ |                  | X | X  X             |     
+ |                  | X | X  X        X  X |     Rolled 55
+ | O                | X | X  X        X  X |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 69, X 145
+
+* Llabba cannot move
+
+Rolled 55:
+*    Cannot move
+
+
+Move number 41:  Daisy to play 63
+
+ GNU Backgammon  Position ID: G/cAAHi73QgFAA
+                 Match ID   : AQGvAZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy (Cube: 2)
+ | O           O    |   |    O  O  O  O  O |     9 points
+ |                  |   |    O  O  O  O  O |     Rolled 63
+ |                  |   |       O     O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  | X | X                |     
+ |                  | X | X  X             |     
+ |                  | X | X  X        X  X |     
+ | O                | X | X  X        X  X |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 69, X 145
+
+* Daisy moves 13/7 12/9
+
+Cube analysis
+4-ply cubeless equity +2.056 (Money: +1.906)
+  0.962 0.845 0.137 - 0.038 0.001 0.000
+Cubeful equities:
+1. No double           +1.994
+2. Double, take        +2.087  (+0.093)
+3. Double, pass        +1.000  (-0.994)
+Proper cube action: Too good to redouble, pass (91.4%)
+
+Rolled 63:
+     1. Cubeful 4-ply    13/7 8/5                     Eq.: +2.034
+       0.968 0.861 0.143 - 0.032 0.000 0.000
+*    2. Cubeful 4-ply    13/7 12/9                    Eq.: +2.030 (-0.004)
+       0.967 0.858 0.141 - 0.033 0.000 0.000
+     3. Cubeful 4-ply    12/3                         Eq.: +2.029 (-0.005)
+       0.967 0.857 0.135 - 0.033 0.000 0.000
+     4. Cubeful 4-ply    13/4                         Eq.: +2.023 (-0.011)
+       0.966 0.856 0.142 - 0.034 0.000 0.000
+     5. Cubeful 2-ply    13/7 4/1                     Eq.: +2.016 (-0.017)
+       0.961 0.868 0.140 - 0.039 0.001 0.000
+
+
+Move number 42:  Llabba to play 21
+
+ GNU Backgammon  Position ID: u91UAAAb9wAAeA
+                 Match ID   : QQmlAZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy (Cube: 2)
+ |          O  O  O |   |    O  O  O  O  O |     9 points
+ |                  |   |    O  O  O  O  O |     
+ |                  |   |       O     O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  | X | X                |     
+ |                  | X | X  X             |     
+ |                  | X | X  X        X  X |     Rolled 21
+ |                  | X | X  X        X  X |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 60, X 145
+
+* Llabba cannot move
+
+Rolled 21:
+*    Cannot move
+
+
+Move number 43:  Daisy to play 66
+
+ GNU Backgammon  Position ID: G/cAAHi73VQAAA
+                 Match ID   : AQG7AZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy (Cube: 2)
+ |          O  O  O |   |    O  O  O  O  O |     9 points
+ |                  |   |    O  O  O  O  O |     Rolled 66
+ |                  |   |       O     O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  | X | X                |     
+ |                  | X | X  X             |     
+ |                  | X | X  X        X  X |     
+ |                  | X | X  X        X  X |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 60, X 145
+
+* Daisy moves 9/3 8/2 7/1 5/off
+
+Cube analysis
+4-ply cubeless equity +2.104 (Money: +1.950)
+  0.968 0.871 0.143 - 0.032 0.000 0.000
+Cubeful equities:
+1. No double           +2.048
+2. Double, take        +2.129  (+0.081)
+3. Double, pass        +1.000  (-1.048)
+Proper cube action: Too good to redouble, pass (92.8%)
+
+Rolled 66:
+*    1. Cubeful 0-ply    9/3 8/2 7/1 5/off            Eq.: +1.796
+       0.921 0.823 0.122 - 0.079 0.000 0.000
+
+
+Move number 44:  Llabba to play 41
+
+ GNU Backgammon  Position ID: 9+4CAICNewAAPA
+                 Match ID   : QQmmAZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy (Cube: 2)
+ |                  |   |    O  O  O  O  O | O   9 points
+ |                  |   |       O  O  O  O |     
+ |                  |   |       O  O  O  O |     
+ |                  |   |             O    |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  | X | X                |     
+ |                  | X | X  X             |     
+ |                  | X | X  X        X  X |     Rolled 41
+ |                  | X | X  X        X  X |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 37, X 145
+
+* Llabba cannot move
+
+Rolled 41:
+*    Cannot move
+
+
+Move number 45:  Daisy to play 33
+
+ GNU Backgammon  Position ID: G/cAAHj37gIAAA
+                 Match ID   : AYGtAZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy (Cube: 2)
+ |                  |   |    O  O  O  O  O | O   9 points
+ |                  |   |       O  O  O  O |     Rolled 33
+ |                  |   |       O  O  O  O |     
+ |                  |   |             O    |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  | X | X                |     
+ |                  | X | X  X             |     
+ |                  | X | X  X        X  X |     
+ |                  | X | X  X        X  X |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 37, X 145
+
+* Daisy moves 5/2 4/1(3)
+
+Cube analysis
+4-ply cubeless equity +2.174 (Money: +2.045)
+  0.973 0.916 0.182 - 0.027 0.000 0.000
+Cubeful equities:
+1. No double           +2.137
+2. Double, take        +2.161  (+0.024)
+3. Double, pass        +1.000  (-1.137)
+Proper cube action: Too good to redouble, pass (97.9%)
+
+Rolled 33:
+*    1. Cubeful 4-ply    5/2 4/1(3)                   Eq.: +2.112
+       0.958 0.902 0.070 - 0.042 0.000 0.000
+     2. Cubeful 4-ply    5/2 3/off(3)                 Eq.: +2.085 (-0.027)
+       0.956 0.898 0.217 - 0.044 0.000 0.000
+     3. Cubeful 0-ply    5/2 4/1(2) 3/off             Eq.: +1.623 (-0.489)
+       0.889 0.782 0.088 - 0.111 0.000 0.000
+     4. Cubeful 0-ply    4/1(3) 3/off                 Eq.: +1.621 (-0.491)
+       0.887 0.789 0.084 - 0.113 0.000 0.000
+     5. Cubeful 0-ply    5/2 4/1 3/off(2)             Eq.: +1.557 (-0.555)
+       0.877 0.766 0.108 - 0.123 0.000 0.000
+
+
+Move number 46:  Llabba to play 63
+
+ GNU Backgammon  Position ID: v+8AAICNewAAPA
+                 Match ID   : QQmvAZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy (Cube: 2)
+ |                  |   |          O  O  O | O   9 points
+ |                  |   |          O  O  O |     
+ |                  |   |          O  O  O |     
+ |                  |   |             O  O |     
+ |                  |   |             O  6 |    
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  | X | X                |     
+ |                  | X | X  X             |     
+ |                  | X | X  X        X  X |     Rolled 63
+ |                  | X | X  X        X  X |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 25, X 145
+
+* Llabba moves bar/19
+
+Rolled 63:
+*    1. Cubeful 0-ply    bar/19                       Eq.: -2.013
+       0.044 0.000 0.000 - 0.956 0.886 0.039
+
+
+Move number 47:  Daisy to play 53
+
+ GNU Backgammon  Position ID: G/cAIHC/7wAAAA
+                 Match ID   : AYGuAZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy (Cube: 2)
+ |                  |   | X        O  O  O | O   9 points
+ |                  |   |          O  O  O |     Rolled 53
+ |                  |   |          O  O  O |     
+ |                  |   |             O  O |     
+ |                  |   |             O  6 |    
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  | X | X  X             |     
+ |                  | X | X  X        X  X |     
+ |                  | X | X  X        X  X |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 25, X 139
+
+* Daisy moves 3/off(2)
+
+Cube analysis
+4-ply cubeless equity +2.115 (Money: +1.867)
+  0.954 0.900 0.058 - 0.046 0.000 0.000
+Cubeful equities:
+1. No double           +2.102
+2. Double, take        +2.036  (-0.066)
+3. Double, pass        +1.000  (-1.102)
+Proper cube action: Too good to redouble, pass
+
+Rolled 53:
+*    1. Cubeful 0-ply    3/off(2)                     Eq.: +1.412
+       0.850 0.727 0.030 - 0.150 0.000 0.000
+
+
+Move number 48:  Llabba to play 41
+
+ GNU Backgammon  Position ID: vy8AAGDjHgAEDg
+                 Match ID   : QQmmAZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy (Cube: 2)
+ |                  |   | X        O  O  O | O   9 points
+ |                  |   |             O  O | O   
+ |                  |   |             O  O | O   
+ |                  |   |             O  O |     
+ |                  |   |             O  6 |    
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  | X | X  X             |     
+ |                  | X | X  X        X  X |     Rolled 41
+ |                  | X | X  X        X  X |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 19, X 139
+
+* Llabba moves bar/21
+
+Rolled 41:
+*    1. Cubeful 0-ply    bar/21                       Eq.: -2.196
+       0.014 0.000 0.000 - 0.986 0.935 0.043
+
+
+Move number 49:  Daisy to play 52
+
+ GNU Backgammon  Position ID: G/cAIGG/LwAAAA
+                 Match ID   : AYGqAZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy (Cube: 2)
+ |                  |   | X     X  O  O  O | O   9 points
+ |                  |   |             O  O | O   Rolled 52
+ |                  |   |             O  O | O   
+ |                  |   |             O  O |     
+ |                  |   |             O  6 |    
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X  X             |     
+ |                  | X | X  X        X  X |     
+ |                  | X | X  X        X  X |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 19, X 135
+
+* Daisy moves 3/off 2/off
+
+Cube analysis
+4-ply cubeless equity +2.319 (Money: +2.069)
+  0.998 0.987 0.086 - 0.002 0.000 0.000
+Cubeful equities:
+1. No double           +2.317
+2. Double, take        +2.325  (+0.008)
+3. Double, pass        +1.000  (-1.317)
+Proper cube action: Too good to redouble, pass (99.4%)
+
+Rolled 52:
+*    1. Cubeful 4-ply    3/off 2/off                  Eq.: +2.331
+       0.999 0.995 0.077 - 0.001 0.000 0.000
+     2. Cubeful 4-ply    3/1 2/off                    Eq.: +2.310 (-0.021)
+       0.999 0.980 0.021 - 0.001 0.000 0.000
+
+
+Move number 50:  Llabba to play 61
+
+ GNU Backgammon  Position ID: vwcAANi4BwAJAw
+                 Match ID   : QQmnAZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy (Cube: 2)
+ |                  |   | X     X     O  O | O   9 points
+ |                  |   |             O  O | O   
+ |                  |   |             O  O | O   
+ |                  |   |             O  O | O   
+ |                  |   |                6 | O  
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X  X             |     
+ |                  | X | X  X        X  X |     Rolled 61
+ |                  | X | X  X        X  X |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 14, X 135
+
+* Llabba moves bar/19
+
+Rolled 61:
+*    1. Cubeful 0-ply    bar/19                       Eq.: -2.271
+       0.005 0.000 0.000 - 0.995 0.964 0.051
+
+
+Move number 51:  Daisy to play 61
+
+ GNU Backgammon  Position ID: G/cAYEK/BwAAAA
+                 Match ID   : AQGnAZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy (Cube: 2)
+ |                  |   | X     X     O  O | O   9 points
+ |                  |   | X           O  O | O   Rolled 61
+ |                  |   |             O  O | O   
+ |                  |   |             O  O | O   
+ |                  |   |                6 | O  
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X  X             |     
+ |                  |   | X  X        X  X |     
+ |                  | X | X  X        X  X |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 14, X 129
+
+* Daisy moves 2/off 1/off
+
+Cube analysis
+4-ply cubeless equity +2.331 (Money: +2.097)
+  0.999 0.995 0.105 - 0.001 0.000 0.000
+Cubeful equities:
+1. No double           +2.331
+2. Double, take        +2.331  (+0.000)
+3. Double, pass        +1.000  (-1.331)
+Proper cube action: Too good to redouble, pass (100.0%)
+
+Rolled 61:
+     1. Cubeful 4-ply    2/1 2/off                    Eq.: +2.325
+       1.000 0.989 0.011 - 0.000 0.000 0.000
+*    2. Cubeful 4-ply    2/off 1/off                  Eq.: +2.312 (-0.014)
+       0.995 0.986 0.064 - 0.005 0.000 0.000
+
+
+Move number 52:  Llabba to play 63
+
+ GNU Backgammon  Position ID: 3wEAADbuAcCEAA
+                 Match ID   : QQmvAZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy (Cube: 2)
+ |                  |   | X     X     O  O | OO  9 points
+ |                  |   | X           O  O | OO  
+ |                  |   |             O  O | O   
+ |                  |   |                O | O   
+ |                  |   |                O | O  
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X  X             |     
+ |                  |   | X  X        X  X |     Rolled 63
+ |                  | X | X  X        X  X |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 11, X 129
+
+* Llabba moves bar/16
+
+Rolled 63:
+*    1. Cubeful 4-ply    bar/16                       Eq.: -2.340
+       0.000 0.000 0.000 - 1.000 1.000 0.024
+     2. Cubeful 4-ply    bar/22 19/13                 Eq.: -2.340 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.088
+     3. Cubeful 4-ply    bar/22 21/15                 Eq.: -2.340 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.041
+     4. Cubeful 4-ply    bar/19 21/18                 Eq.: -2.340 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.023
+     5. Cubeful 2-ply    bar/19 6/3                   Eq.: -2.340 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.038
+
+
+Move number 53:  Daisy to play 41
+
+ GNU Backgammon  Position ID: G/cAxATfAQAAAA
+                 Match ID   : AQGmAZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy (Cube: 2)
+ |          X       |   | X     X     O  O | OO  9 points
+ |                  |   | X           O  O | OO  Rolled 41
+ |                  |   |             O  O | O   
+ |                  |   |                O | O   
+ |                  |   |                O | O  
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X  X             |     
+ |                  |   | X  X        X  X |     
+ |                  |   | X  X        X  X |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 11, X 120
+
+* Daisy moves 2/off 1/off
+
+Cube analysis
+4-ply cubeless equity +2.340 (Money: +2.024)
+  1.000 1.000 0.024 - 0.000 0.000 0.000
+Cubeful equities:
+1. No double           +2.340
+2. Double, take        +2.340  (+0.000)
+3. Double, pass        +1.000  (-1.340)
+Proper cube action: Too good to redouble, pass (100.0%)
+
+Rolled 41:
+*    1. Cubeful 4-ply    2/off 1/off                  Eq.: +2.340
+       1.000 1.000 0.000 - 0.000 0.000 0.000
+     2. Cubeful 4-ply    2/1 2/off                    Eq.: +2.327 (-0.012)
+       1.000 0.991 0.001 - 0.000 0.000 0.000
+
+
+Move number 54:  Llabba to play 43
+
+ GNU Backgammon  Position ID: bwAAgI17AGICAA
+                 Match ID   : QQmuAZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy (Cube: 2)
+ |          X       |   | X     X     O  O | OO  9 points
+ |                  |   | X           O  O | OO  
+ |                  |   |                O | OO  
+ |                  |   |                O | OO  
+ |                  |   |                  | O  
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X  X             |     
+ |                  |   | X  X        X  X |     Rolled 43
+ |                  |   | X  X        X  X |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 8, X 120
+
+* Llabba moves 19/12
+
+Rolled 43:
+     1. Cubeful 4-ply    21/17 5/2                    Eq.: -2.340
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+     2. Cubeful 4-ply    21/18 19/15                  Eq.: -2.340 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+     3. Cubeful 4-ply    21/17 16/13                  Eq.: -2.340 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+*    4. Cubeful 4-ply    19/12                        Eq.: -2.340 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.015
+     5. Cubeful 4-ply    21/17 6/3                    Eq.: -2.340 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+
+
+Move number 55:  Daisy to play 32
+
+ GNU Backgammon  Position ID: G/dAiARvAAAAAA
+                 Match ID   : AYGpAZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy (Cube: 2)
+ |          X       |   | X     X     O  O | OO  9 points
+ |                  |   |             O  O | OO  Rolled 32
+ |                  |   |                O | OO  
+ |                  |   |                O | OO  
+ |                  |   |                  | O  
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X  X             |     
+ |                  |   | X  X        X  X |     
+ | X                |   | X  X        X  X |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 8, X 113
+
+* Daisy moves 2/off(2)
+
+Cube analysis
+4-ply cubeless equity +2.340 (Money: +2.015)
+  1.000 1.000 0.015 - 0.000 0.000 0.000
+Cubeful equities:
+1. No double           +2.340
+2. Double, take        +2.340  (-0.000)
+3. Double, pass        +1.000  (-1.340)
+Proper cube action: Too good to redouble, pass (100.0%)
+
+Rolled 32:
+*    1. Cubeful 0-ply    2/off(2)                     Eq.: +2.340
+       1.000 1.000 0.009 - 0.000 0.000 0.000
+
+
+Move number 56:  Llabba to play 44
+
+ GNU Backgammon  Position ID: DwAAYOMeCJEAAA
+                 Match ID   : QQmyAZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy (Cube: 2)
+ |          X       |   | X     X        O | OOO 9 points
+ |                  |   |                O | OO  
+ |                  |   |                O | OO  
+ |                  |   |                O | OO  
+ |                  |   |                  | OO 
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X  X             |     
+ |                  |   | X  X        X  X |     Rolled 44
+ | X                |   | X  X        X  X |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 4, X 113
+
+* Llabba moves 21/17 19/11 16/12
+
+Rolled 44:
+     1. Cubeful 4-ply    21/13 19/15 6/2              Eq.: -2.340
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+     2. Cubeful 4-ply    21/13 19/15 5/1              Eq.: -2.340 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+     3. Cubeful 4-ply    21/9 19/15                   Eq.: -2.340 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+*    4. Cubeful 4-ply    21/17 19/11 16/12            Eq.: -2.340 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+     5. Cubeful 4-ply    21/13 19/15 12/8             Eq.: -2.340 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+
+
+Move number 57:  Daisy to play 65
+
+ GNU Backgammon  Position ID: G/egQQAPAAAAAA
+                 Match ID   : AQG3AZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy (Cube: 2)
+ |             X    |   |                O | OOO 9 points
+ |                  |   |                O | OO  Rolled 65
+ |                  |   |                O | OO  
+ |                  |   |                O | OO  
+ |                  |   |                  | OO 
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X  X             |     
+ | X                |   | X  X        X  X |     
+ | X  X             |   | X  X        X  X |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 4, X 97
+
+* Daisy moves 1/off(2)
+
+Cube analysis
+4-ply cubeless equity +2.340 (Money: +2.000)
+  1.000 1.000 0.000 - 0.000 0.000 0.000
+Cubeful equities:
+1. No double           +2.340
+2. Double, take        +2.340  (-0.000)
+3. Double, pass        +1.000  (-1.340)
+Proper cube action: Too good to redouble, pass (100.0%)
+
+Rolled 65:
+*    1. Cubeful 0-ply    1/off(2)                     Eq.: +2.340
+       1.000 1.000 0.000 - 0.000 0.000 0.000
+
+
+Move number 58:  Llabba to play 43
+
+ GNU Backgammon  Position ID: AwAA2LgHDQIAAA
+                 Match ID   : QQmuAZAAOAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Daisy (Cube: 2)
+ |             X    |   |                O | OOO 9 points
+ |                  |   |                O | OOO 
+ |                  |   |                  | OOO 
+ |                  |   |                  | OO  
+ |                  |   |                  | OO 
+v|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X  X             |     
+ | X                |   | X  X        X  X |     Rolled 43
+ | X  X             |   | X  X        X  X |     7 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 2, X 97
+
+* Llabba moves 6/3 6/2
+
+Rolled 43:
+     1. Cubeful 4-ply    17/13 5/2                    Eq.: -2.340
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+     2. Cubeful 4-ply    17/14 12/8                   Eq.: -2.340 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+     3. Cubeful 4-ply    17/13 11/8                   Eq.: -2.340 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+*    4. Cubeful 4-ply    6/3 6/2                      Eq.: -2.340 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+     5. Cubeful 4-ply    17/13 6/3                    Eq.: -2.340 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+
+
+Move number 59:  Daisy to play 66
+
+ GNU Backgammon  Position ID: u9ygQQADAAAAAA
+                 Match ID   : AQG7AZAAOAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Daisy (Cube: 2)
+ |             X    |   |                O | OOO 9 points
+ |                  |   |                O | OOO Rolled 66
+ |                  |   |                  | OOO 
+ |                  |   |                  | OO  
+ |                  |   |                  | OO 
+^|                  |BAR|                  |     13 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |    X        X    |     
+ | X                |   | X  X        X  X |     
+ | X  X             |   | X  X     X  X  X |     7 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 2, X 90
+
+* Daisy moves 1/off(2)
+
+Cube analysis
+4-ply cubeless equity +2.340 (Money: +2.000)
+  1.000 1.000 0.000 - 0.000 0.000 0.000
+Cubeful equities:
+1. No double           +2.340
+2. Double, take        +2.340  (-0.000)
+3. Double, pass        +1.000  (-1.340)
+Proper cube action: Too good to redouble, pass (100.0%)
+
+Rolled 66:
+*    1. Cubeful 0-ply    1/off(2)                     Eq.: +2.340
+       1.000 1.000 0.000 - 0.000 0.000 0.000
+
+
+Daisy wins 4 points
+
+Game statistics for game 9
+
+Player                                   Daisy                   Llabba                 
+
+Chequerplay statistics
+
+Total moves                               29                      28                    
+Unforced moves                            22                      14                    
+Unmarked moves                            28                      27                    
+Moves marked doubtful                      0                       1                    
+Moves marked bad                           1                       0                    
+Moves marked very bad                      0                       0                    
+Error total EMG (MWC)                         -0.101 ( -1.515%)       -0.035 ( -0.528%) 
+Error rate mEMG (MWC)                         -4.6   ( -0.069%)       -2.5   ( -0.038%) 
+Chequerplay rating                       World class             World class            
+
+
+Cube statistics
+
+Total cube decisions                      29                       3                    
+Close or actual cube decisions             1                       2                    
+Doubles                                    0                       1                    
+Takes                                      1                       0                    
+Passes                                     0                       0                    
+Missed doubles below CP (EMG (MWC))        0                       0                    
+Missed doubles above CP (EMG (MWC))        0                       0                    
+Wrong doubles below DP (EMG (MWC))         0                       0                    
+Wrong doubles above TG (EMG (MWC))         0                       0                    
+Wrong takes (EMG (MWC))                    0                       0                    
+Wrong passes (EMG (MWC))                   0                       0                    
+Error total EMG (MWC)                         -0.000 ( -0.000%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                         -0.0   ( -0.000%)       -0.0   ( -0.000%) 
+Cube decision rating                     Supernatural            Supernatural           
+
+
+Overall statistics
+
+Error total EMG (MWC)                         -0.101 ( -1.515%)       -0.035 ( -0.528%) 
+Error rate mEMG (MWC)                         -4.4   ( -0.066%)       -2.2   ( -0.033%) 
+Snowie error rate                             -1.8   ( +0.000%)       -0.6   ( +0.000%) 
+Overall rating                           World class             World class            
+Error based abs. FIBS rating             2000.5                  2022.9                 
+Chequerplay errors rating loss             49.5                    27.1                 
+Cube errors rating loss                     0.0                     0.0                 
+
+
+
+
+Match statistics
+
+Player                                   Daisy                   Llabba                 
+
+Chequerplay statistics
+
+Total moves                              180                     177                    
+Unforced moves                           149                     144                    
+Unmarked moves                           160                     167                    
+Moves marked doubtful                      5                       7                    
+Moves marked bad                           9                       2                    
+Moves marked very bad                      6                       1                    
+Error total EMG (MWC)                         -2.270 (-21.252%)       -0.746 ( -5.788%) 
+Error rate mEMG (MWC)                        -15.2   ( -0.143%)       -5.2   ( -0.040%) 
+Chequerplay rating                       Intermediate            Expert                 
+
+
+Cube statistics
+
+Total cube decisions                     160                     109                    
+Close or actual cube decisions            28                      24                    
+Doubles                                    6                       7                    
+Takes                                      5                       3                    
+Passes                                     2                       3                    
+Missed doubles below CP (EMG (MWC))        1 (-0.227 ( -4.412%))   1 (-0.114 ( -0.621%))
+Missed doubles above CP (EMG (MWC))        4 (-0.393 ( -3.641%))   0                    
+Wrong doubles below DP (EMG (MWC))         2 (-0.014 ( -0.068%))   1 (-0.167 ( -1.109%))
+Wrong doubles above TG (EMG (MWC))         1 (-0.018 ( -0.083%))   0                    
+Wrong takes (EMG (MWC))                    1 (-0.191 ( -1.815%))   0                    
+Wrong passes (EMG (MWC))                   1 (-0.186 ( -1.010%))   1 (-0.107 ( -1.532%))
+Error total EMG (MWC)                         -1.029 (-11.030%)       -0.389 ( -3.262%) 
+Error rate mEMG (MWC)                        -36.7   ( -0.394%)      -16.2   ( -0.136%) 
+Cube decision rating                     Awful!                  Intermediate           
+
+
+Overall statistics
+
+Error total EMG (MWC)                         -3.299 (-32.282%)       -1.134 ( -9.050%) 
+Error rate mEMG (MWC)                        -18.6   ( -0.182%)       -6.8   ( -0.054%) 
+Snowie error rate                             -9.2   ( +0.000%)       -3.2   ( +0.000%) 
+Overall rating                           Casual player           Expert                 
+Error based abs. FIBS rating             1855.8                  1981.0                 
+Chequerplay errors rating loss            164.0                    55.7                 
+Cube errors rating loss                    30.2                    13.3                 
+
+
+
+
+Output generated Thu Feb 01 00:17:26 2024
+ by GNU Backgammon 1.07.001-mingw 32-Bit 20221114 (Text Export version 1.128)
+

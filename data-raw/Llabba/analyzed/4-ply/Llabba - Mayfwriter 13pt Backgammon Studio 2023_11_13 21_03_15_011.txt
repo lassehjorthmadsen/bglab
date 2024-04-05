@@ -1,0 +1,581 @@
+The score (after 10 games) is: Mayfwriter 10, Llabba 11 (match to 13 points)
+
+Match Information:
+Date: 13/11/2023
+Event: Online match
+Round: Round 0
+Place: Backgammon Studio
+Comments: [ClockType "Live8 780/10"]
+
+
+Move number 1:  Llabba to play 42
+
+ GNU Backgammon  Position ID: 4HPwATDgc/ABMA
+                 Match ID   : cAiqAaAAWAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Mayfwriter
+ | X           O    |   | O              X |     10 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     13 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     Rolled 42
+ | O           X    |   | X              O |     11 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 167, X 167
+
+* Llabba moves 8/4 6/4
+
+Rolled 42:
+*    1. Cubeful 2-ply    8/4 6/4                      Eq.: +0.025
+       0.536 0.163 0.007 - 0.464 0.121 0.005
+     2. Cubeful 2-ply    24/22 13/9                   Eq.: -0.143 (-0.167)
+       0.501 0.142 0.007 - 0.499 0.133 0.006
+     3. Cubeful 2-ply    24/20 13/11                  Eq.: -0.144 (-0.168)
+       0.503 0.139 0.007 - 0.497 0.133 0.006
+     4. Cubeful 2-ply    13/11 13/9                   Eq.: -0.169 (-0.194)
+       0.498 0.155 0.009 - 0.502 0.142 0.008
+     5. Cubeful 2-ply    24/18                        Eq.: -0.179 (-0.203)
+       0.497 0.122 0.005 - 0.503 0.138 0.005
+
+
+Move number 2:  Mayfwriter to play 31
+
+ GNU Backgammon  Position ID: mGfwATDgc/ABMA
+                 Match ID   : MIGlAaAAWAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Mayfwriter
+ | X           O    |   | O              X |     10 points
+ | X           O    |   | O              X |     Rolled 31
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+^|                  |BAR|                  |     13 points match (Cube: 1)
+ | O                |   |                  |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X     X        O |     
+ | O           X    |   | X     X        O |     11 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 167, X 161
+
+* Mayfwriter moves 8/5 6/5
+
+Cube analysis
+4-ply cubeless equity -0.217 (Money: -0.119)
+  0.464 0.120 0.005 - 0.536 0.164 0.007
+Cubeful equities:
+1. No double           -0.017
+2. Double, pass        +1.000  (+1.017)
+3. Double, take        -0.174  (-0.157)
+Proper cube action: No double, take (13.4%)
+
+Rolled 31:
+*    1. Cubeful 2-ply    8/5 6/5                      Eq.: +0.097
+       0.488 0.143 0.006 - 0.512 0.157 0.008
+     2. Cubeful 2-ply    24/23 13/10                  Eq.: -0.154 (-0.251)
+       0.437 0.114 0.005 - 0.563 0.184 0.010
+     3. Cubeful 2-ply    24/20                        Eq.: -0.173 (-0.270)
+       0.434 0.105 0.004 - 0.566 0.178 0.008
+     4. Cubeful 2-ply    13/9                         Eq.: -0.199 (-0.296)
+       0.424 0.116 0.005 - 0.576 0.181 0.012
+     5. Cubeful 0-ply    13/10 6/5                    Eq.: -0.218 (-0.315)
+       0.424 0.110 0.006 - 0.576 0.202 0.019
+
+
+Move number 3:  Llabba to play 63
+
+ GNU Backgammon  Position ID: sGfwATCYZ/ABMA
+                 Match ID   : cAmvAaAAWAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Mayfwriter
+ | X           O    |   | O  O           X |     10 points
+ | X           O    |   | O  O           X |     
+ | X                |   | O                |     
+ | X                |   | O                |     
+ | X                |   |                  |    
+v|                  |BAR|                  |     13 points match (Cube: 1)
+ | O                |   |                  |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X     X        O |     Rolled 63
+ | O           X    |   | X     X        O |     11 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 163, X 161
+
+* Llabba moves 24/15
+
+Cube analysis
+4-ply cubeless equity +0.115 (Money: +0.037)
+  0.511 0.157 0.008 - 0.489 0.144 0.006
+Cubeful equities:
+1. No double           -0.121
+2. Double, pass        +1.000  (+1.121)
+3. Double, take        -0.913  (-0.792)
+Proper cube action: No double, take (41.4%)
+
+Rolled 63:
+     1. Cubeful 4-ply    24/18 13/10                  Eq.: -0.249
+       0.492 0.145 0.008 - 0.508 0.166 0.007
+*    2. Cubeful 4-ply    24/15                        Eq.: -0.261 (-0.011)
+       0.488 0.127 0.005 - 0.512 0.156 0.005
+     3. Cubeful 2-ply    24/21 24/18                  Eq.: -0.348 (-0.098)
+       0.476 0.132 0.008 - 0.524 0.185 0.006
+     4. Cubeful 2-ply    13/4                         Eq.: -0.360 (-0.110)
+       0.465 0.149 0.009 - 0.535 0.168 0.008
+     5. Cubeful 2-ply    24/21 13/7                   Eq.: -0.387 (-0.138)
+       0.458 0.138 0.008 - 0.542 0.169 0.009
+
+
+Move number 4:  Mayfwriter to play 62
+
+ GNU Backgammon  Position ID: mGfwCSCwZ/ABMA
+                 Match ID   : MAGrAaAAWAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Mayfwriter
+ | X     X     O    |   | O  O           X |     10 points
+ | X           O    |   | O  O             |     Rolled 62
+ | X                |   | O                |     
+ | X                |   | O                |     
+ | X                |   |                  |    
+^|                  |BAR|                  |     13 points match (Cube: 1)
+ | O                |   |                  |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X     X        O |     
+ | O           X    |   | X     X        O |     11 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 163, X 152
+
+* Mayfwriter moves 24/18 13/11
+
+Cube analysis
+4-ply cubeless equity +0.006 (Money: +0.053)
+  0.512 0.156 0.005 - 0.488 0.127 0.005
+Cubeful equities:
+1. No double           +0.261
+2. Double, pass        +1.000  (+0.739)
+3. Double, take        +0.179  (-0.082)
+Proper cube action: No double, take (9.9%)
+Alert: doubtful move ( -0.039)
+
+Rolled 62:
+     1. Cubeful 4-ply    13/5                         Eq.: -0.019
+       0.453 0.141 0.005 - 0.547 0.143 0.007
+     2. Cubeful 4-ply    24/22 24/18                  Eq.: -0.026 (-0.007)
+       0.464 0.116 0.005 - 0.536 0.164 0.006
+*    3. Cubeful 4-ply    24/18 13/11                  Eq.: -0.058 (-0.039)
+       0.456 0.117 0.005 - 0.544 0.168 0.008
+     4. Cubeful 4-ply    24/22 13/7                   Eq.: -0.070 (-0.051)
+       0.446 0.131 0.005 - 0.554 0.163 0.009
+     5. Cubeful 2-ply    24/16                        Eq.: -0.150 (-0.131)
+       0.436 0.110 0.004 - 0.564 0.163 0.007
+
+
+Move number 5:  Llabba to play 21
+
+ GNU Backgammon  Position ID: sGfkQSCYZ/AJIA
+                 Match ID   : cAmlAaAAWAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Mayfwriter
+ | X  O  X     O    |   | O  O           X |     10 points
+ | X           O    |   | O  O             |     
+ | X                |   | O                |     
+ | X                |   | O                |     
+ | X                |   |                  |    
+v|                  |BAR|                  |     13 points match (Cube: 1)
+ |                  |   |                  |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X     X          |     Rolled 21
+ | O           X  O |   | X     X        O |     11 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 155, X 152
+
+* Llabba moves 24/22 15/14*
+
+Cube analysis
+4-ply cubeless equity +0.244 (Money: +0.142)
+  0.544 0.168 0.008 - 0.456 0.117 0.005
+Cubeful equities:
+1. No double           +0.058
+2. Double, pass        +1.000  (+0.942)
+3. Double, take        -0.652  (-0.709)
+Proper cube action: No double, take (42.9%)
+
+Rolled 21:
+*    1. Cubeful 4-ply    24/22 15/14*                 Eq.: -0.006
+       0.536 0.152 0.008 - 0.464 0.126 0.004
+     2. Cubeful 4-ply    15/14* 6/4                   Eq.: -0.054 (-0.048)
+       0.525 0.151 0.007 - 0.475 0.130 0.004
+     3. Cubeful 4-ply    15/14* 13/11                 Eq.: -0.079 (-0.073)
+       0.521 0.165 0.009 - 0.479 0.140 0.007
+     4. Cubeful 2-ply    15/14* 8/6                   Eq.: -0.280 (-0.274)
+       0.477 0.143 0.007 - 0.523 0.156 0.008
+     5. Cubeful 0-ply    15/13 8/7*                   Eq.: -0.272 (-0.266)
+       0.477 0.137 0.005 - 0.523 0.162 0.008
+
+
+Move number 6:  Mayfwriter to play 43
+
+ GNU Backgammon  Position ID: mGfwBQiwZ/AgUA
+                 Match ID   : MAGuAaAAWAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Mayfwriter
+ | X  X        O    | O | O  O     X       |     10 points
+ | X           O    |   | O  O             |     Rolled 43
+ | X                |   | O                |     
+ | X                |   | O                |     
+ | X                |   |                  |    
+^|                  |BAR|                  |     13 points match (Cube: 1)
+ |                  |   |                  |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X     X          |     
+ | O           X  O |   | X     X        O |     11 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 169, X 149
+
+* Mayfwriter moves bar/18
+
+Cube analysis
+4-ply cubeless equity -0.184 (Money: -0.101)
+  0.464 0.126 0.004 - 0.536 0.152 0.008
+Cubeful equities:
+1. No double           +0.006
+2. Double, pass        +1.000  (+0.994)
+3. Double, take        -0.156  (-0.162)
+Proper cube action: No double, take (14.0%)
+
+Rolled 43:
+*    1. Cubeful 0-ply    bar/18                       Eq.: +0.077
+       0.483 0.123 0.003 - 0.517 0.107 0.002
+     2. Cubeful 0-ply    bar/22 18/14                 Eq.: -0.284 (-0.360)
+       0.407 0.099 0.004 - 0.593 0.179 0.010
+     3. Cubeful 0-ply    bar/22 24/20                 Eq.: -0.306 (-0.382)
+       0.403 0.099 0.004 - 0.597 0.192 0.009
+     4. Cubeful 0-ply    bar/22 13/9                  Eq.: -0.313 (-0.389)
+       0.401 0.109 0.005 - 0.599 0.209 0.016
+     5. Cubeful 0-ply    bar/22 6/2                   Eq.: -0.371 (-0.448)
+       0.389 0.101 0.004 - 0.611 0.213 0.015
+
+
+Move number 7:  Llabba to play 32
+
+ GNU Backgammon  Position ID: sGfwYCCYZ/AFCA
+                 Match ID   : cImpAaAAWAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Mayfwriter
+ | X  X        O    |   | O  O     X       |     10 points
+ | X           O    |   | O  O             |     
+ | X                |   | O                |     
+ | X                |   | O                |     
+ | X                |   |                  |    
+v|                  |BAR|                  |     13 points match (Cube: 1)
+ |                  |   |                  |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X  O |   | X     X          |     Rolled 32
+ | O           X  O |   | X     X        O |     11 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 162, X 149
+
+* Llabba moves 14/11 13/11
+
+Cube analysis
+4-ply cubeless equity +0.071 (Money: +0.018)
+  0.516 0.121 0.004 - 0.484 0.136 0.004
+Cubeful equities:
+1. No double           -0.110
+2. Double, pass        +1.000  (+1.110)
+3. Double, take        -0.871  (-0.760)
+Proper cube action: No double, take (40.6%)
+
+Rolled 32:
+*    1. Cubeful 2-ply    14/11 13/11                  Eq.: -0.048
+       0.529 0.114 0.003 - 0.471 0.127 0.003
+     2. Cubeful 2-ply    14/9                         Eq.: -0.277 (-0.229)
+       0.478 0.115 0.003 - 0.522 0.146 0.004
+     3. Cubeful 2-ply    13/8                         Eq.: -0.303 (-0.255)
+       0.475 0.110 0.003 - 0.525 0.150 0.004
+     4. Cubeful 2-ply    14/11 6/4                    Eq.: -0.314 (-0.266)
+       0.471 0.114 0.003 - 0.529 0.150 0.004
+     5. Cubeful 0-ply    6/1*                         Eq.: -0.438 (-0.390)
+       0.444 0.106 0.001 - 0.556 0.164 0.007
+
+
+Move number 8:  Mayfwriter to play 33
+
+ GNU Backgammon  Position ID: mGfMAwiwZ/BgIA
+                 Match ID   : MIGtAaAAWAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Mayfwriter
+ | X           O    |   | O  O     X       |     10 points
+ | X           O    |   | O  O             |     Rolled 33
+ | X                |   | O                |     
+ | X                |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match (Cube: 1)
+ |                  |   |                  |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O  X        X  O |   | X     X          |     
+ | O  X        X  O |   | X     X        O |     11 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 162, X 144
+
+* Mayfwriter moves 13/10(2) 6/3*(2)
+
+Cube analysis
+4-ply cubeless equity -0.106 (Money: -0.050)
+  0.471 0.128 0.003 - 0.529 0.119 0.004
+Cubeful equities:
+1. No double           +0.058
+2. Double, pass        +1.000  (+0.942)
+3. Double, take        -0.115  (-0.173)
+Proper cube action: No double, take (15.5%)
+
+Rolled 33:
+*    1. Cubeful 2-ply    13/10(2) 6/3*(2)             Eq.: +0.667
+       0.579 0.203 0.005 - 0.421 0.096 0.003
+     2. Cubeful 2-ply    13/7 6/3*(2)                 Eq.: +0.468 (-0.199)
+       0.545 0.183 0.005 - 0.455 0.108 0.003
+     3. Cubeful 2-ply    13/10 8/5 6/3*(2)            Eq.: +0.398 (-0.269)
+       0.531 0.185 0.004 - 0.469 0.110 0.004
+     4. Cubeful 2-ply    18/15(2) 6/3*(2)             Eq.: +0.392 (-0.274)
+       0.543 0.161 0.004 - 0.457 0.112 0.003
+     5. Cubeful 0-ply    13/7(2)                      Eq.: +0.199 (-0.468)
+       0.507 0.144 0.003 - 0.493 0.107 0.003
+
+
+Move number 9:  Llabba to play 43
+
+ GNU Backgammon  Position ID: zGbGYCCYZ8wDQA
+                 Match ID   : cAmuAaAAWAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Mayfwriter
+ | X     O     O    |   | O  O     O       |     10 points
+ | X     O     O    |   | O  O     O       |     
+ | X                |   |                  |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     13 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ | O  X        X  O |   | X     X          |     Rolled 43
+ | O  X        X  O | X | X     X        O |     11 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 150, X 147
+
+* Llabba moves bar/18
+
+Cube analysis
+4-ply cubeless equity -0.277 (Money: -0.275)
+  0.418 0.097 0.003 - 0.582 0.206 0.006
+Cubeful equities:
+1. No double           -0.691
+2. Double, pass        +1.000  (+1.691)
+3. Double, take        -1.650  (-0.959)
+Proper cube action: No double, take (36.2%)
+
+Rolled 43:
+*    1. Cubeful 2-ply    bar/18                       Eq.: -0.677
+       0.422 0.085 0.003 - 0.578 0.210 0.005
+     2. Cubeful 2-ply    bar/21 13/10                 Eq.: -0.803 (-0.126)
+       0.410 0.106 0.005 - 0.590 0.234 0.008
+     3. Cubeful 2-ply    bar/21 11/8                  Eq.: -0.849 (-0.172)
+       0.399 0.098 0.004 - 0.601 0.229 0.006
+     4. Cubeful 2-ply    bar/21 6/3                   Eq.: -0.958 (-0.282)
+       0.395 0.101 0.004 - 0.605 0.263 0.009
+     5. Cubeful 0-ply    bar/21 8/5                   Eq.: -1.000 (-0.323)
+       0.351 0.091 0.003 - 0.649 0.283 0.018
+
+
+Move number 10:  Mayfwriter to play 62
+
+ GNU Backgammon  Position ID: mGfMgwDMZsZgIA
+                 Match ID   : MAGrAaAAWAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Mayfwriter
+ | X     O     O  X |   | O  O     O       |     10 points
+ | X     O     O    |   | O  O     O       |     Rolled 62
+ | X                |   |                  |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ | O  X        X  O |   | X     X          |     
+ | O  X        X  O |   | X     X        O |     11 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 150, X 140
+
+* Mayfwriter moves 24/22 13/7*
+Alert: missed double (-0.045)!
+ [doubtful]
+Cube analysis
+4-ply cubeless equity +0.290 (Money: +0.277)
+  0.576 0.212 0.006 - 0.424 0.089 0.003
+Cubeful equities:
+1. Double, take        +0.669
+2. Double, pass        +1.000  (+0.331)
+3. No double           +0.624  (-0.045)
+Proper cube action: Double, take
+Alert: very bad move ( -0.161)
+
+Rolled 62:
+     1. Cubeful 4-ply    13/11 13/7*                  Eq.: +0.799
+       0.606 0.238 0.007 - 0.394 0.093 0.004
+     2. Cubeful 4-ply    13/7*/5                      Eq.: +0.754 (-0.045)
+       0.589 0.239 0.007 - 0.411 0.092 0.004
+*    3. Cubeful 4-ply    24/22 13/7*                  Eq.: +0.638 (-0.161)
+       0.578 0.224 0.008 - 0.422 0.110 0.005
+     4. Cubeful 2-ply    13/7* 10/8                   Eq.: +0.545 (-0.253)
+       0.556 0.211 0.005 - 0.444 0.112 0.005
+     5. Cubeful 2-ply    13/7* 8/6                    Eq.: +0.534 (-0.265)
+       0.550 0.226 0.006 - 0.450 0.116 0.006
+
+
+Move number 11:  Llabba to play 66
+
+ GNU Backgammon  Position ID: zNaMYAiYZ8wDQA
+                 Match ID   : cAm7AaAAWAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: Mayfwriter
+ | X     O     O  O |   | O  O     O       |     10 points
+ | X     O     O    |   | O  O     O       |     
+ | X                |   |                  |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     13 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ |    X        X  O |   | X     X          |     Rolled 66
+ | O  X        X  O | X | X     X  O       |     11 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: Llabba
+Pip counts: O 142, X 147
+
+* Llabba cannot move
+
+Cube analysis
+4-ply cubeless equity -0.273 (Money: -0.273)
+  0.422 0.110 0.005 - 0.578 0.224 0.008
+Cubeful equities:
+1. No double           -0.638
+2. Double, pass        +1.000  (+1.638)
+3. Double, take        -1.625  (-0.987)
+Proper cube action: No double, take (37.6%)
+
+Rolled 66:
+*    Cannot move
+
+
+Move number 12:  Mayfwriter on roll, cube decision?
+
+ GNU Backgammon  Position ID: mGfMA0DM1oxgCA
+                 Match ID   : MAGgAaAAWAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Mayfwriter
+ | X     O     O  O |   | O  O     O       |     10 points
+ | X     O     O    |   | O  O     O       |     On roll
+ | X                |   |                  |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     13 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ |    X        X  O |   | X     X          |     
+ | O  X        X  O | X | X     X  O       |     11 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 142, X 147
+
+* Mayfwriter doubles
+
+
+Cube analysis
+4-ply cubeless equity +0.565 (Money: +0.510)
+  0.652 0.278 0.007 - 0.348 0.075 0.003
+Cubeful equities:
+1. Double, pass        +1.000
+2. Double, take        +1.248  (+0.248)
+3. No double           +0.917  (-0.083)
+Proper cube action: Double, pass
+Move number 13:  Mayfwriter doubles to 2
+
+ GNU Backgammon  Position ID: mGfMA0DM1oxgCA
+                 Match ID   : MBmgAaAAWAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: Mayfwriter
+ | X     O     O  O |   | O  O     O       |     10 points
+ | X     O     O    |   | O  O     O       |     
+ | X                |   |                  |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ |    X        X  O |   | X     X          |     Cube offered at 2
+ | O  X        X  O | X | X     X  O       |     11 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: Llabba
+Pip counts: O 142, X 147
+
+* Llabba rejects
+
+
+Cube analysis
+4-ply cubeless equity -0.565 (Money: -0.510)
+  0.348 0.075 0.003 - 0.652 0.278 0.007
+Cubeful equities:
+1. Double, pass        -1.000
+2. Double, take        -1.248  (-0.248)
+3. No double           -0.917  (+0.083)
+Proper cube action: Double, pass
+Mayfwriter wins 1 point
+
+Game statistics for game 11
+
+Player                                   Mayfwriter              Llabba                 
+
+Chequerplay statistics
+
+Total moves                                5                       6                    
+Unforced moves                             5                       5                    
+Unmarked moves                             3                       6                    
+Moves marked doubtful                      1                       0                    
+Moves marked bad                           0                       0                    
+Moves marked very bad                      1                       0                    
+Error total EMG (MWC)                         -0.200 ( -2.506%)       -0.011 ( -0.141%) 
+Error rate mEMG (MWC)                        -40.0   ( -0.501%)       -2.2   ( -0.028%) 
+Chequerplay rating                       Awful!                  World class            
+
+
+Cube statistics
+
+Total cube decisions                       6                       6                    
+Close or actual cube decisions             4                       1                    
+Doubles                                    1                       0                    
+Takes                                      0                       0                    
+Passes                                     0                       1                    
+Missed doubles below CP (EMG (MWC))        1 (-0.045 ( -0.561%))   0                    
+Missed doubles above CP (EMG (MWC))        0                       0                    
+Wrong doubles below DP (EMG (MWC))         0                       0                    
+Wrong doubles above TG (EMG (MWC))         0                       0                    
+Wrong takes (EMG (MWC))                    0                       0                    
+Wrong passes (EMG (MWC))                   0                       0                    
+Error total EMG (MWC)                         -0.045 ( -0.561%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                        -11.2   ( -0.140%)       -0.0   ( -0.000%) 
+Cube decision rating                     Advanced                Supernatural           
+
+
+Overall statistics
+
+Error total EMG (MWC)                         -0.245 ( -3.068%)       -0.011 ( -0.141%) 
+Error rate mEMG (MWC)                        -27.2   ( -0.341%)       -1.9   ( -0.023%) 
+Snowie error rate                            -22.2   ( +0.000%)       -1.0   ( +0.000%) 
+Overall rating                           Beginner                Supernatural           
+Error based abs. FIBS rating             1610.5                  2025.9                 
+Chequerplay errors rating loss            430.3                    24.1                 
+Cube errors rating loss                     9.2                     0.0                 
+
+
+
+
+Output generated Fri Feb 02 16:50:41 2024
+ by GNU Backgammon 1.07.001-mingw 32-Bit 20221114 (Text Export version 1.128)
+
