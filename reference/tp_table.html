@@ -45,7 +45,7 @@ to compare those with money game take points</p>
 
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">tp_table</span><span class="op">(</span><span class="va">x</span>, <span class="va">y</span>, <span class="va">probs</span>, <span class="va">cube</span>, <span class="va">met</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">tp_table</span><span class="op">(</span><span class="va">x</span>, <span class="va">y</span>, <span class="va">probs</span>, <span class="va">cube</span>, <span class="va">met</span>, cube_eff <span class="op">=</span> <span class="fl">2</span><span class="op">/</span><span class="fl">3</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -70,6 +70,10 @@ probabilities (must sum to 1 or 100)</p></dd>
 <dt>met</dt>
 <dd><p>match equity table</p></dd>
 
+
+<dt>cube_eff</dt>
+<dd><p>cube-life index, between 0 and 1, defaults to 2/3</p></dd>
+
 </dl></div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
@@ -88,8 +92,9 @@ probabilities (must sum to 1 or 100)</p></dd>
 <span class="r-in"><span><span class="fu">tp_table</span><span class="op">(</span><span class="fl">3</span>, <span class="fl">5</span>, <span class="va">probs</span>, <span class="fl">1</span>, <span class="va">met</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>        Cube assumptions Money game take point 3-away, 5-away take point</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1 Dead cube, no gammons             0.2500000                 0.2091928</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2    Dead cube, gammons             0.2784478                 0.2822967</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3 Both cube and gammons             0.2466907                 0.2540319</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2      Cube, no gammons             0.2142857                 0.1871285</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3    Dead cube, gammons             0.2784478                 0.2822967</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4 Both cube and gammons             0.2472436                 0.2545861</span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
