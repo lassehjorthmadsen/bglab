@@ -4,7 +4,7 @@
 \alias{tp_table}
 \title{Compare take points}
 \usage{
-tp_table(x, y, probs, cube, met)
+tp_table(x, y, probs, cube, met, cube_eff = 2/3)
 }
 \arguments{
 \item{x}{number of points that player needs}
@@ -17,6 +17,8 @@ probabilities (must sum to 1 or 100)}
 \item{cube}{cube value}
 
 \item{met}{match equity table}
+
+\item{cube_eff}{cube-life index, between 0 and 1, defaults to 2/3}
 }
 \value{
 data.frame

@@ -21,7 +21,7 @@ gwc2mwc(pwin, x, y, cube, met)
 double
 }
 \description{
-Given the game winning probablity, match score, and cube
+Given the game winning probability, match score, and cube
 value, what is a players match winning probability?
 }
 \examples{

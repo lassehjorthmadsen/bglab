@@ -30,7 +30,7 @@ emg <- function(mwc, a, b, cube, met) {
 
 #' Calculate match winning chance from game winning chances
 #'
-#' Given the game winning probablity, match score, and cube
+#' Given the game winning probability, match score, and cube
 #' value, what is a players match winning probability?
 #'
 #' @param pwin game winning chances (cubeless)
@@ -185,7 +185,7 @@ tp_gammons <- function(x, y, probs, cube, met) {
 #'
 #' @export
 #'
-tp_info <- function(x, y, probs, cube, met, cube_eff = 0.68) {
+tp_info <- function(x, y, probs, cube, met, cube_eff = 2/3) {
 
   probs <- check_probs(probs)
   probs_fliped <- c(probs[4:6], probs[1:3]) # For opponent's perspective
@@ -317,11 +317,11 @@ gammon_value <- function(x, y, cube, met) {
 #'
 #' @param probs numeric vector of length 6, representing outcome
 #' probabilities (must always sum to 1 or 100)
-#' @param x cube-life index, between 0 and 1
+#' @param cube_eff cube-life index, between 0 and 1, defaults to 2/3
 #' @return double. Take point
 #' @export
 #'
-tp_money <- function(probs, x = 2/3) {
+tp_money <- function(probs, cube_eff = 2/3) {
 
   probs <- check_probs(probs)
 
@@ -329,7 +329,7 @@ tp_money <- function(probs, x = 2/3) {
   W <- sum(expected_outcome[1:3]) / sum(probs[1:3])
   L <- - sum(expected_outcome[4:6]) / sum(probs[4:6])
 
-  tp = (L - 0.5) / (W + L + 0.5 * x)
+  tp = (L - 0.5) / (W + L + 0.5 * cube_eff)
   return(tp)
 }
 
@@ -342,14 +342,14 @@ tp_money <- function(probs, x = 2/3) {
 #' probabilities (must always sum to 1 or 100)
 #' @param C Cube position: 0: Center; 1: player; -1: opponent
 #' @param p Probability of winning
-#' @param x cube-life index, between 0 and 1
+#' @param cube_eff cube-life index, between 0 and 1
 #' @return double. Equity
 #' @examples
 #' probs <- c(31, 4, 0, 47, 17, 1)
 #' eq_money(probs = probs, C = 1, p = 0.5)
 #'
 #' @export
-eq_money <- function(probs, C, p, x = 2/3) {
+eq_money <- function(probs, C, p, cube_eff = 2/3) {
 
   if (!1 %in% c(-1, 0, 1)) stop("Cube position, C, must be one of -1, 0, 1")
 
@@ -359,9 +359,9 @@ eq_money <- function(probs, C, p, x = 2/3) {
   L <- - sum(expected_outcome[4:6]) / sum(probs[4:6])
 
   eq <- dplyr::case_when(
-    C ==  1 ~ p * (W + L + 0.5 * x) - L,
-    C == -1 ~ p * (W + L + 0.5 * x) - L - 0.5 * x,
-    C ==  0 ~ (4 / (4 - x)) * (p * (W + L + 0.5 * x) - L - 0.25 * x)
+    C ==  1 ~ p * (W + L + 0.5 * cube_eff) - L,
+    C == -1 ~ p * (W + L + 0.5 * cube_eff) - L - 0.5 * cube_eff,
+    C ==  0 ~ (4 / (4 - cube_eff)) * (p * (W + L + 0.5 * cube_eff) - L - 0.25 * cube_eff)
   )
 
   return(eq)
@@ -464,6 +464,7 @@ probs_table <-  function(probs, margins = TRUE) {
 #' probabilities (must sum to 1 or 100)
 #' @param cube cube value
 #' @param met match equity table
+#' @param cube_eff cube-life index, between 0 and 1, defaults to 2/3
 #'
 #' @examples
 #' met <- get_met()
@@ -477,7 +478,7 @@ probs_table <-  function(probs, margins = TRUE) {
 #'
 #' @export
 #'
-tp_table <-  function(x, y, probs, cube, met) {
+tp_table <-  function(x, y, probs, cube, met, cube_eff = 2/3) {
 
   col_names <- c("Cube assumptions",
                  "Money game take point",
@@ -486,11 +487,12 @@ tp_table <-  function(x, y, probs, cube, met) {
   dummy <- c(0.5, 0, 0, 0.5, 0, 0)
 
   tp_tab <- data.frame(
-    col1 = c("Dead cube, no gammons", "Dead cube, gammons", "Both cube and gammons"),
-    col2 = c(tp_money(dummy, 0), tp_money(probs, x = 0), tp_money(probs, x = 0.68)),
+    col1 = c("Dead cube, no gammons", "Cube, no gammons", "Dead cube, gammons", "Both cube and gammons"),
+    col2 = c(tp_money(dummy, cube_eff = 0), tp_money(dummy, cube_eff = cube_eff), tp_money(probs, cube_eff = 0), tp_money(probs, cube_eff = cube_eff)),
     col3 = c(tp_info(x, y, dummy, cube, met)["tp_dead"],
-                    tp_info(x, y, probs, cube, met)["tp_dead"],
-                    tp_info(x, y, probs, cube, met)["tp_real"])
+             tp_info(x, y, dummy, cube, met)["tp_real"],
+             tp_info(x, y, probs, cube, met)["tp_dead"],
+             tp_info(x, y, probs, cube, met)["tp_real"])
   )
 
   names(tp_tab) <- col_names

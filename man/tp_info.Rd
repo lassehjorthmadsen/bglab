@@ -4,7 +4,7 @@
 \alias{tp_info}
 \title{Take points in different flavors}
 \usage{
-tp_info(x, y, probs, cube, met, cube_eff = 0.68)
+tp_info(x, y, probs, cube, met, cube_eff = 2/3)
 }
 \arguments{
 \item{x}{number of points that player needs}

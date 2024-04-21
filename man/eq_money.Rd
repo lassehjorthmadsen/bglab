@@ -4,7 +4,7 @@
 \alias{eq_money}
 \title{Equity, money game}
 \usage{
-eq_money(probs, C, p, x = 2/3)
+eq_money(probs, C, p, cube_eff = 2/3)
 }
 \arguments{
 \item{probs}{numeric vector of length 6, representing outcome
@@ -14,7 +14,7 @@ probabilities (must always sum to 1 or 100)}
 
 \item{p}{Probability of winning}
 
-\item{x}{cube-life index, between 0 and 1}
+\item{cube_eff}{cube-life index, between 0 and 1}
 }
 \value{
 double. Equity

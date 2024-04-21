@@ -11,7 +11,7 @@ An object of class \code{character} of length 64.
 gnu_chars
 }
 \description{
-This variable stores the set of charactgers used by
+This variable stores the set of characters used by
 GNU Backgammon in position id and match id
 }
 \keyword{datasets}

@@ -4,13 +4,13 @@
 \alias{tp_money}
 \title{Take points, money game}
 \usage{
-tp_money(probs, x = 2/3)
+tp_money(probs, cube_eff = 2/3)
 }
 \arguments{
 \item{probs}{numeric vector of length 6, representing outcome
 probabilities (must always sum to 1 or 100)}
 
-\item{x}{cube-life index, between 0 and 1}
+\item{cube_eff}{cube-life index, between 0 and 1, defaults to 2/3}
 }
 \value{
 double. Take point

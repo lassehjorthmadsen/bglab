@@ -54,7 +54,7 @@ ggboard <- function(xgid, bearoff = "right", scheme = "bw") {
   if (!scheme %in% names(color_schemes)) stop("Unknown color scheme")
   if (nchar(xgid) < 50) stop("xgid string does not contain at least 50 characters")
 
-  color_scheme <- color_schemes %>% pluck(scheme)
+  color_scheme <- color_schemes %>% purrr::pluck(scheme)
 
   position <- ggplot2::ggplot() +
     show_board(color_scheme$board_fill, color_scheme$board_border) +

@@ -4,12 +4,14 @@
 \alias{ggboard}
 \title{Create diagram from eXtreme Gammon id}
 \usage{
-ggboard(xgid, bearoff = "right")
+ggboard(xgid, bearoff = "right", scheme = "bw")
 }
 \arguments{
 \item{xgid}{character}
 
 \item{bearoff}{character. Side to bear off from. Either "right" (default) or "left"}
+
+\item{scheme}{name of color scheme, defaults to "bw"}
 }
 \value{
 ggplot object
