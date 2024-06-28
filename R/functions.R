@@ -185,19 +185,25 @@ tp_gammons <- function(x, y, probs, cube, met) {
 #'
 #' @export
 #'
-tp_info <- function(x, y, probs, cube, met, cube_eff = 2/3) {
+tp_info <- function(x, y, probs, cube, met, cube_eff = 2/3, last_roll = FALSE) {
+
+  if (!last_roll & y <= 2 * cube) {
+    auto <- 2 # We have an automatic recube
+  } else {
+    auto <- 1 # We do not have an automatic recube
+  }
 
   probs <- check_probs(probs)
   probs_fliped <- c(probs[4:6], probs[1:3]) # For opponent's perspective
 
   D <- mwc(x, y - cube, met)                # drop, lose cube value
 
-  outcomes <- c(mwc(x - 2 * cube, y, met),  # Take, win regular
-                mwc(x - 4 * cube, y, met),  # Take, win gammon
-                mwc(x - 6 * cube, y, met),  # Take, win backgammon
-                mwc(x, y - 2 * cube, met),  # Take, lose regular
-                mwc(x, y - 4 * cube, met),  # Take, lose gammon
-                mwc(x, y - 6 * cube , met)  # Take, lose backgammon
+  outcomes <- c(mwc(x - 2 * auto * cube, y, met),  # Take, win regular
+                mwc(x - 4 * auto * cube, y, met),  # Take, win gammon
+                mwc(x - 6 * auto * cube, y, met),  # Take, win backgammon
+                mwc(x, y - 2 * auto * cube, met),  # Take, lose regular
+                mwc(x, y - 4 * auto * cube, met),  # Take, lose gammon
+                mwc(x, y - 6 * auto * cube, met)   # Take, lose backgammon
                 )
 
   expected_outcome <- probs * outcomes
@@ -210,13 +216,14 @@ tp_info <- function(x, y, probs, cube, met, cube_eff = 2/3) {
 
   tp_dead <- risk / (risk + gain)
 
-  if (tp_dead == 0) {
-    tp_live <- 0
-    tp_real <- 0
+  if (tp_dead == 0 | auto == 2) {
+    # In those cases the cube really is dead, so tp_live = tp_dead
+    tp_live <- tp_dead
   } else {
     tp_live <- tp_dead * (1 - tp_info(y, x, probs_fliped, 2 * cube, met, cube_eff)["tp_live"])
-    tp_real <- cube_eff * tp_live + (1 - cube_eff) * tp_dead
   }
+
+  tp_real <- cube_eff * tp_live + (1 - cube_eff) * tp_dead
 
   info <- c(
     "D" = D,
