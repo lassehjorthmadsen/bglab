@@ -179,6 +179,8 @@ tp_gammons <- function(x, y, probs, cube, met) {
 #' @param cube cube value (before doubling)
 #' @param met match equity table
 #' @param cube_eff Cube efficiency, defaults to 0.68
+#' @param last_roll this as a last roll position; no automatic redouble available.
+#' Defaults to FALSE
 #'
 #' @return List of take points in different flavors, along with informative
 #' metrics from the calculation
@@ -251,6 +253,8 @@ tp_info <- function(x, y, probs, cube, met, cube_eff = 2/3, last_roll = FALSE) {
 #' probabilities (must always sum to 1 or 100)
 #' @param cube cube value (before doubling)
 #' @param met match equity table
+#' @param last_roll this as a last roll position; no automatic redouble available.
+#' Defaults to FALSE
 #'
 #' @return List of take point: 'Dead Cube' and 'Live Cube'
 #'
