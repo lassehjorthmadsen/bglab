@@ -239,6 +239,47 @@ tp_info <- function(x, y, probs, cube, met, cube_eff = 2/3, last_roll = FALSE) {
 }
 
 
+#' Take points according to eXtreme Gammon
+#'
+#' Calculate dead cube and live cube take points like eXtreme Gammon does
+#' in the 'Cube Information' window. Based on match score score, gammons,
+#' and backgammons, cube level, and match equity table
+#'
+#' @param x number of points that player needs
+#' @param y number of points that opponent needs
+#' @param probs numeric vector of length 6, representing outcome
+#' probabilities (must always sum to 1 or 100)
+#' @param cube cube value (before doubling)
+#' @param met match equity table
+#'
+#' @return List of take point: 'Dead Cube' and 'Live Cube'
+#'
+#' @export
+#'
+tp_xg <- function(x, y, probs, cube, met, last_roll = FALSE) {
+
+  probs <- check_probs(probs)
+  probs_fliped <- c(probs[4:6], probs[1:3])   # For opponent's perspective
+  probs_no_gammon <- c(sum(probs[1:3]), 0, 0, probs[4:6]) # Takers gammonless probabilities
+
+  tp_dead <- tp_gammons(x, y, probs, cube, met)
+  tp_no_gammon <- tp_gammons(x , y, probs_no_gammon, cube, met)
+
+  if (tp_dead == 0 | (!last_roll & y <= 2 * cube)) {
+    # In those cases the cube really is dead, so tp_live = tp_dead
+    tp_live <- tp_dead
+  } else {
+    tp_live <- tp_no_gammon * (1 - tp_xg(y, x, probs_fliped, 2 * cube, met)["tp_live"])
+  }
+
+  take_points <- c(
+    "tp_dead" = tp_dead,
+    "tp_live" = unname(tp_live)
+  )
+  return(take_points)
+}
+
+
 #' Double point calculation including gammons
 #'
 #' Calculate cubeless double points at different scores, including gammons and backgammons
