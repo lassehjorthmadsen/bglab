@@ -129,15 +129,16 @@ tp <- function(x, y, cube, met, last_roll = FALSE) {
 #' probabilities (must always sum to 1 or 100)
 #' @param cube cube value (before doubling)
 #' @param met match equity table
+#' @param last_roll treat this as a last roll position; no automatic redouble available
 #'
 #' @return double. Take point
 #' @export
 #'
-tp_gammons <- function(x, y, probs, cube, met) {
+tp_gammons <- function(x, y, probs, cube, met, last_roll = FALSE) {
 
   probs <- check_probs(probs)
 
-  if (y <= 2 * cube) {
+  if (!last_roll & y <= 2 * cube) {
     auto <- 2 # We have an automatic recube
   } else {
     auto <- 1 # We do not have an automatic recube
