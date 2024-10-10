@@ -1,0 +1,1880 @@
+The score (after 1 game) is: peterstone 0, lasse 1 (match to 3 points)
+
+Match Information:
+Date: 22/10/2023
+Place: BackgammonGalaxy
+
+Move number 1:  peterstone to play 41
+
+ GNU Backgammon  Position ID: 4HPwATDgc/ABMA
+                 Match ID   : MABmAAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: peterstone
+ | X           O    |   | O              X |     0 points
+ | X           O    |   | O              X |     Rolled 41
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+^|                  |BAR|                  |     3 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     
+ | O           X    |   | X              O |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 167, X 167
+
+* peterstone moves 24/23 13/9
+
+Rolled 41:
+*    1. Cubeful 0-ply    24/23 13/9                   Eq.: +0.140
+       0.498 0.139 0.008 - 0.502 0.140 0.007
+     2. Cubeful 0-ply    24/23 24/20                  Eq.: +0.108 (-0.032)
+       0.496 0.123 0.005 - 0.504 0.135 0.004
+     3. Cubeful 0-ply    13/9 6/5                     Eq.: +0.104 (-0.036)
+       0.490 0.140 0.010 - 0.510 0.153 0.012
+     4. Cubeful 0-ply    13/8                         Eq.: +0.098 (-0.042)
+       0.488 0.139 0.009 - 0.512 0.149 0.007
+     5. Cubeful 0-ply    24/20 6/5                    Eq.: +0.080 (-0.060)
+       0.490 0.123 0.006 - 0.510 0.147 0.007
+
+
+Move number 2:  lasse to play 41
+
+ GNU Backgammon  Position ID: 4HPhASjgc/ABMA
+                 Match ID   : cAlmAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: peterstone
+ | X        O  O    |   | O              X |     0 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     Rolled 41
+ | O           X    |   | X           O  O |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 162, X 167
+
+* lasse moves 6/2*/1*
+
+Cube analysis
+0-ply cubeless equity +0.065 (Money: +0.004)
+  0.502 0.140 0.007 - 0.498 0.139 0.008
+Cubeful equities:
+1. No double           -0.140
+2. Double, pass        +1.000  (+1.140)
+3. Double, take        -0.688  (-0.548)
+Proper cube action: No double, take (32.4%)
+
+Rolled 41:
+*    1. Cubeful 0-ply    6/2*/1*                      Eq.: -0.325
+       0.463 0.136 0.005 - 0.537 0.160 0.012
+     2. Cubeful 0-ply    24/23 13/9                   Eq.: -0.336 (-0.012)
+       0.462 0.124 0.006 - 0.538 0.162 0.009
+     3. Cubeful 0-ply    24/23 6/2*                   Eq.: -0.346 (-0.021)
+       0.460 0.116 0.006 - 0.540 0.159 0.009
+     4. Cubeful 0-ply    24/23 24/20                  Eq.: -0.351 (-0.026)
+       0.460 0.111 0.004 - 0.540 0.162 0.005
+     5. Cubeful 0-ply    13/8                         Eq.: -0.372 (-0.048)
+       0.456 0.125 0.006 - 0.544 0.164 0.008
+
+
+Move number 3:  peterstone to play 41
+
+ GNU Backgammon  Position ID: wXPwATDgc+EBYA
+                 Match ID   : MAFmAAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: peterstone
+ | X        O  O    | O | O              X |     0 points
+ | X           O    | O | O              X |     Rolled 41
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+^|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              X |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 165, X 162
+
+* peterstone moves bar/24* bar/21
+Alert: missed double (-0.001)!
+
+Cube analysis
+0-ply cubeless equity +0.059 (Money: +0.104)
+  0.537 0.160 0.012 - 0.463 0.136 0.005
+Cubeful equities:
+1. Double, take        +0.325
+2. Double, pass        +1.000  (+0.675)
+3. No double           +0.324  (-0.001)
+Proper cube action: Double, take
+
+Rolled 41:
+*    1. Cubeful 0-ply    bar/24* bar/21               Eq.: +0.419
+       0.548 0.179 0.012 - 0.452 0.104 0.005
+
+
+Move number 4:  lasse to play 41
+
+ GNU Backgammon  Position ID: 4HPhASLgOfgAWA
+                 Match ID   : cAlmAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: peterstone
+ | X        O  O    |   | O              X |     0 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     Rolled 41
+ | O           X    | X | X     O        O |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 160, X 186
+
+* lasse moves bar/21 24/23
+
+Cube analysis
+0-ply cubeless equity -0.175 (Money: -0.179)
+  0.452 0.104 0.005 - 0.548 0.179 0.012
+Cubeful equities:
+1. No double           -0.419
+2. Double, pass        +1.000  (+1.419)
+3. Double, take        -1.080  (-0.661)
+Proper cube action: No double, take (31.8%)
+
+Rolled 41:
+*    1. Cubeful 0-ply    bar/21 24/23                 Eq.: -0.591
+       0.428 0.094 0.004 - 0.572 0.190 0.012
+     2. Cubeful 0-ply    bar/20                       Eq.: -0.614 (-0.022)
+       0.423 0.095 0.004 - 0.577 0.189 0.015
+     3. Cubeful 0-ply    bar/24 8/4*                  Eq.: -0.654 (-0.063)
+       0.430 0.104 0.006 - 0.570 0.218 0.025
+     4. Cubeful 0-ply    bar/21 6/5                   Eq.: -0.701 (-0.110)
+       0.424 0.093 0.005 - 0.576 0.225 0.024
+     5. Cubeful 0-ply    bar/24 13/9                  Eq.: -0.726 (-0.134)
+       0.415 0.097 0.005 - 0.585 0.214 0.022
+
+
+Move number 5:  peterstone to play 51
+
+ GNU Backgammon  Position ID: 4Dn4ACngc+EBIg
+                 Match ID   : MIFmAAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: peterstone
+ | X        O  O    |   | O     X     X  X |     0 points
+ | X           O    |   | O                |     Rolled 51
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+^|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X     O        O |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 160, X 181
+
+* peterstone moves 21/20 9/4*
+Alert: missed double (-0.058)!
+ [doubtful]
+Cube analysis
+0-ply cubeless equity +0.256 (Money: +0.247)
+  0.572 0.190 0.012 - 0.428 0.094 0.004
+Cubeful equities:
+1. Double, take        +0.591
+2. Double, pass        +1.000  (+0.409)
+3. No double           +0.533  (-0.058)
+Proper cube action: Double, take
+
+Rolled 51:
+*    1. Cubeful 0-ply    21/20 9/4*                   Eq.: +0.272
+       0.521 0.154 0.010 - 0.479 0.110 0.005
+     2. Cubeful 0-ply    21/16 9/8                    Eq.: +0.271 (-0.001)
+       0.530 0.141 0.005 - 0.470 0.118 0.004
+     3. Cubeful 0-ply    24/23 9/4*                   Eq.: +0.267 (-0.005)
+       0.521 0.151 0.010 - 0.479 0.109 0.005
+     4. Cubeful 0-ply    9/4*/3                       Eq.: +0.259 (-0.013)
+       0.519 0.152 0.010 - 0.481 0.110 0.005
+     5. Cubeful 0-ply    13/8 9/8                     Eq.: +0.243 (-0.028)
+       0.517 0.150 0.007 - 0.483 0.114 0.004
+
+
+Move number 6:  lasse to play 52
+
+ GNU Backgammon  Position ID: yOfgASHgOfgAVA
+                 Match ID   : cIlqAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: peterstone
+ | X           O    |   | O     O     X  X |     0 points
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     Rolled 52
+ | O           X    | X | X  O           O |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 154, X 185
+
+* lasse moves bar/20 23/21*
+
+Cube analysis
+0-ply cubeless equity -0.069 (Money: -0.092)
+  0.479 0.110 0.005 - 0.521 0.154 0.010
+Cubeful equities:
+1. No double           -0.272
+2. Double, pass        +1.000  (+1.272)
+3. Double, take        -0.867  (-0.596)
+Proper cube action: No double, take (31.9%)
+
+Rolled 52:
+*    1. Cubeful 0-ply    bar/20 23/21*                Eq.: -0.136
+       0.503 0.115 0.005 - 0.497 0.128 0.007
+     2. Cubeful 0-ply    bar/23 13/8                  Eq.: -0.604 (-0.468)
+       0.421 0.095 0.004 - 0.579 0.180 0.012
+     3. Cubeful 0-ply    bar/20 13/11                 Eq.: -0.617 (-0.481)
+       0.430 0.093 0.004 - 0.570 0.204 0.017
+     4. Cubeful 0-ply    bar/20 24/22                 Eq.: -0.648 (-0.512)
+       0.420 0.085 0.003 - 0.580 0.196 0.011
+     5. Cubeful 0-ply    bar/18                       Eq.: -0.682 (-0.546)
+       0.419 0.087 0.004 - 0.581 0.207 0.013
+
+
+Move number 7:  peterstone to play 53
+
+ GNU Backgammon  Position ID: 4Dn4gCLgc/CAUA
+                 Match ID   : MIFuAAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: peterstone
+ | X           O    | O | O  X  X        X |     0 points
+ | X           O    |   | O                |     Rolled 53
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+^|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X  O           O |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 175, X 178
+
+* peterstone moves bar/20 24/21
+
+Cube analysis
+0-ply cubeless equity -0.034 (Money: +0.010)
+  0.497 0.128 0.007 - 0.503 0.115 0.005
+Cubeful equities:
+1. No double           +0.136
+2. Double, pass        +1.000  (+0.864)
+3. Double, take        +0.029  (-0.107)
+Proper cube action: No double, take (11.0%)
+Alert: doubtful move ( -0.050)
+
+Rolled 53:
+     1. Cubeful 0-ply    bar/20 8/5*                  Eq.: +0.212
+       0.511 0.139 0.009 - 0.489 0.102 0.004
+*    2. Cubeful 0-ply    bar/20 24/21                 Eq.: +0.162 (-0.050)
+       0.506 0.113 0.004 - 0.494 0.081 0.002
+     3. Cubeful 0-ply    bar/20 6/3                   Eq.: +0.149 (-0.064)
+       0.501 0.123 0.005 - 0.499 0.101 0.004
+     4. Cubeful 0-ply    bar/20 13/10                 Eq.: +0.100 (-0.112)
+       0.488 0.121 0.005 - 0.512 0.098 0.003
+     5. Cubeful 0-ply    bar/22 13/8                  Eq.: +0.056 (-0.156)
+       0.481 0.121 0.005 - 0.519 0.124 0.006
+
+
+Move number 8:  lasse to play 22
+
+ GNU Backgammon  Position ID: 4HPwgAXgOfiAIg
+                 Match ID   : cAlpAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: peterstone
+ | X           O    |   | O  X  X        X |     0 points
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X  O             |     Rolled 22
+ | O           X    |   | X  O  O          |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 167, X 178
+
+* lasse moves 24/20 6/4*(2)
+
+Cube analysis
+0-ply cubeless equity -0.022 (Money: -0.046)
+  0.494 0.081 0.002 - 0.506 0.113 0.004
+Cubeful equities:
+1. No double           -0.162
+2. Double, pass        +1.000  (+1.162)
+3. Double, take        -0.725  (-0.563)
+Proper cube action: No double, take (32.6%)
+
+Rolled 22:
+     1. Cubeful 0-ply    13/11(2) 6/4*(2)             Eq.: +0.040
+       0.541 0.100 0.004 - 0.459 0.099 0.005
+*    2. Cubeful 0-ply    24/20 6/4*(2)                Eq.: +0.022 (-0.018)
+       0.528 0.085 0.003 - 0.472 0.075 0.002
+     3. Cubeful 0-ply    24/20 13/11(2)               Eq.: -0.046 (-0.086)
+       0.514 0.086 0.003 - 0.486 0.087 0.003
+     4. Cubeful 0-ply    24/22 13/11 6/4*(2)          Eq.: -0.094 (-0.134)
+       0.510 0.093 0.003 - 0.490 0.110 0.006
+     5. Cubeful 0-ply    20/16 6/4*(2)                Eq.: -0.100 (-0.140)
+       0.511 0.086 0.002 - 0.489 0.114 0.006
+
+
+Move number 9:  peterstone to play 42
+
+ GNU Backgammon  Position ID: mDn4gAXgc/CAQQ
+                 Match ID   : MAFqAAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: peterstone
+ | X           O    | O | O  X  X          |     0 points
+ | X           O    |   | O  X             |     Rolled 42
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+^|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ | O                |   |                  |     
+ | O           X    |   |                  |     
+ | O           X    |   | X  O  X          |     
+ | O           X    |   | X  O  X          |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 171, X 170
+
+* peterstone moves bar/23 6/2
+
+Cube analysis
+0-ply cubeless equity -0.112 (Money: -0.066)
+  0.472 0.075 0.002 - 0.528 0.085 0.003
+Cubeful equities:
+1. No double           -0.022
+2. Double, pass        +1.000  (+1.022)
+3. Double, take        -0.244  (-0.222)
+Proper cube action: No double, take (17.8%)
+
+Rolled 42:
+*    1. Cubeful 0-ply    bar/23 6/2                   Eq.: -0.051
+       0.464 0.083 0.002 - 0.536 0.099 0.004
+     2. Cubeful 0-ply    bar/23 8/4*                  Eq.: -0.056 (-0.004)
+       0.460 0.093 0.003 - 0.540 0.110 0.005
+     3. Cubeful 0-ply    bar/23 13/9                  Eq.: -0.161 (-0.110)
+       0.435 0.085 0.003 - 0.565 0.114 0.005
+     4. Cubeful 0-ply    bar/23 20/16                 Eq.: -0.257 (-0.206)
+       0.421 0.077 0.002 - 0.579 0.165 0.010
+
+
+Move number 10:  lasse to play 44
+
+ GNU Backgammon  Position ID: wnPwgBGYOfiABQ
+                 Match ID   : cAlyAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: peterstone
+ | X           O    |   | O  X  X     O    |     0 points
+ | X           O    |   | O  X             |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   |                  |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ | O                |   |                  |     
+ | O           X    |   |                  |     
+ | O           X    |   | X  O  X          |     Rolled 44
+ | O           X    |   | X  O  X     O    |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 165, X 170
+
+* lasse moves 20/16(2) 13/9(2)
+
+Cube analysis
+0-ply cubeless equity +0.148 (Money: +0.092)
+  0.536 0.099 0.004 - 0.464 0.083 0.002
+Cubeful equities:
+1. No double           +0.051
+2. Double, pass        +1.000  (+0.949)
+3. Double, take        -0.396  (-0.448)
+Proper cube action: No double, take (32.1%)
+
+Rolled 44:
+*    1. Cubeful 0-ply    20/16(2) 13/9(2)             Eq.: +0.300
+       0.605 0.092 0.003 - 0.395 0.081 0.002
+     2. Cubeful 0-ply    13/9(3) 8/4                  Eq.: +0.190 (-0.110)
+       0.569 0.106 0.005 - 0.431 0.071 0.002
+     3. Cubeful 0-ply    13/9(4)                      Eq.: +0.138 (-0.162)
+       0.555 0.104 0.004 - 0.445 0.071 0.002
+     4. Cubeful 0-ply    20/16 13/9(3)                Eq.: +0.099 (-0.201)
+       0.558 0.109 0.004 - 0.442 0.106 0.004
+     5. Cubeful 0-ply    20/16 13/9(2) 8/4            Eq.: +0.018 (-0.281)
+       0.540 0.114 0.004 - 0.460 0.118 0.006
+
+
+Move number 11:  peterstone to play 61
+
+ GNU Backgammon  Position ID: mLnhGATCc/CAEQ
+                 Match ID   : MAFnAAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: peterstone
+ | X        X  O    |   | O     X     O    |     0 points
+ | X        X  O    |   | O                |     Rolled 61
+ | X           O    |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ | O                |   |                  |     
+ | O           X    |   |                  |     
+ | O        X  X    |   | X  O  X          |     
+ | O        X  X    |   | X  O  X     O    |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 165, X 154
+
+* peterstone moves 13/7 8/7
+
+Cube analysis
+0-ply cubeless equity -0.274 (Money: -0.222)
+  0.395 0.081 0.002 - 0.605 0.092 0.003
+Cubeful equities:
+1. No double           -0.300
+2. Double, pass        +1.000  (+1.300)
+3. Double, take        -0.646  (-0.346)
+Proper cube action: No double, take (21.0%)
+
+Rolled 61:
+*    1. Cubeful 0-ply    13/7 8/7                     Eq.: -0.319
+       0.389 0.081 0.002 - 0.611 0.089 0.003
+     2. Cubeful 0-ply    23/22 8/2                    Eq.: -0.360 (-0.041)
+       0.379 0.077 0.002 - 0.621 0.087 0.002
+     3. Cubeful 0-ply    13/6                         Eq.: -0.385 (-0.066)
+       0.373 0.074 0.002 - 0.627 0.088 0.003
+     4. Cubeful 0-ply    8/2 6/5                      Eq.: -0.393 (-0.074)
+       0.372 0.086 0.002 - 0.628 0.116 0.004
+     5. Cubeful 0-ply    23/22 13/7                   Eq.: -0.462 (-0.143)
+       0.358 0.073 0.002 - 0.642 0.116 0.005
+
+
+Move number 12:  lasse to play 65
+
+ GNU Backgammon  Position ID: wtvggBGYueEYBA
+                 Match ID   : cAl3AAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: peterstone
+ | X        X  O  O |   | O     X     O    |     0 points
+ | X        X  O  O |   | O                |     
+ | X                |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ | O           X    |   |                  |     
+ | O        X  X    |   | X  O  X          |     Rolled 65
+ | O        X  X    |   | X  O  X     O    |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 158, X 154
+
+* lasse moves 21/10
+
+Cube analysis
+0-ply cubeless equity +0.280 (Money: +0.231)
+  0.611 0.089 0.003 - 0.389 0.081 0.002
+Cubeful equities:
+1. No double           +0.319
+2. Double, pass        +1.000  (+0.681)
+3. Double, take        +0.137  (-0.182)
+Proper cube action: No double, take (21.1%)
+
+Rolled 65:
+*    1. Cubeful 0-ply    21/10                        Eq.: +0.361
+       0.621 0.079 0.002 - 0.379 0.071 0.001
+     2. Cubeful 0-ply    21/15 13/8                   Eq.: +0.324 (-0.037)
+       0.614 0.082 0.003 - 0.386 0.082 0.001
+     3. Cubeful 0-ply    21/16 13/7                   Eq.: +0.279 (-0.082)
+       0.601 0.091 0.002 - 0.399 0.085 0.002
+     4. Cubeful 0-ply    21/16 8/2*                   Eq.: +0.272 (-0.089)
+       0.599 0.085 0.002 - 0.401 0.082 0.001
+     5. Cubeful 0-ply    13/2*                        Eq.: +0.169 (-0.192)
+       0.575 0.110 0.004 - 0.425 0.104 0.004
+
+
+Move number 13:  peterstone to play 62
+
+ GNU Backgammon  Position ID: mLnFMQDC2+CAEQ
+                 Match ID   : MAFrAAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: peterstone
+ | X        X  O  O |   | O           O    |     0 points
+ | X        X  O  O |   | O                |     Rolled 62
+ | X                |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ | O           X    |   |                  |     
+ | O        X  X    |   | X  O  X          |     
+ | O     X  X  X    |   | X  O  X     O    |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 158, X 143
+
+* peterstone moves 13/5
+
+Cube analysis
+0-ply cubeless equity -0.295 (Money: -0.250)
+  0.379 0.071 0.001 - 0.621 0.079 0.002
+Cubeful equities:
+1. No double           -0.361
+2. Double, pass        +1.000  (+1.361)
+3. Double, take        -0.754  (-0.393)
+Proper cube action: No double, take (22.4%)
+
+Rolled 62:
+     1. Cubeful 0-ply    8/2 7/5                      Eq.: -0.485
+       0.348 0.067 0.001 - 0.652 0.085 0.003
+     2. Cubeful 0-ply    8/2 6/4                      Eq.: -0.485 (-0.000)
+       0.348 0.063 0.001 - 0.652 0.079 0.002
+*    3. Cubeful 0-ply    13/5                         Eq.: -0.498 (-0.014)
+       0.346 0.058 0.001 - 0.654 0.080 0.003
+     4. Cubeful 0-ply    13/7 6/4                     Eq.: -0.507 (-0.022)
+       0.344 0.058 0.001 - 0.656 0.079 0.003
+     5. Cubeful 0-ply    8/6 8/2                      Eq.: -0.511 (-0.027)
+       0.343 0.057 0.001 - 0.657 0.078 0.002
+
+
+Move number 14:  lasse to play 33
+
+ GNU Backgammon  Position ID: orfBgBGYucUxAA
+                 Match ID   : cIltAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: peterstone
+ | X        X  O  O |   | O  O        O    |     0 points
+ | X        X  O  O |   | O                |     
+ | X                |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |             X    |   |                  |     
+ | O        X  X    |   | X  O  X          |     Rolled 33
+ | O     X  X  X    |   | X  O  X     O    |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 150, X 143
+
+* lasse moves 16/10(2)
+
+Cube analysis
+0-ply cubeless equity +0.382 (Money: +0.331)
+  0.654 0.080 0.003 - 0.346 0.058 0.001
+Cubeful equities:
+1. No double           +0.498
+2. Double, pass        +1.000  (+0.502)
+3. Double, take        +0.463  (-0.035)
+Proper cube action: No double, take (6.5%)
+
+Rolled 33:
+*    1. Cubeful 0-ply    16/10(2)                     Eq.: +0.716
+       0.712 0.053 0.001 - 0.288 0.034 0.000
+     2. Cubeful 0-ply    16/7 10/7                    Eq.: +0.622 (-0.094)
+       0.687 0.076 0.002 - 0.313 0.054 0.001
+     3. Cubeful 0-ply    16/13(2) 10/4                Eq.: +0.565 (-0.151)
+       0.673 0.057 0.000 - 0.327 0.048 0.000
+     4. Cubeful 0-ply    13/7(2)                      Eq.: +0.533 (-0.183)
+       0.664 0.095 0.003 - 0.336 0.069 0.002
+     5. Cubeful 0-ply    13/7 10/7 9/6                Eq.: +0.422 (-0.295)
+       0.636 0.090 0.002 - 0.364 0.073 0.001
+
+
+Move number 15:  peterstone to play 32
+
+ GNU Backgammon  Position ID: mLkdBwCit8GAEQ
+                 Match ID   : MIFpAAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: peterstone
+ | X           O  O |   | O  O        O    |     0 points
+ | X           O  O |   | O                |     Rolled 32
+ | X                |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |       X     X    |   |                  |     
+ | O     X  X  X    |   | X  O  X          |     
+ | O     X  X  X    |   | X  O  X     O    |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 150, X 131
+
+* peterstone moves 7/5 7/4
+
+Cube analysis
+0-ply cubeless equity -0.481 (Money: -0.444)
+  0.288 0.034 0.000 - 0.712 0.053 0.001
+Cubeful equities:
+1. No double           -0.716
+2. Double, pass        +1.000  (+1.716)
+3. Double, take        -1.345  (-0.628)
+Proper cube action: No double, take (26.8%)
+
+Rolled 32:
+*    1. Cubeful 0-ply    7/5 7/4                      Eq.: -0.934
+       0.283 0.038 0.001 - 0.717 0.063 0.002
+     2. Cubeful 0-ply    8/5 6/4                      Eq.: -0.952 (-0.018)
+       0.280 0.039 0.001 - 0.720 0.062 0.002
+     3. Cubeful 0-ply    7/4 6/4                      Eq.: -0.965 (-0.031)
+       0.278 0.039 0.001 - 0.722 0.065 0.002
+     4. Cubeful 0-ply    7/5 6/3                      Eq.: -0.966 (-0.032)
+       0.278 0.040 0.001 - 0.722 0.066 0.002
+     5. Cubeful 0-ply    23/20 6/4                    Eq.: -1.000 (-0.066)
+       0.267 0.017 0.001 - 0.733 0.027 0.001
+
+
+Move number 16:  lasse to play 41
+
+ GNU Backgammon  Position ID: 0p7BgBGYuR0HAA
+                 Match ID   : cAlmAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: peterstone
+ | X           O    |   | O  O  O     O    |     0 points
+ | X           O    |   | O  O             |     
+ | X                |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |       X     X    |   |                  |     
+ | O     X  X  X    |   | X  O  X          |     Rolled 41
+ | O     X  X  X    |   | X  O  X     O    |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 145, X 131
+
+* lasse moves 13/9 10/9
+Alert: missed double (-0.196)!
+ [very bad]
+Cube analysis
+0-ply cubeless equity +0.502 (Money: +0.459)
+  0.717 0.063 0.002 - 0.283 0.038 0.001
+Cubeful equities:
+1. Double, take        +0.934
+2. Double, pass        +1.000  (+0.066)
+3. No double           +0.738  (-0.196)
+Proper cube action: Double, take
+
+Rolled 41:
+*    1. Cubeful 0-ply    13/9 10/9                    Eq.: +0.672
+       0.700 0.052 0.001 - 0.300 0.037 0.000
+     2. Cubeful 0-ply    13/8                         Eq.: +0.647 (-0.025)
+       0.695 0.051 0.001 - 0.305 0.041 0.000
+     3. Cubeful 0-ply    10/9 8/4                     Eq.: +0.622 (-0.050)
+       0.687 0.053 0.001 - 0.313 0.039 0.000
+     4. Cubeful 0-ply    10/9 10/6                    Eq.: +0.474 (-0.198)
+       0.651 0.073 0.002 - 0.349 0.068 0.001
+     5. Cubeful 0-ply    8/3                          Eq.: +0.420 (-0.252)
+       0.640 0.072 0.002 - 0.360 0.079 0.001
+
+
+Move number 17:  peterstone to play 61
+
+ GNU Backgammon  Position ID: mLk3BgDSnsGAEQ
+                 Match ID   : MAFnAAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: peterstone
+ | X           O    |   | O  O  O     O    |     0 points
+ | X           O    |   | O  O             |     Rolled 61
+ |                  |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |          X       |   |                  |     
+ |          X  X    |   |                  |     
+ | O     X  X  X    |   | X  O  X          |     
+ | O     X  X  X    |   | X  O  X     O    |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 145, X 126
+
+* peterstone moves 8/7 8/2
+
+Cube analysis
+0-ply cubeless equity -0.452 (Money: -0.416)
+  0.300 0.037 0.000 - 0.700 0.052 0.001
+Cubeful equities:
+1. No double           -0.672
+2. Double, pass        +1.000  (+1.672)
+3. Double, take        -1.274  (-0.603)
+Proper cube action: No double, take (26.5%)
+
+Rolled 61:
+     1. Cubeful 0-ply    8/2 6/5                      Eq.: -0.922
+       0.284 0.041 0.001 - 0.716 0.060 0.001
+*    2. Cubeful 0-ply    8/7 8/2                      Eq.: -0.926 (-0.004)
+       0.284 0.039 0.001 - 0.716 0.060 0.001
+     3. Cubeful 0-ply    8/2 4/3                      Eq.: -0.936 (-0.015)
+       0.282 0.040 0.001 - 0.718 0.062 0.001
+     4. Cubeful 0-ply    8/2 5/4                      Eq.: -0.943 (-0.021)
+       0.282 0.038 0.001 - 0.718 0.060 0.002
+     5. Cubeful 0-ply    13/7 6/5                     Eq.: -0.979 (-0.057)
+       0.276 0.040 0.001 - 0.724 0.076 0.003
+
+
+Move number 18:  lasse to play 54
+
+ GNU Backgammon  Position ID: pr3AgBGYuTcGAA
+                 Match ID   : cIlyAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: peterstone
+ | X              O |   | O  O  O     O    |     0 points
+ | X                |   | O  O        O    |     
+ |                  |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |          X       |   |                  |     
+ |          X  X    |   |                  |     
+ | O     X  X  X    |   | X  O  X          |     Rolled 54
+ | O     X  X  X    |   | X  O  X     O    |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 138, X 126
+
+* lasse moves 13/9 13/8
+Alert: missed double (-0.194)!
+ [very bad]
+Cube analysis
+0-ply cubeless equity +0.495 (Money: +0.454)
+  0.716 0.060 0.001 - 0.284 0.039 0.001
+Cubeful equities:
+1. Double, take        +0.926
+2. Double, pass        +1.000  (+0.074)
+3. No double           +0.732  (-0.194)
+Proper cube action: Double, take
+
+Rolled 54:
+*    1. Cubeful 0-ply    13/9 13/8                    Eq.: +0.697
+       0.707 0.050 0.001 - 0.293 0.032 0.000
+     2. Cubeful 0-ply    9/4 8/4                      Eq.: +0.598 (-0.099)
+       0.681 0.062 0.001 - 0.319 0.048 0.000
+     3. Cubeful 0-ply    10/6 9/4                     Eq.: +0.385 (-0.312)
+       0.632 0.077 0.002 - 0.368 0.084 0.001
+     4. Cubeful 0-ply    13/4                         Eq.: +0.368 (-0.329)
+       0.625 0.071 0.002 - 0.375 0.076 0.001
+     5. Cubeful 0-ply    10/1                         Eq.: +0.207 (-0.490)
+       0.593 0.071 0.002 - 0.407 0.106 0.002
+
+
+Move number 19:  peterstone to play 63
+
+ GNU Backgammon  Position ID: mHnfAACmvcCAEQ
+                 Match ID   : MAFvAAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: peterstone
+ |                O |   | O  O  O     O    |     0 points
+ |                  |   | O  O        O    |     Rolled 63
+ |                  |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match (Cube: 1)
+ |          X       |   |                  |    
+ |          X  X    |   |                  |     
+ |          X  X    |   |                  |     
+ | O     X  X  X    |   | X  O  X          |     
+ | O     X  X  X    |   | X  O  X     O    |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 138, X 117
+
+* peterstone moves 23/20 13/7
+
+Cube analysis
+0-ply cubeless equity -0.468 (Money: -0.432)
+  0.293 0.032 0.000 - 0.707 0.050 0.001
+Cubeful equities:
+1. No double           -0.697
+2. Double, pass        +1.000  (+1.697)
+3. Double, take        -1.321  (-0.624)
+Proper cube action: No double, take (26.9%)
+Alert: bad move ( -0.075)
+
+Rolled 63:
+     1. Cubeful 0-ply    13/7 6/3                     Eq.: -0.925
+       0.285 0.030 0.001 - 0.715 0.058 0.001
+     2. Cubeful 0-ply    13/4                         Eq.: -0.981 (-0.056)
+       0.277 0.030 0.001 - 0.723 0.053 0.001
+     3. Cubeful 0-ply    13/10 13/7                   Eq.: -1.000 (-0.075)
+       0.274 0.027 0.001 - 0.726 0.053 0.001
+*    4. Cubeful 0-ply    23/20 13/7                   Eq.: -1.000 (-0.075)
+       0.251 0.010 0.000 - 0.749 0.020 0.000
+     5. Cubeful 0-ply    23/14                        Eq.: -1.000 (-0.075)
+       0.249 0.009 0.000 - 0.751 0.020 0.000
+
+
+Move number 20:  lasse on roll, cube decision?
+
+ GNU Backgammon  Position ID: pr2BgAOYed8AAA
+                 Match ID   : cAlgAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: peterstone
+ |                O |   | O  O  O     O    |     0 points
+ |                O |   | O  O        O    |     
+ |                  |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ |          X       |   |                  |    
+ |          X  X    |   |                  |     
+ |          X  X    |   |    O             |     
+ |       X  X  X    |   | X  O  X          |     On roll
+ | O     X  X  X    |   | X  O  X          |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 129, X 117
+
+* lasse doubles
+
+
+Cube analysis
+0-ply cubeless equity +0.524 (Money: +0.509)
+  0.749 0.020 0.000 - 0.251 0.010 0.000
+Cubeful equities:
+1. Double, pass        +1.000
+2. Double, take        +1.186  (+0.186)
+3. No double           +0.843  (-0.157)
+Proper cube action: Double, pass
+Move number 21:  lasse doubles to 2
+
+ GNU Backgammon  Position ID: pr2BgAOYed8AAA
+                 Match ID   : cBFgAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: peterstone
+ |                O |   | O  O  O     O    |     0 points
+ |                O |   | O  O        O    |     Cube offered at 2
+ |                  |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     
+ |          X       |   |                  |    
+ |          X  X    |   |                  |     
+ |          X  X    |   |    O             |     
+ |       X  X  X    |   | X  O  X          |     
+ | O     X  X  X    |   | X  O  X          |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 129, X 117
+
+* peterstone accepts
+
+Alert: wrong take (-0.186)!
+ [very bad]
+Cube analysis
+0-ply cubeless equity -0.524 (Money: -0.509)
+  0.251 0.010 0.000 - 0.749 0.020 0.000
+Cubeful equities:
+1. Double, pass        -1.000
+2. Double, take        -1.186  (-0.186)
+3. No double           -0.843  (+0.157)
+Proper cube action: Double, pass
+Move number 22:  lasse to play 54
+
+ GNU Backgammon  Position ID: pr2BgAOYed8AAA
+                 Match ID   : QYlyAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: peterstone (Cube: 2)
+ |                O |   | O  O  O     O    |     0 points
+ |                O |   | O  O        O    |     
+ |                  |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match
+ |          X       |   |                  |    
+ |          X  X    |   |                  |     
+ |          X  X    |   |    O             |     
+ |       X  X  X    |   | X  O  X          |     Rolled 54
+ | O     X  X  X    |   | X  O  X          |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 129, X 117
+
+* lasse moves 9/4 8/4
+
+Rolled 54:
+*    1. Cubeful 0-ply    9/4 8/4                      Eq.: +0.187
+       0.725 0.021 0.000 - 0.275 0.013 0.000
+     2. Cubeful 0-ply    8/4 8/3                      Eq.: +0.173 (-0.014)
+       0.720 0.021 0.000 - 0.280 0.015 0.000
+     3. Cubeful 0-ply    6/2 6/1                      Eq.: +0.037 (-0.149)
+       0.674 0.020 0.000 - 0.326 0.028 0.000
+     4. Cubeful 0-ply    10/6 9/4                     Eq.: -0.147 (-0.333)
+       0.612 0.035 0.000 - 0.388 0.046 0.000
+     5. Cubeful 0-ply    10/6 8/3                     Eq.: -0.153 (-0.340)
+       0.609 0.034 0.001 - 0.391 0.048 0.000
+
+
+Move number 23:  peterstone to play 66
+
+ GNU Backgammon  Position ID: eObeAACmvYGAAw
+                 Match ID   : AQF7AAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: peterstone (Cube: 2)
+ |                O |   | O  O  O     O    |     0 points
+ |                O |   | O  O        O    |     Rolled 66
+ |                  |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |          X       |   |       X          |     
+ |          X  X    |   |    O  X          |     
+ |       X  X  X    |   | X  O  X          |     
+ | O     X  X  X    |   | X  O  X          |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 129, X 108
+
+* peterstone moves 20/8 13/1
+Alert: missed double (-0.080)!
+ [bad]
+Cube analysis
+0-ply cubeless equity -0.437 (Money: -0.457)
+  0.275 0.013 0.000 - 0.725 0.021 0.000
+Cubeful equities:
+1. Double, take        -0.187
+2. Double, pass        +1.000  (+1.187)
+3. No double           -0.267  (-0.080)
+Proper cube action: Redouble, take
+Alert: very bad move ( -0.153)
+
+Rolled 66:
+     1. Cubeful 0-ply    20/8 20/14(2)                Eq.: +0.260
+       0.475 0.000 0.000 - 0.525 0.000 0.000
+     2. Cubeful 0-ply    20/14(3) 13/7                Eq.: +0.216 (-0.044)
+       0.458 0.000 0.000 - 0.542 0.000 0.000
+     3. Cubeful 0-ply    20/14(3) 7/1                 Eq.: +0.179 (-0.081)
+       0.444 0.000 0.000 - 0.556 0.000 0.000
+*    4. Cubeful 0-ply    20/8 13/1                    Eq.: +0.107 (-0.153)
+       0.416 0.016 0.000 - 0.584 0.014 0.000
+     5. Cubeful 0-ply    20/8 7/1(2)                  Eq.: +0.098 (-0.162)
+       0.413 0.015 0.000 - 0.587 0.016 0.000
+
+
+Move number 24:  lasse to play 61
+
+ GNU Backgammon  Position ID: TXsLAAN45t4AAA
+                 Match ID   : QQlnAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: peterstone (Cube: 2)
+ |             O  O |   | O  O  O     O  O |     0 points
+ |                O |   | O  O        O    |     
+ |                  |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |          X       |   |       X          |     
+ |          X  X    |   |       X          |     
+ |       X  X  X    |   | X  O  X          |     Rolled 61
+ |       X  X  X    |   | X  O  X          |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 105, X 108
+
+* lasse moves 9/3 4/3
+
+Rolled 61:
+*    1. Cubeful 0-ply    9/3 4/3                      Eq.: -0.156
+       0.609 0.014 0.000 - 0.391 0.013 0.000
+     2. Cubeful 0-ply    9/2                          Eq.: -0.174 (-0.019)
+       0.602 0.016 0.000 - 0.398 0.015 0.000
+     3. Cubeful 0-ply    9/8 9/3                      Eq.: -0.183 (-0.027)
+       0.599 0.015 0.000 - 0.401 0.016 0.000
+     4. Cubeful 0-ply    8/2 4/3                      Eq.: -0.198 (-0.042)
+       0.594 0.017 0.000 - 0.406 0.016 0.000
+     5. Cubeful 0-ply    8/1                          Eq.: -0.226 (-0.070)
+       0.585 0.017 0.000 - 0.415 0.019 0.000
+
+
+Move number 25:  peterstone to play 64
+
+ GNU Backgammon  Position ID: 7MzdAABNewsAAw
+                 Match ID   : AQFzAAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: peterstone (Cube: 2)
+ |             O  O |   | O  O  O     O  O |     0 points
+ |                O |   | O  O        O    |     Rolled 64
+ |                  |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |          X  X    |   |       X          |     
+ |       X  X  X    |   | X  O  X  X       |     
+ |       X  X  X    |   | X  O  X  X       |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 105, X 101
+
+* peterstone moves 8/4 7/1
+Alert: missed double (-0.115)!
+ [bad]
+Cube analysis
+0-ply cubeless equity -0.205 (Money: -0.219)
+  0.391 0.013 0.000 - 0.609 0.014 0.000
+Cubeful equities:
+1. Double, take        +0.156
+2. Double, pass        +1.000  (+0.844)
+3. No double           +0.040  (-0.115)
+Proper cube action: Redouble, take
+
+Rolled 64:
+     1. Cubeful 0-ply    7/3 7/1                      Eq.: +0.088
+       0.409 0.014 0.000 - 0.591 0.015 0.000
+*    2. Cubeful 0-ply    8/4 7/1                      Eq.: +0.071 (-0.017)
+       0.403 0.013 0.000 - 0.597 0.014 0.000
+     3. Cubeful 0-ply    8/2 7/3                      Eq.: +0.065 (-0.024)
+       0.400 0.015 0.000 - 0.600 0.020 0.000
+     4. Cubeful 0-ply    7/1 6/2                      Eq.: +0.054 (-0.034)
+       0.397 0.013 0.000 - 0.603 0.018 0.000
+     5. Cubeful 0-ply    7/1 5/1                      Eq.: +0.033 (-0.055)
+       0.388 0.013 0.000 - 0.612 0.022 0.000
+
+
+Move number 26:  lasse to play 42
+
+ GNU Backgammon  Position ID: m+0FAAPszN0AAA
+                 Match ID   : QQlqAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: peterstone (Cube: 2)
+ |                O |   | O  O  O     O  O |     0 points
+ |                  |   | O  O  O     O  O |     
+ |                  |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |          X  X    |   |       X          |     
+ |       X  X  X    |   | X  O  X  X       |     Rolled 42
+ |       X  X  X    |   | X  O  X  X       |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 95, X 101
+
+* lasse moves 9/3
+
+Rolled 42:
+*    1. Cubeful 0-ply    9/3                          Eq.: -0.190
+       0.597 0.018 0.000 - 0.403 0.017 0.000
+     2. Cubeful 0-ply    8/2                          Eq.: -0.193 (-0.003)
+       0.596 0.020 0.000 - 0.404 0.019 0.000
+     3. Cubeful 0-ply    8/4 3/1                      Eq.: -0.276 (-0.086)
+       0.568 0.018 0.000 - 0.432 0.024 0.000
+     4. Cubeful 0-ply    10/8 10/6                    Eq.: -0.338 (-0.148)
+       0.547 0.016 0.000 - 0.453 0.011 0.000
+     5. Cubeful 0-ply    6/4 6/2                      Eq.: -0.378 (-0.188)
+       0.533 0.016 0.000 - 0.467 0.030 0.000
+
+
+Move number 27:  peterstone to play 52
+
+ GNU Backgammon  Position ID: 3JnbAACb7QUAAw
+                 Match ID   : AYFqAAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: peterstone (Cube: 2)
+ |                O |   | O  O  O     O  O |     0 points
+ |                  |   | O  O  O     O  O |     Rolled 52
+ |                  |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |             X    |   |       X  X       |     
+ |       X  X  X    |   | X  O  X  X       |     
+ |       X  X  X    |   | X  O  X  X       |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 95, X 95
+
+* peterstone moves 7/2 6/4
+Alert: missed double (-0.118)!
+ [bad]
+Cube analysis
+0-ply cubeless equity -0.178 (Money: -0.195)
+  0.403 0.017 0.000 - 0.597 0.018 0.000
+Cubeful equities:
+1. Double, take        +0.190
+2. Double, pass        +1.000  (+0.810)
+3. No double           +0.072  (-0.118)
+Proper cube action: Redouble, take
+
+Rolled 52:
+*    1. Cubeful 0-ply    7/2 6/4                      Eq.: +0.090
+       0.410 0.014 0.000 - 0.590 0.017 0.000
+     2. Cubeful 0-ply    6/4 6/1                      Eq.: +0.090 (-0.000)
+       0.410 0.012 0.000 - 0.590 0.014 0.000
+     3. Cubeful 0-ply    6/1 5/3                      Eq.: +0.070 (-0.020)
+       0.403 0.013 0.000 - 0.597 0.016 0.000
+     4. Cubeful 0-ply    7/5 6/1                      Eq.: +0.066 (-0.024)
+       0.401 0.013 0.000 - 0.599 0.015 0.000
+     5. Cubeful 0-ply    7/2 5/3                      Eq.: +0.063 (-0.027)
+       0.400 0.014 0.000 - 0.600 0.019 0.000
+
+
+Move number 28:  lasse to play 61
+
+ GNU Backgammon  Position ID: O7cDAAPcmdsAAA
+                 Match ID   : QQlnAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: peterstone (Cube: 2)
+ |                  |   | O  O  O     O  O |     0 points
+ |                  |   | O  O  O     O  O |     
+ |                  |   | O     O     O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |             X    |   |       X  X       |     
+ |       X  X  X    |   | X  O  X  X       |     Rolled 61
+ |       X  X  X    |   | X  O  X  X       |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 88, X 95
+
+* lasse moves 8/2 3/2
+
+Rolled 61:
+*    1. Cubeful 0-ply    8/2 3/2                      Eq.: -0.086
+       0.632 0.023 0.000 - 0.368 0.014 0.000
+     2. Cubeful 0-ply    8/1                          Eq.: -0.161 (-0.075)
+       0.607 0.022 0.000 - 0.393 0.017 0.000
+     3. Cubeful 0-ply    8/2 4/3                      Eq.: -0.220 (-0.133)
+       0.587 0.019 0.000 - 0.413 0.019 0.000
+     4. Cubeful 0-ply    9/8 9/3                      Eq.: -0.293 (-0.207)
+       0.562 0.015 0.000 - 0.438 0.014 0.000
+     5. Cubeful 0-ply    10/9 10/4                    Eq.: -0.346 (-0.259)
+       0.544 0.016 0.000 - 0.456 0.010 0.000
+
+
+Move number 29:  peterstone to play 64
+
+ GNU Backgammon  Position ID: tjPbAAA7twMAAw
+                 Match ID   : AQFzAAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: peterstone (Cube: 2)
+ |                  |   | O  O  O     O  O |     0 points
+ |                  |   | O  O  O     O  O |     Rolled 64
+ |                  |   | O     O     O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |       X          |     
+ |       X  X  X    |   | X  O  X  X  X    |     
+ |       X  X  X    |   | X  O  X  X  X    |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 88, X 88
+
+* peterstone moves 20/10
+Alert: missed double (-0.108)!
+ [bad]
+Cube analysis
+0-ply cubeless equity -0.251 (Money: -0.273)
+  0.368 0.014 0.000 - 0.632 0.023 0.000
+Cubeful equities:
+1. Double, take        +0.086
+2. Double, pass        +1.000  (+0.914)
+3. No double           -0.022  (-0.108)
+Proper cube action: Redouble, take
+
+Rolled 64:
+*    1. Cubeful 0-ply    20/10                        Eq.: -0.115
+       0.331 0.027 0.001 - 0.669 0.031 0.002
+     2. Cubeful 0-ply    20/14 6/2                    Eq.: -0.200 (-0.085)
+       0.299 0.024 0.001 - 0.701 0.061 0.003
+     3. Cubeful 0-ply    20/14 5/1                    Eq.: -0.299 (-0.184)
+       0.262 0.025 0.001 - 0.738 0.088 0.004
+
+
+Move number 30:  lasse to play 55
+
+ GNU Backgammon  Position ID: O7dDAAK2M9sAAA
+                 Match ID   : QYl2AAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: peterstone (Cube: 2)
+ |       O          |   | O  O  O     O  O |     0 points
+ |                  |   | O  O  O     O  O |     
+ |                  |   | O     O     O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |       X          |     
+ |       X  X  X    |   | X     X  X  X    |     Rolled 55
+ |       X  X  X    |   | X  O  X  X  X    |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 78, X 88
+
+* lasse moves 10/5*(2) 9/4 8/3
+
+Rolled 55:
+*    1. Cubeful 0-ply    10/5*(2) 9/4 8/3             Eq.: +0.719
+       0.905 0.042 0.001 - 0.095 0.005 0.000
+     2. Cubeful 0-ply    10/5*(2) 9/4(2)              Eq.: +0.710 (-0.009)
+       0.902 0.036 0.001 - 0.098 0.003 0.000
+     3. Cubeful 0-ply    10/5*(2) 8/3(2)              Eq.: +0.653 (-0.066)
+       0.882 0.037 0.001 - 0.118 0.004 0.000
+     4. Cubeful 0-ply    10/5*(2) 6/1(2)              Eq.: +0.510 (-0.209)
+       0.834 0.026 0.000 - 0.166 0.006 0.000
+     5. Cubeful 0-ply    9/4(2) 8/3(2)                Eq.: -0.155 (-0.874)
+       0.609 0.003 0.000 - 0.391 0.003 0.000
+
+
+Move number 31:  peterstone to play 21
+
+ GNU Backgammon  Position ID: dm9TAAA7t0MAQA
+                 Match ID   : AQFlAAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: peterstone (Cube: 2)
+ |       O          | O | O  O  O     O  O |     0 points
+ |                  |   | O  O  O     O  O |     Rolled 21
+ |                  |   | O     O     O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   |       X          |     
+ |                  |   |       X  X       |     
+ |                  |   | X  X  X  X  X    |     
+ |          X  X    |   | X  X  X  X  X    |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 83, X 68
+
+* peterstone moves bar/24 10/8
+Alert: missed double (-0.027)!
+
+Cube analysis
+0-ply cubeless equity -0.805 (Money: -0.847)
+  0.095 0.005 0.000 - 0.905 0.042 0.001
+Cubeful equities:
+1. Double, take        -0.719
+2. Double, pass        +1.000  (+1.719)
+3. No double           -0.746  (-0.027)
+Proper cube action: Redouble, take
+
+Rolled 21:
+*    1. Cubeful 0-ply    bar/24 10/8                  Eq.: -0.702
+       0.112 0.003 0.000 - 0.888 0.027 0.001
+     2. Cubeful 0-ply    bar/24 6/4                   Eq.: -0.704 (-0.003)
+       0.111 0.003 0.000 - 0.889 0.037 0.002
+     3. Cubeful 0-ply    bar/24 4/2                   Eq.: -0.721 (-0.020)
+       0.105 0.003 0.000 - 0.895 0.035 0.002
+     4. Cubeful 0-ply    bar/24 5/3                   Eq.: -0.727 (-0.025)
+       0.103 0.003 0.000 - 0.897 0.045 0.002
+
+
+Move number 32:  lasse to play 41
+
+ GNU Backgammon  Position ID: O7cTACB2b1MAAA
+                 Match ID   : QQlmAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: peterstone (Cube: 2)
+ |             O    |   | O  O  O     O  O |     0 points
+ |                  |   | O  O  O     O  O |     
+ |                  |   | O     O     O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   |       X          |     
+ |                  |   |       X  X       |     
+ |                  |   | X  X  X  X  X    |     Rolled 41
+ |          X  X    |   | X  X  X  X  X  O |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 80, X 68
+
+* lasse moves 9/5 4/3
+
+Rolled 41:
+*    1. Cubeful 0-ply    9/5 4/3                      Eq.: +0.529
+       0.841 0.017 0.001 - 0.159 0.002 0.000
+     2. Cubeful 0-ply    9/5 3/2                      Eq.: +0.507 (-0.022)
+       0.833 0.017 0.000 - 0.167 0.002 0.000
+     3. Cubeful 0-ply    8/3                          Eq.: +0.477 (-0.052)
+       0.823 0.014 0.001 - 0.177 0.003 0.000
+     4. Cubeful 0-ply    8/4 3/2                      Eq.: +0.448 (-0.081)
+       0.813 0.014 0.000 - 0.187 0.003 0.000
+     5. Cubeful 0-ply    9/4                          Eq.: +0.442 (-0.087)
+       0.811 0.013 0.000 - 0.189 0.002 0.000
+
+
+Move number 33:  peterstone to play 32
+
+ GNU Backgammon  Position ID: 9u4mAAA7txMAIA
+                 Match ID   : AYFpAAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: peterstone (Cube: 2)
+ |             O    |   | O  O  O     O  O |     0 points
+ |                  |   | O  O  O     O  O |     Rolled 32
+ |                  |   | O     O     O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   |          X       |     
+ |                  |   |    X  X  X       |     
+ |                  |   | X  X  X  X  X    |     
+ |             X    |   | X  X  X  X  X  O |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 80, X 63
+
+* peterstone moves 8/3
+Alert: missed double (-0.048)!
+ [doubtful]
+Cube analysis
+0-ply cubeless equity -0.679 (Money: -0.696)
+  0.159 0.002 0.000 - 0.841 0.017 0.001
+Cubeful equities:
+1. Double, take        -0.529
+2. Double, pass        +1.000  (+1.529)
+3. No double           -0.577  (-0.048)
+Proper cube action: Redouble, take
+
+Rolled 32:
+*    1. Cubeful 0-ply    8/3                          Eq.: -0.747
+       0.095 0.002 0.000 - 0.905 0.020 0.001
+     2. Cubeful 0-ply    6/3 5/3                      Eq.: -0.754 (-0.007)
+       0.093 0.002 0.000 - 0.907 0.030 0.001
+     3. Cubeful 0-ply    8/5 6/4                      Eq.: -0.756 (-0.010)
+       0.092 0.001 0.000 - 0.908 0.021 0.001
+     4. Cubeful 0-ply    6/1                          Eq.: -0.761 (-0.014)
+       0.090 0.001 0.000 - 0.910 0.032 0.001
+     5. Cubeful 0-ply    6/3 4/2                      Eq.: -0.762 (-0.015)
+       0.090 0.001 0.000 - 0.910 0.033 0.001
+
+
+Move number 34:  lasse to play 42
+
+ GNU Backgammon  Position ID: u24HACD27iYAAA
+                 Match ID   : QQlqAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: peterstone (Cube: 2)
+ |                  |   | O  O  O  O  O  O |     0 points
+ |                  |   | O  O  O     O  O |     
+ |                  |   | O     O     O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   |          X       |     
+ |                  |   |    X  X  X       |     
+ |                  |   | X  X  X  X  X    |     Rolled 42
+ |             X    |   | X  X  X  X  X  O |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 75, X 63
+
+* lasse moves 5/1* 3/1
+
+Rolled 42:
+*    1. Cubeful 0-ply    5/1* 3/1                     Eq.: +0.870
+       0.956 0.030 0.000 - 0.044 0.001 0.000
+     2. Cubeful 0-ply    8/6 4/off                    Eq.: +0.671 (-0.198)
+       0.889 0.012 0.000 - 0.111 0.000 0.000
+     3. Cubeful 0-ply    8/2                          Eq.: +0.663 (-0.207)
+       0.886 0.016 0.000 - 0.114 0.000 0.000
+     4. Cubeful 0-ply    8/4 5/3                      Eq.: +0.578 (-0.292)
+       0.857 0.011 0.000 - 0.143 0.000 0.000
+     5. Cubeful 0-ply    8/4 3/1*                     Eq.: +0.466 (-0.404)
+       0.819 0.041 0.001 - 0.181 0.012 0.000
+
+
+Move number 35:  peterstone to play 63
+
+ GNU Backgammon  Position ID: 290mAAC7bgcAQA
+                 Match ID   : AQFvAAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: peterstone (Cube: 2)
+ |                  | O | O  O  O  O  O  O |     0 points
+ |                  |   | O  O  O     O  O |     Rolled 63
+ |                  |   | O     O     O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |       X  X       |     
+ |                  |   | X  X  X  X  X  X |     
+ |             X    |   | X  X  X  X  X  X |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 76, X 57
+
+* peterstone cannot move
+Alert: missed double (-0.013)!
+
+Cube analysis
+0-ply cubeless equity -0.911 (Money: -0.941)
+  0.044 0.001 0.000 - 0.956 0.030 0.000
+Cubeful equities:
+1. Double, take        -0.870
+2. Double, pass        +1.000  (+1.870)
+3. No double           -0.883  (-0.013)
+Proper cube action: Redouble, take
+
+Rolled 63:
+*    Cannot move
+
+
+Move number 36:  lasse to play 55
+
+ GNU Backgammon  Position ID: u24HAEDb3SYAAA
+                 Match ID   : QYl2AAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: peterstone (Cube: 2)
+ |                  | O | O  O  O  O  O  O |     0 points
+ |                  |   | O  O  O     O  O |     
+ |                  |   | O     O     O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |       X  X       |     
+ |                  |   | X  X  X  X  X  X |     Rolled 55
+ |             X    |   | X  X  X  X  X  X |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 76, X 57
+
+* lasse moves 8/3 6/1(2) 5/off
+
+Rolled 55:
+*    1. Cubeful 0-ply    8/3 6/1(2) 5/off             Eq.: +0.373
+       0.787 0.018 0.000 - 0.213 0.000 0.000
+     2. Cubeful 0-ply    8/3 6/1 5/off(2)             Eq.: +0.311 (-0.062)
+       0.766 0.025 0.000 - 0.234 0.000 0.000
+
+
+Move number 37:  peterstone to play 32
+
+ GNU Backgammon  Position ID: b+8CAIBdtwMAIA
+                 Match ID   : AYFpAAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: peterstone (Cube: 2)
+ |                  | O | O  O  O  O  O  O |     0 points
+ |                  |   | O  O  O     O  O |     Rolled 32
+ |                  |   | O     O     O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   |          X     X |     
+ |                  |   |       X  X     X |     
+ |                  |   |       X  X  X  X |     
+ |                  |   |    X  X  X  X  X | X   1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 76, X 37
+
+* peterstone cannot move
+Alert: missed double (-0.065)!
+ [bad]
+Cube analysis
+0-ply cubeless equity -0.575 (Money: -0.593)
+  0.213 0.000 0.000 - 0.787 0.018 0.000
+Cubeful equities:
+1. Double, take        -0.373
+2. Double, pass        +1.000  (+1.373)
+3. No double           -0.437  (-0.065)
+Proper cube action: Redouble, take
+
+Rolled 32:
+*    Cannot move
+
+
+Move number 38:  lasse to play 61
+
+ GNU Backgammon  Position ID: u24HAEBv7wIAAA
+                 Match ID   : QQlnAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: peterstone (Cube: 2)
+ |                  | O | O  O  O  O  O  O |     0 points
+ |                  |   | O  O  O     O  O |     
+ |                  |   | O     O     O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   |          X     X |     
+ |                  |   |       X  X     X |     
+ |                  |   |       X  X  X  X |     Rolled 61
+ |                  |   |    X  X  X  X  X | X   1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 76, X 37
+
+* lasse moves 5/off 4/3
+
+Rolled 61:
+     1. Cubeful 0-ply    5/off 1/off                  Eq.: +0.943
+       0.981 0.028 0.000 - 0.019 0.000 0.000
+     2. Cubeful 0-ply    5/off                        Eq.: +0.922 (-0.020)
+       0.974 0.017 0.000 - 0.026 0.000 0.000
+     3. Cubeful 0-ply    5/off 3/2                    Eq.: +0.921 (-0.022)
+       0.973 0.020 0.000 - 0.027 0.000 0.000
+*    4. Cubeful 0-ply    5/off 4/3                    Eq.: +0.918 (-0.025)
+       0.972 0.016 0.000 - 0.028 0.000 0.000
+     5. Cubeful 0-ply    5/off 2/1                    Eq.: +0.339 (-0.604)
+       0.776 0.015 0.000 - 0.224 0.000 0.000
+
+
+Move number 39:  peterstone to play 41
+
+ GNU Backgammon  Position ID: b98AAMCu2wEAEA
+                 Match ID   : AQFmAAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: peterstone (Cube: 2)
+ |                  | O | O  O  O  O  O  O |     0 points
+ |                  |   | O  O  O     O  O |     Rolled 41
+ |                  |   | O     O     O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match
+ |                  |   |          X       |    
+ |                  |   |          X     X |     
+ |                  |   |          X     X |     
+ |                  |   |       X  X  X  X | X   
+ |                  |   |       X  X  X  X | X   1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 76, X 31
+
+* peterstone cannot move
+Alert: missed double (-0.008)!
+
+Cube analysis
+0-ply cubeless equity -0.945 (Money: -0.960)
+  0.028 0.000 0.000 - 0.972 0.016 0.000
+Cubeful equities:
+1. Double, take        -0.918
+2. Double, pass        +1.000  (+1.918)
+3. No double           -0.927  (-0.008)
+Proper cube action: Redouble, take
+
+Rolled 41:
+*    Cannot move
+
+
+Move number 40:  lasse to play 42
+
+ GNU Backgammon  Position ID: u24HAEBv3wAAAA
+                 Match ID   : QQlqAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: peterstone (Cube: 2)
+ |                  | O | O  O  O  O  O  O |     0 points
+ |                  |   | O  O  O     O  O |     
+ |                  |   | O     O     O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match
+ |                  |   |          X       |    
+ |                  |   |          X     X |     
+ |                  |   |          X     X |     
+ |                  |   |       X  X  X  X | X   Rolled 42
+ |                  |   |       X  X  X  X | X   1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 76, X 31
+
+* lasse moves 4/2 4/off
+
+Rolled 42:
+*    1. Cubeful 0-ply    4/2 4/off                    Eq.: +0.959
+       0.986 0.015 0.000 - 0.014 0.000 0.000
+     2. Cubeful 0-ply    4/off 3/1                    Eq.: +0.370 (-0.589)
+       0.787 0.023 0.000 - 0.213 0.000 0.000
+     3. Cubeful 0-ply    4/off 2/off                  Eq.: -0.256 (-1.216)
+       0.575 0.023 0.000 - 0.425 0.000 0.000
+
+
+Move number 41:  peterstone to play 53
+
+ GNU Backgammon  Position ID: 7z4AAGDX7QAACA
+                 Match ID   : AYFuAAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: peterstone (Cube: 2)
+ |                  | O | O  O  O  O  O  O |     0 points
+ |                  |   | O  O  O     O  O |     Rolled 53
+ |                  |   | O     O     O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match
+ |                  |   |          X       |    
+ |                  |   |          X     X |     
+ |                  |   |          X  X  X | X   
+ |                  |   |          X  X  X | X   
+ |                  |   |          X  X  X | X   1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 76, X 25
+
+* peterstone moves bar/17
+Alert: missed double (-0.004)!
+
+Cube analysis
+0-ply cubeless equity -0.972 (Money: -0.987)
+  0.014 0.000 0.000 - 0.986 0.015 0.000
+Cubeful equities:
+1. Double, take        -0.959
+2. Double, pass        +1.000  (+1.959)
+3. No double           -0.964  (-0.004)
+Proper cube action: Redouble, take
+
+Rolled 53:
+*    1. Cubeful 0-ply    bar/17                       Eq.: -0.999
+       0.000 0.000 0.000 - 1.000 0.002 0.000
+     2. Cubeful 0-ply    bar/20 6/3                   Eq.: -0.999 (-0.000)
+       0.000 0.000 0.000 - 1.000 0.007 0.000
+     3. Cubeful 0-ply    bar/20 5/2                   Eq.: -0.999 (-0.001)
+       0.000 0.000 0.000 - 1.000 0.007 0.000
+     4. Cubeful 0-ply    bar/20 4/1                   Eq.: -0.999 (-0.001)
+       0.000 0.000 0.000 - 1.000 0.007 0.000
+
+
+Move number 42:  lasse to play 32
+
+ GNU Backgammon  Position ID: u24HQADvPgAAAA
+                 Match ID   : QYlpAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: peterstone (Cube: 2)
+ |                  |   | O  O  O  O  O  O |     0 points
+ |                  |   | O  O  O     O  O |     
+ |                  |   | O     O     O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match
+ |                  |   |          X       |    
+ |                  |   |          X     X |     
+ |                  |   |          X  X  X | X   
+ |                  |   |          X  X  X | X   Rolled 32
+ |             O    |   |          X  X  X | X   1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 68, X 25
+
+* lasse moves 3/off 2/off
+
+Rolled 32:
+*    1. Cubeful 0-ply    3/off 2/off                  Eq.: +0.999
+       1.000 0.000 0.000 - 0.000 0.000 0.000
+     2. Cubeful 0-ply    3/1 3/off                    Eq.: +0.995 (-0.004)
+       0.998 0.000 0.000 - 0.002 0.000 0.000
+
+
+Move number 43:  peterstone to play 54
+
+ GNU Backgammon  Position ID: bw8AANh1OwACAA
+                 Match ID   : AYFyAAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: peterstone (Cube: 2)
+ |                  |   | O  O  O  O  O  O |     0 points
+ |                  |   | O  O  O     O  O |     Rolled 54
+ |                  |   | O     O     O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match
+ |                  |   |                  | X  
+ |                  |   |          X     X | X   
+ |                  |   |          X     X | X   
+ |                  |   |          X  X  X | X   
+ |             O    |   |          X  X  X | X   1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 68, X 20
+
+* peterstone moves 17/8
+Alert: missed double (-0.000)!
+
+Cube analysis
+0-ply cubeless equity -0.999 (Money: -1.000)
+  0.000 0.000 0.000 - 1.000 0.000 0.000
+Cubeful equities:
+1. Double, take        -0.999
+2. Double, pass        +1.000  (+1.999)
+3. No double           -0.999  (-0.000)
+Proper cube action: Redouble, take
+
+Rolled 54:
+*    1. Cubeful 0-ply    17/8                         Eq.: -0.999
+       0.000 0.000 0.000 - 1.000 0.000 0.000
+     2. Cubeful 0-ply    17/12 6/2                    Eq.: -1.000 (-0.000)
+       0.000 0.000 0.000 - 1.000 0.001 0.000
+     3. Cubeful 0-ply    17/12 5/1                    Eq.: -1.000 (-0.000)
+       0.000 0.000 0.000 - 1.000 0.001 0.000
+     4. Cubeful 0-ply    17/13 6/1                    Eq.: -1.000 (-0.000)
+       0.000 0.000 0.000 - 1.000 0.002 0.000
+     5. Cubeful 0-ply    6/2 6/1                      Eq.: -1.000 (-0.000)
+       0.000 0.000 0.000 - 1.000 0.017 0.000
+
+
+Move number 44:  lasse to play 64
+
+ GNU Backgammon  Position ID: u24nAABvDwAAAA
+                 Match ID   : QQlzAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: peterstone (Cube: 2)
+ |             O    |   | O  O  O  O  O  O |     0 points
+ |                  |   | O  O  O     O  O |     
+ |                  |   | O     O     O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match
+ |                  |   |                  | X  
+ |                  |   |          X     X | X   
+ |                  |   |          X     X | X   
+ |                  |   |          X  X  X | X   Rolled 64
+ |                  |   |          X  X  X | X   1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 59, X 20
+
+* lasse moves 3/off(2)
+
+Rolled 64:
+*    1. Cubeful 0-ply    3/off(2)                     Eq.: +1.000
+       1.000 0.000 0.000 - 0.000 0.000 0.000
+
+
+Move number 45:  peterstone to play 54
+
+ GNU Backgammon  Position ID: bwMAAHbdTgAAAA
+                 Match ID   : AYFyAAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: peterstone (Cube: 2)
+ |             O    |   | O  O  O  O  O  O |     0 points
+ |                  |   | O  O  O     O  O |     Rolled 54
+ |                  |   | O     O     O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match
+ |                  |   |                  | X  
+ |                  |   |                X | X   
+ |                  |   |                X | X   
+ |                  |   |          X  X  X | XX  
+ |                  |   |          X  X  X | XX  1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 59, X 14
+
+* peterstone moves 8/3 4/off
+Alert: missed double (-0.000)!
+
+Cube analysis
+0-ply cubeless equity -1.000 (Money: -1.000)
+  0.000 0.000 0.000 - 1.000 0.000 0.000
+Cubeful equities:
+1. Double, take        -1.000
+2. Double, pass        +1.000  (+2.000)
+3. No double           -1.000  (-0.000)
+Proper cube action: Redouble, take
+
+Rolled 54:
+     1. Cubeful 0-ply    6/1 5/1                      Eq.: -1.000
+       0.000 0.000 0.000 - 1.000 0.001 0.000
+     2. Cubeful 0-ply    6/2 6/1                      Eq.: -1.000 (-0.000)
+       0.000 0.000 0.000 - 1.000 0.001 0.000
+     3. Cubeful 0-ply    8/4 5/off                    Eq.: -1.000 (-0.000)
+       0.000 0.000 0.000 - 1.000 0.000 0.000
+*    4. Cubeful 0-ply    8/3 4/off                    Eq.: -1.000 (-0.000)
+       0.000 0.000 0.000 - 1.000 0.000 0.000
+     5. Cubeful 0-ply    8/3 6/2                      Eq.: -1.000 (-0.000)
+       0.000 0.000 0.000 - 1.000 0.000 0.000
+
+
+Move number 46:  lasse to play 41
+
+ GNU Backgammon  Position ID: u20HAIC3AQAAAA
+                 Match ID   : QQlmAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: peterstone (Cube: 2)
+ |                  |   | O  O  O  O  O  O | O   0 points
+ |                  |   | O  O  O  O  O  O |     
+ |                  |   | O           O    |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match
+ |                  |   |                  | X  
+ |                  |   |                X | X   
+ |                  |   |                X | X   
+ |                  |   |          X  X  X | XX  Rolled 41
+ |                  |   |          X  X  X | XX  1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 50, X 14
+
+* lasse moves 3/off 1/off
+
+Rolled 41:
+*    1. Cubeful 0-ply    3/off 1/off                  Eq.: +1.000
+       1.000 0.000 0.000 - 0.000 0.000 0.000
+     2. Cubeful 0-ply    3/off 2/1                    Eq.: +0.998 (-0.002)
+       0.999 0.000 0.000 - 0.001 0.000 0.000
+     3. Cubeful 0-ply    3/2 3/off                    Eq.: +0.998 (-0.002)
+       0.999 0.000 0.000 - 0.001 0.000 0.000
+
+
+lasse wins 2 points
+
+Game statistics for game 2
+
+Player                                   peterstone              lasse                  
+
+Chequerplay statistics
+
+Total moves                               22                      22                    
+Unforced moves                            18                      21                    
+Unmarked moves                            19                      22                    
+Moves marked doubtful                      1                       0                    
+Moves marked bad                           1                       0                    
+Moves marked very bad                      1                       0                    
+Error total EMG (MWC)                         -0.313 ( -7.569%)       -0.042 ( -1.051%) 
+Error rate mEMG (MWC)                        -17.4   ( -0.420%)       -2.0   ( -0.050%) 
+Chequerplay rating                       Intermediate            World class            
+
+
+Cube statistics
+
+Total cube decisions                      22                      10                    
+Close or actual cube decisions            16                       4                    
+Doubles                                    0                       1                    
+Takes                                      1                       0                    
+Passes                                     0                       0                    
+Missed doubles below CP (EMG (MWC))       14 (-0.646 (-20.630%))   2 (-0.390 ( -4.886%))
+Missed doubles above CP (EMG (MWC))        0                       0                    
+Wrong doubles below DP (EMG (MWC))         0                       0                    
+Wrong doubles above TG (EMG (MWC))         0                       0                    
+Wrong takes (EMG (MWC))                    1 (-0.186 ( -2.331%))   0                    
+Wrong passes (EMG (MWC))                   0                       0                    
+Error total EMG (MWC)                         -0.832 (-22.961%)       -0.390 ( -4.886%) 
+Error rate mEMG (MWC)                        -52.0   ( -1.435%)      -97.4   ( -1.222%) 
+Cube decision rating                     Awful!                  Awful!                 
+
+
+Overall statistics
+
+Error total EMG (MWC)                         -1.146 (-30.530%)       -0.432 ( -5.938%) 
+Error rate mEMG (MWC)                        -33.7   ( -0.898%)      -17.3   ( -0.238%) 
+Snowie error rate                            -26.0   ( +0.000%)       -9.8   ( +0.000%) 
+Overall rating                           Beginner                Intermediate           
+Error based abs. FIBS rating             1712.8                  1948.1                 
+Chequerplay errors rating loss            301.3                    34.7                 
+Cube errors rating loss                    35.9                    67.2                 
+
+
+
+
+Match statistics
+
+Player                                   peterstone              lasse                  
+
+Chequerplay statistics
+
+Total moves                               31                      30                    
+Unforced moves                            27                      27                    
+Unmarked moves                            23                      29                    
+Moves marked doubtful                      2                       0                    
+Moves marked bad                           4                       1                    
+Moves marked very bad                      2                       0                    
+Error total EMG (MWC)                         -0.774 (-12.150%)       -0.127 ( -1.893%) 
+Error rate mEMG (MWC)                        -28.7   ( -0.450%)       -4.7   ( -0.070%) 
+Chequerplay rating                       Beginner                World class            
+
+
+Cube statistics
+
+Total cube decisions                      31                      19                    
+Close or actual cube decisions            18                       8                    
+Doubles                                    0                       2                    
+Takes                                      1                       0                    
+Passes                                     1                       0                    
+Missed doubles below CP (EMG (MWC))       14 (-0.646 (-20.630%))   3 (-0.433 ( -5.315%))
+Missed doubles above CP (EMG (MWC))        0                       0                    
+Wrong doubles below DP (EMG (MWC))         0                       0                    
+Wrong doubles above TG (EMG (MWC))         0                       0                    
+Wrong takes (EMG (MWC))                    1 (-0.186 ( -2.331%))   0                    
+Wrong passes (EMG (MWC))                   1 (-0.272 ( -2.708%))   0                    
+Error total EMG (MWC)                         -1.104 (-25.669%)       -0.433 ( -5.315%) 
+Error rate mEMG (MWC)                        -61.4   ( -1.426%)      -54.1   ( -0.664%) 
+Cube decision rating                     Awful!                  Awful!                 
+
+
+Overall statistics
+
+Error total EMG (MWC)                         -1.878 (-37.819%)       -0.560 ( -7.208%) 
+Error rate mEMG (MWC)                        -41.7   ( -0.840%)      -16.0   ( -0.206%) 
+Snowie error rate                            -30.8   ( +0.000%)       -9.2   ( +0.000%) 
+Overall rating                           Awful!                  Intermediate           
+Error based abs. FIBS rating             1511.6                  1931.4                 
+Chequerplay errors rating loss            496.1                    81.3                 
+Cube errors rating loss                    42.3                    37.3                 
+
+
+
+
+Output generated Tue Aug 27 14:30:00 2024
+ by GNU Backgammon 1.07.001-mingw 32-Bit 20221114 (Text Export version 1.128)
+

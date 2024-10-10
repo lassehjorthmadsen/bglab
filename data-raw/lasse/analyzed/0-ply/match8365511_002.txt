@@ -1,0 +1,282 @@
+The score (after 1 game) is: taj71 2, lasse 0 (match to 5 points)
+
+Match Information:
+Date: 31/05/2024
+Place: BackgammonGalaxy
+
+Move number 1:  lasse to play 31
+
+ GNU Backgammon  Position ID: 4HPwATDgc/ABMA
+                 Match ID   : cIilACAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: taj71
+ | X           O    |   | O              X |     2 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     Rolled 31
+ | O           X    |   | X              O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 167, X 167
+
+* lasse moves 8/5 6/5
+
+Rolled 31:
+*    1. Cubeful 0-ply    8/5 6/5                      Eq.: +0.308
+       0.551 0.174 0.013 - 0.449 0.124 0.005
+     2. Cubeful 0-ply    24/23 13/10                  Eq.: +0.069 (-0.239)
+       0.497 0.137 0.008 - 0.503 0.140 0.007
+     3. Cubeful 0-ply    13/9                         Eq.: +0.059 (-0.249)
+       0.491 0.143 0.009 - 0.509 0.143 0.008
+     4. Cubeful 0-ply    24/20                        Eq.: +0.053 (-0.255)
+       0.497 0.125 0.005 - 0.503 0.135 0.004
+     5. Cubeful 0-ply    24/23 24/21                  Eq.: +0.047 (-0.261)
+       0.496 0.123 0.005 - 0.504 0.135 0.004
+
+
+Move number 2:  taj71 to play 43
+
+ GNU Backgammon  Position ID: sGfwATDgc/ABMA
+                 Match ID   : MAGuACAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: taj71
+ | X           O    |   | O              X |     2 points
+ | X           O    |   | O              X |     Rolled 43
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ | O                |   |                  |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X  X           O |     
+ | O           X    |   | X  X           O |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 167, X 163
+
+* taj71 moves 13/10 13/9
+
+Cube analysis
+0-ply cubeless equity -0.110 (Money: -0.159)
+  0.449 0.124 0.005 - 0.551 0.174 0.013
+Cubeful equities:
+1. No double           -0.308
+2. Double, pass        +1.000  (+1.308)
+3. Double, take        -1.098  (-0.790)
+Proper cube action: No double, take (37.7%)
+Alert: bad move ( -0.079)
+
+Rolled 43:
+     1. Cubeful 0-ply    24/21 13/9                   Eq.: -0.402
+       0.427 0.107 0.005 - 0.573 0.187 0.010
+*    2. Cubeful 0-ply    13/10 13/9                   Eq.: -0.481 (-0.079)
+       0.410 0.115 0.007 - 0.590 0.194 0.015
+     3. Cubeful 0-ply    13/6                         Eq.: -0.544 (-0.143)
+       0.396 0.106 0.006 - 0.604 0.195 0.010
+     4. Cubeful 0-ply    13/9 8/5                     Eq.: -0.612 (-0.211)
+       0.397 0.104 0.006 - 0.603 0.212 0.020
+     5. Cubeful 0-ply    13/9 6/3                     Eq.: -0.615 (-0.213)
+       0.396 0.103 0.006 - 0.604 0.213 0.019
+
+
+Move number 3:  lasse to play 53
+
+ GNU Backgammon  Position ID: 4HPFATCwZ/ABMA
+                 Match ID   : cImuACAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: taj71
+ | X     O  O  O    |   | O              X |     2 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X  X           O |     Rolled 53
+ | O           X    |   | X  X           O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 160, X 163
+
+* lasse moves 24/16*
+Alert: missed double (-0.015)!
+
+Cube analysis
+0-ply cubeless equity +0.214 (Money: +0.267)
+  0.590 0.194 0.015 - 0.410 0.115 0.007
+Cubeful equities:
+1. Double, take        +0.481
+2. Double, pass        +1.000  (+0.519)
+3. No double           +0.465  (-0.015)
+Proper cube action: Double, take
+
+Rolled 53:
+*    1. Cubeful 0-ply    24/16*                       Eq.: +0.650
+       0.634 0.212 0.019 - 0.366 0.088 0.003
+     2. Cubeful 0-ply    8/3 6/3                      Eq.: +0.321 (-0.329)
+       0.546 0.192 0.016 - 0.454 0.133 0.007
+     3. Cubeful 0-ply    13/10 13/8                   Eq.: +0.310 (-0.340)
+       0.545 0.190 0.016 - 0.455 0.136 0.007
+     4. Cubeful 0-ply    24/21 13/8                   Eq.: +0.284 (-0.366)
+       0.546 0.171 0.012 - 0.454 0.131 0.004
+     5. Cubeful 0-ply    13/5                         Eq.: +0.254 (-0.396)
+       0.531 0.184 0.015 - 0.469 0.143 0.007
+
+
+Move number 4:  taj71 to play 51
+
+ GNU Backgammon  Position ID: sGfwESDgc+IAWA
+                 Match ID   : MIGmACAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: taj71
+ | X     O  X  O    | O | O              X |     2 points
+ | X           O    |   | O                |     Rolled 51
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X  X           O |     
+ | O           X    |   | X  X           O |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 176, X 155
+
+* taj71 moves bar/24 10/5
+
+Cube analysis
+0-ply cubeless equity -0.359 (Money: -0.407)
+  0.366 0.088 0.003 - 0.634 0.212 0.019
+Cubeful equities:
+1. No double           -0.650
+2. Double, pass        +1.000  (+1.650)
+3. Double, take        -1.590  (-0.940)
+Proper cube action: No double, take (36.3%)
+
+Rolled 51:
+*    1. Cubeful 0-ply    bar/24 10/5                  Eq.: -1.000
+       0.336 0.077 0.004 - 0.664 0.241 0.026
+     2. Cubeful 0-ply    bar/24 13/8                  Eq.: -1.000 (-0.000)
+       0.320 0.074 0.003 - 0.680 0.243 0.024
+     3. Cubeful 0-ply    bar/24 6/1*                  Eq.: -1.000 (-0.000)
+       0.323 0.074 0.003 - 0.677 0.265 0.032
+     4. Cubeful 0-ply    bar/24 8/3                   Eq.: -1.000 (-0.000)
+       0.314 0.070 0.003 - 0.686 0.284 0.034
+
+
+Move number 5:  lasse on roll, cube decision?
+
+ GNU Backgammon  Position ID: 0OfgADiwZ/ARIA
+                 Match ID   : cAmgACAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: taj71
+ | X        X  O    |   | O  O           X |     2 points
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ | O                |   | X              O |     
+ | O           X    |   | X  X           O |     On roll
+ | O           X    |   | X  X           O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 170, X 155
+
+* lasse doubles
+
+
+Cube analysis
+0-ply cubeless equity +0.464 (Money: +0.514)
+  0.664 0.241 0.026 - 0.336 0.077 0.004
+Cubeful equities:
+1. Double, pass        +1.000
+2. Double, take        +1.008  (+0.008)
+3. No double           +0.804  (-0.196)
+Proper cube action: Double, pass
+Move number 6:  lasse doubles to 2
+
+ GNU Backgammon  Position ID: 0OfgADiwZ/ARIA
+                 Match ID   : cBGgACAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: taj71
+ | X        X  O    |   | O  O           X |     2 points
+ | X           O    |   | O                |     Cube offered at 2
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     
+ |                  |   |                  |    
+ |                  |   | X                |     
+ | O                |   | X              O |     
+ | O           X    |   | X  X           O |     
+ | O           X    |   | X  X           O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 170, X 155
+
+* taj71 rejects
+
+
+Cube analysis
+0-ply cubeless equity -0.464 (Money: -0.514)
+  0.336 0.077 0.004 - 0.664 0.241 0.026
+Cubeful equities:
+1. Double, pass        -1.000
+2. Double, take        -1.008  (-0.008)
+3. No double           -0.804  (+0.196)
+Proper cube action: Double, pass
+lasse wins 1 point
+
+Game statistics for game 2
+
+Player                                   taj71                   lasse                  
+
+Chequerplay statistics
+
+Total moves                                2                       2                    
+Unforced moves                             2                       2                    
+Unmarked moves                             1                       2                    
+Moves marked doubtful                      0                       0                    
+Moves marked bad                           1                       0                    
+Moves marked very bad                      0                       0                    
+Error total EMG (MWC)                         -0.079 ( -0.679%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                        -39.4   ( -0.339%)       -0.0   ( -0.000%) 
+Chequerplay rating                       Awful!                  Supernatural           
+
+
+Cube statistics
+
+Total cube decisions                       3                       2                    
+Close or actual cube decisions             1                       2                    
+Doubles                                    0                       1                    
+Takes                                      0                       0                    
+Passes                                     1                       0                    
+Missed doubles below CP (EMG (MWC))        0                       1 (-0.015 ( -0.129%))
+Missed doubles above CP (EMG (MWC))        0                       0                    
+Wrong doubles below DP (EMG (MWC))         0                       0                    
+Wrong doubles above TG (EMG (MWC))         0                       0                    
+Wrong takes (EMG (MWC))                    0                       0                    
+Wrong passes (EMG (MWC))                   0                       0                    
+Error total EMG (MWC)                         -0.000 ( -0.000%)       -0.015 ( -0.129%) 
+Error rate mEMG (MWC)                         -0.0   ( -0.000%)       -7.5   ( -0.065%) 
+Cube decision rating                     Supernatural            Expert                 
+
+
+Overall statistics
+
+Error total EMG (MWC)                         -0.079 ( -0.679%)       -0.015 ( -0.129%) 
+Error rate mEMG (MWC)                        -26.3   ( -0.226%)       -3.8   ( -0.032%) 
+Snowie error rate                            -19.7   ( +0.000%)       -3.8   ( +0.000%) 
+Overall rating                           Beginner                World class            
+Error based abs. FIBS rating             1501.6                  2044.3                 
+Chequerplay errors rating loss            548.4                     0.0                 
+Cube errors rating loss                     0.0                     5.7                 
+
+
+
+
+Output generated Tue Aug 27 15:13:25 2024
+ by GNU Backgammon 1.07.001-mingw 32-Bit 20221114 (Text Export version 1.128)
+

@@ -1,0 +1,411 @@
+The score (after 0 games) is: slinky 0, lasse 0 (match to 3 points)
+
+Match Information:
+Date: 10/01/2024
+Place: BackgammonGalaxy
+
+Move number 1:  slinky to play 52
+
+ GNU Backgammon  Position ID: 4HPwATDgc/ABMA
+                 Match ID   : MIBqAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: slinky
+ | X           O    |   | O              X |     0 points
+ | X           O    |   | O              X |     Rolled 52
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+^|                  |BAR|                  |     3 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     
+ | O           X    |   | X              O |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 167, X 167
+
+* slinky moves 13/11 13/8
+
+Rolled 52:
+     1. Cubeful 2-ply    24/22 13/8                   Eq.: +0.008
+       0.501 0.135 0.005 - 0.499 0.131 0.004
+*    2. Cubeful 2-ply    13/11 13/8                   Eq.: -0.000 (-0.008)
+       0.497 0.149 0.008 - 0.503 0.141 0.007
+     3. Cubeful 2-ply    13/8 6/4                     Eq.: -0.056 (-0.063)
+       0.487 0.135 0.007 - 0.513 0.142 0.007
+     4. Cubeful 2-ply    13/6                         Eq.: -0.099 (-0.106)
+       0.476 0.136 0.007 - 0.524 0.147 0.006
+     5. Cubeful 2-ply    13/11 8/3                    Eq.: -0.161 (-0.169)
+       0.464 0.135 0.008 - 0.536 0.161 0.011
+
+
+Move number 2:  lasse to play 31
+
+ GNU Backgammon  Position ID: 4PPIATDgc/ABMA
+                 Match ID   : cIllAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: slinky
+ | X  O        O    |   | O              X |     0 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   | X                |    
+ |                  |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     Rolled 31
+ | O           X    |   | X              O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 160, X 167
+
+* lasse moves 8/5 6/5
+
+Cube analysis
+2-ply cubeless equity -0.009 (Money: -0.003)
+  0.503 0.141 0.007 - 0.497 0.149 0.008
+Cubeful equities:
+1. No double           +0.000
+2. Double, pass        +1.000  (+1.000)
+3. Double, take        -0.396  (-0.396)
+Proper cube action: No double, take (28.4%)
+
+Rolled 31:
+*    1. Cubeful 2-ply    8/5 6/5                      Eq.: +0.128
+       0.528 0.164 0.009 - 0.472 0.140 0.007
+     2. Cubeful 2-ply    13/10 6/5                    Eq.: -0.124 (-0.252)
+       0.478 0.134 0.007 - 0.522 0.168 0.013
+     3. Cubeful 2-ply    24/23 13/10                  Eq.: -0.163 (-0.291)
+       0.467 0.130 0.006 - 0.533 0.166 0.008
+     4. Cubeful 2-ply    13/9                         Eq.: -0.174 (-0.302)
+       0.463 0.133 0.006 - 0.537 0.163 0.010
+     5. Cubeful 0-ply    24/21 6/5                    Eq.: -0.193 (-0.321)
+       0.465 0.117 0.007 - 0.535 0.177 0.010
+
+
+Move number 3:  slinky to play 21
+
+ GNU Backgammon  Position ID: sGfwATDg88gBMA
+                 Match ID   : MAFlAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: slinky
+ | X  O        O    |   | O              X |     0 points
+ | X           O    |   | O              X |     Rolled 21
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ | X                |   | O                |    
+^|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X  X           O |     
+ | O           X    |   | X  X           O |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 160, X 163
+
+* slinky moves 24/23 13/11
+
+Cube analysis
+2-ply cubeless equity -0.096 (Money: -0.082)
+  0.472 0.140 0.007 - 0.528 0.164 0.009
+Cubeful equities:
+1. No double           -0.128
+2. Double, pass        +1.000  (+1.128)
+3. Double, take        -0.610  (-0.482)
+Proper cube action: No double, take (30.0%)
+
+Rolled 21:
+*    1. Cubeful 2-ply    24/23 13/11                  Eq.: -0.261
+       0.449 0.124 0.006 - 0.551 0.182 0.007
+     2. Cubeful 2-ply    24/23 24/22                  Eq.: -0.332 (-0.071)
+       0.433 0.118 0.006 - 0.567 0.184 0.009
+     3. Cubeful 2-ply    24/23 11/9                   Eq.: -0.337 (-0.076)
+       0.431 0.120 0.006 - 0.569 0.186 0.009
+     4. Cubeful 2-ply    24/22 11/10                  Eq.: -0.350 (-0.089)
+       0.428 0.116 0.005 - 0.572 0.184 0.009
+     5. Cubeful 2-ply    13/11 6/5                    Eq.: -0.358 (-0.098)
+       0.428 0.120 0.007 - 0.572 0.191 0.014
+
+
+Move number 4:  lasse to play 53
+
+ GNU Backgammon  Position ID: 4POYASiwZ/ABMA
+                 Match ID   : cIluAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: slinky
+ | X  O        O    |   | O              X |     0 points
+ | X  O        O    |   | O              X |     
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ | O           X    |   | X  X             |     Rolled 53
+ | O           X    |   | X  X        O  O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 157, X 163
+
+* lasse moves 24/21 13/8
+
+Cube analysis
+2-ply cubeless equity +0.195 (Money: +0.163)
+  0.551 0.182 0.007 - 0.449 0.124 0.006
+Cubeful equities:
+1. No double           +0.261
+2. Double, pass        +1.000  (+0.739)
+3. Double, take        +0.025  (-0.236)
+Proper cube action: No double, take (24.2%)
+
+Rolled 53:
+*    1. Cubeful 2-ply    24/21 13/8                   Eq.: +0.190
+       0.541 0.159 0.006 - 0.459 0.118 0.004
+     2. Cubeful 2-ply    13/10 13/8                   Eq.: +0.161 (-0.028)
+       0.530 0.177 0.008 - 0.470 0.131 0.007
+     3. Cubeful 2-ply    13/5                         Eq.: +0.140 (-0.050)
+       0.524 0.181 0.007 - 0.476 0.134 0.007
+     4. Cubeful 2-ply    13/10 6/1*                   Eq.: +0.135 (-0.055)
+       0.523 0.185 0.007 - 0.477 0.139 0.009
+     5. Cubeful 2-ply    24/16                        Eq.: +0.121 (-0.069)
+       0.532 0.149 0.007 - 0.468 0.142 0.005
+
+
+Move number 5:  slinky to play 61
+
+ GNU Backgammon  Position ID: sOfgASLg85gBKA
+                 Match ID   : MAFnAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: slinky
+ | X  O        O    |   | O     X        X |     0 points
+ | X  O        O    |   | O                |     Rolled 61
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |             X    |   | X                |     
+ | O           X    |   | X  X             |     
+ | O           X    |   | X  X        O  O |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 157, X 155
+
+* slinky moves 11/5 6/5
+
+Cube analysis
+2-ply cubeless equity -0.148 (Money: -0.124)
+  0.459 0.118 0.004 - 0.541 0.159 0.006
+Cubeful equities:
+1. No double           -0.190
+2. Double, pass        +1.000  (+1.190)
+3. Double, take        -0.728  (-0.538)
+Proper cube action: No double, take (31.2%)
+
+Rolled 61:
+*    1. Cubeful 2-ply    11/5 6/5                     Eq.: -0.286
+       0.438 0.119 0.005 - 0.562 0.170 0.009
+     2. Cubeful 2-ply    23/16                        Eq.: -0.431 (-0.146)
+       0.417 0.091 0.003 - 0.583 0.196 0.008
+     3. Cubeful 2-ply    24/18 23/22                  Eq.: -0.517 (-0.231)
+       0.404 0.100 0.005 - 0.596 0.237 0.009
+     4. Cubeful 2-ply    13/7 8/7                     Eq.: -0.537 (-0.252)
+       0.390 0.098 0.003 - 0.610 0.198 0.012
+     5. Cubeful 2-ply    8/1*                         Eq.: -0.538 (-0.252)
+       0.390 0.100 0.003 - 0.610 0.199 0.011
+
+
+Move number 6:  lasse to play 64
+
+ GNU Backgammon  Position ID: sOeRASiw5+ABIg
+                 Match ID   : cAlzAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: slinky
+ | X  O        O    |   | O  O  X        X |     0 points
+ | X           O    |   | O  O             |     
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |             X    |   | X                |     
+ | O           X    |   | X  X             |     Rolled 64
+ | O           X    |   | X  X        O  O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 150, X 155
+
+* lasse moves 24/14*
+
+Cube analysis
+2-ply cubeless equity +0.212 (Money: +0.179)
+  0.562 0.170 0.009 - 0.438 0.119 0.005
+Cubeful equities:
+1. No double           +0.286
+2. Double, pass        +1.000  (+0.714)
+3. Double, take        +0.074  (-0.212)
+Proper cube action: No double, take (22.9%)
+
+Rolled 64:
+*    1. Cubeful 2-ply    24/14*                       Eq.: +0.453
+       0.603 0.178 0.011 - 0.397 0.114 0.004
+     2. Cubeful 2-ply    8/2* 6/2                     Eq.: +0.321 (-0.132)
+       0.557 0.203 0.010 - 0.443 0.125 0.005
+     3. Cubeful 0-ply    21/11                        Eq.: +0.090 (-0.363)
+       0.527 0.138 0.005 - 0.473 0.144 0.005
+     4. Cubeful 0-ply    21/15 6/2*                   Eq.: -0.085 (-0.538)
+       0.490 0.140 0.008 - 0.510 0.180 0.010
+     5. Cubeful 0-ply    21/15 13/9                   Eq.: -0.109 (-0.562)
+       0.487 0.138 0.007 - 0.513 0.191 0.010
+
+
+Move number 7:  slinky to play 53
+
+ GNU Backgammon  Position ID: sOfgBQSw58EAVA
+                 Match ID   : MIFuAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: slinky
+ | X  X        O    | O | O  O  X          |     0 points
+ | X           O    |   | O  O             |     Rolled 53
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |             X    |   | X                |     
+ | O           X    |   | X  X             |     
+ | O           X    |   | X  X        O  O |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 164, X 145
+
+* slinky moves bar/22 23/18
+
+Cube analysis
+2-ply cubeless equity -0.321 (Money: -0.277)
+  0.397 0.114 0.004 - 0.603 0.178 0.011
+Cubeful equities:
+1. No double           -0.453
+2. Double, pass        +1.000  (+1.453)
+3. Double, take        -1.159  (-0.706)
+Proper cube action: No double, take (32.7%)
+
+Rolled 53:
+     1. Cubeful 2-ply    bar/22 8/3                   Eq.: -0.584
+       0.369 0.103 0.004 - 0.631 0.184 0.012
+*    2. Cubeful 2-ply    bar/22 23/18                 Eq.: -0.589 (-0.006)
+       0.374 0.099 0.005 - 0.626 0.209 0.012
+     3. Cubeful 2-ply    bar/22 6/1                   Eq.: -0.792 (-0.209)
+       0.338 0.089 0.003 - 0.662 0.195 0.012
+     4. Cubeful 0-ply    bar/22 13/8                  Eq.: -0.960 (-0.377)
+       0.321 0.077 0.004 - 0.679 0.217 0.021
+
+
+Move number 8:  lasse on roll, cube decision?
+
+ GNU Backgammon  Position ID: sOfBICSw5+AFBA
+                 Match ID   : cAlgAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: slinky
+ | X  X        O    |   | O  O  X          |     0 points
+ | X           O    |   | O  O             |     
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |             X    |   | X                |     
+ | O           X    |   | X  X             |     On roll
+ | O           X  O |   | X  X     O     O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 156, X 145
+
+* lasse doubles
+
+Alert: wrong double (-0.003)!
+
+Cube analysis
+2-ply cubeless equity +0.438 (Money: +0.369)
+  0.626 0.209 0.012 - 0.374 0.099 0.005
+Cubeful equities:
+1. No double           +0.589
+2. Double, pass        +1.000  (+0.411)
+3. Double, take        +0.586  (-0.003)
+Proper cube action: No double, take (0.8%)
+Move number 9:  lasse doubles to 2
+
+ GNU Backgammon  Position ID: sOfBICSw5+AFBA
+                 Match ID   : cBFgAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: slinky
+ | X  X        O    |   | O  O  X          |     0 points
+ | X           O    |   | O  O             |     Cube offered at 2
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |             X    |   | X                |     
+ | O           X    |   | X  X             |     
+ | O           X  O |   | X  X     O     O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 156, X 145
+
+* slinky rejects
+
+Alert: wrong pass (-0.414)!
+ [very bad]
+Cube analysis
+2-ply cubeless equity -0.438 (Money: -0.369)
+  0.374 0.099 0.005 - 0.626 0.209 0.012
+Cubeful equities:
+1. No double           -0.589
+2. Double, pass        -1.000  (-0.411)
+3. Double, take        -0.586  (+0.003)
+Proper cube action: No double, take (0.8%)
+lasse wins 1 point
+
+Game statistics for game 1
+
+Player                                   slinky                  lasse                  
+
+Chequerplay statistics
+
+Total moves                                4                       3                    
+Unforced moves                             4                       3                    
+Unmarked moves                             4                       3                    
+Moves marked doubtful                      0                       0                    
+Moves marked bad                           0                       0                    
+Moves marked very bad                      0                       0                    
+Error total EMG (MWC)                         -0.014 ( -0.134%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                         -3.4   ( -0.034%)       -0.0   ( -0.000%) 
+Chequerplay rating                       World class             Supernatural           
+
+
+Cube statistics
+
+Total cube decisions                       4                       4                    
+Close or actual cube decisions             1                       1                    
+Doubles                                    0                       1                    
+Takes                                      0                       0                    
+Passes                                     1                       0                    
+Missed doubles below CP (EMG (MWC))        0                       0                    
+Missed doubles above CP (EMG (MWC))        0                       0                    
+Wrong doubles below DP (EMG (MWC))         0                       1 (-0.003 ( -0.033%))
+Wrong doubles above TG (EMG (MWC))         0                       0                    
+Wrong takes (EMG (MWC))                    0                       0                    
+Wrong passes (EMG (MWC))                   1 (-0.414 ( -4.118%))   0                    
+Error total EMG (MWC)                         -0.414 ( -4.118%)       -0.003 ( -0.033%) 
+Error rate mEMG (MWC)                       -414.0   ( -4.118%)       -3.3   ( -0.033%) 
+Cube decision rating                     Awful!                  World class            
+
+
+Overall statistics
+
+Error total EMG (MWC)                         -0.427 ( -4.252%)       -0.003 ( -0.033%) 
+Error rate mEMG (MWC)                        -85.5   ( -0.850%)       -0.8   ( -0.008%) 
+Snowie error rate                            -61.1   ( +0.000%)       -0.5   ( +0.000%) 
+Overall rating                           Awful!                  Supernatural           
+Error based abs. FIBS rating             1705.9                  2047.7                 
+Chequerplay errors rating loss             58.5                     0.0                 
+Cube errors rating loss                   285.6                     2.3                 
+
+
+
+
+Output generated Thu Sep 05 11:08:22 2024
+ by GNU Backgammon 1.07.001-mingw 32-Bit 20221114 (Text Export version 1.128)
+

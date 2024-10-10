@@ -1,0 +1,494 @@
+The score (after 0 games) is: dragon_bird 0, lasse 0 (match to 16 points)
+
+Match Information:
+Date: 09/07/2024
+Place: BackgammonGalaxy
+
+Move number 1:  dragon_bird to play 62
+
+ GNU Backgammon  Position ID: 4HPwATDgc/ABMA
+                 Match ID   : MAALAgAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: dragon_bird
+ | X           O    |   | O              X |     0 points
+ | X           O    |   | O              X |     Rolled 62
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+^|                  |BAR|                  |     16 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     
+ | O           X    |   | X              O |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 167, X 167
+
+* dragon_bird moves 24/18 13/11
+
+Rolled 62:
+*    1. Cubeful 0-ply    24/18 13/11                  Eq.: +0.014
+       0.507 0.133 0.007 - 0.493 0.141 0.006
+     2. Cubeful 0-ply    24/16                        Eq.: +0.008 (-0.006)
+       0.507 0.125 0.005 - 0.493 0.137 0.005
+     3. Cubeful 0-ply    24/22 24/18                  Eq.: -0.051 (-0.065)
+       0.492 0.120 0.005 - 0.508 0.145 0.004
+     4. Cubeful 0-ply    24/22 13/7                   Eq.: -0.052 (-0.065)
+       0.486 0.128 0.007 - 0.514 0.138 0.007
+     5. Cubeful 0-ply    13/5                         Eq.: -0.058 (-0.072)
+       0.483 0.137 0.009 - 0.517 0.145 0.009
+
+
+Move number 2:  lasse to play 62
+
+ GNU Backgammon  Position ID: 4HPkQSDgc/ABMA
+                 Match ID   : cAkLAgAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: dragon_bird
+ | X  O        O    |   | O              X |     0 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     16 points match (Cube: 1)
+ |                  |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     Rolled 62
+ | O           X  O |   | X              O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 159, X 167
+
+* lasse moves 13/11 13/7*
+
+Cube analysis
+0-ply cubeless equity -0.008 (Money: -0.008)
+  0.493 0.141 0.006 - 0.507 0.133 0.007
+Cubeful equities:
+1. No double           -0.014
+2. Double, pass        +1.000  (+1.014)
+3. Double, take        -0.376  (-0.362)
+Proper cube action: No double, take (26.3%)
+Alert: doubtful move ( -0.036)
+
+Rolled 62:
+     1. Cubeful 0-ply    24/22 13/7*                  Eq.: -0.015
+       0.494 0.135 0.006 - 0.506 0.132 0.007
+*    2. Cubeful 0-ply    13/11 13/7*                  Eq.: -0.051 (-0.036)
+       0.484 0.144 0.008 - 0.516 0.146 0.010
+     3. Cubeful 0-ply    13/7*/5                      Eq.: -0.098 (-0.082)
+       0.474 0.133 0.008 - 0.526 0.148 0.010
+     4. Cubeful 0-ply    13/7* 8/6                    Eq.: -0.140 (-0.124)
+       0.461 0.131 0.007 - 0.539 0.148 0.009
+     5. Cubeful 0-ply    13/7* 6/4                    Eq.: -0.183 (-0.167)
+       0.458 0.124 0.008 - 0.542 0.167 0.013
+
+
+Move number 3:  dragon_bird to play 64
+
+ GNU Backgammon  Position ID: 4OvIATDgc+QBUA
+                 Match ID   : MAETAgAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: dragon_bird
+ | X  O        O    | O | O              X |     0 points
+ | X           O    |   | O              X |     Rolled 64
+ | X           O    |   | O                |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     16 points match (Cube: 1)
+ |                  |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     
+ | O  X        X  X |   | X              O |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 166, X 159
+
+* dragon_bird moves bar/21 24/18*
+
+Cube analysis
+0-ply cubeless equity +0.036 (Money: +0.036)
+  0.516 0.146 0.010 - 0.484 0.144 0.008
+Cubeful equities:
+1. No double           +0.051
+2. Double, pass        +1.000  (+0.949)
+3. Double, take        -0.269  (-0.320)
+Proper cube action: No double, take (25.2%)
+
+Rolled 64:
+*    1. Cubeful 0-ply    bar/21 24/18*                Eq.: +0.163
+       0.542 0.156 0.011 - 0.458 0.127 0.006
+     2. Cubeful 0-ply    bar/15                       Eq.: -0.174 (-0.337)
+       0.466 0.123 0.007 - 0.534 0.183 0.009
+     3. Cubeful 0-ply    bar/21 11/5                  Eq.: -0.227 (-0.390)
+       0.450 0.123 0.008 - 0.550 0.186 0.011
+     4. Cubeful 0-ply    bar/21 13/7                  Eq.: -0.271 (-0.435)
+       0.441 0.123 0.008 - 0.559 0.197 0.014
+     5. Cubeful 0-ply    bar/21 8/2                   Eq.: -0.381 (-0.544)
+       0.417 0.113 0.008 - 0.583 0.217 0.016
+
+
+Move number 4:  lasse to play 66
+
+ GNU Backgammon  Position ID: 4HPkQQTgc+QAWA
+                 Match ID   : cAkbAgAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: dragon_bird
+ | X  O        O    |   | O              X |     0 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     16 points match (Cube: 1)
+ |                  |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     Rolled 66
+ | O  X        X  O | X | X     O          |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 156, X 177
+
+* lasse cannot move
+
+Cube analysis
+0-ply cubeless equity -0.118 (Money: -0.117)
+  0.458 0.127 0.006 - 0.542 0.156 0.011
+Cubeful equities:
+1. No double           -0.163
+2. Double, pass        +1.000  (+1.163)
+3. Double, take        -0.618  (-0.455)
+Proper cube action: No double, take (28.1%)
+
+Rolled 66:
+*    Cannot move
+
+
+Move number 5:  dragon_bird to play 32
+
+ GNU Backgammon  Position ID: 4HPkAFjgc+RBBA
+                 Match ID   : MIEJAgAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: dragon_bird
+ | X  O        O    |   | O              X |     0 points
+ | X           O    |   | O              X |     Rolled 32
+ | X           O    |   | O                |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     16 points match (Cube: 1)
+ |                  |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     
+ | O  X        X  O | X | X     O          |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 156, X 177
+
+* dragon_bird moves 18/13
+Alert: missed double (-0.004)!
+
+Cube analysis
+0-ply cubeless equity +0.411 (Money: +0.407)
+  0.633 0.211 0.019 - 0.367 0.085 0.004
+Cubeful equities:
+1. Double, take        +0.567
+2. Double, pass        +1.000  (+0.433)
+3. No double           +0.562  (-0.004)
+Proper cube action: Double, take
+Alert: very bad move ( -0.136)
+
+Rolled 32:
+     1. Cubeful 0-ply    21/18 13/11                  Eq.: +0.430
+       0.611 0.164 0.010 - 0.389 0.089 0.001
+     2. Cubeful 0-ply    21/18 11/9                   Eq.: +0.418 (-0.012)
+       0.604 0.169 0.011 - 0.396 0.086 0.002
+     3. Cubeful 0-ply    21/18 8/6                    Eq.: +0.332 (-0.098)
+       0.583 0.159 0.010 - 0.417 0.094 0.002
+     4. Cubeful 0-ply    18/15 13/11                  Eq.: +0.318 (-0.112)
+       0.581 0.168 0.012 - 0.419 0.109 0.004
+*    5. Cubeful 0-ply    18/13                        Eq.: +0.294 (-0.136)
+       0.575 0.160 0.010 - 0.425 0.107 0.004
+
+
+Move number 6:  lasse to play 53
+
+ GNU Backgammon  Position ID: 4HPkAwTgc+QAWA
+                 Match ID   : cIkOAgAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: dragon_bird
+ | X  O        O    |   | O              X |     0 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     16 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     Rolled 53
+ | O  X        X    | X | X     O          |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 151, X 177
+
+* lasse moves bar/20 24/21
+
+Cube analysis
+0-ply cubeless equity -0.212 (Money: -0.210)
+  0.425 0.107 0.004 - 0.575 0.160 0.010
+Cubeful equities:
+1. No double           -0.294
+2. Double, pass        +1.000  (+1.294)
+3. Double, take        -0.831  (-0.537)
+Proper cube action: No double, take (29.3%)
+
+Rolled 53:
+*    1. Cubeful 0-ply    bar/20 24/21                 Eq.: -0.402
+       0.397 0.092 0.004 - 0.603 0.168 0.010
+     2. Cubeful 0-ply    bar/20 11/8                  Eq.: -0.425 (-0.023)
+       0.385 0.090 0.004 - 0.615 0.156 0.009
+     3. Cubeful 0-ply    bar/22 13/8                  Eq.: -0.425 (-0.023)
+       0.387 0.093 0.004 - 0.613 0.162 0.013
+     4. Cubeful 0-ply    bar/20 6/3                   Eq.: -0.427 (-0.025)
+       0.392 0.098 0.005 - 0.608 0.178 0.014
+     5. Cubeful 0-ply    bar/22 11/6                  Eq.: -0.436 (-0.034)
+       0.381 0.090 0.004 - 0.619 0.154 0.011
+
+
+Move number 7:  dragon_bird to play 22
+
+ GNU Backgammon  Position ID: 4HPkgCLgc+QDBA
+                 Match ID   : MAEJAgAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: dragon_bird
+ | X  O        O    |   | O  X  X        X |     0 points
+ | X           O    |   | O                |     Rolled 22
+ | X           O    |   | O                |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     16 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     
+ | O  X        X    |   | X     O          |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 151, X 169
+
+* dragon_bird moves 13/11(2) 6/4*(2)
+
+Cube analysis
+0-ply cubeless equity +0.290 (Money: +0.287)
+  0.603 0.168 0.010 - 0.397 0.092 0.004
+Cubeful equities:
+1. No double           +0.402
+2. Double, pass        +1.000  (+0.598)
+3. Double, take        +0.304  (-0.098)
+Proper cube action: No double, take (14.1%)
+
+Rolled 22:
+*    1. Cubeful 0-ply    13/11(2) 6/4*(2)             Eq.: +0.655
+       0.669 0.191 0.008 - 0.331 0.067 0.001
+     2. Cubeful 0-ply    13/11 8/4* 6/4               Eq.: +0.602 (-0.054)
+       0.653 0.192 0.008 - 0.347 0.075 0.002
+     3. Cubeful 0-ply    13/11 6/4*(3)                Eq.: +0.555 (-0.101)
+       0.643 0.181 0.007 - 0.357 0.077 0.002
+     4. Cubeful 0-ply    11/9 8/4* 6/4                Eq.: +0.487 (-0.168)
+       0.620 0.187 0.008 - 0.380 0.082 0.003
+     5. Cubeful 0-ply    13/9 6/4*(2)                 Eq.: +0.486 (-0.169)
+       0.620 0.188 0.010 - 0.380 0.084 0.003
+
+
+Move number 8:  lasse to play 61
+
+ GNU Backgammon  Position ID: mHOcAwTgc+SAUA
+                 Match ID   : cAkHAgAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: dragon_bird
+ | X  O        O    |   | O  X  O        X |     0 points
+ | X  O        O    |   | O     O          |     
+ | X  O        O    |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     16 points match (Cube: 1)
+ |                  |   | X                |    
+ |                  |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     Rolled 61
+ | O  X        X    | X | X     O          |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 143, X 173
+
+* lasse moves bar/24 11/5
+
+Cube analysis
+0-ply cubeless equity -0.472 (Money: -0.468)
+  0.331 0.067 0.001 - 0.669 0.191 0.008
+Cubeful equities:
+1. No double           -0.655
+2. Double, pass        +1.000  (+1.655)
+3. Double, take        -1.416  (-0.761)
+Proper cube action: No double, take (31.5%)
+
+Rolled 61:
+*    1. Cubeful 0-ply    bar/24 11/5                  Eq.: -1.000
+       0.289 0.059 0.002 - 0.711 0.248 0.023
+     2. Cubeful 0-ply    bar/18                       Eq.: -1.000 (-0.000)
+       0.280 0.055 0.002 - 0.720 0.274 0.019
+     3. Cubeful 0-ply    bar/24 13/7                  Eq.: -1.000 (-0.000)
+       0.281 0.057 0.002 - 0.719 0.271 0.027
+     4. Cubeful 0-ply    bar/24 8/2                   Eq.: -1.000 (-0.000)
+       0.267 0.055 0.002 - 0.733 0.260 0.027
+
+
+Move number 9:  dragon_bird on roll, cube decision?
+
+ GNU Backgammon  Position ID: 0OfggDCYc5wDBA
+                 Match ID   : MAEAAgAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: dragon_bird
+ | X  O        O    |   | O  X  O        X |     0 points
+ | X  O        O    |   | O     O        X |     On roll
+ | X  O        O    |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     16 points match (Cube: 1)
+ |                  |   | X                |    
+ |                  |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X  X  O          |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 143, X 166
+
+* dragon_bird doubles
+
+
+Cube analysis
+0-ply cubeless equity +0.639 (Money: +0.633)
+  0.711 0.248 0.023 - 0.289 0.059 0.002
+Cubeful equities:
+1. Double, pass        +1.000
+2. Double, take        +1.084  (+0.084)
+3. No double           +0.877  (-0.123)
+Proper cube action: Double, pass
+Move number 10:  dragon_bird doubles to 2
+
+ GNU Backgammon  Position ID: 0OfggDCYc5wDBA
+                 Match ID   : MBkAAgAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: dragon_bird
+ | X  O        O    |   | O  X  O        X |     0 points
+ | X  O        O    |   | O     O        X |     
+ | X  O        O    |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     
+ |                  |   | X                |    
+ |                  |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     Cube offered at 2
+ | O           X    |   | X  X  O          |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 143, X 166
+
+* lasse rejects
+
+
+Cube analysis
+0-ply cubeless equity -0.639 (Money: -0.633)
+  0.289 0.059 0.002 - 0.711 0.248 0.023
+Cubeful equities:
+1. Double, pass        -1.000
+2. Double, take        -1.084  (-0.084)
+3. No double           -0.877  (+0.123)
+Proper cube action: Double, pass
+dragon_bird wins 1 point
+
+Game statistics for game 1
+
+Player                                   dragon_bird             lasse                  
+
+Chequerplay statistics
+
+Total moves                                4                       4                    
+Unforced moves                             4                       3                    
+Unmarked moves                             3                       3                    
+Moves marked doubtful                      0                       1                    
+Moves marked bad                           0                       0                    
+Moves marked very bad                      1                       0                    
+Error total EMG (MWC)                         -0.136 ( -0.532%)       -0.036 ( -0.141%) 
+Error rate mEMG (MWC)                        -34.0   ( -0.133%)      -12.0   ( -0.047%) 
+Chequerplay rating                       Beginner                Intermediate           
+
+
+Cube statistics
+
+Total cube decisions                       4                       5                    
+Close or actual cube decisions             3                       1                    
+Doubles                                    1                       0                    
+Takes                                      0                       0                    
+Passes                                     0                       1                    
+Missed doubles below CP (EMG (MWC))        1 (-0.004 ( -0.016%))   0                    
+Missed doubles above CP (EMG (MWC))        0                       0                    
+Wrong doubles below DP (EMG (MWC))         0                       0                    
+Wrong doubles above TG (EMG (MWC))         0                       0                    
+Wrong takes (EMG (MWC))                    0                       0                    
+Wrong passes (EMG (MWC))                   0                       0                    
+Error total EMG (MWC)                         -0.004 ( -0.016%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                         -1.4   ( -0.005%)       -0.0   ( -0.000%) 
+Cube decision rating                     Supernatural            Supernatural           
+
+
+Overall statistics
+
+Error total EMG (MWC)                         -0.140 ( -0.548%)       -0.036 ( -0.141%) 
+Error rate mEMG (MWC)                        -20.0   ( -0.078%)       -9.0   ( -0.035%) 
+Snowie error rate                            -17.5   ( +0.000%)       -4.5   ( +0.000%) 
+Overall rating                           Casual player           Advanced               
+Error based abs. FIBS rating             1695.7                  1925.1                 
+Chequerplay errors rating loss            353.2                   124.9                 
+Cube errors rating loss                     1.1                     0.0                 
+
+
+
+
+Match statistics
+
+Player                                   dragon_bird             lasse                  
+
+Chequerplay statistics
+
+Total moves                                4                       4                    
+Unforced moves                             4                       3                    
+Unmarked moves                             3                       3                    
+Moves marked doubtful                      0                       1                    
+Moves marked bad                           0                       0                    
+Moves marked very bad                      1                       0                    
+Error total EMG (MWC)                         -0.136 ( -0.532%)       -0.036 ( -0.141%) 
+Error rate mEMG (MWC)                        -34.0   ( -0.133%)      -12.0   ( -0.047%) 
+Chequerplay rating                       Beginner                Intermediate           
+
+
+Cube statistics
+
+Total cube decisions                       4                       5                    
+Close or actual cube decisions             3                       1                    
+Doubles                                    1                       0                    
+Takes                                      0                       0                    
+Passes                                     0                       1                    
+Missed doubles below CP (EMG (MWC))        1 (-0.004 ( -0.016%))   0                    
+Missed doubles above CP (EMG (MWC))        0                       0                    
+Wrong doubles below DP (EMG (MWC))         0                       0                    
+Wrong doubles above TG (EMG (MWC))         0                       0                    
+Wrong takes (EMG (MWC))                    0                       0                    
+Wrong passes (EMG (MWC))                   0                       0                    
+Error total EMG (MWC)                         -0.004 ( -0.016%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                         -1.4   ( -0.005%)       -0.0   ( -0.000%) 
+Cube decision rating                     Supernatural            Supernatural           
+
+
+Overall statistics
+
+Error total EMG (MWC)                         -0.140 ( -0.548%)       -0.036 ( -0.141%) 
+Error rate mEMG (MWC)                        -20.0   ( -0.078%)       -9.0   ( -0.035%) 
+Snowie error rate                            -17.5   ( +0.000%)       -4.5   ( +0.000%) 
+Overall rating                           Casual player           Advanced               
+Error based abs. FIBS rating             1695.7                  1925.1                 
+Chequerplay errors rating loss            353.2                   124.9                 
+Cube errors rating loss                     1.1                     0.0                 
+
+
+
+
+Output generated Tue Aug 27 15:25:43 2024
+ by GNU Backgammon 1.07.001-mingw 32-Bit 20221114 (Text Export version 1.128)
+

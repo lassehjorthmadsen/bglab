@@ -1,0 +1,584 @@
+The score (after 1 game) is: westerlund 0, lasse 1 (match to 5 points)
+
+Match Information:
+Date: 01/11/2023
+Place: BackgammonGalaxy
+
+Move number 1:  lasse to play 64
+
+ GNU Backgammon  Position ID: 4HPwATDgc/ABMA
+                 Match ID   : cAizAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: westerlund
+ | X           O    |   | O              X |     0 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     Rolled 64
+ | O           X    |   | X              O |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 167, X 167
+
+* lasse moves 24/18 13/9
+
+Rolled 64:
+*    1. Cubeful 4-ply    24/18 13/9                   Eq.: +0.047
+       0.505 0.137 0.007 - 0.495 0.137 0.006
+     2. Cubeful 4-ply    8/2 6/2                      Eq.: +0.039 (-0.008)
+       0.499 0.152 0.007 - 0.501 0.144 0.006
+     3. Cubeful 4-ply    24/14                        Eq.: +0.039 (-0.008)
+       0.507 0.123 0.005 - 0.493 0.135 0.005
+     4. Cubeful 4-ply    24/20 13/7                   Eq.: -0.016 (-0.064)
+       0.485 0.133 0.006 - 0.515 0.132 0.006
+     5. Cubeful 2-ply    24/20 24/18                  Eq.: -0.039 (-0.086)
+       0.490 0.117 0.005 - 0.510 0.147 0.005
+
+
+Move number 2:  westerlund to play 52
+
+ GNU Backgammon  Position ID: 4HPhQSDgc/ABMA
+                 Match ID   : MIGqAAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: westerlund
+ | X           O  X |   | O              X |     0 points
+ | X           O    |   | O                |     Rolled 52
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     
+ | O        X  X    |   | X              O |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 167, X 157
+
+* westerlund moves 24/22 13/8
+
+Cube analysis
+4-ply cubeless equity -0.056 (Money: -0.011)
+  0.495 0.137 0.006 - 0.505 0.137 0.007
+Cubeful equities:
+1. No double           -0.047
+2. Double, pass        +1.000  (+1.047)
+3. Double, take        -0.480  (-0.433)
+Proper cube action: No double, take (29.3%)
+Alert: bad move ( -0.063)
+
+Rolled 52:
+     1. Cubeful 4-ply    24/22 6/1*                   Eq.: -0.249
+       0.452 0.120 0.004 - 0.548 0.155 0.009
+*    2. Cubeful 4-ply    24/22 13/8                   Eq.: -0.312 (-0.063)
+       0.437 0.107 0.003 - 0.563 0.153 0.006
+     3. Cubeful 4-ply    13/11 6/1*                   Eq.: -0.337 (-0.088)
+       0.434 0.122 0.005 - 0.566 0.171 0.013
+     4. Cubeful 2-ply    13/8 6/4                     Eq.: -0.329 (-0.081)
+       0.430 0.106 0.004 - 0.570 0.155 0.008
+     5. Cubeful 2-ply    13/11 13/8                   Eq.: -0.347 (-0.098)
+       0.427 0.109 0.004 - 0.573 0.160 0.009
+
+
+Move number 3:  lasse to play 61
+
+ GNU Backgammon  Position ID: 4PPgASTgc+FBIA
+                 Match ID   : cAmnAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: westerlund
+ | X           O  X |   | O              X |     0 points
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     Rolled 61
+ | O        X  X    |   | X        O     O |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 160, X 157
+
+* lasse moves 24/18 9/8
+
+Cube analysis
+4-ply cubeless equity +0.223 (Money: +0.174)
+  0.563 0.153 0.006 - 0.437 0.107 0.003
+Cubeful equities:
+1. No double           +0.312
+2. Double, pass        +1.000  (+0.688)
+3. Double, take        +0.071  (-0.241)
+Proper cube action: No double, take (25.9%)
+
+Rolled 61:
+*    1. Cubeful 2-ply    24/18 9/8                    Eq.: +0.228
+       0.549 0.114 0.003 - 0.451 0.087 0.002
+     2. Cubeful 2-ply    13/7 8/7                     Eq.: +0.052 (-0.175)
+       0.508 0.131 0.005 - 0.492 0.133 0.006
+     3. Cubeful 2-ply    24/18 8/7                    Eq.: -0.020 (-0.248)
+       0.488 0.112 0.003 - 0.512 0.126 0.004
+     4. Cubeful 2-ply    24/18 6/5                    Eq.: -0.025 (-0.253)
+       0.487 0.118 0.004 - 0.513 0.133 0.005
+     5. Cubeful 2-ply    9/3*/2                       Eq.: -0.090 (-0.318)
+       0.475 0.115 0.005 - 0.525 0.147 0.007
+
+
+Move number 4:  westerlund to play 65
+
+ GNU Backgammon  Position ID: 4PPgwQDg8+ABJA
+                 Match ID   : MAG3AAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: westerlund
+ | X           O  X |   | O                |     0 points
+ | X           O  X |   | O                |     Rolled 65
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   | X                |    
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X        O     O |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 160, X 150
+
+* westerlund moves 24/13
+
+Cube analysis
+4-ply cubeless equity -0.164 (Money: -0.127)
+  0.451 0.087 0.002 - 0.549 0.114 0.003
+Cubeful equities:
+1. No double           -0.236
+2. Double, pass        +1.000  (+1.236)
+3. Double, take        -0.840  (-0.605)
+Proper cube action: No double, take (32.9%)
+
+Rolled 65:
+*    1. Cubeful 4-ply    24/13                        Eq.: -0.281
+       0.455 0.065 0.001 - 0.545 0.121 0.002
+     2. Cubeful 4-ply    22/11                        Eq.: -0.304 (-0.023)
+       0.441 0.082 0.002 - 0.559 0.126 0.003
+     3. Cubeful 4-ply    13/2                         Eq.: -0.320 (-0.040)
+       0.434 0.099 0.002 - 0.566 0.142 0.005
+     4. Cubeful 4-ply    22/16 13/8                   Eq.: -0.327 (-0.047)
+       0.440 0.084 0.002 - 0.560 0.137 0.004
+     5. Cubeful 2-ply    22/16 8/3                    Eq.: -0.364 (-0.083)
+       0.428 0.089 0.002 - 0.572 0.149 0.006
+
+
+Move number 5:  lasse to play 64
+
+ GNU Backgammon  Position ID: 4PPgAwjg8+DBAA
+                 Match ID   : cAmzAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: westerlund
+ | X           O  X |   | O                |     0 points
+ | X           O  X |   | O                |     
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ | O                |   | X                |    
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     Rolled 64
+ | O           X    |   | X        O       |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 149, X 150
+
+* lasse moves 8/2 6/2
+
+Cube analysis
+4-ply cubeless equity +0.185 (Money: +0.147)
+  0.545 0.121 0.002 - 0.455 0.065 0.001
+Cubeful equities:
+1. No double           +0.281
+2. Double, pass        +1.000  (+0.719)
+3. Double, take        -0.025  (-0.306)
+Proper cube action: No double, take (29.8%)
+
+Rolled 64:
+*    1. Cubeful 4-ply    8/2 6/2                      Eq.: +0.271
+       0.545 0.114 0.002 - 0.455 0.057 0.001
+     2. Cubeful 4-ply    13/3*                        Eq.: +0.219 (-0.052)
+       0.535 0.119 0.002 - 0.465 0.075 0.002
+     3. Cubeful 2-ply    13/7 6/2                     Eq.: +0.117 (-0.154)
+       0.510 0.104 0.002 - 0.490 0.071 0.002
+     4. Cubeful 2-ply    13/9 8/2                     Eq.: +0.077 (-0.194)
+       0.500 0.101 0.002 - 0.500 0.074 0.002
+     5. Cubeful 2-ply    8/4 8/2                      Eq.: +0.045 (-0.227)
+       0.492 0.099 0.002 - 0.508 0.077 0.002
+
+
+Move number 6:  westerlund to play 63
+
+ GNU Backgammon  Position ID: hufgwQDg8+ADCA
+                 Match ID   : MAGvAAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: westerlund
+ | X           O  X |   | O                |     0 points
+ | X           O  X |   | O                |     Rolled 63
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ | O                |   |                  |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X           X    |     
+ | O           X    |   | X        O  X    |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 149, X 140
+
+* westerlund moves 22/13
+
+Cube analysis
+4-ply cubeless equity -0.184 (Money: -0.148)
+  0.455 0.057 0.001 - 0.545 0.114 0.002
+Cubeful equities:
+1. No double           -0.271
+2. Double, pass        +1.000  (+1.271)
+3. Double, take        -0.892  (-0.620)
+Proper cube action: No double, take (32.8%)
+
+Rolled 63:
+*    1. Cubeful 2-ply    22/13                        Eq.: -0.167
+       0.463 0.017 0.000 - 0.537 0.022 0.000
+     2. Cubeful 2-ply    13/4                         Eq.: -0.289 (-0.121)
+       0.452 0.079 0.001 - 0.548 0.143 0.003
+     3. Cubeful 2-ply    22/16 8/5                    Eq.: -0.357 (-0.189)
+       0.430 0.047 0.001 - 0.570 0.106 0.002
+     4. Cubeful 2-ply    22/16 6/3                    Eq.: -0.396 (-0.229)
+       0.422 0.047 0.001 - 0.578 0.114 0.002
+     5. Cubeful 2-ply    8/2 6/3                      Eq.: -0.424 (-0.256)
+       0.424 0.083 0.001 - 0.576 0.180 0.004
+
+
+Move number 7:  lasse to play 61
+
+ GNU Backgammon  Position ID: 4PPgBwCG5+DBAA
+                 Match ID   : cAmnAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: westerlund
+ | X           O  X |   | O                |     0 points
+ | X           O  X |   | O                |     
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ | 6                |   |                  |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X           X    |     Rolled 61
+ | O           X    |   | X           X    |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 140, X 140
+
+* lasse moves 13/7 6/5
+
+Cube analysis
+4-ply cubeless equity +0.084 (Money: +0.078)
+  0.537 0.018 0.000 - 0.463 0.014 0.000
+Cubeful equities:
+1. No double           +0.171
+2. Double, pass        +1.000  (+0.829)
+3. Double, take        -0.235  (-0.406)
+Proper cube action: No double, take (32.9%)
+
+Rolled 61:
+*    1. Cubeful 4-ply    13/7 6/5                     Eq.: +0.135
+       0.524 0.023 0.000 - 0.476 0.012 0.000
+     2. Cubeful 4-ply    13/7 8/7                     Eq.: +0.129 (-0.006)
+       0.522 0.023 0.000 - 0.478 0.013 0.000
+     3. Cubeful 4-ply    13/7 2/1                     Eq.: +0.128 (-0.008)
+       0.522 0.025 0.000 - 0.478 0.014 0.000
+     4. Cubeful 4-ply    13/6                         Eq.: +0.124 (-0.011)
+       0.521 0.024 0.000 - 0.479 0.014 0.000
+     5. Cubeful 2-ply    8/1                          Eq.: +0.104 (-0.031)
+       0.514 0.029 0.000 - 0.486 0.017 0.000
+
+
+Move number 8:  westerlund to play 55
+
+ GNU Backgammon  Position ID: RtfBwQDg8+AHAA
+                 Match ID   : MIG2AAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: westerlund
+ | X           O  X |   | O                |     0 points
+ | X           O  X |   | O                |     Rolled 55
+ | X           O    |   | O                |     
+ |             O    |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ | 6                |   |                  |    
+ | O                |   |                  |     
+ | O           X    |   | X                |     
+ | O           X    |   | X           X    |     
+ | O           X  X |   | X  X        X    |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 140, X 133
+
+* westerlund moves 13/8(4)
+
+Cube analysis
+4-ply cubeless equity -0.066 (Money: -0.059)
+  0.476 0.012 0.000 - 0.524 0.023 0.000
+Cubeful equities:
+1. No double           -0.135
+2. Double, pass        +1.000  (+1.135)
+3. Double, take        -0.784  (-0.649)
+Proper cube action: No double, take (36.4%)
+
+Rolled 55:
+*    1. Cubeful 4-ply    13/8(4)                      Eq.: +0.342
+       0.636 0.010 0.000 - 0.364 0.009 0.000
+     2. Cubeful 4-ply    13/8(3) 6/1                  Eq.: +0.332 (-0.010)
+       0.632 0.011 0.000 - 0.368 0.010 0.000
+     3. Cubeful 4-ply    13/3 13/8(2)                 Eq.: +0.332 (-0.010)
+       0.632 0.011 0.000 - 0.368 0.010 0.000
+     4. Cubeful 4-ply    13/3 13/8 6/1                Eq.: +0.310 (-0.032)
+       0.625 0.013 0.000 - 0.375 0.013 0.000
+     5. Cubeful 2-ply    13/3(2)                      Eq.: +0.313 (-0.029)
+       0.625 0.014 0.000 - 0.375 0.012 0.000
+
+
+Move number 9:  lasse to play 43
+
+ GNU Backgammon  Position ID: 4PMPBgBG18HBAA
+                 Match ID   : cAmuAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: westerlund
+ | X           O  X |   | O                |     0 points
+ | X           O  X |   | O                |     
+ | X           O    |   | O                |     
+ |             O    |   | O                |     
+ |             8    |   | O                |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |             X    |   | X                |     
+ | O           X    |   | X           X    |     Rolled 43
+ | O           X  X |   | X  X        X    |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 120, X 133
+
+* lasse moves 13/9 8/5
+
+Cube analysis
+4-ply cubeless equity -0.270 (Money: -0.273)
+  0.364 0.009 0.000 - 0.636 0.010 0.000
+Cubeful equities:
+1. No double           -0.342
+2. Double, pass        +1.000  (+1.342)
+3. Double, take        -1.347  (-1.005)
+Proper cube action: No double, take (42.8%)
+
+Rolled 43:
+     1. Cubeful 4-ply    13/10 8/4                    Eq.: -0.351
+       0.363 0.011 0.000 - 0.637 0.009 0.000
+     2. Cubeful 4-ply    8/5 8/4                      Eq.: -0.354 (-0.003)
+       0.362 0.011 0.000 - 0.638 0.009 0.000
+*    3. Cubeful 4-ply    13/9 8/5                     Eq.: -0.355 (-0.004)
+       0.362 0.011 0.000 - 0.638 0.010 0.000
+     4. Cubeful 4-ply    8/4 7/4                      Eq.: -0.356 (-0.005)
+       0.361 0.011 0.000 - 0.639 0.010 0.000
+     5. Cubeful 2-ply    13/10 7/3                    Eq.: -0.354 (-0.004)
+       0.360 0.013 0.000 - 0.640 0.010 0.000
+
+
+Move number 10:  westerlund to play 55
+
+ GNU Backgammon  Position ID: xq6FwQDg8w8GAA
+                 Match ID   : MIG2AAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: westerlund
+ | X           O  X |   | O                |     0 points
+ | X           O  X |   | O                |     Rolled 55
+ |             O    |   | O                |     
+ |             O    |   | O                |     
+ |             8    |   | O                |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X                |     
+ | O           X    |   | X  X        X    |     
+ | O        X  X  X |   | X  X        X    |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 120, X 126
+
+* westerlund moves 13/3(2)
+
+Cube analysis
+4-ply cubeless equity +0.272 (Money: +0.275)
+  0.638 0.010 0.000 - 0.362 0.011 0.000
+Cubeful equities:
+1. No double           +0.355
+2. Double, pass        +1.000  (+0.645)
+3. Double, take        +0.080  (-0.274)
+Proper cube action: No double, take (29.8%)
+
+Rolled 55:
+*    1. Cubeful 4-ply    13/3(2)                      Eq.: +0.959
+       0.845 0.011 0.000 - 0.155 0.002 0.000
+     2. Cubeful 4-ply    13/3 13/8 6/1                Eq.: +0.955 (-0.004)
+       0.841 0.007 0.000 - 0.159 0.002 0.000
+     3. Cubeful 4-ply    13/8(2) 6/1(2)               Eq.: +0.947 (-0.012)
+       0.830 0.010 0.000 - 0.170 0.003 0.000
+     4. Cubeful 0-ply    8/3(2) 6/1(2)                Eq.: +0.555 (-0.404)
+       0.709 0.017 0.000 - 0.291 0.015 0.000
+     5. Cubeful 0-ply    8/3(3) 6/1                   Eq.: +0.527 (-0.432)
+       0.700 0.018 0.000 - 0.300 0.018 0.000
+
+
+Move number 11:  lasse to play 41
+
+ GNU Backgammon  Position ID: jM8/AADGroXBAA
+                 Match ID   : cAmmAAAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: westerlund
+ | X           O  X |   | O        O       |     0 points
+ | X           O  X |   | O        O       |     
+ |             O    |   | O                |     
+ |             O    |   | O                |     
+ |             8    |   | O                |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X                |     
+ |             X    |   | X  X        X    |     Rolled 41
+ |          X  X  X |   | X  X        X    |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 100, X 126
+
+* lasse moves 13/12 8/4
+
+Cube analysis
+4-ply cubeless equity -0.698 (Money: -0.699)
+  0.155 0.002 0.000 - 0.845 0.011 0.000
+Cubeful equities:
+1. No double           -0.959
+2. Double, pass        +1.000  (+1.959)
+3. Double, take        -1.945  (-0.986)
+Proper cube action: No double, take (33.5%)
+
+Rolled 41:
+*    1. Cubeful 4-ply    13/12 8/4                    Eq.: -1.000
+       0.154 0.001 0.000 - 0.846 0.012 0.000
+     2. Cubeful 4-ply    13/9 7/6                     Eq.: -1.000 (-0.000)
+       0.151 0.001 0.000 - 0.849 0.013 0.000
+     3. Cubeful 4-ply    9/5 7/6                      Eq.: -1.000 (-0.000)
+       0.148 0.001 0.000 - 0.852 0.013 0.000
+     4. Cubeful 4-ply    9/5 6/5                      Eq.: -1.000 (-0.000)
+       0.146 0.002 0.000 - 0.854 0.016 0.000
+     5. Cubeful 4-ply    18/14 13/12                  Eq.: -1.000 (-0.000)
+       0.148 0.002 0.000 - 0.852 0.023 0.000
+
+
+Move number 12:  westerlund on roll, cube decision?
+
+ GNU Backgammon  Position ID: pl1FwQCMzz8AAA
+                 Match ID   : MAGgAAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: westerlund
+ | X           O  X |   | O        O       |     0 points
+ |             O  X |   | O        O       |     On roll
+ |             O    |   | O                |     
+ |             O    |   | O                |     
+ |             8    |   | O                |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X                |     
+ |                  |   | X  X        X    |     
+ | X        X  X  X |   | X  X  X     X    |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 100, X 121
+
+* westerlund doubles
+
+
+Cube analysis
+4-ply cubeless equity +0.702 (Money: +0.703)
+  0.846 0.012 0.000 - 0.154 0.001 0.000
+Cubeful equities:
+1. Double, pass        +1.000
+2. Double, take        +1.195  (+0.195)
+3. No double           +0.957  (-0.043)
+Proper cube action: Double, pass
+Move number 13:  westerlund doubles to 2
+
+ GNU Backgammon  Position ID: pl1FwQCMzz8AAA
+                 Match ID   : MBmgAAAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: westerlund
+ | X           O  X |   | O        O       |     0 points
+ |             O  X |   | O        O       |     
+ |             O    |   | O                |     
+ |             O    |   | O                |     
+ |             8    |   | O                |    
+^|                  |BAR|                  |     
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X                |     
+ |                  |   | X  X        X    |     Cube offered at 2
+ | X        X  X  X |   | X  X  X     X    |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 100, X 121
+
+* lasse rejects
+
+
+Cube analysis
+4-ply cubeless equity -0.702 (Money: -0.703)
+  0.154 0.001 0.000 - 0.846 0.012 0.000
+Cubeful equities:
+1. Double, pass        -1.000
+2. Double, take        -1.195  (-0.195)
+3. No double           -0.957  (+0.043)
+Proper cube action: Double, pass
+westerlund wins 1 point
+
+Game statistics for game 2
+
+Player                                   westerlund              lasse                  
+
+Chequerplay statistics
+
+Total moves                                5                       6                    
+Unforced moves                             5                       6                    
+Unmarked moves                             4                       6                    
+Moves marked doubtful                      0                       0                    
+Moves marked bad                           1                       0                    
+Moves marked very bad                      0                       0                    
+Error total EMG (MWC)                         -0.063 ( -0.468%)       -0.004 ( -0.028%) 
+Error rate mEMG (MWC)                        -12.6   ( -0.094%)       -0.6   ( -0.005%) 
+Chequerplay rating                       Intermediate            Supernatural           
+
+
+Cube statistics
+
+Total cube decisions                       6                       6                    
+Close or actual cube decisions             1                       1                    
+Doubles                                    1                       0                    
+Takes                                      0                       0                    
+Passes                                     0                       1                    
+Missed doubles below CP (EMG (MWC))        0                       0                    
+Missed doubles above CP (EMG (MWC))        0                       0                    
+Wrong doubles below DP (EMG (MWC))         0                       0                    
+Wrong doubles above TG (EMG (MWC))         0                       0                    
+Wrong takes (EMG (MWC))                    0                       0                    
+Wrong passes (EMG (MWC))                   0                       0                    
+Error total EMG (MWC)                         -0.000 ( -0.000%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                         -0.0   ( -0.000%)       -0.0   ( -0.000%) 
+Cube decision rating                     Supernatural            Supernatural           
+
+
+Overall statistics
+
+Error total EMG (MWC)                         -0.063 ( -0.468%)       -0.004 ( -0.028%) 
+Error rate mEMG (MWC)                        -10.5   ( -0.078%)       -0.5   ( -0.004%) 
+Snowie error rate                             -5.7   ( +0.000%)       -0.3   ( +0.000%) 
+Overall rating                           Advanced                Supernatural           
+Error based abs. FIBS rating             1874.2                  2041.2                 
+Chequerplay errors rating loss            175.8                     8.8                 
+Cube errors rating loss                     0.0                     0.0                 
+
+
+
+
+Output generated Wed Aug 28 20:19:48 2024
+ by GNU Backgammon 1.07.001-mingw 32-Bit 20221114 (Text Export version 1.128)
+

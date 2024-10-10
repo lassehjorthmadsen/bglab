@@ -1,0 +1,1553 @@
+The score (after 2 games) is: kimosn 2, lasse 1 (match to 3 points), post-Crawford play
+
+Match Information:
+Date: 22/02/2024
+Place: BackgammonGalaxy
+
+Move number 1:  kimosn to play 43
+
+ GNU Backgammon  Position ID: 4HPwATDgc/ABMA
+                 Match ID   : MABuACAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: kimosn
+ | X           O    |   | O              X |     2 points
+ | X           O    |   | O              X |     Rolled 43
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+^|                  |BAR|                  |     3 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     
+ | O           X    |   | X              O |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 167, X 167
+
+* kimosn moves 24/21 13/9
+
+Rolled 43:
+     1. Cubeful 2-ply    24/20 13/10                  Eq.: -1.000
+       0.499 0.135 0.006 - 0.501 0.131 0.006
+     2. Cubeful 2-ply    24/21 24/20                  Eq.: -1.000 (-0.000)
+       0.499 0.126 0.006 - 0.501 0.133 0.005
+*    3. Cubeful 2-ply    24/21 13/9                   Eq.: -1.000 (-0.000)
+       0.499 0.138 0.007 - 0.501 0.133 0.006
+     4. Cubeful 2-ply    13/10 13/9                   Eq.: -1.000 (-0.000)
+       0.494 0.153 0.009 - 0.506 0.141 0.008
+     5. Cubeful 2-ply    24/20 8/5                    Eq.: -1.000 (-0.000)
+       0.478 0.126 0.006 - 0.522 0.147 0.008
+
+
+Move number 2:  lasse on roll, cube decision?
+
+ GNU Backgammon  Position ID: 4HPhASLgc/ABMA
+                 Match ID   : cAlgACAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: kimosn
+ | X        O  O    |   | O              X |     2 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     On roll
+ | O           X    |   | X     O        O |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 160, X 167
+
+* lasse doubles
+
+
+Cube analysis
+2-ply cubeless equity +0.268 (Money: -0.004)
+  0.501 0.133 0.006 - 0.499 0.138 0.007
+Cubeful equities:
+1. Double, pass        +1.000
+2. Double, take        +1.004  (+0.004)
+3. No double           +0.909  (-0.091)
+Proper cube action: Double, pass
+Move number 3:  lasse doubles to 2
+
+ GNU Backgammon  Position ID: 4HPhASLgc/ABMA
+                 Match ID   : cBFgACAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: kimosn
+ | X        O  O    |   | O              X |     2 points
+ | X           O    |   | O              X |     Cube offered at 2
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     
+ |                  |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X     O        O |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 160, X 167
+
+* kimosn accepts
+
+Alert: wrong take (-0.004)!
+
+Cube analysis
+2-ply cubeless equity -0.268 (Money: +0.004)
+  0.499 0.138 0.007 - 0.501 0.133 0.006
+Cubeful equities:
+1. Double, pass        -1.000
+2. Double, take        -1.004  (-0.004)
+3. No double           -0.909  (+0.091)
+Proper cube action: Double, pass
+Move number 4:  lasse to play 64
+
+ GNU Backgammon  Position ID: 4HPhASLgc/ABMA
+                 Match ID   : QQlzACAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: kimosn (Cube: 2)
+ | X        O  O    |   | O              X |     2 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     3 points match
+ |                  |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     Rolled 64
+ | O           X    |   | X     O        O |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 160, X 167
+
+* lasse moves 24/14
+
+Rolled 64:
+*    1. Cubeful 2-ply    24/14                        Eq.: -0.084
+       0.458 0.101 0.003 - 0.542 0.161 0.006
+     2. Cubeful 2-ply    24/18 8/4*                   Eq.: -0.092 (-0.008)
+       0.454 0.116 0.006 - 0.546 0.179 0.011
+     3. Cubeful 2-ply    8/2 6/2                      Eq.: -0.101 (-0.017)
+       0.449 0.125 0.004 - 0.551 0.166 0.008
+     4. Cubeful 2-ply    13/7 8/4*                    Eq.: -0.110 (-0.025)
+       0.445 0.123 0.007 - 0.555 0.183 0.016
+     5. Cubeful 2-ply    24/20 13/7                   Eq.: -0.121 (-0.037)
+       0.439 0.110 0.005 - 0.561 0.167 0.010
+
+
+Move number 5:  kimosn to play 51
+
+ GNU Backgammon  Position ID: 4HPwBSDgc+EBIg
+                 Match ID   : AYFmACAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: kimosn (Cube: 2)
+ | X  X     O  O    |   | O              X |     2 points
+ | X           O    |   | O                |     Rolled 51
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+^|                  |BAR|                  |     3 points match
+ |                  |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X     O        O |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 160, X 157
+
+* kimosn moves 21/20 13/8
+
+Rolled 51:
+     1. Cubeful 2-ply    13/8 6/5                     Eq.: -0.065
+       0.467 0.128 0.005 - 0.533 0.140 0.008
+     2. Cubeful 2-ply    13/8 9/8                     Eq.: -0.068 (-0.003)
+       0.466 0.117 0.004 - 0.534 0.128 0.004
+*    3. Cubeful 2-ply    21/20 13/8                   Eq.: -0.069 (-0.004)
+       0.465 0.124 0.004 - 0.535 0.129 0.006
+     4. Cubeful 2-ply    24/23 13/8                   Eq.: -0.072 (-0.006)
+       0.464 0.120 0.004 - 0.536 0.128 0.005
+     5. Cubeful 2-ply    21/16 6/5                    Eq.: -0.074 (-0.008)
+       0.463 0.120 0.004 - 0.537 0.154 0.010
+
+
+Move number 6:  lasse to play 42
+
+ GNU Backgammon  Position ID: 4PPCASHgc/AFIA
+                 Match ID   : QQlqACAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: kimosn (Cube: 2)
+ | X  X     O  O    |   | O              X |     2 points
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     3 points match
+ |                  |   | X                |    
+ |                  |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     Rolled 42
+ | O           X    |   | X  O           O |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 154, X 157
+
+* lasse moves 14/8
+Alert: doubtful move ( -0.049)
+
+Rolled 42:
+     1. Cubeful 2-ply    8/4 6/4                      Eq.: +0.010
+       0.505 0.116 0.004 - 0.495 0.132 0.005
+*    2. Cubeful 2-ply    14/8                         Eq.: -0.040 (-0.049)
+       0.480 0.100 0.003 - 0.520 0.142 0.004
+     3. Cubeful 2-ply    24/22 14/10                  Eq.: -0.078 (-0.087)
+       0.461 0.098 0.003 - 0.539 0.152 0.005
+     4. Cubeful 2-ply    24/18                        Eq.: -0.102 (-0.111)
+       0.449 0.088 0.003 - 0.551 0.168 0.006
+     5. Cubeful 2-ply    14/10 13/11                  Eq.: -0.108 (-0.118)
+       0.446 0.106 0.004 - 0.554 0.165 0.008
+
+
+Move number 7:  kimosn to play 52
+
+ GNU Backgammon  Position ID: 4PPgAyDg88IBIQ
+                 Match ID   : AYFqACAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: kimosn (Cube: 2)
+ | X        O  O    |   | O              X |     2 points
+ | X           O    |   | O                |     Rolled 52
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ | X                |   | O                |    
+^|                  |BAR|                  |     3 points match
+ |                  |   | X                |    
+ |             X    |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X  O           O |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 154, X 151
+
+* kimosn moves 9/4 6/4
+
+Rolled 52:
+*    1. Cubeful 2-ply    9/4 6/4                      Eq.: +0.025
+       0.512 0.143 0.004 - 0.488 0.101 0.003
+     2. Cubeful 2-ply    20/13                        Eq.: -0.036 (-0.061)
+       0.482 0.105 0.002 - 0.518 0.107 0.003
+     3. Cubeful 2-ply    24/22 20/15                  Eq.: -0.063 (-0.088)
+       0.468 0.108 0.003 - 0.532 0.134 0.005
+     4. Cubeful 2-ply    20/15 6/4                    Eq.: -0.071 (-0.096)
+       0.464 0.116 0.004 - 0.536 0.148 0.008
+     5. Cubeful 2-ply    20/15 13/11                  Eq.: -0.074 (-0.099)
+       0.463 0.116 0.003 - 0.537 0.146 0.008
+
+
+Move number 8:  lasse to play 21
+
+ GNU Backgammon  Position ID: mOfBASHg8+ADIA
+                 Match ID   : QQllACAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: kimosn (Cube: 2)
+ | X           O    |   | O     O        X |     2 points
+ | X           O    |   | O     O          |     
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ | X                |   |                  |    
+v|                  |BAR|                  |     3 points match
+ |                  |   | X                |    
+ |             X    |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     Rolled 21
+ | O           X    |   | X  O           O |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 147, X 151
+
+* lasse moves 13/11 6/5*
+
+Rolled 21:
+*    1. Cubeful 2-ply    13/11 6/5*                   Eq.: -0.097
+       0.451 0.109 0.004 - 0.549 0.193 0.011
+     2. Cubeful 2-ply    24/22 6/5*                   Eq.: -0.139 (-0.042)
+       0.430 0.093 0.003 - 0.570 0.197 0.008
+     3. Cubeful 2-ply    6/5*/3                       Eq.: -0.148 (-0.050)
+       0.426 0.094 0.003 - 0.574 0.194 0.009
+     4. Cubeful 2-ply    8/5*                         Eq.: -0.151 (-0.053)
+       0.425 0.098 0.003 - 0.575 0.195 0.009
+     5. Cubeful 2-ply    6/5* 6/4                     Eq.: -0.185 (-0.088)
+       0.407 0.088 0.003 - 0.593 0.231 0.016
+
+
+Move number 9:  kimosn to play 66
+
+ GNU Backgammon  Position ID: 0PPIAyCY58EBUA
+                 Match ID   : AQF7ACAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: kimosn (Cube: 2)
+ | X           O    | O | O     O        X |     2 points
+ | X           O    |   | O     O          |     Rolled 66
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |             X    |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     
+ | O  X        X    |   | X  X           O |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 152, X 148
+
+* kimosn cannot move
+
+Rolled 66:
+*    Cannot move
+
+
+Move number 10:  lasse to play 43
+
+ GNU Backgammon  Position ID: mOfBAVDQ88gDIA
+                 Match ID   : QQluACAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: kimosn (Cube: 2)
+ | X           O    | O | O     O        X |     2 points
+ | X           O    |   | O     O          |     
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |             X    |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     Rolled 43
+ | O  X        X    |   | X  X           O |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 152, X 148
+
+* lasse moves 13/9 8/5
+
+Rolled 43:
+     1. Cubeful 2-ply    24/20 8/5                    Eq.: +0.234
+       0.617 0.157 0.005 - 0.383 0.101 0.003
+*    2. Cubeful 2-ply    13/9 8/5                     Eq.: +0.212 (-0.022)
+       0.606 0.190 0.007 - 0.394 0.107 0.004
+     3. Cubeful 2-ply    11/7 8/5                     Eq.: +0.150 (-0.084)
+       0.575 0.175 0.006 - 0.425 0.118 0.005
+     4. Cubeful 2-ply    8/5 8/4                      Eq.: +0.085 (-0.149)
+       0.542 0.173 0.007 - 0.458 0.144 0.008
+     5. Cubeful 2-ply    8/5 6/2                      Eq.: +0.067 (-0.167)
+       0.533 0.155 0.006 - 0.467 0.144 0.007
+
+
+Move number 11:  kimosn to play 53
+
+ GNU Backgammon  Position ID: sOeSAyCY58EBUA
+                 Match ID   : AYFuACAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: kimosn (Cube: 2)
+ | X           O    | O | O     O        X |     2 points
+ | X           O    |   | O     O          |     Rolled 53
+ | X           O    |   | O                |     
+ |             O    |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X  X             |     
+ | O  X     X  X    |   | X  X           O |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 152, X 141
+
+* kimosn moves bar/22 13/8
+Alert: doubtful move ( -0.044)
+
+Rolled 53:
+     1. Cubeful 2-ply    bar/22 6/1*                  Eq.: -0.241
+       0.379 0.112 0.005 - 0.621 0.205 0.011
+     2. Cubeful 2-ply    bar/22 8/3                   Eq.: -0.281 (-0.040)
+       0.359 0.100 0.005 - 0.641 0.242 0.014
+*    3. Cubeful 2-ply    bar/22 13/8                  Eq.: -0.285 (-0.044)
+       0.358 0.088 0.003 - 0.642 0.206 0.007
+
+
+Move number 12:  lasse to play 62
+
+ GNU Backgammon  Position ID: mOeDASSw55IDIA
+                 Match ID   : QQlrACAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: kimosn (Cube: 2)
+ | X           O    |   | O     O        X |     2 points
+ | X           O    |   | O     O          |     
+ | X           O    |   | O                |     
+ |             O    |   | O                |     
+ |             O    |   |                  |    
+v|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |             X    |   | X                |     
+ | O           X    |   | X  X             |     Rolled 62
+ | O  X     X  X    |   | X  X     O     O |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 144, X 141
+
+* lasse moves 13/7 9/7
+
+Rolled 62:
+*    1. Cubeful 2-ply    13/7 9/7                     Eq.: +0.301
+       0.651 0.171 0.006 - 0.349 0.089 0.003
+     2. Cubeful 2-ply    24/18 11/9                   Eq.: +0.278 (-0.024)
+       0.639 0.134 0.005 - 0.361 0.088 0.002
+     3. Cubeful 2-ply    9/3*/1*                      Eq.: +0.203 (-0.098)
+       0.602 0.223 0.006 - 0.398 0.110 0.005
+     4. Cubeful 2-ply    13/11 9/3*                   Eq.: +0.168 (-0.133)
+       0.584 0.197 0.009 - 0.416 0.128 0.006
+     5. Cubeful 2-ply    11/9 8/2                     Eq.: +0.136 (-0.166)
+       0.568 0.166 0.005 - 0.432 0.122 0.005
+
+
+Move number 13:  kimosn to play 43
+
+ GNU Backgammon  Position ID: sLcjAyCY54MBJA
+                 Match ID   : AQFuACAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: kimosn (Cube: 2)
+ | X           O    |   | O     O        X |     2 points
+ | X           O    |   | O     O          |     Rolled 43
+ |             O    |   | O                |     
+ |             O    |   | O                |     
+ |             O    |   |                  |    
+^|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |             X    |   | X                |     
+ | O           X  X |   | X  X             |     
+ | O  X        X  X |   | X  X     O     O |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 144, X 133
+
+* kimosn moves 24/21 8/4
+
+Rolled 43:
+*    1. Cubeful 2-ply    24/21 8/4                    Eq.: -0.370
+       0.315 0.080 0.003 - 0.685 0.255 0.008
+     2. Cubeful 2-ply    8/1*                         Eq.: -0.384 (-0.013)
+       0.308 0.082 0.003 - 0.692 0.213 0.012
+     3. Cubeful 2-ply    24/21 6/2                    Eq.: -0.425 (-0.054)
+       0.288 0.063 0.003 - 0.712 0.284 0.013
+     4. Cubeful 2-ply    8/5 8/4                      Eq.: -0.427 (-0.057)
+       0.286 0.073 0.003 - 0.714 0.250 0.016
+     5. Cubeful 2-ply    8/4 6/3                      Eq.: -0.442 (-0.072)
+       0.279 0.064 0.002 - 0.721 0.248 0.013
+
+
+Move number 14:  lasse to play 22
+
+ GNU Backgammon  Position ID: OM+DAQqwtyMDIA
+                 Match ID   : QQlpACAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: kimosn (Cube: 2)
+ | X           O    |   | O     O        X |     2 points
+ | X           O    |   | O     O          |     
+ |             O    |   | O     O          |     
+ |             O    |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |             X    |   | X                |     
+ | O           X  X |   | X  X             |     Rolled 22
+ | O  X        X  X |   | X  X  O  O       |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 137, X 133
+
+* lasse moves 24/22 8/4* 6/4
+
+Rolled 22:
+     1. Cubeful 2-ply    24/20 6/4*(2)                Eq.: +0.579
+       0.790 0.186 0.004 - 0.210 0.033 0.001
+     2. Cubeful 2-ply    6/4*(2) 5/3*(2)              Eq.: +0.561 (-0.018)
+       0.781 0.352 0.009 - 0.219 0.046 0.002
+*    3. Cubeful 2-ply    24/22 8/4* 6/4               Eq.: +0.554 (-0.025)
+       0.777 0.239 0.007 - 0.223 0.041 0.001
+     4. Cubeful 2-ply    7/3* 6/4*(2)                 Eq.: +0.538 (-0.041)
+       0.769 0.363 0.011 - 0.231 0.063 0.004
+     5. Cubeful 2-ply    8/4* 6/4(2)                  Eq.: +0.536 (-0.043)
+       0.768 0.269 0.009 - 0.232 0.042 0.002
+
+
+Move number 15:  kimosn to play 31
+
+ GNU Backgammon  Position ID: 2G4jAwg4z4MBRA
+                 Match ID   : AYFlACAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: kimosn (Cube: 2)
+ | X           O    | O | O     O  X       |     2 points
+ | X           O    |   | O     O          |     Rolled 31
+ |             O    |   | O     O          |     
+ |             O    |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X                |     
+ | O           X  X |   | X  X  X          |     
+ | O  X        X  X |   | X  X  X  O       |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 141, X 125
+
+* kimosn moves bar/22 4/3*
+
+Rolled 31:
+*    1. Cubeful 2-ply    bar/22 4/3*                  Eq.: -0.444
+       0.278 0.051 0.001 - 0.722 0.155 0.005
+     2. Cubeful 2-ply    bar/22 8/7                   Eq.: -0.480 (-0.037)
+       0.260 0.040 0.001 - 0.740 0.130 0.004
+     3. Cubeful 2-ply    bar/22 6/5                   Eq.: -0.495 (-0.052)
+       0.252 0.038 0.001 - 0.748 0.135 0.005
+     4. Cubeful 2-ply    bar/24 6/3*                  Eq.: -0.544 (-0.100)
+       0.228 0.049 0.002 - 0.772 0.287 0.018
+     5. Cubeful 2-ply    bar/24 8/5                   Eq.: -0.598 (-0.154)
+       0.201 0.040 0.001 - 0.799 0.316 0.022
+
+
+Move number 16:  lasse to play 55
+
+ GNU Backgammon  Position ID: NM+DAQzYbiMDQA
+                 Match ID   : QYl2ACAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: kimosn (Cube: 2)
+ | X           O    |   | O     O  O       |     2 points
+ | X           O    |   | O     O          |     
+ |             O    |   | O                |     
+ |             O    |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X                |     
+ | O           X  X |   | X  X  X  O       |     Rolled 55
+ | O  X        X  X | X | X  X  X  O       |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 137, X 128
+
+* lasse moves bar/5
+
+Rolled 55:
+*    1. Cubeful 2-ply    bar/5                        Eq.: +0.617
+       0.809 0.064 0.001 - 0.191 0.012 0.000
+     2. Cubeful 2-ply    bar/10 11/6                  Eq.: +0.614 (-0.004)
+       0.807 0.062 0.001 - 0.193 0.012 0.000
+     3. Cubeful 2-ply    bar/10 6/1                   Eq.: +0.563 (-0.054)
+       0.781 0.076 0.002 - 0.219 0.021 0.000
+     4. Cubeful 2-ply    bar/10 13/8                  Eq.: +0.527 (-0.090)
+       0.763 0.113 0.004 - 0.237 0.033 0.002
+     5. Cubeful 2-ply    bar/15 13/8(2)               Eq.: +0.499 (-0.119)
+       0.749 0.118 0.005 - 0.251 0.034 0.001
+
+
+Move number 17:  kimosn to play 63
+
+ GNU Backgammon  Position ID: 2N1GBgA0z4MBDA
+                 Match ID   : AQFvACAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: kimosn (Cube: 2)
+ | X           O    |   | O     O  O       |     2 points
+ | X           O    |   | O     O          |     Rolled 63
+ |             O    |   | O                |     
+ |             O    |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X  X             |     
+ | O           X  X |   | X  X  X  O       |     
+ | O  X        X  X |   | X  X  X  O       |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 137, X 108
+
+* kimosn moves 8/5 8/2
+
+Rolled 63:
+*    1. Cubeful 2-ply    8/5 8/2                      Eq.: -0.629
+       0.186 0.010 0.000 - 0.814 0.055 0.002
+     2. Cubeful 2-ply    8/2 6/3                      Eq.: -0.631 (-0.002)
+       0.185 0.010 0.000 - 0.815 0.053 0.001
+     3. Cubeful 2-ply    13/10 13/7                   Eq.: -0.652 (-0.023)
+       0.174 0.009 0.000 - 0.826 0.062 0.003
+     4. Cubeful 2-ply    8/2 4/1                      Eq.: -0.654 (-0.026)
+       0.173 0.010 0.000 - 0.827 0.081 0.003
+     5. Cubeful 2-ply    13/7 8/5                     Eq.: -0.663 (-0.034)
+       0.169 0.009 0.000 - 0.831 0.082 0.003
+
+
+Move number 18:  lasse to play 61
+
+ GNU Backgammon  Position ID: aj2DAQzY3UYGAA
+                 Match ID   : QQlnACAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: kimosn (Cube: 2)
+ | X           O    |   | O  O  O  O  O    |     2 points
+ | X           O    |   | O     O          |     
+ |                  |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X  X             |     
+ | O           X  X |   | X  X  X  O       |     Rolled 61
+ | O  X        X  X |   | X  X  X  O       |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 128, X 108
+
+* lasse moves 11/4
+
+Rolled 61:
+*    1. Cubeful 2-ply    11/4                         Eq.: +0.597
+       0.798 0.045 0.000 - 0.202 0.010 0.000
+     2. Cubeful 2-ply    11/5 6/5                     Eq.: +0.556 (-0.040)
+       0.778 0.046 0.000 - 0.222 0.012 0.000
+     3. Cubeful 2-ply    13/7 11/10                   Eq.: +0.547 (-0.050)
+       0.774 0.115 0.006 - 0.226 0.027 0.001
+     4. Cubeful 2-ply    13/7 5/4                     Eq.: +0.537 (-0.060)
+       0.768 0.143 0.008 - 0.232 0.030 0.001
+     5. Cubeful 2-ply    8/7 8/2                      Eq.: +0.534 (-0.063)
+       0.767 0.094 0.004 - 0.233 0.019 0.000
+
+
+Move number 19:  kimosn to play 54
+
+ GNU Backgammon  Position ID: uLsNBgBqPYMBDA
+                 Match ID   : AYFyACAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: kimosn (Cube: 2)
+ | X           O    |   | O  O  O  O  O    |     2 points
+ | X           O    |   | O     O          |     Rolled 54
+ |                  |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X  X  X          |     
+ | O           X  X |   | X  X  X  O       |     
+ | O           X  X |   | X  X  X  O       |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 128, X 101
+
+* kimosn moves 8/3 6/2
+
+Rolled 54:
+*    1. Cubeful 2-ply    8/3 6/2                      Eq.: -0.589
+       0.206 0.013 0.000 - 0.794 0.053 0.001
+     2. Cubeful 2-ply    8/4 8/3                      Eq.: -0.603 (-0.015)
+       0.198 0.011 0.000 - 0.802 0.059 0.001
+     3. Cubeful 2-ply    8/3 5/1                      Eq.: -0.608 (-0.019)
+       0.196 0.010 0.000 - 0.804 0.056 0.002
+     4. Cubeful 2-ply    6/2 6/1                      Eq.: -0.608 (-0.020)
+       0.196 0.010 0.000 - 0.804 0.057 0.002
+     5. Cubeful 2-ply    8/4 6/1                      Eq.: -0.611 (-0.022)
+       0.195 0.011 0.000 - 0.805 0.064 0.004
+
+
+Move number 20:  lasse to play 52
+
+ GNU Backgammon  Position ID: tnWCAQy4uw0GAA
+                 Match ID   : QYlqACAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: kimosn (Cube: 2)
+ | X           O    |   | O  O  O  O  O    |     2 points
+ | X                |   | O     O  O  O    |     
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X  X  X          |     
+ | O           X  X |   | X  X  X  O       |     Rolled 52
+ | O           X  X |   | X  X  X  O       |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 119, X 101
+
+* lasse moves 13/11 13/8
+
+Rolled 52:
+*    1. Cubeful 2-ply    13/11 13/8                   Eq.: +0.630
+       0.815 0.045 0.001 - 0.185 0.009 0.000
+     2. Cubeful 2-ply    6/1 4/2                      Eq.: +0.545 (-0.085)
+       0.772 0.046 0.000 - 0.228 0.015 0.000
+     3. Cubeful 2-ply    7/5 7/2                      Eq.: +0.498 (-0.132)
+       0.749 0.075 0.001 - 0.251 0.020 0.000
+     4. Cubeful 2-ply    13/6                         Eq.: +0.420 (-0.210)
+       0.710 0.089 0.005 - 0.290 0.033 0.000
+     5. Cubeful 2-ply    13/8 4/2                     Eq.: +0.399 (-0.231)
+       0.699 0.089 0.005 - 0.301 0.040 0.001
+
+
+Move number 21:  kimosn to play 66
+
+ GNU Backgammon  Position ID: uLsdAQC2dYIBDA
+                 Match ID   : AQF7ACAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: kimosn (Cube: 2)
+ |             O    |   | O  O  O  O  O    |     2 points
+ |                  |   | O     O  O  O    |     Rolled 66
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |             X    |   | X  X  X          |     
+ | O           X  X |   | X  X  X  O       |     
+ | O  X        X  X |   | X  X  X  O       |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 119, X 94
+
+* kimosn moves 22/10(2)
+
+Rolled 66:
+     1. Cubeful 2-ply    22/16(2) 13/7(2)             Eq.: -0.222
+       0.389 0.002 0.000 - 0.611 0.001 0.000
+*    2. Cubeful 2-ply    22/10(2)                     Eq.: -0.236 (-0.014)
+       0.382 0.000 0.000 - 0.618 0.000 0.000
+     3. Cubeful 2-ply    22/16(2) 13/1                Eq.: -0.240 (-0.018)
+       0.380 0.002 0.000 - 0.620 0.002 0.000
+     4. Cubeful 2-ply    22/16(2) 13/7 8/2            Eq.: -0.249 (-0.027)
+       0.376 0.001 0.000 - 0.624 0.002 0.000
+     5. Cubeful 2-ply    22/10 22/16 13/7             Eq.: -0.392 (-0.170)
+       0.304 0.006 0.000 - 0.696 0.028 0.002
+
+
+Move number 22:  lasse to play 53
+
+ GNU Backgammon  Position ID: tnUyBgC4ux0BAA
+                 Match ID   : QYluACAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: kimosn (Cube: 2)
+ |       O     O    |   | O  O  O  O  O    |     2 points
+ |       O          |   | O     O  O  O    |     
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |             X    |   | X  X  X          |     
+ | O           X  X |   | X  X  X          |     Rolled 53
+ | O  X        X  X |   | X  X  X          |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 95, X 94
+
+* lasse moves 11/6 8/5
+
+Rolled 53:
+*    1. Cubeful 2-ply    11/6 8/5                     Eq.: +0.239
+       0.619 0.000 0.000 - 0.381 0.000 0.000
+     2. Cubeful 2-ply    11/6 7/4                     Eq.: +0.236 (-0.003)
+       0.618 0.000 0.000 - 0.382 0.000 0.000
+     3. Cubeful 2-ply    8/5 8/3                      Eq.: +0.235 (-0.004)
+       0.617 0.000 0.000 - 0.383 0.000 0.000
+     4. Cubeful 2-ply    8/3 7/4                      Eq.: +0.234 (-0.004)
+       0.617 0.000 0.000 - 0.383 0.000 0.000
+     5. Cubeful 2-ply    8/5 7/2                      Eq.: +0.232 (-0.006)
+       0.616 0.000 0.000 - 0.384 0.000 0.000
+
+
+Move number 23:  kimosn to play 32
+
+ GNU Backgammon  Position ID: uPc2AAC2dTIGAA
+                 Match ID   : AYFpACAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: kimosn (Cube: 2)
+ |       O     O    |   | O  O  O  O  O    |     2 points
+ |       O          |   | O     O  O  O    |     Rolled 32
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   | X  X             |     
+ |                  |   | X  X  X          |     
+ | O           X  X |   | X  X  X          |     
+ | O           X  X |   | X  X  X          |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 95, X 86
+
+* kimosn moves 13/11 8/5
+
+Rolled 32:
+*    1. Cubeful 2-ply    13/11 8/5                    Eq.: -0.366
+       0.317 0.000 0.000 - 0.683 0.000 0.000
+     2. Cubeful 2-ply    13/11 13/10                  Eq.: -0.369 (-0.004)
+       0.315 0.000 0.000 - 0.685 0.000 0.000
+     3. Cubeful 2-ply    10/5                         Eq.: -0.372 (-0.006)
+       0.314 0.000 0.000 - 0.686 0.000 0.000
+     4. Cubeful 2-ply    13/10 8/6                    Eq.: -0.372 (-0.007)
+       0.314 0.000 0.000 - 0.686 0.000 0.000
+     5. Cubeful 2-ply    13/11 10/7                   Eq.: -0.373 (-0.008)
+       0.313 0.000 0.000 - 0.687 0.000 0.000
+
+
+Move number 24:  lasse to play 63
+
+ GNU Backgammon  Position ID: tu2wBAC49zYAAA
+                 Match ID   : QQlvACAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: kimosn (Cube: 2)
+ |    O  O          |   | O  O  O  O  O    |     2 points
+ |       O          |   | O  O  O  O  O    |     
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   | X  X             |     
+ |                  |   | X  X  X          |     
+ |             X  X |   | X  X  X          |     Rolled 63
+ | O           X  X |   | X  X  X          |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 90, X 86
+
+* lasse moves 8/2 7/4
+
+Rolled 63:
+*    1. Cubeful 2-ply    8/2 7/4                      Eq.: +0.404
+       0.702 0.000 0.000 - 0.298 0.000 0.000
+     2. Cubeful 2-ply    8/5 7/1                      Eq.: +0.401 (-0.003)
+       0.701 0.000 0.000 - 0.299 0.000 0.000
+     3. Cubeful 2-ply    8/5 8/2                      Eq.: +0.400 (-0.004)
+       0.700 0.000 0.000 - 0.300 0.000 0.000
+     4. Cubeful 2-ply    7/4 7/1                      Eq.: +0.399 (-0.005)
+       0.699 0.000 0.000 - 0.301 0.000 0.000
+     5. Cubeful 2-ply    7/1 6/3                      Eq.: +0.397 (-0.007)
+       0.699 0.000 0.000 - 0.301 0.000 0.000
+
+
+Move number 25:  kimosn to play 52
+
+ GNU Backgammon  Position ID: 8t4rAAC27bAEAA
+                 Match ID   : AYFqACAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: kimosn (Cube: 2)
+ |    O  O          |   | O  O  O  O  O    |     2 points
+ |       O          |   | O  O  O  O  O    |     Rolled 52
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   | X  X  X          |     
+ |                  |   | X  X  X          |     
+ |                  |   | X  X  X          |     
+ | O           X  X |   | X  X  X     X    |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 90, X 77
+
+* kimosn moves 13/6
+
+Rolled 52:
+*    1. Cubeful 2-ply    13/6                         Eq.: -0.460
+       0.270 0.000 0.000 - 0.730 0.000 0.000
+     2. Cubeful 2-ply    13/11 10/5                   Eq.: -0.461 (-0.001)
+       0.269 0.000 0.000 - 0.731 0.000 0.000
+     3. Cubeful 2-ply    11/9 10/5                    Eq.: -0.462 (-0.002)
+       0.269 0.000 0.000 - 0.731 0.000 0.000
+     4. Cubeful 2-ply    13/8 11/9                    Eq.: -0.465 (-0.005)
+       0.267 0.000 0.000 - 0.733 0.000 0.000
+     5. Cubeful 2-ply    11/6 10/8                    Eq.: -0.465 (-0.005)
+       0.267 0.000 0.000 - 0.733 0.000 0.000
+
+
+Move number 26:  lasse to play 52
+
+ GNU Backgammon  Position ID: tu1hAQDy3isAAA
+                 Match ID   : QYlqACAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: kimosn (Cube: 2)
+ |    O  O          |   | O  O  O  O  O    |     2 points
+ |       O          |   | O  O  O  O  O    |     
+ |                  |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match
+ |                  |   |                  |    
+ |                  |   | X  X  X          |     
+ |                  |   | X  X  X          |     
+ |                  |   | X  X  X          |     Rolled 52
+ |             X  X |   | X  X  X     X    |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 83, X 77
+
+* lasse moves 8/3 7/5
+
+Rolled 52:
+*    1. Cubeful 2-ply    8/3 7/5                      Eq.: +0.425
+       0.712 0.000 0.000 - 0.288 0.000 0.000
+     2. Cubeful 2-ply    8/6 7/2                      Eq.: +0.423 (-0.002)
+       0.711 0.000 0.000 - 0.289 0.000 0.000
+     3. Cubeful 2-ply    8/3 5/3                      Eq.: +0.421 (-0.003)
+       0.711 0.000 0.000 - 0.289 0.000 0.000
+     4. Cubeful 2-ply    8/3 4/2                      Eq.: +0.420 (-0.005)
+       0.710 0.000 0.000 - 0.290 0.000 0.000
+     5. Cubeful 2-ply    7/2 5/3                      Eq.: +0.415 (-0.010)
+       0.707 0.000 0.000 - 0.293 0.000 0.000
+
+
+Move number 27:  kimosn to play 53
+
+ GNU Backgammon  Position ID: 6n0PAAC27WEBAA
+                 Match ID   : AYFuACAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: kimosn (Cube: 2)
+ |    O  O          |   | O  O  O  O  O    |     2 points
+ |       O          |   | O  O  O  O  O    |     Rolled 53
+ |                  |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match
+ |                  |   |    X             |    
+ |                  |   | X  X  X          |     
+ |                  |   | X  X  X          |     
+ |                  |   | X  X  X          |     
+ |                  |   | X  X  X  X  X    |     1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 83, X 70
+
+* kimosn moves 11/8 10/5
+
+Rolled 53:
+*    1. Cubeful 2-ply    11/8 10/5                    Eq.: -0.444
+       0.278 0.000 0.000 - 0.722 0.000 0.000
+     2. Cubeful 2-ply    10/7 10/5                    Eq.: -0.452 (-0.008)
+       0.274 0.000 0.000 - 0.726 0.000 0.000
+     3. Cubeful 2-ply    11/6 10/7                    Eq.: -0.454 (-0.010)
+       0.273 0.000 0.000 - 0.727 0.000 0.000
+     4. Cubeful 2-ply    10/5 6/3                     Eq.: -0.468 (-0.024)
+       0.266 0.000 0.000 - 0.734 0.000 0.000
+     5. Cubeful 2-ply    11/3                         Eq.: -0.472 (-0.028)
+       0.264 0.000 0.000 - 0.736 0.000 0.000
+
+
+Move number 28:  lasse to play 44
+
+ GNU Backgammon  Position ID: tt2TAADqfQ8AAA
+                 Match ID   : QQlyACAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: kimosn (Cube: 2)
+ |       O     O    |   | O  O  O  O  O    |     2 points
+ |                  |   | O  O  O  O  O    |     
+ |                  |   | O  O             |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match
+ |                  |   |    X             |    
+ |                  |   | X  X  X          |     
+ |                  |   | X  X  X          |     
+ |                  |   | X  X  X          |     Rolled 44
+ |                  |   | X  X  X  X  X    |     1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 75, X 70
+
+* lasse moves 4/off(4)
+
+Rolled 44:
+*    1. Cubeful 2-ply    4/off(4)                     Eq.: +0.748
+       0.874 0.000 0.000 - 0.126 0.000 0.000
+     2. Cubeful 2-ply    5/1 4/off(3)                 Eq.: +0.747 (-0.001)
+       0.874 0.000 0.000 - 0.126 0.000 0.000
+     3. Cubeful 2-ply    6/2 4/off(3)                 Eq.: +0.740 (-0.008)
+       0.870 0.000 0.000 - 0.130 0.000 0.000
+     4. Cubeful 2-ply    6/2 5/1 4/off(2)             Eq.: +0.738 (-0.010)
+       0.869 0.000 0.000 - 0.131 0.000 0.000
+     5. Cubeful 2-ply    5/1(2) 4/off(2)              Eq.: +0.734 (-0.015)
+       0.867 0.000 0.000 - 0.133 0.000 0.000
+
+
+Move number 29:  kimosn to play 52
+
+ GNU Backgammon  Position ID: yvcAAGDbPQkAAA
+                 Match ID   : AYFqACAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: kimosn (Cube: 2)
+ |       O     O    |   | O  O  O  O  O    |     2 points
+ |                  |   | O  O  O  O  O    |     Rolled 52
+ |                  |   | O  O             |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match
+ |                  |   |    X             |    
+ |                  |   | X  X             | X   
+ |                  |   | X  X             | X   
+ |                  |   | X  X             | X   
+ |                  |   | X  X     X  X    | X   1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 75, X 54
+
+* kimosn moves 10/5 8/6
+
+Rolled 52:
+*    1. Cubeful 2-ply    10/5 8/6                     Eq.: -0.791
+       0.105 0.000 0.000 - 0.895 0.000 0.000
+     2. Cubeful 2-ply    10/5 3/1                     Eq.: -0.803 (-0.012)
+       0.099 0.000 0.000 - 0.901 0.000 0.000
+     3. Cubeful 2-ply    10/5 6/4                     Eq.: -0.804 (-0.013)
+       0.098 0.000 0.000 - 0.902 0.000 0.000
+     4. Cubeful 2-ply    8/1                          Eq.: -0.808 (-0.017)
+       0.096 0.000 0.000 - 0.904 0.000 0.000
+     5. Cubeful 2-ply    8/3 6/4                      Eq.: -0.811 (-0.021)
+       0.094 0.000 0.000 - 0.906 0.000 0.000
+
+
+Move number 30:  lasse to play 53
+
+ GNU Backgammon  Position ID: tr0PAADK9wAAAA
+                 Match ID   : QYluACAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: kimosn (Cube: 2)
+ |                  |   | O  O  O  O  O    |     2 points
+ |                  |   | O  O  O  O  O    |     
+ |                  |   | O  O             |     
+ |                  |   | O  O             |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     3 points match
+ |                  |   |    X             |    
+ |                  |   | X  X             | X   
+ |                  |   | X  X             | X   
+ |                  |   | X  X             | X   Rolled 53
+ |                  |   | X  X     X  X    | X   1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 68, X 54
+
+* lasse moves 5/off 3/off
+
+Rolled 53:
+*    1. Cubeful 2-ply    5/off 3/off                  Eq.: +0.809
+       0.904 0.000 0.000 - 0.096 0.000 0.000
+     2. Cubeful 2-ply    6/3 5/off                    Eq.: +0.802 (-0.006)
+       0.901 0.000 0.000 - 0.099 0.000 0.000
+     3. Cubeful 2-ply    5/2 5/off                    Eq.: +0.793 (-0.016)
+       0.896 0.000 0.000 - 0.104 0.000 0.000
+     4. Cubeful 2-ply    6/1 3/off                    Eq.: +0.776 (-0.032)
+       0.888 0.000 0.000 - 0.112 0.000 0.000
+     5. Cubeful 2-ply    6/1 5/2                      Eq.: +0.768 (-0.041)
+       0.884 0.000 0.000 - 0.116 0.000 0.000
+
+
+Move number 31:  kimosn to play 52
+
+ GNU Backgammon  Position ID: 4j0AANj2PgAAAA
+                 Match ID   : AYFqACAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: kimosn (Cube: 2)
+ |                  |   | O  O  O  O  O    |     2 points
+ |                  |   | O  O  O  O  O    |     Rolled 52
+ |                  |   | O  O             |     
+ |                  |   | O  O             |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     3 points match
+ |                  |   |                  | X  
+ |                  |   | X  X             | X   
+ |                  |   | X  X             | X   
+ |                  |   | X  X             | X   
+ |                  |   | X  X        X    | XX  1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 68, X 46
+
+* kimosn moves 5/off 2/off
+
+Rolled 52:
+*    1. Cubeful 2-ply    5/off 2/off                  Eq.: -0.838
+       0.081 0.000 0.000 - 0.919 0.000 0.000
+     2. Cubeful 2-ply    6/1 2/off                    Eq.: -0.853 (-0.015)
+       0.074 0.000 0.000 - 0.926 0.000 0.000
+     3. Cubeful 2-ply    6/4 5/off                    Eq.: -0.859 (-0.021)
+       0.071 0.000 0.000 - 0.929 0.000 0.000
+     4. Cubeful 2-ply    5/off 3/1                    Eq.: -0.865 (-0.027)
+       0.068 0.000 0.000 - 0.932 0.000 0.000
+     5. Cubeful 2-ply    6/4 6/1                      Eq.: -0.875 (-0.037)
+       0.062 0.000 0.000 - 0.938 0.000 0.000
+
+
+Move number 32:  lasse to play 52
+
+ GNU Backgammon  Position ID: 2u4DAIB4DwAAAA
+                 Match ID   : QYlqACAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: kimosn (Cube: 2)
+ |                  |   | O  O  O  O  O    | O   2 points
+ |                  |   | O  O  O  O       | O   
+ |                  |   | O  O             |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     3 points match
+ |                  |   |                  | X  
+ |                  |   | X  X             | X   
+ |                  |   | X  X             | X   
+ |                  |   | X  X             | X   Rolled 52
+ |                  |   | X  X        X    | XX  1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 61, X 46
+
+* lasse moves 5/off 2/off
+
+Rolled 52:
+*    1. Cubeful 2-ply    5/off 2/off                  Eq.: +0.838
+       0.919 0.000 0.000 - 0.081 0.000 0.000
+     2. Cubeful 2-ply    6/4 5/off                    Eq.: +0.835 (-0.003)
+       0.917 0.000 0.000 - 0.083 0.000 0.000
+     3. Cubeful 2-ply    5/3 5/off                    Eq.: +0.828 (-0.010)
+       0.914 0.000 0.000 - 0.086 0.000 0.000
+     4. Cubeful 2-ply    6/1 2/off                    Eq.: +0.818 (-0.020)
+       0.909 0.000 0.000 - 0.091 0.000 0.000
+     5. Cubeful 2-ply    6/1 5/3                      Eq.: +0.813 (-0.025)
+       0.907 0.000 0.000 - 0.093 0.000 0.000
+
+
+Move number 33:  kimosn to play 43
+
+ GNU Backgammon  Position ID: cA8AANruAwAAAA
+                 Match ID   : AQFuACAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: kimosn (Cube: 2)
+ |                  |   | O  O  O  O  O    | O   2 points
+ |                  |   | O  O  O  O       | O   Rolled 43
+ |                  |   | O  O             |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     3 points match
+ |                  |   |                  | X  
+ |                  |   | X                | X   
+ |                  |   | X  X             | XX  
+ |                  |   | X  X             | XX  
+ |                  |   | X  X             | XX  1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 61, X 39
+
+* kimosn moves 4/off 3/off
+
+Rolled 43:
+*    1. Cubeful 2-ply    4/off 3/off                  Eq.: -0.870
+       0.065 0.000 0.000 - 0.935 0.000 0.000
+     2. Cubeful 2-ply    6/2 3/off                    Eq.: -0.888 (-0.018)
+       0.056 0.000 0.000 - 0.944 0.000 0.000
+     3. Cubeful 2-ply    5/1 3/off                    Eq.: -0.890 (-0.020)
+       0.055 0.000 0.000 - 0.945 0.000 0.000
+     4. Cubeful 2-ply    6/3 4/off                    Eq.: -0.895 (-0.025)
+       0.053 0.000 0.000 - 0.947 0.000 0.000
+     5. Cubeful 2-ply    5/2 4/off                    Eq.: -0.901 (-0.031)
+       0.049 0.000 0.000 - 0.951 0.000 0.000
+
+
+Move number 34:  lasse to play 53
+
+ GNU Backgammon  Position ID: qvsAAAD3AAAAAA
+                 Match ID   : QYluACAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: kimosn (Cube: 2)
+ |                  |   | O  O  O  O  O    | O   2 points
+ |                  |   | O  O             | O   
+ |                  |   | O  O             | O   
+ |                  |   | O                | O   
+ |                  |   | O                |    
+v|                  |BAR|                  |     3 points match
+ |                  |   |                  | X  
+ |                  |   | X                | X   
+ |                  |   | X  X             | XX  
+ |                  |   | X  X             | XX  Rolled 53
+ |                  |   | X  X             | XX  1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 54, X 39
+
+* lasse moves 6/3 5/off
+
+Rolled 53:
+*    1. Cubeful 2-ply    6/3 5/off                    Eq.: +0.888
+       0.944 0.000 0.000 - 0.056 0.000 0.000
+     2. Cubeful 2-ply    5/2 5/off                    Eq.: +0.877 (-0.011)
+       0.939 0.000 0.000 - 0.061 0.000 0.000
+     3. Cubeful 2-ply    6/3 6/1                      Eq.: +0.871 (-0.017)
+       0.935 0.000 0.000 - 0.065 0.000 0.000
+     4. Cubeful 2-ply    6/1 5/2                      Eq.: +0.869 (-0.019)
+       0.934 0.000 0.000 - 0.066 0.000 0.000
+
+
+Move number 35:  kimosn to play 43
+
+ GNU Backgammon  Position ID: ZAcAANV9AAAAAA
+                 Match ID   : AQFuACAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: kimosn (Cube: 2)
+ |                  |   | O  O  O  O  O    | O   2 points
+ |                  |   | O  O             | O   Rolled 43
+ |                  |   | O  O             | O   
+ |                  |   | O                | O   
+ |                  |   | O                |    
+^|                  |BAR|                  |     3 points match
+ |                  |   |                  | X  
+ |                  |   |                  | XX  
+ |                  |   | X                | XX  
+ |                  |   | X  X             | XX  
+ |                  |   | X  X     X       | XX  1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 54, X 31
+
+* kimosn moves 4/off 3/off
+
+Rolled 43:
+*    1. Cubeful 2-ply    4/off 3/off                  Eq.: -0.924
+       0.038 0.000 0.000 - 0.962 0.000 0.000
+     2. Cubeful 2-ply    6/2 3/off                    Eq.: -0.935 (-0.011)
+       0.032 0.000 0.000 - 0.968 0.000 0.000
+     3. Cubeful 2-ply    6/3 4/off                    Eq.: -0.936 (-0.011)
+       0.032 0.000 0.000 - 0.968 0.000 0.000
+     4. Cubeful 2-ply    5/1 3/off                    Eq.: -0.936 (-0.012)
+       0.032 0.000 0.000 - 0.968 0.000 0.000
+     5. Cubeful 2-ply    5/2 4/off                    Eq.: -0.944 (-0.019)
+       0.028 0.000 0.000 - 0.972 0.000 0.000
+
+
+Move number 36:  lasse to play 43
+
+ GNU Backgammon  Position ID: 4j4AAJAdAAAAAA
+                 Match ID   : QQluACAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: kimosn (Cube: 2)
+ |                  |   | O  O        O    | OO  2 points
+ |                  |   | O  O             | O   
+ |                  |   | O  O             | O   
+ |                  |   | O                | O   
+ |                  |   | O                | O  
+v|                  |BAR|                  |     3 points match
+ |                  |   |                  | X  
+ |                  |   |                  | XX  
+ |                  |   | X                | XX  
+ |                  |   | X  X             | XX  Rolled 43
+ |                  |   | X  X     X       | XX  1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 47, X 31
+
+* lasse moves 6/2 3/off
+
+Rolled 43:
+*    1. Cubeful 2-ply    6/2 3/off                    Eq.: +0.919
+       0.960 0.000 0.000 - 0.040 0.000 0.000
+     2. Cubeful 2-ply    5/1 3/off                    Eq.: +0.918 (-0.002)
+       0.959 0.000 0.000 - 0.041 0.000 0.000
+     3. Cubeful 2-ply    6/3 6/2                      Eq.: +0.909 (-0.010)
+       0.955 0.000 0.000 - 0.045 0.000 0.000
+     4. Cubeful 2-ply    6/3 5/1                      Eq.: +0.909 (-0.011)
+       0.954 0.000 0.000 - 0.046 0.000 0.000
+     5. Cubeful 2-ply    6/2 5/2                      Eq.: +0.900 (-0.020)
+       0.950 0.000 0.000 - 0.050 0.000 0.000
+
+
+Move number 37:  kimosn to play 42
+
+ GNU Backgammon  Position ID: YgMAgLgPAAAAAA
+                 Match ID   : AQFqACAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: kimosn (Cube: 2)
+ |                  |   | O  O        O    | OO  2 points
+ |                  |   | O  O             | O   Rolled 42
+ |                  |   | O  O             | O   
+ |                  |   | O                | O   
+ |                  |   | O                | O  
+^|                  |BAR|                  |     3 points match
+ |                  |   |                  | XX 
+ |                  |   |                  | XX  
+ |                  |   |                  | XX  
+ |                  |   | X  X             | XX  
+ |                  |   | X  X        X    | XX  1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 47, X 24
+
+* kimosn moves 6/off
+
+Rolled 42:
+*    1. Cubeful 2-ply    6/off                        Eq.: -0.956
+       0.022 0.000 0.000 - 0.978 0.000 0.000
+     2. Cubeful 2-ply    5/1 2/off                    Eq.: -0.961 (-0.004)
+       0.020 0.000 0.000 - 0.980 0.000 0.000
+     3. Cubeful 2-ply    6/4 6/2                      Eq.: -0.966 (-0.010)
+       0.017 0.000 0.000 - 0.983 0.000 0.000
+     4. Cubeful 2-ply    6/4 5/1                      Eq.: -0.967 (-0.011)
+       0.016 0.000 0.000 - 0.984 0.000 0.000
+     5. Cubeful 2-ply    5/3 5/1                      Eq.: -0.970 (-0.014)
+       0.015 0.000 0.000 - 0.985 0.000 0.000
+
+
+Move number 38:  lasse to play 62
+
+ GNU Backgammon  Position ID: 4h4AAMQGAAAAAA
+                 Match ID   : QQlrACAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: kimosn (Cube: 2)
+ |                  |   | O  O        O    | OO  2 points
+ |                  |   | O  O             | OO  
+ |                  |   | O  O             | O   
+ |                  |   | O                | O   
+ |                  |   |                  | O  
+v|                  |BAR|                  |     3 points match
+ |                  |   |                  | XX 
+ |                  |   |                  | XX  
+ |                  |   |                  | XX  
+ |                  |   | X  X             | XX  Rolled 62
+ |                  |   | X  X        X    | XX  1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 41, X 24
+
+* lasse moves 6/off 2/off
+
+Rolled 62:
+*    1. Cubeful 2-ply    6/off 2/off                  Eq.: +0.972
+       0.986 0.000 0.000 - 0.014 0.000 0.000
+     2. Cubeful 2-ply    6/off 5/3                    Eq.: +0.969 (-0.003)
+       0.985 0.000 0.000 - 0.015 0.000 0.000
+     3. Cubeful 2-ply    6/4 6/off                    Eq.: +0.966 (-0.006)
+       0.983 0.000 0.000 - 0.017 0.000 0.000
+
+
+Move number 39:  kimosn to play 54
+
+ GNU Backgammon  Position ID: sAAAIO4BAAAAAA
+                 Match ID   : AYFyACAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: kimosn (Cube: 2)
+ |                  |   | O  O        O    | OO  2 points
+ |                  |   | O  O             | OO  Rolled 54
+ |                  |   | O  O             | O   
+ |                  |   | O                | O   
+ |                  |   |                  | O  
+^|                  |BAR|                  |     3 points match
+ |                  |   |                  | XX 
+ |                  |   |                  | XX  
+ |                  |   |                  | XX  
+ |                  |   |    X             | XXX 
+ |                  |   | X  X             | XXX 1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 41, X 16
+
+* kimosn moves 5/1 5/off
+
+Rolled 54:
+     1. Cubeful 2-ply    6/2 5/off                    Eq.: -0.986
+       0.007 0.000 0.000 - 0.993 0.000 0.000
+*    2. Cubeful 2-ply    5/1 5/off                    Eq.: -0.987 (-0.000)
+       0.007 0.000 0.000 - 0.993 0.000 0.000
+     3. Cubeful 2-ply    6/2 6/1                      Eq.: -0.991 (-0.005)
+       0.004 0.000 0.000 - 0.996 0.000 0.000
+     4. Cubeful 2-ply    6/1 5/1                      Eq.: -0.992 (-0.006)
+       0.004 0.000 0.000 - 0.996 0.000 0.000
+
+
+Move number 40:  lasse to play 52
+
+ GNU Backgammon  Position ID: RQ8AALAAAAAAAA
+                 Match ID   : QYlqACAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: kimosn (Cube: 2)
+ |                  |   | O  O        O  O | OO  2 points
+ |                  |   | O                | OO  
+ |                  |   | O                | OO  
+ |                  |   | O                | O   
+ |                  |   |                  | O  
+v|                  |BAR|                  |     3 points match
+ |                  |   |                  | XX 
+ |                  |   |                  | XX  
+ |                  |   |                  | XX  
+ |                  |   |    X             | XXX Rolled 52
+ |                  |   | X  X             | XXX 1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 32, X 16
+
+* lasse moves 5/3 5/off
+
+Rolled 52:
+*    1. Cubeful 2-ply    5/3 5/off                    Eq.: +0.991
+       0.996 0.000 0.000 - 0.004 0.000 0.000
+     2. Cubeful 2-ply    6/4 5/off                    Eq.: +0.990 (-0.001)
+       0.995 0.000 0.000 - 0.005 0.000 0.000
+     3. Cubeful 2-ply    6/1 5/3                      Eq.: +0.989 (-0.002)
+       0.995 0.000 0.000 - 0.005 0.000 0.000
+
+
+Move number 41:  kimosn to play 53
+
+ GNU Backgammon  Position ID: RAAAKHoAAAAAAA
+                 Match ID   : AYFuACAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: kimosn (Cube: 2)
+ |                  |   | O  O        O  O | OO  2 points
+ |                  |   | O                | OO  Rolled 53
+ |                  |   | O                | OO  
+ |                  |   | O                | O   
+ |                  |   |                  | O  
+^|                  |BAR|                  |     3 points match
+ |                  |   |                  | XX 
+ |                  |   |                  | XX  
+ |                  |   |                  | XXX 
+ |                  |   |                  | XXX 
+ |                  |   | X        X       | XXX 1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 32, X 9
+
+* kimosn moves 6/3 5/off
+
+Rolled 53:
+*    1. Cubeful 2-ply    6/3 5/off                    Eq.: -0.998
+       0.001 0.000 0.000 - 0.999 0.000 0.000
+     2. Cubeful 2-ply    6/3 6/1                      Eq.: -1.000 (-0.002)
+       0.000 0.000 0.000 - 1.000 0.000 0.000
+     3. Cubeful 2-ply    6/1 5/2                      Eq.: -1.000 (-0.002)
+       0.000 0.000 0.000 - 1.000 0.000 0.000
+
+
+Move number 42:  lasse to play 22
+
+ GNU Backgammon  Position ID: FQcAACIAAAAAAA
+                 Match ID   : QQlpACAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: kimosn (Cube: 2)
+ |                  |   | O        O  O  O | OO  2 points
+ |                  |   | O                | OO  
+ |                  |   | O                | OO  
+ |                  |   |                  | OO  
+ |                  |   |                  | O  
+v|                  |BAR|                  |     3 points match
+ |                  |   |                  | XX 
+ |                  |   |                  | XX  
+ |                  |   |                  | XXX 
+ |                  |   |                  | XXX Rolled 22
+ |                  |   | X        X       | XXX 1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 24, X 9
+
+* lasse moves 6/off 3/1
+
+Rolled 22:
+*    1. Cubeful 0-ply    6/off 3/1                    Eq.: +1.000
+       1.000 0.000 0.000 - 0.000 0.000 0.000
+
+
+Move number 43:  kimosn to play 31
+
+ GNU Backgammon  Position ID: AQAAVBwAAAAAAA
+                 Match ID   : AYFlACAACAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: kimosn (Cube: 2)
+ |                  |   | O        O  O  O | OO  2 points
+ |                  |   | O                | OO  Rolled 31
+ |                  |   | O                | OO  
+ |                  |   |                  | OO  
+ |                  |   |                  | O  
+^|                  |BAR|                  |     3 points match
+ |                  |   |                  | XX 
+ |                  |   |                  | XXX 
+ |                  |   |                  | XXX 
+ |                  |   |                  | XXX 
+ |                  |   |                X | XXX 1 point
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 24, X 1
+
+* kimosn moves 3/off 1/off
+
+Rolled 31:
+     1. Cubeful 2-ply    6/3 2/1                      Eq.: -1.000
+       0.000 0.000 0.000 - 1.000 0.000 0.000
+     2. Cubeful 2-ply    6/3 1/off                    Eq.: -1.000 (-0.000)
+       0.000 0.000 0.000 - 1.000 0.000 0.000
+     3. Cubeful 2-ply    6/5 3/off                    Eq.: -1.000 (-0.000)
+       0.000 0.000 0.000 - 1.000 0.000 0.000
+     4. Cubeful 2-ply    3/off 2/1                    Eq.: -1.000 (-0.000)
+       0.000 0.000 0.000 - 1.000 0.000 0.000
+*    5. Cubeful 2-ply    3/off 1/off                  Eq.: -1.000 (-0.000)
+       0.000 0.000 0.000 - 1.000 0.000 0.000
+
+
+Move number 44:  lasse to play 41
+
+ GNU Backgammon  Position ID: wgEAIAAAAAAAAA
+                 Match ID   : QQlmACAACAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: kimosn (Cube: 2)
+ |                  |   | O           O    | OOO 2 points
+ |                  |   | O                | OO  
+ |                  |   | O                | OO  
+ |                  |   |                  | OO  
+ |                  |   |                  | OO 
+v|                  |BAR|                  |     3 points match
+ |                  |   |                  | XX 
+ |                  |   |                  | XXX 
+ |                  |   |                  | XXX 
+ |                  |   |                  | XXX Rolled 41
+ |                  |   |                X | XXX 1 point
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 20, X 1
+
+* lasse moves 1/off
+
+Rolled 41:
+*    1. Cubeful 0-ply    1/off                        Eq.: +1.000
+       1.000 0.000 0.000 - 0.000 0.000 0.000
+
+
+lasse wins 2 points
+
+Game statistics for game 3
+
+Player                                   kimosn                  lasse                  
+
+Chequerplay statistics
+
+Total moves                               21                      21                    
+Unforced moves                            20                      19                    
+Unmarked moves                            20                      20                    
+Moves marked doubtful                      1                       1                    
+Moves marked bad                           0                       0                    
+Moves marked very bad                      0                       0                    
+Error total EMG (MWC)                         -0.062 ( -3.103%)       -0.097 ( -4.827%) 
+Error rate mEMG (MWC)                         -3.1   ( -0.155%)       -5.1   ( -0.254%) 
+Chequerplay rating                       World class             Expert                 
+
+
+Cube statistics
+
+Total cube decisions                       1                       1                    
+Close or actual cube decisions             1                       1                    
+Doubles                                    0                       1                    
+Takes                                      1                       0                    
+Passes                                     0                       0                    
+Missed doubles below CP (EMG (MWC))        0                       0                    
+Missed doubles above CP (EMG (MWC))        0                       0                    
+Wrong doubles below DP (EMG (MWC))         0                       0                    
+Wrong doubles above TG (EMG (MWC))         0                       0                    
+Wrong takes (EMG (MWC))                    1 (-0.004 ( -0.096%))   0                    
+Wrong passes (EMG (MWC))                   0                       0                    
+Error total EMG (MWC)                         -0.004 ( -0.096%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                         -3.8   ( -0.096%)       -0.0   ( -0.000%) 
+Cube decision rating                     World class             Supernatural           
+
+
+Overall statistics
+
+Error total EMG (MWC)                         -0.066 ( -3.199%)       -0.097 ( -4.827%) 
+Error rate mEMG (MWC)                         -3.1   ( -0.152%)       -4.8   ( -0.241%) 
+Snowie error rate                             -1.6   ( +0.000%)       -2.3   ( +0.000%) 
+Overall rating                           World class             World class            
+Error based abs. FIBS rating             1993.6                  1962.1                 
+Chequerplay errors rating loss             53.7                    87.9                 
+Cube errors rating loss                     2.6                     0.0                 
+
+
+
+
+Match statistics
+
+Player                                   kimosn                  lasse                  
+
+Chequerplay statistics
+
+Total moves                              100                      99                    
+Unforced moves                            89                      57                    
+Unmarked moves                            98                      96                    
+Moves marked doubtful                      2                       1                    
+Moves marked bad                           0                       1                    
+Moves marked very bad                      0                       1                    
+Error total EMG (MWC)                         -0.256 ( -7.443%)       -0.365 ( -9.300%) 
+Error rate mEMG (MWC)                         -2.9   ( -0.084%)       -6.4   ( -0.163%) 
+Chequerplay rating                       World class             Expert                 
+
+
+Cube statistics
+
+Total cube decisions                       9                      21                    
+Close or actual cube decisions             3                       3                    
+Doubles                                    1                       1                    
+Takes                                      1                       1                    
+Passes                                     0                       0                    
+Missed doubles below CP (EMG (MWC))        0                       0                    
+Missed doubles above CP (EMG (MWC))        0                       0                    
+Wrong doubles below DP (EMG (MWC))         0                       0                    
+Wrong doubles above TG (EMG (MWC))         0                       0                    
+Wrong takes (EMG (MWC))                    1 (-0.004 ( -0.096%))   0                    
+Wrong passes (EMG (MWC))                   0                       0                    
+Error total EMG (MWC)                         -0.004 ( -0.096%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                         -1.3   ( -0.032%)       -0.0   ( -0.000%) 
+Cube decision rating                     Supernatural            Supernatural           
+
+
+Overall statistics
+
+Error total EMG (MWC)                         -0.260 ( -7.539%)       -0.365 ( -9.300%) 
+Error rate mEMG (MWC)                         -2.8   ( -0.082%)       -6.1   ( -0.155%) 
+Snowie error rate                             -1.3   ( +0.000%)       -1.8   ( +0.000%) 
+Overall rating                           World class             Expert                 
+Error based abs. FIBS rating             1999.3                  1939.1                 
+Chequerplay errors rating loss             49.8                   110.9                 
+Cube errors rating loss                     0.9                     0.0                 
+
+
+
+
+Output generated Thu Sep 05 11:26:34 2024
+ by GNU Backgammon 1.07.001-mingw 32-Bit 20221114 (Text Export version 1.128)
+

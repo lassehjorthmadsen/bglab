@@ -1,0 +1,404 @@
+The score (after 5 games) is: giannakis 3, lasse 4 (match to 7 points)
+
+Match Information:
+Date: 01/02/2024
+Place: BackgammonGalaxy
+
+Move number 1:  giannakis to play 21
+
+ GNU Backgammon  Position ID: 4HPwATDgc/ABMA
+                 Match ID   : MADlADAAIAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: giannakis
+ | X           O    |   | O              X |     3 points
+ | X           O    |   | O              X |     Rolled 21
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+^|                  |BAR|                  |     7 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     
+ | O           X    |   | X              O |     4 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 167, X 167
+
+* giannakis moves 13/11 6/5
+
+Rolled 21:
+*    1. Cubeful 2-ply    13/11 6/5                    Eq.: +0.098
+       0.501 0.144 0.007 - 0.499 0.145 0.010
+     2. Cubeful 2-ply    24/23 13/11                  Eq.: +0.093 (-0.005)
+       0.499 0.138 0.006 - 0.501 0.134 0.006
+     3. Cubeful 2-ply    24/21                        Eq.: +0.060 (-0.038)
+       0.494 0.127 0.005 - 0.506 0.131 0.005
+     4. Cubeful 2-ply    13/10                        Eq.: +0.055 (-0.043)
+       0.489 0.140 0.007 - 0.511 0.142 0.007
+     5. Cubeful 2-ply    24/23 24/22                  Eq.: +0.023 (-0.075)
+       0.486 0.123 0.005 - 0.514 0.135 0.005
+
+
+Move number 2:  lasse to play 22
+
+ GNU Backgammon  Position ID: 0HPkATDgc/ABMA
+                 Match ID   : cAnpADAAIAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: giannakis
+ | X  O        O    |   | O  O           X |     3 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   |                  |    
+v|                  |BAR|                  |     7 points match (Cube: 1)
+ |                  |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     Rolled 22
+ | O           X    |   | X              O |     4 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 164, X 167
+
+* lasse moves 24/20* 6/4(2)
+
+Cube analysis
+2-ply cubeless equity +0.088 (Money: +0.003)
+  0.499 0.145 0.010 - 0.501 0.144 0.007
+Cubeful equities:
+1. No double           -0.098
+2. Double, pass        +1.000  (+1.098)
+3. Double, take        -1.026  (-0.928)
+Proper cube action: No double, take (45.8%)
+
+Rolled 22:
+*    1. Cubeful 2-ply    24/20* 6/4(2)                Eq.: +0.388
+       0.592 0.216 0.020 - 0.408 0.088 0.003
+     2. Cubeful 2-ply    24/20*(2)                    Eq.: +0.291 (-0.097)
+       0.575 0.164 0.009 - 0.425 0.076 0.002
+     3. Cubeful 2-ply    24/20* 13/11(2)              Eq.: +0.173 (-0.216)
+       0.549 0.182 0.014 - 0.451 0.108 0.004
+     4. Cubeful 2-ply    24/20* 24/22 13/11           Eq.: +0.107 (-0.282)
+       0.536 0.171 0.013 - 0.464 0.112 0.005
+     5. Cubeful 2-ply    24/20*/16                    Eq.: +0.084 (-0.305)
+       0.536 0.160 0.011 - 0.464 0.120 0.005
+
+
+Move number 3:  giannakis to play 52
+
+ GNU Backgammon  Position ID: mHPwASHgOfIAWA
+                 Match ID   : MIHqADAAIAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: giannakis
+ | X  O        O    | O | O  X           X |     3 points
+ | X           O    |   | O                |     Rolled 52
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   |                  |    
+^|                  |BAR|                  |     7 points match (Cube: 1)
+ |                  |   |                  |    
+ | O                |   |                  |     
+ | O           X    |   | X                |     
+ | O           X    |   | X     X        O |     
+ | O           X    |   | X     X        O |     4 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 184, X 159
+
+* giannakis moves bar/20 13/11
+
+Cube analysis
+2-ply cubeless equity -0.492 (Money: -0.330)
+  0.408 0.088 0.003 - 0.592 0.216 0.020
+Cubeful equities:
+1. No double           -0.388
+2. Double, pass        +1.000  (+1.388)
+3. Double, take        -1.005  (-0.617)
+Proper cube action: No double, take (30.8%)
+
+Rolled 52:
+*    1. Cubeful 2-ply    bar/20 13/11                 Eq.: -0.349
+       0.412 0.089 0.004 - 0.588 0.188 0.015
+     2. Cubeful 2-ply    bar/20 11/9                  Eq.: -0.517 (-0.169)
+       0.379 0.083 0.004 - 0.621 0.229 0.025
+     3. Cubeful 2-ply    bar/23 11/6                  Eq.: -0.526 (-0.177)
+       0.369 0.079 0.003 - 0.631 0.203 0.017
+     4. Cubeful 2-ply    bar/20 24/22                 Eq.: -0.526 (-0.178)
+       0.379 0.077 0.003 - 0.621 0.232 0.022
+     5. Cubeful 2-ply    bar/18                       Eq.: -0.534 (-0.185)
+       0.376 0.075 0.003 - 0.624 0.227 0.022
+
+
+Move number 4:  lasse to play 52
+
+ GNU Backgammon  Position ID: 4DnmgDCYc/ABIQ
+                 Match ID   : cInqADAAIAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: giannakis
+ | X  O        O    |   | O  X           X |     3 points
+ | X  O        O    |   | O                |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   |                  |    
+v|                  |BAR|                  |     7 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ | O           X    |   | X                |     
+ | O           X    |   | X     X        O |     Rolled 52
+ | O           X    |   | X  O  X        O |     4 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 177, X 159
+
+* lasse moves 20/13
+
+Cube analysis
+2-ply cubeless equity +0.424 (Money: +0.287)
+  0.588 0.188 0.015 - 0.412 0.089 0.004
+Cubeful equities:
+1. No double           +0.349
+2. Double, pass        +1.000  (+0.651)
+3. Double, take        -0.058  (-0.407)
+Proper cube action: No double, take (38.4%)
+
+Rolled 52:
+*    1. Cubeful 2-ply    20/13                        Eq.: +0.232
+       0.576 0.147 0.006 - 0.424 0.102 0.003
+     2. Cubeful 2-ply    20/18 13/8                   Eq.: +0.164 (-0.069)
+       0.556 0.157 0.009 - 0.444 0.109 0.003
+     3. Cubeful 2-ply    24/22 20/15                  Eq.: +0.114 (-0.118)
+       0.548 0.146 0.008 - 0.452 0.115 0.004
+     4. Cubeful 2-ply    20/15 8/6                    Eq.: +0.095 (-0.137)
+       0.541 0.152 0.008 - 0.459 0.117 0.004
+     5. Cubeful 2-ply    13/6                         Eq.: +0.094 (-0.139)
+       0.534 0.167 0.010 - 0.466 0.113 0.004
+
+
+Move number 5:  giannakis to play 65
+
+ GNU Backgammon  Position ID: mHPwAyDgOeaAMA
+                 Match ID   : MAH3ADAAIAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: giannakis
+ | X  O        O    |   | O              X |     3 points
+ | X  O        O    |   | O                |     Rolled 65
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | 6                |   |                  |    
+^|                  |BAR|                  |     7 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ | O           X    |   | X                |     
+ | O           X    |   | X     X        O |     
+ | O           X    |   | X  O  X        O |     4 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 177, X 152
+
+* giannakis moves 20/9
+
+Cube analysis
+2-ply cubeless equity -0.292 (Money: -0.199)
+  0.424 0.102 0.003 - 0.576 0.147 0.006
+Cubeful equities:
+1. No double           -0.232
+2. Double, pass        +1.000  (+1.232)
+3. Double, take        -0.802  (-0.569)
+Proper cube action: No double, take (31.6%)
+Alert: doubtful move ( -0.050)
+
+Rolled 65:
+     1. Cubeful 2-ply    24/13                        Eq.: -0.328
+       0.411 0.088 0.003 - 0.589 0.169 0.007
+*    2. Cubeful 2-ply    20/9                         Eq.: -0.377 (-0.050)
+       0.393 0.094 0.003 - 0.607 0.169 0.011
+     3. Cubeful 2-ply    24/18 6/1*                   Eq.: -0.447 (-0.120)
+       0.387 0.083 0.003 - 0.613 0.199 0.014
+     4. Cubeful 2-ply    24/18 13/8                   Eq.: -0.474 (-0.146)
+       0.384 0.084 0.003 - 0.616 0.212 0.013
+     5. Cubeful 2-ply    13/7 6/1*                    Eq.: -0.486 (-0.158)
+       0.379 0.091 0.003 - 0.621 0.211 0.022
+
+
+Move number 6:  lasse to play 44
+
+ GNU Backgammon  Position ID: 4LnMATCYc/ADIA
+                 Match ID   : cAnyADAAIAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: giannakis
+ | X  O     O  O    |   | O              X |     3 points
+ | X  O        O    |   | O                |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | 6                |   |                  |    
+v|                  |BAR|                  |     7 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ | O           X    |   | X                |     
+ | O           X    |   | X     X        O |     Rolled 44
+ | O           X    |   | X     X        O |     4 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 166, X 152
+
+* lasse moves 24/16* 13/9(2)
+
+Cube analysis
+2-ply cubeless equity +0.413 (Money: +0.296)
+  0.607 0.169 0.011 - 0.393 0.094 0.003
+Cubeful equities:
+1. No double           +0.377
+2. Double, pass        +1.000  (+0.623)
+3. Double, take        +0.040  (-0.337)
+Proper cube action: No double, take (35.1%)
+
+Rolled 44:
+*    1. Cubeful 2-ply    24/16* 13/9(2)               Eq.: +0.811
+       0.688 0.223 0.019 - 0.312 0.061 0.001
+     2. Cubeful 2-ply    13/5(2)                      Eq.: +0.650 (-0.161)
+       0.663 0.206 0.015 - 0.337 0.070 0.002
+     3. Cubeful 2-ply    24/16* 13/9 8/4              Eq.: +0.547 (-0.264)
+       0.633 0.214 0.018 - 0.367 0.081 0.002
+     4. Cubeful 2-ply    24/16* 13/5                  Eq.: +0.490 (-0.321)
+       0.622 0.190 0.014 - 0.378 0.085 0.003
+     5. Cubeful 2-ply    13/9(4)                      Eq.: +0.462 (-0.349)
+       0.622 0.187 0.013 - 0.378 0.083 0.002
+
+
+Move number 7:  giannakis to play 64
+
+ GNU Backgammon  Position ID: mHPDIwDgOeYAWA
+                 Match ID   : MAHzADAAIAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: giannakis
+ | X  O     X  O    | O | O                |     3 points
+ | X  O        O    |   | O                |     Rolled 64
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     7 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ | O           X    |   | X                |     
+ | O        X  X    |   | X     X        O |     
+ | O        X  X    |   | X     X        O |     4 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 182, X 136
+
+* giannakis cannot move
+
+Cube analysis
+2-ply cubeless equity -0.726 (Money: -0.554)
+  0.312 0.061 0.001 - 0.688 0.223 0.019
+Cubeful equities:
+1. No double           -0.811
+2. Double, pass        +1.000  (+1.811)
+3. Double, take        -1.679  (-0.868)
+Proper cube action: No double, take (32.4%)
+
+Rolled 64:
+*    Cannot move
+
+
+Move number 8:  lasse on roll, cube decision?
+
+ GNU Backgammon  Position ID: 4DnmAFiYc8MjAA
+                 Match ID   : cAngADAAIAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: giannakis
+ | X  O     X  O    | O | O                |     3 points
+ | X  O        O    |   | O                |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     7 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ | O           X    |   | X                |     
+ | O        X  X    |   | X     X        O |     On roll
+ | O        X  X    |   | X     X        O |     4 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 182, X 136
+
+* lasse doubles
+
+Alert: wrong double (-0.004)!
+
+Cube analysis
+2-ply cubeless equity +0.926 (Money: +0.718)
+  0.738 0.259 0.023 - 0.262 0.038 0.001
+Cubeful equities:
+1. No double           +1.004
+2. Double, take        +1.275  (+0.271)
+3. Double, pass        +1.000  (-0.004)
+Proper cube action: Too good to double, pass (1.5%)
+Move number 9:  lasse doubles to 2
+
+ GNU Backgammon  Position ID: 4DnmAFiYc8MjAA
+                 Match ID   : cBHgADAAIAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: giannakis
+ | X  O     X  O    | O | O                |     3 points
+ | X  O        O    |   | O                |     Cube offered at 2
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     
+ |                  |   |                  |    
+ |                  |   |                  |     
+ | O           X    |   | X                |     
+ | O        X  X    |   | X     X        O |     
+ | O        X  X    |   | X     X        O |     4 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 182, X 136
+
+* giannakis rejects
+
+
+Cube analysis
+2-ply cubeless equity -0.926 (Money: -0.718)
+  0.262 0.038 0.001 - 0.738 0.259 0.023
+Cubeful equities:
+1. No double           -1.004
+2. Double, take        -1.275  (-0.271)
+3. Double, pass        -1.000  (+0.004)
+Proper cube action: Too good to double, pass (1.5%)
+lasse wins 1 point
+
+Game statistics for game 6
+
+Player                                   giannakis               lasse                  
+
+Chequerplay statistics
+
+Total moves                                4                       3                    
+Unforced moves                             3                       3                    
+Unmarked moves                             3                       3                    
+Moves marked doubtful                      1                       0                    
+Moves marked bad                           0                       0                    
+Moves marked very bad                      0                       0                    
+Error total EMG (MWC)                         -0.050 ( -0.419%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                        -16.6   ( -0.140%)       -0.0   ( -0.000%) 
+Chequerplay rating                       Intermediate            Supernatural           
+
+
+Cube statistics
+
+Total cube decisions                       4                       4                    
+Close or actual cube decisions             1                       1                    
+Doubles                                    0                       1                    
+Takes                                      0                       0                    
+Passes                                     1                       0                    
+Missed doubles below CP (EMG (MWC))        0                       0                    
+Missed doubles above CP (EMG (MWC))        0                       0                    
+Wrong doubles below DP (EMG (MWC))         0                       0                    
+Wrong doubles above TG (EMG (MWC))         0                       1 (-0.004 ( -0.034%))
+Wrong takes (EMG (MWC))                    0                       0                    
+Wrong passes (EMG (MWC))                   0                       0                    
+Error total EMG (MWC)                         -0.000 ( -0.000%)       -0.004 ( -0.034%) 
+Error rate mEMG (MWC)                         -0.0   ( -0.000%)       -4.1   ( -0.034%) 
+Cube decision rating                     Supernatural            World class            
+
+
+Overall statistics
+
+Error total EMG (MWC)                         -0.050 ( -0.419%)       -0.004 ( -0.034%) 
+Error rate mEMG (MWC)                        -12.4   ( -0.105%)       -1.0   ( -0.009%) 
+Snowie error rate                             -7.1   ( +0.000%)       -0.6   ( +0.000%) 
+Overall rating                           Intermediate            Supernatural           
+Error based abs. FIBS rating             1844.0                  2046.8                 
+Chequerplay errors rating loss            206.0                     0.0                 
+Cube errors rating loss                     0.0                     3.2                 
+
+
+
+
+Output generated Thu Sep 05 11:18:19 2024
+ by GNU Backgammon 1.07.001-mingw 32-Bit 20221114 (Text Export version 1.128)
+
