@@ -1,0 +1,944 @@
+The score (after 0 games) is: hakankrc 0, lasse 0 (match to 3 points)
+
+Match Information:
+Date: 03/10/2023
+Place: BackgammonGalaxy
+
+Move number 1:  lasse to play 65
+
+ GNU Backgammon  Position ID: 4HPwATDgc/ABMA
+                 Match ID   : cAh3AAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: hakankrc
+ | X           O    |   | O              X |     0 points
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     Rolled 65
+ | O           X    |   | X              O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 167, X 167
+
+* lasse moves 24/13
+
+Rolled 65:
+*    1. Cubeful 4-ply    24/13                        Eq.: +0.099
+       0.529 0.123 0.004 - 0.471 0.124 0.003
+     2. Cubeful 4-ply    24/18 13/8                   Eq.: +0.040 (-0.059)
+       0.512 0.131 0.006 - 0.488 0.131 0.004
+     3. Cubeful 2-ply    13/8 13/7                    Eq.: -0.074 (-0.174)
+       0.480 0.139 0.008 - 0.520 0.141 0.007
+     4. Cubeful 2-ply    13/2                         Eq.: -0.148 (-0.248)
+       0.466 0.134 0.007 - 0.534 0.156 0.008
+     5. Cubeful 2-ply    24/18 8/3                    Eq.: -0.179 (-0.279)
+       0.466 0.119 0.006 - 0.534 0.164 0.008
+
+
+Move number 2:  hakankrc to play 32
+
+ GNU Backgammon  Position ID: 4HPwAyDgc/ABMA
+                 Match ID   : MIFpAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: hakankrc
+ | X           O    |   | O              X |     0 points
+ | X           O    |   | O                |     Rolled 32
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | 6                |   | O                |    
+^|                  |BAR|                  |     3 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     
+ | O           X    |   | X              O |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 167, X 156
+
+* hakankrc moves 24/21 13/11
+
+Cube analysis
+4-ply cubeless equity -0.058 (Money: -0.058)
+  0.471 0.124 0.003 - 0.529 0.123 0.004
+Cubeful equities:
+1. No double           -0.099
+2. Double, pass        +1.000  (+1.099)
+3. Double, take        -0.612  (-0.512)
+Proper cube action: No double, take (31.8%)
+
+Rolled 32:
+*    1. Cubeful 4-ply    24/21 13/11                  Eq.: -0.199
+       0.453 0.113 0.004 - 0.547 0.134 0.005
+     2. Cubeful 4-ply    13/11 13/10                  Eq.: -0.219 (-0.020)
+       0.446 0.124 0.004 - 0.554 0.140 0.008
+     3. Cubeful 4-ply    24/22 13/10                  Eq.: -0.232 (-0.033)
+       0.444 0.112 0.004 - 0.556 0.135 0.005
+     4. Cubeful 4-ply    13/11 8/5                    Eq.: -0.243 (-0.044)
+       0.443 0.122 0.004 - 0.557 0.145 0.009
+     5. Cubeful 2-ply    13/10 6/4                    Eq.: -0.260 (-0.061)
+       0.437 0.114 0.004 - 0.563 0.145 0.009
+
+
+Move number 3:  lasse to play 32
+
+ GNU Backgammon  Position ID: 4HPkASLgc/ADIA
+                 Match ID   : cIlpAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: hakankrc
+ | X  O        O    |   | O              X |     0 points
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | 6                |   | O                |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     Rolled 32
+ | O           X    |   | X     O        O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 162, X 156
+
+* lasse moves 13/10 6/4*
+
+Cube analysis
+4-ply cubeless equity +0.130 (Money: +0.116)
+  0.547 0.134 0.005 - 0.453 0.113 0.004
+Cubeful equities:
+1. No double           +0.199
+2. Double, pass        +1.000  (+0.801)
+3. Double, take        -0.093  (-0.292)
+Proper cube action: No double, take (26.7%)
+
+Rolled 32:
+     1. Cubeful 4-ply    6/4*/1*                      Eq.: +0.061
+       0.516 0.134 0.003 - 0.484 0.131 0.005
+*    2. Cubeful 4-ply    13/10 6/4*                   Eq.: +0.060 (-0.002)
+       0.516 0.138 0.005 - 0.484 0.136 0.007
+     3. Cubeful 4-ply    13/8                         Eq.: +0.007 (-0.054)
+       0.511 0.109 0.003 - 0.489 0.131 0.003
+     4. Cubeful 4-ply    24/21 13/11                  Eq.: +0.004 (-0.057)
+       0.509 0.109 0.004 - 0.491 0.128 0.004
+     5. Cubeful 2-ply    24/21 6/4*                   Eq.: -0.001 (-0.062)
+       0.505 0.119 0.004 - 0.495 0.130 0.005
+
+
+Move number 4:  hakankrc to play 42
+
+ GNU Backgammon  Position ID: yHPiAyDgc+QBUA
+                 Match ID   : MAFqAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: hakankrc
+ | X  O        O    | O | O              X |     0 points
+ | X           O    |   | O                |     Rolled 42
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+^|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     
+ | O     X     X    |   | X     X        O |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 166, X 151
+
+* hakankrc moves bar/21* 13/11
+
+Cube analysis
+4-ply cubeless equity -0.031 (Money: -0.033)
+  0.484 0.136 0.007 - 0.516 0.138 0.005
+Cubeful equities:
+1. No double           -0.060
+2. Double, pass        +1.000  (+1.060)
+3. Double, take        -0.516  (-0.457)
+Proper cube action: No double, take (30.1%)
+
+Rolled 42:
+*    1. Cubeful 4-ply    bar/21* 13/11                Eq.: +0.169
+       0.534 0.157 0.009 - 0.466 0.117 0.004
+     2. Cubeful 4-ply    bar/21* 24/22                Eq.: +0.110 (-0.059)
+       0.521 0.148 0.008 - 0.479 0.118 0.005
+     3. Cubeful 4-ply    bar/21* 11/9                 Eq.: +0.080 (-0.089)
+       0.511 0.156 0.009 - 0.489 0.122 0.006
+     4. Cubeful 2-ply    bar/21* 8/6                  Eq.: +0.012 (-0.157)
+       0.496 0.145 0.008 - 0.504 0.123 0.006
+     5. Cubeful 2-ply    bar/21* 6/4                  Eq.: -0.048 (-0.216)
+       0.489 0.137 0.008 - 0.511 0.140 0.009
+
+
+Move number 5:  lasse to play 32
+
+ GNU Backgammon  Position ID: 4HPMASLgOfEBUA
+                 Match ID   : cIlpAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: hakankrc
+ | X  O        O    |   | O              X |     0 points
+ | X  O        O    |   | O                |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     Rolled 32
+ | O     X     X    | X | X     O        O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 160, X 172
+
+* lasse moves bar/22 6/4*
+
+Cube analysis
+4-ply cubeless equity -0.138 (Money: -0.111)
+  0.466 0.117 0.004 - 0.534 0.157 0.009
+Cubeful equities:
+1. No double           -0.169
+2. Double, pass        +1.000  (+1.169)
+3. Double, take        -0.682  (-0.514)
+Proper cube action: No double, take (30.5%)
+Alert: doubtful move ( -0.056)
+
+Rolled 32:
+     1. Cubeful 4-ply    bar/23 13/10                 Eq.: -0.145
+       0.473 0.114 0.004 - 0.527 0.150 0.007
+*    2. Cubeful 4-ply    bar/22 6/4*                  Eq.: -0.201 (-0.056)
+       0.466 0.119 0.005 - 0.534 0.178 0.014
+     3. Cubeful 2-ply    bar/22 24/22                 Eq.: -0.247 (-0.102)
+       0.442 0.097 0.003 - 0.558 0.135 0.005
+     4. Cubeful 2-ply    bar/22 10/8                  Eq.: -0.310 (-0.165)
+       0.435 0.096 0.003 - 0.565 0.163 0.007
+     5. Cubeful 2-ply    bar/22 13/11                 Eq.: -0.356 (-0.211)
+       0.430 0.101 0.004 - 0.570 0.188 0.013
+
+
+Move number 6:  hakankrc to play 31
+
+ GNU Backgammon  Position ID: yDnxASTgc8wBUA
+                 Match ID   : MIFlAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: hakankrc
+ | X  O        O    | O | O        X     X |     0 points
+ | X  O        O    |   | O                |     Rolled 31
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+^|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     
+ | O     X     X    |   | X     X        O |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 164, X 167
+
+* hakankrc moves bar/21*
+
+Cube analysis
+4-ply cubeless equity +0.180 (Money: +0.136)
+  0.534 0.178 0.014 - 0.466 0.119 0.005
+Cubeful equities:
+1. No double           +0.201
+2. Double, pass        +1.000  (+0.799)
+3. Double, take        -0.090  (-0.291)
+Proper cube action: No double, take (26.7%)
+
+Rolled 31:
+*    1. Cubeful 2-ply    bar/21*                      Eq.: +0.285
+       0.554 0.182 0.010 - 0.446 0.102 0.004
+     2. Cubeful 2-ply    bar/22 24/23                 Eq.: -0.052 (-0.337)
+       0.490 0.127 0.005 - 0.510 0.140 0.006
+     3. Cubeful 2-ply    bar/24 6/3*                  Eq.: -0.082 (-0.367)
+       0.480 0.144 0.009 - 0.520 0.154 0.009
+     4. Cubeful 0-ply    bar/22 6/5                   Eq.: -0.096 (-0.381)
+       0.481 0.132 0.008 - 0.519 0.156 0.010
+     5. Cubeful 0-ply    bar/24 13/10                 Eq.: -0.134 (-0.419)
+       0.469 0.141 0.008 - 0.531 0.159 0.010
+
+
+Move number 7:  lasse to play 55
+
+ GNU Backgammon  Position ID: 4HPMASLgnPgAUg
+                 Match ID   : cIl2AAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: hakankrc
+ | X  O        O    |   | O        X     X |     0 points
+ | X  O        O    |   | O                |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     Rolled 55
+ | O     X     X    | X | X     O        O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 160, X 188
+
+* lasse moves bar/10 13/8
+
+Cube analysis
+4-ply cubeless equity -0.252 (Money: -0.199)
+  0.444 0.104 0.004 - 0.556 0.185 0.011
+Cubeful equities:
+1. No double           -0.296
+2. Double, pass        +1.000  (+1.296)
+3. Double, take        -0.871  (-0.575)
+Proper cube action: No double, take (30.7%)
+
+Rolled 55:
+*    1. Cubeful 2-ply    bar/10 13/8                  Eq.: -0.110
+       0.483 0.110 0.004 - 0.517 0.150 0.006
+     2. Cubeful 2-ply    bar/10 6/1*                  Eq.: -0.249 (-0.139)
+       0.454 0.099 0.003 - 0.546 0.168 0.010
+     3. Cubeful 2-ply    bar/10 8/3                   Eq.: -0.278 (-0.168)
+       0.448 0.105 0.004 - 0.552 0.182 0.011
+     4. Cubeful 2-ply    bar/20 13/3 8/3              Eq.: -0.345 (-0.235)
+       0.431 0.113 0.006 - 0.569 0.190 0.012
+     5. Cubeful 2-ply    bar/15 13/8(2)               Eq.: -0.432 (-0.322)
+       0.418 0.095 0.005 - 0.582 0.208 0.015
+
+
+Move number 8:  hakankrc to play 11
+
+ GNU Backgammon  Position ID: 4DzjASTgc8wBIg
+                 Match ID   : MIFkAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: hakankrc
+ | X  O        O    |   | O        X     X |     0 points
+ | X  O        O    |   | O                |     Rolled 11
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |             X    |   |                  |     
+ | O           X    |   | X                |     
+ | O     X     X    |   | X                |     
+ | O     X     X    |   | X     O        O |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 160, X 168
+
+* hakankrc moves 11/10(2) 6/5(2)
+
+Cube analysis
+4-ply cubeless equity +0.107 (Money: +0.082)
+  0.519 0.152 0.006 - 0.481 0.110 0.004
+Cubeful equities:
+1. No double           +0.121
+2. Double, pass        +1.000  (+0.879)
+3. Double, take        -0.234  (-0.355)
+Proper cube action: No double, take (28.8%)
+
+Rolled 11:
+*    1. Cubeful 4-ply    11/10(2) 6/5(2)              Eq.: +0.231
+       0.547 0.157 0.006 - 0.453 0.103 0.004
+     2. Cubeful 4-ply    24/22 6/5(2)                 Eq.: +0.203 (-0.029)
+       0.545 0.143 0.006 - 0.455 0.104 0.004
+     3. Cubeful 4-ply    8/5 6/5                      Eq.: +0.172 (-0.059)
+       0.533 0.156 0.007 - 0.467 0.109 0.004
+     4. Cubeful 4-ply    6/4(2)                       Eq.: +0.163 (-0.068)
+       0.533 0.149 0.006 - 0.467 0.109 0.004
+     5. Cubeful 2-ply    24/23 6/5(3)                 Eq.: +0.159 (-0.072)
+       0.534 0.145 0.006 - 0.466 0.108 0.004
+
+
+Move number 9:  lasse to play 41
+
+ GNU Backgammon  Position ID: sHPGASLgPOMBJA
+                 Match ID   : cAlmAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: hakankrc
+ | X     O     O    |   | O  O     X     X |     0 points
+ | X     O     O    |   | O  O             |     
+ | X           O    |   | O                |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |             X    |   |                  |     
+ | O           X    |   | X                |     
+ | O     X     X    |   | X                |     Rolled 41
+ | O     X     X    |   | X     O        O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 156, X 168
+
+* lasse moves 22/21 8/4*
+
+Cube analysis
+4-ply cubeless equity -0.183 (Money: -0.151)
+  0.453 0.103 0.004 - 0.547 0.157 0.006
+Cubeful equities:
+1. No double           -0.231
+2. Double, pass        +1.000  (+1.231)
+3. Double, take        -0.797  (-0.566)
+Proper cube action: No double, take (31.5%)
+
+Rolled 41:
+     1. Cubeful 4-ply    24/23 8/4*                   Eq.: -0.492
+       0.407 0.092 0.004 - 0.593 0.204 0.012
+     2. Cubeful 4-ply    13/8                         Eq.: -0.503 (-0.011)
+       0.400 0.084 0.003 - 0.600 0.187 0.008
+*    3. Cubeful 4-ply    22/21 8/4*                   Eq.: -0.508 (-0.016)
+       0.408 0.094 0.004 - 0.592 0.217 0.016
+     4. Cubeful 4-ply    8/4*/3                       Eq.: -0.517 (-0.025)
+       0.401 0.091 0.004 - 0.599 0.207 0.013
+     5. Cubeful 2-ply    24/23 22/18                  Eq.: -0.554 (-0.062)
+       0.401 0.081 0.003 - 0.599 0.229 0.009
+
+
+Move number 10:  hakankrc to play 52
+
+ GNU Backgammon  Position ID: yDnjASKwc8YBUA
+                 Match ID   : MIFqAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: hakankrc
+ | X     O     O    | O | O  O  X        X |     0 points
+ | X     O     O    |   | O  O             |     Rolled 52
+ | X           O    |   | O                |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ | O           X    |   | X                |     
+ | O     X     X    |   | X                |     
+ | O     X     X    |   | X     X        O |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 160, X 163
+
+* hakankrc moves bar/20 6/4*
+
+Cube analysis
+4-ply cubeless equity +0.401 (Money: +0.320)
+  0.592 0.217 0.016 - 0.408 0.094 0.004
+Cubeful equities:
+1. No double           +0.508
+2. Double, pass        +1.000  (+0.492)
+3. Double, take        +0.393  (-0.116)
+Proper cube action: No double, take (19.0%)
+
+Rolled 52:
+*    1. Cubeful 2-ply    bar/20 6/4*                  Eq.: +0.380
+       0.575 0.187 0.012 - 0.425 0.104 0.005
+     2. Cubeful 2-ply    bar/23 13/8                  Eq.: +0.232 (-0.148)
+       0.550 0.163 0.007 - 0.450 0.114 0.005
+     3. Cubeful 2-ply    bar/20 24/22                 Eq.: +0.232 (-0.148)
+       0.553 0.159 0.008 - 0.447 0.118 0.005
+     4. Cubeful 2-ply    bar/18                       Eq.: +0.222 (-0.158)
+       0.553 0.150 0.007 - 0.447 0.116 0.005
+     5. Cubeful 2-ply    bar/20 13/11                 Eq.: +0.209 (-0.171)
+       0.543 0.170 0.009 - 0.457 0.120 0.007
+
+
+Move number 11:  lasse to play 62
+
+ GNU Backgammon  Position ID: aHPGASHIOeMBUA
+                 Match ID   : cAlrAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: hakankrc
+ | X     O     O    |   | O  O  O        X |     0 points
+ | X     O     O    |   | O  O             |     
+ | X           O    |   |                  |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ | O           X    |   | X                |     
+ | O     X     X    |   | X                |     Rolled 62
+ | O     X     X    | X | X  O  X        O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 153, X 167
+
+* lasse moves bar/23 10/4
+
+Cube analysis
+4-ply cubeless equity -0.298 (Money: -0.245)
+  0.422 0.106 0.006 - 0.578 0.189 0.012
+Cubeful equities:
+1. No double           -0.400
+2. Double, pass        +1.000  (+1.400)
+3. Double, take        -1.017  (-0.617)
+Proper cube action: No double, take (30.6%)
+
+Rolled 62:
+*    1. Cubeful 2-ply    bar/23 10/4                  Eq.: -0.579
+       0.383 0.094 0.005 - 0.617 0.209 0.013
+     2. Cubeful 2-ply    bar/23 24/18                 Eq.: -0.762 (-0.183)
+       0.371 0.078 0.004 - 0.629 0.271 0.016
+     3. Cubeful 2-ply    bar/23 13/7                  Eq.: -0.849 (-0.271)
+       0.356 0.081 0.004 - 0.644 0.270 0.027
+     4. Cubeful 0-ply    bar/23 8/2                   Eq.: -1.000 (-0.421)
+       0.338 0.073 0.003 - 0.662 0.285 0.030
+
+
+Move number 12:  hakankrc to play 33
+
+ GNU Backgammon  Position ID: mHPiAShoc8YBIQ
+                 Match ID   : MIFtAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: hakankrc
+ | X     O     O    |   | O  O  O     X  X |     0 points
+ | X     O     O    |   | O  O             |     Rolled 33
+ | X           O    |   |                  |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ | O           X    |   | X                |     
+ | O           X    |   | X     X          |     
+ | O     X     X    |   | X  O  X        O |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 153, X 159
+
+* hakankrc moves 10/4 5/2*(2)
+
+Cube analysis
+4-ply cubeless equity +0.420 (Money: +0.351)
+  0.616 0.208 0.012 - 0.384 0.096 0.005
+Cubeful equities:
+1. No double           +0.578
+2. Double, pass        +1.000  (+0.422)
+3. Double, take        +0.523  (-0.056)
+Proper cube action: No double, take (11.6%)
+Alert: doubtful move ( -0.058)
+
+Rolled 33:
+     1. Cubeful 4-ply    10/4 8/2*                    Eq.: +0.517
+       0.601 0.245 0.015 - 0.399 0.114 0.008
+     2. Cubeful 4-ply    13/4 8/5                     Eq.: +0.480 (-0.037)
+       0.586 0.227 0.014 - 0.414 0.119 0.006
+     3. Cubeful 4-ply    10/4(2)                      Eq.: +0.460 (-0.057)
+       0.579 0.229 0.014 - 0.421 0.120 0.006
+*    4. Cubeful 4-ply    10/4 5/2*(2)                 Eq.: +0.460 (-0.058)
+       0.580 0.222 0.012 - 0.420 0.105 0.004
+     5. Cubeful 2-ply    10/1* 4/1                    Eq.: +0.380 (-0.137)
+       0.562 0.229 0.010 - 0.438 0.113 0.005
+
+
+Move number 13:  lasse to play 43
+
+ GNU Backgammon  Position ID: ZubEASGYc+IBUA
+                 Match ID   : cAluAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: hakankrc
+ | X     O     O    |   | O     O     O  X |     0 points
+ | X           O    |   | O     O     O    |     
+ | X           O    |   |                  |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ | O           X    |   | X                |     
+ | O           X    |   | X     X          |     Rolled 43
+ | O     X     X    | X | X  O  X        O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 141, X 161
+
+* lasse moves bar/22 10/6
+
+Cube analysis
+4-ply cubeless equity -0.356 (Money: -0.284)
+  0.420 0.105 0.004 - 0.580 0.222 0.012
+Cubeful equities:
+1. No double           -0.460
+2. Double, pass        +1.000  (+1.460)
+3. Double, take        -1.055  (-0.595)
+Proper cube action: No double, take (29.0%)
+
+Rolled 43:
+*    1. Cubeful 2-ply    bar/22 10/6                  Eq.: -0.369
+       0.430 0.102 0.004 - 0.570 0.203 0.006
+     2. Cubeful 2-ply    bar/22 24/20                 Eq.: -0.502 (-0.133)
+       0.407 0.093 0.004 - 0.593 0.244 0.012
+     3. Cubeful 2-ply    bar/22 8/4                   Eq.: -0.553 (-0.184)
+       0.394 0.093 0.004 - 0.606 0.236 0.013
+     4. Cubeful 2-ply    bar/22 13/9                  Eq.: -0.573 (-0.204)
+       0.400 0.104 0.006 - 0.600 0.276 0.025
+     5. Cubeful 0-ply    bar/18                       Eq.: -0.756 (-0.387)
+       0.383 0.088 0.004 - 0.617 0.311 0.018
+
+
+Move number 14:  hakankrc to play 63
+
+ GNU Backgammon  Position ID: mOfgASRm5sQBIQ
+                 Match ID   : MAFvAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: hakankrc
+ | X     O     O    |   | O     O  X  O  X |     0 points
+ | X           O    |   | O     O     O    |     Rolled 63
+ | X           O    |   |                  |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X     X          |     
+ | O           X    |   | X  O  X        O |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 141, X 154
+
+* hakankrc moves 13/7 10/7
+
+Cube analysis
+4-ply cubeless equity +0.301 (Money: +0.246)
+  0.571 0.204 0.006 - 0.429 0.102 0.004
+Cubeful equities:
+1. No double           +0.377
+2. Double, pass        +1.000  (+0.623)
+3. Double, take        +0.221  (-0.157)
+Proper cube action: No double, take (20.1%)
+
+Rolled 63:
+*    1. Cubeful 4-ply    13/7 10/7                    Eq.: +0.225
+       0.546 0.182 0.007 - 0.454 0.129 0.005
+     2. Cubeful 4-ply    20/14 13/10                  Eq.: +0.196 (-0.029)
+       0.540 0.176 0.007 - 0.460 0.131 0.005
+     3. Cubeful 2-ply    20/11                        Eq.: +0.142 (-0.082)
+       0.527 0.172 0.006 - 0.473 0.134 0.005
+     4. Cubeful 2-ply    10/1*                        Eq.: +0.095 (-0.130)
+       0.514 0.175 0.004 - 0.486 0.135 0.006
+     5. Cubeful 2-ply    24/18 13/10                  Eq.: +0.034 (-0.190)
+       0.516 0.151 0.006 - 0.484 0.154 0.005
+
+
+Move number 15:  lasse to play 55
+
+ GNU Backgammon  Position ID: ZraDASGY5+ABJA
+                 Match ID   : cIl2AAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: hakankrc
+ | X           O  O |   | O     O  X  O  X |     0 points
+ | X           O  O |   | O     O     O    |     
+ | X           O    |   |                  |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |             X    |   | X                |     
+ | O           X    |   | X     X          |     Rolled 55
+ | O           X    |   | X  O  X        O |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 132, X 154
+
+* lasse moves 8/3(2) 6/1*(2)
+
+Cube analysis
+4-ply cubeless equity -0.180 (Money: -0.149)
+  0.454 0.129 0.005 - 0.546 0.182 0.007
+Cubeful equities:
+1. No double           -0.225
+2. Double, pass        +1.000  (+1.225)
+3. Double, take        -0.760  (-0.536)
+Proper cube action: No double, take (30.4%)
+
+Rolled 55:
+*    1. Cubeful 2-ply    8/3(2) 6/1*(2)               Eq.: -0.157
+       0.457 0.186 0.004 - 0.543 0.182 0.008
+     2. Cubeful 2-ply    13/3 8/3 6/1*                Eq.: -0.290 (-0.133)
+       0.438 0.148 0.005 - 0.562 0.199 0.010
+     3. Cubeful 2-ply    13/3(2)                      Eq.: -0.320 (-0.163)
+       0.432 0.132 0.006 - 0.568 0.195 0.006
+     4. Cubeful 2-ply    13/8(2) 6/1*(2)              Eq.: -0.334 (-0.177)
+       0.425 0.136 0.003 - 0.575 0.181 0.007
+     5. Cubeful 0-ply    13/3 6/1*(2)                 Eq.: -0.478 (-0.321)
+       0.400 0.129 0.004 - 0.600 0.223 0.011
+
+
+Move number 16:  hakankrc to play 43
+
+ GNU Backgammon  Position ID: s5ngASRmtoMBQQ
+                 Match ID   : MAFuAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: hakankrc
+ | X           O  O | O | O     O  X  O  X |     0 points
+ | X           O  O |   | O     O     O    |     Rolled 43
+ | X           O    |   |                  |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |                  |     
+ | O                |   | X     X  X     X |     
+ | O           X    |   | X  O  X  X     X |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 133, X 134
+
+* hakankrc cannot move
+
+Cube analysis
+4-ply cubeless equity +0.092 (Money: +0.088)
+  0.544 0.185 0.009 - 0.456 0.189 0.004
+Cubeful equities:
+1. No double           +0.154
+2. Double, pass        +1.000  (+0.846)
+3. Double, take        -0.061  (-0.215)
+Proper cube action: No double, take (20.3%)
+
+Rolled 43:
+*    Cannot move
+
+
+Move number 17:  lasse to play 53
+
+ GNU Backgammon  Position ID: ZraDAUGzmeABJA
+                 Match ID   : cIluAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: hakankrc
+ | X           O  O | O | O     O  X  O  X |     0 points
+ | X           O  O |   | O     O     O    |     
+ | X           O    |   |                  |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |                  |     
+ | O                |   | X     X  X     X |     Rolled 53
+ | O           X    |   | X  O  X  X     X |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 133, X 134
+
+* lasse moves 13/5*
+
+Cube analysis
+4-ply cubeless equity +0.346 (Money: +0.272)
+  0.562 0.293 0.005 - 0.438 0.142 0.008
+Cubeful equities:
+1. No double           +0.419
+2. Double, pass        +1.000  (+0.581)
+3. Double, take        +0.331  (-0.087)
+Proper cube action: No double, take (13.1%)
+
+Rolled 53:
+*    1. Cubeful 2-ply    13/5*                        Eq.: +0.523
+       0.584 0.337 0.008 - 0.416 0.139 0.010
+     2. Cubeful 2-ply    13/10 13/8                   Eq.: +0.317 (-0.206)
+       0.539 0.270 0.007 - 0.461 0.149 0.009
+     3. Cubeful 0-ply    13/10 8/3                    Eq.: -0.036 (-0.559)
+       0.478 0.201 0.004 - 0.522 0.158 0.008
+     4. Cubeful 0-ply    13/8 4/1                     Eq.: -0.864 (-1.387)
+       0.343 0.101 0.002 - 0.657 0.246 0.014
+     5. Cubeful 0-ply    13/8 6/3                     Eq.: -0.954 (-1.477)
+       0.335 0.104 0.002 - 0.665 0.265 0.019
+
+
+Move number 18:  hakankrc to play 64
+
+ GNU Backgammon  Position ID: szXBASRmtoMBYA
+                 Match ID   : MAFzAAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: hakankrc
+ | X           O  O | O | O     O  X  O  X |     0 points
+ | X           O  O | O | O     O     O    |     Rolled 64
+ | X           O    |   |                  |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |                  |     
+ | O                |   | X     X  X     X |     
+ | O           X    |   | X  X  X  X     X |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 138, X 126
+
+* hakankrc cannot move
+
+Cube analysis
+4-ply cubeless equity -0.473 (Money: -0.372)
+  0.414 0.141 0.010 - 0.586 0.342 0.007
+Cubeful equities:
+1. No double           -0.518
+2. Double, pass        +1.000  (+1.518)
+3. Double, take        -1.116  (-0.598)
+Proper cube action: No double, take (28.3%)
+
+Rolled 64:
+*    Cannot move
+
+
+Move number 19:  lasse to play 64
+
+ GNU Backgammon  Position ID: ZraDAWCzNcEBJA
+                 Match ID   : cAlzAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: hakankrc
+ | X           O  O | O | O     O  X  O  X |     0 points
+ | X           O  O | O | O     O     O    |     
+ | X           O    |   |                  |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |                  |     
+ | O                |   | X     X  X     X |     Rolled 64
+ | O           X    |   | X  X  X  X     X |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 138, X 126
+
+* lasse moves 24/20 22/16
+
+Cube analysis
+4-ply cubeless equity +1.038 (Money: +0.827)
+  0.714 0.482 0.008 - 0.286 0.086 0.005
+Cubeful equities:
+1. No double           +1.106
+2. Double, take        +1.804  (+0.698)
+3. Double, pass        +1.000  (-0.106)
+Proper cube action: Too good to double, pass (13.2%)
+
+Rolled 64:
+     1. Cubeful 4-ply    24/20 13/7                   Eq.: +0.875
+       0.672 0.457 0.008 - 0.328 0.119 0.012
+*    2. Cubeful 4-ply    24/20 22/16                  Eq.: +0.867 (-0.008)
+       0.676 0.424 0.008 - 0.324 0.110 0.008
+     3. Cubeful 4-ply    22/16 13/9                   Eq.: +0.842 (-0.034)
+       0.667 0.447 0.009 - 0.333 0.119 0.013
+     4. Cubeful 4-ply    24/14                        Eq.: +0.794 (-0.082)
+       0.659 0.416 0.008 - 0.341 0.120 0.009
+     5. Cubeful 2-ply    13/9 13/7                    Eq.: +0.759 (-0.116)
+       0.644 0.446 0.009 - 0.356 0.136 0.025
+
+
+Move number 20:  hakankrc to play 66
+
+ GNU Backgammon  Position ID: szXBEQJmtoMBYA
+                 Match ID   : MAF7AAAAAAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: hakankrc
+ | X        X  O  O | O | O  X  O     O    |     0 points
+ | X           O  O | O | O     O     O    |     Rolled 66
+ | X           O    |   |                  |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |                  |     
+ | O                |   | X     X  X     X |     
+ | O           X    |   | X  X  X  X     X |     0 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 138, X 116
+
+* hakankrc cannot move
+
+Cube analysis
+4-ply cubeless equity -0.829 (Money: -0.666)
+  0.324 0.110 0.008 - 0.676 0.424 0.008
+Cubeful equities:
+1. No double           -0.867
+2. Double, pass        +1.000  (+1.867)
+3. Double, take        -1.844  (-0.977)
+Proper cube action: No double, take (34.3%)
+
+Rolled 66:
+*    Cannot move
+
+
+Move number 21:  lasse on roll, cube decision?
+
+ GNU Backgammon  Position ID: ZraDAWCzNcERAg
+                 Match ID   : cAlgAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: hakankrc
+ | X        X  O  O | O | O  X  O     O    |     0 points
+ | X           O  O | O | O     O     O    |     
+ | X           O    |   |                  |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     3 points match (Cube: 1)
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |                  |     
+ | O                |   | X     X  X     X |     On roll
+ | O           X    |   | X  X  X  X     X |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 138, X 116
+
+* lasse doubles
+
+Alert: wrong double (-0.509)!
+ [very bad]
+Cube analysis
+4-ply cubeless equity +1.466 (Money: +1.172)
+  0.809 0.600 0.009 - 0.191 0.052 0.003
+Cubeful equities:
+1. No double           +1.509
+2. Double, take        +2.739  (+1.229)
+3. Double, pass        +1.000  (-0.509)
+Proper cube action: Too good to double, pass (29.3%)
+Move number 22:  lasse doubles to 2
+
+ GNU Backgammon  Position ID: ZraDAWCzNcERAg
+                 Match ID   : cBFgAAAAAAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: hakankrc
+ | X        X  O  O | O | O  X  O     O    |     0 points
+ | X           O  O | O | O     O     O    |     Cube offered at 2
+ | X           O    |   |                  |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   |                  |     
+ | O                |   | X     X  X     X |     
+ | O           X    |   | X  X  X  X     X |     0 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 138, X 116
+
+* hakankrc rejects
+
+
+Cube analysis
+4-ply cubeless equity -1.466 (Money: -1.172)
+  0.191 0.052 0.003 - 0.809 0.600 0.009
+Cubeful equities:
+1. No double           -1.509
+2. Double, take        -2.739  (-1.229)
+3. Double, pass        -1.000  (+0.509)
+Proper cube action: Too good to double, pass (29.3%)
+lasse wins 1 point
+
+Game statistics for game 1
+
+Player                                   hakankrc                lasse                  
+
+Chequerplay statistics
+
+Total moves                               10                      10                    
+Unforced moves                             7                      10                    
+Unmarked moves                             9                       9                    
+Moves marked doubtful                      1                       1                    
+Moves marked bad                           0                       0                    
+Moves marked very bad                      0                       0                    
+Error total EMG (MWC)                         -0.058 ( -0.572%)       -0.082 ( -0.813%) 
+Error rate mEMG (MWC)                         -8.2   ( -0.082%)       -8.2   ( -0.081%) 
+Chequerplay rating                       Advanced                Advanced               
+
+
+Cube statistics
+
+Total cube decisions                      11                      10                    
+Close or actual cube decisions             4                       3                    
+Doubles                                    0                       1                    
+Takes                                      0                       0                    
+Passes                                     1                       0                    
+Missed doubles below CP (EMG (MWC))        0                       0                    
+Missed doubles above CP (EMG (MWC))        0                       0                    
+Wrong doubles below DP (EMG (MWC))         0                       0                    
+Wrong doubles above TG (EMG (MWC))         0                       1 (-0.509 ( -5.065%))
+Wrong takes (EMG (MWC))                    0                       0                    
+Wrong passes (EMG (MWC))                   0                       0                    
+Error total EMG (MWC)                         -0.000 ( -0.000%)       -0.509 ( -5.065%) 
+Error rate mEMG (MWC)                         -0.0   ( -0.000%)     -169.7   ( -1.688%) 
+Cube decision rating                     Supernatural            Awful!                 
+
+
+Overall statistics
+
+Error total EMG (MWC)                         -0.058 ( -0.572%)       -0.591 ( -5.878%) 
+Error rate mEMG (MWC)                         -5.2   ( -0.052%)      -45.5   ( -0.452%) 
+Snowie error rate                             -2.9   ( +0.000%)      -29.5   ( +0.000%) 
+Overall rating                           Expert                  Awful!                 
+Error based abs. FIBS rating             1907.7                  1791.4                 
+Chequerplay errors rating loss            142.3                   141.5                 
+Cube errors rating loss                     0.0                   117.1                 
+
+
+
+
+Output generated Wed Aug 28 02:38:51 2024
+ by GNU Backgammon 1.07.001-mingw 32-Bit 20221114 (Text Export version 1.128)
+

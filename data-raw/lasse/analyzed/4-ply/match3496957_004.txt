@@ -1,0 +1,2234 @@
+The score (after 3 games) is: galush 1, lasse 3 (match to 5 points)
+
+Match Information:
+Date: 10/11/2023
+Place: BackgammonGalaxy
+
+Move number 1:  galush to play 61
+
+ GNU Backgammon  Position ID: 4HPwATDgc/ABMA
+                 Match ID   : MACnABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ | X           O    |   | O              X |     1 point
+ | X           O    |   | O              X |     Rolled 61
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     
+ | O           X    |   | X              O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 167, X 167
+
+* galush moves 13/7 8/7
+
+Rolled 61:
+*    1. Cubeful 2-ply    13/7 8/7                     Eq.: +0.493
+       0.532 0.156 0.007 - 0.468 0.122 0.006
+     2. Cubeful 2-ply    24/23 13/7                   Eq.: +0.207 (-0.285)
+       0.480 0.133 0.006 - 0.520 0.138 0.007
+     3. Cubeful 2-ply    13/7 6/5                     Eq.: +0.202 (-0.290)
+       0.477 0.132 0.006 - 0.523 0.151 0.011
+     4. Cubeful 2-ply    24/23 24/18                  Eq.: +0.197 (-0.296)
+       0.494 0.121 0.005 - 0.506 0.136 0.005
+     5. Cubeful 2-ply    13/6                         Eq.: +0.190 (-0.303)
+       0.478 0.137 0.006 - 0.522 0.145 0.007
+
+
+Move number 2:  lasse to play 65
+
+ GNU Backgammon  Position ID: 4NvgATDgc/ABMA
+                 Match ID   : cAm3ABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ | X           O  O |   | O              X |     1 point
+ | X           O  O |   | O              X |     
+ | X                |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     Rolled 65
+ | O           X    |   | X              O |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 160, X 167
+
+* lasse moves 13/8 13/7
+
+Cube analysis
+4-ply cubeless equity -0.012 (Money: -0.103)
+  0.467 0.122 0.006 - 0.533 0.158 0.006
+Cubeful equities:
+1. No double           -0.511
+2. Double, pass        +1.000  (+1.511)
+3. Double, take        -1.889  (-1.379)
+Proper cube action: No double, take (47.7%)
+
+Rolled 65:
+*    1. Cubeful 2-ply    13/8 13/7                    Eq.: -0.754
+       0.423 0.117 0.007 - 0.577 0.171 0.010
+     2. Cubeful 2-ply    13/2                         Eq.: -0.922 (-0.168)
+       0.407 0.113 0.006 - 0.593 0.192 0.011
+     3. Cubeful 2-ply    13/7 8/3                     Eq.: -1.000 (-0.246)
+       0.396 0.103 0.006 - 0.604 0.203 0.017
+     4. Cubeful 2-ply    8/3 8/2                      Eq.: -1.000 (-0.246)
+       0.365 0.091 0.004 - 0.635 0.241 0.026
+
+
+Move number 3:  galush to play 43
+
+ GNU Backgammon  Position ID: 4OvBATDg2+ABMA
+                 Match ID   : MAGuABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ | X           O  O |   | O              X |     1 point
+ | X           O  O |   | O              X |     Rolled 43
+ | X                |   | O                |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   | X                |    
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     
+ | O           X  X |   | X              O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 160, X 156
+
+* galush moves 24/21 13/9
+Alert: missed double (-0.037)!
+ [doubtful]
+Cube analysis
+4-ply cubeless equity +0.123 (Money: +0.209)
+  0.575 0.172 0.010 - 0.425 0.117 0.006
+Cubeful equities:
+1. Double, take        +0.748
+2. Double, pass        +1.000  (+0.252)
+3. No double           +0.710  (-0.037)
+Proper cube action: Double, take
+Alert: bad move ( -0.087)
+
+Rolled 43:
+     1. Cubeful 4-ply    13/10 13/9                   Eq.: +0.546
+       0.532 0.168 0.009 - 0.468 0.144 0.010
+*    2. Cubeful 4-ply    24/21 13/9                   Eq.: +0.460 (-0.087)
+       0.525 0.153 0.007 - 0.475 0.148 0.007
+     3. Cubeful 2-ply    24/20 13/10                  Eq.: +0.438 (-0.109)
+       0.524 0.150 0.008 - 0.476 0.147 0.007
+     4. Cubeful 2-ply    13/9 6/3                     Eq.: +0.390 (-0.156)
+       0.509 0.153 0.008 - 0.491 0.155 0.010
+     5. Cubeful 2-ply    24/21 24/20                  Eq.: +0.372 (-0.174)
+       0.528 0.132 0.005 - 0.472 0.140 0.005
+
+
+Move number 4:  lasse to play 61
+
+ GNU Backgammon  Position ID: 4NvCASLg68EBMA
+                 Match ID   : cAmnABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ | X        O  O  O |   | O              X |     1 point
+ | X           O  O |   | O              X |     
+ | X                |   | O                |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   | X                |    
+ |             X    |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     Rolled 61
+ | O           X  X |   | X     O        O |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 153, X 156
+
+* lasse moves 24/23 13/7
+
+Cube analysis
+4-ply cubeless equity +0.052 (Money: -0.055)
+  0.475 0.148 0.007 - 0.525 0.153 0.007
+Cubeful equities:
+1. No double           -0.460
+2. Double, pass        +1.000  (+1.460)
+3. Double, take        -1.842  (-1.382)
+Proper cube action: No double, take (48.6%)
+
+Rolled 61:
+*    1. Cubeful 4-ply    24/23 13/7                   Eq.: -0.610
+       0.441 0.114 0.004 - 0.559 0.158 0.006
+     2. Cubeful 4-ply    13/7 8/7                     Eq.: -0.637 (-0.027)
+       0.433 0.118 0.004 - 0.567 0.156 0.007
+     3. Cubeful 2-ply    13/7 6/5                     Eq.: -0.738 (-0.129)
+       0.424 0.111 0.005 - 0.576 0.169 0.012
+     4. Cubeful 2-ply    24/23 7/1*                   Eq.: -0.835 (-0.226)
+       0.403 0.110 0.004 - 0.597 0.169 0.008
+     5. Cubeful 2-ply    8/7 8/2                      Eq.: -0.937 (-0.328)
+       0.395 0.108 0.004 - 0.605 0.182 0.011
+
+
+Move number 5:  galush to play 63
+
+ GNU Backgammon  Position ID: 4NuDASjg28IBIg
+                 Match ID   : MAGvABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ | X        O  O  O |   | O           X  X |     1 point
+ | X           O  O |   | O                |     Rolled 63
+ |                  |   | O                |     
+ |                  |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   | X                |    
+ |             X    |   | X                |     
+ | O           X    |   | X                |     
+ | O           X  X |   | X                |     
+ | O           X  X |   | X     O        O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 153, X 149
+
+* galush moves 9/3 6/3
+Alert: missed double (-0.048)!
+ [doubtful]
+Cube analysis
+4-ply cubeless equity +0.076 (Money: +0.164)
+  0.559 0.158 0.006 - 0.441 0.114 0.004
+Cubeful equities:
+1. Double, take        +0.610
+2. Double, pass        +1.000  (+0.390)
+3. No double           +0.561  (-0.048)
+Proper cube action: Double, take
+
+Rolled 63:
+*    1. Cubeful 4-ply    9/3 6/3                      Eq.: +0.597
+       0.542 0.164 0.006 - 0.458 0.130 0.005
+     2. Cubeful 4-ply    24/21 13/7                   Eq.: +0.519 (-0.078)
+       0.545 0.143 0.004 - 0.455 0.092 0.003
+     3. Cubeful 2-ply    24/15                        Eq.: +0.347 (-0.250)
+       0.525 0.124 0.004 - 0.475 0.157 0.007
+     4. Cubeful 2-ply    21/15 13/10                  Eq.: +0.310 (-0.287)
+       0.508 0.135 0.005 - 0.492 0.165 0.010
+     5. Cubeful 2-ply    24/21 9/3                    Eq.: +0.276 (-0.322)
+       0.499 0.129 0.004 - 0.501 0.105 0.003
+
+
+Move number 6:  lasse to play 44
+
+ GNU Backgammon  Position ID: jLfBASLg24MBKA
+                 Match ID   : cAmyABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ | X           O  O |   | O        O  X  X |     1 point
+ | X           O  O |   | O        O       |     
+ |                  |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   | X                |    
+ |             X    |   | X                |     
+ | O           X    |   | X                |     
+ | O           X  X |   | X                |     Rolled 44
+ | O           X  X |   | X     O        O |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 144, X 149
+
+* lasse moves 24/16 8/4*(2)
+
+Cube analysis
+4-ply cubeless equity -0.021 (Money: -0.119)
+  0.458 0.130 0.005 - 0.542 0.164 0.006
+Cubeful equities:
+1. No double           -0.597
+2. Double, pass        +1.000  (+1.597)
+3. Double, take        -1.831  (-1.234)
+Proper cube action: No double, take (43.6%)
+Alert: doubtful move ( -0.044)
+
+Rolled 44:
+     1. Cubeful 4-ply    8/4*(2) 6/2(2)               Eq.: +0.047
+       0.577 0.232 0.010 - 0.423 0.119 0.005
+*    2. Cubeful 4-ply    24/16 8/4*(2)                Eq.: +0.003 (-0.044)
+       0.576 0.185 0.008 - 0.424 0.123 0.005
+     3. Cubeful 4-ply    13/9(2) 8/4*(2)              Eq.: -0.012 (-0.059)
+       0.564 0.210 0.010 - 0.436 0.117 0.006
+     4. Cubeful 2-ply    8/4*(2) 7/3(2)               Eq.: -0.048 (-0.095)
+       0.549 0.229 0.010 - 0.451 0.123 0.005
+     5. Cubeful 2-ply    24/20 13/9 8/4*(2)           Eq.: -0.118 (-0.165)
+       0.533 0.184 0.009 - 0.467 0.138 0.010
+
+
+Move number 7:  galush to play 55
+
+ GNU Backgammon  Position ID: mG+DERCMt8EBUA
+                 Match ID   : MIG2ABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ | X        X  O  O | O | O        O  X    |     1 point
+ | X           O  O |   | O        O       |     Rolled 55
+ |                  |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   | X                |    
+ |                  |   | X                |     
+ | O                |   | X                |     
+ | O           X  X |   | X     X          |     
+ | O           X  X |   | X     X        O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 148, X 133
+
+* galush moves bar/5
+
+Cube analysis
+4-ply cubeless equity -0.350 (Money: -0.217)
+  0.424 0.123 0.005 - 0.576 0.185 0.008
+Cubeful equities:
+1. No double           -0.003
+2. Double, pass        +1.000  (+1.003)
+3. Double, take        -0.183  (-0.180)
+Proper cube action: No double, take (15.2%)
+Alert: very bad move ( -0.319)
+
+Rolled 55:
+     1. Cubeful 4-ply    bar/15 7/2*(2)               Eq.: +0.474
+       0.504 0.221 0.007 - 0.496 0.143 0.008
+     2. Cubeful 4-ply    bar/20 13/8 7/2*(2)          Eq.: +0.461 (-0.013)
+       0.494 0.205 0.006 - 0.506 0.134 0.007
+*    3. Cubeful 4-ply    bar/5                        Eq.: +0.156 (-0.319)
+       0.450 0.137 0.004 - 0.550 0.170 0.007
+     4. Cubeful 2-ply    bar/20 8/3 7/2*(2)           Eq.: +0.256 (-0.218)
+       0.449 0.182 0.005 - 0.551 0.168 0.010
+     5. Cubeful 2-ply    bar/20 7/2*(2) 6/1           Eq.: +0.255 (-0.219)
+       0.454 0.185 0.005 - 0.546 0.167 0.009
+
+
+Move number 8:  lasse to play 42
+
+ GNU Backgammon  Position ID: TG+DAyCYb4MREA
+                 Match ID   : cAmqABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ | X        X  O  O |   | O  O     O  X    |     1 point
+ | X           O  O |   | O        O       |     
+ |                  |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   | X                |    
+ |                  |   | X                |     
+ | O                |   | X                |     
+ | O           X  X |   | X     X          |     Rolled 42
+ | O           X  X |   | X     X        O |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 128, X 133
+
+* lasse moves 16/10
+
+Cube analysis
+4-ply cubeless equity +0.259 (Money: +0.135)
+  0.550 0.170 0.007 - 0.450 0.137 0.004
+Cubeful equities:
+1. No double           -0.156
+2. Double, pass        +1.000  (+1.156)
+3. Double, take        -1.307  (-1.151)
+Proper cube action: No double, take (49.9%)
+
+Rolled 42:
+*    1. Cubeful 0-ply    16/10                        Eq.: -0.579
+       0.463 0.120 0.004 - 0.537 0.173 0.005
+     2. Cubeful 0-ply    23/21 6/2                    Eq.: -1.000 (-0.421)
+       0.407 0.116 0.004 - 0.593 0.263 0.012
+     3. Cubeful 0-ply    13/11 13/9                   Eq.: -1.000 (-0.421)
+       0.391 0.110 0.005 - 0.609 0.236 0.018
+     4. Cubeful 0-ply    23/21 8/4                    Eq.: -1.000 (-0.421)
+       0.388 0.113 0.004 - 0.612 0.254 0.013
+     5. Cubeful 0-ply    23/21 13/9                   Eq.: -1.000 (-0.421)
+       0.393 0.112 0.005 - 0.607 0.261 0.022
+
+
+Move number 9:  galush to play 31
+
+ GNU Backgammon  Position ID: mG8TAxBMb4MDIA
+                 Match ID   : MIGlABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ | X           O  O |   | O  O     O  X    |     1 point
+ | X           O  O |   | O        O       |     Rolled 31
+ |                  |   | O                |     
+ |                  |   | O                |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   | X                |    
+ |                  |   | X                |     
+ | O                |   | X                |     
+ | O           X  X |   | X     X          |     
+ | O     X     X  X |   | X     X        O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 128, X 127
+
+* galush moves 13/10 6/5
+Alert: missed double (-0.140)!
+ [very bad]
+Cube analysis
+4-ply cubeless equity +0.066 (Money: +0.159)
+  0.546 0.188 0.005 - 0.454 0.121 0.005
+Cubeful equities:
+1. Double, take        +0.689
+2. Double, pass        +1.000  (+0.311)
+3. No double           +0.548  (-0.140)
+Proper cube action: Double, take
+
+Rolled 31:
+*    1. Cubeful 2-ply    13/10 6/5                    Eq.: +0.728
+       0.588 0.183 0.005 - 0.412 0.113 0.004
+     2. Cubeful 2-ply    6/5 6/3                      Eq.: +0.489 (-0.238)
+       0.530 0.158 0.005 - 0.470 0.130 0.005
+     3. Cubeful 0-ply    8/5 6/5                      Eq.: +0.169 (-0.559)
+       0.466 0.150 0.004 - 0.534 0.148 0.006
+     4. Cubeful 0-ply    7/4 6/5                      Eq.: +0.160 (-0.568)
+       0.467 0.156 0.005 - 0.533 0.201 0.011
+     5. Cubeful 0-ply    8/7 8/5                      Eq.: +0.156 (-0.572)
+       0.469 0.132 0.004 - 0.531 0.112 0.003
+
+
+Move number 10:  lasse to play 42
+
+ GNU Backgammon  Position ID: zG4TAyCYbxMDEA
+                 Match ID   : cAmqABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ | X     O     O  O |   | O  O     O  X    |     1 point
+ | X           O  O |   | O  O     O       |     
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   | X                |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ | O           X  X |   | X     X          |     Rolled 42
+ | O     X     X  X |   | X     X        O |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 124, X 127
+
+* lasse moves 10/4
+
+Cube analysis
+4-ply cubeless equity -0.159 (Money: -0.248)
+  0.411 0.114 0.005 - 0.589 0.183 0.006
+Cubeful equities:
+1. No double           -0.736
+2. Double, pass        +1.000  (+1.736)
+3. Double, take        -1.928  (-1.192)
+Proper cube action: No double, take (40.7%)
+
+Rolled 42:
+     1. Cubeful 4-ply    13/11 13/9                   Eq.: -1.000
+       0.364 0.105 0.005 - 0.636 0.257 0.018
+*    2. Cubeful 4-ply    10/4                         Eq.: -1.000 (-0.000)
+       0.343 0.086 0.003 - 0.657 0.202 0.006
+     3. Cubeful 4-ply    23/21 10/6                   Eq.: -1.000 (-0.000)
+       0.322 0.088 0.005 - 0.678 0.257 0.007
+     4. Cubeful 4-ply    10/8 6/2                     Eq.: -1.000 (-0.000)
+       0.326 0.084 0.004 - 0.674 0.307 0.009
+     5. Cubeful 2-ply    13/9 10/8                    Eq.: -1.000 (-0.000)
+       0.313 0.084 0.005 - 0.687 0.306 0.017
+
+
+Move number 11:  galush on roll, cube decision?
+
+ GNU Backgammon  Position ID: ON8GAxDMbhMDIA
+                 Match ID   : MAGgABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ | X     O     O  O |   | O  O     O  X    |     1 point
+ | X           O  O |   | O  O     O       |     On roll
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   | X                |    
+ |                  |   | X                |     
+ |                  |   | X     X          |     
+ | O           X  X |   | X     X          |     
+ | O           X  X |   | X     X        O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 124, X 121
+
+* galush doubles
+
+
+Cube analysis
+4-ply cubeless equity +0.363 (Money: +0.434)
+  0.657 0.202 0.006 - 0.343 0.086 0.003
+Cubeful equities:
+1. Double, pass        +1.000
+2. Double, take        +1.273  (+0.273)
+3. No double           +0.836  (-0.164)
+Proper cube action: Double, pass
+Move number 12:  galush doubles to 2
+
+ GNU Backgammon  Position ID: ON8GAxDMbhMDIA
+                 Match ID   : MBmgABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ | X     O     O  O |   | O  O     O  X    |     1 point
+ | X           O  O |   | O  O     O       |     
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     
+ |                  |   | X                |    
+ |                  |   | X                |     
+ |                  |   | X     X          |     
+ | O           X  X |   | X     X          |     Cube offered at 2
+ | O           X  X |   | X     X        O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 124, X 121
+
+* lasse accepts
+
+Alert: wrong take (-0.273)!
+ [very bad]
+Cube analysis
+4-ply cubeless equity -0.363 (Money: -0.434)
+  0.343 0.086 0.003 - 0.657 0.202 0.006
+Cubeful equities:
+1. Double, pass        -1.000
+2. Double, take        -1.273  (-0.273)
+3. No double           -0.836  (+0.164)
+Proper cube action: Double, pass
+Move number 13:  galush to play 21
+
+ GNU Backgammon  Position ID: ON8GAxDMbhMDIA
+                 Match ID   : EQGlABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ | X     O     O  O |   | O  O     O  X    |     1 point
+ | X           O  O |   | O  O     O       |     Rolled 21
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   | X                |    
+ |                  |   | X                |     
+ |                  |   | X     X          |     
+ | O           X  X |   | X     X          |     
+ | O           X  X |   | X     X        O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 124, X 121
+
+* galush moves 24/22 10/9
+Alert: bad move ( -0.067)
+
+Rolled 21:
+     1. Cubeful 4-ply    13/10                        Eq.: +0.566
+       0.618 0.165 0.006 - 0.382 0.118 0.006
+     2. Cubeful 4-ply    10/7                         Eq.: +0.560 (-0.006)
+       0.604 0.175 0.006 - 0.396 0.108 0.004
+     3. Cubeful 4-ply    24/23 10/8                   Eq.: +0.549 (-0.016)
+       0.610 0.164 0.005 - 0.390 0.107 0.004
+     4. Cubeful 4-ply    24/23 6/4                    Eq.: +0.544 (-0.022)
+       0.600 0.172 0.006 - 0.400 0.169 0.008
+*    5. Cubeful 4-ply    24/22 10/9                   Eq.: +0.498 (-0.067)
+       0.598 0.151 0.005 - 0.402 0.128 0.005
+
+
+Move number 14:  lasse to play 42
+
+ GNU Backgammon  Position ID: zG4LAwg43wYDEA
+                 Match ID   : UQmqABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ | X        O  O  O |   | O  O     O  X    |     1 point
+ | X           O  O |   | O  O     O       |     
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   | X                |    
+ |                  |   | X                |     
+ |                  |   | X     X          |     
+ | O           X  X |   | X     X          |     Rolled 42
+ | O           X  X |   | X     X  O       |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 121, X 121
+
+* lasse moves 6/2 4/2
+
+Rolled 42:
+*    1. Cubeful 2-ply    6/2 4/2                      Eq.: -0.613
+       0.347 0.097 0.003 - 0.653 0.154 0.004
+     2. Cubeful 2-ply    6/4 6/2                      Eq.: -0.787 (-0.174)
+       0.300 0.079 0.003 - 0.700 0.193 0.006
+     3. Cubeful 2-ply    8/6 8/4                      Eq.: -0.828 (-0.216)
+       0.275 0.064 0.002 - 0.725 0.190 0.005
+     4. Cubeful 2-ply    23/21 6/2                    Eq.: -0.880 (-0.268)
+       0.290 0.095 0.004 - 0.710 0.231 0.005
+     5. Cubeful 2-ply    13/7                         Eq.: -0.910 (-0.297)
+       0.269 0.072 0.003 - 0.731 0.224 0.008
+
+
+Move number 15:  galush to play 52
+
+ GNU Backgammon  Position ID: Zt4GAxDMbgsDCA
+                 Match ID   : EYGqABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ | X        O  O  O |   | O  O     O  X    |     1 point
+ | X           O  O |   | O  O     O       |     Rolled 52
+ |                  |   | O                |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ | O           X  X |   | X     X     X    |     
+ | O           X  X |   | X     X  O  X    |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 121, X 115
+
+* galush moves 9/4 6/4
+
+Rolled 52:
+*    1. Cubeful 0-ply    9/4 6/4                      Eq.: +1.175
+       0.869 0.218 0.005 - 0.131 0.019 0.001
+     2. Cubeful 0-ply    22/15                        Eq.: +0.549 (-0.625)
+       0.665 0.110 0.003 - 0.335 0.096 0.001
+     3. Cubeful 0-ply    9/2*                         Eq.: +0.464 (-0.710)
+       0.557 0.175 0.005 - 0.443 0.155 0.006
+     4. Cubeful 0-ply    13/11 13/8                   Eq.: +0.457 (-0.717)
+       0.587 0.141 0.006 - 0.413 0.142 0.007
+     5. Cubeful 0-ply    22/20 9/4                    Eq.: +0.433 (-0.741)
+       0.569 0.148 0.005 - 0.431 0.196 0.006
+
+
+Move number 16:  lasse to play 21
+
+ GNU Backgammon  Position ID: bNsGAwhm3gYDEA
+                 Match ID   : UQmlABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ | X           O  O |   | O  O  O  O  X    |     1 point
+ | X           O  O |   | O  O  O  O       |     
+ |                  |   |                  |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   | X                |     
+ |                  |   | X                |     
+ | O           X  X |   | X     X     X    |     Rolled 21
+ | O           X  X |   | X     X  O  X    |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 114, X 115
+
+* lasse moves 6/3*
+Alert: bad move ( -0.060)
+
+Rolled 21:
+     1. Cubeful 4-ply    7/5 6/5                      Eq.: -1.140
+       0.184 0.045 0.002 - 0.816 0.254 0.006
+     2. Cubeful 4-ply    8/7 8/6                      Eq.: -1.194 (-0.054)
+       0.125 0.022 0.001 - 0.875 0.222 0.005
+*    3. Cubeful 4-ply    6/3*                         Eq.: -1.200 (-0.060)
+       0.179 0.044 0.002 - 0.821 0.280 0.009
+     4. Cubeful 2-ply    6/4 2/1                      Eq.: -1.301 (-0.161)
+       0.125 0.026 0.001 - 0.875 0.276 0.009
+     5. Cubeful 2-ply    8/7 6/4                      Eq.: -1.332 (-0.192)
+       0.155 0.038 0.001 - 0.845 0.321 0.008
+
+
+Move number 17:  galush to play 62
+
+ GNU Backgammon  Position ID: 1twGAxBs2wYDQA
+                 Match ID   : EQGrABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ | X           O  O | O | O  O  O  O  X    |     1 point
+ | X           O  O |   | O  O  O  O       |     Rolled 62
+ |                  |   |                  |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X                |     
+ | O           X  X |   | X     X     X    |     
+ | O           X  X |   | X     X  X  X    |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 117, X 112
+
+* galush cannot move
+
+Rolled 62:
+*    Cannot move
+
+
+Move number 18:  lasse to play 55
+
+ GNU Backgammon  Position ID: bNsGA0DW3AYDEA
+                 Match ID   : UYm2ABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ | X           O  O | O | O  O  O  O  X    |     1 point
+ | X           O  O |   | O  O  O  O       |     
+ |                  |   |                  |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X                |     
+ | O           X  X |   | X     X     X    |     Rolled 55
+ | O           X  X |   | X     X  X  X    |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 117, X 112
+
+* lasse moves 13/3(2)
+
+Rolled 55:
+*    1. Cubeful 4-ply    13/3(2)                      Eq.: -1.049
+       0.068 0.008 0.000 - 0.932 0.093 0.003
+     2. Cubeful 4-ply    13/3 8/3(2)                  Eq.: -1.099 (-0.050)
+       0.070 0.009 0.000 - 0.930 0.120 0.004
+     3. Cubeful 4-ply    13/3 13/8 7/2                Eq.: -1.106 (-0.057)
+       0.070 0.009 0.000 - 0.930 0.123 0.003
+     4. Cubeful 2-ply    13/3 13/8 6/1                Eq.: -1.134 (-0.085)
+       0.085 0.013 0.000 - 0.915 0.152 0.004
+     5. Cubeful 2-ply    13/3 7/2(2)                  Eq.: -1.146 (-0.097)
+       0.073 0.010 0.000 - 0.927 0.146 0.004
+
+
+Move number 19:  galush to play 61
+
+ GNU Backgammon  Position ID: dnMbABBs2wYDQA
+                 Match ID   : EQGnABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ |             O  O | O | O  O  O  O  X    |     1 point
+ |             O  O |   | O  O  O  O       |     Rolled 61
+ |                  |   |                  |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X        X       |     
+ | O           X  X |   | X     X  X  X    |     
+ | O           X  X |   | X     X  X  X    |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 117, X 92
+
+* galush moves bar/24 13/7
+
+Rolled 61:
+*    1. Cubeful 0-ply    bar/24 13/7                  Eq.: +1.013
+       0.876 0.131 0.005 - 0.124 0.017 0.001
+     2. Cubeful 0-ply    bar/24 8/2*                  Eq.: +0.484 (-0.529)
+       0.627 0.114 0.005 - 0.373 0.179 0.009
+     3. Cubeful 0-ply    bar/24 7/1                   Eq.: +0.061 (-0.952)
+       0.440 0.090 0.004 - 0.560 0.273 0.007
+
+
+Move number 20:  lasse to play 43
+
+ GNU Backgammon  Position ID: bNsNAiB2cxsAEA
+                 Match ID   : UQmuABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ |             O  O |   | O  O  O  O  X    |     1 point
+ |             O  O |   | O  O  O  O       |     
+ |                O |   |                  |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |                  |     
+ |                  |   | X        X       |     
+ |             X  X |   | X     X  X  X    |     Rolled 43
+ | O           X  X |   | X     X  X  X  O |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 110, X 92
+
+* lasse moves 7/4 7/3
+
+Rolled 43:
+*    1. Cubeful 4-ply    7/4 7/3                      Eq.: -1.044
+       0.079 0.009 0.000 - 0.921 0.101 0.003
+     2. Cubeful 4-ply    8/4 6/3                      Eq.: -1.081 (-0.037)
+       0.103 0.012 0.000 - 0.897 0.144 0.004
+     3. Cubeful 2-ply    8/5 8/4                      Eq.: -1.157 (-0.112)
+       0.128 0.021 0.001 - 0.872 0.206 0.007
+     4. Cubeful 2-ply    8/1*                         Eq.: -1.180 (-0.136)
+       0.085 0.014 0.001 - 0.915 0.175 0.008
+     5. Cubeful 2-ply    8/5 6/2                      Eq.: -1.261 (-0.217)
+       0.133 0.023 0.001 - 0.867 0.264 0.013
+
+
+Move number 21:  galush to play 44
+
+ GNU Backgammon  Position ID: 9s4ZABBs2w0CIA
+                 Match ID   : EQGyABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ |             O  O |   | O  O  O  O  X    |     1 point
+ |             O  O |   | O  O  O  O       |     Rolled 44
+ |                O |   |                  |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |          X       |     
+ |                  |   | X     X  X       |     
+ |             X    |   | X     X  X  X    |     
+ | O           X    |   | X     X  X  X  O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 110, X 85
+
+* galush moves 13/1 7/3
+Alert: very bad move ( -0.272)
+
+Rolled 44:
+     1. Cubeful 4-ply    24/20 13/5 7/3               Eq.: +1.029
+       0.919 0.096 0.003 - 0.081 0.009 0.000
+     2. Cubeful 4-ply    24/20 13/1                   Eq.: +1.015 (-0.014)
+       0.916 0.092 0.003 - 0.084 0.008 0.000
+     3. Cubeful 4-ply    24/8                         Eq.: +1.004 (-0.025)
+       0.938 0.063 0.002 - 0.062 0.004 0.000
+     4. Cubeful 4-ply    24/12 13/9                   Eq.: +1.000 (-0.030)
+       0.940 0.060 0.002 - 0.060 0.004 0.000
+*    5. Cubeful 4-ply    13/1 7/3                     Eq.: +0.757 (-0.272)
+       0.795 0.084 0.002 - 0.205 0.059 0.003
+
+
+Move number 22:  lasse to play 64
+
+ GNU Backgammon  Position ID: uW0bACD2zhkAEA
+                 Match ID   : UQmzABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ |             O  O |   | O  O  O  O  X  O |     1 point
+ |             O  O |   | O  O  O  O       |     
+ |                  |   |          O       |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |          X       |     
+ |                  |   | X     X  X       |     
+ |             X    |   | X     X  X  X    |     Rolled 64
+ |             X    |   | X     X  X  X  O |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 94, X 85
+
+* lasse moves 8/4 8/2
+
+Rolled 64:
+*    1. Cubeful 2-ply    8/4 8/2                      Eq.: -0.692
+       0.207 0.051 0.002 - 0.793 0.054 0.001
+     2. Cubeful 2-ply    8/2 6/2                      Eq.: -0.856 (-0.163)
+       0.199 0.053 0.002 - 0.801 0.127 0.004
+
+
+Move number 23:  galush to play 51
+
+ GNU Backgammon  Position ID: 7j0HABC5bRsAIA
+                 Match ID   : EYGmABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ |             O  O |   | O  O  O  O  X  O |     1 point
+ |             O  O |   | O  O  O  O       |     Rolled 51
+ |                  |   |          O       |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |       X  X       |     
+ |                  |   | X     X  X  X    |     
+ |                  |   | X     X  X  X    |     
+ |                  |   | X     X  X  X  O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 94, X 75
+
+* galush moves 7/2* 3/2
+
+Rolled 51:
+*    1. Cubeful 4-ply    7/2* 3/2                     Eq.: +0.610
+       0.749 0.056 0.002 - 0.251 0.108 0.003
+     2. Cubeful 4-ply    7/2*/1                       Eq.: +0.573 (-0.037)
+       0.747 0.040 0.001 - 0.253 0.040 0.001
+     3. Cubeful 2-ply    8/2*                         Eq.: +0.460 (-0.150)
+       0.660 0.070 0.002 - 0.340 0.160 0.006
+     4. Cubeful 2-ply    7/6 7/2*                     Eq.: +0.241 (-0.369)
+       0.567 0.054 0.002 - 0.433 0.135 0.003
+     5. Cubeful 0-ply    7/1                          Eq.: +0.113 (-0.497)
+       0.498 0.059 0.001 - 0.502 0.106 0.002
+
+
+Move number 24:  lasse to play 41
+
+ GNU Backgammon  Position ID: bdsaACDuPQcAQA
+                 Match ID   : UQmmABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ |             O  O |   | O  O  O  O  O  O |     1 point
+ |             O    |   | O  O  O  O  O    |     
+ |                  |   |                  |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |       X  X       |     
+ |                  |   | X     X  X  X    |     
+ |                  |   | X     X  X  X    |     Rolled 41
+ |                  | X | X     X  X  X  O |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 88, X 77
+
+* lasse moves bar/24* 6/2
+
+Rolled 41:
+*    1. Cubeful 0-ply    bar/24* 6/2                  Eq.: -0.340
+       0.409 0.158 0.007 - 0.591 0.080 0.001
+
+
+Move number 25:  galush to play 41
+
+ GNU Backgammon  Position ID: 3nsGACC2bQ0AUA
+                 Match ID   : EQGmABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ |             O  O | O | O  O  O  O  O  X |     1 point
+ |             O    |   | O  O  O  O  O    |     Rolled 41
+ |                  |   |                  |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |       X  X  X    |     
+ |                  |   |       X  X  X    |     
+ |                  |   | X     X  X  X    |     
+ |                  |   | X     X  X  X  O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 112, X 72
+
+* galush moves bar/24 7/3
+Alert: very bad move ( -0.161)
+
+Rolled 41:
+     1. Cubeful 4-ply    bar/24 8/4                   Eq.: +0.517
+       0.654 0.105 0.003 - 0.346 0.125 0.009
+*    2. Cubeful 4-ply    bar/24 7/3                   Eq.: +0.356 (-0.161)
+       0.589 0.089 0.003 - 0.411 0.070 0.003
+     3. Cubeful 2-ply    bar/20                       Eq.: +0.243 (-0.273)
+       0.544 0.078 0.003 - 0.456 0.194 0.004
+     4. Cubeful 0-ply    bar/24 5/1*                  Eq.: +0.040 (-0.476)
+       0.471 0.049 0.001 - 0.529 0.222 0.020
+     5. Cubeful 0-ply    bar/24 6/2                   Eq.: -0.175 (-0.691)
+       0.376 0.037 0.000 - 0.624 0.233 0.016
+
+
+Move number 26:  lasse to play 52
+
+ GNU Backgammon  Position ID: dtsMADDeewYAIA
+                 Match ID   : UYmqABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ |             O    |   | O  O  O  O  O  X |     1 point
+ |             O    |   | O  O  O  O  O    |     
+ |                  |   |          O       |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |                  |    
+ |                  |   |       X  X  X    |     
+ |                  |   |       X  X  X    |     
+ |                  |   | X     X  X  X  O |     Rolled 52
+ |                  |   | X     X  X  X  O |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 107, X 72
+
+* lasse moves 4/2
+
+Rolled 52:
+*    1. Cubeful 0-ply    4/2                          Eq.: -0.471
+       0.342 0.065 0.002 - 0.658 0.078 0.001
+     2. Cubeful 0-ply    6/4                          Eq.: -1.084 (-0.612)
+       0.184 0.035 0.001 - 0.816 0.226 0.007
+
+
+Move number 27:  galush to play 61
+
+ GNU Backgammon  Position ID: vncGACB22wwAMA
+                 Match ID   : EQGnABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ |             O    |   | O  O  O  O  O  X |     1 point
+ |             O    |   | O  O  O  O  O    |     Rolled 61
+ |                  |   |          O       |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |          X  X    |     
+ |                  |   |       X  X  X    |     
+ |                  |   | X     X  X  X  O |     
+ |                  |   | X     X  X  X  O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 107, X 70
+
+* galush moves 8/1*
+
+Rolled 61:
+*    1. Cubeful 2-ply    8/1*                         Eq.: +0.554
+       0.697 0.080 0.002 - 0.303 0.084 0.005
+     2. Cubeful 2-ply    24/18 2/1*                   Eq.: +0.415 (-0.139)
+       0.612 0.096 0.004 - 0.388 0.171 0.005
+     3. Cubeful 2-ply    24/17                        Eq.: +0.398 (-0.157)
+       0.621 0.077 0.002 - 0.379 0.050 0.001
+     4. Cubeful 2-ply    8/7 8/2                      Eq.: +0.394 (-0.161)
+       0.607 0.090 0.002 - 0.393 0.104 0.005
+     5. Cubeful 2-ply    24/18 3/2                    Eq.: +0.351 (-0.204)
+       0.600 0.075 0.002 - 0.400 0.047 0.000
+
+
+Move number 28:  lasse to play 62
+
+ GNU Backgammon  Position ID: 7bYJADC+dwYAQA
+                 Match ID   : UQmrABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ |             O    |   | O  O  O  O  O  O |     1 point
+ |                  |   | O  O  O  O  O    |     
+ |                  |   |          O       |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |          X  X    |     
+ |                  |   |       X  X  X    |     
+ |                  |   | X     X  X  X  O |     Rolled 62
+ |                  | X | X     X  X  X  O |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 100, X 71
+
+* lasse cannot move
+
+Rolled 62:
+*    Cannot move
+
+
+Move number 29:  galush to play 54
+
+ GNU Backgammon  Position ID: vncGAEDttgkAMA
+                 Match ID   : EYGyABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ |             O    |   | O  O  O  O  O  O |     1 point
+ |                  |   | O  O  O  O  O    |     Rolled 54
+ |                  |   |          O       |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |          X  X    |     
+ |                  |   |       X  X  X    |     
+ |                  |   | X     X  X  X  O |     
+ |                  | X | X     X  X  X  O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 100, X 71
+
+* galush moves 24/15
+
+Rolled 54:
+*    1. Cubeful 2-ply    24/15                        Eq.: +0.706
+       0.767 0.085 0.003 - 0.233 0.080 0.002
+     2. Cubeful 2-ply    24/20 8/3                    Eq.: +0.611 (-0.095)
+       0.730 0.075 0.002 - 0.270 0.062 0.001
+     3. Cubeful 0-ply    24/20 6/1                    Eq.: +0.171 (-0.535)
+       0.549 0.037 0.000 - 0.451 0.134 0.006
+     4. Cubeful 0-ply    8/4 6/1                      Eq.: -0.142 (-0.848)
+       0.411 0.018 0.000 - 0.589 0.115 0.004
+     5. Cubeful 0-ply    6/2 6/1                      Eq.: -0.181 (-0.887)
+       0.395 0.015 0.000 - 0.605 0.078 0.002
+
+
+Move number 30:  lasse to play 21
+
+ GNU Backgammon  Position ID: 7bYJCCC+dwYAQA
+                 Match ID   : UQmlABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ |             O    |   | O  O  O  O  O  O |     1 point
+ |                  |   | O  O  O  O  O    |     
+ |                  |   |          O       |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |          X  X    |     
+ |                  |   |       X  X  X    |     
+ |                  |   | X     X  X  X    |     Rolled 21
+ |       O          | X | X     X  X  X  O |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 91, X 71
+
+* lasse moves bar/24* 3/1*
+
+Rolled 21:
+*    1. Cubeful 4-ply    bar/24* 3/1*                 Eq.: -0.424
+       0.422 0.193 0.005 - 0.578 0.134 0.004
+     2. Cubeful 4-ply    bar/24* 4/2                  Eq.: -0.437 (-0.014)
+       0.378 0.126 0.004 - 0.622 0.097 0.003
+     3. Cubeful 0-ply    bar/24* 6/4                  Eq.: -0.947 (-0.523)
+       0.236 0.074 0.003 - 0.764 0.209 0.006
+
+
+Move number 31:  galush to play 21
+
+ GNU Backgammon  Position ID: fXcGACB22wQEYA
+                 Match ID   : EQGlABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ |             O    | O | O  O  O  O  O  X |     1 point
+ |                  | O | O  O  O  O  O    |     Rolled 21
+ |                  |   |          O       |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  |   | X     X  X  X    |     
+ |       O          |   | X     X  X  X  X |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 116, X 68
+
+* galush moves bar/24*
+
+Rolled 21:
+*    1. Cubeful 0-ply    bar/24*                      Eq.: +1.125
+       0.782 0.280 0.016 - 0.218 0.080 0.004
+
+
+Move number 32:  lasse to play 53
+
+ GNU Backgammon  Position ID: dtsEBFC+OwMAUA
+                 Match ID   : UYmuABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ |             O    | O | O  O  O  O  O  X |     1 point
+ |                  |   | O  O  O  O  O    |     
+ |                  |   |          O       |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  |   | X     X  X  X    |     Rolled 53
+ |       O          | X | X     X  X  X  O |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 115, X 92
+
+* lasse cannot move
+
+Rolled 53:
+*    Cannot move
+
+
+Move number 33:  galush to play 64
+
+ GNU Backgammon  Position ID: vjsDAFB22wQEUA
+                 Match ID   : EQGzABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ |             O    | O | O  O  O  O  O  X |     1 point
+ |                  |   | O  O  O  O  O    |     Rolled 64
+ |                  |   |          O       |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  |   | X     X  X  X    |     
+ |       O          | X | X     X  X  X  O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 115, X 92
+
+* galush cannot move
+
+Rolled 64:
+*    Cannot move
+
+
+Move number 34:  lasse to play 63
+
+ GNU Backgammon  Position ID: dtsEBFC+OwMAUA
+                 Match ID   : UQmvABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ |             O    | O | O  O  O  O  O  X |     1 point
+ |                  |   | O  O  O  O  O    |     
+ |                  |   |          O       |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  |   | X     X  X  X    |     Rolled 63
+ |       O          | X | X     X  X  X  O |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 115, X 92
+
+* lasse cannot move
+
+Rolled 63:
+*    Cannot move
+
+
+Move number 35:  galush to play 54
+
+ GNU Backgammon  Position ID: vjsDAFB22wQEUA
+                 Match ID   : EYGyABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ |             O    | O | O  O  O  O  O  X |     1 point
+ |                  |   | O  O  O  O  O    |     Rolled 54
+ |                  |   |          O       |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  |   | X     X  X  X    |     
+ |       O          | X | X     X  X  X  O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 115, X 92
+
+* galush moves bar/16
+
+Rolled 54:
+     1. Cubeful 4-ply    bar/20 8/4                   Eq.: +1.455
+       0.881 0.346 0.013 - 0.119 0.027 0.001
+     2. Cubeful 4-ply    bar/20 15/11                 Eq.: +1.454 (-0.001)
+       0.880 0.347 0.014 - 0.120 0.031 0.001
+*    3. Cubeful 4-ply    bar/16                       Eq.: +1.432 (-0.023)
+       0.879 0.337 0.013 - 0.121 0.034 0.001
+     4. Cubeful 4-ply    bar/20 24/20                 Eq.: +1.429 (-0.026)
+       0.891 0.324 0.012 - 0.109 0.021 0.000
+     5. Cubeful 0-ply    bar/20 5/1*                  Eq.: +0.673 (-0.782)
+       0.637 0.199 0.007 - 0.363 0.169 0.014
+
+
+Move number 36:  lasse to play 63
+
+ GNU Backgammon  Position ID: dtsEFCC+OwMAUA
+                 Match ID   : UQmvABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ |             O    |   | O  O  O  O  O  X |     1 point
+ |                  |   | O  O  O  O  O    |     
+ |                  |   |          O       |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  |   | X     X  X  X    |     Rolled 63
+ |       O  O       | X | X     X  X  X  O |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 106, X 92
+
+* lasse cannot move
+
+Rolled 63:
+*    Cannot move
+
+
+Move number 37:  galush to play 42
+
+ GNU Backgammon  Position ID: vjsDAFB22wQUIA
+                 Match ID   : EQGqABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ |             O    |   | O  O  O  O  O  X |     1 point
+ |                  |   | O  O  O  O  O    |     Rolled 42
+ |                  |   |          O       |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  |   | X     X  X  X    |     
+ |       O  O       | X | X     X  X  X  O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 106, X 92
+
+* galush moves 8/4 3/1*
+
+Rolled 42:
+     1. Cubeful 4-ply    24/20 3/1*                   Eq.: +1.560
+       0.903 0.377 0.013 - 0.097 0.030 0.001
+*    2. Cubeful 4-ply    8/4 3/1*                     Eq.: +1.553 (-0.007)
+       0.898 0.378 0.012 - 0.102 0.033 0.001
+     3. Cubeful 4-ply    15/11 3/1*                   Eq.: +1.528 (-0.032)
+       0.891 0.373 0.013 - 0.109 0.039 0.002
+     4. Cubeful 4-ply    16/12 3/1*                   Eq.: +1.513 (-0.047)
+       0.889 0.367 0.013 - 0.111 0.040 0.002
+     5. Cubeful 2-ply    24/20 8/6                    Eq.: +1.486 (-0.074)
+       0.905 0.338 0.012 - 0.095 0.016 0.000
+
+
+Move number 38:  lasse to play 61
+
+ GNU Backgammon  Position ID: bbcBFCC+OwMAYA
+                 Match ID   : UQmnABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ |                  |   | O  O  O  O  O  O |     1 point
+ |                  |   | O  O  O  O  O    |     
+ |                  |   |       O          |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  | X | X     X  X  X    |     Rolled 61
+ |       O  O       | X | X     X  X  X  O |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 100, X 93
+
+* lasse moves bar/24*
+
+Rolled 61:
+*    1. Cubeful 0-ply    bar/24*                      Eq.: -1.326
+       0.162 0.059 0.004 - 0.838 0.325 0.010
+
+
+Move number 39:  galush to play 21
+
+ GNU Backgammon  Position ID: vjsDAFC22wAKUA
+                 Match ID   : EQGlABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ |                  | O | O  O  O  O  O  X |     1 point
+ |                  |   | O  O  O  O  O    |     Rolled 21
+ |                  |   |       O          |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  |   | X     X  X  X    |     
+ |       O  O       | X | X     X  X  X  O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 124, X 92
+
+* galush moves bar/24 15/13
+
+Rolled 21:
+*    1. Cubeful 4-ply    bar/24 15/13                 Eq.: +1.386
+       0.859 0.334 0.014 - 0.141 0.039 0.002
+     2. Cubeful 4-ply    bar/24 16/14                 Eq.: +1.361 (-0.025)
+       0.853 0.328 0.014 - 0.147 0.041 0.002
+     3. Cubeful 4-ply    bar/24 4/2                   Eq.: +1.343 (-0.043)
+       0.851 0.321 0.012 - 0.149 0.040 0.002
+     4. Cubeful 0-ply    bar/24 3/1*                  Eq.: +0.808 (-0.578)
+       0.684 0.220 0.004 - 0.316 0.133 0.019
+     5. Cubeful 0-ply    bar/24 5/3                   Eq.: +0.418 (-0.968)
+       0.571 0.138 0.005 - 0.429 0.160 0.014
+
+
+Move number 40:  lasse to play 64
+
+ GNU Backgammon  Position ID: ttuACDC+OwMAUA
+                 Match ID   : UQmzABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ |                  |   | O  O  O  O  O  X |     1 point
+ |                  |   | O  O  O  O  O    |     
+ |                  |   |       O          |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  |   | X     X  X  X  O |     Rolled 64
+ | O        O       | X | X     X  X  X  O |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 121, X 92
+
+* lasse cannot move
+
+Rolled 64:
+*    Cannot move
+
+
+Move number 41:  galush to play 52
+
+ GNU Backgammon  Position ID: vjsDAFC224AIMA
+                 Match ID   : EYGqABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ |                  |   | O  O  O  O  O  X |     1 point
+ |                  |   | O  O  O  O  O    |     Rolled 52
+ |                  |   |       O          |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  |   | X     X  X  X  O |     
+ | O        O       | X | X     X  X  X  O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 121, X 92
+
+* galush moves 16/9
+
+Rolled 52:
+     1. Cubeful 4-ply    13/6                         Eq.: +1.414
+       0.865 0.342 0.012 - 0.135 0.032 0.002
+     2. Cubeful 4-ply    16/11 13/11                  Eq.: +1.391 (-0.023)
+       0.864 0.332 0.014 - 0.136 0.032 0.002
+*    3. Cubeful 4-ply    16/9                         Eq.: +1.389 (-0.025)
+       0.862 0.333 0.014 - 0.138 0.036 0.002
+     4. Cubeful 4-ply    16/14 13/8                   Eq.: +1.371 (-0.043)
+       0.857 0.328 0.013 - 0.143 0.036 0.002
+     5. Cubeful 2-ply    16/11 4/2                    Eq.: +1.339 (-0.075)
+       0.849 0.320 0.012 - 0.151 0.035 0.002
+
+
+Move number 42:  lasse to play 54
+
+ GNU Backgammon  Position ID: ttsIATC+OwMAUA
+                 Match ID   : UYmyABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ |          O       |   | O  O  O  O  O  X |     1 point
+ |                  |   | O  O  O  O  O    |     
+ |                  |   |       O          |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  |   | X     X  X  X  O |     Rolled 54
+ | O                | X | X     X  X  X  O |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 114, X 92
+
+* lasse cannot move
+
+Rolled 54:
+*    Cannot move
+
+
+Move number 43:  galush to play 53
+
+ GNU Backgammon  Position ID: vjsDAFC22wgBMA
+                 Match ID   : EYGuABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ |          O       |   | O  O  O  O  O  X |     1 point
+ |                  |   | O  O  O  O  O    |     Rolled 53
+ |                  |   |       O          |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  |   | X     X  X  X  O |     
+ | O                | X | X     X  X  X  O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 114, X 92
+
+* galush moves 9/1*
+
+Rolled 53:
+*    1. Cubeful 4-ply    9/1*                         Eq.: +1.465
+       0.875 0.357 0.011 - 0.125 0.031 0.002
+     2. Cubeful 4-ply    13/8 4/1*                    Eq.: +1.430 (-0.035)
+       0.866 0.349 0.012 - 0.134 0.037 0.003
+     3. Cubeful 2-ply    13/8 9/6                     Eq.: +1.364 (-0.101)
+       0.854 0.327 0.013 - 0.146 0.028 0.001
+     4. Cubeful 2-ply    13/5                         Eq.: +1.330 (-0.135)
+       0.848 0.317 0.013 - 0.152 0.029 0.001
+     5. Cubeful 2-ply    13/10 9/4                    Eq.: +1.281 (-0.184)
+       0.840 0.301 0.011 - 0.160 0.030 0.001
+
+
+Move number 44:  lasse to play 66
+
+ GNU Backgammon  Position ID: bbcBATC+OwMAYA
+                 Match ID   : UQm7ABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ |                  |   | O  O  O  O  O  O |     1 point
+ |                  |   | O  O  O  O  O    |     
+ |                  |   |       O          |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  | X | X     X  X  X  O |     Rolled 66
+ | O                | X | X     X  X  X  O |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 106, X 93
+
+* lasse cannot move
+
+Rolled 66:
+*    Cannot move
+
+
+Move number 45:  galush to play 42
+
+ GNU Backgammon  Position ID: vjsDAGBttwEBMA
+                 Match ID   : EQGqABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ |                  |   | O  O  O  O  O  O |     1 point
+ |                  |   | O  O  O  O  O    |     Rolled 42
+ |                  |   |       O          |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  | X | X     X  X  X  O |     
+ | O                | X | X     X  X  X  O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 106, X 93
+
+* galush moves 24/18
+
+Rolled 42:
+*    1. Cubeful 4-ply    24/18                        Eq.: +1.562
+       0.900 0.381 0.012 - 0.100 0.033 0.001
+     2. Cubeful 4-ply    24/20 13/11                  Eq.: +1.558 (-0.004)
+       0.900 0.379 0.012 - 0.100 0.029 0.001
+     3. Cubeful 4-ply    24/20 4/2                    Eq.: +1.513 (-0.049)
+       0.891 0.365 0.010 - 0.109 0.032 0.001
+     4. Cubeful 2-ply    13/7                         Eq.: +1.392 (-0.170)
+       0.860 0.336 0.010 - 0.140 0.033 0.002
+     5. Cubeful 2-ply    13/9 4/2                     Eq.: +1.352 (-0.210)
+       0.850 0.326 0.009 - 0.150 0.035 0.002
+
+
+Move number 46:  lasse to play 43
+
+ GNU Backgammon  Position ID: bbcBQSC+OwMAYA
+                 Match ID   : UQmuABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ |                  |   | O  O  O  O  O  O |     1 point
+ |                  |   | O  O  O  O  O    |     
+ |                  |   |       O          |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  | X | X     X  X  X    |     Rolled 43
+ | O              O | X | X     X  X  X  O |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 100, X 93
+
+* lasse cannot move
+
+Rolled 43:
+*    Cannot move
+
+
+Move number 47:  galush to play 51
+
+ GNU Backgammon  Position ID: vjsDAGBttwFBIA
+                 Match ID   : EYGmABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ |                  |   | O  O  O  O  O  O |     1 point
+ |                  |   | O  O  O  O  O    |     Rolled 51
+ |                  |   |       O          |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  | X | X     X  X  X    |     
+ | O              O | X | X     X  X  X  O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 100, X 93
+
+* galush moves 13/7
+
+Rolled 51:
+*    1. Cubeful 4-ply    13/7                         Eq.: +1.580
+       0.909 0.381 0.010 - 0.091 0.030 0.001
+     2. Cubeful 4-ply    18/12                        Eq.: +1.570 (-0.010)
+       0.905 0.380 0.012 - 0.095 0.028 0.001
+     3. Cubeful 4-ply    18/17 13/8                   Eq.: +1.566 (-0.014)
+       0.904 0.379 0.012 - 0.096 0.028 0.001
+     4. Cubeful 4-ply    18/13 4/3                    Eq.: +1.555 (-0.025)
+       0.904 0.373 0.011 - 0.096 0.024 0.001
+     5. Cubeful 2-ply    13/8 4/3                     Eq.: +1.525 (-0.055)
+       0.892 0.371 0.012 - 0.108 0.032 0.001
+
+
+Move number 48:  lasse to play 53
+
+ GNU Backgammon  Position ID: bbcFQCC+OwMAYA
+                 Match ID   : UYmuABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ |                O |   | O  O  O  O  O  O |     1 point
+ |                  |   | O  O  O  O  O    |     
+ |                  |   |       O          |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  | X | X     X  X  X    |     Rolled 53
+ |                O | X | X     X  X  X  O |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 94, X 93
+
+* lasse cannot move
+
+Rolled 53:
+*    Cannot move
+
+
+Move number 49:  galush to play 22
+
+ GNU Backgammon  Position ID: vjsDAGBttwVAIA
+                 Match ID   : EQGpABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ |                O |   | O  O  O  O  O  O |     1 point
+ |                  |   | O  O  O  O  O    |     Rolled 22
+ |                  |   |       O          |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  | X | X     X  X  X    |     
+ |                O | X | X     X  X  X  O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 94, X 93
+
+* galush moves 18/16 7/1
+
+Rolled 22:
+*    1. Cubeful 4-ply    18/16 7/1                    Eq.: +1.764
+       0.963 0.419 0.008 - 0.037 0.002 0.000
+     2. Cubeful 4-ply    7/1 4/2                      Eq.: +1.712 (-0.053)
+       0.961 0.395 0.006 - 0.039 0.001 0.000
+     3. Cubeful 2-ply    18/12 7/5                    Eq.: +1.540 (-0.225)
+       0.903 0.367 0.012 - 0.097 0.021 0.001
+     4. Cubeful 2-ply    18/10                        Eq.: +1.534 (-0.231)
+       0.900 0.367 0.012 - 0.100 0.028 0.001
+     5. Cubeful 2-ply    18/14 7/3                    Eq.: +1.516 (-0.249)
+       0.903 0.355 0.010 - 0.097 0.021 0.001
+
+
+Move number 50:  lasse to play 11
+
+ GNU Backgammon  Position ID: 224DECC+OwMAYA
+                 Match ID   : UYmkABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ |                  |   | O  O  O  O  O  O |     1 point
+ |                  |   | O  O  O  O  O  O |     
+ |                  |   |       O          |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  | X | X     X  X  X    |     Rolled 11
+ |          O       | X | X     X  X  X  O |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 86, X 93
+
+* lasse cannot move
+
+Rolled 11:
+*    Cannot move
+
+
+Move number 51:  galush to play 44
+
+ GNU Backgammon  Position ID: vjsDAGDbbgMQIA
+                 Match ID   : EQGyABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ |                  |   | O  O  O  O  O  O |     1 point
+ |                  |   | O  O  O  O  O  O |     Rolled 44
+ |                  |   |       O          |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  | X | X     X  X  X    |     
+ |          O       | X | X     X  X  X  O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 86, X 93
+
+* galush moves 24/8
+
+Rolled 44:
+     1. Cubeful 4-ply    24/12 16/12                  Eq.: +1.869
+       0.983 0.452 0.007 - 0.017 0.000 0.000
+*    2. Cubeful 4-ply    24/8                         Eq.: +1.850 (-0.019)
+       0.981 0.444 0.007 - 0.019 0.000 0.000
+     3. Cubeful 4-ply    24/20 16/4                   Eq.: +1.806 (-0.063)
+       0.980 0.423 0.006 - 0.020 0.000 0.000
+     4. Cubeful 0-ply    24/20 16/12 6/2(2)           Eq.: +1.281 (-0.588)
+       0.914 0.226 0.003 - 0.086 0.004 0.000
+     5. Cubeful 0-ply    24/12 6/2                    Eq.: +1.274 (-0.595)
+       0.875 0.261 0.004 - 0.125 0.019 0.000
+
+
+Move number 52:  lasse to play 32
+
+ GNU Backgammon  Position ID: 224TIAC+OwMAYA
+                 Match ID   : UYmpABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ |             O    |   | O  O  O  O  O  O |     1 point
+ |                  |   | O  O  O  O  O  O |     
+ |                  |   |       O          |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  | X | X     X  X  X    |     Rolled 32
+ |          O       | X | X     X  X  X    |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 70, X 93
+
+* lasse cannot move
+
+Rolled 32:
+*    Cannot move
+
+
+Move number 53:  galush to play 22
+
+ GNU Backgammon  Position ID: vjsDAGDbbhMgAA
+                 Match ID   : EQGpABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ |             O    |   | O  O  O  O  O  O |     1 point
+ |                  |   | O  O  O  O  O  O |     Rolled 22
+ |                  |   |       O          |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  | X | X     X  X  X    |     
+ |          O       | X | X     X  X  X    |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 70, X 93
+
+* galush moves 16/10 8/6
+
+Rolled 22:
+*    1. Cubeful 4-ply    16/10 8/6                    Eq.: +1.870
+       0.980 0.455 0.009 - 0.020 0.000 0.000
+     2. Cubeful 4-ply    16/8                         Eq.: +1.830 (-0.040)
+       0.980 0.435 0.007 - 0.020 0.000 0.000
+     3. Cubeful 4-ply    16/12 8/4                    Eq.: +1.821 (-0.048)
+       0.979 0.432 0.007 - 0.021 0.000 0.000
+     4. Cubeful 2-ply    16/12 8/6 4/2                Eq.: +1.808 (-0.062)
+       0.979 0.425 0.007 - 0.021 0.000 0.000
+     5. Cubeful 2-ply    16/10 4/2                    Eq.: +1.806 (-0.064)
+       0.982 0.421 0.006 - 0.018 0.000 0.000
+
+
+Move number 54:  lasse to play 53
+
+ GNU Backgammon  Position ID: 226HAAC+OwMAYA
+                 Match ID   : UYmuABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ |       O          |   | O  O  O  O  O  O |     1 point
+ |                  |   | O  O  O  O  O  O |     
+ |                  |   | O     O          |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  | X | X     X  X  X    |     Rolled 53
+ |                  | X | X     X  X  X    |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 62, X 93
+
+* lasse cannot move
+
+Rolled 53:
+*    Cannot move
+
+
+Move number 55:  galush to play 62
+
+ GNU Backgammon  Position ID: vjsDAGDbbocAAA
+                 Match ID   : EQGrABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ |       O          |   | O  O  O  O  O  O |     1 point
+ |                  |   | O  O  O  O  O  O |     Rolled 62
+ |                  |   | O     O          |     
+ |                  |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  | X | X     X  X  X    |     
+ |                  | X | X     X  X  X    |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 62, X 93
+
+* galush moves 10/4 6/4
+Alert: bad move ( -0.075)
+
+Rolled 62:
+     1. Cubeful 4-ply    10/2                         Eq.: +1.830
+       0.972 0.442 0.007 - 0.028 0.000 0.000
+*    2. Cubeful 4-ply    10/4 6/4                     Eq.: +1.755 (-0.075)
+       0.983 0.394 0.005 - 0.017 0.000 0.000
+     3. Cubeful 2-ply    10/4 2/off                   Eq.: +1.543 (-0.287)
+       0.918 0.354 0.008 - 0.082 0.000 0.000
+     4. Cubeful 0-ply    10/4 3/1                     Eq.: +1.408 (-0.421)
+       0.907 0.297 0.006 - 0.093 0.004 0.000
+     5. Cubeful 0-ply    10/4 5/3                     Eq.: +1.367 (-0.463)
+       0.913 0.271 0.005 - 0.087 0.003 0.000
+
+
+Move number 56:  lasse to play 62
+
+ GNU Backgammon  Position ID: 274NAAC+OwMAYA
+                 Match ID   : UQmrABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ |                  |   | O  O  O  O  O  O |     1 point
+ |                  |   | O  O  O  O  O  O |     
+ |                  |   |       O          |     
+ |                  |   |       O          |     
+ |                  |   |       O          |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  | X | X     X  X  X    |     Rolled 62
+ |                  | X | X     X  X  X    |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 54, X 93
+
+* lasse cannot move
+
+Rolled 62:
+*    Cannot move
+
+
+Move number 57:  galush to play 31
+
+ GNU Backgammon  Position ID: vjsDAGDbvg0AAA
+                 Match ID   : EYGlABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ |                  |   | O  O  O  O  O  O |     1 point
+ |                  |   | O  O  O  O  O  O |     Rolled 31
+ |                  |   |       O          |     
+ |                  |   |       O          |     
+ |                  |   |       O          |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  | X | X     X  X  X    |     
+ |                  | X | X     X  X  X    |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 54, X 93
+
+* galush moves 4/off
+
+Rolled 31:
+*    1. Cubeful 2-ply    4/off                        Eq.: +1.881
+       0.985 0.455 0.008 - 0.015 0.000 0.000
+     2. Cubeful 2-ply    4/3 4/1                      Eq.: +1.784 (-0.096)
+       0.981 0.411 0.006 - 0.019 0.000 0.000
+     3. Cubeful 2-ply    6/5 6/3                      Eq.: +1.647 (-0.233)
+       0.983 0.341 0.004 - 0.017 0.000 0.000
+     4. Cubeful 0-ply    3/2 3/off                    Eq.: +1.496 (-0.385)
+       0.968 0.280 0.005 - 0.032 0.000 0.000
+     5. Cubeful 0-ply    6/5 4/1                      Eq.: +1.432 (-0.448)
+       0.919 0.297 0.004 - 0.081 0.003 0.000
+
+
+Move number 58:  lasse to play 65
+
+ GNU Backgammon  Position ID: 294GAADfnQEAMA
+                 Match ID   : UQm3ABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ |                  |   | O  O  O  O  O  O | O   1 point
+ |                  |   | O  O  O  O  O  O |     
+ |                  |   |       O          |     
+ |                  |   |       O          |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  | X | X     X  X  X    |     Rolled 65
+ |                  | X | X     X  X  X    |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 50, X 93
+
+* lasse cannot move
+
+Rolled 65:
+*    Cannot move
+
+
+Move number 59:  galush to play 66
+
+ GNU Backgammon  Position ID: vjsDAGDb3gYAAA
+                 Match ID   : EQG7ABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ |                  |   | O  O  O  O  O  O | O   1 point
+ |                  |   | O  O  O  O  O  O |     Rolled 66
+ |                  |   |       O          |     
+ |                  |   |       O          |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  | X | X     X  X  X    |     
+ |                  | X | X     X  X  X    |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 50, X 93
+
+* galush moves 6/off(2) 5/off(2)
+
+Rolled 66:
+*    1. Cubeful 0-ply    6/off(2) 5/off(2)            Eq.: +2.274
+       0.994 0.643 0.012 - 0.006 0.000 0.000
+
+
+Move number 60:  lasse to play 51
+
+ GNU Backgammon  Position ID: 2x4AAPDdGQAAAw
+                 Match ID   : UYmmABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ |                  |   |       O  O  O  O | O   1 point
+ |                  |   |       O  O  O  O | O   
+ |                  |   |       O          | O   
+ |                  |   |       O          | O   
+ |                  |   |                  | O  
+v|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  | X | X     X  X  X    |     Rolled 51
+ |                  | X | X     X  X  X    |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 28, X 93
+
+* lasse moves bar/20
+
+Rolled 51:
+*    1. Cubeful 0-ply    bar/20                       Eq.: -2.189
+       0.011 0.000 0.000 - 0.989 0.606 0.009
+
+
+Move number 61:  galush to play 53
+
+ GNU Backgammon  Position ID: vjsDAEHbHgAAAA
+                 Match ID   : EYGuABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ |                  |   |    X  O  O  O  O | O   1 point
+ |                  |   |       O  O  O  O | O   Rolled 53
+ |                  |   |       O          | O   
+ |                  |   |       O          | O   
+ |                  |   |                  | O  
+^|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  |   | X     X  X  X    |     
+ |                  | X | X     X  X  X    |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 28, X 88
+
+* galush moves 4/1 4/off
+
+Rolled 53:
+*    1. Cubeful 0-ply    4/1 4/off                    Eq.: +2.241
+       0.995 0.625 0.002 - 0.005 0.000 0.000
+     2. Cubeful 0-ply    4/off 3/off                  Eq.: +1.782 (-0.459)
+       0.931 0.459 0.004 - 0.069 0.000 0.000
+
+
+Move number 62:  lasse to play 61
+
+ GNU Backgammon  Position ID: tw0AAPjuDAAEAQ
+                 Match ID   : UQmnABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ |                  |   |    X  O  O  O  O | OO  1 point
+ |                  |   |       O  O  O  O | O   
+ |                  |   |                O | O   
+ |                  |   |                  | O   
+ |                  |   |                  | O  
+v|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  |   | X     X  X  X    |     Rolled 61
+ |                  | X | X     X  X  X    |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 21, X 88
+
+* lasse moves bar/18
+
+Rolled 61:
+*    1. Cubeful 4-ply    bar/18                       Eq.: -2.167
+       0.000 0.000 0.000 - 1.000 0.584 0.000
+     2. Cubeful 4-ply    bar/19 20/19                 Eq.: -2.180 (-0.013)
+       0.000 0.000 0.000 - 1.000 0.590 0.000
+     3. Cubeful 4-ply    bar/19 2/1                   Eq.: -2.195 (-0.027)
+       0.000 0.000 0.000 - 1.000 0.597 0.001
+     4. Cubeful 4-ply    bar/19 6/5                   Eq.: -2.232 (-0.065)
+       0.000 0.000 0.000 - 1.000 0.616 0.001
+     5. Cubeful 2-ply    bar/19 3/2                   Eq.: -2.249 (-0.082)
+       0.000 0.000 0.000 - 1.000 0.625 0.000
+
+
+Move number 63:  galush to play 44
+
+ GNU Backgammon  Position ID: vjsDQAK3DQAAAA
+                 Match ID   : EQGyABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ |                X |   |    X  O  O  O  O | OO  1 point
+ |                  |   |       O  O  O  O | O   Rolled 44
+ |                  |   |                O | O   
+ |                  |   |                  | O   
+ |                  |   |                  | O  
+^|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  |   | X     X  X  X    |     
+ |                  |   | X     X  X  X    |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 21, X 81
+
+* galush moves 4/off(2) 3/off(2)
+
+Rolled 44:
+*    1. Cubeful 0-ply    4/off(2) 3/off(2)            Eq.: +2.695
+       1.000 0.847 0.000 - 0.000 0.000 0.000
+
+
+Move number 64:  lasse to play 32
+
+ GNU Backgammon  Position ID: NwAAgO/OAJAAAA
+                 Match ID   : UYmpABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ |                X |   |    X        O  O | OO  1 point
+ |                  |   |             O  O | OO  
+ |                  |   |                O | OO  
+ |                  |   |                  | OO  
+ |                  |   |                  | OO 
+v|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  |   | X     X  X  X    |     Rolled 32
+ |                  |   | X     X  X  X    |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 7, X 81
+
+* lasse moves 20/17 18/16
+
+Rolled 32:
+     1. Cubeful 4-ply    20/15                        Eq.: -2.852
+       0.000 0.000 0.000 - 1.000 0.926 0.000
+*    2. Cubeful 4-ply    20/17 18/16                  Eq.: -2.854 (-0.002)
+       0.000 0.000 0.000 - 1.000 0.927 0.000
+     3. Cubeful 4-ply    18/13                        Eq.: -2.861 (-0.008)
+       0.000 0.000 0.000 - 1.000 0.930 0.023
+     4. Cubeful 4-ply    18/15 3/1                    Eq.: -2.891 (-0.038)
+       0.000 0.000 0.000 - 1.000 0.945 0.008
+     5. Cubeful 2-ply    18/16 4/1                    Eq.: -2.907 (-0.054)
+       0.000 0.000 0.000 - 1.000 0.953 0.010
+
+
+Move number 65:  galush to play 55
+
+ GNU Backgammon  Position ID: vjsDUAA3AAAAAA
+                 Match ID   : EYG2ABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ |          X  X    |   |             O  O | OO  1 point
+ |                  |   |             O  O | OO  Rolled 55
+ |                  |   |                O | OO  
+ |                  |   |                  | OO  
+ |                  |   |                  | OO 
+^|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  |   | X     X  X  X    |     
+ |                  |   | X     X  X  X    |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 7, X 76
+
+* galush moves 2/off(2) 1/off(2)
+
+Rolled 55:
+*    1. Cubeful 0-ply    2/off(2) 1/off(2)            Eq.: +3.000
+       1.000 1.000 0.000 - 0.000 0.000 0.000
+
+
+Move number 66:  lasse to play 31
+
+ GNU Backgammon  Position ID: AQAA+O4MQAEAAA
+                 Match ID   : UYmlABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: galush
+ |          X  X    |   |                O | OOO 1 point
+ |                  |   |                  | OOO 
+ |                  |   |                  | OOO 
+ |                  |   |                  | OOO 
+ |                  |   |                  | OO 
+v|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  |   | X     X  X  X    |     Rolled 31
+ |                  |   | X     X  X  X    |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse (Cube: 2)
+Pip counts: O 1, X 76
+
+* lasse moves 17/14 16/15
+
+Rolled 31:
+     1. Cubeful 4-ply    17/14 3/2                    Eq.: -3.000
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+     2. Cubeful 4-ply    17/14 2/1                    Eq.: -3.000 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+     3. Cubeful 4-ply    17/14 6/5                    Eq.: -3.000 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+*    4. Cubeful 4-ply    17/14 16/15                  Eq.: -3.000 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+     5. Cubeful 4-ply    17/14 4/3                    Eq.: -3.000 (-0.000)
+       0.000 0.000 0.000 - 1.000 1.000 0.000
+
+
+Move number 67:  galush to play 42
+
+ GNU Backgammon  Position ID: vjsDFAABAAAAAA
+                 Match ID   : EQGqABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: galush
+ |    X  X          |   |                O | OOO 1 point
+ |                  |   |                  | OOO Rolled 42
+ |                  |   |                  | OOO 
+ |                  |   |                  | OOO 
+ |                  |   |                  | OO 
+^|                  |BAR|                  |     5 points match
+ |                  |   |             X    |    
+ |                  |   |             X    |     
+ |                  |   |       X  X  X    |     
+ |                  |   | X     X  X  X    |     
+ |                  |   | X     X  X  X    |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse (Cube: 2)
+Pip counts: O 1, X 72
+
+* galush moves 1/off
+
+Rolled 42:
+*    1. Cubeful 0-ply    1/off                        Eq.: +3.000
+       1.000 1.000 0.000 - 0.000 0.000 0.000
+
+
+galush wins 4 points
+
+Game statistics for game 4
+
+Player                                   galush                  lasse                  
+
+Chequerplay statistics
+
+Total moves                               33                      32                    
+Unforced moves                            26                      15                    
+Unmarked moves                            27                      30                    
+Moves marked doubtful                      0                       1                    
+Moves marked bad                           3                       1                    
+Moves marked very bad                      3                       0                    
+Error total EMG (MWC)                         -1.055 (-20.595%)       -0.106 ( -2.024%) 
+Error rate mEMG (MWC)                        -40.6   ( -0.792%)       -7.1   ( -0.135%) 
+Chequerplay rating                       Awful!                  Expert                 
+
+
+Cube statistics
+
+Total cube decisions                       5                       6                    
+Close or actual cube decisions             4                       1                    
+Doubles                                    1                       0                    
+Takes                                      0                       1                    
+Passes                                     0                       0                    
+Missed doubles below CP (EMG (MWC))        3 (-0.226 ( -2.431%))   0                    
+Missed doubles above CP (EMG (MWC))        0                       0                    
+Wrong doubles below DP (EMG (MWC))         0                       0                    
+Wrong doubles above TG (EMG (MWC))         0                       0                    
+Wrong takes (EMG (MWC))                    0                       1 (-0.273 ( -2.932%))
+Wrong passes (EMG (MWC))                   0                       0                    
+Error total EMG (MWC)                         -0.226 ( -2.431%)       -0.273 ( -2.932%) 
+Error rate mEMG (MWC)                        -56.6   ( -0.608%)     -272.8   ( -2.932%) 
+Cube decision rating                     Awful!                  Awful!                 
+
+
+Overall statistics
+
+Error total EMG (MWC)                         -1.281 (-23.026%)       -0.379 ( -4.956%) 
+Error rate mEMG (MWC)                        -42.7   ( -0.768%)      -23.7   ( -0.310%) 
+Snowie error rate                            -19.7   ( +0.000%)       -5.8   ( +0.000%) 
+Overall rating                           Awful!                  Casual player          
+Error based abs. FIBS rating             1443.0                  1744.6                 
+Chequerplay errors rating loss            564.1                    98.2                 
+Cube errors rating loss                    42.9                   207.1                 
+
+
+
+
+Match statistics
+
+Player                                   galush                  lasse                  
+
+Chequerplay statistics
+
+Total moves                               81                      81                    
+Unforced moves                            64                      54                    
+Unmarked moves                            72                      75                    
+Moves marked doubtful                      1                       3                    
+Moves marked bad                           5                       2                    
+Moves marked very bad                      3                       1                    
+Error total EMG (MWC)                         -1.345 (-23.443%)       -0.516 ( -6.309%) 
+Error rate mEMG (MWC)                        -21.0   ( -0.366%)       -9.5   ( -0.117%) 
+Chequerplay rating                       Casual player           Advanced               
+
+
+Cube statistics
+
+Total cube decisions                      55                      32                    
+Close or actual cube decisions            13                       6                    
+Doubles                                    2                       2                    
+Takes                                      1                       1                    
+Passes                                     1                       1                    
+Missed doubles below CP (EMG (MWC))        3 (-0.226 ( -2.431%))   1 (-0.008 ( -0.067%))
+Missed doubles above CP (EMG (MWC))        1 (-0.143 ( -1.235%))   0                    
+Wrong doubles below DP (EMG (MWC))         0                       2 (-0.108 ( -0.862%))
+Wrong doubles above TG (EMG (MWC))         0                       0                    
+Wrong takes (EMG (MWC))                    0                       1 (-0.273 ( -2.932%))
+Wrong passes (EMG (MWC))                   1 (-0.320 ( -2.750%))   0                    
+Error total EMG (MWC)                         -0.689 ( -6.416%)       -0.388 ( -3.860%) 
+Error rate mEMG (MWC)                        -53.0   ( -0.494%)      -64.7   ( -0.643%) 
+Cube decision rating                     Awful!                  Awful!                 
+
+
+Overall statistics
+
+Error total EMG (MWC)                         -2.034 (-29.859%)       -0.904 (-10.169%) 
+Error rate mEMG (MWC)                        -26.4   ( -0.388%)      -15.1   ( -0.169%) 
+Snowie error rate                            -12.6   ( +0.000%)       -5.6   ( +0.000%) 
+Overall rating                           Beginner                Intermediate           
+Error based abs. FIBS rating             1717.6                  1868.1                 
+Chequerplay errors rating loss            292.2                   132.8                 
+Cube errors rating loss                    40.2                    49.1                 
+
+
+
+
+Output generated Wed Aug 28 22:59:19 2024
+ by GNU Backgammon 1.07.001-mingw 32-Bit 20221114 (Text Export version 1.128)
+

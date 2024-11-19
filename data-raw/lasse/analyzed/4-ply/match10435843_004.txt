@@ -1,0 +1,396 @@
+The score (after 3 games) is: pumipilum 1, lasse 3 (match to 5 points)
+
+Match Information:
+Date: 19/08/2024
+Place: BackgammonGalaxy
+
+Move number 1:  lasse to play 21
+
+ GNU Backgammon  Position ID: 4HPwATDgc/ABMA
+                 Match ID   : cAilABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: pumipilum
+ | X           O    |   | O              X |     1 point
+ | X           O    |   | O              X |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ | X                |   | O                |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     Rolled 21
+ | O           X    |   | X              O |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 167, X 167
+
+* lasse moves 24/23 13/11
+
+Rolled 21:
+*    1. Cubeful 4-ply    24/23 13/11                  Eq.: -0.298
+       0.499 0.138 0.006 - 0.501 0.134 0.005
+     2. Cubeful 4-ply    13/11 6/5                    Eq.: -0.328 (-0.030)
+       0.502 0.143 0.007 - 0.498 0.145 0.009
+     3. Cubeful 4-ply    24/21                        Eq.: -0.336 (-0.037)
+       0.494 0.129 0.006 - 0.506 0.137 0.005
+     4. Cubeful 4-ply    24/23 24/22                  Eq.: -0.348 (-0.050)
+       0.489 0.126 0.005 - 0.511 0.137 0.005
+     5. Cubeful 2-ply    13/10                        Eq.: -0.356 (-0.058)
+       0.488 0.140 0.007 - 0.512 0.143 0.007
+
+
+Move number 2:  pumipilum to play 65
+
+ GNU Backgammon  Position ID: 4HPkASjgc/ABMA
+                 Match ID   : MAG3ABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: pumipilum
+ | X           O    |   | O           X  X |     1 point
+ | X           O    |   | O                |     Rolled 65
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ | O                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X              O |     
+ | O  X        X    |   | X              O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 167, X 164
+
+* pumipilum moves 24/13
+
+Cube analysis
+4-ply cubeless equity -0.103 (Money: -0.002)
+  0.501 0.134 0.005 - 0.499 0.138 0.006
+Cubeful equities:
+1. No double           +0.298
+2. Double, pass        +1.000  (+0.702)
+3. Double, take        +0.228  (-0.071)
+Proper cube action: No double, take (9.1%)
+
+Rolled 65:
+*    1. Cubeful 4-ply    24/13                        Eq.: +0.191
+       0.497 0.107 0.003 - 0.503 0.140 0.004
+     2. Cubeful 4-ply    24/18 13/8                   Eq.: +0.187 (-0.004)
+       0.488 0.118 0.004 - 0.512 0.145 0.005
+     3. Cubeful 4-ply    13/2*                        Eq.: +0.129 (-0.062)
+       0.462 0.128 0.005 - 0.538 0.155 0.009
+     4. Cubeful 4-ply    13/7 6/1*                    Eq.: +0.115 (-0.076)
+       0.456 0.131 0.005 - 0.544 0.167 0.012
+     5. Cubeful 2-ply    24/18 6/1*                   Eq.: +0.085 (-0.106)
+       0.467 0.114 0.004 - 0.533 0.163 0.008
+
+
+Move number 3:  lasse to play 31
+
+ GNU Backgammon  Position ID: 4HPwAyDgc+QBKA
+                 Match ID   : cImlABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: pumipilum
+ | X           O    |   | O           X  X |     1 point
+ | X           O    |   | O                |     
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ | 6                |   | X                |    
+ | O                |   | X                |     
+ | O           X    |   | X                |     
+ | O           X    |   | X                |     Rolled 31
+ | O  X        X    |   | X              O |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 156, X 164
+
+* lasse moves 8/5 6/5
+
+Cube analysis
+4-ply cubeless equity +0.144 (Money: +0.040)
+  0.503 0.140 0.004 - 0.497 0.107 0.003
+Cubeful equities:
+1. No double           -0.191
+2. Double, pass        +1.000  (+1.191)
+3. Double, take        -1.804  (-1.613)
+Proper cube action: No double, take (57.5%)
+
+Rolled 31:
+*    1. Cubeful 2-ply    8/5 6/5                      Eq.: -0.163
+       0.508 0.150 0.004 - 0.492 0.106 0.004
+     2. Cubeful 2-ply    13/10 11/10                  Eq.: -0.355 (-0.192)
+       0.473 0.124 0.004 - 0.527 0.125 0.005
+     3. Cubeful 2-ply    23/22 13/10                  Eq.: -0.431 (-0.268)
+       0.455 0.118 0.004 - 0.545 0.134 0.006
+     4. Cubeful 2-ply    24/20                        Eq.: -0.440 (-0.277)
+       0.453 0.108 0.004 - 0.547 0.129 0.005
+     5. Cubeful 2-ply    24/23 13/10                  Eq.: -0.441 (-0.278)
+       0.444 0.119 0.004 - 0.556 0.118 0.005
+
+
+Move number 4:  pumipilum to play 66
+
+ GNU Backgammon  Position ID: sGfkASjgc/ADIA
+                 Match ID   : MAG7ABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: pumipilum
+ | X           O    |   | O           X  X |     1 point
+ | X           O    |   | O                |     Rolled 66
+ | X           O    |   | O                |     
+ | X                |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ | 6                |   |                  |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X  X             |     
+ | O  X        X    |   | X  X           O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 156, X 160
+
+* pumipilum moves 13/7(2) 8/2*(2)
+
+Cube analysis
+4-ply cubeless equity -0.174 (Money: -0.063)
+  0.491 0.106 0.004 - 0.509 0.151 0.005
+Cubeful equities:
+1. No double           +0.173
+2. Double, pass        +1.000  (+0.827)
+3. Double, take        +0.053  (-0.120)
+Proper cube action: No double, take (12.7%)
+Alert: bad move ( -0.073)
+
+Rolled 66:
+     1. Cubeful 4-ply    13/7(4)                      Eq.: +0.622
+       0.563 0.153 0.005 - 0.437 0.113 0.003
+*    2. Cubeful 4-ply    13/7(2) 8/2*(2)              Eq.: +0.549 (-0.073)
+       0.532 0.174 0.007 - 0.468 0.127 0.004
+     3. Cubeful 2-ply    24/18 13/7(3)                Eq.: +0.513 (-0.109)
+       0.562 0.136 0.004 - 0.438 0.125 0.003
+     4. Cubeful 2-ply    13/1*(2)                     Eq.: +0.470 (-0.152)
+       0.524 0.164 0.003 - 0.476 0.135 0.003
+     5. Cubeful 2-ply    13/1* 8/2*(2)                Eq.: +0.433 (-0.189)
+       0.485 0.198 0.005 - 0.515 0.162 0.008
+
+
+Move number 5:  lasse to play 62
+
+ GNU Backgammon  Position ID: hm/BAyCwZ+QBUA
+                 Match ID   : cAmrABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: pumipilum
+ | X           O  O |   | O           O  X |     1 point
+ | X              O |   | O           O    |     
+ | X                |   | O                |     
+ | X                |   | O                |     
+ |                  |   | O                |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X  X             |     Rolled 62
+ | O  X        X    | X | X  X           O |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 132, X 162
+
+* lasse cannot move
+
+Cube analysis
+4-ply cubeless equity -0.018 (Money: -0.115)
+  0.468 0.127 0.004 - 0.532 0.174 0.007
+Cubeful equities:
+1. No double           -0.549
+2. Double, pass        +1.000  (+1.549)
+3. Double, take        -1.883  (-1.334)
+Proper cube action: No double, take (46.3%)
+
+Rolled 62:
+*    Cannot move
+
+
+Move number 6:  pumipilum to play 22
+
+ GNU Backgammon  Position ID: sGfkAVCGb8EDIA
+                 Match ID   : MAGpABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: pumipilum
+ | X           O  O |   | O           O  X |     1 point
+ | X              O |   | O           O    |     Rolled 22
+ | X                |   | O                |     
+ | X                |   | O                |     
+ |                  |   | O                |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X  X             |     
+ | O  X        X    | X | X  X           O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 132, X 162
+
+* pumipilum moves 7/5(2) 6/4(2)
+Alert: missed double (-0.160)!
+ [very bad]
+Cube analysis
+4-ply cubeless equity +0.319 (Money: +0.398)
+  0.607 0.272 0.011 - 0.393 0.096 0.004
+Cubeful equities:
+1. Double, pass        +1.000
+2. Double, take        +1.362  (+0.362)
+3. No double           +0.840  (-0.160)
+Proper cube action: Double, pass
+
+Rolled 22:
+*    1. Cubeful 2-ply    7/5(2) 6/4(2)                Eq.: +1.090
+       0.701 0.374 0.016 - 0.299 0.062 0.002
+     2. Cubeful 2-ply    13/11(2) 6/4(2)              Eq.: +0.984 (-0.107)
+       0.663 0.311 0.015 - 0.337 0.080 0.003
+     3. Cubeful 2-ply    24/22 13/11 6/4(2)           Eq.: +0.958 (-0.133)
+       0.654 0.293 0.014 - 0.346 0.085 0.004
+     4. Cubeful 2-ply    24/22 8/4 6/4                Eq.: +0.957 (-0.134)
+       0.650 0.276 0.011 - 0.350 0.081 0.003
+     5. Cubeful 2-ply    13/11 8/4 6/4                Eq.: +0.952 (-0.138)
+       0.636 0.292 0.013 - 0.364 0.086 0.003
+
+
+Move number 7:  lasse to play 62
+
+ GNU Backgammon  Position ID: ZjvBAyCwZ+QBUA
+                 Match ID   : cAmrABAAGAAE
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     O: pumipilum
+ | X           O    |   | O  O  O     O  X |     1 point
+ | X                |   | O  O  O     O    |     
+ | X                |   | O                |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+v|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X  X             |     Rolled 62
+ | O  X        X    | X | X  X           O |     3 points
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     X: lasse
+Pip counts: O 124, X 162
+
+* lasse cannot move
+
+Cube analysis
+4-ply cubeless equity -0.663 (Money: -0.722)
+  0.301 0.062 0.002 - 0.699 0.372 0.017
+Cubeful equities:
+1. No double           -1.100
+2. Double, pass        +1.000  (+2.100)
+3. Double, take        -2.817  (-1.717)
+Proper cube action: No double, take (45.0%)
+
+Rolled 62:
+*    Cannot move
+
+
+Move number 8:  pumipilum on roll, cube decision?
+
+ GNU Backgammon  Position ID: sGfkAVBmO8EDIA
+                 Match ID   : MAGgABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: pumipilum
+ | X           O    |   | O  O  O     O  X |     1 point
+ | X                |   | O  O  O     O    |     On roll
+ | X                |   | O                |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     5 points match (Cube: 1)
+ |                  |   |                  |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X  X             |     
+ | O  X        X    | X | X  X           O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 124, X 162
+
+* pumipilum doubles
+
+Alert: wrong double (-0.242)!
+ [very bad]
+Cube analysis
+4-ply cubeless equity +0.912 (Money: +0.969)
+  0.748 0.504 0.023 - 0.252 0.051 0.002
+Cubeful equities:
+1. No double           +1.242
+2. Double, take        +3.096  (+1.854)
+3. Double, pass        +1.000  (-0.242)
+Proper cube action: Too good to double, pass (11.6%)
+Move number 9:  pumipilum doubles to 2
+
+ GNU Backgammon  Position ID: sGfkAVBmO8EDIA
+                 Match ID   : MBmgABAAGAAE
+ +12-11-10--9--8--7-------6--5--4--3--2--1-+     O: pumipilum
+ | X           O    |   | O  O  O     O  X |     1 point
+ | X                |   | O  O  O     O    |     
+ | X                |   | O                |     
+ | X                |   |                  |     
+ |                  |   |                  |    
+^|                  |BAR|                  |     
+ |                  |   |                  |    
+ | O                |   | X                |     
+ | O                |   | X                |     
+ | O           X    |   | X  X             |     Cube offered at 2
+ | O  X        X    | X | X  X           O |     3 points
+ +13-14-15-16-17-18------19-20-21-22-23-24-+     X: lasse
+Pip counts: O 124, X 162
+
+* lasse rejects
+
+
+Cube analysis
+4-ply cubeless equity -0.912 (Money: -0.969)
+  0.252 0.051 0.002 - 0.748 0.504 0.023
+Cubeful equities:
+1. No double           -1.242
+2. Double, take        -3.096  (-1.854)
+3. Double, pass        -1.000  (+0.242)
+Proper cube action: Too good to double, pass (11.6%)
+pumipilum wins 1 point
+
+Game statistics for game 4
+
+Player                                   pumipilum               lasse                  
+
+Chequerplay statistics
+
+Total moves                                3                       4                    
+Unforced moves                             3                       2                    
+Unmarked moves                             2                       4                    
+Moves marked doubtful                      0                       0                    
+Moves marked bad                           1                       0                    
+Moves marked very bad                      0                       0                    
+Error total EMG (MWC)                         -0.073 ( -0.780%)       -0.000 ( +0.000%) 
+Error rate mEMG (MWC)                        -24.2   ( -0.260%)       -0.0   ( +0.000%) 
+Chequerplay rating                       Casual player           Supernatural           
+
+
+Cube statistics
+
+Total cube decisions                       4                       4                    
+Close or actual cube decisions             4                       1                    
+Doubles                                    1                       0                    
+Takes                                      0                       0                    
+Passes                                     0                       1                    
+Missed doubles below CP (EMG (MWC))        0                       0                    
+Missed doubles above CP (EMG (MWC))        1 (-0.160 ( -1.715%))   0                    
+Wrong doubles below DP (EMG (MWC))         0                       0                    
+Wrong doubles above TG (EMG (MWC))         1 (-0.242 ( -2.603%))   0                    
+Wrong takes (EMG (MWC))                    0                       0                    
+Wrong passes (EMG (MWC))                   0                       0                    
+Error total EMG (MWC)                         -0.402 ( -4.318%)       -0.000 ( -0.000%) 
+Error rate mEMG (MWC)                       -100.5   ( -1.080%)       -0.0   ( -0.000%) 
+Cube decision rating                     Awful!                  Supernatural           
+
+
+Overall statistics
+
+Error total EMG (MWC)                         -0.475 ( -5.098%)       -0.000 ( +0.000%) 
+Error rate mEMG (MWC)                        -67.8   ( -0.728%)       -0.0   ( +0.000%) 
+Snowie error rate                            -67.8   ( +0.000%)       -0.0   ( +0.000%) 
+Overall rating                           Awful!                  Supernatural           
+Error based abs. FIBS rating             1637.3                  2050.0                 
+Chequerplay errors rating loss            336.4                     0.0                 
+Cube errors rating loss                    76.3                     0.0                 
+
+
+
+
+Output generated Tue Aug 27 23:39:37 2024
+ by GNU Backgammon 1.07.001-mingw 32-Bit 20221114 (Text Export version 1.128)
+
