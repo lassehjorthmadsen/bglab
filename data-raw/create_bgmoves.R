@@ -1,14 +1,29 @@
 # This is to create the bgmoves dataset included as `backgammon::bgmoves`
-# Using the function `backgammon::txt2df()`
+# Using the function `bglab::txt2df()`
 
+library(tidyverse)
 devtools::load_all()
 
+
 # Get files
-file_path <- "data-raw\\galaxy-matches\\analyzed\\4-ply"
-files <- list.files(file_path, pattern = "*.txt", full.names = TRUE)
+file_paths <- c(
+  "data-raw\\lasse\\analyzed\\4-ply",
+  "data-raw\\lasse\\analyzed\\2-ply",
+  "data-raw\\Llabba\\analyzed\\4-ply"
+  )
+
+files <- file_paths |> 
+  map_dfr(\(x) bind_cols(
+    tibble("path" = list.files(x,  pattern = "*.txt", full.names = TRUE)),
+    tibble("file" = list.files(x,  pattern = "*.txt", full.names = FALSE))
+    )) |> 
+  mutate(ply = str_extract(path, "\\d-ply")) |>
+  # In case of same position analyzes at several plies, keep the higher ply only.
+  # Relies on higher plies being first in the data frame, so order in file_paths is important.
+  distinct(file, .keep_all = TRUE) 
 
 # Parse files
-bgmoves <- txt2df(files)
+bgmoves <- txt2df(files$path)
 usethis::use_data(bgmoves, overwrite = TRUE)
 
 ########################################
@@ -16,7 +31,7 @@ usethis::use_data(bgmoves, overwrite = TRUE)
 ########################################
 
 # Do we have the right file(s)? YES
-setdiff(basename(files), unique(bgmoves$file))
+setdiff(basename(files$path), unique(bgmoves$file))
 
 # Are match length and score as expected? YES
 # (But note that unlimited games show up as matches to e.g. 8, 16)
