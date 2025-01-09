@@ -1,9 +1,8 @@
-# This is to create the bgmoves dataset included as `backgammon::bgmoves`
+# This is to create the bgmoves dataset included as `bglab::bgmoves`
 # Using the function `bglab::txt2df()`
 
 library(tidyverse)
 devtools::load_all()
-
 
 # Get files
 file_paths <- c(
@@ -23,18 +22,19 @@ files <- file_paths |>
   distinct(file, .keep_all = TRUE) 
 
 # Parse files
-bgmoves <- txt2df(files$path)
+bgmoves2 <- txt2df(files$path)
 usethis::use_data(bgmoves, overwrite = TRUE)
 
 ########################################
 # Checks of parsing quality
 ########################################
 
-# Do we have the right file(s)? YES
+# Do we have the right file(s)? YES (although two files have no match and are not included)
 setdiff(basename(files$path), unique(bgmoves$file))
 
 # Are match length and score as expected? YES
-# (But note that unlimited games show up as matches to e.g. 8, 16)
+# Note that unlimited games show up as matches to e.g. 8, 16
+# Also: An issue with NA in length for 30 files. 
 bgmoves %>% count(length)
 bgmoves %>% mutate(okay = score1 < length & score2 < length) %>% count(okay)
 
@@ -55,11 +55,15 @@ bgmoves %>% count(is.na(player1), is.na(player2))
 # Inspect all possible plays. Looks good.
 bgmoves %>% count(play)
 
-# Is a double always followed by a take or a pass? YES
+# Is a double always followed by a take or a pass? 
+# No quite, some issues in apparently messed up files like raw/match2900236.txt
 bgmoves %>% mutate(next_play = lead(play, 1)) %>%
   filter(play == "Doubles") %>%
   select(play, next_play) %>%
   count(play, next_play)
+
+bgmoves %>% mutate(next_play = lead(play, 1)) %>%
+  filter(play == "Doubles", next_play == "Rolls")
 
 # Inspect all possible "proper cube actions". Looks good.
 bgmoves %>% count(proper_ca)
