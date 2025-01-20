@@ -7,7 +7,7 @@
 \format{
 \subsection{\code{bgmoves}}{
 
-A data frame with 35,536 rows and 21 columns:
+A data frame with 191,012 rows and 23 columns:
 \describe{
 \item{file}{name of the original file; may serve as a match id}
 \item{date}{date of match}
@@ -34,7 +34,7 @@ A data frame with 35,536 rows and 21 columns:
 }
 }
 \source{
-\url{https://github.com/lassehjorthmadsen/backgammon}
+\url{https://github.com/lassehjorthmadsen/bglab}
 }
 \usage{
 bgmoves
@@ -42,9 +42,9 @@ bgmoves
 \description{
 A set of backgammon moves/decisions from matches played on
 Backgammon Galaxy, analyzed by GNU Backgammon. Positions are
-the total set of moves from a a total of 309 matches, mostly
-3-pointers, played my me against various opponents. It is the
-analyses files in text format, parsed into a single data frame,
-using \code{backgammon::galaxy2df()}
+the total set of moves from more than 1000 matches, mostly
+played my me against various opponents. It is the analyses
+files in text format, parsed into a single data frame,
+using \code{bglab::txt2df()}
 }
 \keyword{datasets}

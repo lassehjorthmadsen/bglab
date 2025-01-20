@@ -4,7 +4,7 @@
 \alias{tp_gammons}
 \title{Take point calculation including gammons}
 \usage{
-tp_gammons(x, y, probs, cube, met)
+tp_gammons(x, y, probs, cube, met, last_roll = FALSE)
 }
 \arguments{
 \item{x}{number of points that player needs}
@@ -17,6 +17,8 @@ probabilities (must always sum to 1 or 100)}
 \item{cube}{cube value (before doubling)}
 
 \item{met}{match equity table}
+
+\item{last_roll}{treat this as a last roll position; no automatic redouble available}
 }
 \value{
 double. Take point
