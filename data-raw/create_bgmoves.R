@@ -1,6 +1,9 @@
 # This is to create the bgmoves dataset included as `bglab::bgmoves`
 # Using the function `bglab::txt2df()`
 
+# Known issue: One example for a possitive value cube error:
+# bgmoves |> slice_max(cube_err) |> pull(file)
+
 library(tidyverse)
 devtools::load_all()
 
@@ -11,15 +14,15 @@ file_paths <- c(
   "data-raw\\Llabba\\analyzed\\4-ply"
   )
 
-files <- file_paths |> 
+files <- file_paths |>
   map_dfr(\(x) bind_cols(
     tibble("path" = list.files(x,  pattern = "*.txt", full.names = TRUE)),
     tibble("file" = list.files(x,  pattern = "*.txt", full.names = FALSE))
-    )) |> 
+    )) |>
   mutate(ply = str_extract(path, "\\d-ply")) |>
   # In case of same position analyzes at several plies, keep the higher ply only.
   # Relies on higher plies being first in the data frame, so order in file_paths is important.
-  distinct(file, .keep_all = TRUE) 
+  distinct(file, .keep_all = TRUE)
 
 # Parse files
 bgmoves2 <- txt2df(files$path)
@@ -34,7 +37,7 @@ setdiff(basename(files$path), unique(bgmoves$file))
 
 # Are match length and score as expected? YES
 # Note that unlimited games show up as matches to e.g. 8, 16
-# Also: An issue with NA in length for 30 files. 
+# Also: An issue with NA in length for 30 files.
 bgmoves %>% count(length)
 bgmoves %>% mutate(okay = score1 < length & score2 < length) %>% count(okay)
 
@@ -55,7 +58,7 @@ bgmoves %>% count(is.na(player1), is.na(player2))
 # Inspect all possible plays. Looks good.
 bgmoves %>% count(play)
 
-# Is a double always followed by a take or a pass? 
+# Is a double always followed by a take or a pass?
 # No quite, some issues in apparently messed up files like raw/match2900236.txt
 bgmoves %>% mutate(next_play = lead(play, 1)) %>%
   filter(play == "Doubles") %>%
