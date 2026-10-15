@@ -1,0 +1,76 @@
+# Package index
+
+## Diagrams
+
+Function for drawing diagrams
+
+- [`ggboard()`](https://lassehjorthmadsen.github.io/bglab/reference/ggboard.md)
+  : Create diagram from eXtreme Gammon id
+
+## Calculations
+
+Calculate familiar metrics like takepoint, equivalent-to-moneygame, etc.
+
+- [`emg()`](https://lassehjorthmadsen.github.io/bglab/reference/emg.md)
+  : Scale match winning chances to money game
+- [`get_met()`](https://lassehjorthmadsen.github.io/bglab/reference/get_met.md)
+  : Get match equity table
+- [`gwc2mwc()`](https://lassehjorthmadsen.github.io/bglab/reference/gwc2mwc.md)
+  : Calculate match winning chance from game winning chances
+- [`mwc()`](https://lassehjorthmadsen.github.io/bglab/reference/mwc.md)
+  : Match winning chances at score
+- [`tp()`](https://lassehjorthmadsen.github.io/bglab/reference/tp.md) :
+  Simple take point calculation
+- [`tp_gammons()`](https://lassehjorthmadsen.github.io/bglab/reference/tp_gammons.md)
+  : Take point calculation including gammons
+- [`tp_xg()`](https://lassehjorthmadsen.github.io/bglab/reference/tp_xg.md)
+  : Take points according to eXtreme Gammon
+- [`tp_info()`](https://lassehjorthmadsen.github.io/bglab/reference/tp_info.md)
+  : Take points in different flavors
+- [`dp_gammons()`](https://lassehjorthmadsen.github.io/bglab/reference/dp_gammons.md)
+  : Double point calculation including gammons
+- [`gammon_value()`](https://lassehjorthmadsen.github.io/bglab/reference/gammon_value.md)
+  : Gammon value
+- [`tp_money()`](https://lassehjorthmadsen.github.io/bglab/reference/tp_money.md)
+  : Take points, money game
+- [`eq_money()`](https://lassehjorthmadsen.github.io/bglab/reference/eq_money.md)
+  : Equity, money game
+- [`outcome_probs()`](https://lassehjorthmadsen.github.io/bglab/reference/outcome_probs.md)
+  : Outcome probabilities
+- [`probs_table()`](https://lassehjorthmadsen.github.io/bglab/reference/probs_table.md)
+  : Probability table
+- [`tp_table()`](https://lassehjorthmadsen.github.io/bglab/reference/tp_table.md)
+  : Compare take points
+
+## Data set
+
+Data set with all moves from my matches on Backgammon Galaxy
+
+- [`bgmoves`](https://lassehjorthmadsen.github.io/bglab/reference/bgmoves.md)
+  : Moves from backgammon matches
+
+## Parsing
+
+Functions to parse \*.txt files with GNU Backgammon analysis to data
+frame format, and to convert from GNU Backgammon position/match id to
+eXtreme Backgammon xgid.
+
+- [`txt2df()`](https://lassehjorthmadsen.github.io/bglab/reference/txt2df.md)
+  : Convert analysis files to data frame
+- [`gnuid2xgid()`](https://lassehjorthmadsen.github.io/bglab/reference/gnuid2xgid.md)
+  : From GNU BG ids to XGIDs
+- [`xgid2vec()`](https://lassehjorthmadsen.github.io/bglab/reference/xgid2vec.md)
+  : Checker locations as integer vector
+
+## Constants
+
+Constants used for diagram design.
+
+- [`board_ratio`](https://lassehjorthmadsen.github.io/bglab/reference/board_ratio.md)
+  : The height/width ratio of diagrams
+- [`checker_radius`](https://lassehjorthmadsen.github.io/bglab/reference/checker_radius.md)
+  : The radius of checkers
+- [`gnu_chars`](https://lassehjorthmadsen.github.io/bglab/reference/gnu_chars.md)
+  : Characters used in position and match ids
+- [`color_schemes`](https://lassehjorthmadsen.github.io/bglab/reference/color_schemes.md)
+  : Color schemes
