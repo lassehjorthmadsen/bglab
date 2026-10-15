@@ -153,6 +153,11 @@ matchid2xgid <- function(match_id) {
   score2 <- split_id[12] %>% strtoi(2)
   score1 <- split_id[13] %>% strtoi(2)
 
+  # In money games the XGID field after the scores holds the Jacoby/beaver
+  # flags (1 = Jacoby) instead of Crawford. Bit 67 of the match id is set when
+  # the Jacoby rule is off; beavers are a gnubg session setting, not in the id.
+  if (length == 0) crawford <- if (substr(match_id_bin, 67, 67) == "0") 1 else 0
+
   xg_mat <- paste("", cube, cubeowner, turnowner, dice, score1, score2, crawford, length, "10", sep = ":")
 
   return(xg_mat)
